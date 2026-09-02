@@ -7678,53 +7678,53 @@
   function renderAbout() {
     var html = '<h1 class="entity-title">About this record</h1>';
     html += '<section class="body">';
-    html += "<p>The Dispossession Papers is a hyperlinked reference documenting land loss and dispossession " +
-      "in Palestine/Israel from Ottoman-era Palestine through the present — the people, organizations, laws, " +
-      "and legislative votes involved, one page per entity, cross-linked wherever their histories touch. " +
-      "It also carries a companion ledger of modern Knesset legislation and individual Members of Knesset's " +
-      "votes on land, settlement, demographic, and punitive-law questions.</p>";
+    html += "<p>I'm trying to put together a properly cited record of land loss and dispossession in " +
+      "Palestine and Israel, from Ottoman-era Palestine right through to now. Every person, organization, " +
+      "law and vote gets its own page, and they're all linked to each other so you can follow a thread " +
+      "wherever it actually leads. Alongside that there's a newer piece I've been building: a ledger of " +
+      "modern Knesset legislation and how individual Members of Knesset actually voted on land, settlement, " +
+      "demographic, and punitive-law questions.</p>";
 
     html += '<h2 class="section-head">How a citation works</h2>';
-    html += "<p>Every factual claim on this site carries its own citation, and every citation states its own " +
-      "confidence plainly rather than presenting every claim as equally certain:</p>";
-    html += "<ul style='padding-left:1.2rem;line-height:1.7'>" +
-      "<li><strong>VERIFIED [date]</strong> — checked against a named source (a primary document, a " +
-      "peer-reviewed or major press source, or — for the Knesset voting ledger — this project's own " +
-      "completed scrape of the Knesset's official public vote-records API, cross-checked against outside " +
-      "reporting wherever reporting exists) on the date shown.</li>" +
-      "<li><strong>UNVERIFIED — best guess</strong> — a plausible figure or detail that hasn't been " +
-      "independently checked. Left visible rather than smoothed away, because an early pass through this " +
-      "project's own citations found that a plausible-looking guess can simply be wrong — see the Land " +
-      "Acquisition Law and Absentees' Property Law entries, both of which once carried an incorrect citation " +
-      "later caught and corrected this same way.</li></ul>";
-    html += "<p>Where a figure is genuinely disputed in the historical record — a casualty count, a population " +
-      "estimate — the entry says so and gives the real range, rather than forcing a single false-precision " +
-      "number.</p>";
+    html += "<p>Every claim on here carries its own citation, and I've tried to be honest about how sure I " +
+      "actually am of each one rather than presenting everything as equally certain.</p>";
+    html += "<p><strong>VERIFIED [date]</strong> means I checked it against a named source, a primary " +
+      "document, a peer-reviewed or major press source, or, for the Knesset voting ledger, this project's " +
+      "own completed pull of the Knesset's official public vote-records API, checked against outside " +
+      "reporting wherever that exists.</p>";
+    html += "<p><strong>UNVERIFIED, best guess</strong> means it's a plausible detail I haven't independently " +
+      "checked yet. I've left those visible rather than quietly smoothing them away, because early on I " +
+      "found a plausible-looking guess can just be wrong. The Land Acquisition Law and Absentees' Property " +
+      "Law entries both had an incorrect citation that only got caught and fixed this same way.</p>";
+    html += "<p>Where a figure is genuinely disputed in the historical record, a casualty count or a " +
+      "population estimate, I've said so and given the real range rather than forcing a single number that " +
+      "looks more precise than it actually is.</p>";
 
     html += '<h2 class="section-head">Where the material comes from</h2>';
-    html += "<p>Historical entries (pre-1948) are built from established secondary scholarship and primary " +
-      "documents where they're available — no comparable open, machine-readable archive of that era's own " +
-      "institutions (the Yishuv's Asefat HaNivcharim and Va'ad Leumi) exists yet, so this period is " +
-      "narrative and citation-checked rather than built from a bulk data source. The modern Knesset ledger " +
-      "(2003 onward) is different: it's built from this project's own complete pull of the Knesset's own " +
-      "public OData API — roughly two million individual vote-result rows — filtered by keyword search, " +
-      "then reviewed and promoted into curated entries one real vote at a time rather than dumped in bulk. " +
-      "Individual bill sponsors are confirmed directly against the Knesset's own bill-initiator records where " +
-      "possible, not inferred from press coverage alone. Pre-2003 Knesset votes aren't available this way — " +
-      "the Knesset's own vote-by-member records don't go back further — so early Knesset entries are also " +
-      "narrative and sourced from named ministerial sponsorship rather than an individual floor vote.</p>";
+    html += "<p>Anything before 1948 is built from established scholarship and primary documents where I " +
+      "could find them. There's no open, machine-readable archive yet of the Yishuv's own institutions from " +
+      "that era (the Asefat HaNivcharim and Va'ad Leumi), so that whole period is narrative and " +
+      "citation-checked rather than built off a bulk data source.</p>";
+    html += "<p>The modern Knesset ledger, 2003 onward, is different. That's built from my own complete pull " +
+      "of the Knesset's own public API, something like two million individual vote-result rows, filtered " +
+      "down by keyword search and then reviewed and promoted into real entries one vote at a time rather " +
+      "than dumped in wholesale. Where I can, I've confirmed a bill's actual sponsor directly against the " +
+      "Knesset's own records rather than relying on press coverage alone. Pre-2003 votes aren't available " +
+      "this way (the Knesset's own records don't go back further), so early Knesset entries are also " +
+      "narrative, sourced from named ministerial sponsorship rather than an individual floor vote.</p>";
 
     html += '<h2 class="section-head">On people still in public life</h2>';
-    html += "<p>Entries about currently-serving politicians are limited to documented governmental and " +
-      "legislative conduct — a real vote, a real ministerial decision, each with its own citation — not " +
-      "personal characterization. The aggregate pattern this site documents across more than a century " +
-      "isn't ambiguous and isn't hedged; individual claims about a specific living person are held to the " +
-      "standard above, the same as everyone else on this site.</p>";
+    html += "<p>For anyone still in public life, I've stuck to documented governmental and legislative " +
+      "conduct, a real vote, a real ministerial decision, each with its own citation, and stayed away from " +
+      "personal characterization. The pattern across more than a century isn't really in question and I " +
+      "haven't tried to hedge it, but any specific claim about a specific living person is held to exactly " +
+      "the same standard as everyone else here.</p>";
 
     html += '<h2 class="section-head">What this isn\'t</h2>';
-    html += "<p>Not exhaustive, and not finished — the growing-archive count in the footer of every page is " +
-      "literal, not decorative. A person, organization, law, or vote's absence from this site so far means " +
-      "it hasn't been researched and added yet, not that it was considered and excluded.</p>";
+    html += "<p>This isn't finished, and it isn't trying to be exhaustive. The count at the bottom of every " +
+      "page is literal, not decoration, it just means what's been researched and added so far. If someone " +
+      "or something isn't here yet, it's because I haven't got to it, not because I looked at it and left " +
+      "it out.</p>";
     html += "</section>";
     return html;
   }
@@ -7732,7 +7732,7 @@
   function renderIndex() {
     var html = '<div class="home-hero"><span class="kicker">A working record, not a finished one</span>';
     html += "<h1>Every actor, every party, one click apart</h1>";
-    html += "<p>Start anywhere — a person's page links to the organizations they built or joined, and back to everyone else who passed through them. Nothing here is re-typed by hand; every page is generated straight from the underlying research. <a href=\"#/about\">How this is built and cited &rarr;</a></p></div>";
+    html += "<p>Start anywhere, a person's page links to the organizations they built or joined, and back to everyone else who passed through them. Nothing here is re-typed by hand, every page is generated straight from the underlying research. <a href=\"#/about\">How this is built and cited &rarr;</a></p></div>";
 
     // Every index list is alphabetized — browsing by eye (not just searching) is a real way
     // readers find a page, and the order entries happened to be added in isn't a useful sort.
