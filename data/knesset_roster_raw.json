@@ -1,0 +1,5840 @@
+[
+  {
+    "person_id": 405,
+    "last_name_he": "אלון",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 412,
+    "last_name_he": "הנדל",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 417,
+    "last_name_he": "זאבי",
+    "first_name_he": "רחבעם",
+    "is_current": false
+  },
+  {
+    "person_id": 421,
+    "last_name_he": "כהן",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 427,
+    "last_name_he": "ליברמן",
+    "first_name_he": "אביגדור",
+    "is_current": true
+  },
+  {
+    "person_id": 430,
+    "last_name_he": "שטרן",
+    "first_name_he": "יורי",
+    "is_current": false
+  },
+  {
+    "person_id": 432,
+    "last_name_he": "אושעיה",
+    "first_name_he": "אפי",
+    "is_current": false
+  },
+  {
+    "person_id": 434,
+    "last_name_he": "בורג",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 435,
+    "last_name_he": "בן-אליעזר",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 437,
+    "last_name_he": "בן-מנחם",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 439,
+    "last_name_he": "בן-עמי",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 442,
+    "last_name_he": "טריף",
+    "first_name_he": "סאלח",
+    "is_current": false
+  },
+  {
+    "person_id": 444,
+    "last_name_he": "יחזקאל",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 445,
+    "last_name_he": "כבל",
+    "first_name_he": "איתן",
+    "is_current": false
+  },
+  {
+    "person_id": 446,
+    "last_name_he": "כהן",
+    "first_name_he": "רענן",
+    "is_current": false
+  },
+  {
+    "person_id": 447,
+    "last_name_he": "כץ",
+    "first_name_he": "יוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 449,
+    "last_name_he": "מלכיאור",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 453,
+    "last_name_he": "מסאלחה",
+    "first_name_he": "נואף",
+    "is_current": false
+  },
+  {
+    "person_id": 454,
+    "last_name_he": "סנה",
+    "first_name_he": "אפרים",
+    "is_current": false
+  },
+  {
+    "person_id": 455,
+    "last_name_he": "פינס-פז",
+    "first_name_he": "אופיר",
+    "is_current": false
+  },
+  {
+    "person_id": 456,
+    "last_name_he": "פרס",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 458,
+    "last_name_he": "רמון",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 459,
+    "last_name_he": "שוחט",
+    "first_name_he": "אברהם-בייגה",
+    "is_current": false
+  },
+  {
+    "person_id": 460,
+    "last_name_he": "שירי",
+    "first_name_he": "ויצמן",
+    "is_current": false
+  },
+  {
+    "person_id": 461,
+    "last_name_he": "שמחון",
+    "first_name_he": "שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 462,
+    "last_name_he": "איתן",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 463,
+    "last_name_he": "ארנס",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 464,
+    "last_name_he": "בוים",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 466,
+    "last_name_he": "הירשזון",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 467,
+    "last_name_he": "הנגבי",
+    "first_name_he": "צחי",
+    "is_current": false
+  },
+  {
+    "person_id": 468,
+    "last_name_he": "כץ",
+    "first_name_he": "ישראל",
+    "is_current": true
+  },
+  {
+    "person_id": 471,
+    "last_name_he": "לנדאו",
+    "first_name_he": "עוזי",
+    "is_current": false
+  },
+  {
+    "person_id": 472,
+    "last_name_he": "מצא",
+    "first_name_he": "יהושע",
+    "is_current": false
+  },
+  {
+    "person_id": 473,
+    "last_name_he": "נוה",
+    "first_name_he": "דני",
+    "is_current": false
+  },
+  {
+    "person_id": 474,
+    "last_name_he": "עזרא",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 475,
+    "last_name_he": "קרא",
+    "first_name_he": "איוב",
+    "is_current": false
+  },
+  {
+    "person_id": 476,
+    "last_name_he": "ריבלין",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 477,
+    "last_name_he": "שטייניץ",
+    "first_name_he": "יובל",
+    "is_current": false
+  },
+  {
+    "person_id": 478,
+    "last_name_he": "שטרית",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 479,
+    "last_name_he": "שלום",
+    "first_name_he": "סילבן",
+    "is_current": false
+  },
+  {
+    "person_id": 482,
+    "last_name_he": "שרון",
+    "first_name_he": "אריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 483,
+    "last_name_he": "אזולאי",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 484,
+    "last_name_he": "בניזרי",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 485,
+    "last_name_he": "גאגולה",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 486,
+    "last_name_he": "גמליאל",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 487,
+    "last_name_he": "דהן",
+    "first_name_he": "נסים",
+    "is_current": false
+  },
+  {
+    "person_id": 488,
+    "last_name_he": "וקנין",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 490,
+    "last_name_he": "זאב",
+    "first_name_he": "נסים",
+    "is_current": false
+  },
+  {
+    "person_id": 492,
+    "last_name_he": "חוגי",
+    "first_name_he": "עופר",
+    "is_current": false
+  },
+  {
+    "person_id": 493,
+    "last_name_he": "טל",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 494,
+    "last_name_he": "ישי",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 495,
+    "last_name_he": "כהן",
+    "first_name_he": "אמנון",
+    "is_current": false
+  },
+  {
+    "person_id": 498,
+    "last_name_he": "נהרי",
+    "first_name_he": "משולם",
+    "is_current": false
+  },
+  {
+    "person_id": 499,
+    "last_name_he": "סבן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 500,
+    "last_name_he": "סויסה",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 501,
+    "last_name_he": "פרץ",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 503,
+    "last_name_he": "גילאון",
+    "first_name_he": "אילן",
+    "is_current": false
+  },
+  {
+    "person_id": 505,
+    "last_name_he": "וילן",
+    "first_name_he": "אבשלום",
+    "is_current": false
+  },
+  {
+    "person_id": 507,
+    "last_name_he": "כהן",
+    "first_name_he": "רן",
+    "is_current": false
+  },
+  {
+    "person_id": 510,
+    "last_name_he": "רובינשטיין",
+    "first_name_he": "אמנון",
+    "is_current": false
+  },
+  {
+    "person_id": 511,
+    "last_name_he": "רז",
+    "first_name_he": "מוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 512,
+    "last_name_he": "שריד",
+    "first_name_he": "יוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 513,
+    "last_name_he": "בריילובסקי",
+    "first_name_he": "ויקטור",
+    "is_current": false
+  },
+  {
+    "person_id": 517,
+    "last_name_he": "לפיד",
+    "first_name_he": "יוסף (טומי)",
+    "is_current": false
+  },
+  {
+    "person_id": 519,
+    "last_name_he": "פורז",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 520,
+    "last_name_he": "פריצקי",
+    "first_name_he": "יוסף יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 521,
+    "last_name_he": "אורלב",
+    "first_name_he": "זבולון",
+    "is_current": false
+  },
+  {
+    "person_id": 522,
+    "last_name_he": "ביבי",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 523,
+    "last_name_he": "דרוקמן",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 524,
+    "last_name_he": "יהלום",
+    "first_name_he": "שאול",
+    "is_current": false
+  },
+  {
+    "person_id": 525,
+    "last_name_he": "לנגנטל",
+    "first_name_he": "נחום",
+    "is_current": false
+  },
+  {
+    "person_id": 526,
+    "last_name_he": "גפני",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 527,
+    "last_name_he": "הלפרט",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 528,
+    "last_name_he": "ליצמן",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 531,
+    "last_name_he": "רביץ",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 532,
+    "last_name_he": "אדלשטיין",
+    "first_name_he": "יולי יואל",
+    "is_current": true
+  },
+  {
+    "person_id": 534,
+    "last_name_he": "ריגר",
+    "first_name_he": "גנדי",
+    "is_current": false
+  },
+  {
+    "person_id": 535,
+    "last_name_he": "שרנסקי",
+    "first_name_he": "נתן",
+    "is_current": false
+  },
+  {
+    "person_id": 536,
+    "last_name_he": "לוי",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 537,
+    "last_name_he": "לוי",
+    "first_name_he": "מקסים",
+    "is_current": false
+  },
+  {
+    "person_id": 538,
+    "last_name_he": "משעני",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 540,
+    "last_name_he": "ברכה",
+    "first_name_he": "מוחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 542,
+    "last_name_he": "מח'ול",
+    "first_name_he": "עסאם",
+    "is_current": false
+  },
+  {
+    "person_id": 543,
+    "last_name_he": "לסרי",
+    "first_name_he": "יחיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 544,
+    "last_name_he": "מגן",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 545,
+    "last_name_he": "מילוא",
+    "first_name_he": "רוני",
+    "is_current": false
+  },
+  {
+    "person_id": 546,
+    "last_name_he": "מרידור",
+    "first_name_he": "דן",
+    "is_current": false
+  },
+  {
+    "person_id": 549,
+    "last_name_he": "אלסאנע",
+    "first_name_he": "טלב",
+    "is_current": false
+  },
+  {
+    "person_id": 550,
+    "last_name_he": "דהאמשה",
+    "first_name_he": "עבד-אלמאלכ",
+    "is_current": false
+  },
+  {
+    "person_id": 551,
+    "last_name_he": "מחאמיד",
+    "first_name_he": "האשם",
+    "is_current": false
+  },
+  {
+    "person_id": 552,
+    "last_name_he": "ברונפמן",
+    "first_name_he": "רומן",
+    "is_current": false
+  },
+  {
+    "person_id": 553,
+    "last_name_he": "צינקר",
+    "first_name_he": "אלכסנדר",
+    "is_current": false
+  },
+  {
+    "person_id": 554,
+    "last_name_he": "חטיב",
+    "first_name_he": "תאופיק",
+    "is_current": false
+  },
+  {
+    "person_id": 555,
+    "last_name_he": "כנעאן",
+    "first_name_he": "מוחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 556,
+    "last_name_he": "כץ",
+    "first_name_he": "חיים",
+    "is_current": true
+  },
+  {
+    "person_id": 557,
+    "last_name_he": "פרץ",
+    "first_name_he": "עמיר",
+    "is_current": false
+  },
+  {
+    "person_id": 558,
+    "last_name_he": "בשארה",
+    "first_name_he": "עזמי",
+    "is_current": false
+  },
+  {
+    "person_id": 559,
+    "last_name_he": "קליינר",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 560,
+    "last_name_he": "טיבי",
+    "first_name_he": "אחמד",
+    "is_current": true
+  },
+  {
+    "person_id": 563,
+    "last_name_he": "פרוש",
+    "first_name_he": "מאיר",
+    "is_current": true
+  },
+  {
+    "person_id": 564,
+    "last_name_he": "מלול",
+    "first_name_he": "רחמים",
+    "is_current": false
+  },
+  {
+    "person_id": 565,
+    "last_name_he": "נודלמן",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 567,
+    "last_name_he": "זנדברג",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 580,
+    "last_name_he": "כהן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 584,
+    "last_name_he": "אביטל",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 713,
+    "last_name_he": "אריאל",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 755,
+    "last_name_he": "כהן",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 763,
+    "last_name_he": "איתם",
+    "first_name_he": "אפי",
+    "is_current": false
+  },
+  {
+    "person_id": 765,
+    "last_name_he": "לוי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 818,
+    "last_name_he": "גלעד",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 860,
+    "last_name_he": "גולדשמידט",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 861,
+    "last_name_he": "ברעם",
+    "first_name_he": "עוזי",
+    "is_current": false
+  },
+  {
+    "person_id": 862,
+    "last_name_he": "קצב",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 889,
+    "last_name_he": "רשף",
+    "first_name_he": "צלי",
+    "is_current": false
+  },
+  {
+    "person_id": 926,
+    "last_name_he": "אבן",
+    "first_name_he": "עוזי",
+    "is_current": false
+  },
+  {
+    "person_id": 949,
+    "last_name_he": "מופז",
+    "first_name_he": "שאול",
+    "is_current": false
+  },
+  {
+    "person_id": 965,
+    "last_name_he": "נתניהו",
+    "first_name_he": "בנימין",
+    "is_current": true
+  },
+  {
+    "person_id": 986,
+    "last_name_he": "צברי",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 1027,
+    "last_name_he": "סער",
+    "first_name_he": "גדעון",
+    "is_current": true
+  },
+  {
+    "person_id": 1028,
+    "last_name_he": "בנלולו",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1029,
+    "last_name_he": "רצון",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1030,
+    "last_name_he": "והבה",
+    "first_name_he": "מגלי",
+    "is_current": false
+  },
+  {
+    "person_id": 1031,
+    "last_name_he": "אדרי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 1032,
+    "last_name_he": "יתום",
+    "first_name_he": "אהוד",
+    "is_current": false
+  },
+  {
+    "person_id": 1033,
+    "last_name_he": "אפללו",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 1034,
+    "last_name_he": "כחלון",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 1035,
+    "last_name_he": "שרון",
+    "first_name_he": "עמרי",
+    "is_current": false
+  },
+  {
+    "person_id": 1036,
+    "last_name_he": "גורלובסקי",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1037,
+    "last_name_he": "ארדן",
+    "first_name_he": "גלעד",
+    "is_current": false
+  },
+  {
+    "person_id": 1038,
+    "last_name_he": "בר-און",
+    "first_name_he": "רוני",
+    "is_current": false
+  },
+  {
+    "person_id": 1040,
+    "last_name_he": "חזן",
+    "first_name_he": "יחיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1042,
+    "last_name_he": "מצנע",
+    "first_name_he": "עמרם",
+    "is_current": false
+  },
+  {
+    "person_id": 1044,
+    "last_name_he": "הרצוג",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 1045,
+    "last_name_he": "יתום",
+    "first_name_he": "דני",
+    "is_current": false
+  },
+  {
+    "person_id": 1046,
+    "last_name_he": "שלגי",
+    "first_name_he": "אילן",
+    "is_current": false
+  },
+  {
+    "person_id": 1048,
+    "last_name_he": "חן",
+    "first_name_he": "רשף",
+    "is_current": false
+  },
+  {
+    "person_id": 1049,
+    "last_name_he": "בריזון",
+    "first_name_he": "רוני",
+    "is_current": false
+  },
+  {
+    "person_id": 1050,
+    "last_name_he": "רצאבי",
+    "first_name_he": "אהוד",
+    "is_current": false
+  },
+  {
+    "person_id": 1052,
+    "last_name_he": "ליבוביץ",
+    "first_name_he": "אילן",
+    "is_current": false
+  },
+  {
+    "person_id": 1053,
+    "last_name_he": "דורון",
+    "first_name_he": "חמי",
+    "is_current": false
+  },
+  {
+    "person_id": 1054,
+    "last_name_he": "יאסינוב",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1055,
+    "last_name_he": "אלדד",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 1056,
+    "last_name_he": "מרגי",
+    "first_name_he": "יעקב",
+    "is_current": true
+  },
+  {
+    "person_id": 1057,
+    "last_name_he": "אייכלר",
+    "first_name_he": "ישראל",
+    "is_current": true
+  },
+  {
+    "person_id": 1061,
+    "last_name_he": "זחאלקה",
+    "first_name_he": "ג'מאל",
+    "is_current": false
+  },
+  {
+    "person_id": 1062,
+    "last_name_he": "טאהא",
+    "first_name_he": "ואסל",
+    "is_current": false
+  },
+  {
+    "person_id": 1064,
+    "last_name_he": "אולמרט",
+    "first_name_he": "אהוד",
+    "is_current": false
+  },
+  {
+    "person_id": 1065,
+    "last_name_he": "אורון",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 1067,
+    "last_name_he": "וילנאי",
+    "first_name_he": "מתן",
+    "is_current": false
+  },
+  {
+    "person_id": 1068,
+    "last_name_he": "סלומינסקי",
+    "first_name_he": "ניסן",
+    "is_current": false
+  },
+  {
+    "person_id": 2014,
+    "last_name_he": "מג'אדלה",
+    "first_name_he": "ראלב",
+    "is_current": false
+  },
+  {
+    "person_id": 2114,
+    "last_name_he": "שרת",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2116,
+    "last_name_he": "א'-דאהר",
+    "first_name_he": "אחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2117,
+    "last_name_he": "אבו-רביעה",
+    "first_name_he": "חמאד",
+    "is_current": false
+  },
+  {
+    "person_id": 2118,
+    "last_name_he": "אבו-רוכן",
+    "first_name_he": "לביב",
+    "is_current": false
+  },
+  {
+    "person_id": 2119,
+    "last_name_he": "אבוחצירא",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2120,
+    "last_name_he": "אבטבי",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2121,
+    "last_name_he": "אביזוהר",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2122,
+    "last_name_he": "אבן",
+    "first_name_he": "אבא",
+    "is_current": false
+  },
+  {
+    "person_id": 2123,
+    "last_name_he": "אבניאל",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2124,
+    "last_name_he": "אבנרי",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 2125,
+    "last_name_he": "אבריאל",
+    "first_name_he": "אהוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2126,
+    "last_name_he": "אברמוב",
+    "first_name_he": "שניאור זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2127,
+    "last_name_he": "אברמוביץ",
+    "first_name_he": "יהודה-מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2128,
+    "last_name_he": "אדרי",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2129,
+    "last_name_he": "אוזן",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2130,
+    "last_name_he": "אולמרט",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2131,
+    "last_name_he": "אונא",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2132,
+    "last_name_he": "אור",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 2133,
+    "last_name_he": "אורי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2134,
+    "last_name_he": "אזניה",
+    "first_name_he": "ברוך",
+    "is_current": false
+  },
+  {
+    "person_id": 2135,
+    "last_name_he": "אחימאיר",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2137,
+    "last_name_he": "איכילוב",
+    "first_name_he": "עזרא",
+    "is_current": false
+  },
+  {
+    "person_id": 2138,
+    "last_name_he": "איתן",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2139,
+    "last_name_he": "אלגרבלי",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2140,
+    "last_name_he": "אלדרוטי",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2141,
+    "last_name_he": "אלול",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2142,
+    "last_name_he": "אלון",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2144,
+    "last_name_he": "אלזועבי",
+    "first_name_he": "סיף-אלדין",
+    "is_current": false
+  },
+  {
+    "person_id": 2145,
+    "last_name_he": "אלטמן",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2146,
+    "last_name_he": "אליאב",
+    "first_name_he": "אריה לובה",
+    "is_current": false
+  },
+  {
+    "person_id": 2147,
+    "last_name_he": "אליהו",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2148,
+    "last_name_he": "אליעד",
+    "first_name_he": "נסים",
+    "is_current": false
+  },
+  {
+    "person_id": 2149,
+    "last_name_he": "אלישר",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2150,
+    "last_name_he": "אלמוגי",
+    "first_name_he": "יוסף-אהרון",
+    "is_current": false
+  },
+  {
+    "person_id": 2151,
+    "last_name_he": "אלמליח",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2152,
+    "last_name_he": "אמוראי",
+    "first_name_he": "עדיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2153,
+    "last_name_he": "אמיר",
+    "first_name_he": "יעקב-ז'אק",
+    "is_current": false
+  },
+  {
+    "person_id": 2154,
+    "last_name_he": "אנאשף",
+    "first_name_he": "מחמוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2155,
+    "last_name_he": "אנקוריון",
+    "first_name_he": "ארי",
+    "is_current": false
+  },
+  {
+    "person_id": 2156,
+    "last_name_he": "אסא",
+    "first_name_he": "ירחמיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2157,
+    "last_name_he": "אסעד",
+    "first_name_he": "אסעד",
+    "is_current": false
+  },
+  {
+    "person_id": 2158,
+    "last_name_he": "אסעד",
+    "first_name_he": "שפיק",
+    "is_current": false
+  },
+  {
+    "person_id": 2159,
+    "last_name_he": "אסף",
+    "first_name_he": "עמי",
+    "is_current": false
+  },
+  {
+    "person_id": 2160,
+    "last_name_he": "אפרת",
+    "first_name_he": "אהרון",
+    "is_current": false
+  },
+  {
+    "person_id": 2161,
+    "last_name_he": "אפרתי",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2163,
+    "last_name_he": "ארגוב",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2165,
+    "last_name_he": "ארדיטי",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2166,
+    "last_name_he": "ארזי",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 2167,
+    "last_name_he": "אריאב",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2168,
+    "last_name_he": "ארידור",
+    "first_name_he": "יורם",
+    "is_current": false
+  },
+  {
+    "person_id": 2169,
+    "last_name_he": "ארליך",
+    "first_name_he": "שמחה",
+    "is_current": false
+  },
+  {
+    "person_id": 2170,
+    "last_name_he": "ארם",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2171,
+    "last_name_he": "ארן",
+    "first_name_he": "זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2172,
+    "last_name_he": "ארצי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2173,
+    "last_name_he": "אשכול",
+    "first_name_he": "לוי",
+    "is_current": false
+  },
+  {
+    "person_id": 2175,
+    "last_name_he": "בא-גד",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2176,
+    "last_name_he": "בארי",
+    "first_name_he": "ידידיה",
+    "is_current": false
+  },
+  {
+    "person_id": 2177,
+    "last_name_he": "בבה",
+    "first_name_he": "שמחה",
+    "is_current": false
+  },
+  {
+    "person_id": 2178,
+    "last_name_he": "בגין",
+    "first_name_he": "זאב בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2179,
+    "last_name_he": "בגין",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2180,
+    "last_name_he": "בדיאן",
+    "first_name_he": "אליקים-גוסטב",
+    "is_current": false
+  },
+  {
+    "person_id": 2181,
+    "last_name_he": "בדר",
+    "first_name_he": "יוחנן",
+    "is_current": false
+  },
+  {
+    "person_id": 2182,
+    "last_name_he": "בדר",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2183,
+    "last_name_he": "בדש",
+    "first_name_he": "פיני",
+    "is_current": false
+  },
+  {
+    "person_id": 2184,
+    "last_name_he": "בהיר",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2185,
+    "last_name_he": "בוגר",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2186,
+    "last_name_he": "בוחבוט",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2187,
+    "last_name_he": "בורג",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2188,
+    "last_name_he": "בז'רנו",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2189,
+    "last_name_he": "ביבי",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2190,
+    "last_name_he": "ביטון",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2191,
+    "last_name_he": "ביטון",
+    "first_name_he": "צ'רלי",
+    "is_current": false
+  },
+  {
+    "person_id": 2192,
+    "last_name_he": "ביילין",
+    "first_name_he": "יוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 2193,
+    "last_name_he": "בלומנטל",
+    "first_name_he": "נפתלי",
+    "is_current": false
+  },
+  {
+    "person_id": 2194,
+    "last_name_he": "בן-אהרן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2195,
+    "last_name_he": "בן-אליעזר",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2196,
+    "last_name_he": "בן-אלישר",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2197,
+    "last_name_he": "בן-אשר",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2198,
+    "last_name_he": "בן-גוריון",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2199,
+    "last_name_he": "בן-יעקב",
+    "first_name_he": "זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2200,
+    "last_name_he": "בן-ישראל",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2201,
+    "last_name_he": "בן-מאיר",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2202,
+    "last_name_he": "בן-מאיר",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2203,
+    "last_name_he": "בן-מאיר",
+    "first_name_he": "שלמה-ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2204,
+    "last_name_he": "בן-עמי",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2206,
+    "last_name_he": "בן-פורת",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2207,
+    "last_name_he": "בן-צבי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2208,
+    "last_name_he": "בן-צור",
+    "first_name_he": "שמריהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2209,
+    "last_name_he": "בן-שלמה",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2210,
+    "last_name_he": "בנטוב",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2211,
+    "last_name_he": "בסטוני",
+    "first_name_he": "רוסתם",
+    "is_current": false
+  },
+  {
+    "person_id": 2212,
+    "last_name_he": "בקר",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2213,
+    "last_name_he": "בר-און",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2214,
+    "last_name_he": "בר-זהר",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2215,
+    "last_name_he": "בר-יהודה",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2216,
+    "last_name_he": "בר-לב",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2217,
+    "last_name_he": "בר-ניר",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2218,
+    "last_name_he": "בר-רב-האי",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2219,
+    "last_name_he": "ברגר",
+    "first_name_he": "הרצל",
+    "is_current": false
+  },
+  {
+    "person_id": 2220,
+    "last_name_he": "ברזילי",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2221,
+    "last_name_he": "ברמן",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2222,
+    "last_name_he": "ברמן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2223,
+    "last_name_he": "ברנשטיין",
+    "first_name_he": "פרץ",
+    "is_current": false
+  },
+  {
+    "person_id": 2224,
+    "last_name_he": "ברעם",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2225,
+    "last_name_he": "ברץ",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2226,
+    "last_name_he": "ברק",
+    "first_name_he": "אהוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2227,
+    "last_name_he": "ברקת",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 2228,
+    "last_name_he": "בש",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2230,
+    "last_name_he": "ג'בארה",
+    "first_name_he": "חליל-סלים",
+    "is_current": false
+  },
+  {
+    "person_id": 2231,
+    "last_name_he": "ג'רג'ורה",
+    "first_name_he": "אמין",
+    "is_current": false
+  },
+  {
+    "person_id": 2232,
+    "last_name_he": "גבאי",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2233,
+    "last_name_he": "גבתי",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2234,
+    "last_name_he": "גדות",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2235,
+    "last_name_he": "גוברין",
+    "first_name_he": "עקיבא",
+    "is_current": false
+  },
+  {
+    "person_id": 2236,
+    "last_name_he": "גוטמן",
+    "first_name_he": "שאול",
+    "is_current": false
+  },
+  {
+    "person_id": 2237,
+    "last_name_he": "גולדברג",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2238,
+    "last_name_he": "גולדמן",
+    "first_name_he": "מיכה",
+    "is_current": false
+  },
+  {
+    "person_id": 2239,
+    "last_name_he": "גולדפרב",
+    "first_name_he": "אלכס",
+    "is_current": false
+  },
+  {
+    "person_id": 2240,
+    "last_name_he": "גולדרט",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2241,
+    "last_name_he": "גולדשטיין",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2242,
+    "last_name_he": "גולדשטיין",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2243,
+    "last_name_he": "גולדשמידט",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2244,
+    "last_name_he": "גולומב",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2245,
+    "last_name_he": "גולן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2246,
+    "last_name_he": "גור",
+    "first_name_he": "אפרים",
+    "is_current": false
+  },
+  {
+    "person_id": 2247,
+    "last_name_he": "גור",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2248,
+    "last_name_he": "גורי",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2249,
+    "last_name_he": "גורן",
+    "first_name_he": "שרגא",
+    "is_current": false
+  },
+  {
+    "person_id": 2251,
+    "last_name_he": "גיבלבר",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2252,
+    "last_name_he": "גיל",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2253,
+    "last_name_he": "גיל",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2254,
+    "last_name_he": "גל",
+    "first_name_he": "גדליה",
+    "is_current": false
+  },
+  {
+    "person_id": 2255,
+    "last_name_he": "גלוסקא",
+    "first_name_he": "זכריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2257,
+    "last_name_he": "גלילי",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2258,
+    "last_name_he": "גלס",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2259,
+    "last_name_he": "גנחובסקי",
+    "first_name_he": "אליהו-משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2260,
+    "last_name_he": "גרוס",
+    "first_name_he": "שלמה-יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2262,
+    "last_name_he": "גרופר",
+    "first_name_he": "פסח",
+    "is_current": false
+  },
+  {
+    "person_id": 2263,
+    "last_name_he": "גרידי",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2264,
+    "last_name_he": "גרינברג",
+    "first_name_he": "אהרן-יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2265,
+    "last_name_he": "גרינברג",
+    "first_name_he": "אורי-צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2266,
+    "last_name_he": "גרנות",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2267,
+    "last_name_he": "גרנות",
+    "first_name_he": "אלעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2268,
+    "last_name_he": "גרשוני",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2269,
+    "last_name_he": "דגני",
+    "first_name_he": "עמוס",
+    "is_current": false
+  },
+  {
+    "person_id": 2270,
+    "last_name_he": "דובדבני",
+    "first_name_he": "יחיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2271,
+    "last_name_he": "דויטש",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2272,
+    "last_name_he": "דון-יחיא",
+    "first_name_he": "שבתאי",
+    "is_current": false
+  },
+  {
+    "person_id": 2274,
+    "last_name_he": "דיאב",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2275,
+    "last_name_he": "דיין",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 2276,
+    "last_name_he": "דיין",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2277,
+    "last_name_he": "דיין",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2278,
+    "last_name_he": "דיין",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2279,
+    "last_name_he": "דיין",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2280,
+    "last_name_he": "דינור",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 2281,
+    "last_name_he": "דיניץ",
+    "first_name_he": "שמחה",
+    "is_current": false
+  },
+  {
+    "person_id": 2282,
+    "last_name_he": "דינשטיין",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2283,
+    "last_name_he": "דיציאן",
+    "first_name_he": "ליאון",
+    "is_current": false
+  },
+  {
+    "person_id": 2284,
+    "last_name_he": "דנינו",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2285,
+    "last_name_he": "דקל",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2286,
+    "last_name_he": "דראושה",
+    "first_name_he": "עבד-אלוהב",
+    "is_current": false
+  },
+  {
+    "person_id": 2287,
+    "last_name_he": "דרובלס",
+    "first_name_he": "מתתיהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2288,
+    "last_name_he": "דרורי",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2290,
+    "last_name_he": "דרניצקי",
+    "first_name_he": "יהודה (יודין)",
+    "is_current": false
+  },
+  {
+    "person_id": 2291,
+    "last_name_he": "דרעי",
+    "first_name_he": "אריה מכלוף",
+    "is_current": true
+  },
+  {
+    "person_id": 2292,
+    "last_name_he": "האוזנר",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2293,
+    "last_name_he": "הדר",
+    "first_name_he": "עמוס",
+    "is_current": false
+  },
+  {
+    "person_id": 2294,
+    "last_name_he": "הורביץ",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2295,
+    "last_name_he": "הכהן",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2296,
+    "last_name_he": "הכהן",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2297,
+    "last_name_he": "הכרמלי",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2298,
+    "last_name_he": "הלוי",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2299,
+    "last_name_he": "הלל",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2300,
+    "last_name_he": "המר",
+    "first_name_he": "זבולון",
+    "is_current": false
+  },
+  {
+    "person_id": 2301,
+    "last_name_he": "הן",
+    "first_name_he": "יחזקאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2302,
+    "last_name_he": "העצני",
+    "first_name_he": "אליקים",
+    "is_current": false
+  },
+  {
+    "person_id": 2304,
+    "last_name_he": "הראל",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2305,
+    "last_name_he": "הראל",
+    "first_name_he": "איסר",
+    "is_current": false
+  },
+  {
+    "person_id": 2306,
+    "last_name_he": "הראל",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 2307,
+    "last_name_he": "הראל",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2308,
+    "last_name_he": "הרינג",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2311,
+    "last_name_he": "הרפז",
+    "first_name_he": "נטע",
+    "is_current": false
+  },
+  {
+    "person_id": 2312,
+    "last_name_he": "הרצוג",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2313,
+    "last_name_he": "הרצפלד",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2314,
+    "last_name_he": "הררי",
+    "first_name_he": "יזהר",
+    "is_current": false
+  },
+  {
+    "person_id": 2315,
+    "last_name_he": "ויינברג",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2316,
+    "last_name_he": "ויינשטיין",
+    "first_name_he": "אריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2317,
+    "last_name_he": "וייס",
+    "first_name_he": "שבח",
+    "is_current": false
+  },
+  {
+    "person_id": 2319,
+    "last_name_he": "וילנר",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2320,
+    "last_name_he": "ויצמן",
+    "first_name_he": "עזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2321,
+    "last_name_he": "וירשובסקי",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2322,
+    "last_name_he": "ולדמן",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2323,
+    "last_name_he": "ונונו",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2324,
+    "last_name_he": "ורדיגר",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2325,
+    "last_name_he": "ורהפטיג",
+    "first_name_he": "זרח",
+    "is_current": false
+  },
+  {
+    "person_id": 2326,
+    "last_name_he": "ורטהיימר",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2327,
+    "last_name_he": "ורטמן",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2328,
+    "last_name_he": "ותד",
+    "first_name_he": "מחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2329,
+    "last_name_he": "ז'בוטינסקי",
+    "first_name_he": "ערי",
+    "is_current": false
+  },
+  {
+    "person_id": 2330,
+    "last_name_he": "זוארץ",
+    "first_name_he": "פריג'ה",
+    "is_current": false
+  },
+  {
+    "person_id": 2331,
+    "last_name_he": "זוילי",
+    "first_name_he": "נסים",
+    "is_current": false
+  },
+  {
+    "person_id": 2332,
+    "last_name_he": "זועבי",
+    "first_name_he": "עבדול-עזיז",
+    "is_current": false
+  },
+  {
+    "person_id": 2333,
+    "last_name_he": "זורע",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2334,
+    "last_name_he": "זיאד",
+    "first_name_he": "תופיק",
+    "is_current": false
+  },
+  {
+    "person_id": 2335,
+    "last_name_he": "זיגר",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2336,
+    "last_name_he": "זייגרמן",
+    "first_name_he": "דרור",
+    "is_current": false
+  },
+  {
+    "person_id": 2337,
+    "last_name_he": "זיידל",
+    "first_name_he": "הלל",
+    "is_current": false
+  },
+  {
+    "person_id": 2338,
+    "last_name_he": "זילברברג",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2339,
+    "last_name_he": "זיסמן",
+    "first_name_he": "עמנואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2340,
+    "last_name_he": "זיסמן",
+    "first_name_he": "שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 2341,
+    "last_name_he": "זכאי",
+    "first_name_he": "יחזקאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2342,
+    "last_name_he": "זכין",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2343,
+    "last_name_he": "זר",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2344,
+    "last_name_he": "חביבי",
+    "first_name_he": "אמיל",
+    "is_current": false
+  },
+  {
+    "person_id": 2345,
+    "last_name_he": "חג' יחיא",
+    "first_name_he": "רפיק",
+    "is_current": false
+  },
+  {
+    "person_id": 2346,
+    "last_name_he": "חדאד",
+    "first_name_he": "חנא",
+    "is_current": false
+  },
+  {
+    "person_id": 2347,
+    "last_name_he": "חושי",
+    "first_name_he": "אבא",
+    "is_current": false
+  },
+  {
+    "person_id": 2348,
+    "last_name_he": "חזן",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2349,
+    "last_name_he": "חזני",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2350,
+    "last_name_he": "חלאילה",
+    "first_name_he": "חמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2351,
+    "last_name_he": "חלפון",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 2352,
+    "last_name_he": "חמדאן",
+    "first_name_he": "פארס",
+    "is_current": false
+  },
+  {
+    "person_id": 2353,
+    "last_name_he": "חמיס",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2354,
+    "last_name_he": "חניפס",
+    "first_name_he": "סאלח",
+    "is_current": false
+  },
+  {
+    "person_id": 2355,
+    "last_name_he": "חסין",
+    "first_name_he": "אשר",
+    "is_current": false
+  },
+  {
+    "person_id": 2356,
+    "last_name_he": "חריף",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2357,
+    "last_name_he": "חריש",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2358,
+    "last_name_he": "חשאי",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2359,
+    "last_name_he": "חת",
+    "first_name_he": "נחום",
+    "is_current": false
+  },
+  {
+    "person_id": 2360,
+    "last_name_he": "טביב",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2361,
+    "last_name_he": "טבנקין",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2363,
+    "last_name_he": "טובי",
+    "first_name_he": "תופיק",
+    "is_current": false
+  },
+  {
+    "person_id": 2364,
+    "last_name_he": "טולידאנו",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2365,
+    "last_name_he": "טיאר",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2366,
+    "last_name_he": "טמקין",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2367,
+    "last_name_he": "יגורי",
+    "first_name_he": "אסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2368,
+    "last_name_he": "ידיד",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2369,
+    "last_name_he": "ידין",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2370,
+    "last_name_he": "ידלין",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2371,
+    "last_name_he": "יהב",
+    "first_name_he": "יונה",
+    "is_current": false
+  },
+  {
+    "person_id": 2372,
+    "last_name_he": "יהודה",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2373,
+    "last_name_he": "יהודה",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2374,
+    "last_name_he": "יוניצ'מן",
+    "first_name_he": "שמשון",
+    "is_current": false
+  },
+  {
+    "person_id": 2375,
+    "last_name_he": "יוסף",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2376,
+    "last_name_he": "יוסף",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2377,
+    "last_name_he": "יוספטל",
+    "first_name_he": "גיורא",
+    "is_current": false
+  },
+  {
+    "person_id": 2379,
+    "last_name_he": "ילין-מור",
+    "first_name_he": "נתן",
+    "is_current": false
+  },
+  {
+    "person_id": 2380,
+    "last_name_he": "יעקבי",
+    "first_name_he": "גד",
+    "is_current": false
+  },
+  {
+    "person_id": 2381,
+    "last_name_he": "יערי",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2382,
+    "last_name_he": "יפה",
+    "first_name_he": "אביעד",
+    "is_current": false
+  },
+  {
+    "person_id": 2383,
+    "last_name_he": "יפה",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2384,
+    "last_name_he": "יפרח",
+    "first_name_he": "יהונתן",
+    "is_current": false
+  },
+  {
+    "person_id": 2385,
+    "last_name_he": "יצחקי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2386,
+    "last_name_he": "יצחקי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2387,
+    "last_name_he": "יציב",
+    "first_name_he": "גדי",
+    "is_current": false
+  },
+  {
+    "person_id": 2388,
+    "last_name_he": "יריב",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2389,
+    "last_name_he": "ישעיהו-שרעבי",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2390,
+    "last_name_he": "כהן",
+    "first_name_he": "אידוב",
+    "is_current": false
+  },
+  {
+    "person_id": 2391,
+    "last_name_he": "כהן",
+    "first_name_he": "בנו",
+    "is_current": false
+  },
+  {
+    "person_id": 2393,
+    "last_name_he": "כהן",
+    "first_name_he": "גבריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2394,
+    "last_name_he": "כהן",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2395,
+    "last_name_he": "כהן",
+    "first_name_he": "יוחנן",
+    "is_current": false
+  },
+  {
+    "person_id": 2396,
+    "last_name_he": "כהן",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2397,
+    "last_name_he": "כהן",
+    "first_name_he": "שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 2398,
+    "last_name_he": "כהן-אבידב",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2399,
+    "last_name_he": "כהן-אורגד",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2401,
+    "last_name_he": "כהן-מגורי",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2402,
+    "last_name_he": "כהן-צידון",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2403,
+    "last_name_he": "כהנא",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2404,
+    "last_name_he": "כהנא",
+    "first_name_he": "קלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2405,
+    "last_name_he": "כלפון",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2406,
+    "last_name_he": "כנוביץ",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2407,
+    "last_name_he": "כסה",
+    "first_name_he": "יונה",
+    "is_current": false
+  },
+  {
+    "person_id": 2409,
+    "last_name_he": "כץ",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2410,
+    "last_name_he": "כץ",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2411,
+    "last_name_he": "כ\"ץ",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2412,
+    "last_name_he": "כץ",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2413,
+    "last_name_he": "כץ-עוז",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2415,
+    "last_name_he": "כרמל",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2416,
+    "last_name_he": "לבון",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2417,
+    "last_name_he": "לביא",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2418,
+    "last_name_he": "לבנבראון",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2419,
+    "last_name_he": "לבני",
+    "first_name_he": "איתן",
+    "is_current": false
+  },
+  {
+    "person_id": 2420,
+    "last_name_he": "לובוצקי",
+    "first_name_he": "אלכסנדר",
+    "is_current": false
+  },
+  {
+    "person_id": 2422,
+    "last_name_he": "לוונשטיין",
+    "first_name_he": "מאיר-דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2423,
+    "last_name_he": "לוז",
+    "first_name_he": "קדיש",
+    "is_current": false
+  },
+  {
+    "person_id": 2424,
+    "last_name_he": "לוי",
+    "first_name_he": "דניאל יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2425,
+    "last_name_he": "לוי",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2427,
+    "last_name_he": "לוין",
+    "first_name_he": "יצחק-מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2428,
+    "last_name_he": "לוין",
+    "first_name_he": "נחום",
+    "is_current": false
+  },
+  {
+    "person_id": 2429,
+    "last_name_he": "לוין",
+    "first_name_he": "שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 2430,
+    "last_name_he": "לוקר",
+    "first_name_he": "ברל",
+    "is_current": false
+  },
+  {
+    "person_id": 2431,
+    "last_name_he": "לורינץ",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2432,
+    "last_name_he": "ליבאי",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2433,
+    "last_name_he": "ליבנה",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2434,
+    "last_name_he": "ליבשיץ",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2435,
+    "last_name_he": "לייזרזון",
+    "first_name_he": "אברהם יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2436,
+    "last_name_he": "לין",
+    "first_name_he": "אוריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2437,
+    "last_name_he": "לין",
+    "first_name_he": "אמנון",
+    "is_current": false
+  },
+  {
+    "person_id": 2439,
+    "last_name_he": "ליפקין-שחק",
+    "first_name_he": "אמנון",
+    "is_current": false
+  },
+  {
+    "person_id": 2440,
+    "last_name_he": "לם",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2442,
+    "last_name_he": "לנדאו",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2443,
+    "last_name_he": "לנקין",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2444,
+    "last_name_he": "לנקרי",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2445,
+    "last_name_he": "לס",
+    "first_name_he": "יורם",
+    "is_current": false
+  },
+  {
+    "person_id": 2446,
+    "last_name_he": "לקט",
+    "first_name_he": "יחיאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2447,
+    "last_name_he": "מאיה",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2449,
+    "last_name_he": "מאסלה",
+    "first_name_he": "אדיסו",
+    "is_current": false
+  },
+  {
+    "person_id": 2450,
+    "last_name_he": "מואב",
+    "first_name_he": "בועז",
+    "is_current": false
+  },
+  {
+    "person_id": 2451,
+    "last_name_he": "מודעי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2452,
+    "last_name_he": "מוויס",
+    "first_name_he": "חנא",
+    "is_current": false
+  },
+  {
+    "person_id": 2453,
+    "last_name_he": "מויאל",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2454,
+    "last_name_he": "מועדי",
+    "first_name_he": "ג'בר",
+    "is_current": false
+  },
+  {
+    "person_id": 2455,
+    "last_name_he": "מור",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2456,
+    "last_name_he": "מזור",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2457,
+    "last_name_he": "מזרחי",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2458,
+    "last_name_he": "מזרחי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2459,
+    "last_name_he": "מילמן",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2460,
+    "last_name_he": "מימון",
+    "first_name_he": "יהודה לייב",
+    "is_current": false
+  },
+  {
+    "person_id": 2462,
+    "last_name_he": "מינץ",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2463,
+    "last_name_he": "מיעארי",
+    "first_name_he": "מוחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2464,
+    "last_name_he": "מיקוניס",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2465,
+    "last_name_he": "מירום",
+    "first_name_he": "חגי",
+    "is_current": false
+  },
+  {
+    "person_id": 2466,
+    "last_name_he": "מלמד",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2467,
+    "last_name_he": "מנע",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2468,
+    "last_name_he": "מרדכי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2469,
+    "last_name_he": "מרון",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2470,
+    "last_name_he": "מרידור",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2471,
+    "last_name_he": "מרידור",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2472,
+    "last_name_he": "מרלין",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2473,
+    "last_name_he": "מרציאנו",
+    "first_name_he": "סעדיה",
+    "is_current": false
+  },
+  {
+    "person_id": 2474,
+    "last_name_he": "משל",
+    "first_name_he": "ירוחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2475,
+    "last_name_he": "נאמן",
+    "first_name_he": "יובל",
+    "is_current": false
+  },
+  {
+    "person_id": 2476,
+    "last_name_he": "נבון",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2477,
+    "last_name_he": "נוף",
+    "first_name_he": "עקיבא",
+    "is_current": false
+  },
+  {
+    "person_id": 2478,
+    "last_name_he": "נורוק",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2479,
+    "last_name_he": "נחושתן",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2480,
+    "last_name_he": "נחלה",
+    "first_name_he": "אליאס",
+    "is_current": false
+  },
+  {
+    "person_id": 2481,
+    "last_name_he": "נחמיאס",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2482,
+    "last_name_he": "נחמן",
+    "first_name_he": "רון",
+    "is_current": false
+  },
+  {
+    "person_id": 2483,
+    "last_name_he": "נחמקין",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2484,
+    "last_name_he": "ניצני",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2485,
+    "last_name_he": "ניר",
+    "first_name_he": "צביקה",
+    "is_current": false
+  },
+  {
+    "person_id": 2486,
+    "last_name_he": "ניר-רפאלקס",
+    "first_name_he": "נחום",
+    "is_current": false
+  },
+  {
+    "person_id": 2488,
+    "last_name_he": "נמיר",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2489,
+    "last_name_he": "נסים",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2490,
+    "last_name_he": "נסראלדין",
+    "first_name_he": "אמל",
+    "is_current": false
+  },
+  {
+    "person_id": 2491,
+    "last_name_he": "נעים",
+    "first_name_he": "רענן",
+    "is_current": false
+  },
+  {
+    "person_id": 2492,
+    "last_name_he": "נפאע",
+    "first_name_he": "מוחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2493,
+    "last_name_he": "נפתלי",
+    "first_name_he": "פרץ",
+    "is_current": false
+  },
+  {
+    "person_id": 2495,
+    "last_name_he": "נריה",
+    "first_name_he": "צבי-משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2496,
+    "last_name_he": "סבג",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 2497,
+    "last_name_he": "סבידור",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2498,
+    "last_name_he": "סביר",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 2499,
+    "last_name_he": "סדן",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2500,
+    "last_name_he": "סוזאייב",
+    "first_name_he": "זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2501,
+    "last_name_he": "סויסה",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2503,
+    "last_name_he": "סורקיס",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2504,
+    "last_name_he": "סטופ",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2505,
+    "last_name_he": "סלים",
+    "first_name_he": "סאלח",
+    "is_current": false
+  },
+  {
+    "person_id": 2506,
+    "last_name_he": "סלימאן",
+    "first_name_he": "צלאח",
+    "is_current": false
+  },
+  {
+    "person_id": 2508,
+    "last_name_he": "סמילנסקי",
+    "first_name_he": "יזהר",
+    "is_current": false
+  },
+  {
+    "person_id": 2509,
+    "last_name_he": "סנה",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2511,
+    "last_name_he": "סעד",
+    "first_name_he": "אחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 2512,
+    "last_name_he": "ספיר",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2513,
+    "last_name_he": "ספיר",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2514,
+    "last_name_he": "סרדינס",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2516,
+    "last_name_he": "סרלין",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2517,
+    "last_name_he": "עבאס",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2518,
+    "last_name_he": "עוביד",
+    "first_name_he": "דיאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2519,
+    "last_name_he": "עוזיאל",
+    "first_name_he": "ברוך",
+    "is_current": false
+  },
+  {
+    "person_id": 2520,
+    "last_name_he": "עופר",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2521,
+    "last_name_he": "עופר",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2522,
+    "last_name_he": "עזרן",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2523,
+    "last_name_he": "עטשי",
+    "first_name_he": "זיידאן",
+    "is_current": false
+  },
+  {
+    "person_id": 2524,
+    "last_name_he": "עלי",
+    "first_name_he": "עובדיה",
+    "is_current": false
+  },
+  {
+    "person_id": 2525,
+    "last_name_he": "עמאר",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2526,
+    "last_name_he": "עמור",
+    "first_name_he": "שאול",
+    "is_current": false
+  },
+  {
+    "person_id": 2527,
+    "last_name_he": "עמית",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2528,
+    "last_name_he": "עמר",
+    "first_name_he": "שלמה חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2529,
+    "last_name_he": "פארס",
+    "first_name_he": "חסיין חוסיין",
+    "is_current": false
+  },
+  {
+    "person_id": 2530,
+    "last_name_he": "פדר",
+    "first_name_he": "נפתלי",
+    "is_current": false
+  },
+  {
+    "person_id": 2531,
+    "last_name_he": "פורדר",
+    "first_name_he": "ישעיהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2532,
+    "last_name_he": "פורת",
+    "first_name_he": "חנן",
+    "is_current": false
+  },
+  {
+    "person_id": 2535,
+    "last_name_he": "פיינרמן",
+    "first_name_he": "עוזי",
+    "is_current": false
+  },
+  {
+    "person_id": 2536,
+    "last_name_he": "פישר",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2537,
+    "last_name_he": "פלאטו-שרון",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2538,
+    "last_name_he": "פלד",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2539,
+    "last_name_he": "פלד",
+    "first_name_he": "מתתיהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2540,
+    "last_name_he": "פלד",
+    "first_name_he": "נתן",
+    "is_current": false
+  },
+  {
+    "person_id": 2541,
+    "last_name_he": "פלדמן",
+    "first_name_he": "משה-זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2542,
+    "last_name_he": "פלדמן",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 2543,
+    "last_name_he": "פלומין",
+    "first_name_he": "יחזקאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2544,
+    "last_name_he": "פלש",
+    "first_name_he": "ג'ורג'",
+    "is_current": false
+  },
+  {
+    "person_id": 2545,
+    "last_name_he": "פנחסי",
+    "first_name_he": "רפאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2546,
+    "last_name_he": "פנקס",
+    "first_name_he": "דוד-צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2547,
+    "last_name_he": "פעיל",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2548,
+    "last_name_he": "פרומקין",
+    "first_name_he": "השל",
+    "is_current": false
+  },
+  {
+    "person_id": 2549,
+    "last_name_he": "פרוש",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2550,
+    "last_name_he": "פרח",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2551,
+    "last_name_he": "פרי",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2553,
+    "last_name_he": "פרידמן",
+    "first_name_he": "שמחה",
+    "is_current": false
+  },
+  {
+    "person_id": 2554,
+    "last_name_he": "פרלשטיין",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2555,
+    "last_name_he": "פרמינגר",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2556,
+    "last_name_he": "פרנק",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2558,
+    "last_name_he": "פרץ",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2559,
+    "last_name_he": "פרץ",
+    "first_name_he": "יצחק-חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2560,
+    "last_name_he": "פת",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2561,
+    "last_name_he": "פתל",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2562,
+    "last_name_he": "צאדק חאג'-יחיא",
+    "first_name_he": "וליד",
+    "is_current": false
+  },
+  {
+    "person_id": 2563,
+    "last_name_he": "צבן",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2565,
+    "last_name_he": "צדוק",
+    "first_name_he": "חיים יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2566,
+    "last_name_he": "צוקר",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2567,
+    "last_name_he": "צור",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2568,
+    "last_name_he": "צור",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2569,
+    "last_name_he": "צור",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2570,
+    "last_name_he": "צידון",
+    "first_name_he": "יואש",
+    "is_current": false
+  },
+  {
+    "person_id": 2571,
+    "last_name_he": "ציזלינג",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2572,
+    "last_name_he": "צימרמן",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2573,
+    "last_name_he": "צפורי-הנדין",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 2574,
+    "last_name_he": "קהלני",
+    "first_name_he": "אביגדור",
+    "is_current": false
+  },
+  {
+    "person_id": 2575,
+    "last_name_he": "קול",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2576,
+    "last_name_he": "קולס",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2577,
+    "last_name_he": "קופמן",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2578,
+    "last_name_he": "קוק",
+    "first_name_he": "הלל",
+    "is_current": false
+  },
+  {
+    "person_id": 2579,
+    "last_name_he": "קורן",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2580,
+    "last_name_he": "קורן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2581,
+    "last_name_he": "קורפו",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2582,
+    "last_name_he": "קושניר",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2583,
+    "last_name_he": "קיסר",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2584,
+    "last_name_he": "קליבנוב",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2585,
+    "last_name_he": "קלינגהופר",
+    "first_name_he": "יצחק-הנס",
+    "is_current": false
+  },
+  {
+    "person_id": 2586,
+    "last_name_he": "קלמר",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2587,
+    "last_name_he": "קמין",
+    "first_name_he": "ברוך",
+    "is_current": false
+  },
+  {
+    "person_id": 2588,
+    "last_name_he": "קנב",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2589,
+    "last_name_he": "קסיס",
+    "first_name_he": "מסעד",
+    "is_current": false
+  },
+  {
+    "person_id": 2590,
+    "last_name_he": "קפלן",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2592,
+    "last_name_he": "קרגמן",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2593,
+    "last_name_he": "קרמרמן",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2594,
+    "last_name_he": "ראם",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2595,
+    "last_name_he": "רבין",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2596,
+    "last_name_he": "רבינוביץ",
+    "first_name_he": "יהושע",
+    "is_current": false
+  },
+  {
+    "person_id": 2597,
+    "last_name_he": "רובין",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 2598,
+    "last_name_he": "רובין",
+    "first_name_he": "חנן",
+    "is_current": false
+  },
+  {
+    "person_id": 2599,
+    "last_name_he": "רוזוליו",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2600,
+    "last_name_he": "רוזן",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2601,
+    "last_name_he": "רוזן",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 2602,
+    "last_name_he": "רום",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2603,
+    "last_name_he": "רון",
+    "first_name_he": "אמרי",
+    "is_current": false
+  },
+  {
+    "person_id": 2604,
+    "last_name_he": "רונן",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2605,
+    "last_name_he": "רוקח",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 2606,
+    "last_name_he": "רז",
+    "first_name_he": "נחמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2608,
+    "last_name_he": "רייסר",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 2609,
+    "last_name_he": "רימלט",
+    "first_name_he": "אלימלך-שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2610,
+    "last_name_he": "ריפתין",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2611,
+    "last_name_he": "רכטמן",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2612,
+    "last_name_he": "רמז",
+    "first_name_he": "אהרן",
+    "is_current": false
+  },
+  {
+    "person_id": 2613,
+    "last_name_he": "רמז",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2614,
+    "last_name_he": "רנר",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2615,
+    "last_name_he": "רפאל",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2616,
+    "last_name_he": "רפטור",
+    "first_name_he": "ברל",
+    "is_current": false
+  },
+  {
+    "person_id": 2617,
+    "last_name_he": "רצון",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 2618,
+    "last_name_he": "רקנטי",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2619,
+    "last_name_he": "שאג",
+    "first_name_he": "אברהם חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2620,
+    "last_name_he": "שאקי",
+    "first_name_he": "אבנר-חי",
+    "is_current": false
+  },
+  {
+    "person_id": 2621,
+    "last_name_he": "שאקי",
+    "first_name_he": "שלום אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2622,
+    "last_name_he": "שגב",
+    "first_name_he": "גונן",
+    "is_current": false
+  },
+  {
+    "person_id": 2623,
+    "last_name_he": "שגיא",
+    "first_name_he": "גדעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2624,
+    "last_name_he": "שגיא",
+    "first_name_he": "יהושע",
+    "is_current": false
+  },
+  {
+    "person_id": 2625,
+    "last_name_he": "שובל",
+    "first_name_he": "זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2626,
+    "last_name_he": "שומר",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2627,
+    "last_name_he": "שוסטק",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 2628,
+    "last_name_he": "שופמן",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2629,
+    "last_name_he": "שוקן",
+    "first_name_he": "גרשום",
+    "is_current": false
+  },
+  {
+    "person_id": 2630,
+    "last_name_he": "שורש",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 2631,
+    "last_name_he": "שזר",
+    "first_name_he": "זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 2632,
+    "last_name_he": "שחור",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2633,
+    "last_name_he": "שחל",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2634,
+    "last_name_he": "שטרית",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 2635,
+    "last_name_he": "שטרן",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2636,
+    "last_name_he": "שטרן",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2637,
+    "last_name_he": "שטרן",
+    "first_name_he": "מרדכי-חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 2639,
+    "last_name_he": "שיטרית",
+    "first_name_he": "בכור-שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 2640,
+    "last_name_he": "שיכמן",
+    "first_name_he": "שבתאי",
+    "is_current": false
+  },
+  {
+    "person_id": 2641,
+    "last_name_he": "שילוח",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 2642,
+    "last_name_he": "שילנסקי",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 2643,
+    "last_name_he": "שינמן",
+    "first_name_he": "פנחס",
+    "is_current": false
+  },
+  {
+    "person_id": 2644,
+    "last_name_he": "שיפמן",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 2645,
+    "last_name_he": "שכטרמן",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2646,
+    "last_name_he": "שלום",
+    "first_name_he": "אפרים",
+    "is_current": false
+  },
+  {
+    "person_id": 2647,
+    "last_name_he": "שליטא",
+    "first_name_he": "בני",
+    "is_current": false
+  },
+  {
+    "person_id": 2648,
+    "last_name_he": "שם-טוב",
+    "first_name_he": "ויקטור",
+    "is_current": false
+  },
+  {
+    "person_id": 2649,
+    "last_name_he": "שמאי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2650,
+    "last_name_he": "שמואלי",
+    "first_name_he": "דורון",
+    "is_current": false
+  },
+  {
+    "person_id": 2652,
+    "last_name_he": "שמיר",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 2653,
+    "last_name_he": "שמיר",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2654,
+    "last_name_he": "שמעוני",
+    "first_name_he": "חביב",
+    "is_current": false
+  },
+  {
+    "person_id": 2655,
+    "last_name_he": "שערי",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 2656,
+    "last_name_he": "שפט",
+    "first_name_he": "גרשון",
+    "is_current": false
+  },
+  {
+    "person_id": 2657,
+    "last_name_he": "שפטל",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 2658,
+    "last_name_he": "שפי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 2659,
+    "last_name_he": "שפייזר",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2660,
+    "last_name_he": "שפירא",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2661,
+    "last_name_he": "שפירא",
+    "first_name_he": "חיים משה",
+    "is_current": false
+  },
+  {
+    "person_id": 2662,
+    "last_name_he": "שפירא",
+    "first_name_he": "יעקב-שמשון",
+    "is_current": false
+  },
+  {
+    "person_id": 2663,
+    "last_name_he": "שפר",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2664,
+    "last_name_he": "שפרינצק",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2665,
+    "last_name_he": "שפרינצק",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2666,
+    "last_name_he": "שרי",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 2667,
+    "last_name_he": "שריר",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 2668,
+    "last_name_he": "שרף",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 2669,
+    "last_name_he": "ששון",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 2670,
+    "last_name_he": "ששון-סילס",
+    "first_name_he": "בנימין",
+    "is_current": false
+  },
+  {
+    "person_id": 2671,
+    "last_name_he": "תבורי",
+    "first_name_he": "אפרים",
+    "is_current": false
+  },
+  {
+    "person_id": 2672,
+    "last_name_he": "תיכון",
+    "first_name_he": "דן",
+    "is_current": false
+  },
+  {
+    "person_id": 2674,
+    "last_name_he": "תלמי",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 2675,
+    "last_name_he": "תמיר",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 2676,
+    "last_name_he": "תמיר",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 4156,
+    "last_name_he": "צור",
+    "first_name_he": "רונן",
+    "is_current": false
+  },
+  {
+    "person_id": 4175,
+    "last_name_he": "קורן",
+    "first_name_he": "דני",
+    "is_current": false
+  },
+  {
+    "person_id": 4295,
+    "last_name_he": "סוייד",
+    "first_name_he": "חנא",
+    "is_current": false
+  },
+  {
+    "person_id": 4297,
+    "last_name_he": "צרצור",
+    "first_name_he": "אברהים",
+    "is_current": false
+  },
+  {
+    "person_id": 4298,
+    "last_name_he": "איתן",
+    "first_name_he": "רפי",
+    "is_current": false
+  },
+  {
+    "person_id": 4299,
+    "last_name_he": "בן-יזרי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 4300,
+    "last_name_he": "שרוני",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 4301,
+    "last_name_he": "זיו",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 4302,
+    "last_name_he": "גלנטי",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 4303,
+    "last_name_he": "גלזר",
+    "first_name_he": "אלחנן",
+    "is_current": false
+  },
+  {
+    "person_id": 4355,
+    "last_name_he": "חסון",
+    "first_name_he": "יואל",
+    "is_current": false
+  },
+  {
+    "person_id": 4376,
+    "last_name_he": "חסון",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 4395,
+    "last_name_he": "דיכטר",
+    "first_name_he": "אבי",
+    "is_current": true
+  },
+  {
+    "person_id": 4396,
+    "last_name_he": "רייכמן",
+    "first_name_he": "אוריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 4397,
+    "last_name_he": "אלקין",
+    "first_name_he": "זאב",
+    "is_current": true
+  },
+  {
+    "person_id": 4398,
+    "last_name_he": "בן-ששון",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 4399,
+    "last_name_he": "ברזניץ",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 4401,
+    "last_name_he": "שנלר",
+    "first_name_he": "עתניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 4402,
+    "last_name_he": "יצחקי",
+    "first_name_he": "אביגדור",
+    "is_current": false
+  },
+  {
+    "person_id": 4403,
+    "last_name_he": "מרציאנו",
+    "first_name_he": "יורם",
+    "is_current": false
+  },
+  {
+    "person_id": 4406,
+    "last_name_he": "אילון",
+    "first_name_he": "עמיחי",
+    "is_current": false
+  },
+  {
+    "person_id": 4407,
+    "last_name_he": "ברוורמן",
+    "first_name_he": "אבישי",
+    "is_current": false
+  },
+  {
+    "person_id": 4409,
+    "last_name_he": "מילר",
+    "first_name_he": "אלכס",
+    "is_current": false
+  },
+  {
+    "person_id": 4410,
+    "last_name_he": "שגל",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 4411,
+    "last_name_he": "מיסז'ניקוב",
+    "first_name_he": "סטס",
+    "is_current": false
+  },
+  {
+    "person_id": 4412,
+    "last_name_he": "אילטוב",
+    "first_name_he": "רוברט",
+    "is_current": false
+  },
+  {
+    "person_id": 4413,
+    "last_name_he": "אהרונוביץ'",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 4414,
+    "last_name_he": "כהן",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 4415,
+    "last_name_he": "זכור",
+    "first_name_he": "עבאס",
+    "is_current": false
+  },
+  {
+    "person_id": 4416,
+    "last_name_he": "חנין",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 4417,
+    "last_name_he": "אטיאס",
+    "first_name_he": "אריאל",
+    "is_current": false
+  },
+  {
+    "person_id": 4418,
+    "last_name_he": "אמסלם",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 4419,
+    "last_name_he": "מיכאלי",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 4635,
+    "last_name_he": "חרמש",
+    "first_name_he": "שי",
+    "is_current": false
+  },
+  {
+    "person_id": 5895,
+    "last_name_he": "ורדי",
+    "first_name_he": "הרצל",
+    "is_current": false
+  },
+  {
+    "person_id": 5897,
+    "last_name_he": "לוריא",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 5898,
+    "last_name_he": "סגל",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 5899,
+    "last_name_he": "שטנר",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 5900,
+    "last_name_he": "שטרנברג",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 5901,
+    "last_name_he": "אוסטר",
+    "first_name_he": "דניאל ",
+    "is_current": false
+  },
+  {
+    "person_id": 5902,
+    "last_name_he": "ברלין",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 5903,
+    "last_name_he": "גולד",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 5904,
+    "last_name_he": "גרינבוים",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 5906,
+    "last_name_he": "דובקין",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 5907,
+    "last_name_he": "כובאשי",
+    "first_name_he": "סעדיה",
+    "is_current": false
+  },
+  {
+    "person_id": 5908,
+    "last_name_he": "קצנלסון",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 5909,
+    "last_name_he": "פישמן",
+    "first_name_he": "יהודה לייב הכהן",
+    "is_current": false
+  },
+  {
+    "person_id": 5955,
+    "last_name_he": "קשת",
+    "first_name_he": "בן-ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 5975,
+    "last_name_he": "אופיר",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 5976,
+    "last_name_he": "אירסרזון",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 5977,
+    "last_name_he": "בורלא",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 5978,
+    "last_name_he": "ברלין",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 5979,
+    "last_name_he": "הגר",
+    "first_name_he": "מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 5980,
+    "last_name_he": "הרטמן",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 5981,
+    "last_name_he": "וילקומיץ",
+    "first_name_he": "אסף",
+    "is_current": false
+  },
+  {
+    "person_id": 5982,
+    "last_name_he": "וינשטיין",
+    "first_name_he": "ברוך",
+    "is_current": false
+  },
+  {
+    "person_id": 5983,
+    "last_name_he": "טצה",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 5984,
+    "last_name_he": "כהן",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 5986,
+    "last_name_he": "לופבן",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 5987,
+    "last_name_he": "למברגר",
+    "first_name_he": "שמואל",
+    "is_current": false
+  },
+  {
+    "person_id": 5988,
+    "last_name_he": "לנדוי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 5989,
+    "last_name_he": "משאט",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 5990,
+    "last_name_he": "סירקיס",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 5991,
+    "last_name_he": "רובין",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 5992,
+    "last_name_he": "שוורץ",
+    "first_name_he": "קופל",
+    "is_current": false
+  },
+  {
+    "person_id": 6076,
+    "last_name_he": "רותם",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 6235,
+    "last_name_he": "נפאע",
+    "first_name_he": "סעיד",
+    "is_current": false
+  },
+  {
+    "person_id": 7035,
+    "last_name_he": "בן ישראל",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 7736,
+    "last_name_he": "פלסנר",
+    "first_name_he": "יוחנן",
+    "is_current": false
+  },
+  {
+    "person_id": 9315,
+    "last_name_he": "מולה",
+    "first_name_he": "שלמה",
+    "is_current": false
+  },
+  {
+    "person_id": 9615,
+    "last_name_he": "בר",
+    "first_name_he": "יחיאל חיליק",
+    "is_current": false
+  },
+  {
+    "person_id": 10355,
+    "last_name_he": "בהיינה",
+    "first_name_he": "מזור",
+    "is_current": false
+  },
+  {
+    "person_id": 10555,
+    "last_name_he": "שנאן",
+    "first_name_he": "שכיב מוראד",
+    "is_current": false
+  },
+  {
+    "person_id": 11235,
+    "last_name_he": "ליטינצקי",
+    "first_name_he": "לאון",
+    "is_current": false
+  },
+  {
+    "person_id": 11835,
+    "last_name_he": "מקלב",
+    "first_name_he": "אורי",
+    "is_current": true
+  },
+  {
+    "person_id": 12835,
+    "last_name_he": "פולק",
+    "first_name_he": "יהושע מנחם",
+    "is_current": false
+  },
+  {
+    "person_id": 12936,
+    "last_name_he": "אגבאריה",
+    "first_name_he": "עפו",
+    "is_current": false
+  },
+  {
+    "person_id": 12937,
+    "last_name_he": "אקוניס",
+    "first_name_he": "אופיר",
+    "is_current": false
+  },
+  {
+    "person_id": 12938,
+    "last_name_he": "עמאר",
+    "first_name_he": "חמד",
+    "is_current": true
+  },
+  {
+    "person_id": 12939,
+    "last_name_he": "אילון",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 12941,
+    "last_name_he": "בילסקי",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 12942,
+    "last_name_he": "בן-ארי",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 12943,
+    "last_name_he": "ביבי",
+    "first_name_he": "אריה",
+    "is_current": false
+  },
+  {
+    "person_id": 12944,
+    "last_name_he": "דנון",
+    "first_name_he": "דני",
+    "is_current": false
+  },
+  {
+    "person_id": 12945,
+    "last_name_he": "גנאים",
+    "first_name_he": "מסעוד",
+    "is_current": false
+  },
+  {
+    "person_id": 12946,
+    "last_name_he": "הרשקוביץ",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 12947,
+    "last_name_he": "הורוביץ",
+    "first_name_he": "ניצן",
+    "is_current": false
+  },
+  {
+    "person_id": 12949,
+    "last_name_he": "כץ",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 12951,
+    "last_name_he": "לוין",
+    "first_name_he": "יריב",
+    "is_current": true
+  },
+  {
+    "person_id": 12953,
+    "last_name_he": "מטלון",
+    "first_name_he": "משה (מוץ)",
+    "is_current": false
+  },
+  {
+    "person_id": 12955,
+    "last_name_he": "מוזס",
+    "first_name_he": "מנחם אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 12956,
+    "last_name_he": "אורבך",
+    "first_name_he": "אורי",
+    "is_current": false
+  },
+  {
+    "person_id": 12957,
+    "last_name_he": "פלד",
+    "first_name_he": "יוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 12958,
+    "last_name_he": "פיניאן",
+    "first_name_he": "ציון",
+    "is_current": false
+  },
+  {
+    "person_id": 12960,
+    "last_name_he": "שאמה-הכהן",
+    "first_name_he": "כרמל",
+    "is_current": false
+  },
+  {
+    "person_id": 12961,
+    "last_name_he": "שי",
+    "first_name_he": "נחמן",
+    "is_current": false
+  },
+  {
+    "person_id": 12962,
+    "last_name_he": "טיבייב",
+    "first_name_he": "רוברט",
+    "is_current": false
+  },
+  {
+    "person_id": 12963,
+    "last_name_he": "יעלון",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 12966,
+    "last_name_he": "בן-סימון",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 18990,
+    "last_name_he": "אביטל",
+    "first_name_he": "דורון",
+    "is_current": false
+  },
+  {
+    "person_id": 21431,
+    "last_name_he": "דואן",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 22091,
+    "last_name_he": "צלנר",
+    "first_name_he": "יובל",
+    "is_current": false
+  },
+  {
+    "person_id": 22151,
+    "last_name_he": "חסון",
+    "first_name_he": "אכרם",
+    "is_current": true
+  },
+  {
+    "person_id": 22811,
+    "last_name_he": "דבאח",
+    "first_name_he": "אחמד",
+    "is_current": false
+  },
+  {
+    "person_id": 22911,
+    "last_name_he": "אדמסו",
+    "first_name_he": "אללי",
+    "is_current": false
+  },
+  {
+    "person_id": 23511,
+    "last_name_he": "בנט",
+    "first_name_he": "נפתלי",
+    "is_current": false
+  },
+  {
+    "person_id": 23531,
+    "last_name_he": "בן-דהן",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 23532,
+    "last_name_he": "כלפה",
+    "first_name_he": "זבולון",
+    "is_current": false
+  },
+  {
+    "person_id": 23533,
+    "last_name_he": "וורצמן",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 23534,
+    "last_name_he": "יוגב",
+    "first_name_he": "מרדכי",
+    "is_current": false
+  },
+  {
+    "person_id": 23552,
+    "last_name_he": "שטבון",
+    "first_name_he": "יוני",
+    "is_current": false
+  },
+  {
+    "person_id": 23555,
+    "last_name_he": "שמיר",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 23556,
+    "last_name_he": "פייגלין",
+    "first_name_he": "משה זלמן",
+    "is_current": false
+  },
+  {
+    "person_id": 23557,
+    "last_name_he": "אוחיון",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 23558,
+    "last_name_he": "ביטן",
+    "first_name_he": "דוד",
+    "is_current": true
+  },
+  {
+    "person_id": 23564,
+    "last_name_he": "אמסלם",
+    "first_name_he": "דוד",
+    "is_current": true
+  },
+  {
+    "person_id": 23567,
+    "last_name_he": "מרגלית",
+    "first_name_he": "אראל",
+    "is_current": false
+  },
+  {
+    "person_id": 23568,
+    "last_name_he": "שמולי",
+    "first_name_he": "איציק",
+    "is_current": false
+  },
+  {
+    "person_id": 23569,
+    "last_name_he": "רוזנטל",
+    "first_name_he": "מיקי",
+    "is_current": false
+  },
+  {
+    "person_id": 23571,
+    "last_name_he": "מזרחי",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 23572,
+    "last_name_he": "עטר",
+    "first_name_he": "דניאל",
+    "is_current": false
+  },
+  {
+    "person_id": 23573,
+    "last_name_he": "יונה",
+    "first_name_he": "יוסי",
+    "is_current": false
+  },
+  {
+    "person_id": 23591,
+    "last_name_he": "שטרן",
+    "first_name_he": "אלעזר",
+    "is_current": true
+  },
+  {
+    "person_id": 23592,
+    "last_name_he": "צור",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 23594,
+    "last_name_he": "לפיד",
+    "first_name_he": "יאיר",
+    "is_current": true
+  },
+  {
+    "person_id": 23595,
+    "last_name_he": "פירון",
+    "first_name_he": "שי",
+    "is_current": false
+  },
+  {
+    "person_id": 23597,
+    "last_name_he": "כהן",
+    "first_name_he": "מאיר",
+    "is_current": true
+  },
+  {
+    "person_id": 23598,
+    "last_name_he": "פרי",
+    "first_name_he": "יעקב",
+    "is_current": false
+  },
+  {
+    "person_id": 23600,
+    "last_name_he": "שלח",
+    "first_name_he": "עפר",
+    "is_current": false
+  },
+  {
+    "person_id": 23601,
+    "last_name_he": "רזבוזוב",
+    "first_name_he": "יואל",
+    "is_current": false
+  },
+  {
+    "person_id": 23632,
+    "last_name_he": "לוי",
+    "first_name_he": "מיקי",
+    "is_current": true
+  },
+  {
+    "person_id": 23633,
+    "last_name_he": "סולומון",
+    "first_name_he": "שמעון",
+    "is_current": false
+  },
+  {
+    "person_id": 23638,
+    "last_name_he": "ליפמן",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 23639,
+    "last_name_he": "טופורובסקי",
+    "first_name_he": "בועז",
+    "is_current": false
+  },
+  {
+    "person_id": 23640,
+    "last_name_he": "הופמן",
+    "first_name_he": "רונן",
+    "is_current": false
+  },
+  {
+    "person_id": 23641,
+    "last_name_he": "אשר",
+    "first_name_he": "יעקב",
+    "is_current": true
+  },
+  {
+    "person_id": 23642,
+    "last_name_he": "אבו עראר",
+    "first_name_he": "טלב",
+    "is_current": false
+  },
+  {
+    "person_id": 23643,
+    "last_name_he": "גטאס",
+    "first_name_he": "באסל",
+    "is_current": false
+  },
+  {
+    "person_id": 23652,
+    "last_name_he": "פריג'",
+    "first_name_he": "עיסאווי",
+    "is_current": false
+  },
+  {
+    "person_id": 23673,
+    "last_name_he": "בר לב",
+    "first_name_he": "עמר",
+    "is_current": false
+  },
+  {
+    "person_id": 28513,
+    "last_name_he": "בן צור",
+    "first_name_he": "יואב",
+    "is_current": true
+  },
+  {
+    "person_id": 29855,
+    "last_name_he": "אדרי",
+    "first_name_he": "ליאור",
+    "is_current": false
+  },
+  {
+    "person_id": 30014,
+    "last_name_he": "הורוביץ",
+    "first_name_he": "הלל אילן",
+    "is_current": false
+  },
+  {
+    "person_id": 30054,
+    "last_name_he": "מגל",
+    "first_name_he": "ינון",
+    "is_current": false
+  },
+  {
+    "person_id": 30055,
+    "last_name_he": "סמוטריץ'",
+    "first_name_he": "בצלאל",
+    "is_current": true
+  },
+  {
+    "person_id": 30056,
+    "last_name_he": "לוי",
+    "first_name_he": "ז'קי",
+    "is_current": false
+  },
+  {
+    "person_id": 30057,
+    "last_name_he": "קיש",
+    "first_name_he": "יואב",
+    "is_current": true
+  },
+  {
+    "person_id": 30058,
+    "last_name_he": "זוהר",
+    "first_name_he": "מכלוף מיקי",
+    "is_current": true
+  },
+  {
+    "person_id": 30060,
+    "last_name_he": "טרכטנברג",
+    "first_name_he": "מנואל",
+    "is_current": false
+  },
+  {
+    "person_id": 30062,
+    "last_name_he": "בהלול",
+    "first_name_he": "זוהיר",
+    "is_current": false
+  },
+  {
+    "person_id": 30063,
+    "last_name_he": "ברושי",
+    "first_name_he": "איתן",
+    "is_current": false
+  },
+  {
+    "person_id": 30066,
+    "last_name_he": "עודה",
+    "first_name_he": "איימן",
+    "is_current": true
+  },
+  {
+    "person_id": 30068,
+    "last_name_he": "חאג' יחיא",
+    "first_name_he": "עבד אל חכים",
+    "is_current": false
+  },
+  {
+    "person_id": 30069,
+    "last_name_he": "ג'בארין",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 30070,
+    "last_name_he": "סעדי",
+    "first_name_he": "אוסאמה",
+    "is_current": false
+  },
+  {
+    "person_id": 30071,
+    "last_name_he": "אבו מערוף",
+    "first_name_he": "עבדאללה",
+    "is_current": false
+  },
+  {
+    "person_id": 30074,
+    "last_name_he": "ילין",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 30076,
+    "last_name_he": "גל",
+    "first_name_he": "שרון",
+    "is_current": false
+  },
+  {
+    "person_id": 30077,
+    "last_name_he": "גלנט",
+    "first_name_he": "יואב",
+    "is_current": false
+  },
+  {
+    "person_id": 30078,
+    "last_name_he": "אלאלוף",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 30079,
+    "last_name_he": "אורן",
+    "first_name_he": "מיכאל",
+    "is_current": false
+  },
+  {
+    "person_id": 30083,
+    "last_name_he": "כהן",
+    "first_name_he": "אלי",
+    "is_current": true
+  },
+  {
+    "person_id": 30084,
+    "last_name_he": "פולקמן",
+    "first_name_he": "רועי",
+    "is_current": false
+  },
+  {
+    "person_id": 30095,
+    "last_name_he": "נגוסה",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 30097,
+    "last_name_he": "מזוז",
+    "first_name_he": "ירון",
+    "is_current": false
+  },
+  {
+    "person_id": 30098,
+    "last_name_he": "חזן",
+    "first_name_he": "אורן אסף",
+    "is_current": false
+  },
+  {
+    "person_id": 30099,
+    "last_name_he": "בן ראובן",
+    "first_name_he": "איל",
+    "is_current": false
+  },
+  {
+    "person_id": 30117,
+    "last_name_he": "גבאי",
+    "first_name_he": "אבי",
+    "is_current": false
+  },
+  {
+    "person_id": 30121,
+    "last_name_he": "פורר",
+    "first_name_he": "עודד",
+    "is_current": true
+  },
+  {
+    "person_id": 30299,
+    "last_name_he": "נתונים",
+    "first_name_he": "אין",
+    "is_current": false
+  },
+  {
+    "person_id": 30300,
+    "last_name_he": "אוחנה",
+    "first_name_he": "אמיר",
+    "is_current": true
+  },
+  {
+    "person_id": 30328,
+    "last_name_he": "גואטה",
+    "first_name_he": "יגאל",
+    "is_current": false
+  },
+  {
+    "person_id": 30407,
+    "last_name_he": "גליק",
+    "first_name_he": "יהודה",
+    "is_current": false
+  },
+  {
+    "person_id": 30470,
+    "last_name_he": "מלכיאלי",
+    "first_name_he": "מיכאל",
+    "is_current": true
+  },
+  {
+    "person_id": 30480,
+    "last_name_he": "בצלאל",
+    "first_name_he": "אברהם",
+    "is_current": false
+  },
+  {
+    "person_id": 30520,
+    "last_name_he": "אזברגה",
+    "first_name_he": "ג'מעה",
+    "is_current": false
+  },
+  {
+    "person_id": 30548,
+    "last_name_he": "אלחרומי",
+    "first_name_he": "סעיד",
+    "is_current": false
+  },
+  {
+    "person_id": 30549,
+    "last_name_he": "סיידה",
+    "first_name_he": "דן",
+    "is_current": false
+  },
+  {
+    "person_id": 30550,
+    "last_name_he": "חג'אזי",
+    "first_name_he": "אבראהים",
+    "is_current": false
+  },
+  {
+    "person_id": 30554,
+    "last_name_he": "סעד",
+    "first_name_he": "סאלח",
+    "is_current": false
+  },
+  {
+    "person_id": 30558,
+    "last_name_he": "עטאונה",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 30588,
+    "last_name_he": "יונס",
+    "first_name_he": "ואאל",
+    "is_current": false
+  },
+  {
+    "person_id": 30601,
+    "last_name_he": "אזולאי",
+    "first_name_he": "ינון",
+    "is_current": true
+  },
+  {
+    "person_id": 30654,
+    "last_name_he": "סיום",
+    "first_name_he": "פנתהון",
+    "is_current": false
+  },
+  {
+    "person_id": 30657,
+    "last_name_he": "גנץ",
+    "first_name_he": "בנימין",
+    "is_current": true
+  },
+  {
+    "person_id": 30660,
+    "last_name_he": "ארבל",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 30662,
+    "last_name_he": "כהנא",
+    "first_name_he": "מתן",
+    "is_current": false
+  },
+  {
+    "person_id": 30671,
+    "last_name_he": "טסלר",
+    "first_name_he": "יעקב",
+    "is_current": true
+  },
+  {
+    "person_id": 30672,
+    "last_name_he": "פינדרוס",
+    "first_name_he": "יצחק",
+    "is_current": true
+  },
+  {
+    "person_id": 30677,
+    "last_name_he": "אשכנזי",
+    "first_name_he": "גבי",
+    "is_current": false
+  },
+  {
+    "person_id": 30678,
+    "last_name_he": "ניסנקורן",
+    "first_name_he": "אבי",
+    "is_current": false
+  },
+  {
+    "person_id": 30680,
+    "last_name_he": "הנדל",
+    "first_name_he": "יועז",
+    "is_current": false
+  },
+  {
+    "person_id": 30682,
+    "last_name_he": "ביטון",
+    "first_name_he": "מיכאל מרדכי",
+    "is_current": true
+  },
+  {
+    "person_id": 30683,
+    "last_name_he": "טרופר",
+    "first_name_he": "חילי",
+    "is_current": true
+  },
+  {
+    "person_id": 30684,
+    "last_name_he": "האוזר",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 30687,
+    "last_name_he": "זמיר",
+    "first_name_he": "אסף",
+    "is_current": false
+  },
+  {
+    "person_id": 30688,
+    "last_name_he": "שי",
+    "first_name_he": "יזהר",
+    "is_current": false
+  },
+  {
+    "person_id": 30691,
+    "last_name_he": "בן ברק",
+    "first_name_he": "רם",
+    "is_current": true
+  },
+  {
+    "person_id": 30693,
+    "last_name_he": "גינזבורג",
+    "first_name_he": "איתן",
+    "is_current": true
+  },
+  {
+    "person_id": 30694,
+    "last_name_he": "שוסטר",
+    "first_name_he": "אלון",
+    "is_current": true
+  },
+  {
+    "person_id": 30695,
+    "last_name_he": "סגלוביץ'",
+    "first_name_he": "יואב",
+    "is_current": false
+  },
+  {
+    "person_id": 30696,
+    "last_name_he": "שפע",
+    "first_name_he": "רם",
+    "is_current": false
+  },
+  {
+    "person_id": 30698,
+    "last_name_he": "רוסו",
+    "first_name_he": "טל",
+    "is_current": false
+  },
+  {
+    "person_id": 30700,
+    "last_name_he": "ברקת",
+    "first_name_he": "ניר",
+    "is_current": true
+  },
+  {
+    "person_id": 30701,
+    "last_name_he": "כץ",
+    "first_name_he": "אופיר",
+    "is_current": true
+  },
+  {
+    "person_id": 30704,
+    "last_name_he": "קרעי",
+    "first_name_he": "שלמה",
+    "is_current": true
+  },
+  {
+    "person_id": 30707,
+    "last_name_he": "מולא",
+    "first_name_he": "פטין",
+    "is_current": false
+  },
+  {
+    "person_id": 30709,
+    "last_name_he": "דיין",
+    "first_name_he": "עוזי",
+    "is_current": false
+  },
+  {
+    "person_id": 30710,
+    "last_name_he": "קלנר",
+    "first_name_he": "אריאל",
+    "is_current": true
+  },
+  {
+    "person_id": 30711,
+    "last_name_he": "הלוי",
+    "first_name_he": "עמית",
+    "is_current": true
+  },
+  {
+    "person_id": 30713,
+    "last_name_he": "עבאס",
+    "first_name_he": "מנסור",
+    "is_current": true
+  },
+  {
+    "person_id": 30714,
+    "last_name_he": "שחאדה",
+    "first_name_he": "אנטאנס",
+    "is_current": false
+  },
+  {
+    "person_id": 30716,
+    "last_name_he": "פרץ",
+    "first_name_he": "רפי",
+    "is_current": false
+  },
+  {
+    "person_id": 30717,
+    "last_name_he": "סופר",
+    "first_name_he": "אופיר",
+    "is_current": true
+  },
+  {
+    "person_id": 30719,
+    "last_name_he": "כסיף",
+    "first_name_he": "עופר",
+    "is_current": true
+  },
+  {
+    "person_id": 30720,
+    "last_name_he": "להב הרצנו",
+    "first_name_he": "יוראי",
+    "is_current": true
+  },
+  {
+    "person_id": 30721,
+    "last_name_he": "רול",
+    "first_name_he": "עידן",
+    "is_current": false
+  },
+  {
+    "person_id": 30722,
+    "last_name_he": "סובה",
+    "first_name_he": "יבגני",
+    "is_current": true
+  },
+  {
+    "person_id": 30723,
+    "last_name_he": "אבידר",
+    "first_name_he": "אלי",
+    "is_current": false
+  },
+  {
+    "person_id": 30724,
+    "last_name_he": "יברקן",
+    "first_name_he": "דסטה גדי",
+    "is_current": false
+  },
+  {
+    "person_id": 30741,
+    "last_name_he": "קושניר",
+    "first_name_he": "אלכס",
+    "is_current": false
+  },
+  {
+    "person_id": 30743,
+    "last_name_he": "גולן",
+    "first_name_he": "יאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 30746,
+    "last_name_he": "איפראימוב",
+    "first_name_he": "מרק",
+    "is_current": false
+  },
+  {
+    "person_id": 30749,
+    "last_name_he": "אבוטבול",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 30750,
+    "last_name_he": "עסאקלה",
+    "first_name_he": "ג'אבר",
+    "is_current": false
+  },
+  {
+    "person_id": 30751,
+    "last_name_he": "אבו שחאדה",
+    "first_name_he": "סמי",
+    "is_current": false
+  },
+  {
+    "person_id": 30752,
+    "last_name_he": "טאהא",
+    "first_name_he": "ווליד",
+    "is_current": true
+  },
+  {
+    "person_id": 30760,
+    "last_name_he": "קוז'ינוב",
+    "first_name_he": "אנדרי",
+    "is_current": false
+  },
+  {
+    "person_id": 30765,
+    "last_name_he": "בוסו",
+    "first_name_he": "אוריאל",
+    "is_current": true
+  },
+  {
+    "person_id": 30767,
+    "last_name_he": "חסיד",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 30768,
+    "last_name_he": "ברוכי",
+    "first_name_he": "אליהו",
+    "is_current": false
+  },
+  {
+    "person_id": 30770,
+    "last_name_he": "טייב",
+    "first_name_he": "יוסף",
+    "is_current": true
+  },
+  {
+    "person_id": 30772,
+    "last_name_he": "ואטורי",
+    "first_name_he": "ניסים",
+    "is_current": true
+  },
+  {
+    "person_id": 30773,
+    "last_name_he": "שטרן",
+    "first_name_he": "שבח",
+    "is_current": false
+  },
+  {
+    "person_id": 30776,
+    "last_name_he": "בליאק",
+    "first_name_he": "ולדימיר",
+    "is_current": true
+  },
+  {
+    "person_id": 30777,
+    "last_name_he": "טור פז",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 30780,
+    "last_name_he": "כץ",
+    "first_name_he": "רון",
+    "is_current": false
+  },
+  {
+    "person_id": 30786,
+    "last_name_he": "שיקלי",
+    "first_name_he": "עמיחי",
+    "is_current": true
+  },
+  {
+    "person_id": 30787,
+    "last_name_he": "אורבך",
+    "first_name_he": "ניר",
+    "is_current": false
+  },
+  {
+    "person_id": 30788,
+    "last_name_he": "קארה",
+    "first_name_he": "אביר",
+    "is_current": false
+  },
+  {
+    "person_id": 30791,
+    "last_name_he": "כלפון",
+    "first_name_he": "יום טוב חי",
+    "is_current": false
+  },
+  {
+    "person_id": 30796,
+    "last_name_he": "שיין",
+    "first_name_he": "יוסף",
+    "is_current": false
+  },
+  {
+    "person_id": 30797,
+    "last_name_he": "יצחק-הלוי",
+    "first_name_he": "מאיר",
+    "is_current": false
+  },
+  {
+    "person_id": 30799,
+    "last_name_he": "בוסקילה",
+    "first_name_he": "מישל",
+    "is_current": true
+  },
+  {
+    "person_id": 30803,
+    "last_name_he": "גנאים",
+    "first_name_he": "מאזן",
+    "is_current": false
+  },
+  {
+    "person_id": 30804,
+    "last_name_he": "ביטון",
+    "first_name_he": "חיים",
+    "is_current": true
+  },
+  {
+    "person_id": 30807,
+    "last_name_he": "קריב",
+    "first_name_he": "גלעד",
+    "is_current": true
+  },
+  {
+    "person_id": 30811,
+    "last_name_he": "בן גביר",
+    "first_name_he": "איתמר",
+    "is_current": true
+  },
+  {
+    "person_id": 30812,
+    "last_name_he": "רוטמן",
+    "first_name_he": "שמחה",
+    "is_current": true
+  },
+  {
+    "person_id": 30814,
+    "last_name_he": "מעוז",
+    "first_name_he": "אבי",
+    "is_current": true
+  },
+  {
+    "person_id": 30816,
+    "last_name_he": "מרעי",
+    "first_name_he": "מופיד",
+    "is_current": false
+  },
+  {
+    "person_id": 30817,
+    "last_name_he": "טל",
+    "first_name_he": "אלון",
+    "is_current": false
+  },
+  {
+    "person_id": 30820,
+    "last_name_he": "דוידסון",
+    "first_name_he": "סימון",
+    "is_current": true
+  },
+  {
+    "person_id": 30821,
+    "last_name_he": "סלאלחה",
+    "first_name_he": "עלי",
+    "is_current": false
+  },
+  {
+    "person_id": 30830,
+    "last_name_he": "טל",
+    "first_name_he": "אוהד",
+    "is_current": true
+  },
+  {
+    "person_id": 30831,
+    "last_name_he": "דלל",
+    "first_name_he": "אלי",
+    "is_current": true
+  },
+  {
+    "person_id": 30832,
+    "last_name_he": "רביבו",
+    "first_name_he": "אליהו",
+    "is_current": true
+  },
+  {
+    "person_id": 30833,
+    "last_name_he": "כהן",
+    "first_name_he": "אלמוג",
+    "is_current": true
+  },
+  {
+    "person_id": 30835,
+    "last_name_he": "ביסמוט",
+    "first_name_he": "בועז",
+    "is_current": true
+  },
+  {
+    "person_id": 30836,
+    "last_name_he": "איזנקוט",
+    "first_name_he": "גדי",
+    "is_current": false
+  },
+  {
+    "person_id": 30839,
+    "last_name_he": "אילוז",
+    "first_name_he": "דן",
+    "is_current": false
+  },
+  {
+    "person_id": 30840,
+    "last_name_he": "אלהואשלה",
+    "first_name_he": "ואליד",
+    "is_current": true
+  },
+  {
+    "person_id": 30842,
+    "last_name_he": "מלביצקי",
+    "first_name_he": "חנוך דב",
+    "is_current": true
+  },
+  {
+    "person_id": 30843,
+    "last_name_he": "חוג'יראת",
+    "first_name_he": "יאסר",
+    "is_current": true
+  },
+  {
+    "person_id": 30846,
+    "last_name_he": "גולדקנופ",
+    "first_name_he": "יצחק",
+    "is_current": true
+  },
+  {
+    "person_id": 30847,
+    "last_name_he": "וסרלאוף",
+    "first_name_he": "יצחק שמעון",
+    "is_current": true
+  },
+  {
+    "person_id": 30852,
+    "last_name_he": "סולומון",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 30853,
+    "last_name_he": "סעדה",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 30854,
+    "last_name_he": "שירי",
+    "first_name_he": "נאור",
+    "is_current": true
+  },
+  {
+    "person_id": 30857,
+    "last_name_he": "אליהו",
+    "first_name_he": "עמיחי",
+    "is_current": true
+  },
+  {
+    "person_id": 30859,
+    "last_name_he": "פוגל",
+    "first_name_he": "צביקה",
+    "is_current": true
+  },
+  {
+    "person_id": 30861,
+    "last_name_he": "דנינו",
+    "first_name_he": "שלום",
+    "is_current": true
+  },
+  {
+    "person_id": 30867,
+    "last_name_he": "קרויזר",
+    "first_name_he": "יצחק",
+    "is_current": true
+  },
+  {
+    "person_id": 30868,
+    "last_name_he": "מישרקי",
+    "first_name_he": "יונתן",
+    "is_current": true
+  },
+  {
+    "person_id": 30870,
+    "last_name_he": "רוט",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 30872,
+    "last_name_he": "מושיאשוילי",
+    "first_name_he": "סימון",
+    "is_current": false
+  },
+  {
+    "person_id": 30873,
+    "last_name_he": "מלול",
+    "first_name_he": "ארז",
+    "is_current": true
+  },
+  {
+    "person_id": 30874,
+    "last_name_he": "סוכות",
+    "first_name_he": "צבי ידידיה",
+    "is_current": true
+  },
+  {
+    "person_id": 30876,
+    "last_name_he": "שקלים",
+    "first_name_he": "אושר",
+    "is_current": true
+  },
+  {
+    "person_id": 30877,
+    "last_name_he": "פסל",
+    "first_name_he": "משה",
+    "is_current": true
+  },
+  {
+    "person_id": 30879,
+    "last_name_he": "גואטה",
+    "first_name_he": "ששון ששי",
+    "is_current": true
+  },
+  {
+    "person_id": 30880,
+    "last_name_he": "בוארון",
+    "first_name_he": "אביחי אברהם",
+    "is_current": true
+  },
+  {
+    "person_id": 30881,
+    "last_name_he": "לוי",
+    "first_name_he": "ירון",
+    "is_current": true
+  },
+  {
+    "person_id": 30893,
+    "last_name_he": "עבד",
+    "first_name_he": "עפיף",
+    "is_current": true
+  },
+  {
+    "person_id": 30894,
+    "last_name_he": "בן סעיד",
+    "first_name_he": "סמיר",
+    "is_current": true
+  },
+  {
+    "person_id": 30896,
+    "last_name_he": "אהרונוביץ'",
+    "first_name_he": "ראובן",
+    "is_current": false
+  },
+  {
+    "person_id": 30899,
+    "last_name_he": "סבירסקי",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 30900,
+    "last_name_he": "פינר",
+    "first_name_he": "לודוויג",
+    "is_current": false
+  },
+  {
+    "person_id": 30901,
+    "last_name_he": "ברנזון",
+    "first_name_he": "צבי",
+    "is_current": false
+  },
+  {
+    "person_id": 30902,
+    "last_name_he": "אברמוביץ",
+    "first_name_he": "זאב",
+    "is_current": false
+  },
+  {
+    "person_id": 30903,
+    "last_name_he": "הופמן",
+    "first_name_he": "אלעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 30904,
+    "last_name_he": "בר-שירה",
+    "first_name_he": "ישראל",
+    "is_current": false
+  },
+  {
+    "person_id": 30905,
+    "last_name_he": "קוגל",
+    "first_name_he": "חיים",
+    "is_current": false
+  },
+  {
+    "person_id": 30906,
+    "last_name_he": "ארקין",
+    "first_name_he": "דב",
+    "is_current": false
+  },
+  {
+    "person_id": 30907,
+    "last_name_he": "מובסוביץ",
+    "first_name_he": "דוד",
+    "is_current": false
+  },
+  {
+    "person_id": 30909,
+    "last_name_he": "כהן",
+    "first_name_he": "אליעזר",
+    "is_current": false
+  },
+  {
+    "person_id": 30910,
+    "last_name_he": "מגיד",
+    "first_name_he": "משה דב",
+    "is_current": false
+  },
+  {
+    "person_id": 30911,
+    "last_name_he": "קורלנד",
+    "first_name_he": "יצחק",
+    "is_current": false
+  },
+  {
+    "person_id": 30912,
+    "last_name_he": "זכאי",
+    "first_name_he": "שלום",
+    "is_current": false
+  },
+  {
+    "person_id": 30913,
+    "last_name_he": "כהנא",
+    "first_name_he": "שמואל זנוויל",
+    "is_current": false
+  },
+  {
+    "person_id": 30914,
+    "last_name_he": "סקורטובסקי",
+    "first_name_he": "משה",
+    "is_current": false
+  },
+  {
+    "person_id": 30916,
+    "last_name_he": "חיים",
+    "first_name_he": "עוז",
+    "is_current": true
+  },
+  {
+    "person_id": 30917,
+    "last_name_he": "אבו אל היג'א",
+    "first_name_he": "מוחמד",
+    "is_current": true
+  },
+  {
+    "person_id": 30922,
+    "last_name_he": "קטש",
+    "first_name_he": "שבתאי",
+    "is_current": true
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "law_id": "absentees-property-law-1950",
+    "title": "Absentees' Property Law, 5710-1950",
+    "hebrew_title": "חוק נכסי נפקדים, תש\"י-1950",
+    "official_citation": "Sefer Ha-Chukim No. 37, 2nd Nisan 5710 (20 March 1950), p. 86",
+    "enactment_date": "1950-03-14",
+    "knesset_number": 1,
+    "sponsoring_ministry": "Ministry of Finance",
+    "sponsoring_mk_id": "eliezer-kaplan",
+    "category": "Absentee Property",
+    "summary": "Established the Custodian of Absentee Property, a state-appointed office vesting ownership of land and property left behind by Palestinian Arab refugees and other 'absentees' in the state. Rather than a single seizure, it created the standing legal mechanism through which refugee property was administered, leased, and in large part transferred into Jewish settlement and state use over subsequent decades — the legal apparatus that made wartime displacement permanent.",
+    "land_impact": {
+      "spatial_region": "Nationwide — property of Palestinian Arab refugees and absentees, all regions",
+      "estimated_hectares_affected": null,
+      "description": "Left as null rather than asserting a single figure for the law's full scope — its total administered estate spans both external refugees' land and 'present absentees' (Arab citizens who remained in Israel but were classified absentee for specific parcels), and sources vary on whether they're counting one category or both. The narrower, better-sourced figure: over 1,000,000 dunams (100,000+ hectares) belonging specifically to 'present absentees' was expropriated under the law — see citation. The law's full scope including external refugees' land is commonly described in the low-millions of dunams, but no single defensible total is cited here yet."
+    },
+    "citation": "VERIFIED 2026-09-01 — Sefer Ha-Chukim No. 37, p. 86 (20 March 1950), cross-confirmed via Amnon Kedar's peer-reviewed 'Dignity Takings and Dispossession in Israel' (2016, JSTOR-indexed, cited 21 times: '37 Sefer Hachukim, 86 (1950)') and independently via a Google-search synthesis citing the same issue/date/page. Supersedes the earlier UNVERIFIED 'vol. 4, p. 68' guess, which was wrong — Sefer HaChukim uses sequential issue numbers, not volumes. The 'present absentees'/1,000,000+ dunam figure is corroborated across the Institute for Palestine Studies' palquest.org and JMCC's own Absentees' Property Law overview, both live-checked this pass; the law's full scope (incl. external refugees' land) still best-guess: Michael R. Fischbach, 'Records of Dispossession' (2003), not independently re-verified this pass."
+  },
+  {
+    "law_id": "land-acquisition-law-1953",
+    "title": "Land Acquisition (Validation of Acts and Compensation) Law, 5713-1953",
+    "hebrew_title": "חוק רכישת מקרקעים (אישור פעולות ופיצויים), תשי\"ג-1953",
+    "official_citation": "Sefer Ha-Chukim No. 122, 4th Nisan 5713 (20 March 1953), p. 58",
+    "enactment_date": "1953-03-10",
+    "knesset_number": 2,
+    "sponsoring_ministry": "Ministry of Finance",
+    "sponsoring_mk_id": "levi-eshkol",
+    "category": "Land Expropriation",
+    "summary": "Retroactively validated the state's seizure of land already occupied or requisitioned since 1948 — much of it absentee or otherwise Arab-owned — and set compensation terms, transferring the bulk of it to state ownership or the Jewish National Fund. Where the 1950 Absentees' Property Law created the administrative custodianship, this law closed the loop: it legalized what had already been done on the ground and set the terms under which it would stay done.",
+    "land_impact": {
+      "spatial_region": "Nationwide — land requisitioned or occupied by the state, Jewish Agency, or JNF since 1948, primarily former Arab-owned land",
+      "estimated_hectares_affected": null,
+      "description": "1.2-1.3 million dunams (roughly 120,000-130,000 hectares) of land expropriated under this law, per Adalah's own legal analysis — left as a range rather than a single number since Adalah itself states it that way rather than picking a point figure. Covers expropriations retroactively validated for the period 14 May 1948 to 1 April 1952, transferred to the Development Authority."
+    },
+    "citation": "VERIFIED 2026-09-01 (issue number and date; page number single-sourced, slightly less certain) — Sefer Ha-Chukim No. 122, p. 58 (20 March 1953), the enactment date (10 March 1953) independently corroborated by a second search pass. Supersedes the earlier UNVERIFIED 'vol. 5, p. 155' guess, which was wrong for the same reason as the 1950 law. The 1.2-1.3 million dunam figure and 14 May 1948-1 April 1952 validation window are sourced directly to Adalah (Legal Center for Arab Minority Rights in Israel)'s own published legal analysis of the law, live-checked this pass — the first defensible number found for this field since the law was first added. Fischbach (2003) not independently re-verified this pass."
+  },
+  {
+    "law_id": "emergency-land-requisition-law-1949",
+    "title": "Emergency Land Requisition (Regulation) Law, 5710-1949",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "1949-11-14",
+    "knesset_number": 1,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Land Requisition",
+    "summary": "Enacted 14 November 1949, empowering Israeli authorities to requisition land and buildings — including property belonging to Palestinian Arabs who had not been formally classified 'absentees' — for military, immigrant-housing, and other state purposes, on the state's own declaration of emergency need rather than through ordinary expropriation procedure. A parallel Emergency Regulation gave the Ministry of Agriculture authority to declare refugee-owned land 'waste' or 'uncultivated' and seize it for state use. Originally intended as a three-year measure, its emergency-order framework was extended repeatedly through the 1950s.",
+    "land_impact": {
+      "spatial_region": "Nationwide, with particular use in urban areas and against land classified 'uncultivated' or 'waste'",
+      "estimated_hectares_affected": null,
+      "description": "No single defensible nationwide total found this pass — the law operated through individual requisition orders issued over nearly a decade rather than one bulk transfer, unlike the Absentees' Property Law's single vesting mechanism."
+    },
+    "citation": "VERIFIED 2026-09-01 (enactment date and core mechanism) — the 14 November 1949 enactment date and the law's requisition/'waste land' seizure mechanism are corroborated via live search (Oakland Institute's 'Legalizing Dispossession' report, a full-text mirror of the law itself). The precise Sefer Ha-Chukim citation and sponsoring ministry were not independently pinned down this pass — left as UNVERIFIED rather than guessed, unlike the two law entries above whose earlier wrong guesses this project has since corrected."
+  },
+  {
+    "law_id": "prevention-of-infiltration-law-1954",
+    "title": "Prevention of Infiltration (Offences and Jurisdiction) Law, 5714-1954",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "1954",
+    "knesset_number": 2,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Refugee Return / Right of Return",
+    "summary": "Criminalized unauthorized entry into Israel by anyone defined as an 'infiltrator' — explicitly including any Palestinian Arab who had left their place of residence in what became Israel for a place outside it, whether or not they held citizenship elsewhere, and any national or resident of the neighboring Arab states. Set penalties of up to five years' imprisonment for infiltration, seven years for a repeat offense after deportation, and authorized the Minister of Defense to order immediate deportation before or after conviction.",
+    "land_impact": {
+      "spatial_region": "Nationwide border areas; applied against Palestinian refugees attempting to return from Lebanon, Egypt, Syria, Jordan, and Gaza",
+      "estimated_hectares_affected": null,
+      "description": "Not a land-transfer law in the direct sense of the Absentees' Property or Land Acquisition Laws — its land impact is indirect but foundational: it made the physical act of returning to reclaim or resume living on one's own land a criminal offense, closing off self-help return as an option and leaving the Absentees' Property Law's vesting of refugee land in the state unchallenged by the people it had displaced."
+    },
+    "citation": "VERIFIED 2026-09-01 — the law's 'infiltrator' definition (explicitly covering displaced Palestinian Arabs and nationals/residents of neighboring Arab states), the five/seven-year penalty structure, and the Defense Minister's deportation-order power are corroborated via live search (Wikipedia's Prevention of Infiltration Law article, the Jewish Virtual Library's primary-text PDF of the 1954 law, Refworld). Exact enactment day and official Sefer Ha-Chukim citation not independently pinned down this pass."
+  },
+  {
+    "law_id": "golan-heights-law-1981",
+    "title": "Golan Heights Law, 5742-1981",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "1981-12-14",
+    "knesset_number": 10,
+    "sponsoring_ministry": "Prime Minister's Office",
+    "sponsoring_mk_id": "menachem-begin",
+    "category": "Annexation",
+    "summary": "Passed by the Knesset 63-21 on 14 December 1981 (some sources give 15 December), on the initiative of Prime Minister Menachem Begin's government, unilaterally extending Israeli law, jurisdiction, and administration to the Golan Heights, territory occupied from Syria in the 1967 Six-Day War — a law effectively constituting annexation, though it does not use that word. Excludes only a small strip detached under the 1974 Israel-Syria Disengagement Agreement.",
+    "land_impact": {
+      "spatial_region": "Golan Heights",
+      "estimated_hectares_affected": null,
+      "description": "The entirety of the Golan Heights held by Israel since 1967 (excluding the 1974 disengagement strip) — a specific hectare figure not independently sourced this pass."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 63-21 vote and the 14/15 December 1981 date variance (both dates appear across sources) are corroborated via live search (Wikipedia's Golan Heights Law article, israeled.org's 'Knesset Votes in Favor of Golan Heights Law' entry). UN Security Council Resolution 497, adopted two days later, declared the law 'null and void' — see this dataset's own Resolution 497 topic entry."
+  },
+  {
+    "law_id": "jerusalem-basic-law-1980",
+    "title": "Basic Law: Jerusalem, Capital of Israel, 5740-1980",
+    "hebrew_title": null,
+    "official_citation": "Sefer Ha-Chukim No. 980, 5th August 1980, p. 186",
+    "enactment_date": "1980-07-30",
+    "knesset_number": 9,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Annexation",
+    "summary": "Passed 69-15 with 3 abstentions on 30 July 1980, declaring 'Jerusalem, complete and united' the capital of Israel and the seat of the President, Knesset, and Supreme Court, and prioritizing the city for government aid — treating East Jerusalem, unilaterally annexed via municipal-boundary expansion in 1967, as fully and permanently part of the state rather than occupied or negotiable territory.",
+    "land_impact": {
+      "spatial_region": "East Jerusalem",
+      "estimated_hectares_affected": null,
+      "description": "Legally consolidated the ~70 km² 1967 municipal annexation of East Jerusalem into permanent constitutional status — see this dataset's own East Jerusalem topic entry for the underlying 1967 annexation figures."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 30 July 1980 passage date, the 69-15-3 vote, and the Sefer Ha-Chukim No. 980/5 August 1980/p. 186 citation are corroborated via live search (WIPO Lex's official legislative record, Jerusalem Post retrospective). UN Security Council Resolution 478, adopted three weeks later, declared the law 'null and void' — see this dataset's own Resolution 478 topic entry."
+  },
+  {
+    "law_id": "citizenship-and-entry-into-israel-law-2003",
+    "title": "Citizenship and Entry into Israel Law (Temporary Order), 5763-2003",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "2003-07-31",
+    "knesset_number": 16,
+    "sponsoring_ministry": "Ministry of Interior",
+    "sponsoring_mk_id": null,
+    "category": "Family Unification / Right of Return",
+    "summary": "First passed 31 July 2003 at the height of the Second Intifada as a 'temporary' security order, it bars Palestinian residents of the West Bank and Gaza who marry Israeli citizens from receiving Israeli citizenship or residency through that marriage — the family-unification path otherwise available to any other spouse. A 2005 amendment allowed narrow exceptions (husbands over 35, wives over 25, medical/work cases, children under 14); a 2007 amendment extended the ban to citizens and residents of Iran, Lebanon, Syria, and Iraq. Though framed as temporary, the Knesset has repeatedly renewed it, making it permanent in practice.",
+    "land_impact": {
+      "spatial_region": "Nationwide (Israel); West Bank and Gaza (affected spouses' residence)",
+      "estimated_hectares_affected": null,
+      "description": "Not a direct land-transfer law — its relevance to this dataset is demographic: by preventing tens of thousands of Palestinian spouses from gaining Israeli residency, it constrains one of the few legal pathways by which Palestinians from the Occupied Territories could otherwise establish residency rights inside Israel, reinforcing rather than reversing the territorial/demographic separation this dataset otherwise tracks through direct land seizure."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 31 July 2003 initial passage, the 2005 and 2007 amendments, and its repeated 'temporary' renewal are corroborated via live search (Wikipedia's Citizenship and Entry into Israel Law article, Adalah's legal analysis, Times of Israel, Human Rights Watch). Sponsoring ministry given as Interior on the strength of the law's citizenship/residency subject matter; not independently confirmed to the specific bill sponsor this pass. The 'repeatedly renewed' claim is backed by a concrete instance this pass: a 10 March 2025 government request to extend the law's validity by order passed 48-9-1 (this project's own completed Knesset vote-results scrape, vote_id 43270) — individual MK votes recorded in this dataset's own knesset_members.json entries for Rothman, Elkin, and Levin."
+  },
+  {
+    "law_id": "admissions-committees-law-2011",
+    "title": "Admissions Committees Law (Cooperative Societies Ordinance Amendment No. 8), 5771-2011",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "2011",
+    "knesset_number": 18,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Housing Discrimination",
+    "summary": "Formalized the legal authority of 'admissions committees' — bodies that screen applicants for housing plots — in roughly 434-475 small communities (fewer than 400 households) in the Negev and Galilee built on public land, permitting them to reject prospective residents for perceived incompatibility with the community's 'social-cultural fabric.' Both regions have large Palestinian Arab citizen populations; the law's practical effect is to let these communities exclude Arab citizens from public land they would otherwise be entitled to apply for. Upheld by Israel's Supreme Court in a 5-4 ruling on 17 September 2014.",
+    "land_impact": {
+      "spatial_region": "Negev/Naqab; Galilee — roughly 434-475 small communities on public land",
+      "estimated_hectares_affected": null,
+      "description": "Affects access to housing plots in the roughly 43% of Israel's residential communities the law's threshold covers, rather than transferring a fixed area — a specific hectare total not meaningful for this kind of access-restriction law and not sourced this pass."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 2011 enactment, the <400-household/public-land threshold, the ~434-475 community estimate, and the 17 September 2014 5-4 Supreme Court ruling upholding the law are corroborated via live search (Adalah's Admissions Committees Law coverage, Human Rights Watch, Middle East Eye, Times of Israel)."
+  },
+  {
+    "law_id": "regularization-law-2017",
+    "title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "2017-02-06",
+    "knesset_number": 20,
+    "sponsoring_ministry": "Prime Minister's Office",
+    "sponsoring_mk_id": "benjamin-netanyahu",
+    "category": "Land Expropriation",
+    "summary": "Passed by the Knesset 60-52 on 6 February 2017 under Prime Minister Benjamin Netanyahu's government, directing the Military Commander in the West Bank to retroactively expropriate private Palestinian land that Israeli settlers had already built on without legal permission, and award that land to the settlers — 'legalizing' roughly half of Israel's unauthorized settlement outposts and some 3,500 additional illegally-built homes in already-recognized settlements. Israel's own Attorney General, Avichai Mandelblit, declined to defend the law before the Supreme Court, which struck it down in June 2020 as unconstitutional.",
+    "land_impact": {
+      "spatial_region": "West Bank",
+      "estimated_hectares_affected": null,
+      "description": "Covered roughly half of Israel's unauthorized West Bank outposts plus ~3,500 additional illegally-built homes in recognized settlements — a specific hectare total for the underlying private Palestinian land itself not sourced this pass."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 6 February 2017 date, the 60-52 vote, the retroactive-expropriation mechanism, the Attorney General's refusal to defend it, and its June 2020 Supreme Court reversal are corroborated via live search (CNN, Adalah, NBC News, Lawfare) — same sourcing as this dataset's own Benjamin Netanyahu actor entry, which covers the same law from the Prime Minister's side."
+  },
+  {
+    "law_id": "kaminitz-law-2017",
+    "title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "2017",
+    "knesset_number": 20,
+    "sponsoring_ministry": "Ministry of Justice / Ministry of Finance",
+    "sponsoring_mk_id": "benjamin-netanyahu",
+    "category": "Planning & Building Enforcement",
+    "summary": "Named for Deputy Attorney General Erez Kaminitz, who chaired the committee that presented its findings on unpermitted construction to the Knesset in January 2016, the amendment was passed by the 20th Knesset in 2017, sharply increasing fines (into the hundreds of thousands of shekels) and enforcement powers for construction offenses, including streamlined work-stoppage and demolition orders that bypass ordinary criminal procedure. Framed as nationally applicable, its most severe practical effect falls on Arab citizens of Israel and West Bank Palestinians, for whom decades of restrictive, discriminatory planning policy left building without a permit one of the only options available.",
+    "land_impact": {
+      "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+      "estimated_hectares_affected": null,
+      "description": "An enforcement-intensity law rather than a direct land-transfer one — its impact is measured in accelerated demolitions and deterred construction rather than a transferred area, so no hectare figure applies in the way it does for the expropriation-style laws elsewhere in this file."
+    },
+    "citation": "VERIFIED 2026-09-01 — the January 2016 Kaminitz committee report, the 2017 20th Knesset passage, and the enforcement provisions are corroborated via live search (ACRI's repeal campaign page, palquest.org, Ir Amim's report on Amendment 116) — same sourcing as this dataset's own Benjamin Netanyahu actor entry."
+  },
+  {
+    "law_id": "nation-state-basic-law-2018",
+    "title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+    "hebrew_title": null,
+    "official_citation": null,
+    "enactment_date": "2018-07-19",
+    "knesset_number": 20,
+    "sponsoring_ministry": "Prime Minister's Office",
+    "sponsoring_mk_id": "benjamin-netanyahu",
+    "category": "Constitutional / Self-Determination",
+    "summary": "Passed 62-55 on 19 July 2018 under Prime Minister Benjamin Netanyahu's government, a Basic Law — Israel's constitutional-tier legislation, taking precedence over ordinary law — restricting the right to national self-determination in the State of Israel to the Jewish people. Article 7 explicitly states: 'The state views the development of Jewish settlement as a national value and will act to encourage and promote its establishment and consolidation.' The first Israeli law to elevate settlement construction itself, by name, to a stated constitutional national goal, rather than treating it as ordinary executive policy.",
+    "land_impact": {
+      "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+      "estimated_hectares_affected": null,
+      "description": "A constitutional/declaratory law rather than a direct land-transfer instrument — its land impact operates by committing the state to encourage future settlement as a matter of enduring constitutional policy, not by transferring a specific area itself."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 19 July 2018 date, the 62-55 vote, and Article 7's exact text are corroborated via live search (Wikipedia's Basic Law: Israel as the Nation-State of the Jewish People article, Adalah's legal analysis, palquest.org) — same sourcing as this dataset's own Benjamin Netanyahu actor entry."
+  },
+  {
+    "law_id": "entry-into-israel-law-amendment-30-2018",
+    "title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+    "hebrew_title": "חוק הכניסה לישראל (תיקון מס' 30), התשע\"ח-2018",
+    "official_citation": null,
+    "enactment_date": "2018-03-07",
+    "knesset_number": 20,
+    "sponsoring_ministry": "Ministry of the Interior",
+    "sponsoring_mk_id": null,
+    "category": "Residency / Demographic",
+    "summary": "Passed a final reading 48-18-6 on 7 March 2018, authorizing Israel's Interior Minister to revoke the permanent residency status of Jerusalem (and Golan Heights) residents found to have committed a 'breach of allegiance' to the State of Israel, or whose residency was originally granted on false information. Drafted in direct response to a 13 September 2017 Israeli Supreme Court ruling that had reinstated the Israeli residency of four East Jerusalem Palestinian politicians (parliamentarians affiliated with the Palestinian Legislative Council) after the Interior Ministry had administratively revoked it — the amendment gave the Minister explicit statutory authority to do by law what the Court had just blocked as unauthorized administrative action.",
+    "land_impact": {
+      "spatial_region": "East Jerusalem; Golan Heights",
+      "estimated_hectares_affected": null,
+      "description": "Not a direct land-transfer instrument, but a demographic-control law: permanent residency (not citizenship) is the legal status held by the roughly 350,000 Palestinian residents of East Jerusalem, and its loss triggers loss of the right to live in, work in, and access health/social services in the city — used since passage to strip residency from individuals Israel accuses of 'breach of allegiance,' including elected Palestinian officials."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 7 March 2018 final-reading date and 48-18-6 tally, the September 2017 Supreme Court ruling on the four PLC-affiliated East Jerusalem politicians, and the 'breach of allegiance' standard are corroborated via live search (America Magazine, Al-Monitor, Adalah's legal briefing). This project's own completed Knesset vote-results scrape captures an earlier reading of the same bill (vote_id 28398, 3 January 2018, 63-17), not the final 7 March reading itself, which does not appear as a separate roll call in the scraped data under this title — the two readings' vote counts are therefore not directly reconciled. No official Sefer HaChukim citation number was found via live search this pass; left null rather than guessed, per this project's standing citation discipline."
+  },
+  {
+    "law_id": "penal-law-amendment-120-stone-throwing-2015",
+    "title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+    "hebrew_title": "חוק העונשין (תיקון מס' 120 והוראת שעה), התשע\"ו-2015",
+    "official_citation": null,
+    "enactment_date": "2015-11-02",
+    "knesset_number": 20,
+    "sponsoring_ministry": "Ministry of Justice / Ministry of Public Security",
+    "sponsoring_mk_id": null,
+    "category": "Criminal Sentencing",
+    "summary": "Passed a final reading 51-17 on 2 November 2015, imposing a mandatory minimum prison sentence — one-fifth of the applicable maximum (2 years where the maximum is 10, 4 years where the maximum is 20) — for throwing or firing a stone or other object, removing judicial discretion to sentence below that floor. Enacted as a 'temporary provision' (hora'at sha'ah) requiring periodic Knesset renewal rather than permanent law. An earlier reading of the same bill (5775-2014) had passed a preliminary reading 57-11 on 17 November 2014, over a year before final enactment. The law also separately empowered authorities to suspend National Insurance child allowances for the families of minors convicted under it.",
+    "land_impact": {
+      "spatial_region": "State of Israel; East Jerusalem; West Bank",
+      "estimated_hectares_affected": null,
+      "description": "Not a land-transfer law but a criminal-sentencing one, included in this ledger per this dataset's brief covering laws that expand imprisonment specifically targeting Palestinians: in practice the law is applied almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians brought before Israeli civilian courts, per Adalah's own legal analysis."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 2 November 2015 final-reading date and 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), exactly matching live-searched press reporting (Times of Israel's 'Knesset approves minimum jail time for rock throwing,' Al Jazeera, CBS News). The 17 November 2014 preliminary reading (vote_id 21529, 57-11) is drawn from the same scrape. The one-fifth-of-maximum sentencing mechanism, the temporary-provision status, and the child-allowance suspension provision are corroborated via live search (Adalah's Discriminatory Laws Database entry, Library of Congress Global Legal Monitor). No official Sefer HaChukim citation number was found via live search this pass; left null rather than guessed."
+  },
+  {
+    "law_id": "death-penalty-for-terrorists-law-2026",
+    "title": "Death Penalty for Terrorists Law, 5786-2026",
+    "hebrew_title": "חוק עונש מוות למחבלים, התשפ\"ו-2026",
+    "official_citation": null,
+    "enactment_date": "2026-03-30",
+    "knesset_number": 25,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": "limor-son-har-melech",
+    "category": "Criminal Sentencing",
+    "summary": "Passed a final reading 62-48-1 on 30 March 2026, after prior versions of the same bill had failed in 2015, 2017, 2021, 2022, and twice each in 2023 and November 2025 — an eight-attempt, decade-plus legislative campaign before passage. Sponsored by Otzma Yehudit MK Limor Son Har-Melech, whose party is led by National Security Minister Itamar Ben-Gvir. The law makes death by hanging the mandatory sentence for murder committed 'with the aim of denying the existence of the State of Israel' — automatic in military courts, and reached in civilian courts only through this specific ideological/motive standard, worded to exclude Jewish perpetrators (an Israeli who killed a Palestinian would not meet this test) even where the underlying act is otherwise identical. A death sentence under the law must be carried out within 90 days of a final ruling, unless a court finds vaguely-defined 'special circumstances' warranting life imprisonment instead.",
+    "land_impact": {
+      "spatial_region": "State of Israel; East Jerusalem; West Bank",
+      "estimated_hectares_affected": null,
+      "description": "Not a land-transfer law, but included in this ledger under its brief covering laws that expand imprisonment/punishment specifically targeting Palestinians: the UN Committee on the Elimination of Racial Discrimination formally found the law 'de facto applies to Palestinians only' and constitutes racial discrimination, citing the same asymmetry independently documented in Israeli civilian-court conviction statistics — Palestinians tried in military courts are convicted 99.74% of the time, versus roughly 3% for Israelis tried for crimes committed in the West Bank between 2005 and 2024."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 30 March 2026 final-reading date and 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), exactly matching live-searched press reporting (Times of Israel's 'Knesset passes death penalty law for Palestinians convicted of deadly acts of terror,' Haaretz, Jerusalem Post, Al Jazeera). The exact 'aim of denying the existence of the State of Israel' motive standard, its designed exclusion of Jewish perpetrators, the automatic-in-military-courts mechanism, and the 90-day execution requirement with a 'special circumstances' life-imprisonment exception are corroborated via live search (Wikipedia's Death Penalty for Terrorists Law article). The CERD finding and the 99.74%/~3% conviction-rate disparity are corroborated via the same source and independently via live search (Human Rights Watch's 'Israel: Discriminatory Death Penalty Bill Passes'). The 8 prior failed attempts (2015-2025) are drawn from this project's own scraped vote titles, not independently cross-checked against outside press for each individual attempt this pass. No official Sefer HaChukim citation number found; left null rather than guessed. Sponsor identified as Son Har-Melech via multiple press sources (Times of Israel, JPost); Wikipedia attributes initiation to the Otzma Yehudit party more broadly under Ben-Gvir's leadership — both recorded, not in tension."
+  },
+  {
+    "law_id": "nakba-law-budget-foundations-amendment-40-2011",
+    "title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+    "hebrew_title": "חוק יסודות התקציב (תיקון מס' 40), התשע\"א-2011",
+    "official_citation": null,
+    "enactment_date": "2011-03-23",
+    "knesset_number": 18,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Speech / Institutional Funding",
+    "summary": "Passed a final reading 37-25 late on 22 March 2011 (crossing past midnight into 23 March per this project's own scraped timestamp). Sponsored by Yisrael Beiteinu MK Alex Miller, with co-sponsors David Rotem, Fania Kirshenbaum, and Hamad Amar. Authorizes the Finance Minister to reduce or withhold state funding from any government-funded body or institution that marks Israel's Independence Day, or the date of the state's establishment, as a day of mourning — commonly known as the 'Nakba Law' for its practical target: state-funded institutions (schools, cultural bodies, local authorities) that mark the Nakba, the Arabic term (meaning 'catastrophe') for the 1948 Palestinian displacement.",
+    "land_impact": {
+      "spatial_region": "State of Israel",
+      "estimated_hectares_affected": null,
+      "description": "Not a land-transfer law, but a funding-penalty law that reaches Arab citizens of Israel and their institutions specifically for commemorating the same 1948 displacement this dataset documents in detail elsewhere (see the Nakba and 1948 Arab-Israeli War topic entries) — a direct legislative attempt to suppress institutional acknowledgment of the events this entire dataset exists to record."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 22/23 March 2011 date and 37-25 final tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579/15580, both showing the identical 37-25 result), exactly matching live-searched press reporting (Jewish Telegraphic Agency's 'Knesset adopts Nakba Law,' Wikipedia's Nakba Law article, Adalah's legal analysis). Miller's sponsorship and the three named co-sponsors are confirmed directly via the Knesset's own OData API (KNS_BillInitiator records for this bill's BillID). No official Sefer HaChukim citation number found; left null rather than guessed."
+  },
+  {
+    "law_id": "boycott-law-2011",
+    "title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+    "hebrew_title": "חוק למניעת פגיעה במדינת ישראל באמצעות חרם, התשע\"א-2011",
+    "official_citation": null,
+    "enactment_date": "2011-07-11",
+    "knesset_number": 18,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Speech / Civil Liability",
+    "summary": "Passed a final reading 47-38 late on 11 July 2011, sponsored by a 19-MK coalition group including Zeev Elkin, Yariv Levin, Haim Katz, and Tzipi Hotovely (all confirmed via the Knesset's own bill-initiator records — Elkin, Levin, and Hotovely all already profiled in this dataset). Creates civil liability — a lawsuit for damages, without need to prove actual harm — against any person or organization that publicly calls for a boycott of the State of Israel or of Israeli institutions or territories, including a boycott targeting West Bank settlements specifically. An initial committee draft included criminal penalties and applied only to Israeli citizens; both were removed before final passage, leaving a civil-liability law that applies regardless of the caller's nationality.",
+    "land_impact": {
+      "spatial_region": "State of Israel; West Bank",
+      "estimated_hectares_affected": null,
+      "description": "Not a direct land-transfer law, but included in this ledger for its explicit protection of settlement activity from a specific form of political pressure: the law's definition of a prohibited boycott expressly includes one 'made because of' a person's or entity's connection to a West Bank settlement, treating advocacy against settlement products or institutions as legally equivalent to a boycott of the State of Israel itself."
+    },
+    "citation": "VERIFIED 2026-09-01 — the 11 July 2011 date and 47-38 final tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095/16096, both showing the identical 47-38 result), exactly matching live-searched press reporting (Human Rights Watch's 'Israel: Anti-Boycott Bill Stifles Expression,' Wikipedia's Law for Prevention of Damage to State of Israel through Boycott article). The 19-name sponsor list, including Elkin, Levin, Katz, and Hotovely, is confirmed directly via the Knesset's own OData API (KNS_BillInitiator records for this bill's BillID). The settlement-specific boycott provision and the pre-passage removal of criminal penalties/citizenship restriction are corroborated via the same live search. No official Sefer HaChukim citation number found; left null rather than guessed."
+  }
+]

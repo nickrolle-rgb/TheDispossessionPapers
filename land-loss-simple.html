@@ -1,0 +1,283 @@
+<title>Losing Ground</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1e2a32;
+    --ink-soft: #4a5b64;
+    --parchment: #e7e1d0;
+    --rust: #b8492f;
+    --verdigris: #4b6b60;
+    --fog: #93897a;
+    --line: rgba(30, 42, 50, 0.14);
+    --bg: var(--parchment);
+    --fg: var(--ink);
+    --map-land: #d9d0b6;
+    --map-held: var(--verdigris);
+    --focus: #2f7dd1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22;
+      --rust: #e07354; --verdigris: #7fa294; --fog: #8b8879;
+      --line: rgba(238, 231, 214, 0.14); --bg: var(--parchment); --fg: var(--ink);
+      --map-land: #2a3439; --map-held: var(--verdigris);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22;
+    --rust: #e07354; --verdigris: #7fa294; --fog: #8b8879;
+    --line: rgba(238, 231, 214, 0.14); --bg: var(--parchment); --fg: var(--ink);
+    --map-land: #2a3439; --map-held: var(--verdigris);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    text-align: center;
+    padding: 2.2rem 1.5rem 0.6rem;
+  }
+  .top .kicker {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--fog);
+  }
+  .top h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    margin: 0.3rem 0 0;
+    text-wrap: balance;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .stat-hero {
+    text-align: center;
+  }
+  .stat-hero .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: clamp(2.6rem, 9vw, 4.4rem);
+    font-weight: 500;
+    color: var(--rust);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    transition: opacity 0.3s ease;
+  }
+  .stat-hero .label {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin-top: 0.35rem;
+  }
+
+  svg#map {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+  .landmass { fill: var(--map-land); stroke: var(--fg); stroke-width: 1.6; stroke-linejoin: round; }
+  .territory {
+    fill: var(--map-held);
+    opacity: 0.75;
+    transition: d 1s cubic-bezier(0.65,0,0.35,1);
+    mix-blend-mode: multiply;
+  }
+  @media (prefers-color-scheme: dark) { .territory { mix-blend-mode: screen; } }
+  :root[data-theme="dark"] .territory { mix-blend-mode: screen; }
+
+  .caption {
+    max-width: 40ch;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    min-height: 3.2em;
+  }
+  .caption b { color: var(--fg); font-weight: 600; }
+
+  .rail {
+    padding: 1rem 1.5rem 1.6rem;
+    border-top: 1px solid var(--line);
+  }
+  .rail-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  button.play {
+    flex: none; width: 40px; height: 40px; border-radius: 50%;
+    border: 1.5px solid var(--fg); background: var(--fg); color: var(--bg);
+    cursor: pointer; display: grid; place-items: center;
+  }
+  button.play:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+  button.play svg { width: 14px; height: 14px; }
+
+  .track { position: relative; flex: 1; height: 34px; }
+  .track .line { position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: var(--line); transform: translateY(-50%); }
+  .track .fill { position: absolute; left: 0; top: 50%; height: 2px; background: var(--rust); transform: translateY(-50%); transition: width 0.5s ease; }
+  .nodes { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; }
+  .node {
+    background: none; border: none; cursor: pointer;
+    display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+    color: var(--fg); padding: 0.3rem;
+  }
+  .node .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--bg); border: 2px solid var(--fog); transition: all 0.2s ease; }
+  .node.active .dot { background: var(--rust); border-color: var(--rust); }
+  .node .yr { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; color: var(--fog); white-space: nowrap; }
+  .node.active .yr { color: var(--rust); }
+  .node:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .territory, .track .fill { transition: none; }
+  }
+</style>
+
+<div class="top">
+  <span class="kicker">Zionism Timeline · 1920–1967</span>
+  <h1>Ground Given Up</h1>
+</div>
+
+<main>
+  <div class="stat-hero">
+    <div class="num" id="num">~2%</div>
+    <div class="label" id="numLabel">of Mandate Palestine, mid-1920s</div>
+  </div>
+
+  <svg id="map" viewBox="0 0 500 700" role="img" aria-label="Schematic map of Mandate Palestine, showing the share of land under Jewish or Israeli control growing across five stages between 1920 and 1967">
+    <path id="landShape" class="landmass"
+      d="M230,38 L221,70 L224,92 L206,104 L198,128 L191,158 L184,182 L181,200
+         L176,222 L174,240 L169,254 L163,268 L152,282 L146,298 L160,330
+         L182,368 L204,406 L222,444 L236,478 L246,512 L252,548 L256,580
+         L260,606 L263,628 L257,616 L251,588 L247,556 L246,522 L250,486
+         L255,452 L258,420 L262,390 L266,358 L270,326 L272,296 L275,266
+         L278,238 L281,208 L278,178 L272,150 L263,124 L255,100 L248,76
+         L242,54 Z" />
+    <path class="territory" id="territory" d="M230,38 L230,38 Z" />
+  </svg>
+
+  <p class="caption" id="caption"></p>
+</main>
+
+<div class="rail">
+  <div class="rail-inner">
+    <button class="play" id="playBtn" aria-label="Play timeline" aria-pressed="false">
+      <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="pauseIcon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+    </button>
+    <div class="track">
+      <div class="line"></div>
+      <div class="fill" id="trackFill"></div>
+      <div class="nodes" id="nodes"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var periods = [
+    { era: "1920s", num: "~2%", numLabel: "of Mandate Palestine, mid-1920s", caption: "Land purchases begin in the <b>Jezreel Valley</b>. Families who had farmed it for generations move on.", scale: 0.03, center: [205, 130] },
+    { era: "1937", num: "~20%", numLabel: "proposed for a Jewish state by British planners", caption: "A British commission proposes splitting the land in two for the first time — and raises the idea of moving people to make the borders work.", scale: 0.2, center: [210, 110] },
+    { era: "1947–49", num: "~78%", numLabel: "held after partition and war", caption: "A UN vote, then a war. Hundreds of thousands of people leave or are forced from their homes.", scale: 0.78, center: [220, 230] },
+    { era: "1950", num: "1", numLabel: "new law makes the loss permanent", caption: "Property left behind is placed in the hands of the state. What was displacement becomes law.", scale: 0.78, center: [220, 230] },
+    { era: "1967", num: "4", numLabel: "more territories change hands in one week", caption: "A six-day war brings the West Bank, Gaza, Sinai, and the Golan Heights under Israeli control.", scale: 1, center: [230, 230] }
+  ];
+
+  var territoryEl = document.getElementById("territory");
+  var nodesEl = document.getElementById("nodes");
+  var trackFill = document.getElementById("trackFill");
+  var numEl = document.getElementById("num");
+  var numLabelEl = document.getElementById("numLabel");
+  var captionEl = document.getElementById("caption");
+  var current = 0, playing = false, timer = null;
+
+  function territoryPath(center, scale) {
+    var cx = center[0], cy = center[1];
+    var t = Math.max(0.001, scale);
+    if (t >= 0.999) return document.getElementById("landShape").getAttribute("d");
+    var rx = 40 + t * 190, ry = 60 + t * 260;
+    var pts = [], n = 14;
+    for (var i = 0; i < n; i++) {
+      var ang = (i / n) * Math.PI * 2;
+      var wob = 1 + 0.12 * Math.sin(i * 2.3 + t * 5);
+      pts.push([cx + Math.cos(ang) * rx * wob * 0.55, cy + Math.sin(ang) * ry * wob]);
+    }
+    var d = "M" + pts[0][0].toFixed(1) + "," + pts[0][1].toFixed(1) + " ";
+    for (var j = 1; j <= n; j++) { var p = pts[j % n]; d += "L" + p[0].toFixed(1) + "," + p[1].toFixed(1) + " "; }
+    return d + "Z";
+  }
+
+  function buildNodes() {
+    periods.forEach(function (p, i) {
+      var btn = document.createElement("button");
+      btn.className = "node" + (i === 0 ? " active" : "");
+      btn.setAttribute("aria-label", p.era);
+      btn.innerHTML = '<span class="dot"></span><span class="yr">' + p.era + "</span>";
+      btn.addEventListener("click", function () { goTo(i); stop(); });
+      nodesEl.appendChild(btn);
+    });
+  }
+
+  function goTo(idx) {
+    current = idx;
+    var p = periods[idx];
+    numEl.style.opacity = 0;
+    setTimeout(function () {
+      numEl.textContent = p.num;
+      numLabelEl.textContent = p.numLabel;
+      numEl.style.opacity = 1;
+    }, 150);
+    captionEl.innerHTML = p.caption;
+    territoryEl.setAttribute("d", territoryPath(p.center, p.scale));
+    var nodes = nodesEl.querySelectorAll(".node");
+    nodes.forEach(function (n, i) { n.classList.toggle("active", i === idx); });
+    trackFill.style.width = (idx / (periods.length - 1)) * 100 + "%";
+  }
+
+  function stop() {
+    playing = false;
+    document.getElementById("playIcon").style.display = "";
+    document.getElementById("pauseIcon").style.display = "none";
+    document.getElementById("playBtn").setAttribute("aria-pressed", "false");
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+  function play() {
+    playing = true;
+    document.getElementById("playIcon").style.display = "none";
+    document.getElementById("pauseIcon").style.display = "";
+    document.getElementById("playBtn").setAttribute("aria-pressed", "true");
+    timer = setInterval(function () {
+      var next = current + 1;
+      if (next >= periods.length) { stop(); return; }
+      goTo(next);
+    }, 3200);
+  }
+  document.getElementById("playBtn").addEventListener("click", function () { if (playing) stop(); else play(); });
+
+  buildNodes();
+  goTo(0);
+})();
+</script>

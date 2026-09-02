@@ -1,0 +1,108 @@
+[
+  {
+    "actor_id": "yehoshua-fass-nbn",
+    "full_name": "Rabbi Yehoshua (Josh) Fass",
+    "organizational_role": "Co-Founder and Executive Director",
+    "organization": "Nefesh B'Nefesh",
+    "operating_countries": ["United States", "Canada"],
+    "public_registration": "Nefesh B'Nefesh is a US-registered 501(c)(3) nonprofit; exact EIN not independently verified here — see IRS Form 990 filings (via ProPublica's Nonprofit Explorer or the IRS itself) for confirmation.",
+    "role_status": "Co-Founder and Executive Director since the organization's founding, consistently identified in this role across many years of mainstream press coverage.",
+    "primary_activity_description": "Nefesh B'Nefesh, co-founded by Fass and Tony Gelbart in 2002, operates in partnership with the Israeli government (Ministry of Aliyah and Integration) and the Jewish Agency to organize and subsidize North American (US and Canadian) Aliyah — including chartered 'Aliyah flights,' logistical/bureaucratic support, and employment/absorption assistance for new immigrants.",
+    "action_record": [
+      {
+        "date": "2002",
+        "action_type": "Organizational Leadership",
+        "location_affected": "United States, Canada",
+        "description": "Co-founded Nefesh B'Nefesh, which has since organized large-scale, publicly-documented group emigration flights from North America to Israel on a recurring basis, operating in formal partnership with Israeli government ministries.",
+        "citation": "Nefesh B'Nefesh's own organizational history (nbn.org.il/about); recurring coverage of annual flight numbers in the Times of Israel and Jerusalem Post — exact yearly figures not yet compiled here."
+      }
+    ]
+  },
+  {
+    "actor_id": "doron-almog-jai",
+    "full_name": "Doron Almog",
+    "organizational_role": "Chairman of the Executive",
+    "organization": "Jewish Agency for Israel (Sochnut)",
+    "operating_countries": ["Israel", "global — oversees Aliyah/emissary operations in the US, UK, Canada, Australia, and EU member states"],
+    "public_registration": "N/A — role confirmed via the organization's own published leadership page, not a government registry (the Jewish Agency operates under formal status agreements with the Israeli government rather than a single foreign-registered-agent filing).",
+    "role_status": "Chairman of the Executive of the Jewish Agency for Israel since August 2022.",
+    "primary_activity_description": "Former IDF Major General (led the 1976 Entebbe rescue task force, commanded IDF Southern Command) who became Chairman of the Executive of the Jewish Agency in August 2022 — the senior operational leadership role overseeing the Agency's global Aliyah-coordination and emissary ('shlichim') programs, direct institutional descendant of the WZO Palestine Office founded by Arthur Ruppin.",
+    "action_record": [
+      {
+        "date": "2022-08",
+        "action_type": "Organizational Leadership",
+        "location_affected": "Global",
+        "description": "Appointed Chairman of the Executive of the Jewish Agency for Israel, its central operational leadership role.",
+        "citation": "Jewish Agency for Israel, leadership bio page (jewishagency.org/doron-almog), accessed 31 August 2026."
+      }
+    ]
+  },
+  {
+    "actor_id": "mark-wilf-jai",
+    "full_name": "Mark Wilf",
+    "organizational_role": "Chairman of the Board of Governors",
+    "organization": "Jewish Agency for Israel (Sochnut)",
+    "operating_countries": ["United States", "Israel", "global"],
+    "public_registration": "N/A — role confirmed via the organization's own published leadership page.",
+    "role_status": "Chairman of the Jewish Agency's Board of Governors since July 2022.",
+    "primary_activity_description": "US attorney and real-estate developer (also owner/president of the NFL's Minnesota Vikings), previously Chair of the Board of Trustees of the Jewish Federations of North America, appointed Chairman of the Jewish Agency's Board of Governors in July 2022 — the governance/oversight counterpart to Almog's operational chairmanship.",
+    "action_record": [
+      {
+        "date": "2022-07",
+        "action_type": "Organizational Leadership",
+        "location_affected": "United States (JFNA); global (Jewish Agency)",
+        "description": "Appointed Chairman of the Jewish Agency for Israel's Board of Governors, having previously chaired the Board of Trustees of the Jewish Federations of North America — a direct institutional link between major US Jewish philanthropic fundraising and the Jewish Agency's Aliyah-coordination operations.",
+        "citation": "Jewish Agency for Israel, leadership bio page (jewishagency.org/mark-wilf), accessed 31 August 2026."
+      }
+    ]
+  },
+  {
+    "actor_id": "ujia-uk",
+    "full_name": "United Jewish Israel Appeal",
+    "organizational_role": "N/A — institutional entry; the UK Charity Commission register lists 9 trustees, none individually flagged as chair",
+    "organization": "United Jewish Israel Appeal (UJIA)",
+    "operating_countries": ["United Kingdom"],
+    "public_registration": "UK Charity Commission registration number 1060078. Status: registered, reporting up to date. Total income (latest filed accounts): £12,531,000. Operating area: England and Wales, and Israel.",
+    "role_status": "No individual chair or CEO on public record — the Charity Commission register lists all 9 board members simply as 'Trustee.' Current trustees, by appointment date: Dr Naomi Katz (14 May 2026), Benjamin Shapiro (23 Jan 2026), Hilda Rosemary Worth (30 Jan 2025), Edward Louis Isaacs (26 Sep 2024), Gila Sacks (28 Mar 2024), Simon Wagman (27 Sep 2023), Alexi Jane Lewy (1 Jun 2023), Steven Michael Noe (13 Dec 2022), David Pliener (18 Mar 2021).",
+    "primary_activity_description": "UK charity funding Israel-education and Aliyah-related programming for the British Jewish community; per its Charity Commission filing, its purposes span general charitable, education/training, health, poverty relief, religious activities, and arts/culture/heritage, helping (among others) 'people of a particular ethnic or racial origin,' and operates throughout England and Wales and in Israel via grant-making.",
+    "action_record": [
+      {
+        "date": "2026",
+        "action_type": "Fund Raising",
+        "location_affected": "United Kingdom, Israel",
+        "description": "Reported total income of £12,531,000 in its latest filed accounts, disbursed primarily via grant-making to organizations and individuals. Specific grant recipients are not yet itemized here.",
+        "citation": "UK Charity Commission, charity number 1060078 (register-of-charities.charitycommission.gov.uk), accessed 31 August 2026."
+      }
+    ]
+  },
+  {
+    "actor_id": "jeremy-leibler-zfa",
+    "full_name": "Jeremy Leibler",
+    "organizational_role": "President",
+    "organization": "Zionist Federation of Australia (ZFA)",
+    "operating_countries": ["Australia"],
+    "public_registration": "Registered with the Australian Charities and Not-for-profits Commission (ACNC), ABN 62090880872. Charity size: Large. Total revenue (latest AIS): $3,608,497 AUD; total expenses: $3,488,111 AUD. Operates in all Australian states and territories.",
+    "role_status": "President of the Zionist Federation of Australia.",
+    "primary_activity_description": "ZFA describes itself as the representative body of the Australian Jewish community's Zionist organisations, representing 200+ member organizations, active in Israel-advocacy (including public statements/media engagement on Israel-related political controversies) and Aliyah-related programming. ZFA's own site states it has operated since 1927.",
+    "action_record": [
+      {
+        "date": "2026",
+        "action_type": "Public Advocacy Statement",
+        "location_affected": "Australia",
+        "description": "Active in public political advocacy as ZFA President, including public correspondence responding to Australian federal politicians on Israel-related remarks. Specific dated statements are not yet itemized here — see zfa.com.au's news section for the primary record.",
+        "citation": "zfa.com.au, accessed 31 August 2026."
+      }
+    ]
+  },
+  {
+    "actor_id": "alon-cassuto-zfa",
+    "full_name": "Alon Cassuto",
+    "organizational_role": "Chief Executive Officer",
+    "organization": "Zionist Federation of Australia (ZFA)",
+    "operating_countries": ["Australia"],
+    "public_registration": "See the Zionist Federation of Australia's ACNC registration (ABN 62090880872), under Jeremy Leibler's entry.",
+    "role_status": "Chief Executive Officer of the Zionist Federation of Australia.",
+    "primary_activity_description": "CEO-level operational leadership of ZFA, distinct from Leibler's President role (governance and public-facing representation).",
+    "action_record": []
+  }
+]

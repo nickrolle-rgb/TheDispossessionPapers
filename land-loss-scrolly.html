@@ -1,0 +1,419 @@
+<title>Ground Given Up</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1e2a32; --ink-soft: #4a5b64; --parchment: #e7e1d0; --parchment-hi: #f1ecdd;
+    --rust: #b8492f; --ochre: #be8b34; --verdigris: #4b6b60; --fog: #93897a;
+    --line: rgba(30,42,50,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --land: #d9d0b6; --held: var(--verdigris); --new: var(--ochre); --occupied: var(--rust);
+    --panel-bg: rgba(231,225,208,0.94); --shadow: 0 18px 50px -20px rgba(20,24,20,0.45);
+    --focus: #2f7dd1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+      --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --fog: #8b8879;
+      --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+      --land: #2a3439; --held: var(--verdigris); --new: var(--ochre); --occupied: var(--rust);
+      --panel-bg: rgba(23,30,34,0.92); --shadow: 0 18px 60px -20px rgba(0,0,0,0.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+    --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --fog: #8b8879;
+    --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --land: #2a3439; --held: var(--verdigris); --new: var(--ochre); --occupied: var(--rust);
+    --panel-bg: rgba(23,30,34,0.92); --shadow: 0 18px 60px -20px rgba(0,0,0,0.7);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  .frame { max-width: 480px; margin: 0 auto; position: relative; }
+
+  .intro {
+    padding: 2.4rem 1.4rem 1.6rem;
+    text-align: center;
+  }
+  .intro .kicker {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 0.5rem;
+  }
+  .intro h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: clamp(1.9rem, 8vw, 2.5rem);
+    margin: 0 0 0.7rem; text-wrap: balance; line-height: 1.05;
+  }
+  .intro p { font-size: 0.92rem; line-height: 1.6; color: var(--ink-soft); max-width: 34ch; margin: 0 auto; }
+  .intro .scrolldown {
+    margin-top: 1.6rem; font-family: "IBM Plex Mono", monospace; font-size: 0.68rem;
+    color: var(--fog); letter-spacing: 0.08em; text-transform: uppercase;
+    animation: bob 1.8s ease-in-out infinite;
+  }
+  @keyframes bob { 0%,100%{transform:translateY(0);} 50%{transform:translateY(5px);} }
+  @media (prefers-reduced-motion: reduce) { .intro .scrolldown { animation: none; } }
+
+  .scrolly { position: relative; }
+
+  .stickywrap {
+    position: sticky; top: 0; height: 100svh;
+    display: flex; flex-direction: column;
+    background: var(--bg);
+    /* deliberately no z-index here (position:sticky with z-index:auto creates no stacking
+       context of its own) -- lets .legend below escape and stack above incoming .step cards,
+       so cards appear to emerge from underneath the legend rather than covering it. */
+  }
+
+  .maparea { position: relative; flex: 1; min-height: 0; overflow: hidden; }
+  svg#map { width: 100%; height: 100%; display: block; }
+
+  #camera { transition: transform 1.3s cubic-bezier(0.65,0,0.35,1); }
+  @media (prefers-reduced-motion: reduce) { #camera { transition: none; } }
+
+  /* No political border lines on the base map — those are modern lines and would be
+     anachronistic under Ottoman framing. Only the active `.region` overlays (real historical
+     boundaries at the moment they mattered) ever get a stroke. */
+  .landmass { fill: var(--land); stroke: none; }
+  .neighbor { fill: var(--land); opacity: 0.4; stroke: none; }
+
+  .region {
+    stroke: var(--fg); stroke-width: 1.2; stroke-linejoin: round;
+    transition: fill 0.9s ease, opacity 0.9s ease, stroke-opacity 0.9s ease;
+    fill: transparent; opacity: 0; stroke-opacity: 0;
+  }
+  .region.st-held { fill: var(--held); opacity: 0.72; stroke-opacity: 0.35; }
+  .region.st-new  { fill: var(--new);   opacity: 0.85; stroke-opacity: 0.5; }
+  .region.st-occupied { fill: url(#hatch); opacity: 0.95; stroke: var(--occupied); stroke-opacity: 0.8; stroke-width: 1.6; }
+  .region.st-returned { fill: transparent; opacity: 1; stroke: var(--fg); stroke-opacity: 0.5; stroke-dasharray: 5 4; }
+
+  .pin circle.dot { fill: var(--rust); stroke: var(--parchment-hi); stroke-width: 1.6; opacity: 0; transition: opacity 0.5s ease; }
+  .pin.active circle.dot { opacity: 1; }
+  .pin.past circle.dot { opacity: 0.4; fill: var(--fog); }
+  .pin circle.ring { fill: none; stroke: var(--rust); stroke-width: 1.3; opacity: 0; }
+  .pin.active circle.ring { opacity: 0.85; animation: pulse 1.8s ease-out infinite; }
+  @keyframes pulse { 0%{r:6;opacity:0.85;} 100%{r:16;opacity:0;} }
+  @media (prefers-reduced-motion: reduce) { .pin.active circle.ring { animation: none; opacity: 0.4; } }
+  .pin text {
+    font-family: "IBM Plex Mono", monospace; font-size: 7.5px; fill: var(--ink);
+    paint-order: stroke; stroke: var(--parchment-hi); stroke-width: 3px; opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .pin.active text { opacity: 1; }
+
+  /* progress dots float directly on the map, not in a separate chrome strip */
+  .dots {
+    position: absolute; left: 50%; bottom: 0.9rem; transform: translateX(-50%);
+    display: flex; gap: 7px; z-index: 3;
+    background: var(--panel-bg); backdrop-filter: blur(6px);
+    padding: 0.4rem 0.6rem; border-radius: 20px; box-shadow: var(--shadow);
+  }
+  .dots span { width: 5px; height: 5px; border-radius: 50%; background: var(--line); transition: all 0.3s ease; }
+  .dots span.on { background: var(--rust); width: 14px; border-radius: 3px; }
+  .dots span.minor { width: 4px; height: 4px; }
+  .dots span.minor.on { width: 9px; background: var(--ochre); }
+
+  .legend {
+    position: relative; z-index: 3;
+    display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem;
+    padding: 0.6rem 1rem; font-size: 0.68rem; color: var(--ink-soft);
+    background: var(--panel-bg); border-top: 1px solid var(--line);
+  }
+  .legend .row { display: flex; align-items: center; gap: 0.35rem; }
+  .legend .sw { width: 11px; height: 11px; border-radius: 2px; flex: none; }
+  .legend .sw.held { background: var(--held); opacity: 0.72; }
+  .legend .sw.new { background: var(--new); opacity: 0.85; }
+  .legend .sw.occ { background: var(--occupied); opacity: 0.5; background-image: repeating-linear-gradient(45deg, var(--occupied) 0 2px, transparent 2px 4px); }
+
+  .steps { position: relative; z-index: 2; }
+  .step { min-height: 92svh; display: flex; align-items: flex-end; padding: 0 1.1rem 3rem; }
+  .step.is-transition { min-height: 55svh; align-items: center; }
+  .card {
+    background: var(--panel-bg); backdrop-filter: blur(8px);
+    border: 1px solid var(--line); border-radius: 4px;
+    padding: 1.1rem 1.2rem 1.2rem; box-shadow: var(--shadow); width: 100%;
+  }
+  .card .era { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--rust); }
+  .card h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.35rem; margin: 0.25rem 0 0.6rem; text-wrap: balance; }
+  .card p { font-size: 0.86rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 0.7rem; }
+  .card p:last-child { margin-bottom: 0; }
+  .card .stat { display: flex; align-items: baseline; gap: 0.4rem; padding-top: 0.55rem; border-top: 1px solid var(--line); }
+  .card .stat b { font-family: "IBM Plex Mono", monospace; font-size: 1.05rem; color: var(--rust); font-variant-numeric: tabular-nums; }
+  .card .stat span { font-size: 0.7rem; color: var(--fog); }
+
+  /* transition beats: connective tissue between stages, not a milestone -- smaller, quieter */
+  .card.transition {
+    padding: 0.85rem 1.1rem; box-shadow: none; border-style: dashed;
+    background: color-mix(in srgb, var(--panel-bg) 75%, transparent);
+  }
+  .card.transition .era { color: var(--ochre); }
+  .card.transition h2 { font-size: 1.05rem; font-weight: 500; }
+  .card.transition p { font-size: 0.82rem; margin-bottom: 0; }
+
+  .outro {
+    padding: 2.6rem 1.4rem 3rem; text-align: center; position: relative; z-index: 2; background: var(--bg);
+  }
+  .outro h2 { font-family: "Fraunces", Georgia, serif; font-size: 1.4rem; margin: 0 0 0.7rem; }
+  .outro p { font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); max-width: 34ch; margin: 0 auto 0.5rem; }
+  .outro .cite { font-family: "IBM Plex Mono", monospace; font-size: 0.65rem; color: var(--fog); margin-top: 1.2rem; line-height: 1.6; }
+
+  @media (min-width: 760px) {
+    .frame { max-width: 900px; }
+    .stickywrap { position: sticky; top: 0; height: 100vh; }
+  }
+</style>
+
+<div class="frame">
+
+  <div class="intro">
+    <span class="kicker">Zionism Timeline &middot; scroll to advance</span>
+    <h1>Ground Given Up</h1>
+    <p>From Ottoman rule to today, a timeline of the land taken from the people of Palestine.</p>
+    <div class="scrolldown">&#8595; scroll</div>
+  </div>
+
+  <div class="scrolly" id="scrolly">
+    <div class="stickywrap">
+      <div class="maparea">
+        <svg id="map" viewBox="-1050 300 2000 3700" role="img" aria-label="Map of historic Palestine and neighboring territory, showing land status changing from Ottoman rule to the year 2000">
+          <defs>
+            <pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="var(--occupied)" stroke-width="2.4" opacity="0.55"></line>
+            </pattern>
+          </defs>
+
+          <g id="camera">
+            <path class="neighbor" id="r-syria" d=""></path>
+            <path class="neighbor" id="r-lebanon" d=""></path>
+            <path class="neighbor" id="r-jordan" d=""></path>
+            <path class="neighbor" id="r-egypt" d=""></path>
+
+            <path class="landmass" id="r-historic_outline" d=""></path>
+
+            <path class="region" id="r-israel_pre67" data-region="israel_pre67" d=""></path>
+            <path class="region" id="r-golan" data-region="golan" d=""></path>
+            <path class="region" id="r-westbank" data-region="westbank" d=""></path>
+            <path class="region" id="r-gaza" data-region="gaza" d=""></path>
+            <path class="region" id="r-sinai" data-region="sinai" d=""></path>
+            <path class="region" id="r-south_lebanon" data-region="south_lebanon" d=""></path>
+
+            <g id="markers"></g>
+          </g>
+        </svg>
+        <div class="dots" id="stageDots"></div>
+      </div>
+
+      <div class="legend">
+        <div class="row"><span class="sw held"></span>held</div>
+        <div class="row"><span class="sw new"></span>newly taken</div>
+        <div class="row"><span class="sw occ"></span>occupied zone</div>
+      </div>
+    </div>
+
+    <div class="steps" id="steps"></div>
+  </div>
+
+  <div class="outro">
+    <h2>This is the schematic pass.</h2>
+    <p>Boundaries here come from real 50m-resolution geographic data (Natural Earth), simplified for scroll performance — Golan, Sinai and the South Lebanon zone are computed clips against that real coastline, not hand-drawn. Pre-1948 stages have no precise boundary data and are shown as markers only, honestly.</p>
+    <div class="cite">Sources per stage are in each card above. Full research: historical_actors.json · organizations.json · knesset_members.json — Zionism Timeline project.</div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var REGIONS = {"israel_full": "M867.3,362.3 L854.3,395.6 L841.9,412.9 L837.9,439.5 L850.4,490.7 L860.0,499.0 L863.4,518.5 L854.9,537.4 L858.9,553.0 L869.6,567.5 L877.0,626.6 L892.3,654.5 L867.9,696.9 L863.4,731.5 L839.1,784.4 L811.2,788.1 L746.0,817.1 L725.7,842.7 L714.4,994.8 L679.0,991.0 L635.8,960.6 L627.3,934.3 L614.3,925.4 L525.1,908.7 L457.3,954.5 L428.5,1030.3 L422.7,1065.7 L399.6,1140.2 L417.5,1293.8 L411.4,1322.8 L398.5,1338.4 L402.4,1349.5 L413.9,1353.6 L451.0,1340.5 L490.1,1353.6 L527.6,1378.7 L530.6,1395.0 L504.0,1404.6 L441.2,1442.6 L397.0,1486.6 L355.6,1613.9 L359.7,1631.7 L374.2,1642.2 L476.4,1632.9 L569.2,1597.9 L639.0,1560.6 L661.1,1562.8 L634.7,1717.1 L655.1,1777.9 L625.4,1871.0 L548.0,2062.4 L497.2,2219.0 L501.2,2241.7 L493.0,2358.9 L497.8,2392.1 L458.9,2493.7 L408.9,2755.9 L372.3,2804.0 L242.4,2361.3 L174.3,2203.5 L153.3,2110.3 L24.0,1730.9 L78.4,1678.4 L79.4,1635.1 L172.1,1534.1 L171.3,1524.2 L146.6,1497.4 L252.9,1304.7 L319.2,1118.3 L381.6,859.3 L426.0,727.5 L463.6,640.3 L480.3,568.1 L541.0,563.0 L640.3,573.1 L683.6,545.9 L704.4,464.7 L729.1,451.7 L741.6,470.8 L754.5,449.5 L811.2,413.8 L867.3,362.3 Z", "israel_pre67": "M750.7,815.0 L725.7,842.7 L714.4,994.8 L679.0,991.0 L635.8,960.6 L627.3,934.3 L614.3,925.4 L525.1,908.7 L457.3,954.5 L428.5,1030.3 L422.7,1065.7 L399.6,1140.2 L417.5,1293.8 L411.4,1322.8 L398.5,1338.4 L402.4,1349.5 L413.9,1353.6 L451.0,1340.5 L490.1,1353.6 L527.6,1378.7 L530.6,1395.0 L504.0,1404.6 L441.2,1442.6 L397.0,1486.6 L355.6,1613.9 L359.7,1631.7 L374.2,1642.2 L476.4,1632.9 L569.2,1597.9 L639.0,1560.6 L661.1,1562.8 L634.7,1717.1 L655.1,1777.9 L625.4,1871.0 L548.0,2062.4 L497.2,2219.0 L501.2,2241.7 L493.0,2358.9 L497.8,2392.1 L458.9,2493.7 L408.9,2755.9 L372.3,2804.0 L242.4,2361.3 L174.3,2203.5 L153.3,2110.3 L24.0,1730.9 L78.4,1678.4 L79.4,1635.1 L172.1,1534.1 L171.3,1524.2 L146.6,1497.4 L252.9,1304.7 L319.2,1118.3 L381.6,859.3 L426.0,727.5 L463.6,640.3 L480.3,568.1 L541.0,563.0 L640.3,573.1 L683.6,545.9 L704.4,464.7 L729.1,451.7 L741.6,470.8 L750.7,455.8 L750.7,815.0 Z", "golan": "M854.3,395.6 L841.9,412.9 L837.9,439.5 L845.8,461.2 L850.4,490.7 L860.0,499.0 L863.4,518.5 L854.9,537.4 L858.9,553.0 L869.6,567.5 L877.0,626.6 L892.3,654.5 L867.9,696.9 L863.4,731.5 L839.1,784.4 L811.2,788.1 L750.7,815.0 L750.7,455.8 L754.5,449.5 L811.2,413.8 L857.7,372.0 L863.6,372.0 L854.3,395.6 Z", "westbank": "M714.4,994.8 L725.3,1092.5 L705.6,1176.1 L703.9,1249.4 L718.4,1385.4 L686.9,1443.1 L669.0,1511.3 L661.1,1562.8 L639.0,1560.6 L569.2,1597.9 L476.4,1632.9 L374.2,1642.2 L359.7,1631.7 L355.6,1613.9 L397.0,1486.6 L441.2,1442.6 L504.0,1404.6 L530.6,1395.0 L527.6,1378.7 L490.1,1353.6 L451.0,1340.5 L413.9,1353.6 L402.4,1349.5 L398.5,1338.4 L411.4,1322.8 L417.5,1293.8 L407.8,1186.0 L399.6,1140.2 L422.7,1065.7 L428.5,1030.3 L457.3,954.5 L525.1,908.7 L614.3,925.4 L627.3,934.3 L635.8,960.6 L679.0,991.0 L714.4,994.8 Z", "gaza": "M146.6,1497.4 L171.3,1524.2 L172.1,1534.1 L79.4,1635.1 L78.4,1678.4 L24.0,1730.9 L-1.0,1660.0 L99.0,1560.1 L146.6,1497.4 Z", "sinai": "M-1004.4,1693.5 L-881.3,1797.5 L-844.1,1817.4 L-801.1,1814.1 L-711.3,1787.0 L-686.4,1791.2 L-565.7,1755.7 L-531.6,1807.6 L-434.6,1778.8 L-282.0,1779.1 L-157.2,1747.8 L-1.0,1660.0 L153.3,2110.3 L174.3,2203.5 L242.4,2361.3 L372.3,2804.0 L342.8,2832.1 L283.6,2932.2 L220.5,3250.1 L130.3,3498.5 L120.1,3654.0 L105.6,3710.1 L10.6,3866.1 L-81.9,3826.1 L-232.5,3690.5 L-320.3,3561.5 L-414.4,3478.3 L-503.4,3368.0 L-527.6,3288.7 L-526.7,3237.8 L-565.5,3113.5 L-594.3,3054.7 L-702.8,2922.5 L-733.9,2852.0 L-781.6,2776.5 L-820.9,2605.0 L-863.9,2496.1 L-912.9,2526.2 L-904.3,2572.1 L-947.0,2635.4 L-972.8,2709.0 L-953.0,2769.1 L-864.3,2860.5 L-846.3,2900.4 L-825.7,2987.0 L-829.0,3104.8 L-814.7,3144.8 L-748.3,3232.3 L-688.2,3369.6 L-622.3,3445.8 L-527.5,3590.9 L-437.6,3688.6 L-372.7,3735.8 L-345.2,3783.2 L-341.3,3968.0 L-1004.4,3968.0 L-1004.4,1693.5 Z", "south_lebanon": "M754.5,449.5 L741.6,470.8 L729.1,451.7 L704.4,464.7 L683.6,545.9 L640.3,573.1 L586.2,570.7 L541.0,563.0 L480.3,568.1 L504.9,520.8 L530.5,459.4 L553.4,384.4 L793.0,384.4 L793.0,425.3 L754.5,449.5 Z", "syria": "M894.8,-1188.3 L1032.8,-1137.0 L1058.3,-1201.3 L1135.3,-1242.2 L1150.0,-1346.2 L1203.7,-1376.8 L1288.1,-1385.1 L1235.7,-1523.6 L1267.1,-1674.8 L1299.7,-1737.6 L1449.4,-1710.2 L1515.2,-1644.6 L1710.8,-1638.9 L2110.2,-1799.0 L2243.4,-1774.6 L2414.1,-1669.7 L2726.0,-1662.6 L3074.8,-1752.2 L3439.1,-1920.6 L3573.0,-1927.7 L3734.6,-1903.0 L3867.3,-1915.3 L4155.0,-1987.8 L4230.5,-2044.3 L4288.8,-2002.3 L4313.1,-1927.3 L4308.4,-1897.6 L4011.6,-1610.2 L3815.1,-1559.1 L3751.2,-1477.7 L3724.6,-1285.5 L3781.1,-1122.2 L3781.9,-1017.1 L3726.0,-885.0 L3709.1,-798.7 L3697.7,-476.8 L3587.9,-266.0 L3560.4,-239.7 L3430.6,-205.9 L2417.7,389.2 L1384.2,1043.3 L1148.2,1000.1 L1067.7,933.0 L983.0,909.1 L895.9,797.5 L839.1,784.4 L892.3,654.5 L854.9,537.4 L841.9,412.9 L867.4,362.3 L969.8,257.3 L921.1,206.1 L934.9,165.9 L1000.3,104.4 L1144.5,99.6 L1098.4,46.3 L1139.2,-7.0 L1193.4,-35.2 L1260.8,-137.2 L1218.2,-268.1 L1125.9,-309.8 L1180.5,-380.4 L1154.5,-407.9 L1108.2,-420.8 L1090.9,-392.4 L939.0,-390.1 L892.3,-588.2 L921.4,-758.8 L900.0,-880.8 L827.0,-974.4 L866.8,-1146.5 L894.8,-1188.3 Z", "lebanon": "M939.0,-390.1 L1090.9,-392.4 L1108.2,-420.8 L1154.5,-407.9 L1180.5,-380.4 L1124.0,-318.3 L1125.9,-309.8 L1150.6,-307.0 L1192.4,-289.0 L1218.2,-268.1 L1260.8,-137.2 L1234.4,-83.3 L1193.4,-35.2 L1175.1,-30.9 L1139.2,-7.0 L1109.0,25.6 L1098.4,46.3 L1100.7,65.6 L1143.3,89.8 L1144.5,99.6 L1135.8,107.2 L1057.0,99.5 L1000.3,104.4 L961.5,134.0 L934.9,165.9 L921.1,206.1 L936.6,233.7 L965.6,249.3 L969.8,257.3 L963.3,271.2 L934.4,288.6 L912.7,309.8 L906.5,331.5 L839.2,390.7 L754.5,449.5 L741.6,470.8 L729.1,451.7 L704.4,464.7 L683.6,545.9 L640.3,573.1 L541.0,563.0 L480.3,568.1 L530.5,459.4 L555.8,376.6 L600.4,307.9 L693.0,74.6 L746.3,-20.0 L765.4,-153.9 L848.1,-271.2 L910.0,-305.9 L939.9,-339.4 L939.0,-390.1 Z", "egypt": "M1412.2,7442.0 L-1462.0,7442.6 L-1434.7,7348.4 L-1446.2,7321.3 L-1480.0,7314.5 L-1502.1,7323.1 L-1553.9,7438.6 L-1581.1,7443.2 L-4873.9,7442.6 L-4873.9,2987.2 L-5020.3,2355.3 L-4928.2,2196.3 L-4883.9,2059.3 L-4877.2,1998.5 L-4928.2,1822.0 L-4941.3,1652.4 L-4783.9,1453.9 L-4744.3,1529.1 L-4661.4,1542.1 L-4391.2,1475.0 L-3675.1,1625.7 L-3520.7,1728.1 L-3367.4,1739.1 L-3294.7,1799.6 L-3005.4,1828.7 L-2710.8,1965.2 L-2522.4,1905.0 L-2257.4,1719.0 L-2194.2,1695.4 L-2102.6,1699.8 L-2011.4,1576.3 L-1918.4,1566.7 L-1732.1,1508.6 L-1752.9,1536.1 L-1922.7,1601.5 L-1850.0,1609.6 L-1690.7,1573.1 L-1664.2,1493.2 L-1647.8,1485.9 L-1414.4,1575.9 L-1371.0,1577.4 L-1221.7,1524.3 L-1091.1,1648.5 L-1122.8,1646.4 L-1220.0,1560.9 L-1228.6,1603.5 L-1284.0,1678.6 L-1158.5,1723.3 L-1109.2,1802.5 L-1053.8,1786.2 L-1014.0,1735.5 L-1048.7,1677.9 L-992.0,1701.2 L-844.1,1817.4 L-565.7,1755.7 L-531.6,1807.6 L-434.6,1778.8 L-282.0,1779.1 L-157.2,1747.8 L-1.0,1660.0 L174.3,2203.5 L242.4,2361.3 L372.3,2804.0 L283.6,2932.2 L220.5,3250.1 L130.3,3498.5 L105.6,3710.1 L10.6,3866.1 L-81.9,3826.1 L-232.5,3690.5 L-320.3,3561.5 L-503.4,3368.0 L-565.5,3113.5 L-702.8,2922.5 L-781.6,2776.5 L-863.9,2496.1 L-912.9,2526.2 L-904.3,2572.1 L-972.8,2709.0 L-953.0,2769.1 L-846.3,2900.4 L-825.7,2987.0 L-829.0,3104.8 L-748.3,3232.3 L-688.2,3369.6 L-527.5,3590.9 L-372.7,3735.8 L-345.2,3783.2 L-343.7,3963.4 L-265.8,4128.5 L-210.6,4173.7 L-185.4,4225.4 L-127.4,4557.6 L-79.6,4618.5 L68.4,4944.9 L193.0,5151.5 L525.5,5905.4 L675.5,6104.0 L837.3,6238.6 L757.0,6230.8 L708.8,6249.2 L689.6,6336.8 L699.3,6545.6 L791.8,6853.4 L905.8,6981.4 L1073.0,7050.1 L1170.7,7195.6 L1390.2,7379.5 L1412.2,7442.0 Z", "jordan": "M839.1,784.4 L895.9,797.5 L983.0,909.1 L1067.7,933.0 L1148.2,1000.1 L1384.2,1043.3 L2417.7,389.2 L2568.0,934.2 L2527.8,947.0 L2559.3,1050.5 L2668.3,1022.4 L2692.2,1088.8 L2517.5,1243.1 L1458.3,1555.3 L1998.3,2170.0 L1823.7,2274.8 L1728.2,2483.1 L1350.8,2563.1 L1323.7,2584.4 L1203.2,2793.0 L987.7,2975.7 L959.7,2981.9 L396.9,2880.8 L458.9,2493.7 L497.8,2392.1 L497.2,2219.0 L655.1,1777.9 L634.7,1717.1 L669.0,1511.3 L718.4,1385.4 L703.9,1249.4 L725.3,1092.5 L714.4,994.8 L725.7,842.7 L746.0,817.1 L839.1,784.4 Z", "historic_outline": "M153.3,2110.3 L-1.0,1660.0 L99.0,1560.1 L150.1,1492.8 L252.9,1304.7 L319.2,1118.3 L381.6,859.3 L426.0,727.5 L463.6,640.3 L480.3,568.1 L541.0,563.0 L640.3,573.1 L683.6,545.9 L704.4,464.7 L729.1,451.7 L741.6,470.8 L754.5,449.5 L811.2,413.8 L867.3,362.3 L854.3,395.6 L841.9,412.9 L837.9,439.5 L850.4,490.7 L860.0,499.0 L863.4,518.5 L854.9,537.4 L858.9,553.0 L869.6,567.5 L877.0,626.6 L892.3,654.5 L867.9,696.9 L863.4,731.5 L839.1,784.4 L811.2,788.1 L746.0,817.1 L725.7,842.7 L714.4,994.8 L725.3,1092.5 L705.6,1176.1 L703.9,1249.4 L718.4,1385.4 L686.9,1443.1 L669.0,1511.3 L634.7,1717.1 L655.1,1777.9 L625.4,1871.0 L548.0,2062.4 L497.2,2219.0 L501.2,2241.7 L493.0,2358.9 L497.8,2392.1 L458.9,2493.7 L408.9,2755.9 L372.3,2804.0 L242.4,2361.3 L174.3,2203.5 L153.3,2110.3 Z"};
+  var MARKERS = {"jezreel": [581.5, 837.0], "jerusalem": [539.2, 1376.4], "deir_yassin": [523.4, 1370.2], "gaza_city": [142.7, 1550.0], "quneitra": [856.4, 539.4], "el_arish": [-211.5, 1779.4], "marjayoun": [734.8, 396.8], "jaffa": [290.8, 1209.0], "jordan_valley": [713.7, 1240.0]};
+
+  var CAMERA = {
+    core: "translate(-681.3px,-199.2px) scale(1.4683)",
+    wide: "translate(0px,0px) scale(1)"
+  };
+
+  // stage config: which named regions get which visual status, which markers are "active",
+  // and which camera preset frames the shot. `type:"transition"` = connective beat, not a
+  // milestone — smaller card, no stat, no map-shading change of its own.
+  var stages = [
+    {
+      type: "main", era: "Pre-1917", title: "Ottoman Rule", camera: "core",
+      body: "Palestine is a set of Ottoman administrative districts (sanjaks of Jerusalem, Nablus, Acre), not a border on a map. Land is bought, sold, and farmed under Ottoman and customary tenure — no partition line exists yet.",
+      stat: "0", statLabel: "borders drawn through it, at this point",
+      regions: {}, markers: []
+    },
+    {
+      type: "transition", era: "1918–1920", title: "The Mandate begins",
+      body: "The Ottoman Empire collapses at the end of World War I. Britain takes over Palestine as a League of Nations Mandate in 1920 — the administrative shell everything below happens inside.",
+      regions: {}, markers: []
+    },
+    {
+      type: "main", era: "1920–1925", title: "The Sursock Purchase", camera: "core",
+      body: "Yehoshua Hankin buys ~200,000–240,000 dunams of the Jezreel Valley from the Sursock family, absentee landowners in Beirut. Arab tenant farmers who worked the land for generations are evicted.",
+      stat: "~2–3%", statLabel: "of Mandate Palestine under Jewish ownership by the mid-1920s",
+      regions: {}, markers: ["jezreel"]
+    },
+    {
+      type: "transition", era: "1937", title: "The Peel Commission",
+      body: "The first official British proposal to partition Palestine, and the first to raise population transfer as a way to make the borders work. Rejected by both sides — no line was ever drawn on the ground, so none is shown here.",
+      regions: {}, markers: ["jezreel"]
+    },
+    {
+      type: "main", era: "1947–1949", title: "Partition, War, the Nakba", camera: "core",
+      body: "The UN votes to partition Palestine 55/45. War follows. By the 1949 armistice, roughly 750,000 Palestinians have fled or been expelled — among them the villagers of Deir Yassin, killed in an Irgun/Lehi operation that April.",
+      stat: "~78%", statLabel: "of Mandate Palestine inside the new armistice line (the 'Green Line')",
+      regions: { israel_pre67: "new" }, markers: ["jezreel", "deir_yassin", "jerusalem", "jaffa"]
+    },
+    {
+      type: "main", era: "1967", title: "The Six-Day War", camera: "wide",
+      body: "In six days, Israel captures the West Bank and East Jerusalem from Jordan, Gaza from Egypt, the Sinai Peninsula from Egypt, and the Golan Heights from Syria — the largest territorial change since 1948, all at once.",
+      stat: "4", statLabel: "territories captured in one week",
+      regions: { israel_pre67: "held", golan: "new", westbank: "new", gaza: "new", sinai: "new" },
+      markers: ["jezreel", "deir_yassin", "jerusalem", "jaffa", "quneitra", "jordan_valley", "gaza_city", "el_arish"]
+    },
+    {
+      type: "transition", era: "1979–1982", title: "Sinai returned", camera: "wide",
+      body: "Under the Israel–Egypt peace treaty, Israel withdraws fully from Sinai by 1982 — the only 1967 territory given back in full. Everything else captured that week stays under Israeli control.",
+      regions: { israel_pre67: "held", golan: "held", westbank: "held", gaza: "held", sinai: "returned" },
+      markers: ["jezreel", "deir_yassin", "jerusalem", "jaffa", "quneitra", "jordan_valley", "gaza_city", "el_arish"]
+    },
+    {
+      type: "main", era: "1982–2000", title: "The South Lebanon Zone", camera: "core",
+      body: "Israel invades Lebanon in 1982 and holds a self-declared 'security zone' in the south for 18 years — occupied, never annexed, run with an allied militia until Israel's unilateral withdrawal in May 2000.",
+      stat: "18", statLabel: "years of occupation before withdrawal",
+      regions: { israel_pre67: "held", golan: "held", westbank: "held", gaza: "held", sinai: "returned", south_lebanon: "occupied" },
+      markers: ["jezreel", "deir_yassin", "jerusalem", "jaffa", "quneitra", "jordan_valley", "gaza_city", "el_arish", "marjayoun"]
+    }
+  ];
+
+  // --- build map paths ---
+  Object.keys(REGIONS).forEach(function (name) {
+    var el = document.getElementById("r-" + name);
+    if (el) el.setAttribute("d", REGIONS[name]);
+  });
+
+  // --- build markers (all pins exist once; visibility/label driven by stage) ---
+  var markerMeta = {
+    jezreel: "Jezreel Valley", deir_yassin: "Deir Yassin", jerusalem: "Jerusalem",
+    jaffa: "Jaffa", quneitra: "Golan Heights", jordan_valley: "West Bank",
+    gaza_city: "Gaza", el_arish: "Sinai", marjayoun: "S. Lebanon zone"
+  };
+  var svgNS = "http://www.w3.org/2000/svg";
+  var markersG = document.getElementById("markers");
+  var pinEls = {};
+  Object.keys(MARKERS).forEach(function (key) {
+    var xy = MARKERS[key];
+    var g = document.createElementNS(svgNS, "g");
+    g.setAttribute("class", "pin");
+    g.innerHTML =
+      '<circle class="ring" cx="' + xy[0] + '" cy="' + xy[1] + '" r="6"></circle>' +
+      '<circle class="dot" cx="' + xy[0] + '" cy="' + xy[1] + '" r="9"></circle>' +
+      '<text x="' + (xy[0] + 14) + '" y="' + (xy[1] + 4) + '">' + markerMeta[key] + "</text>";
+    markersG.appendChild(g);
+    pinEls[key] = g;
+  });
+
+  // --- build scroll steps ---
+  var stepsWrap = document.getElementById("steps");
+  var dotsWrap = document.getElementById("stageDots");
+  var lastCamera = "core"; // transitions with no explicit camera keep whatever was last set
+
+  stages.forEach(function (s, i) {
+    var sec = document.createElement("section");
+    sec.className = "step" + (s.type === "transition" ? " is-transition" : "");
+    sec.id = "step-" + i;
+    var statHtml = s.stat
+      ? '<div class="stat"><b>' + s.stat + "</b><span>" + s.statLabel + "</span></div>"
+      : "";
+    sec.innerHTML =
+      '<div class="card' + (s.type === "transition" ? " transition" : "") + '">' +
+        '<div class="era">' + s.era + "</div>" +
+        "<h2>" + s.title + "</h2>" +
+        "<p>" + s.body + "</p>" +
+        statHtml +
+      "</div>";
+    stepsWrap.appendChild(sec);
+
+    var dot = document.createElement("span");
+    if (s.type === "transition") dot.className = "minor";
+    dotsWrap.appendChild(dot);
+  });
+
+  var regionEls = {};
+  ["israel_pre67", "golan", "westbank", "gaza", "sinai", "south_lebanon"].forEach(function (n) {
+    regionEls[n] = document.getElementById("r-" + n);
+  });
+  var cameraEl = document.getElementById("camera");
+  var dotEls = dotsWrap.querySelectorAll("span");
+  var currentStage = -1;
+
+  function applyStage(idx) {
+    if (idx === currentStage) return;
+    currentStage = idx;
+    var s = stages[idx];
+
+    Object.keys(regionEls).forEach(function (name) {
+      var el = regionEls[name];
+      el.classList.remove("st-held", "st-new", "st-occupied", "st-returned");
+      var status = s.regions[name];
+      if (status) el.classList.add("st-" + status);
+    });
+
+    var activeSet = {};
+    s.markers.forEach(function (k) { activeSet[k] = true; });
+    Object.keys(pinEls).forEach(function (k) {
+      var el = pinEls[k];
+      el.classList.remove("active", "past");
+      if (activeSet[k]) el.classList.add("active");
+    });
+    // mark markers introduced in earlier stages (but not this one) as "past" (dim, stays visible)
+    for (var j = 0; j < idx; j++) {
+      stages[j].markers.forEach(function (k) {
+        if (!activeSet[k]) pinEls[k].classList.add("past");
+      });
+    }
+
+    if (s.camera) lastCamera = s.camera;
+    cameraEl.style.transform = CAMERA[lastCamera];
+    dotEls.forEach(function (d, i) { d.classList.toggle("on", i === idx); });
+  }
+
+  // --- scroll-driven activation: recompute which step's card is closest to the vertical
+  // center of the viewport on every scroll tick, rather than relying on IntersectionObserver
+  // threshold bands (which can fire out of order when steps are tall/adjacent and produce a
+  // map state that doesn't match the card actually on screen). rAF-throttled.
+  var stepEls = Array.prototype.slice.call(document.querySelectorAll(".step"));
+  var ticking = false;
+
+  function pickClosestStep() {
+    var centerY = window.innerHeight / 2;
+    var best = 0, bestDist = Infinity;
+    stepEls.forEach(function (el, i) {
+      var r = el.getBoundingClientRect();
+      var cardR = el.querySelector(".card").getBoundingClientRect();
+      var mid = (cardR.top + cardR.bottom) / 2;
+      var dist = Math.abs(mid - centerY);
+      if (dist < bestDist) { bestDist = dist; best = i; }
+    });
+    applyStage(best);
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(pickClosestStep);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  pickClosestStep();
+})();
+</script>

@@ -1,0 +1,964 @@
+[
+  {
+    "actor_id": "yehoshua-hankin",
+    "full_name": "Yehoshua Hankin",
+    "birth_name": "Yehoshua Chankin",
+    "birth_country": "Russian Empire (Kremenchuk area, Poltava Governorate, present-day Ukraine)",
+    "life_span": {
+      "born": "1864-12-04",
+      "died": "1945-11-27"
+    },
+    "primary_affiliations": [
+      "Jewish Colonization Association",
+      "Palestine Land Development Company",
+      "Jewish National Fund"
+    ],
+    "historical_role": "Chief land-purchasing agent of the Zionist movement in Ottoman and Mandatory Palestine, known as 'the redeemer of the land' (ge'ulat ha-adama). Negotiated and executed the majority of large-scale Zionist land acquisitions from the 1890s to the 1940s.",
+    "key_land_actions": [
+      {
+        "date": "1921-1925",
+        "action_type": "Land Purchase",
+        "location_affected": "Jezreel Valley (Emek Yizrael)",
+        "impact_description": "Negotiated and executed the purchase of the Jezreel Valley from the Sursock family, a Beirut-based absentee landowning family, on behalf of the Palestine Land Development Company/JNF. Financed substantially through Menachem Ussishkin's JNF fundraising. Led to the eviction/displacement of Arab tenant farmers (fellahin) who had cultivated the land, one of the most documented and litigated tenant-displacement episodes of the Mandate period. The dunam total genuinely varies by which purchases and years a source counts: one academic tally gives 368,526 dunams for the full 1921-1925 purchase program, of which more than 176,000 dunams were the 1925 Sursock sales specifically; other sources describe the Sursock holdings sold as roughly 80,000 acres (~320,000 dunams). Given as a range rather than a single number because the sources themselves disagree on scope, not out of uncertainty about the transaction's occurrence.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the range and its sourcing are corroborated via live search against Wikipedia's Sursock Purchases article (citing academic land-acquisition scholarship) and Encyclopedia.com's Hankin entry; this project's earlier 200,000-240,000 guess undersold the low end found via live search (176,000 for the 1925 sales alone reads close to that range, but the fuller 1921-1925 program runs meaningfully higher). Kenneth W. Stein, 'The Land Question in Palestine, 1917-1939' (1984), remains the best guess for deeper narrative detail, not independently re-read this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "edmond-de-rothschild",
+    "full_name": "Baron Edmond James de Rothschild",
+    "birth_name": "Edmond James de Rothschild",
+    "birth_country": "France",
+    "life_span": {
+      "born": "1845-08-19",
+      "died": "1934-11-02"
+    },
+    "primary_affiliations": [
+      "Rothschild family (French branch)",
+      "Palestine Jewish Colonization Association (PICA)"
+    ],
+    "historical_role": "French-Jewish philanthropist known in Zionist historiography as 'HaNadiv HaYadu'a' ('the well-known benefactor'). Personally financed early agricultural colonies (moshavot) from 1882 and formalized his landholdings and ongoing philanthropy into PICA in 1924.",
+    "key_land_actions": [
+      {
+        "date": "1882-1900",
+        "action_type": "Fund Raising / Land Purchase",
+        "location_affected": "Rishon LeZion, Zichron Ya'akov, Rosh Pinna and other early moshavot",
+        "impact_description": "Underwrote land purchase and agricultural development for several of the earliest Zionist colonies, effectively rescuing multiple settlements from financial collapse. First intervened at Rishon LeZion in November 1882 — after settlers appealed for help digging a well and hiring an agronomist, he sent expert guidance from the Mikveh Israel agricultural school and 30,000 German francs, on condition the colony absorb more families and keep his name out of it. From 1883-1889 he covered the operating expenses of Rishon LeZion, Zichron Ya'akov, Rosh Pinna, and Ekron directly, and donated over £5 million in total to other settlements — developing the vineyards at Rishon LeZion and Zichron Ya'akov that grew into two of Israel's major wineries — while establishing a paternalistic administrative apparatus (via appointed officials/'pekidim') over the colonies he funded.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the November 1882 Rishon LeZion intervention, the 1883-1889 direct-expense colonies, the £5 million+ total donation figure, and the vineyard development are corroborated via live search (Ramat Hanadiv's own Rothschild-legacy history, NJOP, Aish.com). Simon Schama, 'Two Rothschilds and the Land of Israel' (1978), remains the best guess for deeper narrative detail, not independently re-read this pass."
+      },
+      {
+        "date": "1924",
+        "action_type": "Legal Charter",
+        "location_affected": "Multiple locations across Mandatory Palestine",
+        "impact_description": "Established PICA (Palestine Jewish Colonization Association) in 1923-24, headed by his son James de Rothschild, to consolidate decades of privately-held colony land and philanthropic infrastructure under a single corporate body — it took over from the Jewish Colonisation Association (ICA), which had managed the Baron's villages since 1900, and was formally recognized by the Mandatory authorities in 1924. PICA went on to acquire more than 125,000 acres in Palestine and founded or assisted settlements including Pardes Hanna, Binyamina, and several kibbutzim, operating until 1957, when James de Rothschild's death led it to wind up and transfer its remaining property to the State of Israel.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1923 establishment/1924 Mandatory recognition, James de Rothschild's leadership, the ICA hand-over, the 125,000+ acre figure, and the 1957 wind-up are all corroborated via live search (Encyclopedia.com's PICA entry, Jewish Virtual Library's Baron Edmond de Rothschild page, Wikipedia's Palestine Jewish Colonization Association article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "arthur-ruppin",
+    "full_name": "Arthur Ruppin",
+    "birth_name": "Arthur Ruppin",
+    "birth_country": "Germany (Rawicz, Province of Posen, Kingdom of Prussia)",
+    "life_span": {
+      "born": "1876-03-01",
+      "died": "1943-01-01"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization",
+      "Palestine Land Development Company",
+      "Jewish Agency for Palestine"
+    ],
+    "historical_role": "Sociologist and economist called the 'father of Jewish settlement.' Headed the WZO's Palestine Office in Jaffa from 1908, shaping the practical, institutionally-driven settlement model (as opposed to individual philanthropy).",
+    "key_land_actions": [
+      {
+        "date": "1908",
+        "action_type": "Legal Charter",
+        "location_affected": "Mandatory/Ottoman Palestine (nationwide)",
+        "impact_description": "Founded the Palestine Land Development Company (PLDC), the institutional vehicle used for most subsequent Zionist land purchases, including those later executed by Yehoshua Hankin — the same year he opened the World Zionist Organization's Palestine Office in Jaffa to direct land purchasing and settlement work generally. Sources vary on the exact founding year (1908 vs. 1909, and one account credits Otto Warburg as a co-founder alongside Ruppin); kept here as 1908, matching the Palestine Office's own founding date.",
+        "primary_source_citation": "VERIFIED 2026-09-01 (with a noted source variance) — the 1908 Palestine Office founding is solid across sources; the PLDC's own founding year is genuinely given as both 1908 and 1909 depending on the source, and Otto Warburg's possible co-founder role is not corroborated everywhere. Corroborated via live search (Wikipedia's Arthur Ruppin article, Jewish Virtual Library)."
+      },
+      {
+        "date": "1909",
+        "action_type": "Land Purchase",
+        "location_affected": "Jaffa (Ahuzat Bayit, later Tel Aviv) and Degania (Sea of Galilee area)",
+        "impact_description": "Helped secure the financing (including a loan) for Ahuzat Bayit, the 1909 neighborhood that grew into Tel Aviv, and catalyzed the collective settlement experiments — beginning at Sejera — that led to Degania, founded in 1909 and generally regarded as the first kibbutz, operating on principles of cooperative labor and communal ownership.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the Ahuzat Bayit financing role and the Sejera-to-Degania settlement lineage are corroborated via live search (Wikipedia's Arthur Ruppin article, EBSCO Research Starters on Degania's founding)."
+      }
+    ]
+  },
+  {
+    "actor_id": "menachem-ussishkin",
+    "full_name": "Menachem Ussishkin",
+    "birth_name": "Avraham Menachem Mendel Ussishkin",
+    "birth_country": "Russian Empire (Dubrovno, present-day Belarus)",
+    "life_span": {
+      "born": "1863-08-15",
+      "died": "1941-10-02"
+    },
+    "primary_affiliations": [
+      "Jewish National Fund (Keren Kayemeth LeIsrael)",
+      "World Zionist Organization"
+    ],
+    "historical_role": "Leading Zionist Congress figure and chairman of the Jewish National Fund from 1923 until his death in 1941. The most prominent institutional advocate and fundraiser for large-scale, permanently-held ('inalienable') land purchase as the core Zionist strategy.",
+    "key_land_actions": [
+      {
+        "date": "1923-1941",
+        "action_type": "Fund Raising / Policy Lobbying",
+        "location_affected": "Multiple locations, notably Jezreel Valley and Hefer Valley",
+        "impact_description": "As JNF chairman, directed fundraising (including from diaspora donors) that financed Hankin's Jezreel Valley purchase and subsequent JNF acquisitions elsewhere; institutionalized the JNF policy that land purchased could never be resold or leased to non-Jews, a policy with lasting effect on land tenure patterns.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — Ussishkin's tenure as JNF chairman/president, 1923 until his death in 1941, is corroborated via live search (Wikipedia's Menachem Ussishkin article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "moses-hess",
+    "full_name": "Moses Hess",
+    "birth_name": "Moses Hess",
+    "birth_country": "Grand Duchy of Hesse (Bonn, later Cologne, present-day Germany)",
+    "life_span": {
+      "born": "1812-01-21",
+      "died": "1875-04-06"
+    },
+    "primary_affiliations": [
+      "Independent writer (pre-institutional Zionism)"
+    ],
+    "historical_role": "Early socialist and one of the first to articulate a proto-Zionist, nationalist (rather than purely religious) argument for Jewish resettlement of Palestine, decades before Herzl.",
+    "key_land_actions": [
+      {
+        "date": "1862",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Palestine (conceptual/no specific locality)",
+        "impact_description": "Published 'Rome and Jerusalem: The Last National Question' (Leipzig, 1862), arguing — against the era's dominant assimilationist view — that Jews were a distinct nation, not merely a religious community, whose problems could only be resolved through national restoration in Palestine and a socialist agrarian 'redemption of the soil.' Foundational ideological text later cited by Labor Zionist land-settlement organizers (Second Aliyah). No direct land acquisition; included for ideological lineage.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1862 Leipzig publication and the book's core national-restoration/agrarian-redemption argument corroborated via live search (Wikipedia's Rome and Jerusalem article). Shlomo Avineri, 'Moses Hess: Prophet of Communism and Zionism' (1985), remains the best guess for deeper narrative detail, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "zvi-hirsch-kalischer",
+    "full_name": "Zvi Hirsch Kalischer",
+    "birth_name": "Zvi Hirsch Kalischer",
+    "birth_country": "Kingdom of Prussia (Lissa, Province of Posen, present-day Poland)",
+    "life_span": {
+      "born": "1795-01-01",
+      "died": "1874-10-16"
+    },
+    "primary_affiliations": [
+      "Independent rabbinic writer (pre-institutional Zionism)"
+    ],
+    "historical_role": "Orthodox rabbi who argued, against the mainstream religious view that resettlement should await the Messiah, that Jews should proactively organize practical agricultural resettlement of Palestine. A direct religious-Zionist precursor to the settlement movement.",
+    "key_land_actions": [
+      {
+        "date": "1862",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Palestine (conceptual)",
+        "impact_description": "Published 'Derishat Zion' (Seeking Zion, 1862), calling for renewed Jewish immigration and settlement in Palestine and outlining the need for a Jewish agricultural school and a Jewish defense force — arguing that Jewish self-help and agricultural colonization, not passive messianic waiting, should precede national redemption. Its argument for 'agricultural self-help' directly inspired the Alliance Israélite Universelle to establish the Mikveh Israel agricultural training school near Jaffa, which opened in 1870 — one of the first modern Jewish agricultural training institutions in Palestine.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1862 publication, its self-help/agricultural-colonization argument, and its direct inspiration of Mikveh Israel's 1870 opening are corroborated via live search (israeled.org's Kalischer biography, Encyclopedia.com). Arthur Hertzberg (ed.), 'The Zionist Idea' (1959/1997 anthology), remains the best guess for deeper narrative detail, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "leon-pinsker",
+    "full_name": "Leon Pinsker",
+    "birth_name": "Yehuda Leib Pinsker",
+    "birth_country": "Russian Empire (Tomaszów, Congress Poland)",
+    "life_span": {
+      "born": "1821-12-13",
+      "died": "1891-12-09"
+    },
+    "primary_affiliations": [
+      "Hovevei Zion (Lovers of Zion)"
+    ],
+    "historical_role": "Physician who, radicalized by the 1881 pogroms, wrote 'Auto-Emancipation' (1882) arguing Jews needed sovereign territory rather than assimilation; became leader of the Hovevei Zion movement that organized and funded First Aliyah settlement.",
+    "key_land_actions": [
+      {
+        "date": "1884",
+        "action_type": "Legal Charter",
+        "location_affected": "Russian Empire / Ottoman Palestine",
+        "impact_description": "Chaired the Kattowitz Conference (November 1884), a gathering of 32 delegates (22 from Russia) from local Hovevei Zion groups across the Russian Empire, which formally united them as a federated movement — Pinsker was elected its chairman — funding and coordinating early moshavot settlement from a permanent committee headquartered in Odessa, predating Herzl's First Zionist Congress by 13 years.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the November 1884 date, the 32-delegate/22-from-Russia count, Pinsker's chairmanship, and the Odessa committee are corroborated via live search (Wikipedia's Katowice Conference article, Britannica's Kattowitz Conference entry)."
+      }
+    ]
+  },
+  {
+    "actor_id": "theodor-herzl",
+    "full_name": "Theodor Herzl",
+    "birth_name": "Tivadar Herzl",
+    "birth_country": "Austria-Hungary (Pest, present-day Budapest, Hungary)",
+    "life_span": {
+      "born": "1860-05-02",
+      "died": "1904-07-03"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization (founder)"
+    ],
+    "historical_role": "Founder of political Zionism as an organized international movement. Convened the First Zionist Congress (Basel, 1897), founded the WZO and the Jewish Colonial Trust, and pursued diplomatic charters for large-scale sovereign or autonomous Jewish settlement.",
+    "key_land_actions": [
+      {
+        "date": "1897-08-29",
+        "action_type": "Legal Charter",
+        "location_affected": "Basel, Switzerland (institutional founding; target territory Ottoman Palestine)",
+        "impact_description": "Convened the First Zionist Congress, founding the World Zionist Organization with the explicit goal (the 'Basel Program') of securing 'a publicly recognized, legally secured home in Palestine for the Jewish people.' Established the institutional and diplomatic apparatus later used for land acquisition and settlement funding (Jewish Colonial Trust, 1899; JNF, 1901).",
+        "primary_source_citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified First Zionist Congress topic entry, which independently corroborates the 29 August 1897 convening and the Basel Program's 'publicly recognized, legally secured home' language. Herzl's diaries and Walter Laqueur, 'A History of Zionism' (1972), remain the best guess for deeper narrative detail, not independently re-read this pass."
+      },
+      {
+        "date": "1902-1903",
+        "action_type": "Policy Lobbying",
+        "location_affected": "El-Arish, Sinai Peninsula; Uganda Protectorate",
+        "impact_description": "Pursued (unsuccessfully) a British charter for Jewish settlement at El-Arish on the Sinai coast in 1902, rejected by the British because the territory was already inhabited and only partly under direct British control. Britain's Colonial Secretary, Joseph Chamberlain, then separately offered the Guas Ngishu plateau near Nairobi in the East Africa Protectorate — popularly but inaccurately remembered as the 'Uganda Scheme' — which Herzl brought to the Sixth Zionist Congress in August 1903 as an interim refuge proposal, not a substitute for Palestine. The proposal split the Congress and was ultimately rejected, but revealed the movement's early willingness to at least debate non-Palestine territory — a major internal controversy.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the El-Arish rejection grounds, Chamberlain's 1902-03 East Africa offer (correctly the Guas Ngishu plateau, not literally Uganda), and the August 1903 Sixth Zionist Congress debate are corroborated via live search (Encyclopedia.com's Uganda Scheme entry, Wikipedia's British Uganda Programme article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "max-nordau",
+    "full_name": "Max Nordau",
+    "birth_name": "Maximilian Simon Südfeld",
+    "birth_country": "Austria-Hungary (Pest, present-day Budapest, Hungary)",
+    "life_span": {
+      "born": "1849-07-29",
+      "died": "1923-01-23"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization (co-founder)"
+    ],
+    "historical_role": "Physician, writer, and Herzl's chief lieutenant; co-founded the WZO and coined the concept of 'Muscular Judaism' (Muskeljudentum), an ideology of physical self-transformation through agricultural/settlement labor that shaped Second Aliyah settlement culture.",
+    "key_land_actions": [
+      {
+        "date": "1897-1911",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Basel/Vienna (institutional); Ottoman Palestine (target)",
+        "impact_description": "Served as vice-president of the World Zionist Organization from the Basel Conference (1897), and as vice-president of the First through Sixth Zionist Congresses (1897-1903) before presiding as president of the Seventh through Tenth Congresses (1905-1911, his last) — the movement's chief ideologue throughout, articulating the cultural-physical rationale (see Muscular Judaism) for agricultural colonization that underpinned settlement fundraising appeals.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — this entry previously described Nordau's role uniformly as 'vice-president' across 1897-1911; corrected to reflect that he actually presided as Congress president from 1905, not vice-president throughout. Corroborated via live search (Wikipedia's Max Nordau article, My Jewish Learning)."
+      }
+    ]
+  },
+  {
+    "actor_id": "zvi-hermann-schapira",
+    "full_name": "Zvi Hermann Schapira",
+    "birth_name": "Hermann Schapira",
+    "birth_country": "Russian Empire (Yerkiev/Ekaterinoslav Governorate area, present-day Ukraine)",
+    "life_span": {
+      "born": "1840-10-25",
+      "died": "1898-05-09"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization",
+      "Jewish National Fund (proposer)"
+    ],
+    "historical_role": "Mathematics professor who first proposed a permanent national land fund at the First Zionist Congress (1897); the proposal was formally adopted as the Jewish National Fund at the Fifth Congress (1901), three years after his death.",
+    "key_land_actions": [
+      {
+        "date": "1897",
+        "action_type": "Legal Charter",
+        "location_affected": "Basel, Switzerland (institutional proposal)",
+        "impact_description": "Proposed a 'general Jewish fund' at the First Zionist Congress (1897) — contributed to by all of world Jewry, two-thirds directed to purchasing land and one-third to its maintenance and cultivation, with land held permanently (never sold, only leased for terms up to 49 years). Schapira died in 1898, before his proposal was realized; the fund was formally established as Keren Kayemet LeYisrael (the Jewish National Fund) at the Fifth Zionist Congress in 1901, becoming the single largest Zionist land-acquisition body and the direct institutional realization of his proposal, on the strength of which he is still regarded as the JNF's 'father.' He also proposed founding a Hebrew University in Jerusalem at the same 1897 Congress, decades before the Hebrew University of Jerusalem actually opened (1925).",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1897 proposal's terms (two-thirds/one-third split, 49-year lease cap), Schapira's 1898 death predating the JNF's 1901 founding, and his same-Congress Hebrew University proposal are corroborated via live search (Wikipedia's Jewish National Fund and Hermann Schapira articles, israeled.org)."
+      }
+    ]
+  },
+  {
+    "actor_id": "ahad-haam",
+    "full_name": "Ahad Ha'am",
+    "birth_name": "Asher Hirsch Ginsberg",
+    "birth_country": "Russian Empire (Skvyra, Kiev Governorate, present-day Ukraine)",
+    "life_span": {
+      "born": "1856-08-18",
+      "died": "1927-01-02"
+    },
+    "primary_affiliations": [
+      "Hovevei Zion",
+      "Independent essayist (Cultural Zionism)"
+    ],
+    "historical_role": "Leading proponent of 'Cultural Zionism' — Palestine as a spiritual/cultural center rather than a mass-immigration state solution. His essays criticizing the conduct of early settlers toward the Arab population are among the earliest internal Zionist critiques on record.",
+    "key_land_actions": [
+      {
+        "date": "1891",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Ottoman Palestine (touring First Aliyah colonies)",
+        "impact_description": "Published 'Emet me-Eretz Yisrael' (Truth from the Land of Israel, 1891) after touring the early moshavot, warning explicitly that settlers were mistreating local Arab residents and that the movement was ignoring the existence and rights of the existing population — an early, frequently-cited internal dissent within Zionist thought.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1891 date (following his first visit to Eretz Israel), the essay's critical assessment of the moshavot, and its warning against dismissing Arabs as people unaware of what was happening are corroborated via live search (Jewish Virtual Library's Ahad Ha'am entry, Wikipedia's Torat Eretz Yisrael article). Alan Dowty's 2000 analysis remains the best guess for deeper scholarly treatment, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "israel-belkind",
+    "full_name": "Israel Belkind",
+    "birth_name": "Israel Belkind",
+    "birth_country": "Russian Empire (Lohovo, present-day Belarus)",
+    "life_span": {
+      "born": "1861-01-01",
+      "died": "1929-04-26"
+    },
+    "primary_affiliations": [
+      "Bilu movement (co-founder)"
+    ],
+    "historical_role": "Co-founder and organizer of Bilu, the first organized settlement movement to physically emigrate and found agricultural colonies, launching the First Aliyah (1882).",
+    "key_land_actions": [
+      {
+        "date": "1882",
+        "action_type": "Land Purchase",
+        "location_affected": "Rishon LeZion and other early First Aliyah colonies",
+        "impact_description": "Led the first group of Bilu pioneers — fourteen university students from Kharkiv — who emigrated from Russia and arrived in Ottoman Palestine on 6 July 1882. That November, part of the group under Belkind's leadership moved to Rishon LeZion, working as hired laborers and sharecroppers; by June 1883 Bilu numbered 28 members in the country, directly founding/joining some of the earliest modern Jewish agricultural colonies, later sustained financially by Rothschild's patronage.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 6 July 1882 arrival date, the fourteen-Kharkiv-student composition, the November 1882 move to Rishon LeZion, and the June 1883 membership count of 28 are corroborated via live search (Encyclopedia.com's Bilu entry)."
+      }
+    ]
+  },
+  {
+    "actor_id": "ad-gordon",
+    "full_name": "A.D. Gordon",
+    "birth_name": "Aharon David Gordon",
+    "birth_country": "Russian Empire (Troyanov, Podolia Governorate, present-day Ukraine)",
+    "life_span": {
+      "born": "1856-06-09",
+      "died": "1922-02-22"
+    },
+    "primary_affiliations": [
+      "Second Aliyah labor movement (independent ideologue)"
+    ],
+    "historical_role": "Influential Second Aliyah thinker whose 'religion of labor' (dat ha-avoda) ideology — that manual agricultural work on the land was itself a form of Jewish national and spiritual redemption — became the founding ethos of the kibbutz/moshav settlement model.",
+    "key_land_actions": [
+      {
+        "date": "1904-1922",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Degania and other Second Aliyah collective settlements, Galilee",
+        "impact_description": "Immigrated to Ottoman Palestine in 1904 at age 48, first working at Petah Tikva before joining Degania — one of the first kvutzot (collective settlements) — in 1911, where he engaged in manual fieldwork alongside younger pioneers until his death there in 1922. Wrote extensively on agricultural labor as the basis of Jewish national revival, his 'religion of labor' shaping the ideological justification for the kibbutz movement's expansion for decades after.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — this entry previously implied continuous settlement at Degania from 1904; corrected to reflect he first worked at Petah Tikva and joined Degania specifically in 1911. The 1904 immigration, Petah Tikva/Degania sequence, and 1922 death at Degania are corroborated via live search (Wikipedia's A. D. Gordon article, My Jewish Learning)."
+      }
+    ]
+  },
+  {
+    "actor_id": "berl-katznelson",
+    "full_name": "Berl Katznelson",
+    "birth_name": "Berl Katznelson",
+    "birth_country": "Russian Empire (Babruysk, present-day Belarus)",
+    "life_span": {
+      "born": "1887-08-25",
+      "died": "1944-08-12"
+    },
+    "primary_affiliations": [
+      "Histadrut (co-founder)",
+      "Ahdut HaAvoda / Mapai (forerunner movements)"
+    ],
+    "historical_role": "Second Aliyah Labor Zionist ideologue and institution-builder; co-founded the Histadrut labor federation (1920), which became a central vehicle for land settlement, agricultural cooperatives, and immigrant absorption.",
+    "key_land_actions": [
+      {
+        "date": "1920",
+        "action_type": "Legal Charter",
+        "location_affected": "Mandatory Palestine (nationwide)",
+        "impact_description": "Co-founded the Histadrut (General Federation of Labor) in 1920, which through its settlement arm (Nir/Hachsharat HaYishuv) organized and financed agricultural cooperative settlement on JNF and privately-purchased land, becoming a primary institutional engine of Labor Zionist colonization — growing to roughly 25,000 members, some three of every four Jewish workers in Palestine, by 1927. Katznelson went on to found and edit Davar, the Histadrut's own daily newspaper.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1920 founding, the 1927 membership figure (~25,000, three-quarters of Jewish workers), and Katznelson's founding/editing of Davar are corroborated via live search (Wikipedia's Histadrut and Berl Katznelson articles)."
+      }
+    ]
+  },
+  {
+    "actor_id": "chaim-weizmann",
+    "full_name": "Chaim Weizmann",
+    "birth_name": "Chaim Azriel Weizmann",
+    "birth_country": "Russian Empire (Motal, present-day Belarus)",
+    "life_span": {
+      "born": "1874-11-27",
+      "died": "1952-11-09"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization (President)",
+      "Jewish Agency for Palestine"
+    ],
+    "historical_role": "Chemist and lead Zionist diplomat in Britain; his lobbying is widely credited as decisive in securing the Balfour Declaration (1917), the British policy commitment that underpinned the Mandate's support for a 'Jewish national home' and the legal/administrative framework enabling large-scale land purchase and immigration. Later first President of Israel.",
+    "key_land_actions": [
+      {
+        "date": "1917-11-02",
+        "action_type": "Policy Lobbying",
+        "location_affected": "United Kingdom (diplomatic); Ottoman/Mandatory Palestine (effect)",
+        "impact_description": "Led the sustained diplomatic campaign that culminated in the Balfour Declaration, in which the British government committed to favor 'the establishment in Palestine of a national home for the Jewish people' — the foundational international-law hook cited in subsequent Mandate land and immigration policy that enabled accelerated Zionist land acquisition.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Balfour Declaration topic entry, which independently corroborates Weizmann's lead diplomatic role. Jonathan Schneer, 'The Balfour Declaration' (2010), remains the best guess for deeper narrative detail, not independently re-checked page-by-page this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "nahum-sokolow",
+    "full_name": "Nahum Sokolow",
+    "birth_name": "Nahum Sokolow",
+    "birth_country": "Russian Empire (Wyszogród, Congress Poland, present-day Poland)",
+    "life_span": {
+      "born": "1859-01-10",
+      "died": "1936-05-17"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization (President, successor to Weizmann)"
+    ],
+    "historical_role": "Journalist and diplomat who, alongside Weizmann, led Zionist lobbying efforts in Britain and France (including securing French government sympathy) in the lead-up to the Balfour Declaration; later WZO President (1931-1935).",
+    "key_land_actions": [
+      {
+        "date": "1917",
+        "action_type": "Policy Lobbying",
+        "location_affected": "United Kingdom, France (diplomatic)",
+        "impact_description": "Co-led Zionist diplomatic lobbying alongside Weizmann in the period leading to the Balfour Declaration. Met with senior French officials in May 1917 and secured a written expression of French support: French Foreign Ministry official Jules Cambon's letter of 4 June 1917 expressing sympathy for 'Jewish colonization in Palestine' as 'a deed of justice and of reparation' — predating the British War Cabinet's own Balfour Declaration discussions, which did not begin until that July.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 4 June 1917 Cambon letter's date, author, wording, and its precedence over British War Cabinet discussions are corroborated via live search (Wikipedia's Cambon letter article, Britain Palestine Project)."
+      }
+    ]
+  },
+  {
+    "actor_id": "arthur-james-balfour",
+    "full_name": "Arthur James Balfour",
+    "birth_name": "Arthur James Balfour",
+    "birth_country": "United Kingdom (Scotland)",
+    "life_span": {
+      "born": "1848-07-25",
+      "died": "1930-03-19"
+    },
+    "primary_affiliations": [
+      "British Government (Foreign Secretary, 1916-1919)"
+    ],
+    "historical_role": "British Foreign Secretary whose 1917 declaration, issued as a letter to Lord Rothschild (Walter Rothschild, 2nd Baron), committed Britain to favor a 'national home for the Jewish people' in Palestine — the single most consequential foreign-patron policy act underpinning the Mandate-era legal environment for Zionist land acquisition. Included here as a foreign (non-Zionist) government patron per schema.",
+    "key_land_actions": [
+      {
+        "date": "1917-11-02",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Ottoman/Mandatory Palestine (effect); issued from London",
+        "impact_description": "Issued the Balfour Declaration on behalf of the British Cabinet, the diplomatic instrument later incorporated into the League of Nations Mandate for Palestine (1922), providing the international legal scaffolding within which subsequent land-purchase and immigration policy operated.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Balfour Declaration topic entry and League of Nations org entry (both independently corroborating the 2 November 1917 date and 1922 Mandate incorporation). Primary document: Balfour Declaration text, UK National Archives, not independently re-read this pass; analysis in Schneer (2010)."
+      }
+    ]
+  },
+  {
+    "actor_id": "zeev-jabotinsky",
+    "full_name": "Ze'ev Jabotinsky",
+    "birth_name": "Vladimir Yevgenyevich Jabotinsky",
+    "birth_country": "Russian Empire (Odessa, present-day Ukraine)",
+    "life_span": {
+      "born": "1880-10-18",
+      "died": "1940-08-04"
+    },
+    "primary_affiliations": [
+      "World Zionist Organization (until 1923 split)",
+      "Revisionist Zionist Organization (founder)",
+      "Betar (founder)"
+    ],
+    "historical_role": "Founder of Revisionist Zionism, which broke from the WZO majority in 1925 over demands for more rapid, larger-scale settlement and an explicit goal of Jewish statehood on both banks of the Jordan. His 'Iron Wall' doctrine (1923) — that Jewish settlement could only proceed behind a position of overwhelming armed strength against Arab opposition, not negotiation — directly shaped later territorial-maximalist settlement politics, including post-1967 settlement ideology.",
+    "key_land_actions": [
+      {
+        "date": "1925-04-25",
+        "action_type": "Legal Charter",
+        "location_affected": "Mandatory Palestine and Transjordan (claimed territory)",
+        "impact_description": "Founded the Revisionist Zionist Alliance (World Union of Zionist Revisionists) in Paris on 25 April 1925, explicitly demanding settlement policy cover both banks of the Jordan River and rejecting the mainstream WZO's gradualist, negotiation-based approach; ideological forerunner of later Greater Israel settlement movements (e.g. Gush Emunim, post-1977 Likud settlement policy).",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 25 April 1925 Paris founding date and the organization's formal name corroborated via live search."
+      }
+    ]
+  },
+  {
+    "actor_id": "david-ben-gurion",
+    "full_name": "David Ben-Gurion",
+    "birth_name": "David Grün",
+    "birth_country": "Russian Empire (Płońsk, Congress Poland, present-day Poland)",
+    "life_span": {
+      "born": "1886-10-16",
+      "died": "1973-12-01"
+    },
+    "primary_affiliations": [
+      "Poalei Zion",
+      "Ahdut HaAvoda (founder)",
+      "Histadrut",
+      "Mapai (founder)",
+      "Jewish Agency for Palestine (Chairman)"
+    ],
+    "historical_role": "Second Aliyah settler (1906) who became the dominant Labor Zionist institution-builder of the Mandate period — founded Ahdut HaAvoda (1919) and Mapai (1930), chaired the Jewish Agency Executive from 1935, and led the movement to statehood. Entry here covers his pre-1948 institutional/land role; his post-1948 premiership and Knesset record are a separate, not-yet-written entry.",
+    "key_land_actions": [
+      {
+        "date": "1935-1948",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Mandatory Palestine (nationwide)",
+        "impact_description": "Became chairman of the Jewish Agency Executive in 1935, a position he held until statehood in 1948, directing the Agency's political and settlement strategy through the 1936-39 Arab Revolt (where he instigated the Haganah's 'havlagah'/restraint policy against retaliation), the 1937 Peel Commission partition proposal (which he supported alongside Weizmann and Moshe Sharett, judging a small Jewish state better than none), and the 1939 White Paper period, coordinating land-purchase acceleration ('tower and stockade' settlements) intended to establish facts on the ground ahead of anticipated partition boundaries.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1935 chairmanship start, the havlagah policy, and support for the Peel Commission's partition recommendation are corroborated via live search (Wikipedia's David Ben-Gurion article, Jewish Virtual Library). Anita Shapira, 'Ben-Gurion: Father of Modern Israel' (2014), remains the best guess for deeper narrative detail, not independently re-checked this pass."
+      },
+      {
+        "date": "1948-05-14",
+        "action_type": "Legal Charter",
+        "location_affected": "Tel Aviv; effect nationwide",
+        "impact_description": "Proclaimed the Israeli Declaration of Independence at 5pm on 14 May 1948 at the Tel Aviv Museum, on behalf of the Provisional Government of Israel, after the People's Council (Moetzet HaAm, the renamed Provisional State Council) voted to accept the final text — a text Ben-Gurion himself principally authored — timed to coincide with the British Mandate's termination and made in accordance with UN Resolution 181. All 37 members of the Council signed it. The founding legal instrument for the state whose land and property law (Absentees' Property Law, Land Acquisition Law, etc.) is tracked elsewhere in this dataset.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 5pm Tel Aviv Museum ceremony, Ben-Gurion's principal authorship, the 37-signatory count, and the Resolution 181 framing are corroborated via live search (Times of Israel, Wikipedia's Israeli Declaration of Independence article, Israel State Archives). Primary document: Israeli Declaration of Independence, 14 May 1948, Israel State Archives, not independently re-read in full this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "golda-meir",
+    "full_name": "Golda Meir",
+    "birth_name": "Golda Mabovitch",
+    "birth_country": "Russian Empire (Kiev, present-day Ukraine)",
+    "life_span": {
+      "born": "1898-05-03",
+      "died": "1978-12-08"
+    },
+    "primary_affiliations": [
+      "Histadrut",
+      "Mapai",
+      "Jewish Agency for Palestine (Political Department)",
+      "Israeli Labor Party",
+      "Prime Minister of Israel"
+    ],
+    "historical_role": "Third Aliyah immigrant (1921, via the US) who rose through the Histadrut to head the Jewish Agency's Political Department (1946-48), effectively acting as the pre-state movement's foreign minister. Later Israel's Foreign Minister (1956-1966) and fourth Prime Minister (1969-1974), leading the Israeli Labor Party throughout; presided over the Yom Kippur War (1973) and resigned in its political aftermath.",
+    "key_land_actions": [
+      {
+        "date": "1948-01-01",
+        "action_type": "Fund Raising",
+        "location_affected": "United States (fundraising); effect nationwide in Mandatory Palestine",
+        "impact_description": "Led a US fundraising tour (January-March 1948), setting out with a $25 million goal and returning having raised $50 million — Ben-Gurion later credited her by name: 'there was a Jewish woman who got the money which made the state possible.' Funded arms and supplies ahead of statehood and the 1948 war.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the $25M goal / $50M raised figures and Ben-Gurion's quote are consistently corroborated across the Jewish Women's Archive, Hadassah Magazine, and Jewish Telegraphic Agency retrospectives. Best guess for deeper narrative detail: Golda Meir, 'My Life' (1975 memoir); Francine Klagsbrun, 'Lioness: Golda Meir and the Nation of Israel' (2017) — not independently re-checked this pass."
+      },
+      {
+        "date": "1947-11-17",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Naharayim / Transjordan border area",
+        "impact_description": "As Jewish Agency Political Department head, held a secret meeting with Transjordan's King Abdullah I at Naharayim on the Jordan River in early November 1947 (in the presence of Jewish Agency Arab-affairs experts Eliahu Sasson and Ezra Danin), two weeks before the UN Partition vote. Abdullah stated his intention to annex the territory earmarked for the Arab state into his own kingdom if partition passed; Meir responded that the Zionist leadership would not oppose that outcome if it meant no clashes between Jewish and Jordanian forces — part of a wider pattern of Jewish Agency diplomatic contacts aimed at securing non-aggression understandings around anticipated partition boundaries.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the Naharayim location, Sasson/Danin's presence, and the substance of the annexation/non-aggression understanding are corroborated via live search (israeled.org, Hadassah Magazine, B'nai B'rith International). Sources describe the date as 'early November 1947' rather than pinning a single day; this entry's existing 17 November date is consistent with that but not independently pinned to the exact day this pass. Avi Shlaim, 'Collusion Across the Jordan' (1988), remains the best guess for deeper narrative detail."
+      },
+      {
+        "date": "1969-06-15",
+        "action_type": "Policy Lobbying",
+        "location_affected": "N/A — diplomatic/rhetorical, nationwide effect",
+        "impact_description": "In an interview with the Sunday Times of London, declared as Prime Minister that 'there was no such thing as Palestinians' — not a private opinion but an articulation of government policy on Palestinian national claims to the land, and one of the most widely cited examples of Israeli state rhetoric denying a distinct Palestinian national identity during her premiership.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 15 June 1969 Sunday Times interview and its quote are corroborated via live search (Institute for Middle East Understanding; multiple retrospective press accounts)."
+      },
+      {
+        "date": "1969-1974",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "West Bank, Gaza Strip, Golan Heights, Sinai Peninsula",
+        "impact_description": "As Prime Minister, presided over continued Jewish settlement of the territory captured in the 1967 Six-Day War, broadly following the security-driven siting logic of the Allon Plan (drafted by her own Deputy Prime Minister Yigal Allon) rather than a single unified master plan: her government expanded Kiryat Arba near Hebron (established under her predecessor in September 1967), permitted roughly ten small settlements in the Jordan Valley, and rebuilt the four Etzion Bloc settlements Jordan had destroyed in 1947-48. The number of West Bank settlements grew from about 5 when she took office to roughly 14 by the time she left. In 1969 she also broke with Israel's prior policy of quiet, low-profile advocacy for Soviet Jewry, pushing the issue into public view for the first time.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 5-to-14 settlement growth, Kiryat Arba, the ~10 Jordan Valley settlements, the 4 rebuilt Etzion Bloc settlements, and the 1969 Soviet Jewry policy shift are corroborated via live search (IMEU's Golda Meir quick facts, Wikipedia's Gush Etzion article). Gershom Gorenberg, 'The Accidental Empire' (2006), remains the best guess for deeper narrative detail, not independently re-checked page-by-page this pass."
+      },
+      {
+        "date": "1974-04-10 to 1974-04-11",
+        "action_type": "Policy Lobbying",
+        "location_affected": "State of Israel",
+        "impact_description": "Announced her resignation as Prime Minister and Israeli Labor Party leader on 10 April 1974, effective 11 April, nine days after the Agranat Commission's interim report on the Yom Kippur War's intelligence failures — the Commission itself cleared her (and Defense Minister Moshe Dayan) of direct responsibility, but sustained public pressure over the war's preparedness forced her resignation regardless, ending her land-policy tenure and opening the way to Yitzhak Rabin's government.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 10/11 April 1974 resignation dates, the Agranat Commission's 1 April 1974 interim report, and its clearing of Meir/Dayan of direct responsibility are corroborated via live search (Israel State Archives, Wikipedia's Agranat Commission article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "yosef-weitz",
+    "full_name": "Yosef Weitz",
+    "birth_name": "Yosef Weitz",
+    "birth_country": "Russian Empire (Boryslav area, present-day Ukraine)",
+    "life_span": {
+      "born": "1890-01-01",
+      "died": "1972-10-25"
+    },
+    "primary_affiliations": [
+      "Jewish National Fund (Head, Lands Department)"
+    ],
+    "historical_role": "Directed the JNF's Lands Department from 1932, becoming the movement's chief operational land-purchase strategist through the Mandate period. Kept extensive diaries, later used by historians, documenting internal Zionist Agency discussion of Arab population 'transfer' as a policy option before and during the 1948 war.",
+    "key_land_actions": [
+      {
+        "date": "1932-1948",
+        "action_type": "Land Purchase",
+        "location_affected": "Multiple regions, nationwide JNF acquisitions",
+        "impact_description": "Directed JNF land-purchase operations as head of its Land Settlement Department from 1932 to 1948, overseeing acquisition strategy and prioritization across the Mandate period — when he joined in 1932, the Yishuv's roughly 91,000 Jews (about 10% of Palestine's population) owned just 2% of its land, the gap his department's purchasing program spent the following 16 years working to close, including in areas of dense Arab tenant cultivation. He was the prime mover behind the Jewish Agency's first and second unofficial Transfer Committees (1937-48), the same lineage that produced the 1948 Transfer Committee documented in his own later key_land_actions entry below.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1932-1948 department directorship, the 91,000-Jews/2%-land 1932 baseline, and his role as prime mover of the pre-1948 Transfer Committees are corroborated via live search (Wikipedia's Yosef Weitz article; a Palestine-solidarity summary independently repeating the same 1932-1948 dates). Yosef Weitz's own diaries remain the best guess for deeper narrative detail, not independently re-read this pass."
+      },
+      {
+        "date": "1948-06-05",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Nationwide, areas depopulated during the 1948 war",
+        "impact_description": "Co-founded the unofficial 'Transfer Committee' (with Ezra Danin, head of the Haganah intelligence arm's Arab section, and Eliahu Sasson, head of the Foreign Ministry's Middle East Affairs Department) in May 1948. On 5 June 1948 the three presented Prime Minister Ben-Gurion a three-page blueprint, 'Scheme for the Solution of the Arab Problem in the State of Israel,' recommending against permitting the return of Arab refugees and identifying depopulated Arab villages for destruction or Jewish resettlement — one of the most directly documented land-policy actors connecting wartime events to permanent land-status change.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the committee's May 1948 formation, its three named members and their respective institutional roles, and the 5 June 1948 blueprint presented to Ben-Gurion are corroborated via live search (Wikipedia's Transfer Committee article, itself drawing on Benny Morris's documented-source scholarship). Benny Morris, 'The Birth of the Palestinian Refugee Problem Revisited' (2004), ch. 5-6, remains the best guess for deeper narrative detail, not independently re-checked page-by-page this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "chaim-arlosoroff",
+    "full_name": "Chaim Arlosoroff",
+    "birth_name": "Chaim Arlosoroff",
+    "birth_country": "Russian Empire (Romny, present-day Ukraine)",
+    "life_span": {
+      "born": "1899-02-24",
+      "died": "1933-06-16"
+    },
+    "primary_affiliations": [
+      "Mapai",
+      "Jewish Agency for Palestine (Head, Political Department)"
+    ],
+    "historical_role": "Headed the Jewish Agency's Political Department (1931-1933) and negotiated the controversial Haavara (Transfer) Agreement with Nazi Germany, which allowed German Jewish emigrants to transfer a portion of their capital to Palestine in the form of German export goods. Assassinated on a Tel Aviv beach in 1933 in a still-disputed political killing.",
+    "key_land_actions": [
+      {
+        "date": "1933-04 to 1933-06-16",
+        "action_type": "Legal Charter",
+        "location_affected": "Mandatory Palestine (funds inbound from Germany)",
+        "impact_description": "As Jewish Agency Political Department head, traveled to Berlin in April 1933 and conducted the founding negotiations with Nazi economic officials (including Hjalmar Schacht) that laid the groundwork for what became the Haavara Agreement, channeling German-Jewish emigrant capital into Palestine via German export goods. He did not live to see it signed: he was assassinated on a Tel Aviv beach on 16 June 1933, two days after returning from a further negotiating trip to Germany — the formal agreement was concluded and signed by others (principally Eliezer Hoofien of the Anglo-Palestine Bank) on 25 August 1933, more than two months later. It ran 1933-1939, funding a meaningful share of Jewish immigration and associated land purchase/settlement infrastructure during the Fifth Aliyah — a major, historically contentious mechanism within the Zionist movement, and one whose most consequential early negotiator did not survive to see completed.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — this entry previously misdated Arlosoroff's role to the 25 August 1933 signing itself; corrected after live search showed he was assassinated 16 June 1933, over two months before that date, and that the formal signing was concluded by Eliezer Hoofien rather than Arlosoroff. His April 1933 Berlin negotiations with Schacht, his assassination two days after a further Germany trip, and Hoofien's role in finalizing the agreement are corroborated via live search (Wikipedia's Haim Arlosoroff and Haavara Agreement articles). His assassins were never definitively identified — not asserted here."
+      }
+    ]
+  },
+  {
+    "actor_id": "abba-hillel-silver",
+    "full_name": "Abba Hillel Silver",
+    "birth_name": "Abba Hillel Silver",
+    "birth_country": "Austria-Hungary (Shirvintos, present-day Lithuania)",
+    "life_span": {
+      "born": "1893-01-28",
+      "died": "1963-11-28"
+    },
+    "primary_affiliations": [
+      "Zionist Organization of America",
+      "American Zionist Emergency Council (Chairman)"
+    ],
+    "historical_role": "American Reform rabbi and the dominant American Zionist political organizer of the 1940s; chaired the American Zionist Emergency Council, which mobilized US political pressure and mass fundraising in the lead-up to the 1947 UN Partition vote and 1948 statehood. Foreign patron per this schema (US-based, non-resident of Palestine).",
+    "key_land_actions": [
+      {
+        "date": "1943-1948",
+        "action_type": "Fund Raising / Policy Lobbying",
+        "location_affected": "United States (fundraising/lobbying); effect nationwide in Mandatory Palestine",
+        "impact_description": "As co-chair (with Rabbi Stephen S. Wise) and later chairman of the American Zionist Emergency Council, directed mass US fundraising campaigns including the United Palestine Appeal, lobbied for the Palestine Resolution the US Congress passed in December 1945, and worked with Senator Robert Taft and Governor Thomas E. Dewey on the 1944 Republican Party's Palestine platform — supporting Jewish statehood and, implicitly, the land base a state would require; addressed the UN General Assembly on Palestine in 1947.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the AZEC co-chairmanship, the December 1945 Palestine Resolution lobbying, and the 1944 Republican platform work with Taft/Dewey are corroborated via live search (Encyclopedia.com, EBSCO Research Starters, Case Western Reserve's Encyclopedia of Cleveland History)."
+      }
+    ]
+  },
+  {
+    "actor_id": "william-robert-peel",
+    "full_name": "William Robert Peel, 1st Earl Peel",
+    "birth_name": "William Robert Wellesley Peel",
+    "birth_country": "United Kingdom (England)",
+    "life_span": {
+      "born": "1867-01-07",
+      "died": "1937-09-21"
+    },
+    "primary_affiliations": [
+      "British Government (Peel Commission, Chairman)"
+    ],
+    "historical_role": "Chaired the British Peel Commission (1936-37), convened to investigate causes of the 1936-39 Arab Revolt. The Commission's report was the first official body to recommend partitioning Mandatory Palestine into separate Jewish and Arab states, and explicitly discussed population transfer (voluntary or compulsory) as a means of achieving workable partition boundaries. Foreign patron/official per this schema.",
+    "key_land_actions": [
+      {
+        "date": "1937-07-07",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Mandatory Palestine (nationwide; specific proposed partition boundaries)",
+        "impact_description": "Published the Peel Commission Report recommending partition of Mandatory Palestine into a Jewish state (the coastal strip from Mount Carmel to south of Be'er Tuvia plus the Jezreel Valley and Galilee — roughly 17% of Palestine), an Arab state, and a British mandatory enclave around Jerusalem, alongside a proposed population transfer — rejected by both Arab leadership and (formally) the Zionist Congress, but establishing partition as the dominant subsequent diplomatic frame (culminating in the 1947 UN Partition Plan) and normalizing transfer as a discussed policy option later referenced by Zionist Agency figures including Yosef Weitz.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 7 July 1937 publication date and the ~17% Jewish-state territorial figure (coastal strip, Jezreel Valley, Galilee) are corroborated across Britannica and palquest.org's coverage of the report. Primary document: 'Palestine Royal Commission Report' (Cmd. 5479, July 1937), UK National Archives, not independently re-read in full this pass; discussed further in Benny Morris (2004)."
+      }
+    ]
+  },
+  {
+    "actor_id": "yisrael-shochat",
+    "full_name": "Yisrael Shochat",
+    "birth_name": "Yisrael Shochat",
+    "birth_country": "Russian Empire (Loyew, Minsk Governorate, present-day Belarus)",
+    "life_span": {
+      "born": "1886-01-01",
+      "died": "1961-04-01"
+    },
+    "primary_affiliations": [
+      "Bar-Giora (founder)",
+      "Hashomer (founder)"
+    ],
+    "historical_role": "Founded the secret self-defense society Bar-Giora (1907), reconstituted openly as Hashomer (1909), the first organized armed Jewish guard service for settlements — direct institutional predecessor of the Haganah.",
+    "key_land_actions": [
+      {
+        "date": "1907-1909",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "Galilee and Jezreel Valley settlements",
+        "impact_description": "Founded Bar-Giora on 28 September 1907 at a gathering in Yitzhak Ben-Zvi's Jaffa apartment, alongside Ben-Zvi, Mendel Portugali, Israel Giladi, Alexander Zaid, and others — a secret Jewish self-defense society (named for a leader of the Jewish Revolt against Rome) organized to replace Arab/Circassian watchmen guarding Jewish agricultural settlements. At a meeting in Mes'ha on 12 April 1909, Bar-Giora's leadership voted to disband and reconstitute as the larger, more open Hashomer, establishing the principle of independent Jewish self-defense on purchased land that the Haganah later scaled nationally.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 28 September 1907 founding date, the founding members' names, and the 12 April 1909 Mes'ha meeting that dissolved Bar-Giora into Hashomer are corroborated via live search (Wikipedia's Bar-Giora and Israel Shochat articles, Jewish Virtual Library's Bar Giora entry)."
+      }
+    ]
+  },
+  {
+    "actor_id": "manya-shochat",
+    "full_name": "Manya Shochat",
+    "birth_name": "Manya Wilbushewitz",
+    "birth_country": "Russian Empire (Lososna, near Grodno, present-day Belarus)",
+    "life_span": {
+      "born": "1879-04-01",
+      "died": "1961-03-13"
+    },
+    "primary_affiliations": [
+      "Bar-Giora (co-founder)",
+      "Hashomer (co-founder)"
+    ],
+    "historical_role": "Socialist-Zionist organizer and co-founder of Bar-Giora/Hashomer alongside Yisrael Shochat (her husband); a leading advocate for collective agricultural settlement, involved in founding some of the earliest communal settlements that fed into the kibbutz movement.",
+    "key_land_actions": [
+      {
+        "date": "1907-1911",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "Sejera (Ilaniya) and other Galilee settlements",
+        "impact_description": "After traveling to Europe and the US in 1907 to raise support, helped establish the Sejera collective — 18 members, including 6 women farming alongside the men — persuading Eliyahu Krause, the agronomist managing the colony on behalf of the Jewish Colonisation Association, to hand cultivation of the land over to the group. Sejera turned one of the region's least profitable ranches profitable and is generally regarded as the first well-run socialist-Zionist commune in Palestine, a direct precursor of the kibbutz model. Also co-led Bar-Giora/Hashomer's settlement-guarding operations alongside her husband, Israel Shochat.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1907 Sejera establishment, its 18-member/6-women composition, and Krause's role handing over cultivation are corroborated via live search (Encyclopedia.com's Manya Shochat entry)."
+      }
+    ]
+  },
+  {
+    "actor_id": "yitzhak-sadeh",
+    "full_name": "Yitzhak Sadeh",
+    "birth_name": "Yitzhak Landsberg",
+    "birth_country": "Russian Empire (Lublin, Congress Poland, present-day Poland)",
+    "life_span": {
+      "born": "1890-10-10",
+      "died": "1952-08-21"
+    },
+    "primary_affiliations": [
+      "Haganah",
+      "Palmach (founder)"
+    ],
+    "historical_role": "Senior Haganah commander who founded the Palmach (1941), the Haganah's full-time strike force, later a core cadre of the IDF's founding officer corps.",
+    "key_land_actions": [
+      {
+        "date": "1941-1948",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "Mandatory Palestine (nationwide)",
+        "impact_description": "Co-founded and commanded the Palmach from its establishment in May 1941 until 1945, when he was appointed the Haganah's Chief of the General Staff — including personally directing the establishment of Kibbutz Hanita on an isolated hilltop on the southern Lebanese border, and, once the Palmach's British funding ended in 1943, having its units finance themselves through kibbutz labor, directly linking armed capability to the physical establishment and defense of new settlements. Remained militarily active into 1948, commanding the Haganah training camp at Mishmar Ha'emek and successfully defending it against the Arab Liberation Army in April of that year.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — this entry previously implied continuous Palmach command through 1948; corrected to reflect he handed Palmach command to become Haganah Chief of Staff in 1945. The 1941 founding, 1945 handover, Kibbutz Hanita, the 1943 self-financing shift, and the April 1948 Mishmar Ha'emek defense are corroborated via live search (Wikipedia's Yitzhak Sadeh article, IFCJ's biography)."
+      }
+    ]
+  },
+  {
+    "actor_id": "moshe-dayan",
+    "full_name": "Moshe Dayan",
+    "birth_name": "Moshe Dayan",
+    "birth_country": "Mandatory Palestine (Kibbutz Degania, first person born there)",
+    "life_span": {
+      "born": "1915-05-20",
+      "died": "1981-10-16"
+    },
+    "primary_affiliations": [
+      "Haganah",
+      "Mapai / Labor Alignment",
+      "IDF (Chief of Staff)"
+    ],
+    "historical_role": "Haganah/Palmach fighter who rose to IDF Chief of Staff (1953-58) and later Defense Minister (1967, 1969-74). As Defense Minister during the June 1967 War, oversaw the Israeli capture of the West Bank, Gaza, Sinai, and Golan Heights, the single largest territorial change since 1948 and the direct precondition for the post-1967 settlement enterprise this dataset otherwise tracks through the Knesset schema.",
+    "key_land_actions": [
+      {
+        "date": "1967-06-05",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank, Gaza Strip, Sinai Peninsula, Golan Heights",
+        "impact_description": "Appointed Defense Minister on the eve of the Six-Day War in June 1967 amid public pressure for a unity government, then directed the military campaign — alongside Chief of Staff Yitzhak Rabin — that brought the West Bank, Gaza, Sinai, and Golan Heights under Israeli control in six days. As the officer responsible for administering the newly-occupied territories afterward, he favored a policy of establishing Israeli facts on the ground (settlements, military outposts) pending final-status negotiations — a foundational moment for the post-1967 settlement history that would sit downstream of this dataset in the Settlement Encroachment Map.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the June 1967 appointment under public pressure, the joint command with Rabin, and Dayan's post-war administrative responsibility for the occupied territories are corroborated via live search (Encyclopedia.com's Moshe Dayan entry, Jerusalem Post retrospective). Moshe Dayan, 'Story of My Life' (1976 memoir), remains the best guess for deeper narrative detail, not independently re-read this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "yigal-allon",
+    "full_name": "Yigal Allon",
+    "birth_name": "Yigal Paicovitch",
+    "birth_country": "Ottoman Palestine (Kfar Tavor)",
+    "life_span": {
+      "born": "1918-10-10",
+      "died": "1980-02-29"
+    },
+    "primary_affiliations": [
+      "Haganah",
+      "Palmach (commander)",
+      "Mapai / Israeli Labor Party"
+    ],
+    "historical_role": "Palmach commander in the 1948 war, later a senior Labor Party minister and Deputy Prime Minister. Author of the 1967 'Allon Plan,' the first official Israeli government proposal for the future disposition of the newly-occupied West Bank, which shaped early Labor-government settlement siting policy (prioritizing the Jordan Valley and East Jerusalem while envisioning return of densely-populated Palestinian areas).",
+    "key_land_actions": [
+      {
+        "date": "1967-07-26",
+        "action_type": "Policy Lobbying",
+        "location_affected": "West Bank, particularly the Jordan Valley and Etzion Bloc",
+        "impact_description": "Proposed the Allon Plan to the Israeli cabinet on 26 July 1967 — barely six weeks after the Six-Day War ceasefire — recommending Israeli retention and settlement of strategic, sparsely-populated West Bank areas (Jordan Valley, Gush Etzion, Greater Jerusalem) while leaving densely-populated Palestinian areas outside direct annexation. Never formally adopted as binding government policy, but the first such plan presented to cabinet and influential in siting the first wave of post-1967 government-sanctioned settlements for roughly the following decade.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 26 July 1967 cabinet presentation date is corroborated via live search (Wikipedia's Allon Plan article, PASSIA's own historical documentation), and corrects this entry's earlier UNVERIFIED '1 July 1967' guess, which was not precise. Gershom Gorenberg, 'The Accidental Empire' (2006), remains the best guess for deeper narrative detail, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "menachem-begin",
+    "full_name": "Menachem Begin",
+    "birth_name": "Mieczysław Biegun",
+    "birth_country": "Russian Empire (Brest-Litovsk, present-day Belarus)",
+    "life_span": {
+      "born": "1913-08-16",
+      "died": "1992-03-09"
+    },
+    "primary_affiliations": [
+      "Irgun (Commander, 1943-48)",
+      "Herut (founder)",
+      "Likud (founder)"
+    ],
+    "historical_role": "Commanded the Irgun from 1943, founded Herut in 1948 as its political successor, and eventually Likud (1973); as Prime Minister (1977-1983) his government approved a major acceleration of West Bank settlement activity under Agriculture Minister Ariel Sharon's settlement drive, alongside signing the Israel-Egypt peace treaty (1979, returning Sinai).",
+    "key_land_actions": [
+      {
+        "date": "1977-1983",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank",
+        "impact_description": "As the first non-Labor Prime Minister (1977-1983), his government substantially accelerated government-backed settlement construction in the West Bank and Gaza beyond the Allon Plan's limited scope — providing financial incentives and tax concessions to encourage Israeli settlement for the first time, and, per the government's own 1979-1983 master plan, targeting 46 new West Bank settlements housing 16,000 families within five years, plus 27,000 more families through expanding existing ones. Begin was also the first Prime Minister to consistently use 'Judea and Samaria' rather than 'West Bank,' treating the territory as integral to the Land of Israel — aligning state policy with the Greater Israel ideology his Revisionist lineage (Irgun/Herut/Likud) had advocated since the 1920s-40s, and with the settlement movement Gush Emunim, which his 1977 election victory empowered even though his government was initially cautious about fully embracing its program.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the financial-incentive policy, the 1979-1983 master plan's 46-settlement/16,000-family target, Begin's 'Judea and Samaria' usage, and the Gush Emunim connection are corroborated via live search (Fanack's Israeli Settlements chronology, UN's Question of Palestine documentation, Wikipedia's Menachem Begin article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "avraham-stern",
+    "full_name": "Avraham Stern",
+    "birth_name": "Avraham Stern",
+    "birth_country": "Russian Empire (Suwałki, present-day Poland)",
+    "life_span": {
+      "born": "1907-12-23",
+      "died": "1942-02-12"
+    },
+    "primary_affiliations": [
+      "Irgun",
+      "Lehi (founder)"
+    ],
+    "historical_role": "Founded Lehi in 1940 (known to the British as the 'Stern Gang') after splitting from the Irgun over its WWII truce with Britain, advocating uncompromising armed revolt against British rule. Killed by British police in Tel Aviv in 1942 while in custody, a circumstance disputed to this day (British account: shot while attempting to escape; Lehi account: extrajudicial killing).",
+    "key_land_actions": [
+      {
+        "date": "1940",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Mandatory Palestine",
+        "impact_description": "Founded Lehi on the principle that armed revolt against British rule should continue without pause. In December 1940, Stern's Lehi contacted Nazi Germany with a proposal: aid to German conquest of the Middle East in exchange for German recognition of a Jewish state open to unlimited Jewish immigration, including a scheme to recruit a European Jewish army to fight its way into Palestine. His stated reasoning was that Britain would never permit a Jewish state while Germany, wanting Europe 'cleansed' of Jews, had no competing territorial interest in Palestine itself. The contacts came to nothing. Included here for ideological/organizational lineage; no direct land-purchase action attributable to Stern personally.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the December 1940 proposal, its terms, and Stern's stated strategic rationale are corroborated via live search against declassified Israeli state/IDF archive files reported by Haaretz and other outlets in April 2026. Joseph Heller, 'The Stern Gang' (1995), remains the best guess for deeper narrative detail predating this declassification, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "yitzhak-shamir",
+    "full_name": "Yitzhak Shamir",
+    "birth_name": "Yitzhak Yezernitsky",
+    "birth_country": "Russian Empire (Ruzhany, present-day Belarus)",
+    "life_span": {
+      "born": "1915-10-15",
+      "died": "2012-06-30"
+    },
+    "primary_affiliations": [
+      "Lehi (Leadership triumvirate after Stern's death)",
+      "Herut",
+      "Likud"
+    ],
+    "historical_role": "Senior Lehi leader after Stern's 1942 death, part of the collective leadership at the time of the 1944 Lord Moyne and 1948 Bernadotte assassinations; later joined Herut/Likud and served as Israeli Prime Minister (1983-84, 1986-92). His second premiership saw significant West Bank settlement growth.",
+    "key_land_actions": [
+      {
+        "date": "1986-1992",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank",
+        "impact_description": "As Prime Minister, presided over continued and accelerated settlement construction in the West Bank, resisting US pressure: the Bush administration held up $10 billion in loan guarantees Israel had requested to help absorb Soviet Jewish immigrants, conditioning them on a settlement freeze Shamir refused to accept. The guarantees were never granted to his government — after Shamir's June 1992 election defeat, Bush approved them for his successor, Yitzhak Rabin, that August — a well-documented direct link between settlement policy and international diplomatic friction.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the $10 billion figure, the settlement-freeze condition, Shamir's refusal, and the guarantees' eventual approval for Rabin in August 1992 are corroborated via live search (Jewish Telegraphic Agency and UPI contemporary archives). Gorenberg (2006) remains the best guess for deeper narrative detail, not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "actor_id": "ariel-sharon",
+    "full_name": "Ariel Sharon",
+    "birth_name": "Ariel Scheinermann",
+    "birth_country": "Mandatory Palestine (Kfar Malal)",
+    "life_span": {
+      "born": "1928-02-26",
+      "died": "2014-01-11"
+    },
+    "primary_affiliations": [
+      "IDF",
+      "Likud (co-founder)",
+      "Kadima (founder)"
+    ],
+    "historical_role": "Career IDF commander turned politician whose land-policy record runs in both directions: as Agriculture Minister under Begin he drove the most aggressive phase of West Bank settlement expansion, as Defense Minister he ordered the 1982 Lebanon invasion, and as Prime Minister he both accelerated settlement early on and then unilaterally reversed course with the 2005 Gaza disengagement, splitting from Likud to found Kadima the same year.",
+    "key_land_actions": [
+      {
+        "date": "1977-1981",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank",
+        "impact_description": "As Agriculture Minister in Begin's government (1977-1981) and chairman of its ministerial settlement committee, used the ministry's resources — turning it into what observers described as a funding engine for the settlement movement — to drive an aggressive expansion of West Bank and Gaza settlements, often circumventing ordinary legal channels to found and support new ones. Settler numbers in the occupied territories roughly quadrupled to around 16,000 by 1981 under his tenure, explicitly aimed at establishing irreversible 'facts on the ground' ahead of any future negotiation — earning him recognition as a patron of the Gush Emunim settlement movement.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1977-1981 tenure, the settlement-committee chairmanship, the roughly-fourfold settler increase to ~16,000 by 1981, and the Gush Emunim characterization are corroborated via live search (Britannica's Ariel Sharon summary, Jewish Virtual Library, My Jewish Learning)."
+      },
+      {
+        "date": "1982-06",
+        "action_type": "Executive Action",
+        "location_affected": "Southern Lebanon",
+        "impact_description": "As Defense Minister under Begin, directed the June 1982 invasion of Lebanon, intended to destroy the PLO's estimated 15,000-18,000 fighters based there, leading to the multi-year Israeli occupation of the South Lebanon 'security zone' (1982-2000), administered on the ground by the Israeli-backed South Lebanon Army. On 16 September 1982, Sharon and Chief of Staff Rafael Eitan permitted Israel's Lebanese Phalangist allies to enter the Sabra and Shatila refugee camps to root out remaining PLO fighters; the Phalangists instead massacred Palestinian civilians there over the following two days. The Israeli government's own Kahan Commission (established 28 September 1982) found Sharon indirectly responsible in its February 1983 report, concluding he should have anticipated the risk of Phalangist atrocities — he resigned as Defense Minister on 14 February 1983.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the June 1982 invasion's stated aim, the 16-18 September Sabra and Shatila massacre dates, the Kahan Commission's 28 September 1982 establishment and February 1983 findings, and Sharon's 14 February 1983 resignation are all corroborated via live search (ADL's Lebanon War 1982 backgrounder, Wikipedia's Kahan Commission article)."
+      },
+      {
+        "date": "2005-08",
+        "action_type": "Executive Action",
+        "location_affected": "Gaza Strip; four northern West Bank settlements",
+        "impact_description": "As Prime Minister, ordered the unilateral 'disengagement' — evacuating all 21 Israeli settlements in Gaza and 4 in the northern West Bank (Homesh, Sa-Nur, Ganim, and Kadim), displacing over 8,000 settlers, completed 12 September 2005 — reversing a settlement expansion process he himself had driven a quarter-century earlier. The move split Likud; Sharon left to found Kadima later that year.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 21 Gaza/4 West Bank settlement counts, the four northern West Bank settlements' names, the 8,000+ settler figure, and the 12 September 2005 completion date are corroborated via live search (Britannica's Israel's disengagement from Gaza article, ADL backgrounder)."
+      }
+    ]
+  },
+  {
+    "actor_id": "ber-borochov",
+    "full_name": "Ber Borochov",
+    "birth_name": "Dov Ber Borochov",
+    "birth_country": "Russian Empire (Zolotonosha, Poltava Governorate, present-day Ukraine)",
+    "life_span": {
+      "born": "1881-07-21",
+      "died": "1917-12-17"
+    },
+    "primary_affiliations": [
+      "Poalei Zion (founding ideologue)"
+    ],
+    "historical_role": "Marxist theorist who authored Poalei Zion's founding ideological synthesis, fusing class-struggle analysis with Zionist national liberation. Never himself an agricultural settler or land purchaser — his contribution was the theoretical case that made Labor Zionism's land-settlement project make ideological sense to a generation of Second Aliyah immigrants.",
+    "key_land_actions": [
+      {
+        "date": "1905-1906",
+        "action_type": "Policy Lobbying",
+        "location_affected": "N/A — ideological, not spatial",
+        "impact_description": "Drafted 'Our Platform' (1906), Poalei Zion's founding manifesto, published serially from July 1906 in the party organ Yevreyskaya Rabochaya Khronika. It argued Jewish workers needed their own national territory before class struggle could proceed 'normally' — diaspora Jews, he argued, were locked out of the base of the economic pyramid (land and heavy industry), since territory itself was 'the positive base of a distinct, independent national life' that an extraterritorial people lacked. This synthesis became Poalei Zion's founding platform and underwrote Labor Zionism's subsequent emphasis on Jewish agricultural labor and land settlement as simultaneously a national and a class project.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 1906 drafting, its July 1906 serial publication in Yevreyskaya Rabochaya Khronika, and its territory-as-national-base argument are corroborated via live search (Wikipedia's Ber Borochov article, Jewish Virtual Library's 'Our Platform' primary text)."
+      }
+    ]
+  },
+  {
+    "actor_id": "anwar-sadat",
+    "full_name": "Anwar Sadat",
+    "birth_name": "Muhammad Anwar el-Sadat",
+    "birth_country": "Egypt (Mit Abu al-Kum, Al Minufiyah Governorate)",
+    "life_span": {
+      "born": "1918-12-25",
+      "died": "1981-10-06"
+    },
+    "primary_affiliations": [
+      "Government of Egypt"
+    ],
+    "historical_role": "President of Egypt (1970-1981). Broke the post-1948/1967 diplomatic deadlock with an unprecedented November 1977 visit to Israel, leading to the Camp David Accords and the 1979 Egypt-Israel peace treaty — the first peace treaty between Israel and an Arab state, trading full Israeli withdrawal from Sinai for normalized relations. Assassinated by Egyptian Islamic Jihad militants in 1981, in part over the peace treaty's domestic backlash.",
+    "key_land_actions": [
+      {
+        "date": "1977-11",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Israel; Egypt",
+        "impact_description": "Made an unprecedented visit to Israel in November 1977, addressing the Knesset directly — the first Arab head of state to do so — breaking three decades of formal non-recognition and opening the negotiating track that produced the Camp David Accords the following year.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the November 1977 visit and Knesset address are corroborated via live search (Britannica's Anwar Sadat entry, Encyclopedia.com)."
+      },
+      {
+        "date": "1978-09-17",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Sinai Peninsula",
+        "impact_description": "Negotiated the Camp David Accords with Israeli Prime Minister Menachem Begin, brokered by US President Jimmy Carter over thirteen days at Camp David — the framework trading full Israeli withdrawal from Sinai (completed 1982) for normalized Egypt-Israel diplomatic relations, formalized in the 26 March 1979 peace treaty. Sadat and Begin shared the 1978 Nobel Peace Prize. The treaty was rejected across much of the Arab world; Egypt was suspended from the Arab League from 1979 to 1989 as a direct consequence.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Likud org entry, which independently corroborates the 17 September 1978 Accords and 26 March 1979 treaty dates. The Arab League suspension (1979-1989) is corroborated via live search (EBSCO Research Starters)."
+      },
+      {
+        "date": "1981-10-06",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Cairo, Egypt",
+        "impact_description": "Assassinated during the annual October War victory parade in Cairo by Egyptian Islamic Jihad militants, motivated substantially by the peace treaty with Israel and Sadat's broader domestic and foreign policy record — a direct consequence of the same 1979 treaty this dataset otherwise tracks as a diplomatic resolution.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the 6 October 1981 assassination and Egyptian Islamic Jihad's responsibility are corroborated via live search (Britannica, EBSCO Research Starters's 'Egyptian President Anwar el-Sadat Is Assassinated' article)."
+      }
+    ]
+  },
+  {
+    "actor_id": "jimmy-carter",
+    "full_name": "Jimmy Carter",
+    "birth_name": "James Earl Carter Jr.",
+    "birth_country": "United States (Plains, Georgia)",
+    "life_span": {
+      "born": "1924-10-01",
+      "died": "2024-12-29"
+    },
+    "primary_affiliations": [
+      "Government of the United States"
+    ],
+    "historical_role": "39th President of the United States (1977-1981); brokered the Camp David Accords and the Egypt-Israel peace treaty, and later, as a private citizen, remained an active and controversial voice on the conflict for decades, most notably through a 2006 book applying the word 'apartheid' to Israeli policy in the occupied Palestinian territories. Died 29 December 2024 at age 100.",
+    "key_land_actions": [
+      {
+        "date": "1978-09-05 to 1978-09-17",
+        "action_type": "Policy Lobbying",
+        "location_affected": "Camp David, Maryland, United States; Sinai Peninsula",
+        "impact_description": "Hosted and personally brokered thirteen days of direct negotiations between Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin at the presidential retreat, producing the Camp David Accords (signed 17 September 1978) — the framework for full Israeli withdrawal from Sinai in exchange for normalized Egypt-Israel relations, formalized in the 26 March 1979 peace treaty.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Likud org entry and Anwar Sadat actor entry, both independently corroborating the thirteen-day Camp David negotiations and the 17 September 1978/26 March 1979 dates."
+      },
+      {
+        "date": "2006-11",
+        "action_type": "Policy Lobbying",
+        "location_affected": "West Bank",
+        "impact_description": "Published 'Palestine: Peace Not Apartheid' (Simon & Schuster, November 2006), a roughly 250-page book applying the word 'apartheid' to Israel's conduct in the occupied Palestinian territories and arguing that continued Israeli non-compliance with international law in the West Bank was the primary obstacle to peace. The title itself became the book's central controversy — mixed and often sharply critical reception, particularly over the apartheid comparison — but it substantially widened mainstream US discussion of West Bank settlement and occupation policy.",
+        "primary_source_citation": "VERIFIED 2026-09-01 — the November 2006 publication, the book's West Bank/international-law focus, and the title's reception are corroborated via live search (Wikipedia's Palestine: Peace Not Apartheid article, NPR's 'Jimmy Carter Defends Peace Not Apartheid')."
+      }
+    ]
+  }
+]

@@ -1,0 +1,811 @@
+[
+  {
+    "topic_id": "jezreel-valley",
+    "name": "Jezreel Valley",
+    "hebrew_name": "עמק יזרעאל",
+    "topic_type": "Geographic Region",
+    "date_or_range": "N/A — geographic",
+    "summary": "A large, fertile inland valley in northern Mandatory Palestine. The Sursock family acquired roughly 400,000 dunams of it from the Ottoman government in 1872 for £20,000, under the 1858 Ottoman land reform, then held it as absentee landlords — Arab tenant families (fellahin) worked the land and paid tithes to the family in Beirut, never the Sursocks themselves. Between 1921 and 1925, Yehoshua Hankin negotiated and executed the purchase of the valley's Sursock holdings on behalf of the Palestine Land Development Company and Jewish National Fund, financed through Menachem Ussishkin's JNF fundraising; sources describe the resulting evictions as affecting roughly 8,000 Arab farmers across 22 villages.",
+    "significance": "One of the most documented and litigated tenant-displacement episodes of the Mandate period, and among the largest single land transfers in this dataset — it converted a major agricultural region from Arab tenant farming to Jewish settlement in under five years, establishing the template (institutional purchase from absentee landlords, JNF financing, tenant eviction) that recurred elsewhere.",
+    "related_actor_ids": [
+      "yehoshua-hankin",
+      "menachem-ussishkin"
+    ],
+    "related_org_ids": [
+      "jewish-national-fund",
+      "palestine-land-development-company"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 1872 Ottoman acquisition (~400,000 dunams, £20,000, under the 1858 land reform), the tenant tithe system, and the ~8,000-farmer/22-village eviction estimate are corroborated via live search (Wikipedia's Sursock Purchases article, Insight Turkey's Sursuk-family land-dealings analysis). This entry's own dunam range for the 1921-25 sale itself is addressed separately in Yehoshua Hankin's own already-verified actor entry, which documents genuine source variance (176,000-368,526 dunams depending on scope)."
+  },
+  {
+    "topic_id": "sursock-family",
+    "name": "Sursock family",
+    "hebrew_name": "משפחת סורסוק",
+    "topic_type": "Family/Lineage",
+    "date_or_range": "19th-20th century",
+    "summary": "A wealthy Greek Orthodox merchant and landowning family, established in Beirut since 1712 (tracing further back to 13th-century Constantinople, before the 1453 Ottoman conquest sent the family west via Mersin). Built its fortune as grain exporters and bankers controlling the Acre cotton and grain trade, then, benefiting from the 1858 Ottoman land reform, acquired large tracts of land across Ottoman Syria — including much of the Jezreel Valley — as absentee landlords who never resided on or personally farmed the land; it was worked by Arab tenant families under lease and tithe arrangements. Historian Leila Fawaz described the family's rise as 'the most spectacular social climb of the nineteenth century' in Beirut.",
+    "significance": "The single largest counterparty in this dataset's land-purchase history: the 1921-25 sale of their Jezreel Valley holdings to Yehoshua Hankin is the archetypal 'absentee landlord sells to Zionist purchaser, tenant farmers are displaced' transaction that recurs throughout the Mandate period.",
+    "related_actor_ids": [
+      "yehoshua-hankin"
+    ],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — the family's Beirut history since 1712, its grain/banking commercial base, the 1858 Ottoman land reform's role in its land acquisition, and the Leila Fawaz characterization are corroborated via live search (Wikipedia's Sursock family article, SursockHouse's own family history, Encyclopedia.com's Sursuq Family entry)."
+  },
+  {
+    "topic_id": "first-aliyah",
+    "name": "First Aliyah",
+    "hebrew_name": "העלייה הראשונה",
+    "topic_type": "Migration Period",
+    "date_or_range": "1882-1903",
+    "summary": "The first organized wave of Zionist immigration to Ottoman Palestine — some 30,000-40,000 people, mostly from the Russian Empire (in two main pulses, 1882-84 and 1890-91) plus roughly 2,500 from Yemen — triggered by the 1881-82 pogroms. Organized substantially through Hovevei Zion and the Bilu movement (Israel Belkind), and financially rescued in its early years by Baron Edmond de Rothschild's philanthropy. Founded some of the earliest modern Jewish agricultural colonies (moshavot), including Petah Tikva, Rehovot, Hadera, Rishon LeZion, and Zichron Ya'akov.",
+    "significance": "Established the first modern land-purchase and settlement patterns the rest of this dataset's history builds on — roughly 25,000-40,000 immigrants (estimates vary) and an estimated Jewish land ownership share still under 3% of Palestine by its end.",
+    "related_actor_ids": [
+      "israel-belkind",
+      "edmond-de-rothschild",
+      "leon-pinsker"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 30,000-40,000 total, the 2,500 Yemenite figure, the two-pulse (1882-84/1890-91) pattern, and the moshavot list are corroborated via live search (Jewish Virtual Library's First Aliyah page, Encyclopedia.com's Aliyah entry, Wikipedia's First Aliyah article)."
+  },
+  {
+    "topic_id": "second-aliyah",
+    "name": "Second Aliyah",
+    "hebrew_name": "העלייה השנייה",
+    "topic_type": "Migration Period",
+    "date_or_range": "1904-1914",
+    "summary": "A wave of roughly 35,000-40,000 immigrants, mostly young, secular Russian-Jewish socialists fleeing renewed pogroms (notably the 1903 Kishinev massacre) and revolutionary unrest, cut short by the outbreak of WWI. Brought the ideological core of Labor Zionism — David Ben-Gurion, Berl Katznelson, A.D. Gordon, Yitzhak Sadeh — and founded the first kibbutz (Degania, 1909) and Hashomer, the first organized Jewish self-defense force for settlements. Degania alone became the model for over 270 kibbutzim founded by the time of statehood in 1948.",
+    "significance": "The generation that built the institutions (Ahdut HaAvoda, the Histadrut, Hashomer/Haganah) which drove land settlement and its defense for the following four decades.",
+    "related_actor_ids": [
+      "david-ben-gurion",
+      "berl-katznelson",
+      "ad-gordon",
+      "yitzhak-sadeh",
+      "yisrael-shochat",
+      "manya-shochat",
+      "arthur-ruppin"
+    ],
+    "related_org_ids": [
+      "ahdut-haavoda",
+      "hapoel-hatzair",
+      "bar-giora-hashomer"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 35,000-40,000 total, the 1903 Kishinev massacre as a specific trigger, and the 270-kibbutzim-by-1948 figure are corroborated via live search (Jewish Virtual Library's Second Aliyah pages, Wikipedia's Second Aliyah article)."
+  },
+  {
+    "topic_id": "third-aliyah",
+    "name": "Third Aliyah",
+    "hebrew_name": "העלייה השלישית",
+    "topic_type": "Migration Period",
+    "date_or_range": "1919-1923",
+    "summary": "The first wave under the British Mandate (formalized 1920 after San Remo), driven partly by the Balfour Declaration's new legal opening and partly by post-WWI upheaval and pogroms in Ukraine and Poland. Brought some 35,000-40,000 immigrants — 45% from Russia, 31% from Poland — many committed pioneers (halutzim) of the He-Halutz and Hashomer Hatzair movements, who together with Second Aliyah veterans founded the Histadrut and the Gedud HaAvoda labor brigade, built roads, expanded the kibbutz movement, and founded the first moshavim.",
+    "significance": "The wave during which the Yishuv's formal self-governing institutions (Asefat HaNivcharim, Va'ad Leumi) were established, and Golda Meir emigrated (1921) — the organizational consolidation that made the larger waves of the later 1920s possible.",
+    "related_actor_ids": [
+      "golda-meir",
+      "berl-katznelson"
+    ],
+    "related_org_ids": [
+      "yishuv"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 35,000-40,000 total, the 45%-Russia/31%-Poland origin breakdown, and the Histadrut/Gedud HaAvoda founding role are corroborated via live search (Jewish Virtual Library's Third Aliyah page)."
+  },
+  {
+    "topic_id": "fourth-aliyah",
+    "name": "Fourth Aliyah",
+    "hebrew_name": "העלייה הרביעית",
+    "topic_type": "Migration Period",
+    "date_or_range": "1924-1929",
+    "summary": "Roughly 67,000-80,000 immigrants (1924-28 alone), disproportionately middle-class Polish Jews — peaking at nearly 17,000 in 1925 — fleeing new Polish fiscal policy widely seen as targeting Jewish businesses (the wave is sometimes named for the Polish officials behind those reforms), plus the effects of restrictive US immigration quotas closing off that alternative destination. More urban and commercially-oriented than the Second/Third Aliyah's agricultural pioneers — many were shopkeepers and artisans who settled mainly in Tel Aviv, investing capital in construction, factories, hotels, and shops.",
+    "significance": "Roughly doubled the Yishuv's Jewish population in five years, sharply accelerating land purchase and urban/agricultural settlement rates and contributing to the tensions that fed into the 1929 Palestine riots at the wave's end.",
+    "related_actor_ids": [],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — the 67,000-80,000 total, the 1925 peak (~17,000), and the middle-class/urban Tel Aviv-concentrated composition are corroborated via live search (israeled.org's Fourth Aliyah page, Wikipedia's Fourth Aliyah article, COJS)."
+  },
+  {
+    "topic_id": "fifth-aliyah",
+    "name": "Fifth Aliyah",
+    "hebrew_name": "העלייה החמישית",
+    "topic_type": "Migration Period",
+    "date_or_range": "1929-1939",
+    "summary": "Roughly 225,000-300,000 immigrants (estimates vary; one widely-cited figure gives 250,000, of whom 174,000 arrived 1933-36 alone), driven overwhelmingly by the rise of Nazism in Germany and Central Europe from 1933 — over 37,000 Jews left Germany in 1933 alone, with at least 55,000 Central European Jews immigrating to Palestine by 1939. Many German arrivals were professionals (doctors, lawyers, professors). The Haavara Agreement (1933) channeled a meaningful share of German-Jewish emigrant capital into Palestine during this wave. Ended abruptly with the British 1939 White Paper's severe immigration restrictions, on the eve of WWII.",
+    "significance": "The largest pre-state wave by absolute numbers, more than doubling the Jewish population of Palestine to nearly half a million — almost a third of Mandate Palestine's total population — and shifting its demographic weight decisively, directly shaping the population balance the 1947 UN Partition Plan and the Nakba later turned on.",
+    "related_actor_ids": [
+      "chaim-arlosoroff",
+      "abba-hillel-silver"
+    ],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — the 250,000/174,000 figures, the 37,000-in-1933-alone and 55,000-by-1939 Central European figures, and the nearly-half-million/one-third-of-total-population result are corroborated via live search (Wikipedia's Fifth Aliyah article, Jewish Virtual Library)."
+  },
+  {
+    "topic_id": "auto-emancipation-1882",
+    "name": "Auto-Emancipation",
+    "hebrew_name": null,
+    "topic_type": "Publication",
+    "date_or_range": "1882",
+    "summary": "A pamphlet published anonymously (as 'A Russian Jew') by Leon Pinsker in the immediate aftermath of the 1881-82 pogroms, arguing that antisemitism was a permanent, structural feature of diaspora Jewish life that no amount of assimilation could cure — Jews needed sovereign territory of their own, acquired and defended by Jews themselves rather than granted by others. Directly inspired the founding of Hovevei Zion, which Pinsker went on to lead.",
+    "significance": "One of the foundational texts of practical (as opposed to purely religious) Zionism, predating Herzl's 'Der Judenstaat' by 14 years — the argument that land acquisition had to be a Jewish national project, not charity or petition, runs through everything this dataset documents afterward.",
+    "related_actor_ids": [
+      "leon-pinsker"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 1882 publication and its core structural-antisemitism argument are well-established, uncontested facts about a primary text; corroborated via general reference sources. Leon Pinsker, 'Auto-Emancipation' (1882, various English translations), remains the primary source itself."
+  },
+  {
+    "topic_id": "kattowitz-conference-1884",
+    "name": "Kattowitz Conference",
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "1884-11",
+    "summary": "The founding conference of Hovevei Zion as a formal, federated movement, held in Kattowitz (Katowice), Prussian Silesia — chosen specifically because it was accessible to delegates from the Russian Empire without requiring travel further west, at a time when Russian Jewish organizing was restricted. Led by Leon Pinsker, the conference organized coordinated fundraising and settlement support for the fledgling First Aliyah colonies.",
+    "significance": "The moment proto-Zionist sentiment became organized, funded activity rather than individual conviction — predates Herzl's First Zionist Congress by 13 years and gave the First Aliyah's earliest colonies (which were on the brink of financial collapse before Rothschild's intervention) their first coordinated diaspora backing.",
+    "related_actor_ids": [
+      "leon-pinsker"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Leon Pinsker actor entry, which independently corroborates the November 1884 date, the 32-delegate/22-from-Russia count, and the Odessa committee."
+  },
+  {
+    "topic_id": "first-zionist-congress-1897",
+    "name": "First Zionist Congress",
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "1897-08-29",
+    "summary": "Convened by Theodor Herzl in Basel, Switzerland, bringing together roughly 200 delegates from across the Zionist movement to found the World Zionist Organization and adopt the Basel Program, formally committing the new movement to 'a publicly recognized, legally secured home in Palestine for the Jewish people.'",
+    "significance": "The founding moment of organized political Zionism as an international movement rather than a set of scattered local groups — every institution in this dataset's early period (the WZO itself, the Jewish Colonial Trust, and via later Congresses the Jewish National Fund) traces back to this single meeting.",
+    "related_actor_ids": [
+      "theodor-herzl",
+      "max-nordau"
+    ],
+    "related_org_ids": [
+      "world-zionist-organization"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Theodor Herzl actor entry and World Zionist Organization org entry, both independently corroborating the 29 August 1897 Basel convening and Basel Program text."
+  },
+  {
+    "topic_id": "haavara-agreement-1933",
+    "name": "Haavara Agreement",
+    "hebrew_name": "הסכם העברה",
+    "topic_type": "Agreement",
+    "date_or_range": "1933-1939",
+    "summary": "A transfer agreement between the Jewish Agency's Political Department and Nazi Germany, allowing German Jews emigrating to Palestine to transfer a portion of their assets in the form of German export goods rather than losing them entirely to Nazi capital-flight restrictions. Chaim Arlosoroff, the Political Department's head, conducted the founding negotiations with Nazi economic officials in Berlin in April 1933, but was assassinated on 16 June 1933, over two months before the agreement was formally signed on 25 August 1933 by others, principally Eliezer Hoofien of the Anglo-Palestine Bank. Deeply controversial within the Zionist movement at the time — critics saw it as legitimizing the Nazi regime and undercutting the international Jewish boycott of Germany.",
+    "significance": "Channeled a meaningful share of German-Jewish emigrant capital into Palestine during the Fifth Aliyah, funding immigration and associated land purchase/settlement infrastructure during the 1930s — one of the more historically contested funding mechanisms in this dataset precisely because of who the other party was.",
+    "related_actor_ids": [
+      "chaim-arlosoroff"
+    ],
+    "related_org_ids": [
+      "jewish-agency-for-palestine"
+    ],
+    "citation": "VERIFIED 2026-09-01 — corrected a real gap: this entry previously credited the 25 August 1933 signing to Arlosoroff, who had already been assassinated by then (16 June 1933). His April 1933 Berlin negotiations, his assassination date, and Eliezer Hoofien's role finalizing the signed agreement are corroborated via live search (Wikipedia's Haim Arlosoroff and Haavara Agreement articles)."
+  },
+  {
+    "topic_id": "ottoman-palestine",
+    "name": "Ottoman Palestine",
+    "hebrew_name": null,
+    "topic_type": "Political Era",
+    "date_or_range": "1516-1917",
+    "summary": "The region later called Palestine had no separate administrative existence under the Ottoman Empire — it was divided across the sanjaks (districts) of Jerusalem, Nablus, and Acre (each governed by a mutasarrif reporting to a provincial vali), administered as part of wider Ottoman Syria, with no single border a map would show; the exact sanjak boundaries also shifted over time (Nablus was joined to Jerusalem in 1842, then severed again in 1858). Land tenure operated under Ottoman law, notably the 1858 Ottoman Land Code, part of the wider Tanzimat reforms — it introduced formal registration and taxation that many fellahin in some regions avoided, inadvertently concentrating registered title in the hands of urban notables and absentee landlords like the Sursock family, though this pattern was not universal: a property-records survey of the hilly country around Jerusalem specifically found peasants there registering land in their own names, not a single case of a notable or moneylender doing so.",
+    "significance": "The baseline this whole dataset measures loss against: no partition line existed, and the land tenure quirks of Ottoman-era registration are part of why absentee landlords like the Sursocks held title to land worked by others — directly enabling the large early land purchases documented here.",
+    "related_actor_ids": [],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — the sanjak administrative structure, the 1842/1858 Nablus boundary shifts, and the 1858 Land Code's Tanzimat origin are corroborated via live search (Wikipedia's Ottoman Palestine and Ottoman Land Code of 1858 articles). The Jerusalem-hills registration counter-example is a genuine regional complication to the fellahin-avoidance pattern, found via the same pass and added rather than smoothed over — the pattern this dataset otherwise relies on (concentration in notables'/absentee hands) appears stronger in fertile plains regions like the Jezreel Valley than in Jerusalem's hill country specifically. Kenneth W. Stein, 'The Land Question in Palestine, 1917-1939' (1984), remains the best guess for deeper narrative detail, not independently re-read this pass."
+  },
+  {
+    "topic_id": "british-mandate",
+    "name": "British Mandate",
+    "hebrew_name": "המנדט הבריטי",
+    "topic_type": "Political Era",
+    "date_or_range": "1920-1948",
+    "summary": "Britain's administration of Palestine under a League of Nations mandate, formalized at the 1920 San Remo conference and confirmed in 1922 — the mandate document itself incorporated the Balfour Declaration's commitment to a Jewish national home. Ended with Britain's withdrawal on 14 May 1948, the same day Israeli independence was declared.",
+    "significance": "The legal and administrative shell within which nearly every event in this dataset between the Sursock Purchase and the Nakba takes place — Jewish land purchase, the Yishuv's self-government, the Arab Revolt, and the 1939 White Paper's immigration restrictions all happened under this specific legal regime, not before or after it.",
+    "related_actor_ids": [
+      "arthur-james-balfour"
+    ],
+    "related_org_ids": [
+      "yishuv"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified League of Nations org entry (24 July 1922 Mandate confirmation, 29 September 1923 operational date) and David Ben-Gurion/State of Israel entries (14 May 1948 end date), both independently corroborated. The 1920 San Remo starting point is further corroborated via this same pass's Mandatory Palestine topic research."
+  },
+  {
+    "topic_id": "mandatory-palestine",
+    "name": "Mandatory Palestine",
+    "hebrew_name": "פלשתינה (א\"י)",
+    "topic_type": "Geographic Region",
+    "date_or_range": "1920-1948",
+    "summary": "The territorial entity itself, as distinct from British Mandate (the legal regime governing it) — the 1920 San Remo Conference created separate mandates for Palestine (Britain) and Syria (France), with their border roughly fixed by the 23 December 1920 Paulet-Newcombe Agreement. The 1921 Cairo Conference then separated Transjordan's administration from Palestine's — territory east of the Jordan became the Emirate of Transjordan under Faisal's brother Abdullah, with Colonial Secretary Churchill's legal maneuver ensuring the Balfour Declaration's Jewish-national-home provisions would not apply there. Roughly corresponds to the area later split by the 1947 UN Partition Plan and the 1949 Armistice Line.",
+    "significance": "The 'historic Palestine' outline this dataset's scrolly map uses as its baseline landmass — the territory every subsequent partition, war, and annexation in this record carves into smaller pieces.",
+    "related_actor_ids": [],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — the San Remo/Paulet-Newcombe northern border and the 1921 Cairo Conference's Transjordan separation (including Churchill's Balfour-exemption maneuver) are corroborated via live search (Wikipedia's Mandate for Palestine and Transjordan memorandum articles, Jewish Virtual Library's 'When Churchill Severed Transjordan' article)."
+  },
+  {
+    "topic_id": "kibbutz",
+    "name": "Kibbutz",
+    "hebrew_name": "קיבוץ",
+    "topic_type": "Institution Type",
+    "date_or_range": "1909-present",
+    "summary": "A collective agricultural settlement model — property held communally, labor and resources shared, decisions made democratically by the membership — first realized at Degania (1909-10), founded by Second Aliyah settlers under Arthur Ruppin's institutional direction. A.D. Gordon's 'religion of labor' ideology supplied much of its ideological grounding.",
+    "significance": "The dominant settlement form of the Second and Third Aliyah periods and the backbone of the Haganah's 'Tower and Stockade' campaign — kibbutzim were simultaneously farms, defensible strongpoints, and, from 1936, tools for establishing populated facts on the ground ahead of anticipated partition boundaries.",
+    "related_actor_ids": [
+      "arthur-ruppin",
+      "ad-gordon"
+    ],
+    "related_org_ids": [
+      "haganah"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified A.D. Gordon and Arthur Ruppin actor entries, both independently corroborating Degania's 1909 founding via the Sejera-commune lineage."
+  },
+  {
+    "topic_id": "moshavot",
+    "name": "Moshavot",
+    "hebrew_name": "מושבות",
+    "topic_type": "Institution Type",
+    "date_or_range": "1882-present",
+    "summary": "Privately-owned agricultural colonies (singular: moshava) — distinct from the kibbutz's collective model, moshavot were individual family farms, often organized around a shared village center and cooperative services but with private land tenure. Rishon LeZion (31 July 1882) and Zichron Ya'akov (December 1882) were the first two.",
+    "significance": "The First Aliyah's dominant settlement form, financially dependent on Baron Edmond de Rothschild's philanthropy in their early years — the moshava model predates and is distinct from the kibbutz's later, more ideologically-charged collectivism.",
+    "related_actor_ids": [
+      "edmond-de-rothschild"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Rishon LeZion and Zichron Ya'akov topic entries, both independently corroborating their 1882 founding dates and Rothschild's later patronage role."
+  },
+  {
+    "topic_id": "rishon-lezion",
+    "name": "Rishon LeZion",
+    "hebrew_name": "ראשון לציון",
+    "topic_type": "Geographic Region",
+    "date_or_range": "founded 1882",
+    "summary": "One of the first two moshavot (alongside Zichron Ya'akov), officially founded 31 July 1882 when a group of Hovevei Zion pioneer families from Kharkov, Ukraine (sources give 10 or 18 families), led by Zalman Levontin, took possession of some 835 acres of land near Jaffa, on the site of the former Arab village of Eyun Kara. Bilu movement members — who did not found the colony — joined shortly after as hired laborers. Nearly collapsed financially within its first years before Baron Edmond de Rothschild's intervention rescued it — the pattern repeated at several other early colonies.",
+    "significance": "Among the very first physical footholds of the settlement project this entire dataset traces the consequences of — its survival, owed to Rothschild's philanthropy rather than the settlers' own resources, set the template for how the movement would fund itself for the next several decades.",
+    "related_actor_ids": [
+      "edmond-de-rothschild"
+    ],
+    "related_org_ids": [
+      "hovevei-zion",
+      "bilu-movement"
+    ],
+    "citation": "VERIFIED 2026-09-01 — this entry previously credited Bilu as a founding element ('mostly from the Bilu movement and Hovevei Zion circles'); corrected — the colony's actual founders were Hovevei Zion pioneers under Levontin, and Bilu's members joined afterward as laborers (consistent with this dataset's own already-verified Israel Belkind actor entry, which places the Bilu group's move to Rishon LeZion in November 1882, after the colony's July founding). The 31 July 1882 date, the Kharkov origin, and the 835-acre/Eyun Kara site are corroborated via live search (Wikipedia's Rishon LeZion article, KehilaLink)."
+  },
+  {
+    "topic_id": "zichron-yaakov",
+    "name": "Zichron Ya'akov",
+    "hebrew_name": "זכרון יעקב",
+    "topic_type": "Geographic Region",
+    "date_or_range": "founded 1882",
+    "summary": "One of the first two moshavot, established December 1882 on Mount Carmel by roughly 100 Jewish pioneers from Romania (members of the Hibbat Zion/Hovevei Zion movement) who purchased two plots of land. In 1883, Baron Edmond de Rothschild became the colony's patron and renamed it Zichron Ya'akov ('Jacob's Memorial') for his father, James (Jacob) de Rothschild — reflecting how directly Rothschild's patronage was woven into the settlement from its earliest days. Like Rishon LeZion, it depended heavily on Rothschild funding through its early decades and was administered for a period by his appointed officials (pekidim); Rothschild, a winemaker himself, recognized the Carmel slopes' wine-growing potential and developed the colony accordingly.",
+    "significance": "A clear early instance of the paternalistic-philanthropy settlement model this dataset traces before it gave way to the more institutional, WZO-directed purchasing (Ruppin, Hankin) that scaled up land acquisition dramatically after 1908.",
+    "related_actor_ids": [
+      "edmond-de-rothschild"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the December 1882 founding, the ~100 Romanian pioneers, the 1883 Rothschild patronage/renaming, and the winemaking development angle are corroborated via live search (Wikipedia's Zikhron Ya'akov article, Encyclopedia.com)."
+  },
+  {
+    "topic_id": "pogroms",
+    "name": "Pogroms",
+    "hebrew_name": "פרעות",
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1881-1906 (recurring)",
+    "summary": "Waves of anti-Jewish mob violence across the Russian Empire, most consequentially the 1881-82 pogroms following Tsar Alexander II's assassination and the 1903-06 wave — including the Kishinev pogrom of 19-20 April 1903 (49 killed, hundreds wounded, sparked by ritual-murder rumors) and a second Kishinev outbreak in October 1905, amid wider anti-Jewish violence during the 1905-06 revolutionary period. Each wave produced a surge of Jewish emigration, only some of it Zionist — pre-Kishinev annual emigration from the Russian Empire ran roughly 10,000-20,000; the 1903-07 wave roughly doubled that, contributing to over 1.5 million departures by 1914 and, by 1920, over a third of Russia's Jews having emigrated, mostly to the United States and, in smaller but historically decisive numbers, Palestine.",
+    "significance": "The direct trigger for both Leon Pinsker's 'Auto-Emancipation' and the First Aliyah (1881-82 wave) and for the ideologically different, more socialist Second Aliyah (1903-06 wave) — the recurring catalyst behind nearly every migration wave this dataset's Aliyah entries track.",
+    "related_actor_ids": [
+      "leon-pinsker"
+    ],
+    "related_org_ids": [
+      "hovevei-zion"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 19-20 April 1903 Kishinev dates, the 49-killed figure, the October 1905 second outbreak, and the emigration-volume figures (10,000-20,000 baseline, roughly doubled 1903-07, 1.5 million by 1914, a third of Russian Jewry by 1920) are corroborated via live search (Wikipedia's Kishinev pogrom article, Unpacked, Jewish Currents)."
+  },
+  {
+    "topic_id": "balfour-declaration-1917",
+    "name": "Balfour Declaration",
+    "hebrew_name": "הצהרת בלפור",
+    "topic_type": "Historical Event",
+    "date_or_range": "1917-11-02",
+    "summary": "A letter from British Foreign Secretary Arthur James Balfour to Lord Rothschild (Walter Rothschild, 2nd Baron), committing the British government to favor 'the establishment in Palestine of a national home for the Jewish people' without prejudicing 'the civil and religious rights of existing non-Jewish communities.' The product of sustained Zionist diplomatic lobbying, led principally by Chaim Weizmann and Nahum Sokolow.",
+    "significance": "The single most consequential foreign-patron document in this dataset — later incorporated into the League of Nations Mandate for Palestine (1922), it supplied the international legal scaffolding within which every subsequent Zionist land-purchase and immigration policy in this record operated.",
+    "related_actor_ids": [
+      "arthur-james-balfour",
+      "chaim-weizmann",
+      "nahum-sokolow"
+    ],
+    "related_org_ids": [
+      "world-zionist-organization"
+    ],
+    "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Chaim Weizmann, Nahum Sokolow, and Arthur James Balfour actor entries, all independently corroborating the 2 November 1917 date and the letter's text and diplomatic context."
+  },
+  {
+    "topic_id": "altalena-affair",
+    "name": "The Altalena Affair",
+    "hebrew_name": "פרשת אלטלנה",
+    "topic_type": "Historical Event",
+    "date_or_range": "1948-06-20 to 1948-06-23",
+    "summary": "The Irgun-chartered arms ship Altalena arrived off Tel Aviv during the murky period of the Irgun's absorption into the newly-formed IDF, loaded with weapons and fighters. When negotiations over handing over the cargo broke down, Ben-Gurion's government ordered it shelled. 19 killed: 16 Irgun, 3 IDF. Over 200 Irgun members were arrested; Begin ordered his followers not to retaliate, averting a wider civil war.",
+    "significance": "Forced the Irgun's dissolution as an independent armed force and its integration into the IDF — widely read as Ben-Gurion establishing the new state's monopoly on organized force, and a formative grievance for Begin's generation of Herut/Likud politicians.",
+    "related_actor_ids": [
+      "menachem-begin",
+      "david-ben-gurion"
+    ],
+    "related_org_ids": [
+      "irgun",
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 19-total/16-Irgun/3-IDF breakdown is Wikipedia's Altalena Affair infobox figure. See also organizations.json's irgun entry for the fuller institutional narrative."
+  },
+  {
+    "topic_id": "iron-wall-doctrine",
+    "name": "Iron Wall doctrine",
+    "hebrew_name": "חומת הברזל",
+    "topic_type": "Publication",
+    "date_or_range": "1923-11-04",
+    "summary": "Ze'ev Jabotinsky's essay 'The Iron Wall (We and the Arabs)' ('O zheleznoi stene'), published in Russian in the Zionist newspaper Rassvet on 4 November 1923, argued that Arab opposition to Zionist settlement was a natural and rational response to a colonization project, not a misunderstanding that negotiation could dissolve — while explicitly rejecting removing the Arab population as 'absolutely inconceivable.' Jewish settlement, he argued, could therefore only proceed behind a position of overwhelming, unbreakable military strength — an 'iron wall' — that made Arab resistance futile, with negotiation possible only after that wall was established, not before. A week later he published a follow-up, 'The Ethics of the Iron Wall,' arguing Zionism was 'moral and just' as an exercise of the same national self-determination principle Arabs themselves could also claim.",
+    "significance": "The founding doctrine of Revisionist Zionism and, through Irgun, Herut, and Likud, a direct ideological line to later territorial-maximalist settlement politics — the argument that facts on the ground enforced by strength, not negotiated agreement, are what secure land, which runs through much of this dataset's post-1948 settlement history.",
+    "related_actor_ids": [
+      "zeev-jabotinsky"
+    ],
+    "related_org_ids": [
+      "irgun",
+      "herut",
+      "likud"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 4 November 1923 Rassvet publication date, the original Russian title, and the follow-up 'Ethics of the Iron Wall' essay are corroborated via live search (Wikipedia's Iron Wall (essay) article, IDSF's 'This Day In History' page)."
+  },
+  {
+    "topic_id": "king-david-hotel-bombing",
+    "name": "King David Hotel bombing",
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "1946-07-22",
+    "summary": "The Irgun bombed the King David Hotel in Jerusalem, which housed the British Mandate secretariat and military headquarters, killing 91 people (28 British, 41 Arab, 17 Jewish, and several other nationalities) and injuring roughly 45 more. Irgun's own contemporary statement cited 92 dead — the extra count is Avraham Abramovitz, an Irgun member shot during the attack who died later of his wounds. Irgun stated a warning was phoned in but not acted on in time; disputed by British authorities.",
+    "significance": "One of the deadliest single attacks of the anti-British insurgency period, and the clearest example in this dataset of the Irgun's doctrine of armed action operating entirely outside the Jewish Agency/Haganah leadership's authority.",
+    "related_actor_ids": [
+      "menachem-begin"
+    ],
+    "related_org_ids": [
+      "irgun"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 91 figure and national breakdown are consistent across Wikipedia, Jewish Virtual Library, and contemporary Haaretz retrospective coverage, all tracing to British Mandate inquiry records."
+  },
+  {
+    "topic_id": "deir-yassin",
+    "name": "Deir Yassin",
+    "hebrew_name": "דיר יאסין",
+    "topic_type": "Historical Event",
+    "date_or_range": "1948-04-09",
+    "summary": "A joint Irgun/Lehi operation against the Arab village of Deir Yassin, west of Jerusalem (Haganah/Palmach provided some coordination but disputed the manner of execution), that killed a significant number of Palestinian Arab villagers. The original, contemporary figure both Irgun and Lehi themselves publicized was 254; present-day scholarship clusters around 100-120 — Palestinian historian Aref al-Aref's own contemporary count was 117, and a 1987 Birzeit University study arrived at approximately 107-120 independently. Left as a range because that range reflects a genuine, still-unsettled convergence in the historiography, not uncertainty on this project's part.",
+    "significance": "Widely cited as a major catalyst for Palestinian civilian flight during the 1948 war — one of the most consequential single events in this dataset for understanding how the Nakba's displacement actually happened on the ground, not just as a legislative or diplomatic abstraction.",
+    "related_actor_ids": [
+      "menachem-begin",
+      "yitzhak-shamir"
+    ],
+    "related_org_ids": [
+      "irgun",
+      "lehi"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 254-to-~110 revision and the 107-120 range are independently corroborated across Wikipedia, Britannica, and the Institute for Middle East Understanding, converging from different source bases including Aref al-Aref's contemporary Palestinian count."
+  },
+  {
+    "topic_id": "dunam",
+    "name": "Dunam",
+    "hebrew_name": "דונם",
+    "topic_type": "Unit of Measurement",
+    "date_or_range": "Ottoman era-present",
+    "summary": "The land-area unit used throughout this dataset's purchase and expropriation figures. Originated in the Ottoman Empire at approximately 900-920 square meters, then standardized to exactly 1,000 square meters (0.1 hectare, about 0.247 acres) under the British Mandate in 1928. Still in everyday use across Israel, the West Bank, Gaza, and Jordan today.",
+    "significance": "A genuine reading caveat for this dataset: Yehoshua Hankin's 1921-25 Jezreel Valley (Sursock) purchase predates the 1928 metric standardization, so its dunam figures may reflect the older, smaller Ottoman dunam rather than the modern 1,000m² unit — meaning the actual land area could be measurably different from a naive modern conversion. Not corrected for here; flagged so a reader doing the math themselves knows why.",
+    "related_actor_ids": [
+      "yehoshua-hankin"
+    ],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-01 — modern 1,000m²/0.1 hectare conversion confirmed via unit-conversion references; Ottoman-era ~900-920m² origin and 1928 Mandate standardization corroborated by the same search pass, though the exact pre-1928 figure varies slightly by source and wasn't pinned to a single primary reference."
+  },
+  {
+    "topic_id": "1948-arab-israeli-war",
+    "name": "1948 Arab–Israeli War",
+    "hebrew_name": "מלחמת העצמאות",
+    "topic_type": "Armed Conflict",
+    "date_or_range": "1948-05-15 to 1949-07-20",
+    "summary": "War between the newly-declared State of Israel and a coalition of Egypt, Jordan, Syria, Lebanon, and Iraq (plus irregular Arab and Zionist militia forces active before 15 May), beginning the day after neighboring Arab states invaded following Israel's declaration of independence. Ended through a series of separate armistice agreements — Egypt (February 1949), Lebanon (March 1949), Jordan (April 1949), Syria (July 1949, the last and the war's formal end date used here).",
+    "significance": "The war that turned the UN Partition Plan's proposed 55% Jewish state into Israeli control of roughly 78% of Mandate Palestine within the 1949 armistice lines (the 'Green Line'), and produced the Nakba's mass displacement of Palestinian Arabs. The military event underlying nearly everything this dataset's 1947-1950 entries — Deir Yassin, the Absentees' Property Law, the Custodian of Absentee Property — track as its legal and human aftermath.",
+    "related_actor_ids": [
+      "david-ben-gurion"
+    ],
+    "related_org_ids": [
+      "idf",
+      "irgun",
+      "lehi",
+      "united-nations-general-assembly"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the war's end date (20 July 1949, the Israel-Syria armistice, the last of the four) is corroborated against the full armistice sequence: Egypt 24 Feb, Lebanon 23 Mar, Jordan 3 Apr, Syria 20 Jul 1949 (Encyclopedia.com, Institute for Palestine Studies, UN Digital Library). Best guess for deeper narrative/analytical detail: Benny Morris, 'The Birth of the Palestinian Refugee Problem Revisited' (2004); Anita Shapira, 'Israel: A History' (2012) — not independently re-checked this pass."
+  },
+  {
+    "topic_id": "six-day-war",
+    "name": "Six-Day War",
+    "hebrew_name": "מלחמת ששת הימים",
+    "topic_type": "Armed Conflict",
+    "date_or_range": "1967-06-05 to 1967-06-10",
+    "summary": "War between Israel and a coalition of Egypt, Jordan, and Syria. In six days, Israel captured the West Bank and East Jerusalem from Jordan, Gaza and the Sinai Peninsula from Egypt, and the Golan Heights from Syria — the largest territorial change since 1948, executed under Defense Minister Moshe Dayan.",
+    "significance": "Directly produced every post-1967 settlement-policy entry in this dataset: the Allon Plan's siting recommendations, the decades of West Bank/Gaza settlement expansion under Begin and successive governments, the Golan's continued annexation, and Sinai's return under the 1979 peace treaty — the single hinge point between 'land taken by war and law' (this dataset's pre-1967 focus) and 'land held under ongoing occupation and settlement' (its post-1967 focus).",
+    "related_actor_ids": [
+      "moshe-dayan",
+      "yigal-allon",
+      "ariel-sharon"
+    ],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the 5-10 June 1967 date range is confirmed across Britannica, HISTORY.com, and the US State Department's own historical milestone record. Best guess for deeper narrative/analytical detail: Michael Oren, 'Six Days of War' (2002) — not independently re-checked this pass."
+  },
+  {
+    "topic_id": "nakba",
+    "name": "Nakba",
+    "hebrew_name": "النكبة",
+    "topic_type": "Historical Event",
+    "date_or_range": "1947-1949",
+    "summary": "Arabic for 'catastrophe' — the term for the mass displacement of Palestinian Arabs during and after the 1948 Arab-Israeli War, in which roughly 700,000-800,000 people (commonly cited as ~750,000) fled or were expelled from what became Israeli-held territory, and several hundred Arab villages were depopulated, many subsequently destroyed or resettled. Distinct from the war itself: the Nakba is the displacement and its consequences — refugee status, property loss, the end of Palestinian Arab society in most of Mandate Palestine — not the military campaign that produced it.",
+    "significance": "The event the Absentees' Property Law and the Custodian of Absentee Property gave permanent legal form to, and the reason 'right of return' remains a live political question generations later — arguably the single most consequential event this entire dataset exists to document the run-up to.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "custodian-of-absentee-property"
+    ],
+    "citation": "VERIFIED 2026-09-01 — the ~700,000-800,000 range is corroborated against UN historical estimates (711,000 per the UN Conciliation Commission, 1950; 800,000-900,000 per a 1961 UN Conciliation Commission report), independent of this project's own earlier 'roughly 750,000' figure used in the scrolly map."
+  },
+  {
+    "topic_id": "resolution-181",
+    "name": "Resolution 181",
+    "aliases": ["1947 UN Partition Plan", "UN Partition Plan", "Partition Plan"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1947-11-29",
+    "summary": "Adopted by the UN General Assembly 33 in favor, 13 against, 10 abstaining, 1 absent, recommending division of Mandatory Palestine into separate Jewish and Arab states — the Jewish state's proposed share was roughly 55% of the territory, the Arab state roughly 45%, with Jerusalem placed under international administration (see Resolution 303). Accepted by the Jewish Agency; rejected by the Arab Higher Committee and neighboring Arab states. Never implemented as drawn — war broke out within days of the vote, and the eventual 1949 Armistice Line bore little resemblance to this map.",
+    "significance": "The diplomatic starting point for the state this dataset otherwise documents through land purchase, militia action, and legislation — the international legal touchstone Israel's own Declaration of Independence invoked, and the territorial baseline every subsequent map in this record (the 1949 Armistice Line, the post-1967 occupied territories) departs from.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-general-assembly"],
+    "citation": "VERIFIED 2026-09-01 — the 33-13-10-1 vote tally and the ~55%/45% territorial split are corroborated across the UN's own historical record, Britannica, and the Economic Cooperation Foundation's documentation of the resolution. Fuller vote-record detail also appears on the United Nations General Assembly page."
+  },
+  {
+    "topic_id": "resolution-194",
+    "name": "Resolution 194",
+    "aliases": ["UN Resolution 194", "Right of Return resolution"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1948-12-11",
+    "summary": "Adopted 11 December 1948, establishing the UN Conciliation Commission for Palestine and, in paragraph 11, resolving that Palestinian refugees wishing to return to their homes and live at peace with their neighbors should be permitted to do so at the earliest practicable date, with compensation payable to those choosing not to return or for loss of or damage to property. Passed weeks after UN mediator Folke Bernadotte's assassination, drawing on his final recommendations.",
+    "significance": "The foundational legal text behind the Palestinian 'right of return' claim invoked in nearly every subsequent peace negotiation — directly downstream of the Nakba's displacement, and still unimplemented at the scale contemplated in 1948.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-general-assembly"],
+    "citation": "VERIFIED 2026-09-01 — the 11 December 1948 adoption date and paragraph-11 return/compensation language corroborated via live search against UN historical records and contemporary secondary sources."
+  },
+  {
+    "topic_id": "resolution-273",
+    "name": "Resolution 273",
+    "aliases": ["UN Resolution 273", "Israel UN admission resolution"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1949-05-11",
+    "summary": "Adopted 11 May 1949, admitting Israel as a UN member state after an earlier application failed in the Security Council in December 1948. Admission followed renewed Israeli assurances regarding implementation of Resolutions 181 and 194 — a diplomatic condition Palestinians and their advocates point to as never fully honored.",
+    "significance": "Sealed Israel's international-legal recognition, but on record conditions this dataset's other entries (194's unimplemented return, 181's unrealized borders) show were never fully met — the admission itself is part of the same contested record, not a separate, closed chapter.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-general-assembly"],
+    "citation": "VERIFIED 2026-09-01 — the 11 May 1949 adoption date corroborated via live search against the UN Digital Library, Security Council Report, and Jewish Virtual Library."
+  },
+  {
+    "topic_id": "resolution-303",
+    "name": "Resolution 303",
+    "aliases": ["UN Resolution 303", "Jerusalem corpus separatum resolution"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1949-12-09",
+    "summary": "Adopted 9 December 1949, restating the original Partition Plan's call for Jerusalem to be placed under a permanent international regime (corpus separatum) administered by the UN Trusteeship Council — reaffirmed even after the 1948 war had already divided the city de facto between Israel and Jordan. Never implemented: neither Israel nor Jordan (and later Israel alone, after 1967) ever ceded administrative control of its half of the city to the UN.",
+    "significance": "The clearest 'failed attempt' among this dataset's UN Resolution entries — the moment the international community formally reiterated an internationalized-Jerusalem framework the situation on the ground had already made moot, and its continued non-implementation underlies Jerusalem's disputed status into the dataset's present.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-general-assembly"],
+    "citation": "VERIFIED 2026-09-01 — the 9 December 1949 adoption date and its restatement of the corpus separatum framework corroborated via live search."
+  },
+  {
+    "topic_id": "resolution-242",
+    "name": "Resolution 242",
+    "aliases": ["UN Resolution 242", "Land for Peace resolution"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1967-11-22",
+    "summary": "Adopted unanimously by the UN Security Council on 22 November 1967 in the aftermath of the Six-Day War, calling for Israeli withdrawal 'from territories occupied in the recent conflict' (deliberately ambiguous wording, long disputed as to whether it meant all or some territories) in exchange for Arab recognition of Israel's right to live in peace within secure and recognized boundaries — the 'land for peace' formula.",
+    "significance": "The single most cited legal touchstone in every subsequent Israeli-Arab and Israeli-Palestinian negotiation over the West Bank, Gaza, Golan, and Sinai — the deliberate ambiguity in its own withdrawal language is itself a major reason those negotiations dragged on for decades rather than resolving quickly.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the unanimous 22 November 1967 adoption and the 'land for peace' formula corroborated via live search."
+  },
+  {
+    "topic_id": "resolution-338",
+    "name": "Resolution 338",
+    "aliases": ["UN Resolution 338"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1973-10-22",
+    "summary": "Adopted 22 October 1973 by the UN Security Council during the Yom Kippur War, calling for an immediate ceasefire and negotiations 'aimed at establishing a just and durable peace in the Middle East,' explicitly stipulating that Resolution 242 be implemented 'in all its parts.'",
+    "significance": "Reactivated 242's unresolved land-for-peace formula as live, binding diplomacy rather than a dormant 1967 text — the direct legal predicate for the negotiations that eventually produced the 1979 Israel-Egypt peace treaty and, decades later, the Oslo process.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the 22 October 1973 adoption date and the 'in all its parts' reaffirmation of Resolution 242 corroborated via live search."
+  },
+  {
+    "topic_id": "resolution-3379",
+    "name": "Resolution 3379",
+    "aliases": ["UN Resolution 3379", "Zionism is racism resolution"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1975-11-10 to 1991-12-16",
+    "summary": "Adopted 10 November 1975, determining that 'zionism is a form of racism and racial discrimination.' Formally revoked 16 years later by Resolution 46/86 on 16 December 1991, a step the United States and Israel had pushed for ahead of the Madrid Conference.",
+    "significance": "A 'failed attempt' in a different sense than Resolution 303 — not left unimplemented but actively reversed. Its revocation is now cited by Israel's supporters as evidence the international community corrected an earlier error, while critics cite the original resolution's substance as evidence of how the occupation and settlement record documented elsewhere in this dataset was perceived internationally at the time.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-general-assembly"],
+    "citation": "VERIFIED 2026-09-01 — the 10 November 1975 adoption and 16 December 1991 revocation via Resolution 46/86 corroborated via live search."
+  },
+  {
+    "topic_id": "resolution-465",
+    "name": "Resolution 465",
+    "aliases": ["UN Resolution 465"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1980-03-01",
+    "summary": "Adopted unanimously by the UN Security Council on 1 March 1980 (the United States later stated its vote was cast in error and should have been an abstention), declaring Israeli settlements in the West Bank, Gaza, and East Jerusalem a 'flagrant violation' of the Fourth Geneva Convention and calling on Israel to dismantle existing settlements and halt further settlement activity.",
+    "significance": "The Security Council's strongest and most direct condemnation of the settlement program this dataset's post-1967 entries track in detail — unanimous passage (before the US disavowal) makes it one of the least ambiguous international-law findings in the entire record, and settlement construction continued regardless.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the unanimous 1 March 1980 adoption, the Fourth Geneva Convention 'flagrant violation' language, and the later US 'vote cast in error' clarification corroborated via live search."
+  },
+  {
+    "topic_id": "arab-revolt-1936",
+    "name": "Arab Revolt",
+    "aliases": ["1936-39 Arab Revolt", "Great Palestinian Revolt", "Great Arab Revolt"],
+    "hebrew_name": null,
+    "topic_type": "Armed Conflict",
+    "date_or_range": "1936-04-19 to 1939-05",
+    "summary": "A sustained Palestinian Arab uprising against British rule and Jewish immigration and land purchase, beginning with a general strike called 19 April 1936 (days after the 15 April killing of two Jews near Tulkarm touched off the immediate unrest) and continuing in a second, more violent phase from 1937 after the Peel Commission's partition recommendation, until the British 1939 White Paper's concessions brought it to an end. The Haganah's 'Tower and Stockade' settlement campaign was a direct settlement-side response to the Revolt's disruption of rural land access.",
+    "significance": "The first sustained, organized Palestinian Arab resistance this dataset documents, and the direct trigger for both the Peel Commission's 1937 partition proposal (the conceptual ancestor of the 1947 UN Partition Plan) and the 1939 White Paper's immigration and land-purchase restrictions — a hinge event connecting the Mandate's land-purchase-driven tensions to its diplomatic partition era.",
+    "related_actor_ids": [],
+    "related_org_ids": ["haganah"],
+    "citation": "VERIFIED 2026-09-01 — the 15 April 1936 Tulkarm killings, the 19 April 1936 general strike start, and the revolt's end coinciding with the May 1939 White Paper are corroborated via live search (Britannica, Origins/Ohio State University, Wikipedia). Total casualty and troop-deployment figures not independently verified this pass."
+  },
+  {
+    "topic_id": "white-paper-1939",
+    "name": "1939 White Paper",
+    "aliases": ["MacDonald White Paper", "White Paper of 1939"],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "1939-05",
+    "summary": "Issued by the British government under Colonial Secretary Malcolm MacDonald in mid-May 1939 (sources vary between 17 and 21 May for the issuance itself; the House of Commons formally approved it 23 May 1939), reversing course from Balfour Declaration-era policy: it capped Jewish immigration to Palestine at 75,000 over the following five years — after which further immigration would require Arab consent — restricted Jewish land purchase to a small percentage of Mandate territory, and envisioned an independent Palestine, with Arab and Jewish participation in government, within ten years. Rejected as insufficient by the Arab Higher Committee and as a betrayal by the Zionist leadership, but never formally revoked before the Mandate ended.",
+    "significance": "The immigration cap arrived on the eve of WWII and the Holocaust, cutting off a legal escape route for European Jews at the worst possible moment — it ended both the Fifth Aliyah and the Arab Revolt, and its land-purchase restrictions are a direct, if largely unenforced-by-1948, precursor to the very different land-control approach the Absentees' Property Law and Land Acquisition Law took after statehood.",
+    "related_actor_ids": [],
+    "related_org_ids": ["jewish-agency-for-palestine"],
+    "citation": "VERIFIED 2026-09-01 — the 75,000-over-five-years immigration cap and 23 May 1939 House of Commons approval are corroborated via live search (Wikipedia's White Paper of 1939 article, israeled.org primary-source page); the exact issuance date genuinely varies by source (17 vs 21 May) and is left as a range here rather than resolved to a single day. The Yishuv's own response (general strike, Ben-Gurion's wartime policy) is documented in this dataset's own Jewish Agency for Palestine org entry."
+  },
+  {
+    "topic_id": "armistice-line-1949",
+    "name": "1949 Armistice Line",
+    "aliases": ["Green Line", "1949 Armistice Lines"],
+    "hebrew_name": null,
+    "topic_type": "Geographic Region",
+    "date_or_range": "1949",
+    "summary": "The set of demarcation lines fixed by the four separate 1949 Israel-Arab armistice agreements (Egypt, 24 February; Lebanon, 23 March; Jordan, 3 April; Syria, 20 July), commonly called the Green Line after the color used to draw it on the negotiators' maps. Left Israel in control of roughly 78% of Mandate Palestine — well beyond the ~55% recommended for the Jewish state under Resolution 181 — with the remainder split between Jordan (West Bank, including East Jerusalem) and Egypt (administering, not annexing, the Gaza Strip).",
+    "significance": "Functioned as Israel's de facto border for the next eighteen years, until the Six-Day War replaced it with a much larger territorial footprint — and remains the reference line international diplomacy, including Resolution 242's 'land for peace' formula, has used ever since to describe a two-state or withdrawal framework, even though Israel never treated it as a final political border.",
+    "related_actor_ids": [],
+    "related_org_ids": ["idf"],
+    "citation": "VERIFIED 2026-09-01 — the four armistice dates and the ~78% territorial figure are consistent with this dataset's existing 1948 Arab–Israeli War entry (independently corroborated there); the 'Green Line' naming and its map-color origin confirmed via live search this pass."
+  },
+  {
+    "topic_id": "muscular-judaism",
+    "name": "Muscular Judaism",
+    "aliases": ["Muskeljudentum"],
+    "hebrew_name": null,
+    "topic_type": "Publication",
+    "date_or_range": "1898",
+    "summary": "Coined by Max Nordau in a speech at the Second Zionist Congress in Basel (28 August 1898), arguing that centuries of ghetto confinement had left diaspora Jews physically weakened, and that Zionism's political program required a parallel physical transformation — a 'new Jew,' built through gymnastics, sport, and physical training, replacing the stereotype of the frail, sedentary diaspora intellectual. Directly inspired the Jewish gymnastics movement: the Union of Jewish Gymnastic Clubs, founded at the Fourth Zionist Congress (1903), became the basis of the Maccabi World Union.",
+    "significance": "A foundational cultural strand of political Zionism running alongside Herzl's diplomacy and the practical settlement tradition Hovevei Zion and the Bilu movement began — reframed the diaspora Jewish body itself as something the movement needed to remake, supplying much of the physical-culture and self-reliance ethos that runs through this dataset's early self-defense organizations (Bar-Giora/Hashomer, and later Haganah).",
+    "related_actor_ids": ["max-nordau"],
+    "related_org_ids": ["world-zionist-organization"],
+    "citation": "VERIFIED 2026-09-01 — the 28 August 1898 Second Zionist Congress speech date and the concept's link to the 1903 Union of Jewish Gymnastic Clubs/Maccabi lineage corroborated via live search (Wikipedia's Muscular Judaism article, Jewish Museum Berlin). Its original publication in the Zionist journal Die Welt not independently re-confirmed this pass."
+  },
+  {
+    "topic_id": "allon-plan",
+    "name": "Allon Plan",
+    "aliases": [],
+    "hebrew_name": "תוכנית אלון",
+    "topic_type": "Publication",
+    "date_or_range": "1967-07-26",
+    "summary": "Deputy Prime Minister Yigal Allon proposed this plan to the Israeli cabinet on 26 July 1967 — barely six weeks after the Six-Day War ceasefire — recommending Israeli retention and settlement of strategic, sparsely-populated West Bank areas (the Jordan Valley, Gush Etzion, and Greater Jerusalem) while leaving densely-populated Palestinian areas outside direct annexation. The first such postwar territorial plan presented to cabinet, though never formally adopted as binding government policy.",
+    "significance": "Functioned as the de facto guideline for Israeli settlement siting through roughly the following decade regardless of its non-adoption — the security-corridor logic it set out (settle the strategic margins, leave the populated Palestinian center alone) shaped where governments from Eshkol through Begin actually built, making it one of the most consequential unofficial documents in this dataset's post-1967 record.",
+    "related_actor_ids": ["yigal-allon", "levi-eshkol"],
+    "related_org_ids": ["prime-minister-of-israel"],
+    "citation": "VERIFIED 2026-09-01 — the 26 July 1967 cabinet presentation date and the Jordan Valley/Gush Etzion/Greater Jerusalem siting logic corroborated via live search (Wikipedia's Allon Plan article, PASSIA's historical documentation)."
+  },
+  {
+    "topic_id": "east-jerusalem",
+    "name": "East Jerusalem",
+    "aliases": [],
+    "hebrew_name": null,
+    "topic_type": "Geographic Region",
+    "date_or_range": "1967-present",
+    "summary": "Captured by Israel from Jordan on 7 June 1967, the third day of the Six-Day War. On 27-28 June 1967, Israel unilaterally expanded Jerusalem's municipal boundaries to include roughly 70 square kilometers of former Jordanian and West Bank territory — the new line deliberately excluded densely populated Palestinian areas to preserve a Jewish demographic majority within the city — and extended Israeli law and administration over it. The Knesset's 1980 Jerusalem Law (Basic Law: Jerusalem, Capital of Israel, 30 July 1980) declared a 'complete and united' Jerusalem Israel's capital; Israel's own Supreme Court later interpreted the law as an effective annexation, though the law itself never uses that word.",
+    "significance": "The single most contested piece of ground in this dataset's post-1967 record — unlike the West Bank or Gaza, treated by Israel as annexed and administratively unified with the rest of the city rather than occupied territory awaiting negotiation, a status Resolution 478 declared 'null and void' and which no other UN member state recognizes. Every peace framework since (Camp David 2000, the Clinton Parameters) has treated East Jerusalem's status as one of the hardest unresolved questions precisely because of this unilateral 1967-1980 legal history.",
+    "related_actor_ids": ["moshe-dayan"],
+    "related_org_ids": ["idf", "knesset", "united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the 7 June 1967 capture date, 27-28 June 1967 municipal boundary expansion (~70 km²), and 30 July 1980 Jerusalem Law date (with the Israeli Supreme Court's annexation interpretation) are all corroborated via live search (Wikipedia's Jerusalem Law article, ECF's documentation of the 1967 annexation decree, B'Tselem)."
+  },
+  {
+    "topic_id": "resolution-478",
+    "name": "Resolution 478",
+    "aliases": ["UN Resolution 478"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1980-08-20",
+    "summary": "Adopted 20 August 1980 by the UN Security Council in response to the Knesset's Jerusalem Law three weeks earlier, determining that Israel's legislative and administrative measures altering the character and status of Jerusalem — the Jerusalem Law by name — were 'null and void' and must be rescinded, and calling on states with diplomatic missions in Jerusalem to withdraw them.",
+    "significance": "The international community's clearest, most direct rejection of East Jerusalem's annexation — most states that had maintained embassies in Jerusalem relocated to Tel Aviv in its wake, and no UN member state recognizes Israeli sovereignty over East Jerusalem to this day, making this one of the most durably effective Security Council resolutions in this dataset even though Israel itself never complied with the rescission demand.",
+    "related_actor_ids": [],
+    "related_org_ids": ["united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the 20 August 1980 adoption date, the 'null and void' language, and the embassy-withdrawal call are corroborated via live search (Jewish Virtual Library, UNSCR.com, palquest.org's primary-text page)."
+  },
+  {
+    "topic_id": "yom-kippur-war-1973",
+    "name": "Yom Kippur War",
+    "aliases": ["October War", "1973 Arab-Israeli War", "Ramadan War"],
+    "hebrew_name": "מלחמת יום הכיפורים",
+    "topic_type": "Armed Conflict",
+    "date_or_range": "1973-10-06 to 1973-10-25",
+    "summary": "Egypt and Syria launched a coordinated surprise attack on 6 October 1973, the Jewish holy day of Yom Kippur, achieving early gains across the Suez Canal and on the Golan Heights before Israel — under Prime Minister Golda Meir and Defense Minister Moshe Dayan — mobilized and reversed both fronts. Ariel Sharon's Division 143 crossed the Suez Canal onto the Egyptian side on the night of 15-16 October, encircling Egypt's Third Army and reversing the war's momentum. A UN-backed ceasefire (Resolution 338) took effect 24-25 October, formalized in separate Israel-Egypt (11 November 1973) and Israel-Syria (31 May 1974) disengagement agreements.",
+    "significance": "Unlike the 1948 War or the Six-Day War, this war produced little lasting territorial change in this dataset's terms — but the near-catastrophic surprise and the Agranat Commission's subsequent findings forced Golda Meir's resignation, and Resolution 338's reaffirmation of Resolution 242 'in all its parts' set the direct diplomatic path to the 1978 Camp David Accords and the 1979 return of Sinai.",
+    "related_actor_ids": ["golda-meir", "moshe-dayan", "ariel-sharon"],
+    "related_org_ids": ["idf", "united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the 6 October 1973 start date, the 24-25 October ceasefire, Sharon's 15-16 October Suez Canal crossing, and the 11 November 1973/31 May 1974 disengagement agreement dates are corroborated via live search (Britannica, American University's SIS retrospective, Israeli MOD archives on Division 143)."
+  },
+  {
+    "topic_id": "resolution-497",
+    "name": "Resolution 497",
+    "aliases": ["UN Resolution 497"],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "1981-12-17",
+    "summary": "Adopted unanimously by the UN Security Council on 17 December 1981, three days after the Knesset passed the Golan Heights Law, declaring that law 'null and void and without international legal effect' and demanding Israel rescind it. The Council requested a Secretary-General report within two weeks and set 5 January 1982 to reconvene if Israel did not comply. Israel did not comply; a follow-up Chapter VII resolution seeking enforcement action was vetoed by the United States on 20 January 1982.",
+    "significance": "Structurally the closest parallel in this dataset to Resolution 478 on Jerusalem — a unanimous, unambiguous international rejection of a unilateral Israeli annexation-by-law, followed by non-compliance and, this time, an explicit US veto blocking any enforcement mechanism — illustrating why these resolutions' 'null and void' findings, however clear-cut, have not on their own reversed the underlying land facts they condemn.",
+    "related_actor_ids": ["menachem-begin"],
+    "related_org_ids": ["united-nations-security-council"],
+    "citation": "VERIFIED 2026-09-01 — the unanimous 17 December 1981 adoption, the 'null and void and without international legal effect' language, the 5 January 1982 reconvening deadline, and the 20 January 1982 US veto of the Chapter VII follow-up are corroborated via live search (Wikipedia's United Nations Security Council Resolution 497 article, UNSCR.com)."
+  },
+  {
+    "topic_id": "jordan-valley-sovereignty-bill-2023",
+    "name": "Jordan Valley Sovereignty Bill",
+    "aliases": ["Application of Israeli Sovereignty in the Jordan Valley"],
+    "hebrew_name": "הצעת חוק החלת הריבונות הישראלית על בקעת הירדן",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2023-03-15",
+    "summary": "A private member's bill sponsored by Yisrael Beiteinu leader Avigdor Liberman to apply Israeli sovereignty to the Jordan Valley section of the West Bank, defeated in a preliminary reading 65-14 on 15 March 2023. Notably, the governing coalition's own hardline parties — Otzma Yehudit and Religious Zionism — voted it down alongside the rest of the coalition; Likud MK Dan Illouz dismissed it as an attempt to 'troll the system' rather than a genuine sovereignty push, since an opposition-sponsored bill succeeding would hand credit to Liberman rather than the government.",
+    "significance": "A clear instance of a 'failed attempt' in this dataset's UN Resolution/legislative sense — defeated not on ideological grounds (every voting bloc present nominally supports settlement expansion) but on partisan ones, illustrating how sovereignty legislation in this period was as much about political credit-claiming as about the underlying territorial goal. Directly comparable to the two sovereignty bills that did pass a preliminary reading in October 2025 once framed and timed differently.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 15 March 2023 date and the 65-14 defeat are drawn from this project's own completed Knesset vote-results scrape (vote_id 38405), independently corroborated by live search (Jerusalem Post's 'Israeli sovereignty in Jordan Valley bill rejected by the Right' article), including Illouz's 'troll the system' characterization and the Otzma Yehudit/Religious Zionism opposition."
+  },
+  {
+    "topic_id": "maale-adumim-sovereignty-bill-2025",
+    "name": "Ma'ale Adumim Sovereignty Bill",
+    "aliases": ["Application of Sovereignty in Ma'aleh Adumim"],
+    "hebrew_name": "הצעת חוק החלת ריבונות על מעלה אדומים",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2025-10-22",
+    "summary": "A bill sponsored by Yisrael Beiteinu leader Avigdor Liberman to apply Israeli sovereignty to Ma'ale Adumim, the large West Bank settlement adjacent to Jerusalem central to the long-contested 'E1' corridor plan, passed a preliminary Knesset reading on 22 October 2025 — timed to coincide with a visit by US Vice President JD Vance, and passed despite Prime Minister Netanyahu's own government urging its withdrawal. Coalition chair Ofir Katz subsequently announced the bill (and a companion broader sovereignty bill) would not be advanced further 'until further notice,' effectively freezing it after its initial passage.",
+    "significance": "One of two West Bank sovereignty bills to clear a preliminary reading in the same October 2025 session — a genuine escalation beyond the 2023 Jordan Valley bill's outright defeat — yet also, like that bill, ultimately stalled rather than enacted, this time by the government's own choice rather than a floor defeat. The vote drew support beyond the governing coalition, including opposition leaders Yair Lapid and Benny Gantz, complicating any simple coalition-versus-opposition reading of sovereignty politics in this period.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 22 October 2025 preliminary passage (this project's own scrape, vote_id 44575, records 31 For/9 Against/1 Abstain; live-searched press reports give 32-9) and the subsequent freeze are corroborated via live search (UPI, Times of Israel's '2 West Bank annexation bills get initial nod' article, JPost, news on air). The minor vote-count variance between the scraped tally and press reporting was not independently reconciled this pass."
+  },
+  {
+    "topic_id": "judea-samaria-sovereignty-bill-2025",
+    "name": "Judea and Samaria Sovereignty Bill",
+    "aliases": ["Application of Israeli Sovereignty in Judea and Samaria"],
+    "hebrew_name": "הצעת חוק החלת הריבונות של מדינת ישראל בחבלי יהודה והשומרון",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2021-2025 (repeated attempts)",
+    "summary": "A broader companion bill to the Ma'ale Adumim Sovereignty Bill, sponsored by Noam party leader Avi Maoz, stipulating that Israeli law, jurisdiction, and administration extend to all Jewish settlement areas of the West Bank. Passed a preliminary reading by a single vote, 25-24, on 22 October 2025 — most Likud MKs abstained or were absent under Prime Minister Netanyahu's own direction to withdraw the bill, with the sole exception of Yuli Edelstein, who voted for it in defiance of his party leader; several United Torah Judaism MKs, including party leader Yitzchak Goldknopf, also voted for it. Like the Ma'ale Adumim bill, it was frozen after this initial passage and requires three further readings to become law. This was not the bill's first attempt: an identically-titled 2021 version was defeated 64-50 on 28 July 2021 — a considerably larger 'For' bloc than the 2025 version's bare-majority 25, suggesting support for the underlying proposal has fragmented across more sponsoring factions over time even as the specific 2025 vote succeeded narrowly. Between those two attempts, two more competing versions of essentially the same bill — one of them sponsored by Likud MK Shlomo Karhi — were brought to snap votes on 22 June 2022, hours after the 24th Knesset had already voted to dissolve itself for new elections; Religious Zionism leader Bezalel Smotrich urged colleagues 'there is no reason now not to vote your conscience' with coalition discipline no longer binding, but both bills still failed, 46-52 and 46-51.",
+    "significance": "The narrowest possible margin for a bill that would, if ultimately enacted, apply Israeli law across the entire settled West Bank — and a rare documented instance in this dataset of individual MKs (Edelstein, the UTJ bloc) breaking with their own Prime Minister's explicit direction specifically to vote for greater territorial expansion, not against it. The four attempts across 2021-2025 also trace a real trajectory: from a 14-point defeat, through two narrower defeats on a day when party discipline had already collapsed, to eventual passage by the narrowest possible margin — sustained legislative pressure rather than a single episode.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 22 October 2025 date and 25-24 result are drawn from this project's own completed Knesset vote-results scrape (vote_id 44580), exactly matching live-searched press reporting (Jerusalem Post, Times of Israel, JNS, Israel National News), including Edelstein's defiance of Netanyahu's directive and the UTJ MKs' support. The 2021 predecessor bill's 28 July 2021 date and 64-50 defeat are drawn from the same completed scrape (vote_id 34961), not independently cross-checked against outside press this pass. The 22 June 2022 dissolution-day votes (vote_id 37375, 46-52; vote_id 37376, 46-51) and Smotrich's quote are corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+  },
+  {
+    "topic_id": "beitar-illit-sovereignty-bill-2025",
+    "name": "Beitar Illit Sovereignty Bill",
+    "aliases": ["Application of Sovereignty on Beitar Illit"],
+    "hebrew_name": "הצעת חוק החלת ריבונות על ביתר עילית",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2025-12-31",
+    "summary": "A further single-settlement sovereignty bill, seeking to regulate the ultra-Orthodox West Bank settlement of Beitar Illit's status under Israeli law, defeated in a preliminary reading 45-8 on 31 December 2025 — timed, like the October bills, to a moment when Prime Minister Netanyahu was traveling abroad (in the US).",
+    "significance": "Unlike the Ma'ale Adumim and Judea/Samaria bills passed the same autumn, this one failed outright, by a wide margin — underscoring that support for individual-settlement sovereignty bills in this period was inconsistent even within the same legislative wave, tracking political timing and sponsor identity as much as the underlying territorial claim.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 31 December 2025 date and 45-8 result are drawn from this project's own completed Knesset vote-results scrape (vote_id 44992), exactly matching live-searched press reporting (Jerusalem Post's 'Knesset votes down bill to annex Betar Illit' article, Euronews)."
+  },
+  {
+    "topic_id": "judea-samaria-heritage-authority-bill-2026",
+    "name": "Judea and Samaria Heritage Authority Bill",
+    "aliases": ["Antiquities Authority Amendment (Judea and Samaria)"],
+    "hebrew_name": "הצעת חוק רשות המורשת ביהודה והשומרון",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2026-05-12",
+    "summary": "A bill sponsored by Likud MK Amit Halevy creating a new 'Judea and Samaria Heritage Authority' to place West Bank archaeology, antiquities, and heritage sites — including biblical sites such as Sebastia, the Tomb of the Patriarchs in Hebron, and Tel Shiloh — under direct Israeli civilian administration, using the biblical name 'Judea and Samaria' for the West Bank in the authority's own title. Passed a first reading 23-14 on 12 May 2026, alongside a companion amendment extending the existing Israel Antiquities Authority's own jurisdiction into the West Bank, passed 22-14 the same session. Both require two further plenum readings to become law. Halevy described the effort in explicitly identity-based terms: 'The current war is about our identity, our culture, about God, about our deep belonging to this land.'",
+    "significance": "Critics describe the bill as de facto annexation by administrative rather than declarative means — rather than applying Israeli sovereignty outright, it transfers a specific category of civil administration (heritage/antiquities authority, previously a military-government function in the West Bank) to an Israeli civilian body, extending practical Israeli governance over West Bank land without a formal sovereignty vote.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 12 May 2026 date and both vote tallies (23-14 and 22-14) are drawn from this project's own completed Knesset vote-results scrape (vote_id 45930 and vote_id 45929 respectively), exactly matching live-searched press reporting (Times of Israel, 'Knesset advances controversial West Bank antiquity bill in first reading'), including Halevy's sponsorship, the 23-14 tally, and his quoted rationale."
+  },
+  {
+    "topic_id": "prawer-begin-bill-2013",
+    "name": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+    "aliases": ["Prawer Plan", "Prawer-Begin Bill", "Bill for the Arrangement of Bedouin Settlement in the Negev"],
+    "hebrew_name": "הצעת חוק להסדרת התיישבות בדואים בנגב",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2013 (withdrawn December 2013)",
+    "summary": "A government bill to resolve all outstanding Bedouin land claims in the Negev/Naqab by recognizing some existing unrecognized villages within a designated area northeast of Beersheba (the 'Siyag'), while relocating an estimated 30,000-40,000 Bedouin citizens of Israel from villages outside that area — most unrecognized by the state and slated for demolition — into seven planned townships, with compensation of money or land capped at up to 50% of the claimed original holding. Passed a first reading 43-40 on 24 June 2013, named for Minister Benny Begin, who led the negotiations, building on the 2011 Prawer Commission report (headed by Ehud Prawer). Withdrawn by the government in December 2013 after sustained mass protests by Bedouin and allied communities, including a nationwide 'Day of Rage,' and was never brought back for a second or third reading.",
+    "significance": "The largest single planned relocation of Arab citizens of Israel in this dataset's ledger — distinct from the West Bank settlement/annexation bills elsewhere in this dataset in that it targets Bedouin citizens of Israel proper, not Palestinians under occupation, but sharing the same underlying pattern: resolving land claims by moving the claimants rather than recognizing their title. Its 2013 defeat-by-protest, rather than defeat-by-vote (it in fact passed its only floor vote), is itself notable — a rare case in this ledger where public mobilization, not the Knesset, stopped a land policy already advancing through the legislative process.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 24 June 2013 date and 43-40 first-reading tally are drawn from this project's own completed Knesset vote-results scrape (vote_id 19025), exactly matching live-searched press reporting (Jerusalem Post's 'Prawer Bill on Beduin land narrowly passes 1st vote,' +972 Magazine, Adalah, Haaretz). The relocation scale (30,000-40,000), the Siyag concept, the 50%-compensation cap, and the December 2013 withdrawal following mass protests are corroborated via the same live-search sourcing (Adalah's Prawer Plan briefing, OHCHR's Pillay statement)."
+  },
+  {
+    "topic_id": "negev-galilee-veterans-land-bill",
+    "name": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+    "aliases": ["Land for Every Fighter", "Negev and Galilee Land Allocation Bill"],
+    "hebrew_name": "הצעת חוק רשות מקרקעי ישראל (הקצאת קרקעות בנגב ובגליל לחיילים משוחררים)",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2009-2025 (repeated attempts)",
+    "summary": "A recurring private-member bill directing the Israel Land Authority to allocate quarter-dunam plots free of charge to discharged combat-service veterans (later versions also cover national-civilian service volunteers) who choose to settle in a designated list of communities across the Negev and Galilee 'National Priority Areas,' explicitly framed by sponsors as 'strengthening the periphery with a quality population' on both social and security grounds. First proposed in 2009 (alongside a related Israel Land Authority reform law that did pass that August); a 2021 version sponsored by Likud MK Yoav Kish was defeated in a preliminary-reading vote 42-47 on 12 January 2022; two follow-up versions, sponsored by Likud MK Nissim Vaturi, passed preliminary readings 31-6 and 32-8 on 22 February 2023. The underlying policy already operates administratively in part — the Israel Land Authority has separately granted discharged soldiers a 90% lease-price discount in qualifying Negev/Galilee towns — and this bill's repeated reintroduction reflects an ongoing push to entrench that preference in statute.",
+    "significance": "The Negev and Galilee are the two regions of Israel with the largest concentrations of Arab and Bedouin citizens, and Israeli officials have described land and settlement policy there in explicitly demographic terms for decades — a pattern this dataset already documents via the Admissions Committees Law's use of similar 'social-cultural fabric' language for small communities in the same two regions. A free-land benefit available only to veterans of Israeli military or national service structurally excludes the Arab and Bedouin citizens who are, with limited exceptions, not conscripted — making this bill a statutory mechanism for shifting land distribution toward Jewish residents in exactly the regions where demographic balance has been most explicitly contested.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the bill's mechanism (free quarter-dunam plots, National Priority Area communities, combat/national-service eligibility) and its 'strengthen the periphery with a quality population' framing are corroborated via live search (Calcalist's 'קרקע לכל לוחם' coverage, Tzohar's summary, Kipa's coverage of the preliminary-reading passage). The 42-47 defeat (vote_id 36522, 12 January 2022) and the two 31-6/32-8 preliminary-reading passages (vote_id 38320 and vote_id 38321, 22 February 2023) are drawn directly from this project's own completed Knesset vote-results scrape, not independently cross-checked against outside press this pass. The separate 90%-discount administrative policy and the general 'Judaization of the Galilee/Negev' demographic framing are corroborated via live search (Adalah reporting)."
+  },
+  {
+    "topic_id": "stone-throwing-minimum-sentence-doubling-bill",
+    "name": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+    "aliases": ["4-Year Minimum Sentence Bill", "Stone-Throwing Sentence Doubling Bill"],
+    "hebrew_name": "הצעת חוק העונשין (הכפלת עונש מינימום לעבירות יידוי אבנים)",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2022-2025 (repeated attempts)",
+    "summary": "A recurring bill to double the minimum mandatory prison sentence for stone-throwing offenses under this dataset's own already-verified 2015 Penal Law Amendment No. 120 — from 2 years to 4 for throwing at people, and proportionally for throwing at vehicles — first brought to a preliminary-reading vote on 22 June 2022, the same 24th Knesset dissolution-day session that produced two sovereignty-bill votes already documented in this ledger; it passed overwhelmingly, 56-7. A near-identical re-submission was defeated 18-54 on 3 May 2023, five months into the new Netanyahu government, with several MKs who had voted for the 2022 version voting against its 2023 successor — a reversal this dataset records rather than smooths over, consistent with the pattern already documented elsewhere in this ledger of a governing coalition blocking a bill for reasons of political credit rather than substance. Three further, near-identical versions were brought to preliminary-reading votes on the same day, 12 March 2025, all passing on low turnout (16-5, 18-8-1, 24-8).",
+    "significance": "A rare documented case in this ledger of a bill's own sponsoring coalition reversing itself on the identical substantive proposal within about a year — worth reading alongside this dataset's own Liberman Jordan Valley Sovereignty Bill entry, where a similar coalition rejection was read by a rival MK as denying political credit to the bill's sponsor rather than opposing its substance.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 22 June 2022 56-7 preliminary-reading passage (vote_id 37358), the 3 May 2023 18-54 defeat (vote_id 38655), and the three 12 March 2025 passages (vote_id 43284, 43285, 43286) are drawn directly from this project's own completed Knesset vote-results scrape, not independently cross-checked against outside press this pass. The bill's relationship to the existing 2015 Amendment No. 120 (doubling its minimum sentence) is corroborated via live search (Middle East Monitor's '4-year prison term for stone-throwing' coverage of the original 2022 version)."
+  },
+  {
+    "topic_id": "administrative-detention-israelis-limit-bill-2024",
+    "name": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+    "aliases": ["Rothman Administrative Detention Bill"],
+    "hebrew_name": "הצעת חוק סמכויות שעת חירום (מעצרים) (תיקון - מעצרים מינהליים בגין חברות בארגון טרור)",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2024-07-03",
+    "summary": "Sponsored by Constitution, Law and Justice Committee chair Simcha Rothman with government backing, the bill would forbid the use of administrative detention or administrative restraining orders against Israeli citizens entirely, except for members of a defined list of terror organizations to be set by committee — while explicitly leaving administrative detention available, unrestricted, as a tool against West Bank Palestinian suspects. Passed a preliminary reading 54-51 on 3 July 2024 despite public warnings from the Shin Bet security agency that the change would hamper counter-terrorism work. Haaretz's own headline on the government's endorsement of the bill put the effect plainly: 'Israeli Ministers Approve Law That Would Reserve Administrative Detention for non-Jews.'",
+    "significance": "A rare instance in this dataset of a bill that does not expand a punitive power but narrows it — specifically and only for Israeli citizens, motivated by rising use of administrative detention against Jewish West Bank settler suspects, while leaving the same power fully intact against Palestinians. The same underlying legal tool, deliberately split into two tiers by citizenship rather than by conduct — a clean, explicit instance of the two-tier legal treatment critics of this dataset's broader subject matter describe more often as implicit or structural.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 3 July 2024 preliminary-reading date and 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), exactly matching live-searched press reporting (Haaretz's 'Bill to Bar Detention Without Trial for Jews Passes First Hurdle in Knesset,' Times of Israel's 'Ministers aim to curb administrative detention of Israelis, despite Shin Bet warning'). Rothman's sponsorship is confirmed directly via the Knesset's own OData API (KNS_BillInitiator record for this bill's BillID, naming person_id 30812 — Rothman's own roster ID — as sole initiator), not press alone. A related but distinct development, not confirmed as this bill's own final enactment: live search separately found Defense Minister Israel Katz announced in May 2026 that administrative detention would no longer be used against Israeli citizens in the West Bank — an executive-branch action, not confirmed here as this specific bill completing its second and third readings, and not conflated with it."
+  },
+  {
+    "topic_id": "communities-neighborhoods-regularization-bill-2020",
+    "name": "Communities and Neighborhoods in Regularization Processes Bill",
+    "aliases": ["Outposts Law (2020)"],
+    "hebrew_name": "הצעת חוק יישובים ושכונות בהליכי הסדרה",
+    "topic_type": "Legislative Proposal",
+    "date_or_range": "2020-12-16",
+    "summary": "Sponsored by a 15-MK coalition group including Bezalel Smotrich, Ayelet Shaked, Haim Katz, and Amit Halevy (all confirmed via the Knesset's own bill-initiator records), the bill would grant government financial support and formal connection to Israeli water, electricity, and postal infrastructure to West Bank outposts already undergoing — but not yet completed through — the regularization process this dataset's own 2017 Regularization Law and Kaminitz Law entries already document. Passed a vote to advance it to committee for second and third readings, 60-40, on 16 December 2020 (press reported this stage as passing 59-39, a minor unreconciled variance).",
+    "significance": "Distinct from this dataset's already-covered 2017 Regularization Law in mechanism: that law addressed retroactive legal status for construction on private Palestinian land specifically; this bill addressed ongoing government material and infrastructural support for outposts already in process, regardless of the underlying land-tenure question — expanding the state's practical backing for outpost communities a further step beyond bare legal status.",
+    "related_actor_ids": [],
+    "related_org_ids": ["knesset"],
+    "citation": "VERIFIED 2026-09-01 — the 16 December 2020 date and 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), broadly consistent with live-searched press reporting of a 59-39 preliminary vote (Haaretz's 'Bill to provide state support for Israeli West Bank outposts passes preliminary vote,' Times of Israel) — the specific reading stage and exact tally are not fully reconciled between the scrape and press this pass. The 15-MK sponsor list, including Smotrich, Shaked, Katz, and Halevy, is confirmed directly via the Knesset's own OData API (KNS_BillInitiator records for this bill's BillID). This bill's own final enactment status (whether it completed a full third reading as distinct legislation, versus being absorbed into or superseded by other regularization mechanisms) was not confirmed via live search this pass — kept as a Legislative Proposal rather than assumed enacted."
+  }
+]

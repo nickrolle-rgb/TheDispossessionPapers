@@ -1,0 +1,8 @@
+# Raw Knesset vote-results database — 234MB, regenerable via scripts/knesset_scraper.py.
+# Too large for normal git (GitHub blocks pushes >100MB); never meant to be distributed itself —
+# only the curated data/*.json files this project derives from it are meant to be public.
+data/knesset_votes.sqlite3
+
+# Scratch/output files that don't belong in version history
+*.pyc
+__pycache__/

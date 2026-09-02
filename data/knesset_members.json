@@ -1,0 +1,2503 @@
+[
+  {
+    "mk_id": "eliezer-kaplan",
+    "full_name": "Eliezer Kaplan",
+    "hebrew_name": "אליעזר קפלן",
+    "birth_name": "Eliezer Kaplan",
+    "birth_country": "Russian Empire (Minsk, present-day Belarus)",
+    "knesset_terms": [
+      {
+        "knesset_number": 1,
+        "party": "Mapai",
+        "political_alignment": "Left"
+      }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "kaplan-absentees-property-1950",
+        "date": "1950-03-14",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Absentees' Property Law, 5710-1950",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide (property of Palestinian Arab refugees/absentees, all regions)",
+          "estimated_hectares_affected": null,
+          "description": "As Minister of Finance (Israel's first, 27 January 1891 – 13 July 1952, born in Minsk), Kaplan's ministry was the sponsoring authority for the law establishing the Custodian of Absentee Property, which vested ownership of land and property left by Palestinian refugees in the state. Total area affected is disputed in the literature (estimates for absentee-property land transferred to the state range widely across sources); left null here rather than asserting a single figure — see citation for the standard scholarly treatment."
+        },
+        "citation": "VERIFIED 2026-09-01 (biographical/institutional facts; individual roll-call vote remains unconfirmed) — Kaplan's personal 'For' vote is inferred from his role as sponsoring Finance Minister, not from a confirmed individual roll-call record; the Knesset's own vote-records API returns no per-member data for Knessets before the 16th (confirmed independently via this project's own scraper build), so this gap is structural, not a research shortfall. Substantive law itself: Absentees' Property Law 5710-1950, Sefer Ha-Chukim No. 37, p. 86 (20 March 1950) — this entry previously carried the same wrong 'vol. 4, p. 68' guess already corrected in laws.json months ago and never synced here; fixed to match. Kaplan's birth date/place, his role as Jewish Agency treasurer (1933-48) and head of its Settlement Department (1943-48), and his role in the 1930 Hapoel Hatzair/Ahdut HaAvoda merger into Mapai are corroborated via live search (Wikipedia's Eliezer Kaplan article, Encyclopedia.com). Scholarly treatment of scale: Michael R. Fischbach, 'Records of Dispossession' (2003), not independently re-checked this pass."
+      }
+    ]
+  },
+  {
+    "mk_id": "levi-eshkol",
+    "full_name": "Levi Eshkol",
+    "hebrew_name": "לוי אשכול",
+    "birth_name": "Levi Shkolnik",
+    "birth_country": "Russian Empire (Oratovo, Kiev Governorate, present-day Ukraine)",
+    "knesset_terms": [
+      {
+        "knesset_number": 2,
+        "party": "Mapai",
+        "political_alignment": "Left"
+      }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "eshkol-land-acquisition-1953",
+        "date": "1953-03-10",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Land Acquisition (Validation of Acts and Compensation) Law, 5713-1953",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide (land requisitioned/occupied by the state or Jewish Agency/JNF since 1948, primarily former Arab-owned land)",
+          "estimated_hectares_affected": null,
+          "description": "As Minister of Finance (born Levi Shkolnik, 25 October 1895, in Oratovo, Kiev Governorate — later Israel's third Prime Minister, 1963-69), Eshkol's ministry sponsored the law that retroactively validated state seizure of land already occupied/requisitioned since 1948-1953 and set compensation terms, transferring much of it to state ownership or the JNF. Total area again disputed across sources — see this dataset's own Land Acquisition Law entry for Adalah's sourced 1.2-1.3 million dunam figure — left null here rather than repeating that figure without its own direct citation."
+        },
+        "citation": "VERIFIED 2026-09-01 (biographical/institutional facts; individual roll-call vote remains unconfirmed) — Eshkol's personal 'For' vote is inferred from his role as sponsoring Finance Minister, not a confirmed individual roll-call record; structurally unavailable for this Knesset per this project's own scraper findings (no per-member vote data before Knesset 16), not a research gap. Substantive law itself: Land Acquisition (Validation of Acts and Compensation) Law 5713-1953, Sefer Ha-Chukim No. 122, p. 58 (20 March 1953) — this entry previously carried the same wrong 'vol. 5, p. 155' guess already corrected in laws.json months ago and never synced here; fixed to match. Eshkol's birth date/place and his later premiership are corroborated via live search (Wikipedia's Levi Eshkol article, Britannica)."
+      }
+    ]
+  },
+  {
+    "mk_id": "reuven-rivlin",
+    "full_name": "Reuven Rivlin",
+    "hebrew_name": "ראובן ריבלין",
+    "birth_name": "Reuven Rivlin",
+    "birth_country": "British Mandatory Palestine (Jerusalem)",
+    "knesset_terms": [
+      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "rivlin-disengagement-law-vote-2005",
+        "date": "2005-02-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Plan Implementation Law, 5765-2005",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "Gaza Strip; four northern West Bank settlements",
+          "estimated_hectares_affected": null,
+          "description": "The law that empowered the government to evacuate all 21 Gaza Strip settlements and 4 in the northern West Bank, compensating roughly 9,000 settlers with approximately $870 million and beginning evacuation within five months. Passed 59-40 with 5 abstentions — 17 of the 40 'Against' votes came from within Prime Minister Ariel Sharon's own Likud party, a rebellion the bill's passage depended on opposition-party support to overcome. Rivlin, then a sitting Likud MK and Knesset Speaker (2003-2006), was one of the rebelling 17. He went on to serve as Israel's tenth President (2014-2021)."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rivlin's individual 'Against' vote and the full 59-40-5 roll-call tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 4138) — the first entry in this file sourced from the scraper rather than hand-researched. The tally, the 17-Likud-rebel figure, the $870 million/9,000-settler compensation terms, and the five-month evacuation window are independently corroborated via live search (Jewish Virtual Library's 'Knesset Approves Disengagement Implementation Law' article), matching the scraped total exactly. Rivlin's Speaker term and later presidency are corroborated via live search (Wikipedia's Reuven Rivlin article)."
+      },
+      {
+        "event_id": "rivlin-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "As Knesset Speaker, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, but was withdrawn by the government six months later after mass protests — recorded here rather than smoothed over, a real data point on a figure otherwise better known for a more consensus-minded later reputation as President."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rivlin's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "naftali-bennett",
+    "full_name": "Naftali Bennett",
+    "hebrew_name": "נפתלי בנט",
+    "birth_name": "Naftali Bennett",
+    "birth_country": "State of Israel (Haifa)",
+    "knesset_terms": [
+      { "knesset_number": 19, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 20, "party": "Jewish Home / New Right", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "New Right / Yamina", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Yamina", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Yamina", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "bennett-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "As Jewish Home leader, voted for the Basic Law elevating Jewish settlement to a stated constitutional national value. Bennett went on to become Israel's thirteenth Prime Minister (2021-2022)."
+        },
+        "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His later premiership is corroborated via live search (Britannica's Naftali Bennett entry)."
+      },
+      {
+        "event_id": "bennett-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Education Minister and Jewish Home leader, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land. Struck down by Israel's Supreme Court in June 2020."
+        },
+        "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "bennett-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      },
+      {
+        "event_id": "bennett-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "bennett-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Yamina leader and opposition MK — roughly six months before becoming Prime Minister — voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "ayelet-shaked",
+    "full_name": "Ayelet Shaked",
+    "hebrew_name": "איילת שקד",
+    "birth_name": "Ayelet Shaked",
+    "birth_country": "State of Israel (Tel Aviv)",
+    "knesset_terms": [
+      { "knesset_number": 19, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 20, "party": "Jewish Home / New Right", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "New Right / Yamina", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Yamina", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Yamina", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "shaked-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "As Justice Minister (2015-2019), voted for the Basic Law her own ministry helped shepherd through the Knesset, elevating Jewish settlement to a stated constitutional national value."
+        },
+        "citation": "VERIFIED 2026-09-01 — Shaked's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). Her Justice Minister tenure is corroborated via live search (Times of Israel, Jewish Telegraphic Agency)."
+      },
+      {
+        "event_id": "shaked-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Justice Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land — a law her own ministry would later decline to defend once challenged in court, before it was struck down in 2020."
+        },
+        "citation": "VERIFIED 2026-09-01 — Shaked's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "shaked-outposts-regularization-sponsor-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 15 co-sponsoring MKs, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Shaked's individual 'For' vote, her co-sponsorship (confirmed via the Knesset's own OData API), and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "bezalel-smotrich",
+    "full_name": "Bezalel Smotrich",
+    "hebrew_name": "בצלאל סמוטריץ'",
+    "birth_name": "Bezalel Smotrich",
+    "birth_country": "State of Israel (Haspin, Golan Heights)",
+    "knesset_terms": [
+      { "knesset_number": 20, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 21, "party": "Jewish Home – National Union", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 22, "party": "Yamina / National Union", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Yamina / National Union", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 25, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "smotrich-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "A resident of the West Bank settlement of Kedumim, voted for the Basic Law declaring Jewish settlement a national value. Became Finance Minister in 2022, with the settlement-administration portfolio folded into that role."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His Kedumim residence and 2022 Finance Ministry appointment are corroborated via live search (Britannica's Bezalel Smotrich entry)."
+      },
+      {
+        "event_id": "smotrich-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "smotrich-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the enforcement amendment sharply increasing penalties for unpermitted construction."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally)."
+      },
+      {
+        "event_id": "smotrich-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections — as Religious Zionism leader, was quoted urging colleagues 'there is no reason now not to vote your conscience' since coalition discipline no longer applied. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context and Smotrich's quote are corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "smotrich-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "smotrich-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "smotrich-stone-throwing-minimum-sentence-vote-2015",
+        "date": "2015-11-02",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final reading establishing a mandatory minimum prison sentence for stone-throwing, a law applied in practice almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians. Passed 51-17."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote and the 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), consistent with this dataset's own already-verified Penal Law Amendment No. 120 law entry."
+      },
+      {
+        "event_id": "smotrich-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the preliminary reading doubling the 2015 law's minimum sentence, part of the same 24th Knesset dissolution-day session as the sovereignty-bill votes already recorded in this entry. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "smotrich-outposts-regularization-sponsor-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 15 co-sponsoring MKs, voted for his own bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote, his sponsorship (confirmed via the Knesset's own OData API), and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "avigdor-liberman",
+    "full_name": "Avigdor Liberman",
+    "hebrew_name": "אביגדור ליברמן",
+    "birth_name": "Evet Lvovich Lieberman",
+    "birth_country": "Soviet Union (Kishinev, Moldavian SSR, present-day Chișinău, Moldova)",
+    "knesset_terms": [
+      { "knesset_number": 15, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "National Union-Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Yisrael Beiteinu", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "liberman-admissions-committees-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Admissions Committees Law (Cooperative Societies Ordinance Amendment No. 8), 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
+          "estimated_hectares_affected": null,
+          "description": "As Yisrael Beiteinu leader, voted for the law formalizing small communities' authority to reject prospective residents on 'social-cultural fabric' grounds — used in practice to exclude Palestinian Arab citizens from public-land communities in the Negev and Galilee."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally). Born name and birthplace corroborated via live search (Britannica's Avigdor Lieberman entry)."
+      },
+      {
+        "event_id": "liberman-jordan-valley-sovereignty-vote-2023",
+        "date": "2023-03-15",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Jordan Valley Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Jordan Valley)",
+          "estimated_hectares_affected": null,
+          "description": "As bill sponsor and Yisrael Beiteinu leader, voted for his own bill applying Israeli sovereignty to the Jordan Valley — defeated 65-14 after the governing coalition's own hardline parties (Otzma Yehudit, Religious Zionism) voted it down alongside the rest of the coalition, seen by rival Likud MK Dan Illouz as the coalition denying Liberman political credit rather than opposing sovereignty itself."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38405, 65-14 final tally), consistent with this dataset's own already-verified Jordan Valley Sovereignty Bill topic entry."
+      },
+      {
+        "event_id": "liberman-maale-adumim-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Ma'ale Adumim Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Ma'ale Adumim)",
+          "estimated_hectares_affected": null,
+          "description": "As bill sponsor, voted for his own bill applying Israeli sovereignty to Ma'ale Adumim — passed a preliminary reading despite the government's own request to withdraw it, then frozen by the coalition rather than advanced further."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44575)."
+      },
+      {
+        "event_id": "liberman-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the companion bill extending Israeli law and jurisdiction across all Jewish settlement areas of the West Bank, passed by a single vote, 25-24, the same day as his own Ma'ale Adumim bill."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally)."
+      },
+      {
+        "event_id": "liberman-beitar-illit-sovereignty-vote-2025",
+        "date": "2025-12-31",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Beitar Illit Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Beitar Illit)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the further single-settlement sovereignty bill for Beitar Illit, defeated 45-8 — the only one of these four sovereignty votes Liberman is recorded supporting that failed outright rather than either passing preliminarily or, in the Jordan Valley case, being his own bill."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44992, 45-8 final tally)."
+      },
+      {
+        "event_id": "liberman-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As an opposition MK, voted for the bill doubling the 2015 stone-throwing minimum sentence law — one of the few MKs recorded voting for this specific attempt, which the governing coalition otherwise defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "liberman-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "liberman-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted against the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects — passed its preliminary reading regardless, 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'Against' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "liberman-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "liberman-nakba-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel",
+          "estimated_hectares_affected": null,
+          "description": "As Yisrael Beiteinu leader — the same party as the bill's own sponsor, Alex Miller — voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+        },
+        "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "yariv-levin",
+    "full_name": "Yariv Levin",
+    "hebrew_name": "יריב לוין",
+    "birth_name": "Yariv Gideon Levin",
+    "birth_country": "State of Israel (Jerusalem)",
+    "knesset_terms": [
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "levin-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "As a senior Likud MK, voted for the Basic Law declaring Jewish settlement a national value. Later became Deputy Prime Minister and Justice Minister, leading the 2023 judicial overhaul — outside this dataset's land-policy scope, noted here only as biographical context."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). Later Justice Ministry role corroborated via live search (Times of Israel)."
+      },
+      {
+        "event_id": "levin-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "levin-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the enforcement amendment sharply increasing penalties for unpermitted construction."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally)."
+      },
+      {
+        "event_id": "levin-admissions-committees-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Admissions Committees Law (Cooperative Societies Ordinance Amendment No. 8), 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law formalizing small communities' authority to reject prospective residents, used in practice to exclude Palestinian Arab citizens from public-land communities. The only MK in this dataset's ledger so far with a 'For' vote recorded on all four of the 2011-2018 laws tracked here."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally)."
+      },
+      {
+        "event_id": "levin-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "levin-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      },
+      {
+        "event_id": "levin-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "levin-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "levin-negev-galilee-veterans-land-vote-2023",
+        "date": "2023-02-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for a follow-up version of the same bill, sponsored by Likud MK Nissim Vaturi, which — unlike the January 2022 attempt — passed its preliminary reading, 31-6."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 31-6 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38321), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "levin-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the preliminary reading doubling the 2015 law's minimum sentence. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "levin-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Justice Minister, voted against a re-submission of the bill he had voted for in its 2022 form — the same coalition-blocking-the-opposition-sponsor pattern already documented elsewhere in this ledger. Defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'Against' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "levin-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "levin-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill barring administrative detention against Israeli citizens while leaving it intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "levin-citizenship-entry-law-renewal-vote-2025",
+        "date": "2025-03-10",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Citizenship and Entry into Israel Law (Temporary Order), 5763-2003 — 2025 renewal",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide (Israel); West Bank and Gaza (affected spouses' residence)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government's request to extend, by order, the validity of the 2003 law barring Palestinian spouses of Israeli citizens from gaining residency through marriage. Passed 48-9-1."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 48-9-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 43270), consistent with this dataset's own already-verified Citizenship and Entry into Israel Law entry."
+      },
+      {
+        "event_id": "levin-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "levin-nakba-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      },
+      {
+        "event_id": "levin-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote, his co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "zeev-elkin",
+    "full_name": "Ze'ev Elkin",
+    "hebrew_name": "זאב אלקין",
+    "birth_name": "Vladimir Borisovich Elkin",
+    "birth_country": "Soviet Union (Kharkiv, Ukrainian SSR)",
+    "knesset_terms": [
+      { "knesset_number": 17, "party": "Kadima", "political_alignment": "Center" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "New Hope", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "HaMachane HaMamlachti", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "elkin-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the Basic Law declaring Jewish settlement a national value. Elkin held the Jerusalem Affairs and Settlements portfolio in successive Likud governments — the ministry most directly named for this dataset's own subject matter."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His birth name, Kharkiv birthplace, December 1990 immigration, and Jerusalem Affairs/Settlements portfolio are corroborated via live search (Wikipedia's Ze'ev Elkin article, Jewish Virtual Library)."
+      },
+      {
+        "event_id": "elkin-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "elkin-admissions-committees-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Admissions Committees Law (Cooperative Societies Ordinance Amendment No. 8), 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law formalizing small communities' authority to reject prospective residents on 'social-cultural fabric' grounds."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally)."
+      },
+      {
+        "event_id": "elkin-jordan-valley-sovereignty-vote-2023",
+        "date": "2023-03-15",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Jordan Valley Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Jordan Valley)",
+          "estimated_hectares_affected": null,
+          "description": "By this vote a National Unity MK (having left Likud for New Hope and then National Unity), voted for Avigdor Liberman's bill applying Israeli sovereignty to the Jordan Valley — defeated 65-14 after the coalition's own hardline parties voted it down."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38405, 65-14 final tally), consistent with this dataset's own already-verified Jordan Valley Sovereignty Bill topic entry."
+      },
+      {
+        "event_id": "elkin-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "As a sitting Likud MK before his later move to New Hope, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "elkin-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, voted for the bill doubling the 2015 stone-throwing minimum sentence law — one of the few MKs recorded voting for this specific attempt, which the governing coalition otherwise defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "elkin-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "elkin-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, voted against the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects — passed its preliminary reading regardless, 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'Against' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "elkin-citizenship-entry-law-renewal-vote-2025",
+        "date": "2025-03-10",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Citizenship and Entry into Israel Law (Temporary Order), 5763-2003 — 2025 renewal",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide (Israel); West Bank and Gaza (affected spouses' residence)",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, voted for the government's request to extend, by order, the validity of the 2003 law barring Palestinian spouses of Israeli citizens from gaining residency through marriage — notable as cross-coalition support for a law otherwise argued over on security grounds. Passed 48-9-1."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 48-9-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 43270), consistent with this dataset's own already-verified Citizenship and Entry into Israel Law entry."
+      },
+      {
+        "event_id": "elkin-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As a sitting Likud MK, before his later move to New Hope, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "elkin-nakba-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      },
+      {
+        "event_id": "elkin-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote, his co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "tzipi-hotovely",
+    "full_name": "Tzipi Hotovely",
+    "hebrew_name": "ציפי חוטובלי",
+    "birth_name": "Tzipi Hotovely",
+    "birth_country": "State of Israel (Rehovot)",
+    "knesset_terms": [
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "hotovely-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Deputy Foreign Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land. Hotovely, born to Georgian Jewish immigrant parents, later served as Minister of Settlement Affairs and as Israel's Ambassador to the United Kingdom (2020-2025)."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally). Her parents' Georgian-Jewish background, Settlement Affairs portfolio, and UK ambassadorship are corroborated via live search (Wikipedia's Tzipi Hotovely article, Jewish Virtual Library)."
+      },
+      {
+        "event_id": "hotovely-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the enforcement amendment sharply increasing penalties for unpermitted construction."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally)."
+      },
+      {
+        "event_id": "hotovely-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "As Deputy Foreign Minister, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "hotovely-nakba-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      },
+      {
+        "event_id": "hotovely-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote, her co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "miri-regev",
+    "full_name": "Miri Regev",
+    "hebrew_name": "מירי רגב",
+    "birth_name": "Miriam Siboni",
+    "birth_country": "State of Israel (Kiryat Gat)",
+    "knesset_terms": [
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "regev-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "A former IDF Spokeswoman (1983-2008) and later Culture and Sport Minister (2015-2020), voted for the Basic Law declaring Jewish settlement a national value."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). Her birth name, IDF Spokeswoman role, and ministerial history are corroborated via live search (Wikipedia's Miri Regev article, Jewish Women's Archive)."
+      },
+      {
+        "event_id": "regev-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "regev-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      },
+      {
+        "event_id": "regev-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "regev-stone-throwing-minimum-sentence-vote-2015",
+        "date": "2015-11-02",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final reading establishing a mandatory minimum prison sentence for stone-throwing, a law applied in practice almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians. Passed 51-17."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), consistent with this dataset's own already-verified Penal Law Amendment No. 120 law entry."
+      },
+      {
+        "event_id": "regev-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the preliminary reading doubling the 2015 law's minimum sentence. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "regev-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "regev-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote, her co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "benjamin-netanyahu",
+    "full_name": "Benjamin Netanyahu",
+    "hebrew_name": "בנימין נתניהו",
+    "birth_name": "Benjamin Netanyahu",
+    "birth_country": "State of Israel (Tel Aviv)",
+    "knesset_terms": [
+      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 13, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "netanyahu-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, voted for the enforcement amendment sharply increasing penalties for unpermitted construction, falling heaviest on Arab citizens and West Bank Palestinians. His government backed the bill; full mechanism covered in this dataset's own Kaminitz Law entry."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally). Elected to the Knesset in 1988, Likud leader from 1993, Prime Minister across three periods (1996-99, 2009-2021, from 2022) — corroborated via live search (Britannica's Benjamin Netanyahu entry)."
+      },
+      {
+        "event_id": "netanyahu-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, sponsored and voted for the Basic Law elevating Jewish settlement to a stated constitutional national value (Article 7) and restricting self-determination in Israel to the Jewish people."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013), an exact 62-55-2 tally matching live-searched external sourcing."
+      },
+      {
+        "event_id": "netanyahu-regularization-law-sponsor-2017",
+        "date": "2017-02-06",
+        "category": "Executive Action",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "N/A for Non-Legislative",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, his government backed the law directing the retroactive expropriation of private Palestinian land already built on by Israeli settlers, awarding it to them. Passed 60-52; Israel's Attorney General declined to defend it in court, and it was struck down by the Supreme Court in June 2020. Recorded here as a government-sponsorship action rather than an individual floor vote — this project's own completed vote scrape does not show a personal roll-call record for Netanyahu on this specific bill."
+        },
+        "citation": "VERIFIED 2026-09-01 — the 6 February 2017 date, 60-52 vote, retroactive-expropriation mechanism, and 2020 Supreme Court reversal are corroborated via live search (CNN, Adalah, NBC News, Lawfare)."
+      },
+      {
+        "event_id": "netanyahu-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As opposition leader (out of government since June 2021), voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "netanyahu-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "netanyahu-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "As opposition leader under the Bennett-Lapid government, voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "netanyahu-stone-throwing-minimum-sentence-vote-2015",
+        "date": "2015-11-02",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, voted for the final reading establishing a mandatory minimum prison sentence for stone-throwing, a law applied in practice almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians. Passed 51-17."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), consistent with this dataset's own already-verified Penal Law Amendment No. 120 law entry."
+      },
+      {
+        "event_id": "netanyahu-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, voted against a re-submission of a bill he had supported doubling in its 2022 form (see this entry's own 2015 vote above for the underlying law) — the same coalition-blocking-the-opposition-sponsor pattern already documented elsewhere in this ledger, not a reversal on substance so much as on political credit. Defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'Against' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "netanyahu-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Prime Minister, voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade, this one sponsored by his own coalition."
+        },
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), exactly matching live-searched press reporting naming him among the law's supporters (Jerusalem Post's 'Knesset approves death penalty for terrorists bill, Benjamin Netanyahu in favor'), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "itamar-ben-gvir",
+    "full_name": "Itamar Ben-Gvir",
+    "hebrew_name": "איתמר בן גביר",
+    "birth_name": "Itamar Ben-Gvir",
+    "birth_country": "State of Israel",
+    "knesset_terms": [
+      { "knesset_number": 24, "party": "Religious Zionism / Otzma Yehudit", "political_alignment": "Far-Right" },
+      { "knesset_number": 25, "party": "Otzma Yehudit", "political_alignment": "Far-Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "ben-gvir-national-security-appointment-2022",
+        "date": "2022-12",
+        "category": "Executive Action",
+        "bill_or_action_title": "Appointment as Minister of National Security",
+        "vote": "N/A for Non-Legislative",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank (security coordination)",
+          "estimated_hectares_affected": null,
+          "description": "Took office as Minister of National Security in late December 2022 under a coalition agreement giving Otzma Yehudit control of the renamed Public Security Ministry — a portfolio overseeing the Israel Police, including policing in East Jerusalem and, in practice, aspects of West Bank security coordination."
+        },
+        "citation": "VERIFIED 2026-09-01 — the December 2022 appointment and coalition agreement terms are corroborated via live search (Haaretz's 'Likud and Otzma Yehudit sign agreement' report, Wikipedia's Itamar Ben-Gvir article)."
+      },
+      {
+        "event_id": "ben-gvir-judea-samaria-sovereignty-vote-2021",
+        "date": "2021-07-28",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier, 2021 version of the bill to extend Israeli law and jurisdiction across all Jewish settlement areas of the West Bank — defeated 64-50, a considerably larger 'For' bloc than the same bill's 2025 successor managed. This entry previously stated no floor vote could be found for Ben-Gvir in this dataset's tracked votes; that was a research error, not a real absence — his votes are recorded in the scrape under a different internal person_id (32689) than the one his roster entry uses (30811), the same class of ID mismatch documented in Simcha Rothman's and Limor Son Har-Melech's entries. Corrected once the right ID was found."
+        },
+        "citation": "VERIFIED 2026-09-01 — Ben-Gvir's individual 'For' vote and the 64-50 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 34961, 28 July 2021), found via person_id 32689 after the roster-ID search (30811) returned zero results."
+      },
+      {
+        "event_id": "ben-gvir-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the 2025 version of the same bill, passed by a single vote, 25-24 — as National Security Minister overseeing West Bank security coordination, one of the more directly interested cabinet votes in this dataset's ledger."
+        },
+        "citation": "VERIFIED 2026-09-01 — Ben-Gvir's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally), consistent with this dataset's own already-verified Judea and Samaria Sovereignty Bill topic entry."
+      },
+      {
+        "event_id": "ben-gvir-settler-arms-policy-2023-2024",
+        "date": "2023-2024",
+        "category": "Executive Action",
+        "bill_or_action_title": "Gun-license relaxation and settler civilian-watch expansion",
+        "vote": "N/A for Non-Legislative",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Following the 7 October 2023 Hamas-led attack, oversaw a rapid relaxation of gun-license restrictions for Israeli civilians and promoted armed civilian neighborhood-watch units in West Bank settlements — a documented increase in armed settler capacity under his ministry's direct policy."
+        },
+        "citation": "VERIFIED 2026-09-01 — the post-7 October 2023 gun-license relaxation and settler civilian-watch promotion are corroborated via live search (Al Jazeera's 'Who is Israel's far-right, pro-settler Security Minister Ben-Gvir?')."
+      },
+      {
+        "event_id": "ben-gvir-international-sanctions-2025",
+        "date": "2025-06",
+        "category": "Executive Action",
+        "bill_or_action_title": "UK/Canada/Norway/Australia/New Zealand sanctions",
+        "vote": "N/A for Non-Legislative",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "In June 2025, the UK, Canada, Norway, Australia, and New Zealand jointly imposed travel bans and economic sanctions on Ben-Gvir and Finance Minister Bezalel Smotrich, citing 'repeated incitements of violence against Palestinian communities' in the West Bank — a rare instance of close Western allies sanctioning sitting Israeli cabinet ministers over West Bank policy specifically."
+        },
+        "citation": "VERIFIED 2026-09-01 — the June 2025 joint sanctions and their stated grounds are corroborated via live search (contemporary international press coverage)."
+      },
+      {
+        "event_id": "ben-gvir-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Ben-Gvir's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape, found via his confirmed vote-casting person_id 32689 (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "ben-gvir-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Ben-Gvir's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under his confirmed vote-casting person_id 32689 (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "ben-gvir-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As National Security Minister and Otzma Yehudit leader — the party that initiated the bill, sponsored by his own party colleague Limor Son Har-Melech — voted for its final passage, making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel,' a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Ben-Gvir's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under his confirmed vote-casting person_id 32689 (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "yuli-edelstein",
+    "full_name": "Yuli Edelstein",
+    "hebrew_name": "יולי יואל אדלשטיין",
+    "birth_name": "Yuli-Yoel Edelstein",
+    "birth_country": "Soviet Union (Chernivtsi, Ukrainian SSR)",
+    "knesset_terms": [
+      { "knesset_number": 14, "party": "Yisrael BaAliyah", "political_alignment": "Right" },
+      { "knesset_number": 15, "party": "Yisrael BaAliyah", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "edelstein-disengagement-law-vote-2005",
+        "date": "2005-02-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Plan Implementation Law, 5765-2005",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "Gaza Strip; four northern West Bank settlements",
+          "estimated_hectares_affected": null,
+          "description": "One of 17 Likud MKs who voted against Prime Minister Sharon's own Gaza/northern West Bank withdrawal law — see this dataset's own Reuven Rivlin entry for the fuller account of this vote."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'Against' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 4138, 59-40-5 final tally)."
+      },
+      {
+        "event_id": "edelstein-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "edelstein-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the enforcement amendment sharply increasing penalties for unpermitted construction."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally)."
+      },
+      {
+        "event_id": "edelstein-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the Basic Law declaring Jewish settlement a national value. As the 16th Knesset Speaker (2013-2020), one of Likud's most senior long-serving figures — a former Soviet refusenik and Prisoner of Zion, imprisoned in Siberian labor camps 1984-87 before immigrating to Israel."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His refusenik history and Knesset Speaker term are corroborated via live search (Wikipedia's Yuli Edelstein article, Hadassah Magazine)."
+      },
+      {
+        "event_id": "edelstein-north-samaria-reentry-vote-2023",
+        "date": "2023-03-21",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Implementation Law Amendment No. 7 (repeal of entry/residence ban in northern Samaria)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Northern West Bank (Homesh, Sa-Nur, Ganim, Kadim)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for repealing the 2005 Disengagement Law's prohibition on Israeli entry to and residence in the four evacuated northern West Bank settlement areas — reversing part of the same 2005 law he had voted against at the time, eighteen years earlier. Passed 31-18. New to this dataset's ledger this round."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 31-18 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38430, 21 March 2023). The bill's subject matter is corroborated via live search (Times of Israel's 'Knesset to vote on repealing Disengagement Law for northern West Bank')."
+      },
+      {
+        "event_id": "edelstein-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "The only Likud MK to vote for Avi Maoz's West Bank sovereignty bill, defying Prime Minister Netanyahu's own direction to the party to abstain or withdraw support. Passed by a single vote, 25-24."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and his status as the sole defying Likud MK are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580) and corroborated exactly via live search (Israel National News's coverage of the vote naming Edelstein specifically)."
+      },
+      {
+        "event_id": "edelstein-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections — three years before he would be the only Likud MK to defy Netanyahu on the 2025 successor bill above. Both 2022 bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "edelstein-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      },
+      {
+        "event_id": "edelstein-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "As Knesset Speaker, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "edelstein-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "edelstein-stone-throwing-minimum-sentence-vote-2015",
+        "date": "2015-11-02",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final reading establishing a mandatory minimum prison sentence for stone-throwing, a law applied in practice almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians. Passed 51-17."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), consistent with this dataset's own already-verified Penal Law Amendment No. 120 law entry."
+      },
+      {
+        "event_id": "edelstein-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the preliminary reading doubling the 2015 law's minimum sentence. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "edelstein-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted against a re-submission of the bill he had voted for in its 2022 form — the same coalition-blocking-the-opposition-sponsor pattern already documented elsewhere in this ledger. Defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'Against' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "edelstein-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill barring administrative detention against Israeli citizens while leaving it intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "edelstein-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "edelstein-nakba-law-vote-2011",
+        "date": "2011-03-23",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Budget Foundations Law (Amendment No. 40), 5771-2011 (the 'Nakba Law')",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      },
+      {
+        "event_id": "edelstein-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote, his co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "tzachi-hanegbi",
+    "full_name": "Tzachi Hanegbi",
+    "hebrew_name": "צחי הנגבי",
+    "birth_name": "Tzachi Hanegbi",
+    "birth_country": "State of Israel (Jerusalem)",
+    "knesset_terms": [
+      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 13, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Kadima", "political_alignment": "Center" },
+      { "knesset_number": 18, "party": "Kadima", "political_alignment": "Center" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "hanegbi-disengagement-law-vote-2005",
+        "date": "2005-02-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Plan Implementation Law, 5765-2005",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Gaza Strip; four northern West Bank settlements",
+          "estimated_hectares_affected": null,
+          "description": "Voted for Sharon's Gaza/northern West Bank withdrawal law, consistent with his move to Sharon's Kadima party the following year. A genuine contrast with his later votes below, cast after his 2012 return to Likud — recorded here rather than smoothed over."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 4138, 59-40-5 final tally)."
+      },
+      {
+        "event_id": "hanegbi-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land, after returning to Likud in 2012."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "hanegbi-kaminitz-law-vote-2017",
+        "date": "2017-04-05",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Planning and Building Law Amendment No. 116 ('Kaminitz Law'), 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide, disproportionately Arab towns/villages and West Bank Area C",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the enforcement amendment sharply increasing penalties for unpermitted construction."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 26856, 43-33 final tally)."
+      },
+      {
+        "event_id": "hanegbi-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the Basic Law declaring Jewish settlement a national value. Later served as Israel's National Security Advisor (2023-2025)."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His National Security Advisor role is corroborated via live search (Times of Israel's 'Netanyahu taps veteran Iran hawk Tzachi Hanegbi to lead National Security Council')."
+      },
+      {
+        "event_id": "hanegbi-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "hanegbi-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "hanegbi-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "hanegbi-stone-throwing-minimum-sentence-vote-2015",
+        "date": "2015-11-02",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law (Amendment No. 120 and Temporary Provision), 5776-2015 (Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the final reading establishing a mandatory minimum prison sentence for stone-throwing, a law applied in practice almost exclusively to Palestinian citizens of Israel, East Jerusalem residents, and West Bank Palestinians. Passed 51-17."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote and the 51-17 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 22901), consistent with this dataset's own already-verified Penal Law Amendment No. 120 law entry."
+      },
+      {
+        "event_id": "hanegbi-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+        },
+        "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "israel-katz",
+    "full_name": "Israel Katz",
+    "hebrew_name": "ישראל כץ",
+    "birth_name": "Israel Katz",
+    "birth_country": "State of Israel (Ashkelon)",
+    "knesset_terms": [
+      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "katz-disengagement-law-vote-2005",
+        "date": "2005-02-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Plan Implementation Law, 5765-2005",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Gaza Strip; four northern West Bank settlements",
+          "estimated_hectares_affected": null,
+          "description": "Voted for Sharon's Gaza/northern West Bank withdrawal law, unlike the 17 fellow Likud MKs who rebelled against it — recorded as a genuine contrast with his 2017-18 votes below."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 4138, 59-40-5 final tally)."
+      },
+      {
+        "event_id": "katz-regularization-law-vote-2017",
+        "date": "2017-02-06",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Settlements Regularization Law for Judea and Samaria, 5777-2017",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Transport Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
+      },
+      {
+        "event_id": "katz-nation-state-law-vote-2018",
+        "date": "2018-07-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Basic Law: Israel as the Nation-State of the Jewish People, 5778-2018",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank (settlement provision, Article 7)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the Basic Law declaring Jewish settlement a national value. A long-serving minister across Agriculture, Transport, Intelligence, Foreign Affairs, Finance, Energy, and — from November 2024 — Defense portfolios."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 31013, 62-55-2 final tally). His ministerial career is corroborated via live search (Wikipedia's Israel Katz article, Reuters factbox)."
+      },
+      {
+        "event_id": "katz-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "katz-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
+      },
+      {
+        "event_id": "katz-entry-israel-amendment30-vote-2018",
+        "date": "2018-01-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Entry into Israel Law (Amendment No. 30), 5778-2018 (Permanent Residency Revocation)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "East Jerusalem",
+          "estimated_hectares_affected": null,
+          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
+      },
+      {
+        "event_id": "katz-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "katz-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the preliminary reading doubling the 2015 law's minimum sentence. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "katz-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Defense Minister, voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "katz-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Defense Minister — the office with direct authority over administrative detention orders in the West Bank — voted for the bill barring the practice against Israeli citizens while leaving it intact against Palestinian suspects. Passed a preliminary reading 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "katz-boycott-law-sponsor-2011",
+        "date": "2011-07-11",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Law for Prevention of Damage to the State of Israel through Boycott, 5771-2011",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As one of 19 co-sponsoring MKs, voted for the law creating civil liability for calling for a boycott of Israel or of West Bank settlements specifically. Passed 47-38."
+        },
+        "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote, his co-sponsorship (confirmed via the Knesset's own OData API), and the 47-38 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095), consistent with this dataset's own already-verified Boycott Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "simcha-rothman",
+    "full_name": "Simcha Rothman",
+    "hebrew_name": "שמחה רוטמן",
+    "birth_name": "Simcha Dan Rothman",
+    "birth_country": "State of Israel (Bnei Brak)",
+    "knesset_terms": [
+      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" },
+      { "knesset_number": 25, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "rothman-north-samaria-reentry-vote-2023",
+        "date": "2023-03-21",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Implementation Law Amendment No. 7 (repeal of entry/residence ban in northern Samaria)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Northern West Bank (Homesh, Sa-Nur, Ganim, Kadim)",
+          "estimated_hectares_affected": null,
+          "description": "As chair of the Knesset's Constitution, Law and Justice Committee and the chief legislative architect of Israel's 2023 judicial overhaul, voted for repealing the 2005 Disengagement Law's prohibition on Israeli entry to and residence in the four evacuated northern West Bank settlement areas. Passed 31-18."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote and the 31-18 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38430). Note: this specific vote's results record Rothman under person_id 32700 rather than the mk_roster's person_id 30812 for the same name — a real ID discrepancy this project's scraper build found in Knesset 24-25 vote data specifically (thousands of vote rows exist under the 32700 ID, zero under the roster ID for this vote_id), not independently reconciled this pass; the exact-name match is unambiguous. His Constitution Committee chairmanship and judicial-reform role are corroborated via live search (Jewish Insider's profile, Wikipedia's Simcha Rothman article)."
+      },
+      {
+        "event_id": "rothman-judea-samaria-sovereignty-vote-2021",
+        "date": "2021-07-28",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the 2021 predecessor of the bill to extend Israeli law and jurisdiction across all Jewish settlement areas of the West Bank, defeated 64-50 — four years before Rothman would go on to help lead the 2023 judicial overhaul."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 34961, 64-50 final tally), found under the same person_id 32700 as his other votes in this entry."
+      },
+      {
+        "event_id": "rothman-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the 2025 version of the same bill, sponsored by fellow Religious Zionism-aligned MK Avi Maoz, passed by a single vote, 25-24."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally)."
+      },
+      {
+        "event_id": "rothman-judea-samaria-sovereignty-dissolution-votes-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill (two companion bills, 24th Knesset dissolution session)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both of two competing bills to apply Israeli sovereignty to the West Bank, brought to snap votes hours after the Knesset had already voted to dissolve itself for new elections. Both bills failed, 46-52 and 46-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' votes on both bills are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 37375, 46-52 final tally; vote_id 37376, 46-51 final tally). The dissolution-day context is corroborated via live search (Jerusalem Post, 'Knesset defeats two bills to apply sovereignty to West Bank settlements')."
+      },
+      {
+        "event_id": "rothman-stone-throwing-doubling-vote-2022",
+        "date": "2022-06-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As chair of the Knesset's Constitution, Law and Justice Committee, voted for the preliminary reading doubling the 2015 law's minimum sentence, part of the same dissolution-day session as the sovereignty-bill votes recorded above. Passed 56-7."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote and the 56-7 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 37358), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "rothman-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted against a re-submission of the bill he had voted for in its 2022 form — the same coalition-blocking-the-opposition-sponsor pattern already documented elsewhere in this ledger. Defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'Against' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "rothman-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Constitution, Law and Justice Committee chair, voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "rothman-administrative-detention-israelis-limit-sponsor-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As the bill's own sponsor, voted for his bill barring administrative detention against Israeli citizens (with a narrow terror-organization-membership exception) while leaving the same power fully intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51, despite Shin Bet warnings."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote, his sponsorship (confirmed directly via the Knesset's own OData API, naming his roster person_id 30812 as sole initiator), and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "rothman-citizenship-entry-law-renewal-vote-2025",
+        "date": "2025-03-10",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Citizenship and Entry into Israel Law (Temporary Order), 5763-2003 — 2025 renewal",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Nationwide (Israel); West Bank and Gaza (affected spouses' residence)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the government's request to extend, by order, the validity of the 2003 law barring Palestinian spouses of Israeli citizens from gaining residency through marriage — a concrete instance of the law's real 'temporary, renewed indefinitely' pattern. Passed 48-9-1."
+        },
+        "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote and the 48-9-1 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 43270), consistent with this dataset's own already-verified Citizenship and Entry into Israel Law entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "limor-son-har-melech",
+    "full_name": "Limor Son Har-Melech",
+    "hebrew_name": "לימור סון הר-מלך",
+    "birth_name": "Limor Son Har-Melech",
+    "birth_country": "State of Israel",
+    "knesset_terms": [
+      { "knesset_number": 25, "party": "Otzma Yehudit", "political_alignment": "Far-Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "son-har-melech-north-samaria-reentry-vote-2023",
+        "date": "2023-03-21",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Disengagement Implementation Law Amendment No. 7 (repeal of entry/residence ban in northern Samaria)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Northern West Bank (Homesh, Sa-Nur, Ganim, Kadim)",
+          "estimated_hectares_affected": null,
+          "description": "A former resident of the northern West Bank settlement of Homesh before it was razed in the 2005 disengagement, and co-founder of Homesh First, an organization seeking to rebuild it — voted for repealing the entry/residence ban on the very land she had been evacuated from eighteen years earlier. Passed 31-18. Among the most directly personally-interested votes in this dataset's entire ledger."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote and the 31-18 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38430). Note: this vote's results record her under person_id 34372 rather than the mk_roster's person_id 30849 for the same name — the same class of ID discrepancy found in Simcha Rothman's entry in this same batch; the exact-name match is unambiguous. Her Homesh residency and Homesh First co-founding are corroborated via live search (Wikipedia's Limor Son Har-Melech article, Times of Israel)."
+      },
+      {
+        "event_id": "son-har-melech-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill to extend Israeli law and jurisdiction across all Jewish settlement areas of the West Bank, passed by a single vote, 25-24 — consistent with her own settler background and Homesh First advocacy."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally), found under the same person_id 34372 as her other vote in this entry."
+      },
+      {
+        "event_id": "son-har-melech-heritage-authority-vote-2026",
+        "date": "2026-05-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Heritage Authority Bill, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill creating a 'Judea and Samaria Heritage Authority' to place West Bank antiquities, archaeology, and heritage sites under direct Israeli civilian administration — critics describe the move as de facto annexation by administrative means. Passed a first reading 23-14, alongside a companion Antiquities Authority amendment extending the Israel Antiquities Authority's own jurisdiction into the West Bank, passed 22-14 the same session."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45930, 23-14 final tally; companion vote_id 45929, 22-14 final tally), found under the same person_id 34372 as her other votes in this entry. The bill's stated purpose, sponsor's quote, and 'de facto annexation' characterization are corroborated via live search (Times of Israel, 'Knesset advances controversial West Bank antiquity bill in first reading')."
+      },
+      {
+        "event_id": "son-har-melech-negev-galilee-veterans-land-vote-2023",
+        "date": "2023-02-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for both versions of the bill directing free land allocation to discharged combat-service veterans (and, in the broader version, national-civilian service volunteers) settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Both versions passed their preliminary readings, 31-6 and 32-8."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' votes on both versions are drawn directly from this project's own completed Knesset vote-results scrape, found under her confirmed vote-casting person_id 34372 (vote_id 38321, 31-6 final tally; vote_id 38320, 32-8 final tally), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      },
+      {
+        "event_id": "son-har-melech-death-penalty-terrorists-sponsor-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As the bill's own sponsor, voted for its final passage — the eighth attempt at this law across a decade, and the first to succeed. Makes death by hanging the mandatory sentence for murder committed 'with the aim of denying the existence of the State of Israel,' a standard worded to exclude Jewish perpetrators. Passed 62-48-1."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote, her sponsorship, and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under her confirmed vote-casting person_id 34372 (vote_id 45858), and corroborated via live search (multiple press sources naming her as sponsor, including Times of Israel and Jerusalem Post), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "son-har-melech-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under her confirmed vote-casting person_id 34372 (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "yair-lapid",
+    "full_name": "Yair Lapid",
+    "hebrew_name": "יאיר לפיד",
+    "birth_name": "Yair Lapid",
+    "birth_country": "State of Israel (Tel Aviv)",
+    "knesset_terms": [
+      { "knesset_number": 19, "party": "Yesh Atid", "political_alignment": "Center" },
+      { "knesset_number": 20, "party": "Yesh Atid", "political_alignment": "Center" },
+      { "knesset_number": 21, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 22, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 23, "party": "Yesh Atid", "political_alignment": "Center" },
+      { "knesset_number": 24, "party": "Yesh Atid", "political_alignment": "Center" },
+      { "knesset_number": 25, "party": "Yesh Atid", "political_alignment": "Center" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "lapid-maale-adumim-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Ma'ale Adumim Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Ma'ale Adumim)",
+          "estimated_hectares_affected": null,
+          "description": "As Leader of the Opposition and former Prime Minister (July-December 2022), voted for Avigdor Liberman's bill applying Israeli sovereignty to Ma'ale Adumim — an opposition-leader vote for a bill the sitting Prime Minister's own government sought to withdraw, complicating any simple coalition-versus-opposition account of this legislative wave."
+        },
+        "citation": "VERIFIED 2026-09-01 — Lapid's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44575), consistent with this dataset's own already-verified Ma'ale Adumim Sovereignty Bill topic entry. His premiership and founding of Yesh Atid are corroborated via live search (Britannica's Yair Lapid entry)."
+      },
+      {
+        "event_id": "lapid-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Leader of the Opposition, voted against final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel.' Recorded here as a genuine contrast with the sovereignty-bill votes above, where Lapid broke from a simple coalition/opposition pattern — on this bill he voted with the rest of the mainstream opposition against a broadly coalition-backed measure."
+        },
+        "citation": "VERIFIED 2026-09-01 — Lapid's individual 'Against' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "lapid-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Leader of the Opposition, voted against the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects — passed its preliminary reading regardless, 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Lapid's individual 'Against' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      },
+      {
+        "event_id": "lapid-outposts-regularization-vote-2020",
+        "date": "2020-12-16",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Communities and Neighborhoods in Regularization Processes Bill",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Yesh Atid leader, voted against the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization — one of the few 'Against' votes recorded against this broadly coalition-and-opposition-backed bill, which advanced 60-40 regardless."
+        },
+        "citation": "VERIFIED 2026-09-01 — Lapid's individual 'Against' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "benny-gantz",
+    "full_name": "Benny Gantz",
+    "hebrew_name": "בנימין גנץ",
+    "birth_name": "Benjamin Gantz",
+    "birth_country": "State of Israel (Kfar Ahim)",
+    "knesset_terms": [
+      { "knesset_number": 21, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 22, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 23, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 24, "party": "Blue and White", "political_alignment": "Center" },
+      { "knesset_number": 25, "party": "National Unity", "political_alignment": "Center" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "gantz-maale-adumim-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Ma'ale Adumim Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Ma'ale Adumim)",
+          "estimated_hectares_affected": null,
+          "description": "As National Unity party leader, former IDF Chief of Staff (2011-15), and former Defense Minister (2020-22), voted for Avigdor Liberman's bill applying Israeli sovereignty to Ma'ale Adumim — another opposition-aligned vote for a bill the sitting government itself sought to withdraw."
+        },
+        "citation": "VERIFIED 2026-09-01 — Gantz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44575). His military and ministerial career are corroborated via live search (Britannica's Benny Gantz entry). Full term history corrected this pass: Gantz has two different person_ids in this project's scraped data — 30657 (used for his roster/term/party records above) and 32007 (used for his actual vote-casting records, including this one) — the mirror image of the Ben-Gvir/Rothman/Son Har-Melech ID mismatch found elsewhere in this ledger, here affecting the roster side rather than the vote side."
+      },
+      {
+        "event_id": "gantz-death-penalty-terrorists-vote-2026",
+        "date": "2026-03-30",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Death Penalty for Terrorists Law, 5786-2026",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted against final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a former IDF Chief of Staff and Defense Minister voting against the measure, alongside the rest of the mainstream opposition."
+        },
+        "citation": "VERIFIED 2026-09-01 — Gantz's individual 'Against' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under his confirmed vote-casting person_id 32007 (vote_id 45858), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+      },
+      {
+        "event_id": "gantz-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted against the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects — passed its preliminary reading regardless, 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Gantz's individual 'Against' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under his confirmed vote-casting person_id 32007 (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "gideon-saar",
+    "full_name": "Gideon Sa'ar",
+    "hebrew_name": "גדעון סער",
+    "birth_name": "Gideon Moshe Sa'ar",
+    "birth_country": "State of Israel (Tel Aviv)",
+    "knesset_terms": [
+      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 24, "party": "New Hope", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "National Unity", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "saar-jordan-valley-sovereignty-vote-2023",
+        "date": "2023-03-15",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Jordan Valley Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Jordan Valley)",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, former Education and Interior Minister under Netanyahu (2009-2014), and later Foreign Minister (from November 2024), voted for Avigdor Liberman's bill applying Israeli sovereignty to the Jordan Valley — defeated 65-14 after the coalition's own hardline parties voted it down."
+        },
+        "citation": "VERIFIED 2026-09-01 — Sa'ar's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38405, 65-14 final tally), consistent with this dataset's own already-verified Jordan Valley Sovereignty Bill topic entry. His ministerial career, New Hope founding, and 2024 Foreign Minister appointment are corroborated via live search (Wikipedia's Gideon Sa'ar article)."
+      },
+      {
+        "event_id": "saar-prawer-begin-bill-vote-2013",
+        "date": "2013-06-24",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bedouin Settlement Regularization Law (Prawer-Begin Plan)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab (Bedouin communities)",
+          "estimated_hectares_affected": null,
+          "description": "As Interior Minister, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships — a portfolio directly responsible for the bill's implementation. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+        },
+        "citation": "VERIFIED 2026-09-01 — Sa'ar's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry. His Interior Ministry tenure (2009, then 2013-2014 as Interior Minister specifically) is corroborated via live search (Wikipedia's Gideon Sa'ar article)."
+      },
+      {
+        "event_id": "saar-stone-throwing-doubling-vote-2023",
+        "date": "2023-05-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "State of Israel; East Jerusalem; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As a National Unity MK, voted for the bill doubling the 2015 stone-throwing minimum sentence law — one of the few MKs recorded voting for this specific attempt, which the governing coalition otherwise defeated 18-54."
+        },
+        "citation": "VERIFIED 2026-09-01 — Sa'ar's individual 'For' vote and the 18-54 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38655), consistent with this dataset's own already-verified Penal Law Amendment (Doubled Minimum Sentence for Stone-Throwing) topic entry."
+      },
+      {
+        "event_id": "saar-administrative-detention-israelis-limit-vote-2024",
+        "date": "2024-07-03",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Emergency Powers (Detentions) Law Amendment (Administrative Detention Limit for Israeli Citizens)",
+        "vote": "Against",
+        "land_impact": {
+          "spatial_region": "State of Israel; West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As Foreign Minister, voted against the bill barring administrative detention against Israeli citizens while leaving the same power intact against West Bank Palestinian suspects — passed its preliminary reading regardless, 54-51."
+        },
+        "citation": "VERIFIED 2026-09-01 — Sa'ar's individual 'Against' vote and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
+      }
+    ]
+  },
+  {
+    "mk_id": "avi-maoz",
+    "full_name": "Avi Maoz",
+    "hebrew_name": "אבי מעוז",
+    "birth_name": "Avigdor Fischheimer",
+    "birth_country": "State of Israel (Haifa)",
+    "knesset_terms": [
+      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Far-Right" },
+      { "knesset_number": 25, "party": "Noam", "political_alignment": "Far-Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "maoz-judea-samaria-sovereignty-vote-2021",
+        "date": "2021-07-28",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the 2021 predecessor of the bill he would later personally sponsor in its 2025 form — the earlier version, defeated 64-50, drew considerably more support than his own 2025 bill's bare 25-24 margin."
+        },
+        "citation": "VERIFIED 2026-09-01 — Maoz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 34961, 64-50 final tally)."
+      },
+      {
+        "event_id": "maoz-jordan-valley-sovereignty-vote-2023",
+        "date": "2023-03-15",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Jordan Valley Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Jordan Valley)",
+          "estimated_hectares_affected": null,
+          "description": "As leader of the far-right, religious-conservative Noam party, was among the few coalition-aligned MKs to vote for Avigdor Liberman's opposition-sponsored Jordan Valley sovereignty bill, defeated 65-14 after the rest of the coalition — including Otzma Yehudit and Religious Zionism — voted it down."
+        },
+        "citation": "VERIFIED 2026-09-01 — Maoz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38405, 65-14 final tally), consistent with this dataset's own already-verified Jordan Valley Sovereignty Bill topic entry."
+      },
+      {
+        "event_id": "maoz-judea-samaria-sovereignty-sponsor-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As the bill's own sponsor, voted for his Judea and Samaria Sovereignty Bill, which passed a preliminary reading by a single vote, 25-24 — the vote for which he is now most directly on record in this dataset's ledger."
+        },
+        "citation": "VERIFIED 2026-09-01 — Maoz's individual 'For' vote and his sponsorship are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally) and corroborated via live search (Times of Israel, Jerusalem Post). His Noam party leadership and political record are corroborated via live search (Wikipedia's Avi Maoz article, Middle East Eye's 'Meet Avi Maoz' profile). Full term history corrected this pass: Maoz has two different person_ids in this project's scraped data — 30814 (used for his roster/term/party records above, confirming Religious Zionism at Knesset 24 transitioning to Noam at Knesset 25) and 32696 (used for his actual vote-casting records, including all votes in this entry) — the mirror image of the Ben-Gvir/Rothman/Son Har-Melech ID mismatch found elsewhere in this ledger, here affecting the roster side rather than the vote side."
+      },
+      {
+        "event_id": "maoz-negev-galilee-veterans-land-vote-2022",
+        "date": "2022-01-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers)",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Negev/Naqab; Galilee",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the bill directing free land allocation to discharged combat-service veterans settling in designated Negev/Galilee communities — the two regions with Israel's largest Arab and Bedouin citizen populations. Defeated at a preliminary reading, 42-47."
+        },
+        "citation": "VERIFIED 2026-09-01 — Maoz's individual 'For' vote and the 42-47 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under his confirmed vote-casting person_id 32696 (vote_id 36522), consistent with this dataset's own already-verified Israel Land Authority Amendment (Negev/Galilee Land Allocation for Discharged Soldiers) topic entry."
+      }
+    ]
+  },
+  {
+    "mk_id": "yitzhak-goldknopf",
+    "full_name": "Yitzhak Goldknopf",
+    "hebrew_name": "יצחק גולדקנופ",
+    "birth_name": "Yitzhak Issachar Goldknopf",
+    "birth_country": "State of Israel (Jerusalem)",
+    "knesset_terms": [
+      { "knesset_number": 25, "party": "United Torah Judaism", "political_alignment": "Religious Nationalist" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "goldknopf-maale-adumim-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Ma'ale Adumim Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank (Ma'ale Adumim)",
+          "estimated_hectares_affected": null,
+          "description": "As United Torah Judaism leader and Israel's Minister of Housing and Construction (2022-2025) — the ministry most directly responsible for settlement construction of any portfolio in this dataset's ledger — voted for Avigdor Liberman's bill applying Israeli sovereignty to Ma'ale Adumim."
+        },
+        "citation": "VERIFIED 2026-09-01 — Goldknopf's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44575). His Housing and Construction Ministry tenure and UTJ leadership are corroborated via live search (Wikipedia's Yitzhak Goldknopf article). Full term history corrected this pass: Goldknopf has two different person_ids in this project's scraped data — 30846 (used for his roster/term/party records above) and 34370 (used for his actual vote-casting records, including both votes below) — the mirror image of the Ben-Gvir/Rothman/Son Har-Melech ID mismatch found elsewhere in this ledger. The roster-side record shows his Knesset 25 United Torah Judaism term across two disjoint date ranges (2022-11-15 to 2023-01-06, then 2025-06-15 to present) rather than one continuous term; this project has not yet researched the reason for that gap, and it is noted here rather than smoothed over."
+      },
+      {
+        "event_id": "goldknopf-judea-samaria-sovereignty-vote-2025",
+        "date": "2025-10-22",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Sovereignty Bill",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "One of the United Torah Judaism MKs who voted for the companion bill extending Israeli law and jurisdiction across all Jewish settlement areas of the West Bank, passed by a single vote, 25-24, the same day as the Ma'ale Adumim bill above."
+        },
+        "citation": "VERIFIED 2026-09-01 — Goldknopf's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44580, 25-24 final tally), consistent with this dataset's own already-verified Judea and Samaria Sovereignty Bill topic entry, which names him specifically among the UTJ MKs supporting it."
+      }
+    ]
+  },
+  {
+    "mk_id": "amit-halevy",
+    "full_name": "Amit Halevy",
+    "hebrew_name": "עמית הלוי",
+    "birth_name": "Amit Halevy",
+    "birth_country": "State of Israel",
+    "knesset_terms": [
+      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
+      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+    ],
+    "legislative_and_action_record": [
+      {
+        "event_id": "halevy-heritage-authority-sponsor-2026",
+        "date": "2026-05-12",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Judea and Samaria Heritage Authority Bill, 5786-2026",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "West Bank",
+          "estimated_hectares_affected": null,
+          "description": "As the bill's own sponsor, voted for his bill placing West Bank antiquities, archaeology, and heritage sites under a new Israeli civilian 'Judea and Samaria Heritage Authority' — described by critics as de facto annexation by administrative means. Passed a first reading 23-14, alongside a companion Antiquities Authority jurisdiction amendment passed 22-14 the same session. Halevy framed the bill in explicitly identity-based terms: 'The current war is about our identity, our culture, about God, about our deep belonging to this land.'"
+        },
+        "citation": "VERIFIED 2026-09-01 — Halevy's sponsorship, the 23-14 tally, and his quoted rationale are corroborated via live search (Times of Israel, 'Knesset advances controversial West Bank antiquity bill in first reading'), consistent with this project's own completed Knesset vote-results scrape (vote_id 45930, 23-14 final tally; companion vote_id 45929, 22-14 final tally). Unlike other entries in this ledger, his individual roll-call row was not pinned to a specific person_id this pass — the same widespread roster-ID/vote-ID split found elsewhere in Knesset 25 data appears to affect most voters on this bill, not just a handful of named MKs, and was not chased down further for a sponsorship-level entry already well-corroborated by press reporting. His term history (Knesset 23, then a gap through Knesset 24, then Knesset 25 from 17 January 2023) is drawn directly from this project's own scraped roster/party-membership data for person_id 30711."
+      }
+    ]
+  }
+]

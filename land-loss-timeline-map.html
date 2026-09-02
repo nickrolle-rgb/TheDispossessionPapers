@@ -1,0 +1,742 @@
+<title>Ground Given Up</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1e2a32;
+    --ink-soft: #2c3a44;
+    --parchment: #e7e1d0;
+    --parchment-hi: #f1ecdd;
+    --rust: #b8492f;
+    --rust-soft: #d97a5f;
+    --verdigris: #4b6b60;
+    --verdigris-soft: #7fa294;
+    --ochre: #be8b34;
+    --fog: #93897a;
+    --line: rgba(30, 42, 50, 0.16);
+    --panel-bg: rgba(231, 225, 208, 0.92);
+    --shadow: 0 18px 50px -20px rgba(20, 24, 20, 0.45);
+    --bg: var(--parchment);
+    --fg: var(--ink);
+    --map-land: #d9d0b6;
+    --map-held: var(--verdigris);
+    --map-held-soft: var(--verdigris-soft);
+    --focus: #2f7dd1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eee7d6;
+      --ink-soft: #cfc6b0;
+      --parchment: #171e22;
+      --parchment-hi: #202a2f;
+      --rust: #e07354;
+      --rust-soft: #b8492f;
+      --verdigris: #7fa294;
+      --verdigris-soft: #4b6b60;
+      --ochre: #d9a441;
+      --fog: #8b8879;
+      --line: rgba(238, 231, 214, 0.16);
+      --panel-bg: rgba(23, 30, 34, 0.9);
+      --shadow: 0 18px 60px -20px rgba(0, 0, 0, 0.7);
+      --bg: var(--parchment);
+      --fg: var(--ink);
+      --map-land: #2a3439;
+      --map-held: var(--verdigris);
+      --map-held-soft: var(--verdigris-soft);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #eee7d6;
+    --ink-soft: #cfc6b0;
+    --parchment: #171e22;
+    --parchment-hi: #202a2f;
+    --rust: #e07354;
+    --rust-soft: #b8492f;
+    --verdigris: #7fa294;
+    --verdigris-soft: #4b6b60;
+    --ochre: #d9a441;
+    --fog: #8b8879;
+    --line: rgba(238, 231, 214, 0.16);
+    --panel-bg: rgba(23, 30, 34, 0.9);
+    --shadow: 0 18px 60px -20px rgba(0, 0, 0, 0.7);
+    --bg: var(--parchment);
+    --fg: var(--ink);
+    --map-land: #2a3439;
+    --map-held: var(--verdigris);
+    --map-held-soft: var(--verdigris-soft);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+
+  body {
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* paper grain, css-only */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.05;
+    background-image:
+      radial-gradient(circle at 20% 30%, var(--fg) 0.4px, transparent 0.5px),
+      radial-gradient(circle at 60% 70%, var(--fg) 0.4px, transparent 0.5px),
+      radial-gradient(circle at 80% 20%, var(--fg) 0.4px, transparent 0.5px);
+    background-size: 3px 3px, 4px 4px, 5px 5px;
+    mix-blend-mode: multiply;
+  }
+
+  .stage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.masthead {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.6rem clamp(1.2rem, 4vw, 3rem) 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .masthead h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3.4vw, 2.5rem);
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .masthead .kicker {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 0.35rem;
+  }
+
+  .masthead .sub {
+    max-width: 32ch;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  main.mapwrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem clamp(1rem, 4vw, 3rem) 1rem;
+    min-height: 0;
+  }
+
+  svg#map {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    max-height: 62vh;
+    display: block;
+    overflow: visible;
+  }
+
+  .landmass {
+    fill: var(--map-land);
+    stroke: var(--fg);
+    stroke-width: 1.6;
+    stroke-linejoin: round;
+    transition: fill 0.6s ease;
+  }
+
+  .territory {
+    fill: var(--map-held);
+    opacity: 0.72;
+    transition: d 0.9s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.6s ease;
+    mix-blend-mode: multiply;
+  }
+  :root[data-theme="dark"] .territory,
+  @media (prefers-color-scheme: dark) { .territory { mix-blend-mode: screen; } }
+
+  .divider {
+    stroke: var(--fg);
+    stroke-width: 0.6;
+    stroke-dasharray: 2 3;
+    opacity: 0.35;
+    fill: none;
+  }
+
+  .coastlabel {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 6.5px;
+    fill: var(--fog);
+    letter-spacing: 0.05em;
+  }
+
+  marker-group .pin { cursor: pointer; }
+
+  .pin circle.ring {
+    fill: none;
+    stroke: var(--rust);
+    stroke-width: 1.4;
+    opacity: 0;
+  }
+  .pin.active circle.ring {
+    opacity: 0.9;
+    animation: pulse 1.8s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { r: 6; opacity: 0.9; }
+    100% { r: 18; opacity: 0; }
+  }
+
+  .pin circle.dot {
+    fill: var(--rust);
+    stroke: var(--parchment-hi);
+    stroke-width: 1.5;
+    transition: transform 0.25s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .pin:hover circle.dot,
+  .pin:focus-visible circle.dot { transform: scale(1.3); }
+  .pin.inactive { opacity: 0.28; }
+  .pin.inactive circle.dot { fill: var(--fog); }
+
+  .pin text {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 7.5px;
+    fill: var(--ink);
+    paint-order: stroke;
+    stroke: var(--parchment-hi);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+  }
+  .pin.inactive text { opacity: 0.35; }
+
+  .pin:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 50%; }
+
+  /* --- info panel --- */
+  .panel {
+    position: absolute;
+    top: 1.2rem;
+    left: clamp(1rem, 4vw, 3rem);
+    width: min(320px, 42vw);
+    background: var(--panel-bg);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    padding: 1.1rem 1.2rem 1.2rem;
+    z-index: 3;
+  }
+  .panel .era {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--rust);
+    font-variant-numeric: tabular-nums;
+  }
+  .panel h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0.2rem 0 0.5rem;
+    text-wrap: balance;
+  }
+  .panel p {
+    font-size: 0.83rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 0.7rem;
+  }
+  .panel .stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--line);
+  }
+  .panel .stat b {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.15rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--rust);
+  }
+  .panel .stat span { font-size: 0.72rem; color: var(--fog); }
+  .panel .note {
+    margin-top: 0.55rem;
+    font-size: 0.68rem;
+    color: var(--fog);
+    line-height: 1.4;
+  }
+
+  /* --- detail popover on marker click --- */
+  .detail {
+    position: absolute;
+    max-width: 250px;
+    background: var(--ink);
+    color: var(--parchment-hi);
+    border-radius: 3px;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.76rem;
+    line-height: 1.5;
+    box-shadow: var(--shadow);
+    z-index: 6;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+  }
+  .detail.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .detail .close {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.5rem;
+    cursor: pointer;
+    color: var(--parchment);
+    opacity: 0.6;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .detail .close:hover { opacity: 1; }
+  .detail strong { color: var(--ochre); display: block; margin-bottom: 0.25rem; font-family: "Fraunces", serif; font-size: 0.95rem; }
+
+  /* --- legend --- */
+  .legend {
+    position: absolute;
+    bottom: clamp(6.5rem, 12vh, 8rem);
+    right: clamp(1rem, 4vw, 3rem);
+    background: var(--panel-bg);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    box-shadow: var(--shadow);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .legend .row { display: flex; align-items: center; gap: 0.5rem; }
+  .legend .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .legend .swatch.held { background: var(--map-held); opacity: 0.75; border-radius: 2px; }
+  .legend .swatch.land { background: var(--map-land); border: 1px solid var(--line); border-radius: 2px; }
+  .legend .swatch.event { background: var(--rust); }
+
+  /* --- timeline rail --- */
+  .rail {
+    position: relative;
+    z-index: 4;
+    background: var(--panel-bg);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    padding: 0.9rem clamp(1rem, 4vw, 3rem) 1.1rem;
+  }
+  .rail-inner {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.6rem, 2vw, 1.4rem);
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  button.play {
+    flex: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1.5px solid var(--fg);
+    background: var(--fg);
+    color: var(--bg);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: transform 0.15s ease, background 0.2s ease;
+  }
+  button.play:hover { transform: scale(1.06); }
+  button.play:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+  button.play svg { width: 15px; height: 15px; }
+
+  .track {
+    position: relative;
+    flex: 1;
+    height: 44px;
+  }
+  .track .line {
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+  }
+  .track .fill {
+    position: absolute;
+    left: 0; top: 50%;
+    height: 2px;
+    background: var(--rust);
+    transform: translateY(-50%);
+    transition: width 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .nodes {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .node {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.1rem;
+    color: var(--fg);
+  }
+  .node .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--fog);
+    transition: all 0.25s ease;
+  }
+  .node.active .dot {
+    background: var(--rust);
+    border-color: var(--rust);
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--rust) 22%, transparent);
+  }
+  .node .yr {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.03em;
+    color: var(--fog);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .node.active .yr { color: var(--rust); font-weight: 500; }
+  .node:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; border-radius: 6px; }
+
+  @media (max-width: 720px) {
+    .panel { position: static; width: auto; margin: 0.8rem clamp(1rem,4vw,3rem) 0; }
+    .legend { position: static; margin: 0.6rem clamp(1rem,4vw,3rem) 0; align-self: flex-start; }
+    main.mapwrap { flex-direction: column; padding-top: 0; }
+    .node .yr { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .territory, .track .fill, button.play, .pin circle.dot { transition: none; }
+    .pin.active circle.ring { animation: none; opacity: 0.5; }
+  }
+</style>
+
+<div class="stage">
+  <header class="masthead">
+    <div>
+      <span class="kicker">Zionism Timeline &middot; land &amp; displacement, 1920&ndash;1967</span>
+      <h1>Ground Given Up</h1>
+      <p class="sub">Five documented turns in how land under Mandate Palestine changed hands, and who was moved off it, on the way to 1967. Figures are widely-cited approximations, not survey data &mdash; see note.</p>
+    </div>
+  </header>
+
+  <main class="mapwrap">
+    <div class="panel" id="panel">
+      <div class="era" id="panel-era">1920&ndash;1925</div>
+      <h2 id="panel-title">The Sursock Purchase</h2>
+      <p id="panel-body"></p>
+      <div class="stat">
+        <b id="panel-stat"></b>
+        <span id="panel-stat-label"></span>
+      </div>
+      <div class="note" id="panel-note"></div>
+    </div>
+
+    <svg id="map" viewBox="0 0 500 700" role="img" aria-label="Schematic map of Mandate Palestine and Israel, showing territory under Jewish or Israeli control growing across five periods between 1920 and 1967, with markers for specific documented land and displacement events">
+      <defs>
+        <clipPath id="landClip"><use href="#landShape" /></clipPath>
+      </defs>
+
+      <path id="landShape" class="landmass"
+        d="M230,38 L221,70 L224,92 L206,104 L198,128 L191,158 L184,182 L181,200
+           L176,222 L174,240 L169,254 L163,268 L152,282 L146,298 L160,330
+           L182,368 L204,406 L222,444 L236,478 L246,512 L252,548 L256,580
+           L260,606 L263,628 L257,616 L251,588 L247,556 L246,522 L250,486
+           L255,452 L258,420 L262,390 L266,358 L270,326 L272,296 L275,266
+           L278,238 L281,208 L278,178 L272,150 L263,124 L255,100 L248,76
+           L242,54 Z" />
+
+      <path class="territory" id="territory" d="M230,38 L230,38 Z" />
+
+      <path class="divider" d="M198,128 L281,150" />
+      <path class="divider" d="M182,368 L272,296" />
+      <path class="divider" d="M246,512 L275,266" />
+
+      <text class="coastlabel" x="150" y="200" transform="rotate(-78 150 200)">MEDITERRANEAN</text>
+      <text class="coastlabel" x="268" y="330" transform="rotate(70 268 330)">JORDAN&#8201;/&#8201;DEAD SEA</text>
+
+      <g id="markers"></g>
+    </svg>
+
+    <div class="legend">
+      <div class="row"><span class="swatch held"></span> Territory under Jewish / Israeli control or claim</div>
+      <div class="row"><span class="swatch land"></span> Remaining Mandate Palestine</div>
+      <div class="row"><span class="swatch event"></span> Documented event &mdash; click to open</div>
+    </div>
+
+    <div class="detail" id="detail">
+      <button class="close" id="detail-close" aria-label="Close">&times;</button>
+      <strong id="detail-title"></strong>
+      <span id="detail-body"></span>
+    </div>
+  </main>
+
+  <div class="rail">
+    <div class="rail-inner">
+      <button class="play" id="playBtn" aria-label="Play timeline" aria-pressed="false">
+        <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="pauseIcon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <div class="track">
+        <div class="line"></div>
+        <div class="fill" id="trackFill"></div>
+        <div class="nodes" id="nodes"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var periods = [
+    {
+      era: "1920–1925",
+      title: "The Sursock Purchase",
+      body: "Yehoshua Hankin, financed by Menachem Ussishkin's JNF fundraising, buys roughly 200,000–240,000 dunams of the Jezreel Valley from the Sursock family, absentee landowners based in Beirut. Arab tenant farmers who had cultivated the land for generations are evicted — one of the most documented displacement episodes of the Mandate period.",
+      stat: "~2–3%", statLabel: "of Mandate Palestine under Jewish ownership by the mid-1920s (commonly cited estimate)",
+      note: "Source: K. Stein, “The Land Question in Palestine, 1917–1939” (1984). See historical_actors.json → yehoshua-hankin.",
+      territoryScale: 0.03,
+      territoryCenter: [205, 130],
+      markers: [
+        { x: 205, y: 128, label: "Jezreel Valley", title: "Jezreel Valley, 1921–25", body: "Purchased from the Sursock family; tenant farmers displaced. Exact dunam figures vary 200,000–240,000 by source." }
+      ]
+    },
+    {
+      era: "1937",
+      title: "The Peel Commission",
+      body: "The British Peel Commission, investigating the 1936–39 Arab Revolt, becomes the first official body to recommend partitioning Palestine — and explicitly discusses population transfer, voluntary or compulsory, to make the resulting borders workable. Rejected by both sides at the time, but partition becomes the frame that later returns in 1947.",
+      stat: "~20%", statLabel: "of Mandate Palestine in Peel's proposed Jewish state (a proposal, not actual ownership)",
+      note: "Source: Palestine Royal Commission Report, Cmd. 5479 (1937). See historical_actors.json → william-robert-peel.",
+      territoryScale: 0.2,
+      territoryCenter: [210, 110],
+      markers: [
+        { x: 220, y: 95, label: "Partition line", title: "Peel Commission, July 1937", body: "Proposed a Jewish state across the north and coastal plain, an Arab state, and a British enclave around Jerusalem — with a population transfer attached." }
+      ]
+    },
+    {
+      era: "1947–1949",
+      title: "Partition, War, and the Nakba",
+      body: "The UN votes to partition Palestine 55/45 in November 1947. War follows. By the 1949 armistice, roughly 750,000 Palestinians have fled or been expelled from what becomes Israeli-held territory — among them the villagers of Deir Yassin, killed in an Irgun/Lehi operation that April, a widely-cited catalyst for the wider flight.",
+      stat: "~78%", statLabel: "of Mandate Palestine within the 1949 armistice lines (commonly cited estimate)",
+      note: "Casualty and displacement figures are disputed across sources — shown as commonly-cited ranges. See organizations.json → irgun, and knesset_members.json.",
+      territoryScale: 0.78,
+      territoryCenter: [220, 230],
+      markers: [
+        { x: 218, y: 250, label: "Deir Yassin", title: "Deir Yassin, 9 April 1948", body: "Irgun/Lehi operation. Casualty estimates range from ~254 (contemporary) to ~107–120 (1987 Birzeit revision) — genuinely disputed, not settled." },
+        { x: 230, y: 200, label: "Jerusalem", title: "Jerusalem, 1947–49", body: "Proposed as a UN-administered international zone in 1947; divided by war instead." }
+      ]
+    },
+    {
+      era: "1950",
+      title: "Absentees' Property Law",
+      body: "The new Knesset formalizes what the war produced: land and property left by Palestinian refugees is vested in a state-appointed Custodian. Sponsored by Finance Minister Eliezer Kaplan's ministry — the legal apparatus, not the war itself, is what makes the loss permanent.",
+      stat: "5710–1950", statLabel: "Sefer HaChukim vol. 4, p. 68 — the law's official citation",
+      note: "MK vote record is inferred from Kaplan's role as sponsoring minister, not a confirmed roll call. See knesset_members.json → eliezer-kaplan.",
+      territoryScale: 0.78,
+      territoryCenter: [220, 230],
+      markers: [
+        { x: 200, y: 190, label: "Custodian est.", title: "Custodian of Absentee Property, 1950", body: "State-appointed office vesting refugee land and property in the state — the legal mechanism, not a single site." }
+      ]
+    },
+    {
+      era: "1967",
+      title: "The Six-Day War",
+      body: "Under Defense Minister Moshe Dayan, Israel captures the West Bank, Gaza, Sinai, and the Golan Heights in six days — the largest territorial change since 1948. Yigal Allon's plan for settling the Jordan Valley and East Jerusalem, proposed that July, shapes where the first wave of settlements goes.",
+      stat: "4", statLabel: "territories brought under Israeli control or occupation in one week",
+      note: "See historical_actors.json → moshe-dayan, yigal-allon.",
+      territoryScale: 1,
+      territoryCenter: [230, 230],
+      markers: [
+        { x: 250, y: 100, label: "Golan Heights", title: "Golan Heights, June 1967", body: "Captured from Syria." },
+        { x: 235, y: 260, label: "West Bank", title: "West Bank, June 1967", body: "Allon Plan (July 1967) prioritizes the Jordan Valley and Gush Etzion for settlement." },
+        { x: 195, y: 460, label: "Sinai", title: "Sinai Peninsula, June 1967", body: "Captured from Egypt; returned 1979–82 under the Israel–Egypt peace treaty." }
+      ]
+    }
+  ];
+
+  var svgNS = "http://www.w3.org/2000/svg";
+  var mapEl = document.getElementById("map");
+  var markersG = document.getElementById("markers");
+  var territoryEl = document.getElementById("territory");
+  var nodesEl = document.getElementById("nodes");
+  var trackFill = document.getElementById("trackFill");
+  var detail = document.getElementById("detail");
+  var current = 0;
+  var playing = false;
+  var timer = null;
+
+  // Build a soft blob path around a center point that grows with `scale` (0..1),
+  // roughly toward the whole landmass at scale 1. Hand-authored control points,
+  // deliberately simple -- this is a schematic infographic, not survey data.
+  function territoryPath(center, scale) {
+    var cx = center[0], cy = center[1];
+    var t = Math.max(0.001, scale);
+    if (t >= 0.999) {
+      return document.getElementById("landShape").getAttribute("d");
+    }
+    var rx = 40 + t * 190;
+    var ry = 60 + t * 260;
+    var pts = [];
+    var n = 14;
+    for (var i = 0; i < n; i++) {
+      var ang = (i / n) * Math.PI * 2;
+      var wob = 1 + 0.12 * Math.sin(i * 2.3 + t * 5);
+      pts.push([cx + Math.cos(ang) * rx * wob * 0.55, cy + Math.sin(ang) * ry * wob]);
+    }
+    var d = "M" + pts[0][0].toFixed(1) + "," + pts[0][1].toFixed(1) + " ";
+    for (var j = 1; j <= n; j++) {
+      var p = pts[j % n];
+      d += "L" + p[0].toFixed(1) + "," + p[1].toFixed(1) + " ";
+    }
+    return d + "Z";
+  }
+
+  function buildNodes() {
+    periods.forEach(function (p, i) {
+      var btn = document.createElement("button");
+      btn.className = "node" + (i === 0 ? " active" : "");
+      btn.setAttribute("aria-label", p.era + ": " + p.title);
+      btn.innerHTML = '<span class="dot"></span><span class="yr">' + p.era + "</span>";
+      btn.addEventListener("click", function () { goTo(i); stop(); });
+      nodesEl.appendChild(btn);
+    });
+  }
+
+  function renderMarkers(idx) {
+    markersG.innerHTML = "";
+    var activeIds = periods[idx].markers.map(function (m) { return m.label; });
+    for (var pi = 0; pi <= idx; pi++) {
+      periods[pi].markers.forEach(function (m) {
+        var isActive = pi === idx;
+        var g = document.createElementNS(svgNS, "g");
+        g.setAttribute("class", "pin " + (isActive ? "active" : "inactive"));
+        g.setAttribute("tabindex", "0");
+        g.setAttribute("role", "button");
+        g.setAttribute("aria-label", m.title);
+        g.innerHTML =
+          '<circle class="ring" cx="' + m.x + '" cy="' + m.y + '" r="6"></circle>' +
+          '<circle class="dot" cx="' + m.x + '" cy="' + m.y + '" r="4.5"></circle>' +
+          '<text x="' + (m.x + 8) + '" y="' + (m.y + 3) + '">' + m.label + "</text>";
+        g.addEventListener("click", function () { showDetail(m, g); });
+        g.addEventListener("keypress", function (e) { if (e.key === "Enter" || e.key === " ") showDetail(m, g); });
+        markersG.appendChild(g);
+      });
+    }
+  }
+
+  function showDetail(m, g) {
+    document.getElementById("detail-title").textContent = m.title;
+    document.getElementById("detail-body").textContent = m.body;
+    var rect = g.getBoundingClientRect();
+    var wrapRect = document.querySelector(".mapwrap").getBoundingClientRect();
+    var left = rect.left - wrapRect.left + 16;
+    var top = rect.top - wrapRect.top - 10;
+    if (left + 250 > wrapRect.width) left = rect.left - wrapRect.left - 266;
+    detail.style.left = Math.max(8, left) + "px";
+    detail.style.top = Math.max(8, top) + "px";
+    detail.classList.add("show");
+  }
+  document.getElementById("detail-close").addEventListener("click", function () {
+    detail.classList.remove("show");
+  });
+
+  function goTo(idx) {
+    current = idx;
+    var p = periods[idx];
+    document.getElementById("panel-era").textContent = p.era;
+    document.getElementById("panel-title").textContent = p.title;
+    document.getElementById("panel-body").textContent = p.body;
+    document.getElementById("panel-stat").textContent = p.stat;
+    document.getElementById("panel-stat-label").textContent = p.statLabel;
+    document.getElementById("panel-note").textContent = p.note;
+
+    territoryEl.setAttribute("d", territoryPath(p.territoryCenter, p.territoryScale));
+    renderMarkers(idx);
+    detail.classList.remove("show");
+
+    var nodes = nodesEl.querySelectorAll(".node");
+    nodes.forEach(function (n, i) { n.classList.toggle("active", i === idx); });
+    trackFill.style.width = (idx / (periods.length - 1)) * 100 + "%";
+  }
+
+  function stop() {
+    playing = false;
+    document.getElementById("playIcon").style.display = "";
+    document.getElementById("pauseIcon").style.display = "none";
+    document.getElementById("playBtn").setAttribute("aria-pressed", "false");
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+
+  function play() {
+    playing = true;
+    document.getElementById("playIcon").style.display = "none";
+    document.getElementById("pauseIcon").style.display = "";
+    document.getElementById("playBtn").setAttribute("aria-pressed", "true");
+    timer = setInterval(function () {
+      var next = current + 1;
+      if (next >= periods.length) { stop(); return; }
+      goTo(next);
+    }, 3400);
+  }
+
+  document.getElementById("playBtn").addEventListener("click", function () {
+    if (playing) stop(); else play();
+  });
+
+  buildNodes();
+  goTo(0);
+})();
+</script>
