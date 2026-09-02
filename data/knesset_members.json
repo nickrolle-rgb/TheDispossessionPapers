@@ -568,6 +568,19 @@
           "description": "As Yisrael Beiteinu leader — the same party as the bill's own sponsor, Alex Miller — voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
+      },
+      {
+        "event_id": "liberman-unrwa-utilities-property-vote-2025",
+        "date": "2025-11-19",
+        "category": "Legislation Vote",
+        "bill_or_action_title": "Bill for Stopping the Activity of UNRWA (Amendment), 5786-2025",
+        "vote": "For",
+        "land_impact": {
+          "spatial_region": "Jerusalem (Ma'alot Dafna and Kafr Aqab)",
+          "estimated_hectares_affected": null,
+          "description": "Voted for the first reading of the bill cutting electricity/water/communications/banking service to UNRWA facilities and authorizing seizure of two specific state-leased UNRWA office properties in Jerusalem without legal process. Passed a final third reading 59-7 on 29 December 2025."
+        },
+        "citation": "VERIFIED 2026-09-02 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44766); this scrape row shows a 4-2 attendance tally at the first reading, while contemporary press (WAFA) reported the same first-reading vote as 28-8 — the same kind of scrape-vs-announced-tally variance already flagged elsewhere in this dataset (e.g. the Communities and Neighborhoods in Regularization Processes Bill), not independently reconciled this pass. The final 59-7 third-reading figure is press-only, consistent with this dataset's own already-verified UNRWA law entry."
       }
     ],
     "personal_context": [

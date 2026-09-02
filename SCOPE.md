@@ -1806,3 +1806,65 @@ before writing it:
 - **Rename the GitHub repo**: currently `TheDispositionPapers`, should be `TheDispossessionPapers`
   (or similar) to match the project's actual name. Renaming a repo is Nick's call, not something
   to do unprompted — flag again next session if still unrenamed.
+
+## Betar re-sourced + first real pass on the 700-vote backlog (2026-09-02)
+
+Nick asked to (1) source the Betar "shares premises with Likud" claim properly, (2) start
+working the ~700-candidate land-vote backlog `find_land_votes.py` surfaces, and (3) chase the
+2020 outposts funding bill specifically.
+
+**2020 outposts bill: already done.** Checked before starting — it's the existing
+`communities-neighborhoods-regularization-bill-2020` topic entry (added earlier this session,
+before this round), fully cited with all 15 co-sponsors and every MK's vote already recorded. No
+new work needed; told Nick directly rather than silently re-adding it.
+
+**Betar sourcing:** found Wikipedia's own Metzudat Ze'ev article — genuinely independent of
+Betar's own accounts, confirms the shared-building claim with real construction history (built
+1936-63 on the site of the 1930s Revisionist/Betar/Irgun HQ shack; today also houses the
+Jabotinsky Institute/Museum, Irgun Museum, Partisans and Fighters Museum). Betar org entry's
+citation upgraded from single-source to two independently-corroborating sources.
+
+**Vote backlog — real methodology, not a blind sweep:** re-ran `find_land_votes.py`'s full
+keyword search (720 raw hits), excluded the 12 already-promoted vote_ids and 9 matrimonial-
+property false positives (Hebrew "הפקעה" also means financial-rights forfeiture in divorce law —
+unrelated to land), leaving 699 real candidates. Bucketed by title pattern: 476 genuine bill-track
+rows (246 unique bills after deduping multiple readings), 75 agenda motions, 49 no-confidence
+motions, 98 other, 1 ILA decision. **Read all 246 unique bill titles by hand** — the large
+majority are generic property/tax-law technical amendments (elevator installation rules, transfer
+tax brackets, earthquake reinforcement, mediator licensing) with no real connection to this
+dataset's subject; screened out as noise rather than promoted.
+
+**4 genuinely on-topic finds, live-search verified, all added:**
+- **UNRWA property/utilities law (2025)** — new `laws.json` entry. First reading 19 Nov 2025
+  (28-8 per press; scrape shows a lower-turnout 4-2 attendance tally, variance flagged not
+  reconciled), final third reading 29 Dec 2025, 59-7. Seizes two named UNRWA office properties in
+  Jerusalem (Ma'alot Dafna, Kafr Aqab) without legal process, on top of a utilities cutoff. Also
+  linked to Liberman's own vote record (For, first reading).
+- **WZO Settlement Division land-management bill (2018)** — new `topics.json` Legislative
+  Proposal. Would hand ~400,000-500,000 dunams (~60% of West Bank state land) of ongoing Area C
+  land-management authority to the WZO's Settlement Division rather than the Civil
+  Administration. Passed first reading 48-44 (13 June 2018), then held for a possible Cabinet-
+  decision alternative — final status unresolved, kept as proposal not enacted law.
+- **Jordan Valley Sovereignty Bill — extended into a two-attempt trajectory.** Found a second,
+  distinct attempt (22 Jan 2025, defeated 32-56) beyond the already-covered 2023 one (65-14) —
+  same underlying policy, opposite coalition/opposition alignment: Ben Gvir's Otzma Yehudit,
+  freshly out of government, voted for it this time; the government voted it down on procedural/
+  timing grounds rather than substance.
+- **Elimination of Discrimination in Land Purchase Bill (2023-2025)** — new `topics.json`
+  Legislative Proposal. Repeals the 1953 Jordanian law barring non-Jordanians from buying West
+  Bank land — the last formal limit on unrestricted settler land purchase. Two versions passed
+  preliminary reading 57-33/58-33 (29 Jan 2025); only committee-approved as of the most recent
+  check (26 Nov 2025), not yet enacted — kept honestly as still-pending, not assumed passed.
+
+**One real dead end, documented not silently dropped:** a 2012 Negev Bedouin demolition-orders
+bill (Planning and Building Law amendment) looked promising but its only floor vote (31-1) is a
+bare committee-referral, the exact "check `vote_subject_he` before treating a vote as
+substantive" trap flagged two rounds ago — no confirmed record of it reaching a real passage vote,
+so not added. Same discipline held under a second real test.
+
+**Backlog remaining, explicitly not yet touched:** the 75 agenda-motion and 49 no-confidence
+buckets, and the 98 "other" bucket, haven't been reviewed at all — this round only covered the
+476-row/246-unique "bill" bucket. Continuing on request.
+
+24 knesset_members (1 gained a vote), 42 orgs (1 citation upgraded), 17 laws (16→17), 57 topics
+(55→57, 1 extended not new), 36 actors. Collision check clean, one publish, one commit.

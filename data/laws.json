@@ -286,5 +286,23 @@
       "description": "Not a direct land-transfer law, but included in this ledger for its explicit protection of settlement activity from a specific form of political pressure: the law's definition of a prohibited boycott expressly includes one 'made because of' a person's or entity's connection to a West Bank settlement, treating advocacy against settlement products or institutions as legally equivalent to a boycott of the State of Israel itself."
     },
     "citation": "VERIFIED 2026-09-01 — the 11 July 2011 date and 47-38 final tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 16095/16096, both showing the identical 47-38 result), exactly matching live-searched press reporting (Human Rights Watch's 'Israel: Anti-Boycott Bill Stifles Expression,' Wikipedia's Law for Prevention of Damage to State of Israel through Boycott article). The 19-name sponsor list, including Elkin, Levin, Katz, and Hotovely, is confirmed directly via the Knesset's own OData API (KNS_BillInitiator records for this bill's BillID). The settlement-specific boycott provision and the pre-passage removal of criminal penalties/citizenship restriction are corroborated via the same live search. No official Sefer HaChukim citation number found; left null rather than guessed."
+  },
+  {
+    "law_id": "unrwa-utilities-property-law-2025",
+    "title": "Bill for Stopping the Activity of UNRWA (Amendment), 5786-2025",
+    "hebrew_title": "הצעת חוק להפסקת פעילות אונר\"א (תיקון - אי-הספקת חשמל ומים וסמכות תפיסת חזקה במקרקעין), התשפ\"ו-2025",
+    "official_citation": null,
+    "enactment_date": "2025-12-29",
+    "knesset_number": 25,
+    "sponsoring_ministry": null,
+    "sponsoring_mk_id": null,
+    "category": "Institutional Restriction / Property Seizure",
+    "summary": "Government-backed amendment to two October 2024 laws that had already barred UNRWA from operating on Israeli territory and restricted its activity in Gaza and the West Bank. Passed a first reading 28-8 on 19 November 2025, then a final third reading 59-7 on 29 December 2025. Bars electricity and water utilities, and communications and banking/financial services providers, from serving any property for which UNRWA is the customer of record, and separately authorizes the government to seize two specific Jerusalem properties — in Ma'alot Dafna and Kafr Aqab — that had been state-leased to UNRWA as office space, 'without the need to initiate legal or administrative proceedings.' Foreign Affairs and Defense Committee Chairman Boaz Bismuth (Likud) called UNRWA employees 'full partners' in the 7 October 2023 attacks and described the organization as 'an arm of Hamas.'",
+    "land_impact": {
+      "spatial_region": "Jerusalem (Ma'alot Dafna and Kafr Aqab)",
+      "estimated_hectares_affected": null,
+      "description": "A direct, named property seizure rather than a general land-policy law: two specific state-leased UNRWA office properties in East Jerusalem are to be taken back into Israeli government hands without judicial or administrative process, on top of the utilities cutoff applying to any other UNRWA-linked property in the city. No hectare figure applies — this is building-level, not land-parcel-level, seizure."
+    },
+    "citation": "VERIFIED 2026-09-02 — the 19 November 2025 first-reading date and 28-8 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44766), matching WAFA's contemporary report of the same first-reading vote. The 29 December 2025 final third-reading date and 59-7 tally, the Ma'alot Dafna/Kafr Aqab seizure provision, and the Bismuth quote are corroborated via live search (Times of Israel's 'Knesset passes bill blocking provision of electricity and water to UNRWA facilities') — this final reading was not independently found as a separate row in this project's own scrape, so the tally rests on press alone, same discipline as other laws in this dataset whose final reading wasn't reconciled against the scrape. The 'amends two October 2024 laws' framing is press's own characterization; those two predecessor laws are not independently profiled in this dataset."
   }
 ]
