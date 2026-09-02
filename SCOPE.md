@@ -1594,6 +1594,44 @@ the prior two rounds.
 
 Moving to the architecture cleanup Nick asked about next.
 
+## Architecture cleanup actioned (2026-09-01)
+
+Nick: "let's do the architecture." Actioned the three findings flagged two rounds ago, all before
+any public sharing:
+
+**Git repo initialized.** `git init` in the project folder, real global identity already
+configured (no setup needed). Added a `.gitignore` excluding `data/knesset_votes.sqlite3` — at
+234MB it's both too large for a normal git workflow (GitHub blocks pushes over 100MB) and was
+never meant to be distributed itself; it's a regenerable research artifact (`scripts/
+knesset_scraper.py` rebuilds it from the Knesset's own public API), not part of what's meant to be
+public. Everything else — all six `data/*.json` files, `SCOPE.md`, `SCHEMA.md`, `wiki-prototype.html`,
+the map prototype HTMLs, the two PDF primary sources, and all five scripts — is now in an initial
+commit (21 files, root commit `d5569cf`).
+
+**Both working scripts saved into the repo for real**, ending the "only exists as one-off Bash
+this session" problem: `scripts/embed_data.py` (the re-embed step, previously always retyped
+inline) and `scripts/collision_check.py` (moved out of the session-scoped scratchpad it's lived
+in all along). Both tested working before commit — `embed_data.py` correctly re-synced all six
+files (36/41/24/6/16/55 entries) and `collision_check.py` ran clean. Either can now be rerun by
+any future session (or another contributor) without reconstructing them from a transcript.
+
+**Added a real About/methodology page** (`#/about`, linked from the header and the homepage hero)
+— the wiki had good framing prose but nothing explaining the VERIFIED/UNVERIFIED convention, where
+the Knesset ledger's data comes from, or the living-persons discipline to a reader who wasn't in
+any of these research sessions. Covers: what the site is, how a citation works (with the Land
+Acquisition/Absentees' Property Law wrong-guess story as a concrete example of why the discipline
+exists), where pre-1948 vs. post-2003 material each comes from and why they're sourced
+differently, the living-persons standard, and an honest "not exhaustive, not finished" closer.
+Verified via `node --check` on the extracted inline script (JS syntax clean) since the browser
+preview tool remained unable to open the local file this round too (fourth round running) —
+JSON/collision checks aren't relevant here since no data file changed, just the HTML/JS directly.
+
+Re-embedded (via the new script) and republished before the git commit, so the initial commit
+captures the working, published state. Not yet done, and worth flagging for whenever Nick's ready
+to actually make the repo public: no remote configured yet (this is a local-only repository so
+far — pushing to GitHub or elsewhere is a separate, explicit step Nick should decide on, not
+something to do unprompted).
+
 ## Open
 
 - Actor roster, organizations, and MK calibration sets still awaiting Nick's review.
