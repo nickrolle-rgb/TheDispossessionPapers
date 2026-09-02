@@ -1632,6 +1632,58 @@ to actually make the repo public: no remote configured yet (this is a local-only
 far — pushing to GitHub or elsewhere is a separate, explicit step Nick should decide on, not
 something to do unprompted).
 
+## Voice profile set up + new `personal_context` field, Netanyahu example (2026-09-02)
+
+Two real asks in one round: de-AI the site's own framing prose, and start giving Actors/MKs a
+bit of biographical color beyond their land record.
+
+**Set up a `my-writing-style` voice profile.** Nick pasted 8 real emails (Scout Adventure Team
+booking, his dad, an order-cancellation to a retailer, a museum membership request, friends,
+South East Water, a pans-discount negotiation, a friend re: coffee) — one register (email), one
+audience, honestly flagged as below the skill's ~10-per-surface floor rather than presented as a
+deep read. Real, checkable traits came out of it: warm/playful greetings even to strangers,
+leads with owning any friction before the ask, narrates his own reasoning on the page rather than
+just stating conclusions, notices the person on the other end, and — the one that mattered most
+for this project's own writing — **almost never uses an em-dash, semicolon, or bullet list**,
+which is close to the opposite of how this project's own SCOPE.md/citation prose has been written
+all along. Saved to `~/.claude/skills/my-writing-style/SKILL.md` with a `~/.claude/CLAUDE.md`
+pointer so it loads automatically in future sessions.
+
+**Rewrote the About page and homepage intro in that voice** — first person, no em-dashes, no
+semicolons, no bullet list for the VERIFIED/UNVERIFIED explanation (converted to two short
+paragraphs instead). Content and citations unchanged, just the framing prose Nick had
+screenshotted as reading too AI-generated.
+
+**New schema field: `personal_context`**, added to both `historical_actors.json` and
+`knesset_members.json` (documented in SCHEMA.md). Deliberately kept separate from
+`key_land_actions`/`legislative_and_action_record` — this dataset's core subject stays land and
+dispossession, and `personal_context` is explicitly the "rest of the person" field: family,
+military service, a major unrelated event, or — for a living person — an active legal matter.
+Same living-persons discipline as everywhere else: real citations, and for an ongoing legal
+matter specifically, every charge stated as alleged until there's an actual verdict.
+
+**Netanyahu given as the concrete first example, two entries:** his brother Yonatan "Yoni"
+Netanyahu's death commanding the Sayeret Matkal assault force in the July 1976 Entebbe raid (the
+operation was renamed Operation Yonatan in his memory — he was the raid's sole Israeli fatality),
+and his own ongoing corruption trial (Cases 1000/2000/4000, indicted November 2019 as the first
+sitting Israeli PM ever criminally charged, still without a verdict as of this entry — his own
+testimony wrapped in June 2026 after 98 hearings, and as of July 2026 judges have twice suggested
+the prosecution reconsider the Case 4000 bribery charge, with nothing formally dropped or decided
+yet). Wired `personal_context` into both `renderActor()` and `renderMK()` as a new "Beyond the
+ledger" section.
+
+Full collision + dangling-reference check clean — using the newly-committed `scripts/
+collision_check.py` and `scripts/embed_data.py` for the first time as real repo tools rather than
+retyped inline, both worked end to end. 24 knesset_members (unchanged count, Netanyahu gained 2
+personal_context entries), all other files unchanged. Re-embedded, JS syntax verified via
+`node --check` (browser preview tool still down, 6th round running), republished, and committed.
+
+**Not yet decided:** whether `personal_context` gets rolled out further (other Actors/MKs with a
+similarly notable personal story) is Nick's call — Netanyahu was the explicit example given, not
+a signal to sweep the whole dataset. Also not yet actioned: pushing the local repo to the GitHub
+remote Nick set up (`github.com/nickrolle-rgb/TheDispositionPapers`) — he said he's happy to keep
+building first, so this stays a local-only repo until he says go.
+
 ## Open
 
 - Actor roster, organizations, and MK calibration sets still awaiting Nick's review.

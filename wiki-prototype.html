@@ -4568,6 +4568,20 @@
         },
         "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), exactly matching live-searched press reporting naming him among the law's supporters (Jerusalem Post's 'Knesset approves death penalty for terrorists bill, Benjamin Netanyahu in favor'), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
       }
+    ],
+    "personal_context": [
+      {
+        "title": "Brother killed leading the Entebbe raid",
+        "date_or_range": "1976-07-04",
+        "description": "His older brother, Lt. Col. Yonatan 'Yoni' Netanyahu, commanded the 29-person Sayeret Matkal assault unit in Operation Thunderbolt — the July 1976 raid to rescue 106 hostages held at Entebbe Airport, Uganda, after Air France Flight 139 was hijacked. Of the 102 hostages rescued, Yonatan Netanyahu was the sole Israeli military fatality; the operation was renamed Operation Yonatan in his memory. The raid, and his brother's death leading it, are widely cited as a formative influence on Netanyahu's own entry into public life — he became active in his brother's memory through the Jonathan Institute, a counter-terrorism policy organization, in the years that followed.",
+        "citation": "VERIFIED 2026-09-01 — the 27 June 1976 hijacking, the 106-hostage count after non-Israeli releases, the 3-4 July raid date, the 102-of-106 rescue figure, Yonatan Netanyahu's command role and sole-fatality status, and the operation's renaming in his honor are corroborated via live search (Wikipedia's Entebbe raid article, Jerusalem Post's 50th-anniversary coverage in 2026)."
+      },
+      {
+        "title": "Ongoing corruption trial (Cases 1000, 2000, and 4000)",
+        "date_or_range": "2019-11-21 to present",
+        "description": "Indicted on 21 November 2019 by Attorney General Avichai Mandelblit, the first sitting Israeli Prime Minister ever criminally charged in office. Case 1000 alleges fraud and breach of trust over gifts accepted from wealthy businessmen. Case 2000 alleges fraud and breach of trust over a discussed arrangement with Yedioth Ahronoth publisher Arnon Mozes for more favorable coverage. Case 4000, the most serious, alleges bribery, fraud, and breach of trust over claims Netanyahu advanced regulatory benefits for the Bezeq telecom company in exchange for favorable coverage on the Bezeq-owned Walla news site. Trial proceedings began in 2020 and are still ongoing as of this entry: Netanyahu's own testimony concluded in June 2026 after 98 hearings across roughly 18 months, and as of July 2026 the presiding judges have twice suggested the prosecution consider dropping the Case 4000 bribery charge while retaining the lesser breach-of-trust counts — no charge has been dropped and no verdict has been reached. All allegations above remain exactly that: charged, not proven, pending a verdict.",
+        "citation": "VERIFIED 2026-09-01 — the 21 November 2019 indictment date, the 'first sitting PM' status, and the specific charges in each of the three cases are corroborated via live search (Times of Israel's indictment coverage, ABC News, PBS Frontline). The 98-hearings/June 2026 testimony conclusion and the July 2026 judicial suggestion to reconsider the bribery charge are corroborated via live search (Times of Israel's 'Netanyahu wraps up trial testimony' and 'Judges in Netanyahu trial again suggest to prosecution to drop bribery charge' articles). No verdict had been reached as of this entry's 2026-09-01 write date."
+      }
     ]
   },
   {
@@ -7553,6 +7567,14 @@
           '<div class="cite">' + escapeHtml(k.primary_source_citation || "") + "</div></div>";
       });
     }
+    if (a.personal_context && a.personal_context.length) {
+      html += '<h2 class="section-head">Beyond the ledger</h2>';
+      a.personal_context.forEach(function (p) {
+        html += '<div class="event"><div class="when">' + escapeHtml(p.date_or_range || "") + " · " + escapeHtml(p.title) + '</div>' +
+          "<p>" + autolink(p.description, "actor:" + a.actor_id) + "</p>" +
+          '<div class="cite">' + escapeHtml(p.citation || "") + "</div></div>";
+      });
+    }
     return html;
   }
 
@@ -7624,6 +7646,14 @@
           html += "<p>" + autolink(r.land_impact.description, "mk:" + m.mk_id) + "</p>";
         }
         html += '<div class="cite">' + escapeHtml(r.citation || "") + "</div></div>";
+      });
+    }
+    if (m.personal_context && m.personal_context.length) {
+      html += '<h2 class="section-head">Beyond the ledger</h2>';
+      m.personal_context.forEach(function (p) {
+        html += '<div class="event"><div class="when">' + escapeHtml(p.date_or_range || "") + " · " + escapeHtml(p.title) + '</div>' +
+          "<p>" + autolink(p.description, "mk:" + m.mk_id) + "</p>" +
+          '<div class="cite">' + escapeHtml(p.citation || "") + "</div></div>";
       });
     }
     return html;

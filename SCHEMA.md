@@ -19,9 +19,33 @@
       "impact_description": "string",
       "primary_source_citation": "string (URL, book citation, archive ID)"
     }
+  ],
+  "personal_context": [
+    {
+      "title": "string (short label, e.g., 'Brother killed leading the Entebbe raid')",
+      "date_or_range": "YYYY-MM-DD or YYYY or a range",
+      "description": "string — biography, family, military service, or a major event not itself a land action",
+      "citation": "string"
+    }
   ]
 }
 ```
+
+### `personal_context` (added 2026-09-02)
+
+Optional array, same shape in both this file and `knesset_members.json` below. For biographical
+color and major life events that aren't themselves land actions but round the person out — family
+(a sibling killed in a famous operation, say), military service, an unrelated notable event they
+were central to, or — for a living/sitting person — an active legal matter. Kept structurally
+separate from `key_land_actions`/`legislative_and_action_record` on purpose: this dataset's core
+subject is land and dispossession, and `personal_context` is explicitly the "everything else that
+makes this a real person, not just a land-policy record" field, not a second land ledger.
+
+Same living-persons discipline as everywhere else in this dataset: a real citation, no
+characterization beyond what the citation supports, and for an active legal matter — a criminal
+trial, say — every charge stated as *alleged* until there's an actual verdict, not as established
+fact. `null`/omitted rather than uncited, exactly like the existing rule for `land_impact` on
+living MKs above.
 
 ## 2. Knesset Members / Legislative Items — `data/knesset_members.json`
 
@@ -53,9 +77,22 @@
       },
       "citation": "string (Knesset Archives ID, official record, or academic source)"
     }
+  ],
+  "personal_context": [
+    {
+      "title": "string",
+      "date_or_range": "YYYY-MM-DD or YYYY or a range",
+      "description": "string",
+      "citation": "string"
+    }
   ]
 }
 ```
+
+`personal_context` is the same field, same rules, as the one added to `historical_actors.json`
+above — see that section for the full explanation. It's especially relevant here, since most of
+the people in this file are living and several have active legal matters worth recording
+honestly, under the same alleged-until-verdict standard.
 
 ### Living/sitting MKs — draft-time rule (see SCOPE.md)
 
