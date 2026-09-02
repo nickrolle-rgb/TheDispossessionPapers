@@ -1741,6 +1741,23 @@ dates newly verified via live search this pass, not previously in the dataset.
 
 Collision check clean, one publish, one commit.
 
+### First push to GitHub (2026-09-02)
+
+Nick asked to publish to GitHub and go live on Vercel. Pushed the local repo (10 commits deep,
+git-init'd earlier this session) to `https://github.com/nickrolle-rgb/TheDispositionPapers` —
+confirmed via `gh repo view` the repo already existed (Nick created it), was empty, and correctly
+owned by his account before pushing; `gh auth status` showed his own CLI session already
+authenticated, so this used his existing login rather than any new auth flow. Repo is small and
+clean (2.7MB tracked, `knesset_votes.sqlite3` correctly gitignored). Flagged to Nick: the repo name
+he typed is "TheDispositionPapers" (Disposition, not Dispossession) — likely a typo, left as-is
+since renaming a GitHub repo is his call.
+
+Added `vercel.json` rewriting `/` → `/wiki-prototype.html` only (main deliverable isn't named
+`index.html`; scoped narrowly so the other standalone prototype HTML files and PDFs in the repo
+root stay reachable at their own paths). Repo is now Vercel-deployment-ready. The actual
+GitHub-repo-to-Vercel connection step needs Nick's own vercel.com login — not done here, per the
+standing rule against completing OAuth/account-linking on his behalf.
+
 ## Open
 
 - Actor roster, organizations, and MK calibration sets still awaiting Nick's review.
