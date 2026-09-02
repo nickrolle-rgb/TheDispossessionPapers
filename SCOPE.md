@@ -1868,3 +1868,49 @@ buckets, and the 98 "other" bucket, haven't been reviewed at all — this round 
 
 24 knesset_members (1 gained a vote), 42 orgs (1 citation upgraded), 17 laws (16→17), 57 topics
 (55→57, 1 extended not new), 36 actors. Collision check clean, one publish, one commit.
+
+## Vote backlog, remaining buckets: no-confidence, agenda-motion, other (2026-09-02)
+
+Continued the backlog sweep, covering the three buckets not yet touched: no-confidence motions
+(46 unique), agenda motions (68 unique), and everything else (74 unique) — 188 titles read by
+hand. Confirmed the standing lesson holds at scale: the overwhelming majority of these are
+symbolic political theater — no-confidence motions fail predictably along coalition/opposition
+lines regardless of the underlying policy's merits, and agenda motions are votes on whether to
+*discuss* a topic, not on the topic itself. Did not force-promote any of these as individual
+ledger entries; instead scanned all three buckets for underlying real, undocumented land actions
+the motions were reacting to, matching the method that already worked for the UNRWA/WZO/Jordan
+Valley finds last round.
+
+**3 real finds, all live-search verified and added:**
+- **Negev Bedouin Land Claims Settlement Plan (2026)** — new `topics.json` entry. An Israel Land
+  Authority administrative plan under Minister Amichai Chikli's "Negev reform," published 16
+  April 2026: ~3,200 Bedouin ownership claims from the early 1970s, claimants required to
+  evacuate and relocate to a government-provided plot within 10 months for a cash grant. A
+  genuine successor in substance to the withdrawn 2013 Prawer-Begin Plan, repackaged as an
+  incentive-based administrative program rather than one Knesset bill — the follow-on
+  no-confidence motion (8 June 2026, defeated along coalition lines) is what surfaced it.
+- **Al-Araqib** — new `topics.json` Geographic Region entry, and a real gap: the single
+  most-repeated demolition case in the whole subject area (demolished 238+ times since 27 July
+  2010, roughly monthly) had no entry at all despite being one of the most-cited case studies in
+  this exact literature. Surfaced via a 2010 agenda motion on "unrecognized villages including
+  Al-Araqib," not a bill.
+- **Symbolic sovereignty motion, July 2025** — new `topics.json` entry, distinct from the
+  already-covered binding sovereignty bills. A non-binding "sense of the Knesset" resolution
+  passed 71-13 on 23 July 2025 (Ofir Katz's version, beating four rejected opposition
+  alternatives) — a far wider margin than the actual bills' single-vote/single-digit passages,
+  worth keeping as its own entry precisely because it shows the gap between rhetorical consensus
+  and legislative willingness.
+
+**Flagged, not chased this round** (real leads, lower priority): a 2004 High Court ruling that a
+soldier-preference land-purchase tender discriminated against Arab citizens; a 2019 report that
+Finance Ministry administrative planning/building fines fell disproportionately on Arab
+communities. Both are court/executive-branch actions, not Knesset votes — would need their own
+research pass, not mined from the vote corpus directly.
+
+**Vote backlog is now substantively closed for this methodology.** All four buckets
+(bill/no-confidence/agenda-motion/other) have been read in full at least once. Real further
+progress from here would mean chasing the two flagged leads above, or a fresh keyword sweep on
+terms not yet tried (the existing 8 keyword groups are unlikely to surface much more).
+
+36 actors, 24 knesset_members, 42 orgs, 17 laws, 60 topics (57→60). Collision check clean, one
+publish, one commit.
