@@ -1801,11 +1801,11 @@ before writing it:
   free text for now — no controlled-vocabulary lock requested, unlike Money Tracker.
 - Repo layout beyond `data/` (storage format — flat JSON vs. sqlite/Postgres — not decided).
 
-## Reminder for Nick (flagged 2026-09-02, not yet actioned)
+## Repo renamed, Vercel live (2026-09-02)
 
-- **Rename the GitHub repo**: currently `TheDispositionPapers`, should be `TheDispossessionPapers`
-  (or similar) to match the project's actual name. Renaming a repo is Nick's call, not something
-  to do unprompted — flag again next session if still unrenamed.
+GitHub repo renamed `TheDispositionPapers` → `TheDispossessionPapers` (Nick asked directly; done
+via `gh repo rename`, local remote URL updated to match, pushed clean). Vercel is live at
+https://the-disposition-papers.vercel.app/ — Nick connected it himself.
 
 ## Betar re-sourced + first real pass on the 700-vote backlog (2026-09-02)
 
