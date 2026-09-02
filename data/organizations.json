@@ -1877,5 +1877,59 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "betar",
+    "name": "Betar (Brit Yosef Trumpeldor)",
+    "hebrew_name": "בית\"ר (ברית יוסף תרומפלדור)",
+    "org_type": "Youth Movement",
+    "founding_date": "1923",
+    "dissolution_date": null,
+    "ideology": [
+      "Revisionist Zionism",
+      "Jabotinsky's 'Hadar' code and 'monistic' Zionism",
+      "Greater Israel (both banks of the Jordan)"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": "likud"
+    },
+    "notable_members": [
+      "zeev-jabotinsky",
+      "menachem-begin",
+      "yitzhak-shamir"
+    ],
+    "action_record": [
+      {
+        "event_id": "betar-founding-1923",
+        "date": "1923",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founding of Betar in Riga, Latvia",
+        "location_affected": "Riga, Latvia (early organizing; HQ later moved to Poland, 1928)",
+        "description": "Founded in 1923 in Riga by Ze'ev Jabotinsky as a nationalist Zionist youth movement, taking its name from the Hebrew acronym for 'Brit Yosef Trumpeldor' (Joseph Trumpeldor Alliance) — honoring the Zionist fighter killed defending Tel Hai in 1920 — layered onto 'Betar,' the name of the last Jewish fortress to fall in the Bar Kokhba revolt against Rome. Became the official youth movement of Jabotinsky's Union of Zionist Revisionists after that body's own 1925 founding. Headquarters moved from Latvia to Poland in 1928, which by the late 1930s held the movement's largest membership base (reported at roughly 70,000-100,000 youths).",
+        "citation": "VERIFIED 2026-09-02 — the founding year and city, the Trumpeldor/Bar Kokhba naming, the 1925 Union of Zionist Revisionists link, and the 1928 Poland HQ move are corroborated via live search (Wikipedia's Betar article; YIVO Encyclopedia's Betar entry)."
+      },
+      {
+        "event_id": "betar-hadar-oath-1935",
+        "date": "1935",
+        "action_type": "Sanctioned Political Action",
+        "title": "Codification of the 'Hadar' ideology and the Betar Oath at the Krakow World Conference",
+        "location_affected": "Krakow, Poland (2nd World Conference of Betar)",
+        "description": "At Betar's second world conference in Krakow, Jabotinsky formalized 'Ha-Neder' (the Oath), committing members to 'the rebirth of the Jewish State, with a Jewish majority, on both sides of the Jordan,' and rejecting any fusion of Zionism with 'alien' creeds — chiefly socialism — a direct rebuke of the Labor Zionist mainstream then dominant in the Yishuv leadership. Members were also schooled in 'Hadar,' Jabotinsky's code of personal comportment ('beauty, respect, self-esteem, politeness, and faithfulness'), and given uniformed paramilitary-style training, including at a Betar-run naval academy in Civitavecchia, Italy, that trained a generation of future Haganah, Irgun and Lehi commanders.",
+        "citation": "VERIFIED 2026-09-02 — the Krakow conference, the Ha-Neder oath text, the Hadar code, and the Civitavecchia naval academy are corroborated via live search (Wikipedia's Betar article; the Jabotinsky Institute's own account of 'Betar and Hadar')."
+      },
+      {
+        "event_id": "betar-herut-likud-lineage-1948",
+        "date": "1948-2026",
+        "action_type": "Sanctioned Political Action",
+        "title": "Betar alumni founded and led Herut, then Likud, carrying Revisionist ideology directly into government settlement policy",
+        "location_affected": "State of Israel (national government)",
+        "description": "Betar's own alumni — most consequentially Menachem Begin (commander of Betar's main Polish branch, 1938-39, before commanding the Irgun) and Yitzhak Shamir (joined Betar at 14 in 1929, before joining Lehi) — went on to found Herut (1948) and later Likud (1973), carrying the movement's Revisionist 'Greater Israel' doctrine directly into government settlement policy once Begin won power in 1977 (see the Begin, Shamir, Herut and Likud entries elsewhere in this dataset). Betar itself never dissolved: it continues today as a global youth movement, historically sharing premises with Likud and describing itself as ideologically continuous with the party.",
+        "citation": "VERIFIED 2026-09-02 — Begin's and Shamir's specific Betar roles and join dates are corroborated via live search (Begin Heritage Center's own timeline; New Eastern Europe's Begin retrospective; multiple Shamir biography sources agreeing on his 1929 joining at age 14). The claim that Betar continues today sharing premises with Likud traces to a single organization's own account (Betar USA's official social-media statement) and is flagged here as lower-confidence than the historical claims above it."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

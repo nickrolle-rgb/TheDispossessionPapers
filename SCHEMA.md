@@ -174,6 +174,13 @@ partially after its 1948 outlawing) — those nuances are described in the IDF's
 `action_record` and cross-referenced from Haganah/Irgun/Lehi's entries rather than forced into
 the `lineage` fields' single-predecessor shape.
 
+`org_type: "Youth Movement"` first used 2026-09-02 for Betar — the Revisionist youth movement
+Jabotinsky founded in Riga in 1923, which trained the generation that led Irgun and Lehi and
+later founded Herut/Likud (Begin and Shamir both came up through it; both entries' cross-links
+are documented in their own `personal_context`/`primary_affiliations`). Unlike Irgun/Herut, Betar
+never dissolved or merged — `dissolution_date` and `lineage.merged_into` are `null`, matching the
+pattern already used for still-active orgs like Likud.
+
 ## 4. Current Foreign Actors — `data/current_foreign_actors.json` (added 2026-08-31)
 
 Present-day counterpart to schema #1 (Balfour, Silver, Rothschild are all "foreign patrons" —

@@ -1718,6 +1718,29 @@ Six publishes, six commits. Browser preview tool remained down the entire sweep;
 verified via `node --check` on the extracted script plus JSON/collision checks, the workaround
 established two rounds ago.
 
+### Betar added as a standalone org (2026-09-02)
+
+Nick asked whether Betar (the Revisionist youth movement) deserved its own listing. It was
+previously only present as a string ("Betar (founder)" in Jabotinsky's affiliations, a mention in
+Begin's personal_context) — confirmed via grep before starting, no standalone entry existed. Given
+it directly trained the founders of Irgun, Lehi, Herut and Likud — all already-covered orgs in this
+dataset — this was a real, well-justified gap, not scope creep.
+
+Added `betar` to `data/organizations.json` (new `org_type: "Youth Movement"`, already anticipated
+in SCHEMA.md's enum but unused until now — documented in SCHEMA.md with a dated footnote matching
+the file's existing convention). Three action_record entries: the 1923 Riga founding, the 1935
+Krakow conference (Ha-Neder oath, Hadar code, the Civitavecchia naval academy that fed Haganah/
+Irgun/Lehi), and its lineage into Herut/Likud via Begin and Shamir. Still active today (no
+`dissolution_date`/`merged_into`, same null pattern as Likud) — the "still active, shares premises
+with Likud" claim is flagged lower-confidence since it traces to a single organization's own
+account (Betar USA), everything else independently corroborated across 2+ sources.
+
+Also added "Betar (Commander, Poland, 1938-39)" to Begin's `primary_affiliations` and "Betar
+(joined 1929, age 14)" to Shamir's, matching the pattern Jabotinsky's entry already used — both
+dates newly verified via live search this pass, not previously in the dataset.
+
+Collision check clean, one publish, one commit.
+
 ## Open
 
 - Actor roster, organizations, and MK calibration sets still awaiting Nick's review.
