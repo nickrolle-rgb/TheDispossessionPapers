@@ -1800,3 +1800,9 @@ before writing it:
 - `political_alignment` and `category`/`land_impact` vocab in schema 2 are Nick-specified
   free text for now — no controlled-vocabulary lock requested, unlike Money Tracker.
 - Repo layout beyond `data/` (storage format — flat JSON vs. sqlite/Postgres — not decided).
+
+## Reminder for Nick (flagged 2026-09-02, not yet actioned)
+
+- **Rename the GitHub repo**: currently `TheDispositionPapers`, should be `TheDispossessionPapers`
+  (or similar) to match the project's actual name. Renaming a repo is Nick's call, not something
+  to do unprompted — flag again next session if still unrenamed.
