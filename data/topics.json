@@ -1032,5 +1032,23 @@
       "knesset"
     ],
     "citation": "VERIFIED 2026-09-02 — the 23 July 2025 date and 71-13 final tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44413, subject line confirming Ofir Katz's version was the one 'accepted'), exactly matching live-searched press (Al Jazeera's 'Israeli parliament approves symbolic motion on West Bank annexation'). The four rejected alternative motions and their sponsors are drawn from the same scrape (vote_ids 44409-44412), not independently cross-checked against press. Smotrich's earlier origination of the idea and the motion's 'declarative, no direct legal implications' characterization are Al Jazeera's own framing."
+  },
+  {
+    "topic_id": "kaadan-v-israel-lands-administration",
+    "name": "Ka'adan v. Israel Lands Administration",
+    "aliases": [
+      "Katzir Case",
+      "Kaadan Ruling"
+    ],
+    "hebrew_name": "בג\"ץ קעדאן",
+    "topic_type": "Historical Event",
+    "date_or_range": "1995-2007",
+    "summary": "A 12-year legal battle brought by Aadel and Iman Ka'adan, a Palestinian Arab citizen family, after they were denied the right to buy a home in Katzir — a communal settlement built on Israel Lands Administration land allocated to the Jewish Agency, which ran it through a cooperative society admitting only Jewish members. The family petitioned the Supreme Court in 1995 (H.C. 6698/95); on 8 March 2000 the Court ruled that the state could not allocate public land through a mechanism that excludes citizens on the basis of nationality, with President Aharon Barak writing 'what the State cannot do directly, it cannot do indirectly,' rejecting the settlement's 'separate but equal' defense. The ruling was declaratory rather than an order for immediate relief — it directed the state to reconsider the Ka'adans' application on equal terms, not to admit them outright. The Ka'adans did not actually begin building their home until January 2007, seven years after the ruling and twelve years after they first applied, following continued resistance from the community and further litigation.",
+    "significance": "The foundational Israeli Supreme Court ruling on discriminatory land allocation via nominally-private cooperative/settlement admissions bodies — cited in nearly every subsequent challenge to Jewish-only communities on state land, including the Admissions Committees Law this dataset already covers (2011), which critics read as the Knesset's direct legislative answer to Kaadan: reinstating by statute the discretion the Court had just ruled out, dressed as a 'social-cultural fitness' criterion rather than an explicit nationality bar. The seven-year gap between the ruling and any actual relief is itself a documented pattern in this dataset's subject area — a declaratory win establishing a legal principle without forcing prompt real-world change.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "jewish-agency-for-palestine"
+    ],
+    "citation": "VERIFIED 2026-09-03 — the 1995 filing (H.C. 6698/95), the 8 March 2000 ruling, Barak's quoted holding, and the declaratory (not immediate-relief) nature of the ruling are corroborated via live search (Cardozo Israeli Supreme Court Project's case summary, citing 54(1) P.D. 258). The January 2007 construction start, seven years after the ruling, is corroborated via live search (Israel National News' contemporary report). This entry was surfaced while chasing a related but distinct 2004 Knesset agenda-motion referencing a court finding that soldier-preference land tenders discriminate against Arab citizens — that narrower military-service-criterion question was litigated separately from Kaadan (Adalah petitions filed 2004 and December 2005) and did not resolve the same way: a related Adalah petition specifically challenging military-service-based mortgage/loan benefits (not land-lease pricing) was rejected by a three-judge Supreme Court panel in December 2006, the Attorney General having argued the military-service criterion does not itself constitute nationality-based discrimination. No confirmed final ruling on the original 2004 land-tender-discount petition itself was found this pass — that narrower thread is not independently added here, kept separate from the well-documented Kaadan precedent rather than conflated with it."
   }
 ]

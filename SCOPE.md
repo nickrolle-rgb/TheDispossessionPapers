@@ -1914,3 +1914,36 @@ terms not yet tried (the existing 8 keyword groups are unlikely to surface much 
 
 36 actors, 24 knesset_members, 42 orgs, 17 laws, 60 topics (57→60). Collision check clean, one
 publish, one commit.
+
+## The two flagged leads, chased down (2026-09-03)
+
+**Lead 1 (2004 HCJ soldier-preference land-tender ruling) turned out messier than the vote title
+implied — chased it honestly rather than forcing a clean story.** The 2004 Knesset motion referenced
+an HCJ finding that a soldier-preference discount in land tenders discriminates against Arab
+citizens; live research found this sits inside a tangle of related-but-distinct Adalah petitions
+(a 2004 land-lease-discount petition the Attorney General opposed, a separate December 2005
+mortgage-benefit petition that a three-judge panel actually *rejected* in December 2006). No
+confirmed final ruling on the specific 2004 land-tender petition was found. Rather than either
+dropping the lead or inventing a resolution, kept chasing turned up the real, foundational case
+underneath all of it: **Ka'adan v. Israel Lands Administration** (filed 1995, ruled 8 March 2000)
+— the landmark Supreme Court decision that public land can't be allocated through a Jewish-only
+cooperative-society mechanism, "what the State cannot do directly, it cannot do indirectly." A
+genuinely significant gap: one of the most-cited land-discrimination rulings in the whole
+literature, and this dataset had never had an entry for it. New `topics.json` Historical Event
+entry, with the narrower 2004-2006 soldier-preference thread documented honestly inside its own
+citation rather than conflated with Kaadan. Also flagged: the Admissions Committees Law (2011,
+already in this dataset) is widely read as the Knesset's legislative answer to Kaadan — reinstating
+by statute the same discretion the Court had just ruled out, dressed as a "social-cultural fitness"
+criterion.
+
+**Lead 2 (2019 report on discriminatory planning fines) resolved cleanly** — it's a real
+enrichment to the already-existing Kaminitz Law (2017) entry, not a separate topic. Found Ayelet
+Shaked's own November 2019 on-record admission that "the aim was to tighten enforcement on
+illegal construction, especially in the Arab sector," and the follow-on: Attorney General Avichai
+Mandelblit's office announced a "change in enforcement" on 12 November 2020 (heaviest fines
+unenforced for two years, pre-2018 houses overlooked) after sustained backlash — Arab leaders
+called it a de facto freeze, the AG's office called it a policy shift. Both added to the existing
+`kaminitz-law-2017` entry's summary and citation rather than creating a duplicate.
+
+36 actors, 24 knesset_members, 42 orgs, 17 laws (1 enriched), 61 topics (60→61). Collision check
+clean, one publish, one commit.
