@@ -1684,6 +1684,40 @@ a signal to sweep the whole dataset. Also not yet actioned: pushing the local re
 remote Nick set up (`github.com/nickrolle-rgb/TheDispositionPapers`) — he said he's happy to keep
 building first, so this stays a local-only repo until he says go.
 
+## Personal-life sweep: all 60 people done (2026-09-02)
+
+Nick: "let's expand Personal Life to all Actors and MKs!" Full sweep, in six checkpointed
+batches (20 actors, then the remaining 16, then MKs in batches of 4/4/8/3/1), each validated,
+collision-checked, re-embedded, and published before moving on — same discipline as every other
+batch in this project, just at real scale (60 people, ~60 research passes).
+
+**All 36 historical actors and all 24 Knesset Members now carry a real `personal_context`
+entry.** A few things worth recording from doing this at scale:
+
+- **Real cross-links surfaced that weren't previously connected in this dataset**, found only
+  because the research touched every person in the same sitting: Yehoshua Hankin's wife Olga was
+  Israel Belkind's sister (both already separate entries); Yisrael and Manya Shochat were married
+  (also both separate entries); Ber Borochov is buried at Kibbutz Kinneret alongside Moses Hess;
+  Tzachi Hanegbi's parents were both Lehi underground fighters (his mother Geula Cohen a
+  well-known Lehi radio announcer and later MK herself), directly touching this dataset's own
+  Lehi org profile. None of these were flagged before because no single research pass had reason
+  to check.
+- **Living-persons discipline held under real pressure.** Several entries touch genuinely
+  sensitive territory — Ben Gvir's Irgun-veteran mother, Smotrich's own family home's disputed
+  building-plan status, Son Har-Melech's first husband's murder and her own wounding in the same
+  2003 attack, Gantz's wife's Alzheimer's diagnosis, Maoz's wedding officiant's pointedly opposite
+  politics — each kept to documented fact with a real citation, no editorializing added.
+- **Not every entry warranted two items the way Netanyahu's did** — most people got one solid,
+  well-sourced personal_context entry rather than being padded to match Netanyahu's depth; some
+  (Katz, Halevy) are genuinely thin in what's publicly documented about their personal lives, and
+  the entries reflect that honestly rather than manufacturing color that isn't there.
+
+Full collision + dangling-reference check clean at every checkpoint. Final state: 36 actors, 24
+knesset_members (all with personal_context), 41 orgs, 55 topics, 16 laws — unchanged elsewhere.
+Six publishes, six commits. Browser preview tool remained down the entire sweep; every publish
+verified via `node --check` on the extracted script plus JSON/collision checks, the workaround
+established two rounds ago.
+
 ## Open
 
 - Actor roster, organizations, and MK calibration sets still awaiting Nick's review.
