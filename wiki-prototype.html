@@ -9234,7 +9234,13 @@
   }
 
   function netApplyViewBox() {
-    document.getElementById('netGraphSvg').setAttribute('viewBox', NET.viewBox.x+' '+NET.viewBox.y+' '+NET.viewBox.w+' '+NET.viewBox.h);
+    // Reachable from a requestAnimationFrame loop (netAnimateViewBox's step()), which can still
+    // have a frame in flight after the visitor has navigated off #/network and this svg no
+    // longer exists -- guard rather than crash; the loop naturally stops scheduling more frames
+    // once its own duration elapses.
+    var svg = document.getElementById('netGraphSvg');
+    if (!svg) return;
+    svg.setAttribute('viewBox', NET.viewBox.x+' '+NET.viewBox.y+' '+NET.viewBox.w+' '+NET.viewBox.h);
   }
 
   function netMakeShape(kind, r) {
