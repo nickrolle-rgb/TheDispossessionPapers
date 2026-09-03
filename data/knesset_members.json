@@ -31,7 +31,7 @@
       {
         "title": "Trained as a construction engineer, and died en route to a rest cure",
         "date_or_range": "1917-1952",
-        "description": "Before politics, Kaplan trained as a construction engineer, earning his diploma from Moscow's Higher School for Technology in 1917, and put it to direct use as director of Tel Aviv's municipal technical department (1923-1925) before serving on the city council through 1933. He resigned as Finance Minister in 1952 due to failing health and died that July in Genoa, Italy, while traveling to Switzerland for a planned three-month rest. Several places carry his name today, including the Kaplan Medical Center in Rehovot.",
+        "description": "Before politics, Kaplan trained as a construction engineer, earning his diploma from Moscow's Higher School for Technology in 1917, and put it to direct use as director of Tel Aviv's municipal technical department (1923-1925) before serving on the city council through 1933. He resigned as Finance Minister in 1952 due to failing health and died that July in Genoa, Italy, while travelling to Switzerland for a planned three-month rest. Several places carry his name today, including the Kaplan Medical Center in Rehovot.",
         "citation": "VERIFIED 2026-09-02 — the engineering training, the Tel Aviv municipal/city council work, and the 1952 death in Genoa en route to Switzerland are corroborated via live search (Wikipedia's Eliezer Kaplan article, Jewish Telegraphic Agency's 1952 death coverage)."
       }
     ]
@@ -80,13 +80,41 @@
     "birth_name": "Reuven Rivlin",
     "birth_country": "British Mandatory Palestine (Jerusalem)",
     "knesset_terms": [
-      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 12,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 14,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 15,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -111,7 +139,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "As Knesset Speaker, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, but was withdrawn by the government six months later after mass protests — recorded here rather than smoothed over, a real data point on a figure otherwise better known for a more consensus-minded later reputation as President."
+          "description": "As Knesset Speaker, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, but was withdrawn by the government six months later after mass protests — recorded here rather than smoothed over, a real data point on a figure otherwise better known for a more consensus-minded later reputation as President."
         },
         "citation": "VERIFIED 2026-09-01 — Rivlin's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       }
@@ -132,11 +160,31 @@
     "birth_name": "Naftali Bennett",
     "birth_country": "State of Israel (Haifa)",
     "knesset_terms": [
-      { "knesset_number": 19, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 20, "party": "Jewish Home / New Right", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "New Right / Yamina", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Yamina", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Yamina", "political_alignment": "Right" }
+      {
+        "knesset_number": 19,
+        "party": "Jewish Home",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Jewish Home / New Right",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "New Right / Yamina",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Yamina",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Yamina",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -161,7 +209,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Education Minister and Jewish Home leader, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land. Struck down by Israel's Supreme Court in June 2020."
+          "description": "As Education Minister and Jewish Home leader, voted for the law retroactively legalising West Bank outposts built on private Palestinian land. Struck down by Israel's Supreme Court in June 2020."
         },
         "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -174,7 +222,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       },
@@ -187,7 +235,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "Voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -200,7 +248,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Yamina leader and opposition MK — roughly six months before becoming Prime Minister — voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "As Yamina leader and opposition MK — roughly six months before becoming Prime Minister — voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Bennett's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       }
@@ -221,11 +269,31 @@
     "birth_name": "Ayelet Shaked",
     "birth_country": "State of Israel (Tel Aviv)",
     "knesset_terms": [
-      { "knesset_number": 19, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 20, "party": "Jewish Home / New Right", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "New Right / Yamina", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Yamina", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Yamina", "political_alignment": "Right" }
+      {
+        "knesset_number": 19,
+        "party": "Jewish Home",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Jewish Home / New Right",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "New Right / Yamina",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Yamina",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Yamina",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -250,7 +318,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Justice Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land — a law her own ministry would later decline to defend once challenged in court, before it was struck down in 2020."
+          "description": "As Justice Minister, voted for the law retroactively legalising West Bank outposts built on private Palestinian land — a law her own ministry would later decline to defend once challenged in court, before it was struck down in 2020."
         },
         "citation": "VERIFIED 2026-09-01 — Shaked's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -263,7 +331,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As one of 15 co-sponsoring MKs, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "As one of 15 co-sponsoring MKs, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Shaked's individual 'For' vote, her co-sponsorship (confirmed via the Knesset's own OData API), and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       }
@@ -284,12 +352,36 @@
     "birth_name": "Bezalel Smotrich",
     "birth_country": "State of Israel (Haspin, Golan Heights)",
     "knesset_terms": [
-      { "knesset_number": 20, "party": "Jewish Home", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 21, "party": "Jewish Home – National Union", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 22, "party": "Yamina / National Union", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Yamina / National Union", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 25, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" }
+      {
+        "knesset_number": 20,
+        "party": "Jewish Home",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Jewish Home – National Union",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Yamina / National Union",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Yamina / National Union",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Religious Zionism",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Religious Zionism",
+        "political_alignment": "Religious Nationalist"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -314,7 +406,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+          "description": "Voted for the law retroactively legalising West Bank outposts built on private Palestinian land."
         },
         "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -353,7 +445,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "Voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -405,7 +497,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As one of 15 co-sponsoring MKs, voted for his own bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "As one of 15 co-sponsoring MKs, voted for his own bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Smotrich's individual 'For' vote, his sponsorship (confirmed via the Knesset's own OData API), and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       }
@@ -414,7 +506,7 @@
       {
         "title": "Seven children, a rabbi father, and a family home built outside his own settlement's approved plan",
         "date_or_range": "current",
-        "description": "The son of an Orthodox rabbi, Smotrich attended Mercaz HaRav Kook and other religious institutions before earning a law degree from Ono Academic College and an LLM in public and international law from the Hebrew University. He's married to Revital, with whom he has seven children (their names kept private). The family lives outside the Kedumim settlement in the West Bank, in a house press reporting describes as built outside the area zoned for state land, in breach of the settlement's own master plan — a detail with real irony given how central settlement legalization is to his own legislative record documented elsewhere in this dataset.",
+        "description": "The son of an Orthodox rabbi, Smotrich attended Mercaz HaRav Kook and other religious institutions before earning a law degree from Ono Academic College and an LLM in public and international law from the Hebrew University. He's married to Revital, with whom he has seven children (their names kept private). The family lives outside the Kedumim settlement in the West Bank, in a house press reporting describes as built outside the area zoned for state land, in breach of the settlement's own master plan — a detail with real irony given how central settlement legalisation is to his own legislative record documented elsewhere in this dataset.",
         "citation": "VERIFIED 2026-09-02 — the rabbinic family background, the Ono Academic College/Hebrew University legal education, the marriage and seven children, and the family home's building-plan status are corroborated via live search (Ynetnews's 'Bezalel Smotrich: The controversial and feared Netanyahu ally' profile, Wikipedia's Bezalel Smotrich article)."
       }
     ]
@@ -426,17 +518,61 @@
     "birth_name": "Evet Lvovich Lieberman",
     "birth_country": "Soviet Union (Kishinev, Moldavian SSR, present-day Chișinău, Moldova)",
     "knesset_terms": [
-      { "knesset_number": 15, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "National Union-Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Yisrael Beiteinu", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Yisrael Beiteinu", "political_alignment": "Right" }
+      {
+        "knesset_number": 15,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "National Union-Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Yisrael Beiteinu",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -448,7 +584,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
           "estimated_hectares_affected": null,
-          "description": "As Yisrael Beiteinu leader, voted for the law formalizing small communities' authority to reject prospective residents on 'social-cultural fabric' grounds — used in practice to exclude Palestinian Arab citizens from public-land communities in the Negev and Galilee."
+          "description": "As Yisrael Beiteinu leader, voted for the law formalising small communities' authority to reject prospective residents on 'social-cultural fabric' grounds — used in practice to exclude Palestinian Arab citizens from public-land communities in the Negev and Galilee."
         },
         "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally). Born name and birthplace corroborated via live search (Britannica's Avigdor Lieberman entry)."
       },
@@ -552,7 +688,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -565,7 +701,7 @@
         "land_impact": {
           "spatial_region": "State of Israel",
           "estimated_hectares_affected": null,
-          "description": "As Yisrael Beiteinu leader — the same party as the bill's own sponsor, Alex Miller — voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+          "description": "As Yisrael Beiteinu leader — the same party as the bill's own sponsor, Alex Miller — voted for the law authorising the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Liberman's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
       },
@@ -578,7 +714,7 @@
         "land_impact": {
           "spatial_region": "Jerusalem (Ma'alot Dafna and Kafr Aqab)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the first reading of the bill cutting electricity/water/communications/banking service to UNRWA facilities and authorizing seizure of two specific state-leased UNRWA office properties in Jerusalem without legal process. Passed a final third reading 59-7 on 29 December 2025."
+          "description": "Voted for the first reading of the bill cutting electricity/water/communications/banking service to UNRWA facilities and authorising seizure of two specific state-leased UNRWA office properties in Jerusalem without legal process. Passed a final third reading 59-7 on 29 December 2025."
         },
         "citation": "VERIFIED 2026-09-02 — Liberman's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 44766); this scrape row shows a 4-2 attendance tally at the first reading, while contemporary press (WAFA) reported the same first-reading vote as 28-8 — the same kind of scrape-vs-announced-tally variance already flagged elsewhere in this dataset (e.g. the Communities and Neighborhoods in Regularization Processes Bill), not independently reconciled this pass. The final 59-7 third-reading figure is press-only, consistent with this dataset's own already-verified UNRWA law entry."
       }
@@ -599,14 +735,46 @@
     "birth_name": "Yariv Gideon Levin",
     "birth_country": "State of Israel (Jerusalem)",
     "knesset_terms": [
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -631,7 +799,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+          "description": "Voted for the law retroactively legalising West Bank outposts built on private Palestinian land."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -657,7 +825,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law formalizing small communities' authority to reject prospective residents, used in practice to exclude Palestinian Arab citizens from public-land communities. The only MK in this dataset's ledger so far with a 'For' vote recorded on all four of the 2011-2018 laws tracked here."
+          "description": "Voted for the law formalising small communities' authority to reject prospective residents, used in practice to exclude Palestinian Arab citizens from public-land communities. The only MK in this dataset's ledger so far with a 'For' vote recorded on all four of the 2011-2018 laws tracked here."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally)."
       },
@@ -683,7 +851,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       },
@@ -696,7 +864,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "Voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -800,7 +968,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -813,7 +981,7 @@
         "land_impact": {
           "spatial_region": "State of Israel",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+          "description": "Voted for the law authorising the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Levin's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
       },
@@ -847,15 +1015,51 @@
     "birth_name": "Vladimir Borisovich Elkin",
     "birth_country": "Soviet Union (Kharkiv, Ukrainian SSR)",
     "knesset_terms": [
-      { "knesset_number": 17, "party": "Kadima", "political_alignment": "Center" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "New Hope", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "HaMachane HaMamlachti", "political_alignment": "Right" }
+      {
+        "knesset_number": 17,
+        "party": "Kadima",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "New Hope",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "HaMachane HaMamlachti",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -880,7 +1084,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+          "description": "Voted for the law retroactively legalising West Bank outposts built on private Palestinian land."
         },
         "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -893,7 +1097,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab; Galilee — small communities on public land",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law formalizing small communities' authority to reject prospective residents on 'social-cultural fabric' grounds."
+          "description": "Voted for the law formalising small communities' authority to reject prospective residents on 'social-cultural fabric' grounds."
         },
         "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15586, 35-20 final tally)."
       },
@@ -919,7 +1123,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "As a sitting Likud MK before his later move to New Hope, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "As a sitting Likud MK before his later move to New Hope, voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -984,7 +1188,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As a sitting Likud MK, before his later move to New Hope, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "As a sitting Likud MK, before his later move to New Hope, voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -997,7 +1201,7 @@
         "land_impact": {
           "spatial_region": "State of Israel",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+          "description": "Voted for the law authorising the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Elkin's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
       },
@@ -1031,12 +1235,36 @@
     "birth_name": "Tzipi Hotovely",
     "birth_country": "State of Israel (Rehovot)",
     "knesset_terms": [
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1048,7 +1276,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Deputy Foreign Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land. Hotovely, born to Georgian Jewish immigrant parents, later served as Minister of Settlement Affairs and as Israel's Ambassador to the United Kingdom (2020-2025)."
+          "description": "As Deputy Foreign Minister, voted for the law retroactively legalising West Bank outposts built on private Palestinian land. Hotovely, born to Georgian Jewish immigrant parents, later served as Minister of Settlement Affairs and as Israel's Ambassador to the United Kingdom (2020-2025)."
         },
         "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally). Her parents' Georgian-Jewish background, Settlement Affairs portfolio, and UK ambassadorship are corroborated via live search (Wikipedia's Tzipi Hotovely article, Jewish Virtual Library)."
       },
@@ -1074,7 +1302,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "As Deputy Foreign Minister, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "As Deputy Foreign Minister, voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -1087,7 +1315,7 @@
         "land_impact": {
           "spatial_region": "State of Israel",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+          "description": "Voted for the law authorising the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Hotovely's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
       },
@@ -1121,14 +1349,46 @@
     "birth_name": "Miriam Siboni",
     "birth_country": "State of Israel (Kiryat Gat)",
     "knesset_terms": [
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1166,7 +1426,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       },
@@ -1218,7 +1478,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Regev's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -1252,20 +1512,76 @@
     "birth_name": "Benjamin Netanyahu",
     "birth_country": "State of Israel (Tel Aviv)",
     "knesset_terms": [
-      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 13, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 12,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 13,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 14,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 15,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1329,7 +1645,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "As Prime Minister, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "As Prime Minister, voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -1383,20 +1699,20 @@
           "estimated_hectares_affected": null,
           "description": "As Prime Minister, voted for the final passage of the law making death by hanging mandatory for murder committed 'with the aim of denying the existence of the State of Israel' — a standard worded to exclude Jewish perpetrators. Passed 62-48-1, after eight prior failed attempts across a decade, this one sponsored by his own coalition."
         },
-        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), exactly matching live-searched press reporting naming him among the law's supporters (Jerusalem Post's 'Knesset approves death penalty for terrorists bill, Benjamin Netanyahu in favor'), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
+        "citation": "VERIFIED 2026-09-01 — Netanyahu's individual 'For' vote and the 62-48-1 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45858), exactly matching live-searched press reporting naming him among the law's supporters (Jerusalem Post's 'Knesset approves death penalty for terrorists bill, Benjamin Netanyahu in favour'), consistent with this dataset's own already-verified Death Penalty for Terrorists Law entry."
       }
     ],
     "personal_context": [
       {
         "title": "Brother killed leading the Entebbe raid",
         "date_or_range": "1976-07-04",
-        "description": "His older brother, Lt. Col. Yonatan 'Yoni' Netanyahu, commanded the 29-person Sayeret Matkal assault unit in Operation Thunderbolt — the July 1976 raid to rescue 106 hostages held at Entebbe Airport, Uganda, after Air France Flight 139 was hijacked. Of the 102 hostages rescued, Yonatan Netanyahu was the sole Israeli military fatality; the operation was renamed Operation Yonatan in his memory. The raid, and his brother's death leading it, are widely cited as a formative influence on Netanyahu's own entry into public life — he became active in his brother's memory through the Jonathan Institute, a counter-terrorism policy organization, in the years that followed.",
-        "citation": "VERIFIED 2026-09-01 — the 27 June 1976 hijacking, the 106-hostage count after non-Israeli releases, the 3-4 July raid date, the 102-of-106 rescue figure, Yonatan Netanyahu's command role and sole-fatality status, and the operation's renaming in his honor are corroborated via live search (Wikipedia's Entebbe raid article, Jerusalem Post's 50th-anniversary coverage in 2026)."
+        "description": "His older brother, Lt. Col. Yonatan 'Yoni' Netanyahu, commanded the 29-person Sayeret Matkal assault unit in Operation Thunderbolt — the July 1976 raid to rescue 106 hostages held at Entebbe Airport, Uganda, after Air France Flight 139 was hijacked. Of the 102 hostages rescued, Yonatan Netanyahu was the sole Israeli military fatality; the operation was renamed Operation Yonatan in his memory. The raid, and his brother's death leading it, are widely cited as a formative influence on Netanyahu's own entry into public life — he became active in his brother's memory through the Jonathan Institute, a counter-terrorism policy organisation, in the years that followed.",
+        "citation": "VERIFIED 2026-09-01 — the 27 June 1976 hijacking, the 106-hostage count after non-Israeli releases, the 3-4 July raid date, the 102-of-106 rescue figure, Yonatan Netanyahu's command role and sole-fatality status, and the operation's renaming in his honour are corroborated via live search (Wikipedia's Entebbe raid article, Jerusalem Post's 50th-anniversary coverage in 2026)."
       },
       {
         "title": "Ongoing corruption trial (Cases 1000, 2000, and 4000)",
         "date_or_range": "2019-11-21 to present",
-        "description": "Indicted on 21 November 2019 by Attorney General Avichai Mandelblit, the first sitting Israeli Prime Minister ever criminally charged in office. Case 1000 alleges fraud and breach of trust over gifts accepted from wealthy businessmen. Case 2000 alleges fraud and breach of trust over a discussed arrangement with Yedioth Ahronoth publisher Arnon Mozes for more favorable coverage. Case 4000, the most serious, alleges bribery, fraud, and breach of trust over claims Netanyahu advanced regulatory benefits for the Bezeq telecom company in exchange for favorable coverage on the Bezeq-owned Walla news site. Trial proceedings began in 2020 and are still ongoing as of this entry: Netanyahu's own testimony concluded in June 2026 after 98 hearings across roughly 18 months, and as of July 2026 the presiding judges have twice suggested the prosecution consider dropping the Case 4000 bribery charge while retaining the lesser breach-of-trust counts — no charge has been dropped and no verdict has been reached. All allegations above remain exactly that: charged, not proven, pending a verdict.",
+        "description": "Indicted on 21 November 2019 by Attorney General Avichai Mandelblit, the first sitting Israeli Prime Minister ever criminally charged in office. Case 1000 alleges fraud and breach of trust over gifts accepted from wealthy businessmen. Case 2000 alleges fraud and breach of trust over a discussed arrangement with Yedioth Ahronoth publisher Arnon Mozes for more favourable coverage. Case 4000, the most serious, alleges bribery, fraud, and breach of trust over claims Netanyahu advanced regulatory benefits for the Bezeq telecom company in exchange for favourable coverage on the Bezeq-owned Walla news site. Trial proceedings began in 2020 and are still ongoing as of this entry: Netanyahu's own testimony concluded in June 2026 after 98 hearings across roughly 18 months, and as of July 2026 the presiding judges have twice suggested the prosecution consider dropping the Case 4000 bribery charge while retaining the lesser breach-of-trust counts — no charge has been dropped and no verdict has been reached. All allegations above remain exactly that: charged, not proven, pending a verdict.",
         "citation": "VERIFIED 2026-09-01 — the 21 November 2019 indictment date, the 'first sitting PM' status, and the specific charges in each of the three cases are corroborated via live search (Times of Israel's indictment coverage, ABC News, PBS Frontline). The 98-hearings/June 2026 testimony conclusion and the July 2026 judicial suggestion to reconsider the bribery charge are corroborated via live search (Times of Israel's 'Netanyahu wraps up trial testimony' and 'Judges in Netanyahu trial again suggest to prosecution to drop bribery charge' articles). No verdict had been reached as of this entry's 2026-09-01 write date."
       }
     ]
@@ -1408,8 +1724,16 @@
     "birth_name": "Itamar Ben-Gvir",
     "birth_country": "State of Israel",
     "knesset_terms": [
-      { "knesset_number": 24, "party": "Religious Zionism / Otzma Yehudit", "political_alignment": "Far-Right" },
-      { "knesset_number": 25, "party": "Otzma Yehudit", "political_alignment": "Far-Right" }
+      {
+        "knesset_number": 24,
+        "party": "Religious Zionism / Otzma Yehudit",
+        "political_alignment": "Far-Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Otzma Yehudit",
+        "political_alignment": "Far-Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1455,14 +1779,14 @@
         "event_id": "ben-gvir-settler-arms-policy-2023-2024",
         "date": "2023-2024",
         "category": "Executive Action",
-        "bill_or_action_title": "Gun-license relaxation and settler civilian-watch expansion",
+        "bill_or_action_title": "Gun-licence relaxation and settler civilian-watch expansion",
         "vote": "N/A for Non-Legislative",
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Following the 7 October 2023 Hamas-led attack, oversaw a rapid relaxation of gun-license restrictions for Israeli civilians and promoted armed civilian neighborhood-watch units in West Bank settlements — a documented increase in armed settler capacity under his ministry's direct policy."
+          "description": "Following the 7 October 2023 Hamas-led attack, oversaw a rapid relaxation of gun-licence restrictions for Israeli civilians and promoted armed civilian neighbourhood-watch units in West Bank settlements — a documented increase in armed settler capacity under his ministry's direct policy."
         },
-        "citation": "VERIFIED 2026-09-01 — the post-7 October 2023 gun-license relaxation and settler civilian-watch promotion are corroborated via live search (Al Jazeera's 'Who is Israel's far-right, pro-settler Security Minister Ben-Gvir?')."
+        "citation": "VERIFIED 2026-09-01 — the post-7 October 2023 gun-licence relaxation and settler civilian-watch promotion are corroborated via live search (Al Jazeera's 'Who is Israel's far-right, pro-settler Security Minister Ben-Gvir?')."
       },
       {
         "event_id": "ben-gvir-international-sanctions-2025",
@@ -1533,18 +1857,66 @@
     "birth_name": "Yuli-Yoel Edelstein",
     "birth_country": "Soviet Union (Chernivtsi, Ukrainian SSR)",
     "knesset_terms": [
-      { "knesset_number": 14, "party": "Yisrael BaAliyah", "political_alignment": "Right" },
-      { "knesset_number": 15, "party": "Yisrael BaAliyah", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 14,
+        "party": "Yisrael BaAliyah",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 15,
+        "party": "Yisrael BaAliyah",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1569,7 +1941,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+          "description": "Voted for the law retroactively legalising West Bank outposts built on private Palestinian land."
         },
         "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -1647,7 +2019,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       },
@@ -1660,7 +2032,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "As Knesset Speaker, voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "As Knesset Speaker, voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -1738,7 +2110,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -1751,7 +2123,7 @@
         "land_impact": {
           "spatial_region": "State of Israel",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law authorizing the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
+          "description": "Voted for the law authorising the Finance Minister to withhold state funding from institutions that mark Israel's Independence Day as a day of mourning. Passed 37-25."
         },
         "citation": "VERIFIED 2026-09-01 — Edelstein's individual 'For' vote and the 37-25 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 15579), consistent with this dataset's own already-verified Nakba Law entry."
       },
@@ -1785,19 +2157,71 @@
     "birth_name": "Tzachi Hanegbi",
     "birth_country": "State of Israel (Jerusalem)",
     "knesset_terms": [
-      { "knesset_number": 12, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 13, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Kadima", "political_alignment": "Center" },
-      { "knesset_number": 18, "party": "Kadima", "political_alignment": "Center" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 12,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 13,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 14,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 15,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Kadima",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Kadima",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1822,7 +2246,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the law retroactively legalizing West Bank outposts built on private Palestinian land, after returning to Likud in 2012."
+          "description": "Voted for the law retroactively legalising West Bank outposts built on private Palestinian land, after returning to Likud in 2012."
         },
         "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -1874,7 +2298,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "Voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -1913,7 +2337,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization. Advanced toward second and third readings, 60-40."
+          "description": "Voted for the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation. Advanced toward second and third readings, 60-40."
         },
         "citation": "VERIFIED 2026-09-01 — Hanegbi's individual 'For' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       }
@@ -1922,7 +2346,7 @@
       {
         "title": "Both parents were Lehi underground fighters, already documented elsewhere in this dataset",
         "date_or_range": "circa 1940s",
-        "description": "Born in Jerusalem to two figures from the same Lehi underground this dataset already profiles as an organization: his mother, Geula Cohen, joined Begin's Irgun as a teenager before moving to the more radical Lehi, where she served as the movement's own radio announcer, later became a Likud and Tehiya Knesset member in her own right, and won the Israel Prize in 2003; she died in December 2019 at 93. His father, Emmanuel 'Adam' Hanegbi, was one of Lehi's more prominent commanders, and it was through the underground that his parents met and married.",
+        "description": "Born in Jerusalem to two figures from the same Lehi underground this dataset already profiles as an organisation: his mother, Geula Cohen, joined Begin's Irgun as a teenager before moving to the more radical Lehi, where she served as the movement's own radio announcer, later became a Likud and Tehiya Knesset member in her own right, and won the Israel Prize in 2003; she died in December 2019 at 93. His father, Emmanuel 'Adam' Hanegbi, was one of Lehi's more prominent commanders, and it was through the underground that his parents met and married.",
         "citation": "VERIFIED 2026-09-02 — Geula Cohen's Irgun/Lehi history, radio-announcer role, later Knesset career and 2003 Israel Prize, and Emmanuel Hanegbi's Lehi command role are corroborated via live search (Wikipedia's Geula Cohen and Tzachi Hanegbi articles, Jewish Women's Archive's Geulah Cohen entry)."
       }
     ]
@@ -1934,18 +2358,66 @@
     "birth_name": "Israel Katz",
     "birth_country": "State of Israel (Ashkelon)",
     "knesset_terms": [
-      { "knesset_number": 14, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 15, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 20, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 14,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 15,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -1970,7 +2442,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Transport Minister, voted for the law retroactively legalizing West Bank outposts built on private Palestinian land."
+          "description": "As Transport Minister, voted for the law retroactively legalising West Bank outposts built on private Palestinian land."
         },
         "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 37628, 60-52 final tally)."
       },
@@ -2009,7 +2481,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "Voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry."
       },
@@ -2022,7 +2494,7 @@
         "land_impact": {
           "spatial_region": "East Jerusalem",
           "estimated_hectares_affected": null,
-          "description": "Voted for an earlier reading of the amendment authorizing the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
+          "description": "Voted for an earlier reading of the amendment authorising the Interior Minister to revoke East Jerusalem residents' permanent residency status for 'breach of allegiance,' drafted after Israel's Supreme Court blocked the same outcome administratively. Final reading passed 48-18-6 on 7 March 2018."
         },
         "citation": "VERIFIED 2026-09-01 — Katz's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 28398, 3 January 2018, 63-17 tally on this reading), consistent with this dataset's own already-verified Entry into Israel Law Amendment No. 30 law entry, which notes this scraped vote is an earlier reading rather than the final 7 March passage."
       },
@@ -2108,8 +2580,16 @@
     "birth_name": "Simcha Dan Rothman",
     "birth_country": "State of Israel (Bnei Brak)",
     "knesset_terms": [
-      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" },
-      { "knesset_number": 25, "party": "Religious Zionism", "political_alignment": "Religious Nationalist" }
+      {
+        "knesset_number": 24,
+        "party": "Religious Zionism",
+        "political_alignment": "Religious Nationalist"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Religious Zionism",
+        "political_alignment": "Religious Nationalist"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2212,7 +2692,7 @@
         "land_impact": {
           "spatial_region": "State of Israel; West Bank",
           "estimated_hectares_affected": null,
-          "description": "As the bill's own sponsor, voted for his bill barring administrative detention against Israeli citizens (with a narrow terror-organization-membership exception) while leaving the same power fully intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51, despite Shin Bet warnings."
+          "description": "As the bill's own sponsor, voted for his bill barring administrative detention against Israeli citizens (with a narrow terror-organisation-membership exception) while leaving the same power fully intact against West Bank Palestinian suspects. Passed a preliminary reading 54-51, despite Shin Bet warnings."
         },
         "citation": "VERIFIED 2026-09-01 — Rothman's individual 'For' vote, his sponsorship (confirmed directly via the Knesset's own OData API, naming his roster person_id 30812 as sole initiator), and the 54-51 tally are drawn directly from this project's own completed Knesset vote-results scrape, found under the same person_id 32700 as his other votes in this entry (vote_id 41222), consistent with this dataset's own already-verified topic entry for this bill."
       },
@@ -2246,7 +2726,11 @@
     "birth_name": "Limor Son Har-Melech",
     "birth_country": "State of Israel",
     "knesset_terms": [
-      { "knesset_number": 25, "party": "Otzma Yehudit", "political_alignment": "Far-Right" }
+      {
+        "knesset_number": 25,
+        "party": "Otzma Yehudit",
+        "political_alignment": "Far-Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2258,7 +2742,7 @@
         "land_impact": {
           "spatial_region": "Northern West Bank (Homesh, Sa-Nur, Ganim, Kadim)",
           "estimated_hectares_affected": null,
-          "description": "A former resident of the northern West Bank settlement of Homesh before it was razed in the 2005 disengagement, and co-founder of Homesh First, an organization seeking to rebuild it — voted for repealing the entry/residence ban on the very land she had been evacuated from eighteen years earlier. Passed 31-18. Among the most directly personally-interested votes in this dataset's entire ledger."
+          "description": "A former resident of the northern West Bank settlement of Homesh before it was razed in the 2005 disengagement, and co-founder of Homesh First, an organisation seeking to rebuild it — voted for repealing the entry/residence ban on the very land she had been evacuated from eighteen years earlier. Passed 31-18. Among the most directly personally-interested votes in this dataset's entire ledger."
         },
         "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote and the 31-18 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 38430). Note: this vote's results record her under person_id 34372 rather than the mk_roster's person_id 30849 for the same name — the same class of ID discrepancy found in Simcha Rothman's entry in this same batch; the exact-name match is unambiguous. Her Homesh residency and Homesh First co-founding are corroborated via live search (Wikipedia's Limor Son Har-Melech article, Times of Israel)."
       },
@@ -2286,7 +2770,7 @@
           "estimated_hectares_affected": null,
           "description": "Voted for the bill creating a 'Judea and Samaria Heritage Authority' to place West Bank antiquities, archaeology, and heritage sites under direct Israeli civilian administration — critics describe the move as de facto annexation by administrative means. Passed a first reading 23-14, alongside a companion Antiquities Authority amendment extending the Israel Antiquities Authority's own jurisdiction into the West Bank, passed 22-14 the same session."
         },
-        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45930, 23-14 final tally; companion vote_id 45929, 22-14 final tally), found under the same person_id 34372 as her other votes in this entry. The bill's stated purpose, sponsor's quote, and 'de facto annexation' characterization are corroborated via live search (Times of Israel, 'Knesset advances controversial West Bank antiquity bill in first reading')."
+        "citation": "VERIFIED 2026-09-01 — Son Har-Melech's individual 'For' vote is drawn directly from this project's own completed Knesset vote-results scrape (vote_id 45930, 23-14 final tally; companion vote_id 45929, 22-14 final tally), found under the same person_id 34372 as her other votes in this entry. The bill's stated purpose, sponsor's quote, and 'de facto annexation' characterisation are corroborated via live search (Times of Israel, 'Knesset advances controversial West Bank antiquity bill in first reading')."
       },
       {
         "event_id": "son-har-melech-negev-galilee-veterans-land-vote-2023",
@@ -2344,13 +2828,41 @@
     "birth_name": "Yair Lapid",
     "birth_country": "State of Israel (Tel Aviv)",
     "knesset_terms": [
-      { "knesset_number": 19, "party": "Yesh Atid", "political_alignment": "Center" },
-      { "knesset_number": 20, "party": "Yesh Atid", "political_alignment": "Center" },
-      { "knesset_number": 21, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 22, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 23, "party": "Yesh Atid", "political_alignment": "Center" },
-      { "knesset_number": 24, "party": "Yesh Atid", "political_alignment": "Center" },
-      { "knesset_number": 25, "party": "Yesh Atid", "political_alignment": "Center" }
+      {
+        "knesset_number": 19,
+        "party": "Yesh Atid",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 20,
+        "party": "Yesh Atid",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Yesh Atid",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Yesh Atid",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Yesh Atid",
+        "political_alignment": "Center"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2401,7 +2913,7 @@
         "land_impact": {
           "spatial_region": "West Bank",
           "estimated_hectares_affected": null,
-          "description": "As Yesh Atid leader, voted against the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularization — one of the few 'Against' votes recorded against this broadly coalition-and-opposition-backed bill, which advanced 60-40 regardless."
+          "description": "As Yesh Atid leader, voted against the bill granting government financial support and infrastructure connection to West Bank outposts undergoing regularisation — one of the few 'Against' votes recorded against this broadly coalition-and-opposition-backed bill, which advanced 60-40 regardless."
         },
         "citation": "VERIFIED 2026-09-01 — Lapid's individual 'Against' vote and the 60-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 33854), consistent with this dataset's own already-verified topic entry for this bill."
       }
@@ -2422,11 +2934,31 @@
     "birth_name": "Benjamin Gantz",
     "birth_country": "State of Israel (Kfar Ahim)",
     "knesset_terms": [
-      { "knesset_number": 21, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 22, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 23, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 24, "party": "Blue and White", "political_alignment": "Center" },
-      { "knesset_number": 25, "party": "National Unity", "political_alignment": "Center" }
+      {
+        "knesset_number": 21,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 24,
+        "party": "Blue and White",
+        "political_alignment": "Center"
+      },
+      {
+        "knesset_number": 25,
+        "party": "National Unity",
+        "political_alignment": "Center"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2485,15 +3017,51 @@
     "birth_name": "Gideon Moshe Sa'ar",
     "birth_country": "State of Israel (Tel Aviv)",
     "knesset_terms": [
-      { "knesset_number": 16, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 17, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 18, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 19, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 21, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 22, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 24, "party": "New Hope", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "National Unity", "political_alignment": "Right" }
+      {
+        "knesset_number": 16,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 17,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 18,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 19,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 21,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 22,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 24,
+        "party": "New Hope",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "National Unity",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2518,7 +3086,7 @@
         "land_impact": {
           "spatial_region": "Negev/Naqab (Bedouin communities)",
           "estimated_hectares_affected": null,
-          "description": "As Interior Minister, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognized Negev villages into planned townships — a portfolio directly responsible for the bill's implementation. Passed a first reading 43-40, later withdrawn by the government after mass protests."
+          "description": "As Interior Minister, voted for the government bill to relocate an estimated 30,000-40,000 Bedouin citizens of Israel from unrecognised Negev villages into planned townships — a portfolio directly responsible for the bill's implementation. Passed a first reading 43-40, later withdrawn by the government after mass protests."
         },
         "citation": "VERIFIED 2026-09-01 — Sa'ar's individual 'For' vote and the 43-40 tally are drawn directly from this project's own completed Knesset vote-results scrape (vote_id 19025), consistent with this dataset's own already-verified Prawer-Begin Bill topic entry. His Interior Ministry tenure (2009, then 2013-2014 as Interior Minister specifically) is corroborated via live search (Wikipedia's Gideon Sa'ar article)."
       },
@@ -2565,8 +3133,16 @@
     "birth_name": "Avigdor Fischheimer",
     "birth_country": "State of Israel (Haifa)",
     "knesset_terms": [
-      { "knesset_number": 24, "party": "Religious Zionism", "political_alignment": "Far-Right" },
-      { "knesset_number": 25, "party": "Noam", "political_alignment": "Far-Right" }
+      {
+        "knesset_number": 24,
+        "party": "Religious Zionism",
+        "political_alignment": "Far-Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Noam",
+        "political_alignment": "Far-Right"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2638,7 +3214,11 @@
     "birth_name": "Yitzhak Issachar Goldknopf",
     "birth_country": "State of Israel (Jerusalem)",
     "knesset_terms": [
-      { "knesset_number": 25, "party": "United Torah Judaism", "political_alignment": "Religious Nationalist" }
+      {
+        "knesset_number": 25,
+        "party": "United Torah Judaism",
+        "political_alignment": "Religious Nationalist"
+      }
     ],
     "legislative_and_action_record": [
       {
@@ -2684,8 +3264,16 @@
     "birth_name": "Amit Halevy",
     "birth_country": "State of Israel",
     "knesset_terms": [
-      { "knesset_number": 23, "party": "Likud", "political_alignment": "Right" },
-      { "knesset_number": 25, "party": "Likud", "political_alignment": "Right" }
+      {
+        "knesset_number": 23,
+        "party": "Likud",
+        "political_alignment": "Right"
+      },
+      {
+        "knesset_number": 25,
+        "party": "Likud",
+        "political_alignment": "Right"
+      }
     ],
     "legislative_and_action_record": [
       {

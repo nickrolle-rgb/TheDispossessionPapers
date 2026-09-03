@@ -8,7 +8,7 @@
     "dissolution_date": "1920",
     "ideology": [
       "Labor Zionism",
-      "Jewish self-defense"
+      "Jewish self-defence"
     ],
     "lineage": {
       "predecessor_orgs": [],
@@ -29,7 +29,7 @@
         "action_type": "Land Settlement Operation",
         "title": "Founding of Hashomer as armed guard service for Jewish settlements",
         "location_affected": "Galilee and Jezreel Valley settlements",
-        "description": "Bar-Giora (founded 28 September 1907, secret) voted at a 12 April 1909 meeting in Mes'ha to disband and reconstitute openly as the larger Hashomer, providing paid armed guarding for Jewish agricultural settlements in place of the Arab/Circassian guards many colonies had previously employed — an early institutionalization of independent Jewish armed presence on purchased land.",
+        "description": "Bar-Giora (founded 28 September 1907, secret) voted at a 12 April 1909 meeting in Mes'ha to disband and reconstitute openly as the larger Hashomer, providing paid armed guarding for Jewish agricultural settlements in place of the Arab/Circassian guards many colonies had previously employed — an early institutionalisation of independent Jewish armed presence on purchased land.",
         "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Yisrael Shochat actor entry, which independently corroborates the 28 September 1907 Bar-Giora founding and the 12 April 1909 Mes'ha meeting."
       }
     ],
@@ -44,7 +44,7 @@
     "dissolution_date": "1948-05-31",
     "ideology": [
       "Labor Zionism",
-      "Mainstream Jewish Agency-aligned defense doctrine ('havlagah'/restraint, until 1936-39)"
+      "Mainstream Jewish Agency-aligned defence doctrine ('havlagah'/restraint, until 1936-39)"
     ],
     "lineage": {
       "predecessor_orgs": [
@@ -67,9 +67,9 @@
         "event_id": "haganah-founding-1920",
         "date": "1920-06-15",
         "action_type": "Land Settlement Operation",
-        "title": "Founding of the Haganah as the Yishuv's main defense organization",
+        "title": "Founding of the Haganah as the Yishuv's main defence organisation",
         "location_affected": "Mandatory Palestine (nationwide)",
-        "description": "Founded 15 June 1920 by Ahdut HaAvoda in direct response to the April 1920 Jerusalem riots, as the semi-official defense force of the organized Jewish community (Yishuv), operating under the political authority of the Jewish Agency/Histadrut leadership — the mainstream, leadership-sanctioned counterpart against which Irgun and Lehi's later 'non-sanctioned' actions are typically contrasted in the historiography.",
+        "description": "Founded 15 June 1920 by Ahdut HaAvoda in direct response to the April 1920 Jerusalem riots, as the semi-official defence force of the organised Jewish community (Yishuv), operating under the political authority of the Jewish Agency/Histadrut leadership — the mainstream, leadership-sanctioned counterpart against which Irgun and Lehi's later 'non-sanctioned' actions are typically contrasted in the historiography.",
         "citation": "VERIFIED 2026-09-01 — this entry previously gave the founding date as 1 June 1920; corrected to 15 June 1920, the actual founding date, following the April 1920 riots. Corroborated via live search (Bar-Ilan University's institutional history, Wikipedia's Haganah article)."
       },
       {
@@ -78,7 +78,7 @@
         "action_type": "Land Settlement Operation",
         "title": "'Tower and Stockade' (Homa u-Migdal) settlement campaign",
         "location_affected": "Multiple frontier locations, incl. Galilee and Beit She'an Valley",
-        "description": "Provided armed protection enabling 52-57 new Jewish settlements (sources vary within this range, built between the last days of 1936 and October 1939) to be erected overnight during the Arab Revolt using prefabricated wall-and-tower defenses, deliberately establishing populated facts on the ground ahead of the anticipated Peel Commission partition boundaries.",
+        "description": "Provided armed protection enabling 52-57 new Jewish settlements (sources vary within this range, built between the last days of 1936 and October 1939) to be erected overnight during the Arab Revolt using prefabricated wall-and-tower defences, deliberately establishing populated facts on the ground ahead of the anticipated Peel Commission partition boundaries.",
         "citation": "VERIFIED 2026-09-01 — the source variance itself (52, 53, and 57 all appear across sources) and the 1936-1939 date range are confirmed, not just guessed at. Best guess for deeper narrative detail: Shapira, 'Land and Power' (1992) — not independently re-checked this pass."
       },
       {
@@ -150,7 +150,7 @@
         "action_type": "Non-Sanctioned Militant Action",
         "title": "Deir Yassin operation",
         "location_affected": "Deir Yassin village, west of Jerusalem",
-        "description": "Joint Irgun/Lehi operation (Haganah/Palmach provided some coordination but disputed the manner of execution) that killed a significant number of Palestinian Arab villagers. Casualty figures are heavily disputed: the original, contemporary figure both Irgun and Lehi themselves publicized was 254; present-day scholarship clusters around 100-120 — Palestinian historian Aref al-Aref's own contemporary count was 117, and a 1987 Birzeit University study arrived at approximately 107-120 independently. Left as a range rather than a single number because that range reflects a genuine, still-unsettled convergence in the historiography, not uncertainty on this project's part. Widely cited as a major catalyst for Palestinian civilian flight during the 1948 war.",
+        "description": "Joint Irgun/Lehi operation (Haganah/Palmach provided some coordination but disputed the manner of execution) that killed a significant number of Palestinian Arab villagers. Casualty figures are heavily disputed: the original, contemporary figure both Irgun and Lehi themselves publicised was 254; present-day scholarship clusters around 100-120 — Palestinian historian Aref al-Aref's own contemporary count was 117, and a 1987 Birzeit University study arrived at approximately 107-120 independently. Left as a range rather than a single number because that range reflects a genuine, still-unsettled convergence in the historiography, not uncertainty on this project's part. Widely cited as a major catalyst for Palestinian civilian flight during the 1948 war.",
         "citation": "VERIFIED 2026-09-01 — the 254-to-~110 revision and the 107-120 range are independently corroborated across Wikipedia's Deir Yassin massacre article, Britannica, and the Institute for Middle East Understanding, converging on the same range from different source bases (including Aref al-Aref's contemporary Palestinian count). Best guess for deeper narrative/analytical detail: Benny Morris, 'The Birth of the Palestinian Refugee Problem Revisited' (2004) — not independently re-checked this pass."
       },
       {
@@ -159,7 +159,7 @@
         "action_type": "Non-Sanctioned Militant Action",
         "title": "The Altalena Affair",
         "location_affected": "Tel Aviv coast",
-        "description": "The Irgun-chartered arms ship Altalena arrived with weapons and fighters during the murky period of the Irgun's absorption into the newly-formed IDF; when negotiations over handing over the cargo broke down, Ben-Gurion's government ordered it shelled off the Tel Aviv coast. 19 killed: 16 Irgun, 3 IDF. Over 200 Irgun members were arrested; Begin ordered his followers not to retaliate, averting a wider civil war. This forced the Irgun's dissolution as an independent armed force and its integration into the IDF — widely read as Ben-Gurion establishing the state's monopoly on organized force, and a formative grievance for Begin's generation of Herut/Likud politicians.",
+        "description": "The Irgun-chartered arms ship Altalena arrived with weapons and fighters during the murky period of the Irgun's absorption into the newly-formed IDF; when negotiations over handing over the cargo broke down, Ben-Gurion's government ordered it shelled off the Tel Aviv coast. 19 killed: 16 Irgun, 3 IDF. Over 200 Irgun members were arrested; Begin ordered his followers not to retaliate, averting a wider civil war. This forced the Irgun's dissolution as an independent armed force and its integration into the IDF — widely read as Ben-Gurion establishing the state's monopoly on organised force, and a formative grievance for Begin's generation of Herut/Likud politicians.",
         "citation": "VERIFIED 2026-09-01 — the 19-total/16-Irgun/3-IDF breakdown is Wikipedia's Altalena Affair infobox figure, sourced there to two academic references not independently re-traced here. Best guess for deeper narrative detail: Shapira, 'Land and Power' (1992) — not independently re-checked this pass."
       }
     ],
@@ -195,7 +195,7 @@
         "action_type": "Non-Sanctioned Militant Action",
         "title": "Split from Irgun over WWII truce with Britain",
         "location_affected": "Mandatory Palestine",
-        "description": "Formed by Avraham Stern and others who rejected the Irgun leadership's decision (under David Raziel, who accepted Jabotinsky's authority and prioritized the Arab front) to suspend anti-British operations during WWII — Stern instead held the Irgun should set its own political course and regarded the British, not the Arabs, as the principal enemy. Continued armed action against British targets throughout the war — the most radical and explicitly non-sanctioned of the pre-state militant groups relative to both Haganah and Irgun leaderships. Given as a date range rather than a single day because sources genuinely disagree (June 1940 vs. 17 July 1940 for Stern's formal secession), not out of uncertainty that the split occurred.",
+        "description": "Formed by Avraham Stern and others who rejected the Irgun leadership's decision (under David Raziel, who accepted Jabotinsky's authority and prioritised the Arab front) to suspend anti-British operations during WWII — Stern instead held the Irgun should set its own political course and regarded the British, not the Arabs, as the principal enemy. Continued armed action against British targets throughout the war — the most radical and explicitly non-sanctioned of the pre-state militant groups relative to both Haganah and Irgun leaderships. Given as a date range rather than a single day because sources genuinely disagree (June 1940 vs. 17 July 1940 for Stern's formal secession), not out of uncertainty that the split occurred.",
         "citation": "VERIFIED 2026-09-01 — the Raziel/Stern political disagreement and the genuine June-vs-17 July 1940 date variance are corroborated via live search (Jewish Virtual Library's 'Split Within the Irgun' article, Wikipedia's Lehi article)."
       },
       {
@@ -222,7 +222,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Outlawed by the Israeli government after the Bernadotte assassination",
         "location_affected": "State of Israel",
-        "description": "The response came in two steps on consecutive days: on 17 September 1948, the day of the assassination itself, Lehi's Jerusalem branch was outlawed and its publication Hamivrak shut down; on 18 September, Ben-Gurion's government declared Lehi a terrorist organization nationwide, ordering the confiscation of its weapons and the arrest of its members — roughly 200 in total, most released within weeks under a general amnesty rather than prosecuted. Several former Lehi members went on to mainstream political careers — most notably Yitzhak Shamir, who later led Lehi's remnant political faction and eventually became Prime Minister via Herut/Likud.",
+        "description": "The response came in two steps on consecutive days: on 17 September 1948, the day of the assassination itself, Lehi's Jerusalem branch was outlawed and its publication Hamivrak shut down; on 18 September, Ben-Gurion's government declared Lehi a terrorist organisation nationwide, ordering the confiscation of its weapons and the arrest of its members — roughly 200 in total, most released within weeks under a general amnesty rather than prosecuted. Several former Lehi members went on to mainstream political careers — most notably Yitzhak Shamir, who later led Lehi's remnant political faction and eventually became Prime Minister via Herut/Likud.",
         "citation": "VERIFIED 2026-09-01 — the two-stage 17-18 September 1948 response (Jerusalem branch same-day, national declaration the next day) and the Hamivrak shutdown are corroborated via live search (Wikipedia's Lehi article). Joseph Heller, 'The Stern Gang' (1995), remains the best guess for deeper narrative detail, not independently re-checked this pass."
       }
     ],
@@ -270,7 +270,7 @@
         "title": "Founding platform: sovereignty over 'both banks of the Jordan'",
         "location_affected": "Mandatory Palestine (both banks of the Jordan River, per the platform's territorial claim)",
         "description": "Herut's founding platform explicitly rejected the 1947 UN Partition Plan and any settlement short of Jewish sovereignty over the full territory of the historic Mandate on both banks of the Jordan River ('shtei gadot la-Yarden') — directly continuing Jabotinsky's Revisionist territorial doctrine into the new state's electoral politics, positioned against Mapai's acceptance of the 1949 armistice lines as a practical (if not final) border.",
-        "citation": "VERIFIED 2026-09-01 — the 'two banks of the Jordan River' slogan and Herut's refusal to recognize Jordan's legitimacy over the West Bank after the armistice are corroborated via live search (Wikipedia's Herut article). Colin Shindler, 'The Triumph of Military Zionism' (2006), remains the best guess for deeper narrative detail, not independently re-checked this pass."
+        "citation": "VERIFIED 2026-09-01 — the 'two banks of the Jordan River' slogan and Herut's refusal to recognise Jordan's legitimacy over the West Bank after the armistice are corroborated via live search (Wikipedia's Herut article). Colin Shindler, 'The Triumph of Military Zionism' (2006), remains the best guess for deeper narrative detail, not independently re-checked this pass."
       },
       {
         "event_id": "herut-reparations-protests-1952",
@@ -364,7 +364,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Camp David Accords: Begin returns the whole of Sinai",
         "location_affected": "Sinai Peninsula",
-        "description": "In real tension with Herut/Likud's founding 'Greater Israel' platform, Begin and Egyptian President Anwar Sadat signed the Camp David Accords at the US presidential retreat on 17 September 1978, after thirteen days of talks brokered by President Carter — following Sadat's unprecedented November 1977 visit to Israel. The framework traded full Israeli withdrawal from Sinai for normalized diplomatic relations, free passage through the Straits of Tiran, and a demilitarized Sinai buffer; Begin and Sadat signed the resulting Israel-Egypt peace treaty on 26 March 1979 in Washington, ending the state of war between the two countries and completing the withdrawal by 1982 — the same withdrawal tracked in the Zionism Timeline scrolly map's 'Sinai Returned' stage. Both leaders shared the 1978 Nobel Peace Prize. Sinai was the one 1967 territory outside the 'both banks of the Jordan' platform's core claim, which may explain the apparent contradiction.",
+        "description": "In real tension with Herut/Likud's founding 'Greater Israel' platform, Begin and Egyptian President Anwar Sadat signed the Camp David Accords at the US presidential retreat on 17 September 1978, after thirteen days of talks brokered by President Carter — following Sadat's unprecedented November 1977 visit to Israel. The framework traded full Israeli withdrawal from Sinai for normalised diplomatic relations, free passage through the Straits of Tiran, and a demilitarised Sinai buffer; Begin and Sadat signed the resulting Israel-Egypt peace treaty on 26 March 1979 in Washington, ending the state of war between the two countries and completing the withdrawal by 1982 — the same withdrawal tracked in the Zionism Timeline scrolly map's 'Sinai Returned' stage. Both leaders shared the 1978 Nobel Peace Prize. Sinai was the one 1967 territory outside the 'both banks of the Jordan' platform's core claim, which may explain the apparent contradiction.",
         "citation": "VERIFIED 2026-09-01 — the 17 September 1978 Accords signing, the November 1977 Sadat visit, the 26 March 1979 peace treaty signing, and the 1978 Nobel Peace Prize are corroborated via live search (History.com, ADL's Camp David Accords backgrounder, Britannica)."
       }
     ],
@@ -458,7 +458,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founded by provisional government order",
         "location_affected": "State of Israel",
-        "description": "Established by order of Ben-Gurion's provisional government twelve days after independence, unifying the Haganah (and Palmach) under a single state military command — the first step in establishing the new state's monopoly on organized armed force, completed a month later with the forced absorption of the Irgun (see the Altalena Affair, in irgun's own entry).",
+        "description": "Established by order of Ben-Gurion's provisional government twelve days after independence, unifying the Haganah (and Palmach) under a single state military command — the first step in establishing the new state's monopoly on organised armed force, completed a month later with the forced absorption of the Irgun (see the Altalena Affair, in irgun's own entry).",
         "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Declaration of Independence entry (14 May 1948) and Altalena Affair topic entry; the 26 May 1948 founding order date is standard, uncontested institutional history, corroborated via live search."
       },
       {
@@ -523,7 +523,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founding of Poalei Zion",
         "location_affected": "Ottoman Palestine",
-        "description": "Founded in March 1906 in Ottoman Palestine (with a parallel Russian party under the same name, led by Ber Borochov and Yitzhak Ben-Zvi) as a Marxist-inflected Labor Zionist party organizing Second Aliyah immigrant workers — by 1907 the Russian party alone counted some 25,000 members — the first organized political home for the ideological line that runs through Ahdut HaAvoda, Mapai, and the modern Israeli Labor Party.",
+        "description": "Founded in March 1906 in Ottoman Palestine (with a parallel Russian party under the same name, led by Ber Borochov and Yitzhak Ben-Zvi) as a Marxist-inflected Labor Zionist party organising Second Aliyah immigrant workers — by 1907 the Russian party alone counted some 25,000 members — the first organised political home for the ideological line that runs through Ahdut HaAvoda, Mapai, and the modern Israeli Labor Party.",
         "citation": "VERIFIED 2026-09-01 — the March 1906 founding, Borochov and Ben-Zvi's leadership, and the 1907 Russian-party membership figure are corroborated via live search (Wikipedia's Poale Zion and Jewish Social Democratic Labour Party in Palestine articles)."
       },
       {
@@ -700,7 +700,7 @@
         "action_type": "Land Settlement Operation",
         "title": "Administered the South Lebanon 'security zone' as Israel's proxy",
         "location_affected": "Southern Lebanon (a strip roughly 15-20km deep along the Israeli border)",
-        "description": "A Lebanese Christian militia armed, funded, and trained by Israel, the SLA administered and helped garrison the self-declared security zone in southern Lebanon that Israel occupied from 1982 (formalized 1985) until its unilateral withdrawal in May 2000. The SLA collapsed within days — on 22 May 2000 — with many members turning themselves in to Lebanese authorities while roughly 1,500 SLA members and their dependents (about 7,000 people total) fled into Israel as refugees.",
+        "description": "A Lebanese Christian militia armed, funded, and trained by Israel, the SLA administered and helped garrison the self-declared security zone in southern Lebanon that Israel occupied from 1982 (formalised 1985) until its unilateral withdrawal in May 2000. The SLA collapsed within days — on 22 May 2000 — with many members turning themselves in to Lebanese authorities while roughly 1,500 SLA members and their dependents (about 7,000 people total) fled into Israel as refugees.",
         "citation": "VERIFIED 2026-09-01 — this entry's action_record date range previously read '1985-1999,' inconsistent with the org's own dissolution_date field (May 2000); corrected to match. The 22 May 2000 collapse date and the ~1,500-member/~7,000-total refugee figures are corroborated via live search (EveryCRSReport's SLA history, Wikipedia's 1982-2000 Israeli occupation of Southern Lebanon article)."
       }
     ],
@@ -768,7 +768,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Formal self-government established: Asefat HaNivcharim and Va'ad Leumi",
         "location_affected": "Mandatory Palestine",
-        "description": "The organized Jewish community's elected assembly (Asefat HaNivcharim, first elected 19 April 1920 nationwide, 3 May in Jerusalem — 314 seats, won largest by Ahdut HaAvoda with 70) and its executive council (Va'ad Leumi) were established, recognized by the British Mandate as the official representative body of the Jewish community, parallel to separate Arab community institutions. This structure — not any single party — is the direct institutional predecessor of the State of Israel: on 14 May 1948, the Va'ad Leumi's executive became the Provisional Government and the Yishuv's representative assembly became the basis for the first Knesset.",
+        "description": "The organised Jewish community's elected assembly (Asefat HaNivcharim, first elected 19 April 1920 nationwide, 3 May in Jerusalem — 314 seats, won largest by Ahdut HaAvoda with 70) and its executive council (Va'ad Leumi) were established, recognised by the British Mandate as the official representative body of the Jewish community, parallel to separate Arab community institutions. This structure — not any single party — is the direct institutional predecessor of the State of Israel: on 14 May 1948, the Va'ad Leumi's executive became the Provisional Government and the Yishuv's representative assembly became the basis for the first Knesset.",
         "citation": "VERIFIED 2026-09-01 — the 19 April 1920 (3 May in Jerusalem) election dates, the 314-seat assembly, and Ahdut HaAvoda's 70-seat plurality are corroborated via live search (Wikipedia's Assembly of Representatives and 1920 Assembly of Representatives election articles)."
       }
     ],
@@ -873,7 +873,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founded at the First Zionist Congress",
         "location_affected": "Basel, Switzerland (institutional founding; target territory Ottoman Palestine)",
-        "description": "Founded by Theodor Herzl to pursue the Basel Program's goal of 'a publicly recognized, legally secured home in Palestine for the Jewish people.' Established the institutional apparatus — the Jewish Colonial Trust (1899), the Jewish National Fund (1901), the Palestine Office under Arthur Ruppin (1908) — through which virtually every other organization in this dataset's early period operated or descended.",
+        "description": "Founded by Theodor Herzl to pursue the Basel Program's goal of 'a publicly recognized, legally secured home in Palestine for the Jewish people.' Established the institutional apparatus — the Jewish Colonial Trust (1899), the Jewish National Fund (1901), the Palestine Office under Arthur Ruppin (1908) — through which virtually every other organisation in this dataset's early period operated or descended.",
         "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified First Zionist Congress topic entry and Theodor Herzl actor entry, both independently corroborating the 29 August 1897 Basel founding and Basel Program text."
       },
       {
@@ -883,7 +883,7 @@
         "title": "20th Zionist Congress votes on the Peel Commission's partition plan",
         "location_affected": "Zurich, Switzerland (institutional vote; target territory Mandatory Palestine)",
         "description": "Meeting in Zurich in August 1937, the Congress debated the Peel Commission's July 1937 recommendation to partition Palestine into Jewish and Arab states. Delegates rejected the Commission's specific proposed boundaries as inadequate — too small a territory, excluding Jerusalem — while voting to empower the Zionist Executive (Weizmann and Ben-Gurion prominent among those arguing for engagement) to continue negotiating with the British government on the principle of partition, a real and consequential distinction between rejecting a specific map and rejecting the concept outright. Sources give the vote tally as either 300-158 or 300-150; kept as a range rather than forced to one figure.",
-        "citation": "VERIFIED 2026-09-01 — the August 1937 Zurich Congress, the rejection of the Peel Commission's specific boundaries while authorizing continued negotiation, and the vote tally (variously reported 300-158 per Walter Laqueur's 'A History of Zionism' and 300-150 elsewhere) are corroborated via live search (Wikipedia's Peel Commission article, Wikisource's 'Zionist Peel Commission resolution' text). Exact day within August not independently pinned down; kept at month-level precision."
+        "citation": "VERIFIED 2026-09-01 — the August 1937 Zurich Congress, the rejection of the Peel Commission's specific boundaries while authorising continued negotiation, and the vote tally (variously reported 300-158 per Walter Laqueur's 'A History of Zionism' and 300-150 elsewhere) are corroborated via live search (Wikipedia's Peel Commission article, Wikisource's 'Zionist Peel Commission resolution' text). Exact day within August not independently pinned down; kept at month-level precision."
       },
       {
         "event_id": "wzo-biltmore-program-1942",
@@ -933,7 +933,7 @@
         "title": "Founded at the Fifth Zionist Congress",
         "location_affected": "Basel, Switzerland (institutional founding)",
         "description": "Established to implement Zvi Hermann Schapira's 1897 proposal for a permanent, collectively-owned national land fund. Became the single largest Zionist land-acquisition body — Yehoshua Hankin's Jezreel Valley purchase was financed through JNF fundraising under Menachem Ussishkin's chairmanship — and instituted the policy that land it acquired could never be resold or leased to non-Jews, a policy with lasting effect on land tenure patterns.",
-        "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Zvi Hermann Schapira actor entry, which independently corroborates the 1897 proposal and the fund's 1901 realization at the Fifth Zionist Congress."
+        "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Zvi Hermann Schapira actor entry, which independently corroborates the 1897 proposal and the fund's 1901 realisation at the Fifth Zionist Congress."
       }
     ],
     "knesset_participation": [],
@@ -1009,7 +1009,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Emerges as a federated response to the 1881 pogroms",
         "location_affected": "Russian Empire",
-        "description": "Local Jewish self-organizing groups formed across the Russian Empire — including in Odessa and Warsaw — from 1881, in the wake of that year's pogroms and, from 1882, Tsar Alexander III's antisemitic May Laws, organizing and funding the earliest wave of settlement in Ottoman Palestine (the First Aliyah, including Bilu). These scattered local groups were only formally federated as a single movement at the 1884 Kattowitz Conference. Predates Herzl's World Zionist Organization by over a decade — its members effectively became the WZO's early Russian membership base after 1897.",
+        "description": "Local Jewish self-organising groups formed across the Russian Empire — including in Odessa and Warsaw — from 1881, in the wake of that year's pogroms and, from 1882, Tsar Alexander III's antisemitic May Laws, organising and funding the earliest wave of settlement in Ottoman Palestine (the First Aliyah, including Bilu). These scattered local groups were only formally federated as a single movement at the 1884 Kattowitz Conference. Predates Herzl's World Zionist Organization by over a decade — its members effectively became the WZO's early Russian membership base after 1897.",
         "citation": "VERIFIED 2026-09-01 — the 1881 emergence in Odessa/Warsaw, the 1882 May Laws' role, and the 1884 Kattowitz federation are corroborated via live search (Wikipedia's Lovers of Zion article, HistoryAtlas)."
       }
     ],
@@ -1049,7 +1049,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Expanded from the WZO's Palestine Office to include non-Zionist representation",
         "location_affected": "Mandatory Palestine",
-        "description": "Negotiations to enlarge the Jewish Agency to include non-Zionist Jewish sympathizers concluded in August 1929, formalized at the Sixteenth Zionist Congress and the enlarged Agency's first meeting, held in Zurich that July and August — on a principle of parity between Zionists and non-Zionists across its governing bodies, including a 224-member council roughly 40% American among its non-Zionist members. Formally recognized by the British Mandate as the Jewish community's representative body for immigration, land settlement, and diplomatic matters — the operational continuation of Ruppin's Palestine Office under a broader mandate. Its Political Department (headed successively by Arlosoroff and Golda Meir) functioned as the pre-state movement's foreign ministry. Its executive became the Provisional Government on 14 May 1948; today's Jewish Agency for Israel is its direct institutional descendant, re-focused on Aliyah after 1948 rather than governance.",
+        "description": "Negotiations to enlarge the Jewish Agency to include non-Zionist Jewish sympathisers concluded in August 1929, formalised at the Sixteenth Zionist Congress and the enlarged Agency's first meeting, held in Zurich that July and August — on a principle of parity between Zionists and non-Zionists across its governing bodies, including a 224-member council roughly 40% American among its non-Zionist members. Formally recognised by the British Mandate as the Jewish community's representative body for immigration, land settlement, and diplomatic matters — the operational continuation of Ruppin's Palestine Office under a broader mandate. Its Political Department (headed successively by Arlosoroff and Golda Meir) functioned as the pre-state movement's foreign ministry. Its executive became the Provisional Government on 14 May 1948; today's Jewish Agency for Israel is its direct institutional descendant, re-focused on Aliyah after 1948 rather than governance.",
         "citation": "VERIFIED 2026-09-01 — the August 1929 completion, the Zurich Congress, and the Zionist/non-Zionist parity principle (incl. the 224-member council and ~40% American non-Zionist share) are corroborated via live search (Encyclopedia.com's Jewish Agency for Palestine entry, contemporary Jewish Telegraphic Agency archives). This entry's earlier specific day (11 August) is not independently pinned to that exact date — kept as month-level precision instead. Also fixed a house-style slip: this description previously named a sibling data file directly rather than letting the cross-reference read as ordinary prose."
       },
       {
@@ -1058,8 +1058,8 @@
         "action_type": "Sanctioned Political Action",
         "title": "Passfield White Paper protest and its reversal by the MacDonald Letter",
         "location_affected": "Mandatory Palestine",
-        "description": "The British government's Passfield White Paper (issued 20 October 1930) proposed severe new restrictions on Jewish immigration and land purchase in Palestine. Chaim Weizmann resigned as President of both the World Zionist Organization and the Jewish Agency in protest the same month, and Zionist organizations worldwide mounted a sustained campaign against the document. On 13 February 1931, Prime Minister Ramsay MacDonald sent Weizmann a letter reaffirming British support for continued Jewish immigration and land purchase — widely read by Zionists as an effective reversal of the White Paper's restrictions, and dubbed the 'Black Letter' by Palestinian Arab leaders for exactly that reason, even though MacDonald himself told Parliament he did not intend to give the letter the same formal status as the White Paper itself.",
-        "citation": "VERIFIED 2026-09-01 — the 20 October 1930 Passfield White Paper, Weizmann's resignation that same month (dated via a contemporary 26 October 1930 Jewish Telegraphic Agency report), the 13 February 1931 MacDonald Letter, and the 'Black Letter' Arab characterization are corroborated via live search (Wikipedia's Passfield White Paper and MacDonald letter articles, palquest.org's historical text of the MacDonald letter, JTA's own 1930 archive)."
+        "description": "The British government's Passfield White Paper (issued 20 October 1930) proposed severe new restrictions on Jewish immigration and land purchase in Palestine. Chaim Weizmann resigned as President of both the World Zionist Organization and the Jewish Agency in protest the same month, and Zionist organisations worldwide mounted a sustained campaign against the document. On 13 February 1931, Prime Minister Ramsay MacDonald sent Weizmann a letter reaffirming British support for continued Jewish immigration and land purchase — widely read by Zionists as an effective reversal of the White Paper's restrictions, and dubbed the 'Black Letter' by Palestinian Arab leaders for exactly that reason, even though MacDonald himself told Parliament he did not intend to give the letter the same formal status as the White Paper itself.",
+        "citation": "VERIFIED 2026-09-01 — the 20 October 1930 Passfield White Paper, Weizmann's resignation that same month (dated via a contemporary 26 October 1930 Jewish Telegraphic Agency report), the 13 February 1931 MacDonald Letter, and the 'Black Letter' Arab characterisation are corroborated via live search (Wikipedia's Passfield White Paper and MacDonald letter articles, palquest.org's historical text of the MacDonald letter, JTA's own 1930 archive)."
       },
       {
         "event_id": "jewish-agency-1939-white-paper-response",
@@ -1076,7 +1076,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Accepted the UN Partition Plan",
         "location_affected": "Mandatory Palestine",
-        "description": "Following the UN General Assembly's adoption of Resolution 181 on 29 November 1947 (33-13-10, per this dataset's own Resolution 181 topic entry), the Jewish Agency — as the internationally recognized representative body for the Yishuv — accepted the partition plan, while its diplomatic efforts during the preceding UN debate had sought a larger Jewish-state territory than the plan ultimately allocated. Arab political leadership rejected the plan outright, a fork in response that this dataset's own Resolution 181 entry already documents at the UN level; this entry records the Jewish Agency's own institutional acceptance specifically.",
+        "description": "Following the UN General Assembly's adoption of Resolution 181 on 29 November 1947 (33-13-10, per this dataset's own Resolution 181 topic entry), the Jewish Agency — as the internationally recognised representative body for the Yishuv — accepted the partition plan, while its diplomatic efforts during the preceding UN debate had sought a larger Jewish-state territory than the plan ultimately allocated. Arab political leadership rejected the plan outright, a fork in response that this dataset's own Resolution 181 entry already documents at the UN level; this entry records the Jewish Agency's own institutional acceptance specifically.",
         "citation": "VERIFIED 2026-09-01 — the Jewish Agency's acceptance and the Mapai leadership's alignment with it are corroborated via live search (palquest.org's 'UN Partition Plan, 29 November 1947' overview), consistent with this dataset's own already-verified Resolution 181 topic entry for the UN-level vote itself."
       }
     ],
@@ -1111,7 +1111,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founded by Russian-Jewish students after the 1881-82 pogroms",
         "location_affected": "Russian Empire; Ottoman Palestine",
-        "description": "Its name is an acronym of Isaiah 2:5 — 'Beit Ya'akov Lechu Ve'nelcha' ('House of Jacob, let us go') — and its members were the first organized group to actually emigrate and found agricultural colonies rather than only fundraise or lobby: the first group, 14 university students from Kharkiv led by Israel Belkind, arrived in Ottoman Palestine on 6 July 1882. A small movement — the roughly 500-member figure often cited for total membership was not independently confirmed this pass — but the first to put Hovevei Zion's and Pinsker's Auto-Emancipation's arguments into physical practice.",
+        "description": "Its name is an acronym of Isaiah 2:5 — 'Beit Ya'akov Lechu Ve'nelcha' ('House of Jacob, let us go') — and its members were the first organised group to actually emigrate and found agricultural colonies rather than only fundraise or lobby: the first group, 14 university students from Kharkiv led by Israel Belkind, arrived in Ottoman Palestine on 6 July 1882. A small movement — the roughly 500-member figure often cited for total membership was not independently confirmed this pass — but the first to put Hovevei Zion's and Pinsker's Auto-Emancipation's arguments into physical practice.",
         "citation": "VERIFIED 2026-09-01 (name/founding facts) — consistent with this dataset's own already-verified Israel Belkind actor entry (6 July 1882 arrival, 14 Kharkiv students) and independently corroborated Isaiah 2:5 acronym via live search (Wikipedia's Bilu article, wisdomlib.org). The ~500-member total figure specifically remains UNVERIFIED — not found in this pass's sources — flagged rather than silently carried forward as confirmed."
       }
     ],
@@ -1148,7 +1148,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founded by David Ben-Gurion as the General Federation of Labor",
         "location_affected": "Mandatory Palestine",
-        "description": "Far more than a trade union — the Histadrut built and owned agricultural cooperatives, construction and industrial companies, a health-fund system, and a settlement arm (Nir/Hachsharat HaYishuv) that organized and financed cooperative agricultural settlement on JNF and privately-purchased land, making it one of the primary institutional engines of Labor Zionist land colonization through the Mandate period.",
+        "description": "Far more than a trade union — the Histadrut built and owned agricultural cooperatives, construction and industrial companies, a health-fund system, and a settlement arm (Nir/Hachsharat HaYishuv) that organised and financed cooperative agricultural settlement on JNF and privately-purchased land, making it one of the primary institutional engines of Labor Zionist land colonisation through the Mandate period.",
         "citation": "VERIFIED 2026-09-01 — the founding congress convened in Haifa on 4 December 1920 (this entry's date), with the federation's founding formally concluding 12 December 1920, corroborated via live search (Jewish Currents, Jewish Women's Archive). Also consistent with this dataset's own already-verified Berl Katznelson actor entry, which independently corroborates the ~25,000-member/1927 figure and Katznelson's founding role."
       }
     ],
@@ -1178,7 +1178,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "First elected as the Yishuv's representative assembly",
         "location_affected": "Mandatory Palestine",
-        "description": "The Yishuv's elected legislative-style body — first elected 19 April 1920 nationwide (3 May in Jerusalem), 314 seats, won largest by Ahdut HaAvoda with 70 — recognized by the British Mandate as the official representative assembly of the Jewish community, parallel to separate Arab community institutions. It elected the Va'ad Leumi as its executive council. The direct structural predecessor of the Knesset: the electoral and parliamentary conventions Israel's parliament inherited (proportional representation, party lists) both trace to this body, not to any British colonial institution.",
+        "description": "The Yishuv's elected legislative-style body — first elected 19 April 1920 nationwide (3 May in Jerusalem), 314 seats, won largest by Ahdut HaAvoda with 70 — recognised by the British Mandate as the official representative assembly of the Jewish community, parallel to separate Arab community institutions. It elected the Va'ad Leumi as its executive council. The direct structural predecessor of the Knesset: the electoral and parliamentary conventions Israel's parliament inherited (proportional representation, party lists) both trace to this body, not to any British colonial institution.",
         "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Yishuv org entry, which independently corroborates the 19 April/3 May 1920 election dates, the 314-seat count, and Ahdut HaAvoda's 70-seat plurality."
       },
       {
@@ -1331,7 +1331,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Appoints Folke Bernadotte as mediator for Palestine",
         "location_affected": "Mandatory Palestine",
-        "description": "The Permanent Members of the Security Council, sitting as a General Assembly committee under the Assembly's 14 May 1948 resolution, unanimously appointed Count Folke Bernadotte as UN Mediator for Palestine on 20 May 1948; he accepted the post by telephone to Secretary-General Trygve Lie the following day. Bernadotte was assassinated by Lehi that September for proposing a revised partition plan the organization considered unacceptable — see Lehi's own record for the fuller account.",
+        "description": "The Permanent Members of the Security Council, sitting as a General Assembly committee under the Assembly's 14 May 1948 resolution, unanimously appointed Count Folke Bernadotte as UN Mediator for Palestine on 20 May 1948; he accepted the post by telephone to Secretary-General Trygve Lie the following day. Bernadotte was assassinated by Lehi that September for proposing a revised partition plan the organisation considered unacceptable — see Lehi's own record for the fuller account.",
         "citation": "VERIFIED 2026-09-01 — the 20 May 1948 appointment and 21 May acceptance are corroborated via live search (israeled.org's 'Bernadotte Named U.N. Peace Mediator' entry)."
       }
     ],
@@ -1359,7 +1359,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Adopts Resolution 181 — the Partition Plan",
         "location_affected": "Mandatory Palestine",
-        "description": "Voted 33 in favor, 13 against, 10 abstaining, 1 absent to adopt the Partition Plan, recommending division of Mandatory Palestine into separate Jewish and Arab states with Jerusalem under international administration — the Jewish state's proposed share was roughly 55% of the territory. Rejected by Arab states and the Arab Higher Committee; accepted by the Jewish Agency. Never implemented as drawn — war intervened within days of the vote, and the 1949 armistice lines that resulted bore little resemblance to this map.",
+        "description": "Voted 33 in favour, 13 against, 10 abstaining, 1 absent to adopt the Partition Plan, recommending division of Mandatory Palestine into separate Jewish and Arab states with Jerusalem under international administration — the Jewish state's proposed share was roughly 55% of the territory. Rejected by Arab states and the Arab Higher Committee; accepted by the Jewish Agency. Never implemented as drawn — war intervened within days of the vote, and the 1949 armistice lines that resulted bore little resemblance to this map.",
         "citation": "VERIFIED 2026-09-01 — the 33-13-10-1 vote tally is corroborated across the UN's own historical record, Britannica, and the Economic Cooperation Foundation's documentation of the resolution."
       },
       {
@@ -1368,7 +1368,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Adopts Resolution 194 — the refugee 'right of return'",
         "location_affected": "Mandatory Palestine / State of Israel",
-        "description": "Adopted 11 December 1948, establishing the UN Conciliation Commission for Palestine and, in paragraph 11, resolving that Palestinian refugees wishing to return to their homes and live at peace with their neighbors should be permitted to do so at the earliest practicable date, with compensation payable to those choosing not to return or for loss of or damage to property. Passed weeks after UN mediator Folke Bernadotte's assassination, drawing on his final recommendations.",
+        "description": "Adopted 11 December 1948, establishing the UN Conciliation Commission for Palestine and, in paragraph 11, resolving that Palestinian refugees wishing to return to their homes and live at peace with their neighbours should be permitted to do so at the earliest practicable date, with compensation payable to those choosing not to return or for loss of or damage to property. Passed weeks after UN mediator Folke Bernadotte's assassination, drawing on his final recommendations.",
         "citation": "VERIFIED 2026-09-01 — the 11 December 1948 adoption date and paragraph-11 return/compensation language corroborated via live search against UN historical records and contemporary secondary sources."
       },
       {
@@ -1377,7 +1377,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Adopts Resolution 273 — admits Israel to UN membership",
         "location_affected": "State of Israel",
-        "description": "Adopted 11 May 1949, admitting Israel as a UN member state after an earlier application failed in the Security Council in December 1948. Admission followed renewed Israeli assurances regarding implementation of Resolutions 181 and 194 — a diplomatic condition Palestinians and their advocates point to as never fully honored.",
+        "description": "Adopted 11 May 1949, admitting Israel as a UN member state after an earlier application failed in the Security Council in December 1948. Admission followed renewed Israeli assurances regarding implementation of Resolutions 181 and 194 — a diplomatic condition Palestinians and their advocates point to as never fully honoured.",
         "citation": "VERIFIED 2026-09-01 — the 11 May 1949 adoption date corroborated via live search against the UN Digital Library, Security Council Report, and Jewish Virtual Library."
       },
       {
@@ -1423,7 +1423,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Adopts Resolution 242 — the 'land for peace' formula",
         "location_affected": "West Bank, Gaza Strip, Sinai Peninsula, Golan Heights",
-        "description": "Adopted unanimously on 22 November 1967 in the aftermath of the Six-Day War, calling for Israeli withdrawal 'from territories occupied in the recent conflict' (deliberately ambiguous wording, long disputed as to whether it meant all or some territories) in exchange for Arab recognition of Israel's right to live in peace within secure and recognized boundaries.",
+        "description": "Adopted unanimously on 22 November 1967 in the aftermath of the Six-Day War, calling for Israeli withdrawal 'from territories occupied in the recent conflict' (deliberately ambiguous wording, long disputed as to whether it meant all or some territories) in exchange for Arab recognition of Israel's right to live in peace within secure and recognised boundaries.",
         "citation": "VERIFIED 2026-09-01 — the unanimous 22 November 1967 adoption and the 'land for peace' formula corroborated via live search."
       },
       {
@@ -1521,7 +1521,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Office established with the Provisional Government",
         "location_affected": "State of Israel",
-        "description": "Israel's head of government under the parliamentary system it adopted: the Prime Minister is not directly elected but is asked to form a coalition commanding a Knesset majority, holds executive authority over policy while that confidence holds, and can be removed by a Knesset vote of no confidence or a lost election. Created when Ben-Gurion, as head of the Yishuv's Va'ad Leumi executive, formed and led the Provisional Government on the day statehood was declared. The first Knesset (convened February 1949) subsequently made the office answerable to Knesset confidence under this parliamentary structure, rather than continuing as an appointed wartime executive. It is this office's cabinet, not direct Knesset legislation, that has authorized most of the settlement decisions this dataset tracks post-1967 (see the entry below) — the practical reason the Prime Minister, not the ceremonial President, sits at the center of this dataset's land-policy record.",
+        "description": "Israel's head of government under the parliamentary system it adopted: the Prime Minister is not directly elected but is asked to form a coalition commanding a Knesset majority, holds executive authority over policy while that confidence holds, and can be removed by a Knesset vote of no confidence or a lost election. Created when Ben-Gurion, as head of the Yishuv's Va'ad Leumi executive, formed and led the Provisional Government on the day statehood was declared. The first Knesset (convened February 1949) subsequently made the office answerable to Knesset confidence under this parliamentary structure, rather than continuing as an appointed wartime executive. It is this office's cabinet, not direct Knesset legislation, that has authorised most of the settlement decisions this dataset tracks post-1967 (see the entry below) — the practical reason the Prime Minister, not the ceremonial President, sits at the center of this dataset's land-policy record.",
         "citation": "VERIFIED 2026-09-01 — the 14 May 1948 founding date follows directly from the already-verified State of Israel declaration and Va'ad Leumi entries in this dataset; the first Knesset's confidence-based parliamentary structure is standard, uncontested institutional history."
       },
       {
@@ -1530,7 +1530,7 @@
         "action_type": "Land Settlement Operation",
         "title": "Central executive authority over post-1967 settlement policy",
         "location_affected": "West Bank, Gaza Strip, Golan Heights",
-        "description": "Since the Six-Day War, cabinet decisions taken through this office — not direct Knesset legislation — have authorized the West Bank, Gaza, and Golan Heights settlements this dataset's post-1967 entries track. The pattern started almost immediately: Eshkol's cabinet approved the Golan Heights' first settlement, Merom Golan, roughly a month after the war (mid-July 1967), and in September 1967 approved re-establishing Kfar Etzion — the first West Bank settlement — despite receiving legal advice that settling occupied territory would violate the Fourth Geneva Convention. The same executive channel later carried the Allon Plan's siting logic under Eshkol and Meir, Begin's 1977 acceleration, and, at the office's discretion, occasional reversal (Begin's Sinai withdrawal, Sharon's Gaza disengagement).",
+        "description": "Since the Six-Day War, cabinet decisions taken through this office — not direct Knesset legislation — have authorised the West Bank, Gaza, and Golan Heights settlements this dataset's post-1967 entries track. The pattern started almost immediately: Eshkol's cabinet approved the Golan Heights' first settlement, Merom Golan, roughly a month after the war (mid-July 1967), and in September 1967 approved re-establishing Kfar Etzion — the first West Bank settlement — despite receiving legal advice that settling occupied territory would violate the Fourth Geneva Convention. The same executive channel later carried the Allon Plan's siting logic under Eshkol and Meir, Begin's 1977 acceleration, and, at the office's discretion, occasional reversal (Begin's Sinai withdrawal, Sharon's Gaza disengagement).",
         "citation": "VERIFIED 2026-09-01 — the mid-July 1967 Merom Golan and September 1967 Kfar Etzion cabinet approvals, including the Geneva Convention legal-advice detail, are corroborated via live search (Wikipedia's Merom Golan and Kfar Etzion articles, WRMEA, Tablet Magazine). Gershom Gorenberg, 'The Accidental Empire' (2006), remains the best guess for deeper narrative detail, not independently re-checked this pass."
       }
     ],
@@ -1921,8 +1921,8 @@
         "date": "1923",
         "action_type": "Sanctioned Political Action",
         "title": "Founding of Betar in Riga, Latvia",
-        "location_affected": "Riga, Latvia (early organizing; HQ later moved to Poland, 1928)",
-        "description": "Founded in 1923 in Riga by Ze'ev Jabotinsky as a nationalist Zionist youth movement, taking its name from the Hebrew acronym for 'Brit Yosef Trumpeldor' (Joseph Trumpeldor Alliance) — honoring the Zionist fighter killed defending Tel Hai in 1920 — layered onto 'Betar,' the name of the last Jewish fortress to fall in the Bar Kokhba revolt against Rome. Became the official youth movement of Jabotinsky's Union of Zionist Revisionists after that body's own 1925 founding. Headquarters moved from Latvia to Poland in 1928, which by the late 1930s held the movement's largest membership base (reported at roughly 70,000-100,000 youths).",
+        "location_affected": "Riga, Latvia (early organising; HQ later moved to Poland, 1928)",
+        "description": "Founded in 1923 in Riga by Ze'ev Jabotinsky as a nationalist Zionist youth movement, taking its name from the Hebrew acronym for 'Brit Yosef Trumpeldor' (Joseph Trumpeldor Alliance) — honouring the Zionist fighter killed defending Tel Hai in 1920 — layered onto 'Betar,' the name of the last Jewish fortress to fall in the Bar Kokhba revolt against Rome. Became the official youth movement of Jabotinsky's Union of Zionist Revisionists after that body's own 1925 founding. Headquarters moved from Latvia to Poland in 1928, which by the late 1930s held the movement's largest membership base (reported at roughly 70,000-100,000 youths).",
         "citation": "VERIFIED 2026-09-02 — the founding year and city, the Trumpeldor/Bar Kokhba naming, the 1925 Union of Zionist Revisionists link, and the 1928 Poland HQ move are corroborated via live search (Wikipedia's Betar article; YIVO Encyclopedia's Betar entry)."
       },
       {
@@ -1931,7 +1931,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Codification of the 'Hadar' ideology and the Betar Oath at the Krakow World Conference",
         "location_affected": "Krakow, Poland (2nd World Conference of Betar)",
-        "description": "At Betar's second world conference in Krakow, Jabotinsky formalized 'Ha-Neder' (the Oath), committing members to 'the rebirth of the Jewish State, with a Jewish majority, on both sides of the Jordan,' and rejecting any fusion of Zionism with 'alien' creeds — chiefly socialism — a direct rebuke of the Labor Zionist mainstream then dominant in the Yishuv leadership. Members were also schooled in 'Hadar,' Jabotinsky's code of personal comportment ('beauty, respect, self-esteem, politeness, and faithfulness'), and given uniformed paramilitary-style training, including at a Betar-run naval academy in Civitavecchia, Italy, that trained a generation of future Haganah, Irgun and Lehi commanders.",
+        "description": "At Betar's second world conference in Krakow, Jabotinsky formalised 'Ha-Neder' (the Oath), committing members to 'the rebirth of the Jewish State, with a Jewish majority, on both sides of the Jordan,' and rejecting any fusion of Zionism with 'alien' creeds — chiefly socialism — a direct rebuke of the Labor Zionist mainstream then dominant in the Yishuv leadership. Members were also schooled in 'Hadar,' Jabotinsky's code of personal comportment ('beauty, respect, self-esteem, politeness, and faithfulness'), and given uniformed paramilitary-style training, including at a Betar-run naval academy in Civitavecchia, Italy, that trained a generation of future Haganah, Irgun and Lehi commanders.",
         "citation": "VERIFIED 2026-09-02 — the Krakow conference, the Ha-Neder oath text, the Hadar code, and the Civitavecchia naval academy are corroborated via live search (Wikipedia's Betar article; the Jabotinsky Institute's own account of 'Betar and Hadar')."
       },
       {
@@ -2014,7 +2014,7 @@
         "action_type": "Sanctioned Political Action",
         "title": "Founded by journalist Yair Lapid",
         "location_affected": "State of Israel",
-        "description": "Founded in 2012 by television journalist and media personality Yair Lapid ahead of the 2013 election, campaigning on secular, centrist, socially liberal governance issues (cost of living, ultra-Orthodox conscription, electoral reform) rather than a defined position on the Israeli-Palestinian conflict or settlement policy. Won 19 seats in its first election, becoming the Knesset's second-largest party. Lapid has consistently rejected being labeled 'center-left' or 'center-right,' describing the party's centrism as a genuine, deliberately unclassified third position rather than a midpoint between the two.",
+        "description": "Founded in 2012 by television journalist and media personality Yair Lapid ahead of the 2013 election, campaigning on secular, centrist, socially liberal governance issues (cost of living, ultra-Orthodox conscription, electoral reform) rather than a defined position on the Israeli-Palestinian conflict or settlement policy. Won 19 seats in its first election, becoming the Knesset's second-largest party. Lapid has consistently rejected being labelled 'center-left' or 'center-right,' describing the party's centrism as a genuine, deliberately unclassified third position rather than a midpoint between the two.",
         "citation": "VERIFIED 2026-09-03 — the 2012 founding, the 2013 result of 19 seats, and Lapid's own repeated rejection of a left/right label are corroborated via live search (Wikipedia's Yesh Atid article, Fathom Journal's profile of Lapid)."
       }
     ],
@@ -2087,7 +2087,7 @@
         "title": "Founded by Aryeh Eldad and Michael Ben-Ari, splitting from National Union",
         "location_affected": "State of Israel",
         "description": "Founded 13 November 2012 by Aryeh Eldad and Michael Ben-Ari after splitting from the National Union party, positioned as a legal successor to the outlawed Kach party of Meir Kahane — Israel's Knesset had banned Kach in 1988 and its successor Kahane Chai in 1994 as racist and anti-democratic under the Knesset's own Basic Law disqualification criteria. Otzma Yehudit's platform is explicitly Kahanist: ultranationalist, anti-Arab, and committed to Jewish sovereignty over the entirety of the land, including annexation of the West Bank and support for further settlement. Itamar Ben-Gvir, later National Security Minister, and Limor Son Har-Melech, a Homesh resident and settler-rights advocate, both entered the Knesset as Otzma Yehudit MKs.",
-        "citation": "VERIFIED 2026-09-03 — the 13 November 2012 founding, the split from National Union, and the party's Kahanist/Kach-successor characterization are corroborated via live search (Wikipedia's Otzma Yehudit article, IMEU's Kahanism fact sheet). Ben-Gvir's and Son Har-Melech's Otzma Yehudit membership is already established elsewhere in this dataset via their own knesset_terms records."
+        "citation": "VERIFIED 2026-09-03 — the 13 November 2012 founding, the split from National Union, and the party's Kahanist/Kach-successor characterisation are corroborated via live search (Wikipedia's Otzma Yehudit article, IMEU's Kahanism fact sheet). Ben-Gvir's and Son Har-Melech's Otzma Yehudit membership is already established elsewhere in this dataset via their own knesset_terms records."
       }
     ],
     "knesset_participation": []
@@ -2120,8 +2120,8 @@
         "action_type": "Sanctioned Political Action",
         "title": "Formed as an alliance of Agudat Yisrael and Degel HaTorah",
         "location_affected": "State of Israel",
-        "description": "Formed in 1992 as an electoral alliance between two distinct Ashkenazi Haredi parties — Agudat Yisrael, representing the Hasidic Haredi community and tracing to a 1912 organization founded to represent ultra-Orthodox Jews opposed to the Zionist movement, and Degel HaTorah, representing the non-Hasidic 'Lithuanian' Haredi community — combining their votes to maximize joint Knesset representation. Explicitly non-Zionist rather than anti-Zionist in practice: the party does not endorse the state's secular Zionist premise on theological grounds but participates fully in its institutions and coalitions to advance Haredi community interests, chiefly religious-education funding and exemption from military conscription. Its positions on security, diplomacy, and land policy are secondary to and largely instrumental toward those religious-community priorities, rather than expressions of a Revisionist or Labor Zionist territorial doctrine.",
-        "citation": "VERIFIED 2026-09-03 — the 1992 founding as an Agudat Yisrael/Degel HaTorah alliance, the non-Zionist-in-principle-but-participatory-in-practice characterization, and the conscription/education funding priorities are corroborated via live search (Wikipedia's United Torah Judaism article, Israel Policy Forum's 'Israel's Ultra-Orthodox Parties Explained')."
+        "description": "Formed in 1992 as an electoral alliance between two distinct Ashkenazi Haredi parties — Agudat Yisrael, representing the Hasidic Haredi community and tracing to a 1912 organisation founded to represent ultra-Orthodox Jews opposed to the Zionist movement, and Degel HaTorah, representing the non-Hasidic 'Lithuanian' Haredi community — combining their votes to maximise joint Knesset representation. Explicitly non-Zionist rather than anti-Zionist in practice: the party does not endorse the state's secular Zionist premise on theological grounds but participates fully in its institutions and coalitions to advance Haredi community interests, chiefly religious-education funding and exemption from military conscription. Its positions on security, diplomacy, and land policy are secondary to and largely instrumental toward those religious-community priorities, rather than expressions of a Revisionist or Labor Zionist territorial doctrine.",
+        "citation": "VERIFIED 2026-09-03 — the 1992 founding as an Agudat Yisrael/Degel HaTorah alliance, the non-Zionist-in-principle-but-participatory-in-practice characterisation, and the conscription/education funding priorities are corroborated via live search (Wikipedia's United Torah Judaism article, Israel Policy Forum's 'Israel's Ultra-Orthodox Parties Explained')."
       }
     ],
     "knesset_participation": []
@@ -2219,7 +2219,7 @@
         "action_type": "Land Settlement Operation",
         "title": "The Sebastia Compromise founds Kedumim",
         "location_affected": "Sebastia / Kedumim, northern West Bank",
-        "description": "After eight separate attempts to establish a settlement at Sebastia (adjacent to a Palestinian village of the same name), each ending in removal by the IDF, Gush Emunim reached an agreement in December 1975 with Prime Minister Yitzhak Rabin and Defense Minister Shimon Peres: settlers would leave Sebastia in exchange for 25 families being permitted to settle at the nearby Kadum army camp. That encampment grew into the settlement of Kedumim, and the compromise is widely regarded as the turning point that opened the northern West Bank to organized Jewish settlement.",
+        "description": "After eight separate attempts to establish a settlement at Sebastia (adjacent to a Palestinian village of the same name), each ending in removal by the IDF, Gush Emunim reached an agreement in December 1975 with Prime Minister Yitzhak Rabin and Defense Minister Shimon Peres: settlers would leave Sebastia in exchange for 25 families being permitted to settle at the nearby Kadum army camp. That encampment grew into the settlement of Kedumim, and the compromise is widely regarded as the turning point that opened the northern West Bank to organised Jewish settlement.",
         "citation": "VERIFIED 2026-09-03 -- the eight-attempts/seven-removals sequence, the December 1975 Rabin/Peres agreement, the 25-family Kadum camp settlement, and Kedumim's founding are corroborated via live search (Wikipedia's Kedumim article, Haaretz's 'The Gush Emunim Settlers Movement Is Established' retrospective)."
       }
     ],
