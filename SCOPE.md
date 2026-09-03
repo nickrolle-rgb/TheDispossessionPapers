@@ -1966,3 +1966,22 @@ doctrine, Muscular Judaism) alongside it.
 
 36 actors, 24 knesset_members, 42 orgs, 17 laws, 62 topics (61→62). Collision check clean, one
 publish, one commit.
+
+## Defensible Borders Doctrine added (2026-09-03)
+
+Nick asked for "a doctrine element that explains the expansion strategy or reluctance to forfeit
+territory" — researched to find the actual named doctrine rather than guessing: **Defensible
+Borders**, the real, formally-named post-1967 Israeli security doctrine (distinct from Iron Wall,
+which is pre-state and about the path to founding, not post-1967 withdrawal reluctance). New
+`topics.json` entry covering the strategic rationale (Golan overlooking the Hula Valley, the West
+Bank's narrow waist, Gaza's proximity to population centers), its architects (Allon, Dayan, Rabin,
+Sharon — all but Rabin already profiled here), and Abba Eban's November 1969 "Auschwitz borders"
+quote — included with the honest, often-omitted fuller context: the same interview also had Eban
+saying Israel "could not and should not retain the occupied territories." Cross-referenced against
+the already-covered Resolution 242 ("land for peace") and Allon Plan entries as the doctrine's
+counterweight and first concrete territorial expression, respectively. Extended to the present with
+its post-October-2023 reinvocation (Gaza/Lebanon/Golan buffer zones). Abba Eban and Yitzhak Rabin
+named in prose but not linked — neither is currently profiled as their own entry in this dataset.
+
+36 actors, 24 knesset_members, 42 orgs, 17 laws, 63 topics (62→63). Collision check clean, one
+publish, one commit.
