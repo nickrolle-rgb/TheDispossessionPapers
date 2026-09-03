@@ -2467,3 +2467,70 @@ and the wiki's client-side graph (310/310, exact match) — plus, now that Verce
 interactive verification on the live site** via the Browser pane: clicked AIJAC's node, confirmed
 its info panel and "Advocacy Organisation · 1997 – present" badge, clicked Close and confirmed it
 actually clears the panel. `collision_check.py` clean throughout.
+
+---
+
+## Round: closing all remaining open items — Legislation merge, new topics, UK-spelling pass
+
+Nick: "let's do the laws merge, prose pass and additional topics from above!" — the three
+substantive items flagged open since the front-door round. All three landed this round.
+
+**Legislation merge**, done as a display/graph-classification merge rather than a full schema
+migration: `Legislative Proposal` and `UN Resolution` topics stay physically in `topics.json`
+(their schema fits — open `date_or_range`, most bills never passed so `enactment_date` wouldn't
+even apply) but now classify as node kind `"law"` in the graph and fold into one "Legislation"
+homepage index group with actual enacted laws, replacing the separate "Laws" heading. Each entry's
+own page still shows its real `topic_type` in its badge — nothing about the underlying distinction
+is lost, only the top-level navigation groups them the way a reader actually thinks about them. 23
+topics reclassified (13 bills + 10 UN Resolutions); `law` kind count 17→40, `topic` kind 63→40.
+
+**New topics — real research first, one substitution flagged plainly.** Ashkenazi Jews and
+Haredim both got a new `topic_type: "Demographic Group"` (didn't fit any existing type) with real,
+land-relevant history: Ashkenazi dominance of the pre-state land-acquisition apparatus and
+post-1948 political/economic leadership; Haredim's genuine theological anti-Zionism (Agudath
+Israel, 1912) alongside the more recent, land-relevant twist that Haredi communities are now the
+fastest-growing West Bank settler population (~30% of ~400,000) despite that theological distance
+— driven by government-subsidized housing, not religious-nationalist ideology. **"Ultra-Zionism"
+has no standing academic definition** — live research found it used mainly in journalistic/
+documentary contexts (a 2011 Louis Theroux documentary literally titled "The Ultra Zionists"), not
+by scholars. Substituted **Neo-Zionism** instead: the real, peer-reviewed term (Uri Ram, 1996) for
+exactly the post-1967 maximalist-settlement ideology "Ultra-Zionism" was gesturing at. Flagged this
+substitution to Nick directly rather than silently complying with the imprecise term or silently
+picking something else without saying so. Also added **Gush Emunim** as a new org (Settlement
+Movement type already existed in the schema, just had no entry) — directly load-bearing for the
+Neo-Zionism topic's `related_org_ids`, not a tangential addition; real founding (Feb 1974) and a
+real land-settlement action (the Dec 1975 Sebastia Compromise that founded Kedumim).
+
+**US→UK prose pass, scoped deliberately narrow and caught a real bug of its own before it
+shipped.** Only fully-lowercase word-boundary matches convert; every capitalized instance of every
+target word family was manually audited beforehand and found to be a proper noun or an official
+title this project renders conventionally (World Zionist Organization, Israeli Labor Party, Israel
+Defense Forces, Basel Program, Settlements Regularization Law) — left untouched. A handful of exact
+phrases (the Basel Program's own 1897 wording, A.D. Gordon's "religion of labor" aphorisms, two
+cited report/article titles) are protected byte-for-byte regardless of case, since altering a
+direct quotation's spelling risks misquoting it. "labor"/"program"/"practice" deliberately excluded
+entirely (real ambiguity in this specific dataset even under the lowercase-only rule) — flagged to
+Nick rather than guessed at. 272 substitutions landed across 6 files.
+
+**The bug**: a first-pass implementation used raw-text regex restricted to lowercase matches, which
+correctly avoided every proper *name* but had no way to distinguish a lowercase *identifier slug*
+("world-zionist-organization", "communities-neighborhoods-regularization-bill-2020") from lowercase
+*prose* — both matched the regex identically, and silently renaming an id broke every edge keyed on
+its old value (caught via an edge-for-edge diff against the pre-pass graph: 317→316). Rewritten as
+a JSON-structural walk that excludes every id-shaped key (`org_id`, `actor_id`, `law_id`,
+`topic_id`, `event_id`, `merged_into`, and every array of id references) by key name rather than a
+text pattern — ids now provably untouched regardless of case or content. Same class of lesson as
+this project's other "a new kind/id/field needs updating everywhere it's keyed on" bugs, just in
+the data-editing tooling this time rather than the rendering code.
+
+Verified throughout: `node --check`, the extended DOM-stub harness, `collision_check.py` clean, and
+an edge-for-edge diff between the Python build and the wiki's client-side graph back to matching
+exactly after each change. Live-verified on the deployed site (WZO's own page still reads "World
+Zionist Organization," confirming the id-safe rewrite actually held). Three commits this round,
+each pushed and re-aliased before moving to the next.
+
+**Genuinely still open, not done this round**: the stamp-text question ("Reinstate Resolution
+3379"/"5778 = Apartheid," raised two rounds ago); making the Vercel alias-tracking fix permanent;
+the visual/colour revamp Nick asked to defer to later; further data on the two new Demographic
+Group entries if there's more to research; and any further-afield gynecology/analyze-family words
+that weren't in this pass's audited scope, if a systematic search turns up something worth doing.
