@@ -183,6 +183,10 @@
   .netview #netInfoPanel { flex: 1 1 auto; overflow-y: auto; padding: 1.1rem 1.2rem 2rem; min-height: 0; }
   .netview .net-info-empty { color: var(--fog); font-size: 0.85rem; padding-top: 2rem; text-align: center; line-height: 1.6; }
   .netview .net-info-empty .big { font-size: 1.6rem; display: block; margin-bottom: 0.5rem; }
+  @media (max-width: 860px) {
+    .netview .net-info-empty { padding-top: 0.5rem; font-size: 0.78rem; line-height: 1.4; }
+    .netview .net-info-empty .big { font-size: 1.2rem; margin-bottom: 0.25rem; }
+  }
   .netview .net-info-badge { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.55rem; border-radius: 20px; margin-bottom: 0.6rem; border: 1px solid var(--line); }
   .netview .net-info-panel h3 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.25rem; margin: 0 0 0.25rem; text-wrap: balance; }
   .netview .net-info-meta { font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog); margin: 0 0 0.9rem; line-height: 1.5; }
@@ -198,8 +202,14 @@
 
   @media (max-width: 860px) {
     .netview .net-graph-face { flex-direction: column; height: auto; }
-    .netview .net-graph-wrap { height: 52vh; }
-    .netview .net-info-panel { flex: none; border-left: none; border-top: 1px solid var(--line); max-height: 32vh; }
+    .netview .net-graph-wrap { height: 42vh; }
+    /* Empty-state info panel (nothing selected yet) stays short -- it's just an icon and two
+       lines of instructions, no reason to reserve a third of the screen for it. Once a node is
+       actually selected there's real content to read, so it's allowed to grow. Toggled via
+       .has-selection, set/cleared in netSelectNode/netClearSelection alongside the innerHTML
+       swap that already happens there. */
+    .netview .net-info-panel { flex: none; border-left: none; border-top: 1px solid var(--line); max-height: 15vh; transition: max-height 0.2s ease; }
+    .netview .net-info-panel.has-selection { max-height: 44vh; }
   }
 
   .net-intro-overlay { position: fixed; inset: 0; z-index: 500; display: flex; align-items: center; justify-content: center; padding: 1.2rem; background: rgba(20,20,18,0.5); backdrop-filter: blur(2px); animation: netIntroFade 0.25s ease; }
@@ -9810,7 +9820,7 @@
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--fog)"></span>Institutional</span>';
     html += '<span class="net-sw"><span class="net-dot ring"></span>No data</span>';
     html += '</div></div>';
-    html += '<div class="net-info-panel"><div class="net-panel-search">';
+    html += '<div class="net-info-panel" id="netInfoPanelWrap"><div class="net-panel-search">';
     html += '<input type="text" id="netSearchBox" placeholder="Search all entries…" autocomplete="off" oninput="netOnSearchInput()" onkeydown="netOnSearchKeydown(event)" />';
     html += '<div id="netSearchResults" class="net-search-results" hidden></div></div>';
     html += '<div id="netInfoPanel"><div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div></div>';
@@ -10385,12 +10395,18 @@
       });
     }
     document.getElementById('netInfoPanel').innerHTML = html;
+    // Mobile-only sizing hook (see @media max-width:860px): the info panel stays short while
+    // empty and grows once there's a real record to read.
+    var wrap = document.getElementById('netInfoPanelWrap');
+    if (wrap) wrap.classList.add('has-selection');
   }
 
   function netClearSelection() {
     NET.selectedId = null;
     netApplyVisibility();
     document.getElementById('netInfoPanel').innerHTML = '<div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div>';
+    var wrap = document.getElementById('netInfoPanelWrap');
+    if (wrap) wrap.classList.remove('has-selection');
     netResetView();
   }
 
