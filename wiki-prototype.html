@@ -197,6 +197,15 @@
     .netview .net-graph-wrap { height: 52vh; }
     .netview .net-info-panel { flex: none; border-left: none; border-top: 1px solid var(--line); max-height: 32vh; }
   }
+
+  .net-intro-overlay { position: fixed; inset: 0; z-index: 500; display: flex; align-items: center; justify-content: center; padding: 1.2rem; background: rgba(20,20,18,0.5); backdrop-filter: blur(2px); animation: netIntroFade 0.25s ease; }
+  @keyframes netIntroFade { from { opacity: 0; } to { opacity: 1; } }
+  .net-intro-card { max-width: 30rem; background: var(--parchment-hi); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 1.6rem 1.7rem; }
+  .net-intro-card .badge { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--fog); border: 1px solid var(--line); border-radius: 20px; padding: 0.2rem 0.6rem; margin-bottom: 0.7rem; }
+  .net-intro-card h2 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.35rem; margin: 0 0 0.7rem; text-wrap: balance; }
+  .net-intro-card p { font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 0.9rem; }
+  .net-intro-card .net-intro-ok { display: block; margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; background: var(--ink); color: var(--parchment); border: none; border-radius: 20px; padding: 0.5rem 1.1rem; cursor: pointer; }
+  .net-intro-card .net-intro-ok:hover { opacity: 0.85; }
 </style>
 
 <header class="top">
@@ -204,7 +213,7 @@
   <form onsubmit="return doSearch(event)">
     <input id="searchbox" type="search" placeholder="Search…" aria-label="Search entities" />
   </form>
-  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Network</button>
+  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/index'">Index</button>
   <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
 </header>
 
@@ -2076,7 +2085,8 @@
       "david-ben-gurion",
       "berl-katznelson",
       "golda-meir",
-      "chaim-arlosoroff"
+      "chaim-arlosoroff",
+      "eliezer-kaplan"
     ],
     "action_record": [
       {
@@ -7124,13 +7134,13 @@
     "sponsoring_ministry": null,
     "sponsoring_mk_id": null,
     "category": "Annexation",
-    "summary": "Passed 69-15 with 3 abstentions on 30 July 1980, declaring 'Jerusalem, complete and united' the capital of Israel and the seat of the President, Knesset, and Supreme Court, and prioritizing the city for government aid — treating East Jerusalem, unilaterally annexed via municipal-boundary expansion in 1967, as fully and permanently part of the state rather than occupied or negotiable territory.",
+    "summary": "Introduced as a private member's bill by Likud MK Geula Cohen, passed 69-15 with 3 abstentions on 30 July 1980, declaring 'Jerusalem, complete and united' the capital of Israel and the seat of the President, Knesset, and Supreme Court, and prioritizing the city for government aid — treating East Jerusalem, unilaterally annexed via municipal-boundary expansion in 1967, as fully and permanently part of the state rather than occupied or negotiable territory.",
     "land_impact": {
       "spatial_region": "East Jerusalem",
       "estimated_hectares_affected": null,
       "description": "Legally consolidated the ~70 km² 1967 municipal annexation of East Jerusalem into permanent constitutional status — see this dataset's own East Jerusalem topic entry for the underlying 1967 annexation figures."
     },
-    "citation": "VERIFIED 2026-09-01 — the 30 July 1980 passage date, the 69-15-3 vote, and the Sefer Ha-Chukim No. 980/5 August 1980/p. 186 citation are corroborated via live search (WIPO Lex's official legislative record, Jerusalem Post retrospective). UN Security Council Resolution 478, adopted three weeks later, declared the law 'null and void' — see this dataset's own Resolution 478 topic entry."
+    "citation": "VERIFIED 2026-09-01 — the 30 July 1980 passage date, the 69-15-3 vote, and the Sefer Ha-Chukim No. 980/5 August 1980/p. 186 citation are corroborated via live search (WIPO Lex's official legislative record, Jerusalem Post retrospective). UN Security Council Resolution 478, adopted three weeks later, declared the law 'null and void' — see this dataset's own Resolution 478 topic entry. VERIFIED 2026-09-03 — Geula Cohen's sponsorship is corroborated via live search (Grokipedia's Jerusalem Law article); she is not yet profiled as her own entry in this dataset, so far appearing only in Tzachi Hanegbi's personal_context as his mother."
   },
   {
     "law_id": "citizenship-and-entry-into-israel-law-2003",
@@ -7160,13 +7170,13 @@
     "sponsoring_ministry": null,
     "sponsoring_mk_id": null,
     "category": "Housing Discrimination",
-    "summary": "Formalized the legal authority of 'admissions committees' — bodies that screen applicants for housing plots — in roughly 434-475 small communities (fewer than 400 households) in the Negev and Galilee built on public land, permitting them to reject prospective residents for perceived incompatibility with the community's 'social-cultural fabric.' Both regions have large Palestinian Arab citizen populations; the law's practical effect is to let these communities exclude Arab citizens from public land they would otherwise be entitled to apply for. Upheld by Israel's Supreme Court in a 5-4 ruling on 17 September 2014.",
+    "summary": "Sponsored by Yisrael Beiteinu MK David Rotem, who chaired the Knesset Constitution, Law and Justice Committee that advanced it and stated its purpose was to let towns be 'established by people who want to live with other Jews.' Formalized the legal authority of 'admissions committees' — bodies that screen applicants for housing plots — in roughly 434-475 small communities (fewer than 400 households) in the Negev and Galilee built on public land, permitting them to reject prospective residents for perceived incompatibility with the community's 'social-cultural fabric.' Both regions have large Palestinian Arab citizen populations; the law's practical effect is to let these communities exclude Arab citizens from public land they would otherwise be entitled to apply for. Upheld by Israel's Supreme Court in a 5-4 ruling on 17 September 2014.",
     "land_impact": {
       "spatial_region": "Negev/Naqab; Galilee — roughly 434-475 small communities on public land",
       "estimated_hectares_affected": null,
       "description": "Affects access to housing plots in the roughly 43% of Israel's residential communities the law's threshold covers, rather than transferring a fixed area — a specific hectare total not meaningful for this kind of access-restriction law and not sourced this pass."
     },
-    "citation": "VERIFIED 2026-09-01 — the 2011 enactment, the <400-household/public-land threshold, the ~434-475 community estimate, and the 17 September 2014 5-4 Supreme Court ruling upholding the law are corroborated via live search (Adalah's Admissions Committees Law coverage, Human Rights Watch, Middle East Eye, Times of Israel)."
+    "citation": "VERIFIED 2026-09-01 — the 2011 enactment, the <400-household/public-land threshold, the ~434-475 community estimate, and the 17 September 2014 5-4 Supreme Court ruling upholding the law are corroborated via live search (Adalah's Admissions Committees Law coverage, Human Rights Watch, Middle East Eye, Times of Israel). VERIFIED 2026-09-03 — David Rotem's sponsorship, committee chairmanship, and quoted rationale are corroborated via live search (his own Wikipedia article, cited alongside contemporary press coverage of the bill); he is not yet profiled as his own entry in this dataset."
   },
   {
     "law_id": "regularization-law-2017",
@@ -7431,8 +7441,13 @@
     "date_or_range": "1924-1929",
     "summary": "Roughly 67,000-80,000 immigrants (1924-28 alone), disproportionately middle-class Polish Jews — peaking at nearly 17,000 in 1925 — fleeing new Polish fiscal policy widely seen as targeting Jewish businesses (the wave is sometimes named for the Polish officials behind those reforms), plus the effects of restrictive US immigration quotas closing off that alternative destination. More urban and commercially-oriented than the Second/Third Aliyah's agricultural pioneers — many were shopkeepers and artisans who settled mainly in Tel Aviv, investing capital in construction, factories, hotels, and shops.",
     "significance": "Roughly doubled the Yishuv's Jewish population in five years, sharply accelerating land purchase and urban/agricultural settlement rates and contributing to the tensions that fed into the 1929 Palestine riots at the wave's end.",
-    "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_actor_ids": [
+      "yehoshua-hankin"
+    ],
+    "related_org_ids": [
+      "jewish-national-fund",
+      "palestine-land-development-company"
+    ],
     "citation": "VERIFIED 2026-09-01 — the 67,000-80,000 total, the 1925 peak (~17,000), and the middle-class/urban Tel Aviv-concentrated composition are corroborated via live search (israeled.org's Fourth Aliyah page, Wikipedia's Fourth Aliyah article, COJS)."
   },
   {
@@ -7524,7 +7539,10 @@
     "summary": "The region later called Palestine had no separate administrative existence under the Ottoman Empire — it was divided across the sanjaks (districts) of Jerusalem, Nablus, and Acre (each governed by a mutasarrif reporting to a provincial vali), administered as part of wider Ottoman Syria, with no single border a map would show; the exact sanjak boundaries also shifted over time (Nablus was joined to Jerusalem in 1842, then severed again in 1858). Land tenure operated under Ottoman law, notably the 1858 Ottoman Land Code, part of the wider Tanzimat reforms — it introduced formal registration and taxation that many fellahin in some regions avoided, inadvertently concentrating registered title in the hands of urban notables and absentee landlords like the Sursock family, though this pattern was not universal: a property-records survey of the hilly country around Jerusalem specifically found peasants there registering land in their own names, not a single case of a notable or moneylender doing so.",
     "significance": "The baseline this whole dataset measures loss against: no partition line existed, and the land tenure quirks of Ottoman-era registration are part of why absentee landlords like the Sursocks held title to land worked by others — directly enabling the large early land purchases documented here.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "hovevei-zion",
+      "bilu-movement"
+    ],
     "citation": "VERIFIED 2026-09-01 — the sanjak administrative structure, the 1842/1858 Nablus boundary shifts, and the 1858 Land Code's Tanzimat origin are corroborated via live search (Wikipedia's Ottoman Palestine and Ottoman Land Code of 1858 articles). The Jerusalem-hills registration counter-example is a genuine regional complication to the fellahin-avoidance pattern, found via the same pass and added rather than smoothed over — the pattern this dataset otherwise relies on (concentration in notables'/absentee hands) appears stronger in fertile plains regions like the Jezreel Valley than in Jerusalem's hill country specifically. Kenneth W. Stein, 'The Land Question in Palestine, 1917-1939' (1984), remains the best guess for deeper narrative detail, not independently re-read this pass."
   },
   {
@@ -7553,7 +7571,10 @@
     "summary": "The territorial entity itself, as distinct from British Mandate (the legal regime governing it) — the 1920 San Remo Conference created separate mandates for Palestine (Britain) and Syria (France), with their border roughly fixed by the 23 December 1920 Paulet-Newcombe Agreement. The 1921 Cairo Conference then separated Transjordan's administration from Palestine's — territory east of the Jordan became the Emirate of Transjordan under Faisal's brother Abdullah, with Colonial Secretary Churchill's legal maneuver ensuring the Balfour Declaration's Jewish-national-home provisions would not apply there. Roughly corresponds to the area later split by the 1947 UN Partition Plan and the 1949 Armistice Line.",
     "significance": "The 'historic Palestine' outline this dataset's scrolly map uses as its baseline landmass — the territory every subsequent partition, war, and annexation in this record carves into smaller pieces.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "yishuv",
+      "league-of-nations"
+    ],
     "citation": "VERIFIED 2026-09-01 — the San Remo/Paulet-Newcombe northern border and the 1921 Cairo Conference's Transjordan separation (including Churchill's Balfour-exemption maneuver) are corroborated via live search (Wikipedia's Mandate for Palestine and Transjordan memorandum articles, Jewish Virtual Library's 'When Churchill Severed Transjordan' article)."
   },
   {
@@ -8349,7 +8370,9 @@
     "summary": "An unrecognized Bedouin village in the Negev/Naqab, inhabited by the Al-Turi and Abu Madigem families among others, whose residents' Israeli citizenship dates to 1948 but whose presence on the land itself goes back to the Ottoman period. Around 400 people lived there before Israeli military authorities ordered a temporary six-month evacuation for army training purposes — sourced variously to 1951 or 1953 — after which the state refused to let residents return, later classifying the land as 'state land.' Residents maintain they never actually left and continued cultivating the land. The village's homes were first fully demolished by the state on 27 July 2010; as of March 2025 it had been demolished more than 238 times, on a roughly monthly basis, with residents rebuilding after nearly every one. Only a few dozen residents remain, most now concentrated near the village cemetery, continuing a weekly protest vigil and ongoing land-ownership litigation the state has not resolved in their favor.",
     "significance": "The single most-repeated demolition case in this dataset's subject area and, outside a formal legislative act, the clearest illustration of how the pattern this dataset otherwise documents through named bills and laws (unrecognized-village status, administrative demolition orders, 'state land' reclassification) plays out as sustained, individually-targeted enforcement against one community over a decade and a half — the same underlying legal and administrative machinery the Prawer-Begin Plan (2013) and the 2026 Negev Bedouin land claims settlement plan, both already in this dataset, were each designed to resolve at scale.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "state-of-israel"
+    ],
     "citation": "VERIFIED 2026-09-02 — the 27 July 2010 first full demolition and the 181+ repeat count as of that source's writing are corroborated via live search (Negev Coexistence Forum/Dukium's own village profile). The 238+ demolitions as of March 2025 and the roughly monthly enforcement cadence are corroborated via live search (Anadolu Agency's '219th time' report and the broader pattern of sequential press reports at 116, 119, 173, 219, and 238+ demolitions across 2016-2025, each independently reported by Al Jazeera, the Israeli Communist Party's Maki, +972 Magazine, and Anadolu Agency). The temporary-evacuation displacement is dated to 1951 by some sources and 1953 by others (Dukium's own account uses 1953) — kept as a range rather than a false-precision single year, consistent with this dataset's practice elsewhere. Population figures (~400 before demolitions, a few dozen remaining) are Dukium's own count, not independently cross-verified against a second source this pass."
   },
   {
@@ -8787,21 +8810,21 @@
     var orgsSorted = ORGS.slice().sort(byName("name"));
     var lawsSorted = LAWS.slice().sort(byName("title"));
     var topicsSorted = TOPICS.slice().sort(byName("name"));
-    var foreignSorted = FOREIGN.slice().sort(byName("full_name"));
-
-    // Actors and Knesset Members are one reader-facing category ("Actor") — the two-file split
-    // underneath is real (MKs carry scraped floor-vote data actors don't) but that's a data-
+    // Actors, Knesset Members, and Foreign Patrons are one reader-facing category ("Actors") —
+    // the three-file split underneath is real (MKs carry scraped floor-vote data, Foreign
+    // Patrons a different sourcing standard for non-Israeli figures) but that's a data-
     // provenance distinction, not one a reader needs to navigate around. A person still only
     // lives in exactly one file, so this merge is purely presentational.
     var people = ACTORS.map(function (a) { return { name: a.full_name, href: "#/actor/" + a.actor_id }; })
       .concat(MKS.map(function (m) { return { name: m.full_name, href: "#/mk/" + m.mk_id }; }))
+      .concat(FOREIGN.map(function (f) { return { name: f.full_name, href: "#/foreign/" + f.actor_id }; }))
       .sort(byName("name"));
 
     html += '<div class="index-group"><h2>Actors (' + people.length + ")</h2><div class=\"index-grid\">";
     people.forEach(function (p) { html += '<a href="' + p.href + '">' + escapeHtml(p.name) + "</a>"; });
     html += "</div></div>";
 
-    html += '<div class="index-group"><h2>Organizations (' + ORGS.length + ")</h2><div class=\"index-grid\">";
+    html += '<div class="index-group"><h2>Organisations (' + ORGS.length + ")</h2><div class=\"index-grid\">";
     orgsSorted.forEach(function (o) { html += '<a href="#/org/' + o.org_id + '">' + escapeHtml(o.name) + "</a>"; });
     html += "</div></div>";
 
@@ -8814,12 +8837,6 @@
     if (TOPICS.length) {
       html += '<div class="index-group"><h2>Places, Periods &amp; Events (' + TOPICS.length + ")</h2><div class=\"index-grid\">";
       topicsSorted.forEach(function (t) { html += '<a href="#/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
-      html += "</div></div>";
-    }
-
-    if (FOREIGN.length) {
-      html += '<div class="index-group"><h2>Foreign Patrons (' + FOREIGN.length + ")</h2><div class=\"index-grid\">";
-      foreignSorted.forEach(function (f) { html += '<a href="#/foreign/' + f.actor_id + '">' + escapeHtml(f.full_name) + "</a>"; });
       html += "</div></div>";
     }
 
@@ -8888,6 +8905,7 @@
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--rust)"></span>Right</span>';
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--verdigris)"></span>Left</span>';
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--ochre)"></span>Religious</span>';
+    html += '<span class="net-sw"><span class="net-dot" style="background:var(--focus)"></span>Centrist</span>';
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--fog)"></span>Institutional</span>';
     html += '<span class="net-sw"><span class="net-dot ring"></span>No data</span>';
     html += '</div></div>';
@@ -8900,6 +8918,32 @@
     html += '</div>';
     return html;
   }
+
+  // One-time orientation popup for the network view -- shown the first time a visitor lands on
+  // it (which, since Network is now the front door, usually means their very first visit) and
+  // never again once acknowledged. Slimmed down from the in-page intro paragraph above.
+  var NET_INTRO_KEY = "dispossessionpapers-network-intro-seen";
+  function maybeShowNetworkIntro() {
+    try { if (localStorage.getItem(NET_INTRO_KEY)) return; } catch (e) { return; } // no storage, no popup -- fail quiet, don't nag every visit
+    if (document.getElementById("netIntroOverlay")) return;
+    var el = document.createElement("div");
+    el.id = "netIntroOverlay";
+    el.className = "net-intro-overlay";
+    el.innerHTML =
+      '<div class="net-intro-card">' +
+      '<span class="badge">A second way to move through the archive</span>' +
+      '<h2>The whole archive, as a network</h2>' +
+      '<p>Every Actor and Organisation — historical or Knesset, domestic or foreign patron — as one navigable graph. Click anything to open its record, or search to jump straight there. Laws and Topics stay out of the way until you zoom into who sponsored or discussed them.</p>' +
+      '<p style="font-size:0.78rem">Every edge here comes from a structured field already in the data — nothing hand-placed.</p>' +
+      '<button class="net-intro-ok" onclick="dismissNetworkIntro()">Got it</button>' +
+      '</div>';
+    document.body.appendChild(el);
+  }
+  window.dismissNetworkIntro = function () {
+    try { localStorage.setItem(NET_INTRO_KEY, "1"); } catch (e) {}
+    var el = document.getElementById("netIntroOverlay");
+    if (el && el.parentNode) el.parentNode.removeChild(el);
+  };
 
   // =========================================================================
   // Network view — the whole archive as a force-directed graph. Ported from
@@ -8922,10 +8966,15 @@
     "Self-Governing Community":1, "National Military":1, "International Body":1, "Representative Assembly":1,
     "Executive Council":1, "International Zionist Body":1, "Financial Institution":1, "Land Fund":1, "Land Company":1 };
   var NET_ALIGNMENT_FIELD_MAP = { "Right": "right", "Far-Right": "right", "Left": "left",
-    "Religious Nationalist": "religious", "Center": "unaffiliated" };
-  var NET_ALIGN_COLOR = { right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)',
+    "Religious Nationalist": "religious", "Center": "centrist" };
+  // The Knesset's own "Religious Nationalist" label conflates Religious Zionism with Haredi
+  // non-Zionism (UTJ) -- two genuinely different currents this dataset's own org entries
+  // already distinguish. Haredi parties are exempted from the field override below so they
+  // fall through to org-propagation instead, which resolves UTJ correctly.
+  var NET_HAREDI_PARTIES = { "United Torah Judaism": 1 };
+  var NET_ALIGN_COLOR = { right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)', centrist: 'var(--focus)',
     institutional: 'var(--fog)', unaffiliated: 'var(--fog)', unclassified: 'var(--fog)' };
-  var NET_ALIGN_LABEL = { right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist',
+  var NET_ALIGN_LABEL = { right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist', centrist: 'Centrist',
     institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data' };
   var NET_KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law',
     topic: 'Topic', foreign: 'Foreign Patron' };
@@ -9068,6 +9117,18 @@
       });
       (t.related_org_ids||[]).forEach(function(oid) { addEdge(tid, "org:" + oid, "context"); });
     });
+    // topic <-> law, matched against each law's short title appearing in the topic's own
+    // prose (e.g. Resolution 497's summary names "the Golan Heights Law" directly) -- topics
+    // have no related_law_ids field to read structurally, so text matching is the only way
+    // this connects at all, same extraction-not-invention discipline as law<->org above.
+    TOPICS.forEach(function(t) {
+      var tid = "topic:" + t.topic_id;
+      var text = (t.summary || "") + " " + (t.significance || "");
+      LAWS.forEach(function(l) {
+        var short = l.title.split(",")[0].trim();
+        if (short.length > 4 && text.indexOf(short) !== -1) addEdge(tid, "law:" + l.law_id, "context");
+      });
+    });
     FOREIGN.forEach(function(f) {
       var text = f.organization || "";
       ORGS.forEach(function(o) {
@@ -9080,7 +9141,9 @@
     MKS.forEach(function(m) {
       var terms = m.knesset_terms || [];
       if (terms.length) {
-        var mapped = NET_ALIGNMENT_FIELD_MAP[terms[terms.length-1].political_alignment];
+        var latest = terms[terms.length-1];
+        if (NET_HAREDI_PARTIES[latest.party]) return; // let org-propagation resolve this one instead
+        var mapped = NET_ALIGNMENT_FIELD_MAP[latest.political_alignment];
         if (mapped) nodes[nodeIndex["mk:" + m.mk_id]].align = mapped;
       }
     });
@@ -9284,7 +9347,11 @@
     svg.querySelectorAll('g[data-id]').forEach(function(g) {
       var id = g.dataset.id, kind = g.dataset.kind, n = NET.nodeById[id];
       var isHidden = !!NET_HIDDEN_KINDS[kind];
-      var maxTier = (isHidden && !NET.showHidden) ? 1 : 2;
+      // Once a selection is active, Laws/Topics follow the same 2-hop tier rules as everyone
+      // else (two topics that both cite the Knesset should surface at 2 hops from each other,
+      // not just the one directly clicked) -- the "only on zoom" cap is the no-selection
+      // default only, not a restriction that survives into an active selection.
+      var maxTier = dist ? 2 : ((isHidden && !NET.showHidden) ? 1 : 2);
       var exists, tier;
       if (dist) { var d = dist[id]; exists = (d !== undefined && d <= maxTier); tier = exists ? Math.min(d,2) : 0; }
       else { exists = !isHidden || NET.showHidden; tier = 0; }
@@ -9297,9 +9364,7 @@
     svg.querySelectorAll('line').forEach(function(l) {
       var isHiddenEdge = !!l.dataset.lawEdge;
       if (!dist) { l.style.display = (!isHiddenEdge || NET.showHidden) ? '' : 'none'; l.style.opacity = ''; return; }
-      var na = NET.nodeById[l.dataset.a], nb = NET.nodeById[l.dataset.b];
-      var maxA = (NET_HIDDEN_KINDS[na.kind] && !NET.showHidden) ? 1 : 2;
-      var maxB = (NET_HIDDEN_KINDS[nb.kind] && !NET.showHidden) ? 1 : 2;
+      var maxA = 2, maxB = 2; // same relaxation as the node loop above -- see comment there
       var da = dist[l.dataset.a], db = dist[l.dataset.b];
       var visible = da !== undefined && da <= maxA && db !== undefined && db <= maxB;
       l.style.display = visible ? '' : 'none';
@@ -9390,15 +9455,18 @@
   }
 
   function netBuildIndex() {
-    var groups = { actors: [], org: [], law: [], topic: [], foreign: [] };
+    // Actors, Knesset Members, and Foreign Patrons are one reader-facing category ("Actors") --
+    // same reasoning as the MK merge: they're all people, and the underlying splits are
+    // data-provenance/schema distinctions a reader doesn't need a separate list to navigate.
+    var groups = { actors: [], org: [], law: [], topic: [] };
     NET.nodes.forEach(function(n) {
-      if (n.kind === 'actor' || n.kind === 'mk') groups.actors.push(n);
+      if (n.kind === 'actor' || n.kind === 'mk' || n.kind === 'foreign') groups.actors.push(n);
       else if (groups[n.kind]) groups[n.kind].push(n);
     });
     Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
-    var titles = { actors:'Actors', org:'Organizations', law:'Laws', topic:'Topics', foreign:'Foreign Patrons' };
+    var titles = { actors:'Actors', org:'Organisations', law:'Laws', topic:'Topics' };
     var html = '';
-    ['actors','org','law','topic','foreign'].forEach(function(k) {
+    ['actors','org','law','topic'].forEach(function(k) {
       html += '<div class="net-index-group"><h3>'+titles[k]+' ('+groups[k].length+')</h3><div class="net-index-grid">';
       groups[k].forEach(function(n) { html += '<a onclick="netJumpToNode(\''+n.id.replace(/'/g,"\\'")+'\')">'+n.label+'</a>'; });
       html += '</div></div>';
@@ -9487,6 +9555,15 @@
     window.scrollTo(0, 0);
 
     if (parts.length === 0) {
+      // Network is the front door; the card-index lives at #/index for readers who want the
+      // traditional list view instead.
+      app.innerHTML = renderNetwork();
+      foot.textContent = "";
+      showNetwork();
+      maybeShowNetworkIntro();
+      return;
+    }
+    if (parts[0] === "index") {
       app.innerHTML = renderIndex();
       foot.textContent = "";
       return;
@@ -9505,6 +9582,7 @@
       app.innerHTML = renderNetwork();
       foot.textContent = "";
       showNetwork(); // builds the graph lazily on first visit, then renders + wires interaction
+      maybeShowNetworkIntro();
       return;
     }
     var key = parts[0] + ":" + parts[1];

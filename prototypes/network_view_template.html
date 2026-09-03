@@ -214,6 +214,7 @@
                   <span class="sw"><span class="dot" style="background:var(--rust)"></span>Right</span>
                   <span class="sw"><span class="dot" style="background:var(--verdigris)"></span>Left</span>
                   <span class="sw"><span class="dot" style="background:var(--ochre)"></span>Religious</span>
+                  <span class="sw"><span class="dot" style="background:var(--focus)"></span>Centrist</span>
                   <span class="sw"><span class="dot" style="background:var(--fog)"></span>Institutional</span>
                   <span class="sw"><span class="dot ring"></span>No data</span>
               </div>
@@ -244,11 +245,11 @@
 var GRAPH_DATA = /*__GRAPH_DATA__*/;
 
 var ALIGN_COLOR = {
-  right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)',
+  right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)', centrist: 'var(--focus)',
   institutional: 'var(--fog)', unaffiliated: 'var(--fog)', unclassified: 'var(--fog)'
 };
 var ALIGN_LABEL = {
-  right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist',
+  right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist', centrist: 'Centrist',
   institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data'
 };
 var KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law', topic: 'Topic', foreign: 'Foreign Patron' };
@@ -257,20 +258,21 @@ var HIDDEN_KINDS = { law: true, topic: true }; // only revealed once a connected
 
 // ---------- index face ----------
 function buildIndex() {
-  // Actors and Knesset Members are one reader-facing category ("Actors") -- the underlying
-  // data-provenance split (MKs carry scraped floor-vote data actors don't) isn't something a
-  // reader needs to navigate around. Foreign Patrons stay their own group -- a genuinely
-  // different category (present-day, non-Israeli, institutional-role-only).
-  var groups = { actors: [], org: [], law: [], topic: [], foreign: [] };
+  // Actors, Knesset Members, and Foreign Patrons are one reader-facing category ("Actors") --
+  // they're all people, and the underlying splits (MKs carry scraped floor-vote data; Foreign
+  // Patrons are present-day and institutional-role-only) are data-provenance/schema distinctions,
+  // not something a reader needs a separate list to navigate around. Each still carries its own
+  // badge on the individual record so the distinction isn't lost, just not a top-level split.
+  var groups = { actors: [], org: [], law: [], topic: [] };
   GRAPH_DATA.nodes.forEach(function(n) {
-    if (n.kind === 'actor' || n.kind === 'mk') groups.actors.push(n);
+    if (n.kind === 'actor' || n.kind === 'mk' || n.kind === 'foreign') groups.actors.push(n);
     else if (groups[n.kind]) groups[n.kind].push(n);
   });
   Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
 
-  var titles = { actors: 'Actors', org: 'Organizations', law: 'Laws', topic: 'Topics', foreign: 'Foreign Patrons' };
+  var titles = { actors: 'Actors', org: 'Organisations', law: 'Laws', topic: 'Topics' };
   var html = '';
-  ['actors','org','law','topic','foreign'].forEach(function(k) {
+  ['actors','org','law','topic'].forEach(function(k) {
     html += '<div class="index-group"><h3>' + titles[k] + ' (' + groups[k].length + ')</h3><div class="index-grid">';
     groups[k].forEach(function(n) {
       html += '<a onclick="jumpToNode(\'' + n.id.replace(/'/g,"\\'") + '\')">' + n.label + '</a>';
@@ -570,7 +572,11 @@ function applyVisibility() {
   svg.querySelectorAll('g[data-id]').forEach(function(g) {
     var id = g.dataset.id, kind = g.dataset.kind, n = nodeById[id];
     var isHidden = !!HIDDEN_KINDS[kind];
-    var maxTierForThis = (isHidden && !showHidden) ? 1 : 2;
+    // Once a selection is active, Laws/Topics follow the *same* 2-hop tier rules as everyone
+    // else -- e.g. two different topics that both cite the Knesset should both surface at 2
+    // hops from each other, not just the one directly clicked. The "only on zoom" restriction
+    // is specifically the *no-selection* default state, not a cap that survives into a selection.
+    var maxTierForThis = dist ? 2 : ((isHidden && !showHidden) ? 1 : 2);
     var exists, tier;
     if (dist) {
       var d = dist[id];
@@ -592,9 +598,7 @@ function applyVisibility() {
   svg.querySelectorAll('line').forEach(function(l) {
     var isHiddenEdge = !!l.dataset.lawEdge;
     if (!dist) { l.style.display = (!isHiddenEdge || showHidden) ? '' : 'none'; l.style.opacity = ''; return; }
-    var na = nodeById[l.dataset.a], nb = nodeById[l.dataset.b];
-    var maxA = (HIDDEN_KINDS[na.kind] && !showHidden) ? 1 : 2;
-    var maxB = (HIDDEN_KINDS[nb.kind] && !showHidden) ? 1 : 2;
+    var maxA = 2, maxB = 2; // same relaxation as the node loop above -- see comment there
     var da = dist[l.dataset.a], db = dist[l.dataset.b];
     var visible = da !== undefined && da <= maxA && db !== undefined && db <= maxB;
     l.style.display = visible ? '' : 'none';

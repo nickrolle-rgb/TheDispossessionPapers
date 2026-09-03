@@ -257,6 +257,18 @@ for t in topics:
     for oid in t.get("related_org_ids", []) or []:
         add_edge(tid, "org:" + oid, "context")
 
+# topic <-> law, matched against each law's short title appearing in the topic's own summary text
+# -- e.g. Resolution 497's summary names "the Golan Heights Law" directly. Same extraction-not-
+# invention discipline as the law<->org/person matching above; topics.json has no related_law_ids
+# field to read from structurally, so text matching is the only way this connects at all.
+for t in topics:
+    tid = "topic:" + t["topic_id"]
+    text = (t.get("summary", "") or "") + " " + (t.get("significance", "") or "")
+    for l in laws:
+        short = l["title"].split(",")[0].strip()
+        if len(short) > 4 and short in text:
+            add_edge(tid, "law:" + l["law_id"], "context")
+
 # foreign <-> org, matched against each patron's own `organization` text field the same way laws
 # match sponsor org names -- currently a no-op (none of the 6 foreign patrons' organizations are
 # themselves in organizations.json, which tracks the Zionist-movement/Israeli-state org lineage,
@@ -275,17 +287,32 @@ for f in foreign:
 # through which orgs they're linked to. Use the most recent term (people's declared alignment can
 # genuinely change across a long career). Falls through to org-propagation below only for MKs
 # with no term data at all.
+#
+# "Centrist" is a real, positive classification (Nick, 2026-09-03) -- a party confirmed centrist
+# is a different claim from a party we simply have no alignment data for, so it gets its own
+# colour rather than folding into the same "no data" hollow-ring treatment.
+#
+# The Knesset's own "Religious Nationalist" label conflates two genuinely different currents:
+# Religious Zionism (settlement-focused, e.g. Jewish Home/Religious Zionism party) and Haredi
+# non-Zionism (UTJ, Torah-focused, historically opposed to the state's secular Zionist premise --
+# already documented in this dataset's own United Torah Judaism entry). Coloring a UTJ MK the same
+# "religious" as a Religious Zionism MK would erase a distinction the dataset itself draws
+# elsewhere, so Haredi parties are exempted from this field override and fall through to
+# org-propagation instead, which already resolves UTJ correctly.
 ALIGNMENT_FIELD_MAP = {
     "Right": "right", "Far-Right": "right",
     "Left": "left",
     "Religious Nationalist": "religious",
-    "Center": "unaffiliated",  # same honest-no-data treatment as a genuinely centrist party
+    "Center": "centrist",
 }
+HAREDI_NON_ZIONIST_PARTIES = {"United Torah Judaism"}  # extend if Shas or similar is ever added
 for m in mks:
     terms = m.get("knesset_terms", []) or []
     if terms:
-        raw = terms[-1].get("political_alignment")
-        mapped = ALIGNMENT_FIELD_MAP.get(raw)
+        latest = terms[-1]
+        if latest.get("party") in HAREDI_NON_ZIONIST_PARTIES:
+            continue
+        mapped = ALIGNMENT_FIELD_MAP.get(latest.get("political_alignment"))
         if mapped:
             nodes[node_index["mk:" + m["mk_id"]]]["align"] = mapped
 
