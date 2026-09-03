@@ -152,11 +152,13 @@
     transform: rotate(var(--r)); white-space: nowrap; display: inline-block; user-select: none;
   }
   @media (max-width: 500px) { .netview .net-stamp-tag { font-size: 0.55rem; padding: 0.24rem 0.5rem; } }
+  /* In normal page flow below the graph+panel row now, not an absolute overlay pinned over the
+     graph itself (see renderNetwork()'s own comment on this move) -- so it reads and sizes like
+     any other on-page caption rather than a cramped corner label. */
   .netview .net-graph-legend {
-    position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.7rem;
-    font-family: "IBM Plex Mono", monospace; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.02em;
-    color: var(--ink-soft); background: var(--panel-bg); border: 1px solid var(--line); border-radius: 4px; padding: 0.32rem 0.55rem;
-    max-width: calc(100% - 1.2rem);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.9rem; margin-top: 0.8rem;
+    font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--ink-soft); background: var(--panel-bg); border: 1px solid var(--line); border-radius: 6px; padding: 0.55rem 0.8rem;
   }
   .netview .net-legend-sep { width: 1px; align-self: stretch; background: var(--line); margin: 0 0.1rem; }
   .netview .net-graph-legend .net-sw { display: inline-flex; align-items: center; gap: 0.28rem; white-space: nowrap; }
@@ -9808,6 +9810,17 @@
     html += '<span class="net-stamp-tag" style="--r:2deg">5778 = Apartheid</span>';
     html += '</div>';
     html += '<svg id="netGraphSvg" viewBox="0 0 1260 1000"></svg>';
+    html += '</div>';
+    html += '<div class="net-info-panel" id="netInfoPanelWrap"><div class="net-panel-search">';
+    html += '<input type="text" id="netSearchBox" placeholder="Search all entries…" autocomplete="off" oninput="netOnSearchInput()" onkeydown="netOnSearchKeydown(event)" />';
+    html += '<div id="netSearchResults" class="net-search-results" hidden></div></div>';
+    html += '<div id="netInfoPanel"><div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div></div>';
+    html += '</div></div>';
+    // Moved out of the graph pane (where it used to float as an absolute overlay pinned to the
+    // bottom-left corner, covering whatever nodes happened to end up under it) and into normal
+    // page flow below the graph+panel row -- Nick, viewing on an actual phone: "can we please
+    // maybe remove the legend? Or put it into the web window so we can scroll past it?" This is
+    // the "scroll past it" option: still available, no longer sitting on top of the graph.
     html += '<div class="net-graph-legend">';
     html += '<span class="net-sw"><svg class="net-shico" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5"/></svg>Person</span>';
     html += '<span class="net-sw"><svg class="net-shico" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)"/></svg>Org</span>';
@@ -9819,12 +9832,7 @@
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--focus)"></span>Centrist</span>';
     html += '<span class="net-sw"><span class="net-dot" style="background:var(--fog)"></span>Institutional</span>';
     html += '<span class="net-sw"><span class="net-dot ring"></span>No data</span>';
-    html += '</div></div>';
-    html += '<div class="net-info-panel" id="netInfoPanelWrap"><div class="net-panel-search">';
-    html += '<input type="text" id="netSearchBox" placeholder="Search all entries…" autocomplete="off" oninput="netOnSearchInput()" onkeydown="netOnSearchKeydown(event)" />';
-    html += '<div id="netSearchResults" class="net-search-results" hidden></div></div>';
-    html += '<div id="netInfoPanel"><div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div></div>';
-    html += '</div></div>';
+    html += '</div>';
     html += '</div>';
     return html;
   }
