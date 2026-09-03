@@ -2214,3 +2214,90 @@ run 340 times, no d3).
 
 47 orgs, 24 knesset_members, 63 topics (4 gained links), 17 laws (2 gained citation detail).
 Collision check clean. One wiki publish (network view live), one commit.
+
+---
+
+## Round: front-door swap, connectivity/taxonomy pass, one-time intro popup
+
+Prompted by Nick reviewing the wired-in network view directly and sending 3 screenshots with a
+list of specific observations, plus a follow-up asking Network to become the site's default
+landing page.
+
+**Real gaps found and fixed**:
+- **Eliezer Kaplan wasn't connected to Labor/Left.** His `knesset_terms` already correctly read
+  Mapai/Left — the gap was a missing org edge (Mapai's `notable_members` never listed him). Fixed
+  by adding him there; no new "Labor Party" org entry needed, Mapai already is that entity.
+- **Yitzhak Goldknopf (Haredi, United Torah Judaism) looked like Religious Zionist.** Real
+  classification nuance, not a data gap: the Knesset's own `political_alignment` field doesn't
+  distinguish Haredi non-Zionism from Religious Zionism, and both were mapping to the same
+  "religious" bucket. Added a small explicit `HAREDI_NON_ZIONIST_PARTIES` exception (currently
+  just United Torah Judaism, same pattern as `MANUAL_ALIASES`/`COMPONENT_OF`) so Haredi MKs skip
+  the political_alignment override and resolve via org-propagation instead.
+- **Different edge stroke widths in the Blue & White cluster** — not a bug, by design: lineage
+  edges (org→org succession, stroke-width 1.4) are drawn heavier than membership edges (person↔
+  org, 0.7), so a merger reads visually differently from someone simply belonging to a party.
+- **Clicking a topic hid other topics that should've been 2 hops away via a shared org (e.g.
+  Knesset).** Real bug: hidden-kind nodes (law/topic) were capped at visibility tier 1 even during
+  an active selection. Fixed — tier cap is now 2 whenever a selection is active, 1 only in the
+  base/no-selection state.
+- **Blue & White / Yesh Atid / National Unity had no colour** (fell into "no data" grey). Added a
+  genuine "Centrist" category, read from MKs' `political_alignment: "Center"`, coloured
+  `var(--focus)` (blue) — not a repurposed existing bucket.
+- **Foreign Patrons folded into Actors** everywhere (homepage index, network index, network node
+  classification) — same data-provenance-not-reader-distinction reasoning as the earlier Actor/MK
+  merge.
+- **Organizations → Organisations**, UK spelling, across both the live wiki and the standalone
+  prototype (index headings, legend, network index titles). A full prose-content US→UK pass across
+  all six data files was *not* done this round — scoped as separate work, flagged to Nick rather
+  than rushed, since proper nouns (World Zionist **Organization**, book titles) need care a
+  find-replace would break.
+- **Golan Heights Law's connection to Resolution 497 wasn't showing.** The law already existed
+  (`golan-heights-law-1981`) and already cited Resolution 497 in its own text — the topic↔law
+  relationship just had no structural field to read (topics.json has no `related_law_ids`). Added
+  a text-matching pass: a law's short title found in a topic's own summary/significance prose
+  becomes a `context` edge. This is the same extraction-not-invention discipline as the existing
+  law↔org sponsor text-matching.
+- **"Roll Motions/Mandates/Resolutions/Bills into Laws"** and **Ashkenazi/Haredi/Ultra-Zionism new
+  listings** — real, substantive asks, deliberately not rushed into this round. The taxonomy merge
+  needs a scoped decision (topics.json and laws.json have real field differences; a rushed
+  migration risks breaking the live site) and the new topics need real research with live citation
+  checking, per the project's standing discipline. Both flagged to Nick as open items rather than
+  either done sloppily or silently dropped.
+- **"Reinstate Resolution 3379" / "5778 = Apartheid" stamp-text suggestions** — raised as a genuine
+  tonal-consistency question rather than implemented or ignored: both read as loaded activist
+  statements, in real tension with this project's own hard-won framing discipline (documented
+  conduct only, no editorializing, "Dispossession" chosen specifically over more charged language).
+  Response given directly to Nick in-conversation rather than recorded here as a decision, since
+  nothing has been decided yet.
+
+**A real deployment bug caught by verification, not by luck**: rebuilt the standalone prototype
+via `build_network_view.py` and got 309 edges; the wiki's client-side `netBuildGraphData()` (ported
+from the same source) produced only 299. Diffed the two edge lists directly (Python vs. the Node
+DOM-stub harness's dump of the live JS) rather than assuming which one was right, and found the
+gap was exactly the edges tracing back to this session's earlier `data/*.json` edits (Kaplan→
+Mapai, the four topic cross-references, two law sponsor citations) — `scripts/embed_data.py` had
+never been re-run after those edits, so the wiki's embedded ACTORS/ORGS/LAWS/TOPICS arrays were
+stale relative to the source JSON. Re-ran `embed_data.py`, re-verified: both builds now produce
+the identical 309-edge graph. Recorded here because it's a process gap (a `data/*.json` edit needs
+`embed_data.py` before it's real in the wiki, every time, not just at "final publish") — the
+standing workflow in this doc already said this, the miss was not following it mid-session.
+
+**Network view becomes the front door.** Root route (`#/`, no hash) now renders Network directly;
+the card-style homepage moved to `#/index`. Header nav's "Network" button became an "Index" button
+pointing at the new route (Network is reachable via the site logo/title now). `#/network` still
+works explicitly for anyone with that link.
+
+**One-time orientation popup**, shown the first time a visitor lands on Network (which, being the
+front door now, is usually their first visit at all) — a slimmed-down version of the in-page intro
+paragraph, dismissed via a "Got it" button that sets a `localStorage` flag so it never reappears
+for that browser. Fails quiet (no popup, no crash) if `localStorage` is unavailable.
+
+**Verification**: `node --check` on the extracted script; the Node DOM-stub harness re-run against
+the live routing changes specifically (root route → Network + popup fires; dismiss → flag set,
+overlay removed; second visit → popup does not reappear; `#/index` → traditional index, Actors
+folds Foreign, says "Organisations"; `#/network` still works explicitly); `netBuildGraphData()`
+node/edge counts cross-diffed against the Python build's output edge-for-edge (order-independent)
+until they matched exactly, not just in count. `collision_check.py` clean. Two Artifact publishes
+(live wiki, standalone prototype). One commit, pushed to `origin/main` — Vercel redeploys from
+that push (`vercel.json` rewrites `/` to `wiki-prototype.html`, so the front-door swap took effect
+there too, not just in the local file).
