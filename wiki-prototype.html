@@ -105,38 +105,20 @@
 
   /* ---- network view (namespaced under .netview so nothing here can collide with the
      article/index styles above — it reuses the same colour tokens and type system) ---- */
-  .netview .net-flip-controls { display: flex; align-items: center; gap: 0.7rem; margin: 0.6rem 0 1.2rem; flex-wrap: wrap; }
-  .netview .net-stamp {
-    font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.06em;
-    text-transform: uppercase; color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 45%, transparent);
-    border-radius: 3px; padding: 0.22rem 0.5rem; transform: rotate(-2deg); display: inline-block;
-  }
-  .netview .net-flip-btn {
-    font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase;
-    background: var(--ink); color: var(--parchment-hi); border: none; border-radius: 20px;
-    padding: 0.48rem 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
-  }
-  .netview .net-flip-btn:hover { background: var(--rust); }
-  .netview .net-flip-state { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; color: var(--fog); text-transform: uppercase; letter-spacing: 0.05em; }
 
-  .netview .net-stage { perspective: 2400px; margin-top: 0.8rem; }
-  .netview .net-stage-inner { position: relative; min-height: 78vh; transition: transform 0.85s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
-  .netview .net-stage.flipped .net-stage-inner { transform: rotateY(180deg); }
-  .netview .net-face {
-    position: absolute; inset: 0; backface-visibility: hidden;
-    border: 1px solid var(--line); border-radius: 6px; background: var(--panel-bg); box-shadow: var(--shadow); overflow: hidden;
+  /* Network is the front door and needs real width for the graph, unlike the prose column
+     everything else uses -- widen the shell and tighten the vertical padding around it only
+     when a .netview is present, via :has() rather than a body-class toggle in JS. Sized so the
+     graph+info pane fills the viewport below the header without the page itself scrolling --
+     the graph pans/zooms internally and the info panel scrolls on its own, same as any app
+     sidebar, but the outer page shouldn't need a second scrollbar on top of that. */
+  .shell:has(.netview) { max-width: 1400px; padding-bottom: 1rem; }
+  main:has(.netview) { padding-top: 0.9rem; }
+
+  .netview .net-graph-face {
+    display: flex; height: calc(100vh - 5.5rem); min-height: 420px;
+    border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow);
   }
-  .netview .net-face.back { transform: rotateY(180deg); }
-  @media (prefers-reduced-motion: reduce) { .netview .net-stage-inner { transition: none; } }
-
-  .netview .net-index-face { overflow-y: auto; padding: 1.3rem 1.5rem 2rem; }
-  .netview .net-index-group { margin-bottom: 1.5rem; }
-  .netview .net-index-group h3 { font-family: "Fraunces", Georgia, serif; font-size: 1rem; margin: 0 0 0.5rem; color: var(--fg); }
-  .netview .net-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.3rem 1rem; }
-  .netview .net-index-grid a { font-size: 0.84rem; color: var(--link); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent); cursor: pointer; }
-  .netview .net-index-grid a:hover { border-bottom-color: var(--link); }
-
-  .netview .net-graph-face { display: flex; height: 78vh; }
   .netview .net-graph-wrap { flex: 1 1 auto; position: relative; min-width: 0; background: var(--parchment-hi); }
   .netview .net-graph-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
   .netview .net-graph-wrap svg:active { cursor: grabbing; }
@@ -8878,18 +8860,15 @@
   };
 
   function renderNetwork() {
-    var total = ACTORS.length + MKS.length + ORGS.length;
+    // No top intro copy and no flip card -- the orientation popup (maybeShowNetworkIntro)
+    // covers the "what is this" job on first visit, so the page itself goes straight to the
+    // graph. The graph used to be one face of a 3D CSS flip card with the index as the other
+    // face; that transform (perspective + preserve-3d + rotateY) turned out not to render
+    // reliably on real devices even though it toggled the right classes -- dropped entirely
+    // rather than debugged, since the alphabetical index already has a solid, plain-<a> home
+    // at #/index (reachable from the header's Index button) and doesn't need a second one here.
     var html = '<div class="netview">';
-    html += '<span class="badge">A second way to move through the archive</span>';
-    html += '<h1 class="entity-title">The whole archive, as a network</h1>';
-    html += '<p style="color:var(--ink-soft); font-size:0.94rem; line-height:1.68; max-width:68ch;">Same ' + total + ' Actors and Organizations, one more way to move through them — click anything to pull its full record into the panel on the right, or search for it directly. Laws and Topics stay out of the way until you zoom into whoever sponsored or discussed them (the eye icon shows them always). Every edge here comes from a structured field already in the data — org membership, org lineage, law sponsorship, topic cross-references — nothing hand-placed.</p>';
-    html += '<div class="net-flip-controls"><span class="net-flip-state" id="netFlipState">Viewing: index</span>';
-    html += '<button class="net-flip-btn" id="netFlipBtn" onclick="netDoFlip()"><span>&#8635;</span> <span id="netFlipLabel">Show network</span></button>';
-    html += '<span class="net-stamp" title="No d3, no charting library — the layout is Coulomb repulsion and Hooke’s law, run 340 times.">Certified library-free</span></div>';
-
-    html += '<div class="net-stage" id="netStage"><div class="net-stage-inner">';
-    html += '<div class="net-face front net-index-face"><div id="netIndexContent"></div></div>';
-    html += '<div class="net-face back"><div class="net-graph-face"><div class="net-graph-wrap">';
+    html += '<div class="net-graph-face"><div class="net-graph-wrap">';
     html += '<div class="net-graph-toolbar">';
     html += '<button class="net-zoom-btn" onclick="netZoomBy(1.25)" aria-label="Zoom in">+</button>';
     html += '<button class="net-zoom-btn" onclick="netZoomBy(0.8)" aria-label="Zoom out">–</button>';
@@ -8913,7 +8892,6 @@
     html += '<input type="text" id="netSearchBox" placeholder="Search all entries…" autocomplete="off" oninput="netOnSearchInput()" onkeydown="netOnSearchKeydown(event)" />';
     html += '<div id="netSearchResults" class="net-search-results" hidden></div></div>';
     html += '<div id="netInfoPanel"><div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div></div>';
-    html += '</div></div></div>';
     html += '</div></div>';
     html += '</div>';
     return html;
@@ -9453,37 +9431,11 @@
     netResetView();
   }
 
-  function netBuildIndex() {
-    // Actors, Knesset Members, and Foreign Patrons are one reader-facing category ("Actors") --
-    // same reasoning as the MK merge: they're all people, and the underlying splits are
-    // data-provenance/schema distinctions a reader doesn't need a separate list to navigate.
-    var groups = { actors: [], org: [], law: [], topic: [] };
-    NET.nodes.forEach(function(n) {
-      if (n.kind === 'actor' || n.kind === 'mk' || n.kind === 'foreign') groups.actors.push(n);
-      else if (groups[n.kind]) groups[n.kind].push(n);
-    });
-    Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
-    var titles = { actors:'Actors', org:'Organisations', law:'Laws', topic:'Topics' };
-    var html = '';
-    ['actors','org','law','topic'].forEach(function(k) {
-      html += '<div class="net-index-group"><h3>'+titles[k]+' ('+groups[k].length+')</h3><div class="net-index-grid">';
-      groups[k].forEach(function(n) { html += '<a onclick="netJumpToNode(\''+n.id.replace(/'/g,"\\'")+'\')">'+n.label+'</a>'; });
-      html += '</div></div>';
-    });
-    document.getElementById('netIndexContent').innerHTML = html;
-  }
-
+  // Jump straight to a node's record -- used by the network view's own inline search. Used to
+  // flip a CSS 3D card from an index face to the graph face first; the graph is the only face
+  // now, so this just selects.
   function netJumpToNode(id) {
-    netDoFlip(true);
-    setTimeout(function() { netSelectNode(id); }, 500);
-  }
-
-  function netDoFlip(forceToGraph) {
-    var stage = document.getElementById('netStage');
-    var flipped = forceToGraph ? true : !stage.classList.contains('flipped');
-    stage.classList.toggle('flipped', flipped);
-    document.getElementById('netFlipLabel').textContent = flipped ? 'Show index' : 'Show network';
-    document.getElementById('netFlipState').textContent = flipped ? 'Viewing: network' : 'Viewing: index';
+    netSelectNode(id);
   }
 
   function netOnSearchInput() {
@@ -9542,7 +9494,6 @@
     netInit();
     netApplyViewBox();
     netRenderGraph();
-    netBuildIndex();
     netWireGraphEvents();
   }
 
