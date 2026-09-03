@@ -2891,3 +2891,34 @@ throws. All 30+ checks pass; no data touched (216 nodes/332 edges unchanged).
 Also sent a `PushNotification` at Nick's direct request ("Can you trigger a popup on my phone") --
 confirmed the tool only reaches an actual phone if Remote Control is connected in this session;
 otherwise it's a desktop-terminal notification only. Not a site change, noted for completeness.
+
+## Round: 2026-09-03 -- Legend moved out of the graph overlay into normal flow
+
+Nick sent a real phone screenshot (the-dispossession-papers.vercel.app, actual device, not the
+Browser pane) showing the legend as an absolutely-positioned overlay pinned to the graph's
+bottom-left corner, eating a large chunk of the visible graph and sitting on top of nodes/edges.
+His words: "Can we please maybe remove the legend? Or put it into the web window so we can scroll
+past it?"
+
+Took the "scroll past it" option rather than deleting it outright -- the legend has real
+onboarding value (shape = kind, colour = political alignment) that a first-time reader still
+needs. Moved the legend's markup in `renderNetwork()` out of `.net-graph-wrap` (where it sat as an
+absolute sibling of the `<svg>`) to after the whole `.net-graph-face` row (graph pane + info
+panel), as its own block in normal document flow -- same treatment the search box already got.
+CSS: `.net-graph-legend` dropped `position: absolute` and its bottom/left/max-width overlay rules,
+became a normal-flow flex-wrap box with `margin-top`, sized up slightly (0.58rem -> 0.66rem) since
+it no longer needs to cram into a corner.
+
+Verified live on mobile after shipping (375x812 emulation, cache-busted URL after last round's
+caching lesson): the legend now renders as its own bordered block below the search box, and the
+graph pane itself is now completely clear of any overlay in its bottom-left corner.
+
+Also: sent Nick a `PushNotification` at his request last round ("can you trigger a popup on my
+phone") -- he confirmed it didn't arrive, but noted "the app seems connected." Consistent with the
+tool's own caveat (only reaches an actual phone if Remote Control is connected) -- flagged as
+something to check on his end if he wants to test it again, not something this session can debug
+further from its side.
+
+Verification: Node DOM-stub harness's 30+ checks all pass unchanged (216 nodes/332 edges -- no
+data touched); confirmed directly via a small Python check that the legend markup now renders
+after `netInfoPanelWrap` rather than before it (i.e., outside the graph pane, not inside it).
