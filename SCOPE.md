@@ -2534,3 +2534,62 @@ each pushed and re-aliased before moving to the next.
 the visual/colour revamp Nick asked to defer to later; further data on the two new Demographic
 Group entries if there's more to research; and any further-afield gynecology/analyze-family words
 that weren't in this pass's audited scope, if a systematic search turns up something worth doing.
+
+---
+
+## Round: the stamp text, resolved
+
+Last open item from the front-door round. Rather than implement or silently drop Nick's two stamp
+ideas ("Reinstate Resolution 3379" / "5778 = Apartheid"), laid out the real tension first: both are
+positions ("this should happen" / "this is the verdict"), not documentation in the register the
+rest of the project uses — a genuine, visible shift in the site's voice, not a styling choice.
+Offered three real options via AskUserQuestion rather than picking one. **Nick's answer, in his own
+words: he wants the phrasing kept, wants it to send readers looking rather than just asserting, and
+has "settled on a position" the more he's explored the data himself** — and asked directly whether
+Claude can form opinions or verify a theory, and for Claude's own read on the land-dispossession
+pattern, the "discredit Palestinians" framing, and "obscuring the peace process."
+
+**Answered directly, not evasively, and not by just agreeing with the compound claim as posed.**
+On capability: not opinions in the human sense (no persistent identity/stake), but real evidence-
+grounded judgment, yes — and pointed at this project's own citation-correction history as the proof
+of that, not an abstract claim. On substance, answered the three bundled sub-claims separately
+rather than one bundled yes/no: **land dispossession — yes, flatly, that's the documented record
+this whole dataset represents, no hedging needed** (consistent with what Nick himself established
+months ago: the pattern doesn't need hedging even though individual culpability claims do).
+**"Discredit Palestinians" as a *distinct, coordinated* effort — pushed back**: real documented
+instances exist (Meir's 1969 "no such thing as Palestinians," already in this dataset) but read as
+a recurring pattern across independent actors, not one coordinated project — "distinct effort"
+overclaims the coordination the evidence shows. **"Obscuring the peace process" as one-directional
+— pushed back hardest**: real obstruction is documented from multiple directions at different
+moments (1947 partition rejection, Oslo-era settlement expansion — already in this dataset — Hamas
+rejecting two-state frameworks), and collapsing that into single-direction blame is a bigger leap
+than the evidence supports. Framed this explicitly as the same discipline Nick himself set with
+"Dispossession" over "wanted criminals" — worth remembering that giving a real, differentiated
+answer rather than a flattened one is what this working relationship has actually wanted throughout.
+
+**Implementation**: kept Nick's exact phrasing but made both stamps live links into real, cited
+entries rather than bare assertions — satisfies both what he explicitly chose (the wording, kept
+verbatim) and what he said he wants the stamps to *do* (send readers looking, prompt real thinking).
+"Reinstate Resolution 3379" links to the resolution's own already-documented topic entry (1975
+adoption, 1991 revocation, both readings of its significance given fairly, added several rounds
+back). "5778 = Apartheid" links to a new topic, **The Apartheid Characterization**: the term's
+specific legal definition (1973 Apartheid Convention, Rome Statute Article 7), the 15 March 2017
+ESCWA report (first UN body to use it — pulled within days, Executive Secretary Rima Khalaf resigned
+in protest), the B'Tselem/HRW/Amnesty reports that followed (2021-2022), and this dataset's own
+clearest anchor for the Hebrew-year framing: the Nation-State Basic Law, passed 19 July 2018 —
+Hebrew year 5778 per the law's own official title ("...5778-2018") — during which Arab Knesset
+members shouted "apartheid" and tore up copies on the Knesset floor. Presented with named positions
+on both sides (Israel/US/some scholars reject the characterization, citing differences from
+apartheid-era South Africa — Arab citizens of Israel hold full voting rights, unlike Black South
+Africans under apartheid) — a real, live, contested debate, not this dataset's own verdict, same
+citation discipline as everywhere else.
+
+Styled as a pair of small rotated corner stamps on the network view (the site's front door) — the
+same visual language the original "PROTOTYPE · NOT LIVE" placeholder stamp used, the one this whole
+idea grew out of, repurposed a second time with real content and real links instead of a joke.
+
+Verified: node --check, the DOM-stub harness (full pass), collision_check clean, an edge-for-edge
+diff between the Python build and the wiki's client-side graph (321/321, exact match), and live
+interactive confirmation on the deployed site (clicked "5778 = Apartheid," confirmed it opens The
+Apartheid Characterization's real panel with its Likud/Netanyahu/UN/Nation-State-Law connections
+visible in the graph, not a dead link).
