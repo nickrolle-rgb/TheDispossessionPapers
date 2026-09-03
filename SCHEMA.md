@@ -123,7 +123,7 @@ id, not a duplicated bio — avoids a third person-file and keeps one source of 
   "name": "string",
   "hebrew_name": "string",
   "aliases": "array of strings, optional (e.g. Jewish National Fund -> ['JNF', 'Keren Kayemeth LeIsrael', 'KKL']) -- same mechanism as topics' aliases field, wired into the wiki's own nameIndex builder alongside MANUAL_ALIASES; add one whenever an org has a common abbreviation or other-language name that shows up in prose",
-  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation)",
+  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation | Intelligence Agency)",
   "founding_date": "YYYY-MM-DD or YYYY",
   "dissolution_date": "YYYY-MM-DD or YYYY or null",
   "ideology": ["string tags, e.g. Labor Zionism, Revisionist Zionism, Religious Zionism"],

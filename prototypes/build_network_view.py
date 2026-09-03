@@ -54,6 +54,7 @@ INSTITUTIONAL_TYPES = {
     "Government Office", "Legislative Body", "Sovereign State", "Self-Governing Community",
     "National Military", "International Body", "Representative Assembly", "Executive Council",
     "International Zionist Body", "Financial Institution", "Land Fund", "Land Company",
+    "Intelligence Agency",
 }
 
 def ideology_match(ideology_list):
