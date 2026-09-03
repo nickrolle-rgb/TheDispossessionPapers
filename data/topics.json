@@ -459,11 +459,12 @@
   },
   {
     "topic_id": "resolution-181",
-    "name": "Resolution 181",
+    "name": "UN Resolution 181",
     "aliases": [
       "1947 UN Partition Plan",
       "UN Partition Plan",
-      "Partition Plan"
+      "Partition Plan",
+      "Resolution 181"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -478,10 +479,10 @@
   },
   {
     "topic_id": "resolution-194",
-    "name": "Resolution 194",
+    "name": "UN Resolution 194",
     "aliases": [
-      "UN Resolution 194",
-      "Right of Return resolution"
+      "Right of Return resolution",
+      "Resolution 194"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -496,10 +497,10 @@
   },
   {
     "topic_id": "resolution-273",
-    "name": "Resolution 273",
+    "name": "UN Resolution 273",
     "aliases": [
-      "UN Resolution 273",
-      "Israel UN admission resolution"
+      "Israel UN admission resolution",
+      "Resolution 273"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -514,10 +515,10 @@
   },
   {
     "topic_id": "resolution-303",
-    "name": "Resolution 303",
+    "name": "UN Resolution 303",
     "aliases": [
-      "UN Resolution 303",
-      "Jerusalem corpus separatum resolution"
+      "Jerusalem corpus separatum resolution",
+      "Resolution 303"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -532,10 +533,10 @@
   },
   {
     "topic_id": "resolution-242",
-    "name": "Resolution 242",
+    "name": "UN Resolution 242",
     "aliases": [
-      "UN Resolution 242",
-      "Land for Peace resolution"
+      "Land for Peace resolution",
+      "Resolution 242"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -550,9 +551,9 @@
   },
   {
     "topic_id": "resolution-338",
-    "name": "Resolution 338",
+    "name": "UN Resolution 338",
     "aliases": [
-      "UN Resolution 338"
+      "Resolution 338"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -567,10 +568,10 @@
   },
   {
     "topic_id": "resolution-3379",
-    "name": "Resolution 3379",
+    "name": "UN Resolution 3379",
     "aliases": [
-      "UN Resolution 3379",
-      "Zionism is racism resolution"
+      "Zionism is racism resolution",
+      "Resolution 3379"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -585,9 +586,9 @@
   },
   {
     "topic_id": "resolution-465",
-    "name": "Resolution 465",
+    "name": "UN Resolution 465",
     "aliases": [
-      "UN Resolution 465"
+      "Resolution 465"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -713,9 +714,9 @@
   },
   {
     "topic_id": "resolution-478",
-    "name": "Resolution 478",
+    "name": "UN Resolution 478",
     "aliases": [
-      "UN Resolution 478"
+      "Resolution 478"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",
@@ -754,9 +755,9 @@
   },
   {
     "topic_id": "resolution-497",
-    "name": "Resolution 497",
+    "name": "UN Resolution 497",
     "aliases": [
-      "UN Resolution 497"
+      "Resolution 497"
     ],
     "hebrew_name": null,
     "topic_type": "UN Resolution",

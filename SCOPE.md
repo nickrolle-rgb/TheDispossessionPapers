@@ -1985,3 +1985,17 @@ named in prose but not linked — neither is currently profiled as their own ent
 
 36 actors, 24 knesset_members, 42 orgs, 17 laws, 63 topics (62→63). Collision check clean, one
 publish, one commit.
+
+## UN Resolution renaming + "International Perspective" section confirmed (2026-09-03)
+
+Nick asked to prefix all "Resolution N" topic names with "UN" — done across all 10 UN Resolution
+entries (181, 194, 242, 273, 303, 338, 465, 478, 497, 3379). Kept the bare "Resolution N" form as
+an alias on each (rather than dropping it) after checking: it's used constantly in running prose
+elsewhere in the dataset ("...reaffirming Resolution 242 in all its parts"), and dropping it would
+have silently broken autolinking on every one of those mentions — the same class of mistake as the
+earlier "Yishuv" lowercase-alias bug, caught before publishing this time by actually grepping for
+existing bare mentions first.
+
+Nick confirmed the proposed "International Perspective" section (UN Resolutions + campaigns not
+being followed, kept separate from Actors/Orgs/MKs/Laws in both the text index and the network
+view) — not built yet, next up on request.
