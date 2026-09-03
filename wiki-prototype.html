@@ -129,7 +129,11 @@
     border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow);
   }
   .netview .net-graph-wrap { flex: 1 1 auto; position: relative; min-width: 0; background: var(--parchment-hi); }
-  .netview .net-graph-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  /* touch-action: none hands the whole gesture to netWireGraphEvents' own pointerdown/move/up
+     pan logic -- without it, a touch-drag on the graph fights the browser's own native
+     scroll/pan handling for the same gesture (both try to move something at once), which is
+     what "issues scrolling the web map" on a real phone turned out to be. */
+  .netview .net-graph-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
   .netview .net-graph-wrap svg:active { cursor: grabbing; }
   .netview .net-graph-toolbar { position: absolute; top: 0.7rem; left: 0.7rem; display: flex; gap: 0.4rem; z-index: 3; }
   .netview .net-zoom-btn {
