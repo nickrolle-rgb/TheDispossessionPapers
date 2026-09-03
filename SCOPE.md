@@ -2403,3 +2403,67 @@ US→UK spelling pass; a decision on Nick's "Reinstate Resolution 3379"/"5778 = 
 suggestions (raised as a tonal-consistency concern last round, not yet resolved either way); and
 making the Vercel alias-tracking fix permanent (currently a manual `vercel alias set` after every
 deploy) rather than a per-session workaround.
+
+---
+
+## Round: onclick scoping bug, index->network linking, AIJAC, edge decluttering
+
+**Real bug, session-spanning, found via the live Close button not working:** nearly every network-
+view control (zoom in/out/reset, the eye/show-hidden toggle, the info panel's Close button, the
+search box's typing/Escape/Enter, search-result clicks) called a function via an inline
+`onclick`/`oninput`/`onkeydown` HTML attribute — which runs in **global** scope, not this file's
+IIFE closure. Only `doSearch` and `dismissNetworkIntro` had ever been explicitly exposed via
+`window.X = X`; every other such function threw "X is not defined" on first click and silently did
+nothing. Confirmed directly on the live site (`typeof window.netClearSelection` → `"undefined"`).
+This is almost certainly the real explanation for the *previous* round's "Show Network button does
+nothing" report too — attributed then to the CSS 3D flip transform not rendering, which was at best
+an incomplete diagnosis. Fixed by aliasing each function to `window` right after its declaration
+(`window.netClearSelection = netClearSelection`, etc.), not by converting the declarations
+themselves, so internal bare-name calls between them keep resolving through the closure unchanged.
+
+**Index links now open inside the network view instead of a separate page.** New `#/network/
+<kind>/<id>` route selects that node once the graph exists to select it into; `renderIndex()`'s
+generated links all point there now, replacing the old `#/actor/…`-style hrefs. Nick: "clicking
+links out of the index side should swap to the listing in the web side."
+
+**WZO didn't auto-link — root cause was a length filter, not a missing alias.** Added "WZO" to
+World Zionist Organization's `aliases`, but the alias-indexing code filtered out anything ≤3
+characters, which had *also* silently broken "JNF" and "KKL" since they were first added — despite
+both being added specifically to enable auto-linking. Fixed at the root: curated `aliases` entries
+now bypass that filter entirely (same as `MANUAL_ALIASES` already did), rather than patching each
+short alias in one at a time.
+
+**New org: AIJAC** (Australia/Israel & Jewish Affairs Council). Nick found its digitized *Australia/
+Israel Review* magazine archive on Trove/NLA (103 free issues, no login) while trying to get SLV/
+JSTOR access working, and asked to add the organisation itself. Real, well-sourced institutional
+history from Wikipedia (itself citing Levey & Mendes, *Jews and Australian Politics*, 2004): founded
+1997 via merger of Australia-Israel Publications (1974) and the Australian Institute of Jewish
+Affairs (1984). New `org_type: "Advocacy Organisation"` (added to SCHEMA.md) — doesn't fit any
+existing type, and the closest domestic precedent (Zionist Federation of Australia) was never given
+its own org entry, only its officers profiled directly in `current_foreign_actors.json`. Added
+Executive Director Dr Colin Rubenstein AM there too (Exec Director since Jan 1999), matching that
+precedent. Left AIJAC's `notable_members` empty rather than force a schema mismatch (that field
+requires real actor_id/mk_id references) — the graph still connects AIJAC to Rubenstein via the
+same org-name text-matching the sponsor/citation edges already use elsewhere.
+
+**Also found and reported to Nick, not fixed by us:** the live domain briefly threw Chrome's
+"Dangerous site" Safe Browsing warning mid-round — confirmed as Google's own server-side reputation
+system (likely triggered by the SSO-removal + deploy burst combination on a `*.vercel.app`
+subdomain), unrelated to anything in this session. Pointed Nick at Google's report-a-false-positive
+flow rather than guessing at a code fix.
+
+**Graph edge decluttering.** Nick: "some line appear to cross over each other and look pretty
+cluttered." Every edge now draws with a small, deterministic bow (hashed from its own node-id pair,
+so it's stable across re-renders) instead of a dead-straight line — a long edge essentially never
+passes exactly through an unrelated third node's centre this way, without changing which nodes are
+actually connected. Widened the graph's coordinate space (1100×860 → 1260×1000) and increased node
+repulsion (2400 → 3200) for more breathing room on top of that. Mirrored in both the wiki's JS port
+and the standalone prototype template.
+
+Verified throughout: `node --check`, the extended Node DOM-stub harness (now also checking every
+`window.*`-exposed onclick handler, the new deep-link route, and that WZO/JNF/KKL actually survive
+the alias filter and autolink in sample prose), and an edge-for-edge diff between the Python build
+and the wiki's client-side graph (310/310, exact match) — plus, now that Vercel SSO is off, **real
+interactive verification on the live site** via the Browser pane: clicked AIJAC's node, confirmed
+its info panel and "Advocacy Organisation · 1997 – present" badge, clicked Close and confirmed it
+actually clears the panel. `collision_check.py` clean throughout.
