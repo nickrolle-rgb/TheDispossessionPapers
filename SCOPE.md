@@ -2819,3 +2819,39 @@ caught at the start of this round (`git status` still showed SCOPE.md modified) 
 this round's commit instead. No functional impact -- the deployed site was correct throughout --
 but worth remembering: write the SCOPE.md round summary *before* committing, not after, so it
 can't silently miss the commit.
+
+## Round: 2026-09-03 -- Header search moved into the index page body (mobile fix)
+
+Nick asked to re-check mobile and flagged a real UX issue: the Web (network) view effectively had
+two search bars stacked -- the always-present header `#searchbox` (general full-text entity
+search) and the network view's own in-graph `net-panel-search` (jump to a node). Asked to move the
+header one into the index page body to free up header space for the title, which was wrapping to
+3 lines on mobile with the search box itself clipped to "Sear".
+
+Checked the live mobile view first (Browser pane, 375x812 emulation) before touching anything --
+confirmed exactly the reported layout: 3-line title, clipped search input, nav buttons crowded
+into the same row, then a second full "Search all entries..." box lower down on the Web view.
+
+Fix: removed the `<form>`/`#searchbox` from `<header class="top">` entirely (nav buttons -- Web,
+Index, About -- now sit in a `.top-nav` wrapper carrying the `margin-left: auto` that used to be
+on the search form); added the same `#searchbox`/`doSearch` form to the top of `renderIndex()`
+(new `.index-search` style, full-width pill input matching the site's existing look) so it now
+reads as "search the index" rather than a global always-present control. Also added it to
+`renderSearch()`'s own results page, pre-filled with the current query, so a results page isn't a
+dead end forcing a trip back to `#/index` just to search again -- not explicitly asked for, but
+the header removal would otherwise strand that page with no way back into search.
+
+Verified live on the deployed mobile view after shipping: header now renders as a clean 2-line
+title with Web/Index/About on the same row (was 3+ cramped rows before); the Web view now shows
+exactly one search box (the in-graph jump-search); the Index page shows one full-width search box
+near the top. Confirmed the search flow itself still works end-to-end on the live site (typed
+"Balfour," dispatched the form's submit -- correctly routed to `#/search/Balfour` with the
+pre-filled box and full result list rendering correctly). One non-issue caught and ruled out during
+testing: the Browser pane's synthetic Enter keypress didn't trigger native form submission (a
+known limitation of that automation tool's synthetic key events, not a real site bug) --
+confirmed by dispatching a real `submit` event via JS, which worked immediately; real users
+pressing Enter in an actual browser are unaffected.
+
+No data touched this round -- Node DOM-stub harness's 30+ checks all pass unchanged (216
+nodes/332 edges); confirmed directly via a small Python check that `<header>` no longer contains
+`#searchbox` and the nav is now wrapped in `.top-nav`.
