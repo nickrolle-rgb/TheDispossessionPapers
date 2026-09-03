@@ -2125,5 +2125,60 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "aijac",
+    "name": "Australia/Israel & Jewish Affairs Council",
+    "hebrew_name": null,
+    "aliases": [
+      "AIJAC"
+    ],
+    "org_type": "Advocacy Organisation",
+    "founding_date": "1997",
+    "dissolution_date": null,
+    "ideology": [
+      "Pro-Israel Advocacy",
+      "Diaspora Zionism"
+    ],
+    "lineage": {
+      "predecessor_orgs": [
+        "Australia-Israel Publications (founded 1974 by Robert Zablud and Isador Magid, not yet profiled)",
+        "Australian Institute of Jewish Affairs (founded 1984 by Isi Leibler, Richard Pratt and Mark Besen, not yet profiled)"
+      ],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "aijac-one-nation-membership-list-1998",
+        "date": "1998",
+        "action_type": "Policy Lobbying",
+        "title": "Publishes One Nation's secret membership list; lobbies Howard against preference deals",
+        "location_affected": "Australia (federal politics; Queensland state election)",
+        "description": "AIJAC controversially published the far-right One Nation party's secret membership list as part of a campaign against the party. During the 1998 Queensland state election, AIJAC National Chairman Mark Leibler and National Policy Chairman Colin Rubenstein joined other Australian Jewish organisations (ECAJ, the B'nai B'rith Anti-Defamation Commission, the Queensland Jewish Board of Deputies) in lobbying Prime Minister John Howard to disavow any Coalition preference deals with One Nation.",
+        "citation": "UNVERIFIED — best guess: sourced from Wikipedia's AIJAC article, itself citing Levey & Mendes, 'Jews and Australian Politics' (2004), pp. 208-209, and Loewenstein, 'My Israel Question' (2006), pp. 163-166 — neither academic source independently re-read this pass."
+      },
+      {
+        "event_id": "aijac-rambam-fellowship-launch-2003",
+        "date": "2003",
+        "action_type": "Policy Lobbying",
+        "title": "Launches the Rambam Israel Fellowship Program",
+        "location_affected": "Israel (destination); Australia (participants)",
+        "description": "AIJAC launched the Rambam Israel Fellowship Program in late 2003 to fund educational and fact-finding trips to Israel for selected journalists, politicians, political advisers, government officials, trade union officials, student leaders and academics, covering air/ground transport, accommodation and meals. The first cohort (July 2003) included future NSW Premier Chris Minns and future federal Labor leader Bill Shorten; later bipartisan parliamentary delegations and journalist cohorts followed through the 2010s.",
+        "citation": "UNVERIFIED — best guess: sourced from Wikipedia's AIJAC article, citing Levey & Mendes (2004) pp. 200-201 and Loewenstein (2006) pp. 220-221 for the program's structure and early participants; not independently re-read this pass."
+      },
+      {
+        "event_id": "aijac-dutton-israel-visit-2024",
+        "date": "2024-07-29",
+        "action_type": "Policy Lobbying",
+        "title": "Funds Opposition Leader Peter Dutton's three-day Israel visit",
+        "location_affected": "Israel",
+        "description": "Liberal Party leader Peter Dutton arrived in Israel on 29 July 2024 for a three-day visit reimbursed by AIJAC, meeting Israeli Prime Minister Benjamin Netanyahu and other senior officials — one of the clearest recent examples of AIJAC's Rambam-style relationship-building extended to a sitting Opposition Leader.",
+        "citation": "UNVERIFIED — best guess: sourced from Wikipedia's AIJAC article, citing SBS News (29 July 2024), The Conversation (1 August 2024) and The Australian Jewish News (1 August 2024); none of the three independently re-read this pass."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

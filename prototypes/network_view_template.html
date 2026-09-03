@@ -205,7 +205,7 @@
                 <button class="zoom-btn" onclick="resetView()" aria-label="Reset view">⤾</button>
                 <button class="zoom-btn wide" id="showHiddenBtn" onclick="toggleShowHidden()" aria-label="Toggle hidden Laws/Topics" title="Show Laws/Topics always, not just on zoom">👁</button>
               </div>
-              <svg id="graphSvg" viewBox="0 0 1000 760"></svg>
+              <svg id="graphSvg" viewBox="0 0 1260 1000"></svg>
               <div class="graph-legend">
                   <span class="sw"><svg class="shico" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5"/></svg>Person</span>
                   <span class="sw"><svg class="shico" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)"/></svg>Org</span>
@@ -334,7 +334,7 @@ document.getElementById('flipBtn').onclick = function() {
 };
 
 // ---------- force layout (hand-rolled, no library) ----------
-var W = 1100, H = 860;
+var W = 1260, H = 1000;
 var nodes = GRAPH_DATA.nodes.map(function(n, i) {
   // A kind missing from these maps used to silently produce NaN positions that poisoned the
   // whole simulation (every other node's position derives from repulsion against every other
@@ -386,7 +386,7 @@ function simulate(iterations) {
         var dx = a.x - b.x, dy = a.y - b.y;
         var d2 = dx*dx + dy*dy || 0.01;
         var d = Math.sqrt(d2);
-        var force = (2400) / d2;
+        var force = (3200) / d2;
         var fx = (dx/d) * force, fy = (dy/d) * force;
         a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
       }
@@ -489,6 +489,12 @@ function baseLabelOk(n) {
   return r > 6.5 || n.degree > 3 || HIDDEN_KINDS[n.kind];
 }
 
+function hashStr(s) {
+  var h = 0;
+  for (var i = 0; i < s.length; i++) { h = ((h << 5) - h + s.charCodeAt(i)) | 0; }
+  return Math.abs(h);
+}
+
 function renderGraph() {
   svg.innerHTML = '';
   svg.insertAdjacentHTML('afterbegin',
@@ -498,9 +504,22 @@ function renderGraph() {
   var edgeGroup = document.createElementNS(svgNS, 'g');
   edgeGroup.setAttribute('stroke', 'currentColor');
   edges.forEach(function(e) {
-    var line = document.createElementNS(svgNS, 'line');
-    line.setAttribute('x1', e.source.x); line.setAttribute('y1', e.source.y);
-    line.setAttribute('x2', e.target.x); line.setAttribute('y2', e.target.y);
+    // A slight, deterministic bow on every edge (never a straight line) means a long edge
+    // essentially never passes exactly through an unrelated third node's centre the way a
+    // dense force-directed graph's dead-straight lines otherwise do -- purely a rendering
+    // choice, the underlying source/target relationship is unchanged. Direction of the bow
+    // comes from a hash of the edge's own node ids, so it's stable across re-renders rather
+    // than flickering between left/right on every page load.
+    var x1 = e.source.x, y1 = e.source.y, x2 = e.target.x, y2 = e.target.y;
+    var dx = x2-x1, dy = y2-y1, len = Math.sqrt(dx*dx+dy*dy) || 1;
+    var bend = Math.min(len*0.14, 26);
+    var sign = (hashStr(e.source.id+'|'+e.target.id) % 2) ? 1 : -1;
+    var nx = -dy/len, ny = dx/len;
+    var mx = (x1+x2)/2 + nx*bend*sign, my = (y1+y2)/2 + ny*bend*sign;
+    var line = document.createElementNS(svgNS, 'path');
+    line.setAttribute('d', 'M'+x1+','+y1+' Q'+mx+','+my+' '+x2+','+y2);
+    line.setAttribute('fill', 'none');
+    line.setAttribute('class', 'net-edge');
     line.setAttribute('stroke-width', e.kind === 'lineage' ? '1.4' : '0.7');
     line.dataset.a = e.source.id; line.dataset.b = e.target.id;
     if (HIDDEN_KINDS[e.source.kind] || HIDDEN_KINDS[e.target.kind]) line.dataset.lawEdge = '1';
@@ -595,7 +614,7 @@ function applyVisibility() {
       label.style.display = show ? '' : 'none';
     }
   });
-  svg.querySelectorAll('line').forEach(function(l) {
+  svg.querySelectorAll('.net-edge').forEach(function(l) {
     var isHiddenEdge = !!l.dataset.lawEdge;
     if (!dist) { l.style.display = (!isHiddenEdge || showHidden) ? '' : 'none'; l.style.opacity = ''; return; }
     var maxA = 2, maxB = 2; // same relaxation as the node loop above -- see comment there

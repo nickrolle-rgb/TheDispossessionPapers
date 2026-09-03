@@ -104,5 +104,33 @@
     "role_status": "Chief Executive Officer of the Zionist Federation of Australia.",
     "primary_activity_description": "CEO-level operational leadership of ZFA, distinct from Leibler's President role (governance and public-facing representation).",
     "action_record": []
+  },
+  {
+      "actor_id": "colin-rubenstein-aijac",
+      "full_name": "Dr Colin Rubenstein AM",
+      "organizational_role": "Executive Director",
+      "organization": "Australia/Israel & Jewish Affairs Council (AIJAC)",
+      "operating_countries": [
+          "Australia"
+      ],
+      "public_registration": "AIJAC's own site (aijac.org.au) lists Rubenstein as Executive Director; not independently checked against an Australian charity/company register this pass.",
+      "role_status": "Executive Director of AIJAC since January 1999 (one source gives 1998); previously a senior lecturer in politics specialising in Middle Eastern affairs at Monash University.",
+      "primary_activity_description": "AIJAC describes itself as the premier public affairs organisation for the Australian Jewish community, formed in 1997 through the merger of Australia-Israel Publications and the Australian Institute of Jewish Affairs. As Executive Director, Rubenstein is AIJAC's principal public-facing spokesperson on Israel-related media, government and public-affairs advocacy, and Editorial Chairman of its monthly Australia/Israel Review magazine.",
+      "action_record": [
+          {
+              "date": "2000-05",
+              "action_type": "Public Advocacy Statement",
+              "location_affected": "Australia; Iran",
+              "description": "As AIJAC's executive director, publicly condemned the Australian Government's decision to vote in favour of two World Bank loans to Iran worth US$232 million, arguing the loans legitimised the Iranian government's religious discrimination, terrorism and human rights record.",
+              "citation": "UNVERIFIED — best guess: sourced from Wikipedia's AIJAC article, citing Levey & Mendes, 'Jews and Australian Politics' (2004), pp. 208-209; not independently re-read this pass."
+          },
+          {
+              "date": "2018-07",
+              "action_type": "Public Advocacy Statement",
+              "location_affected": "Australia",
+              "description": "Following an AIJAC complaint against the ABC over its coverage of the July 2018 Gaza escalation (which the ABC's complaints unit partly upheld, agreeing Hamas's proscribed-terrorist status was not, per Australian Government designation, premised on 'occupation'), Rubenstein publicly acknowledged initial coverage as 'problematic' while welcoming subsequent ABC reporting as 'a significant improvement.'",
+              "citation": "UNVERIFIED — best guess: sourced from Wikipedia's AIJAC article, quoting Rubenstein via J-Wire (9 August 2018 and 17 June 2018); not independently re-read this pass."
+          }
+      ]
   }
 ]
