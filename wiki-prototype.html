@@ -9391,13 +9391,17 @@
       // A slight, deterministic bow on every edge (never a straight line) means a long edge
       // essentially never passes exactly through an unrelated third node's centre the way a
       // dense force-directed graph's dead-straight lines otherwise do -- purely a rendering
-      // choice, the underlying source/target relationship is unchanged. Direction of the bow
-      // comes from a hash of the edge's own node ids, so it's stable across re-renders rather
-      // than flickering between left/right on every page load.
+      // choice, the underlying source/target relationship is unchanged. Direction AND magnitude
+      // both come from a hash of the edge's own node ids (not just direction, as a first pass
+      // here got wrong) -- a busy hub like IDF has many short edges to closely-spaced neighbours,
+      // and scaling bend off length alone left exactly that bundle almost dead-straight again,
+      // the worst possible place for it. A varied magnitude fans a hub's short edges apart from
+      // each other instead of leaving them re-bundled; still stable across re-renders, not random.
       var x1 = e.source.x, y1 = e.source.y, x2 = e.target.x, y2 = e.target.y;
       var dx = x2-x1, dy = y2-y1, len = Math.sqrt(dx*dx+dy*dy) || 1;
-      var bend = Math.min(len*0.14, 26);
-      var sign = (netHashStr(e.source.id+'|'+e.target.id) % 2) ? 1 : -1;
+      var hv = netHashStr(e.source.id+'|'+e.target.id);
+      var bend = Math.min(8 + (hv % 20), Math.max(len*0.4, 6));
+      var sign = (hv % 2) ? 1 : -1;
       var nx = -dy/len, ny = dx/len;
       var mx = (x1+x2)/2 + nx*bend*sign, my = (y1+y2)/2 + ny*bend*sign;
       var line = document.createElementNS(netSvgNS, 'path');
