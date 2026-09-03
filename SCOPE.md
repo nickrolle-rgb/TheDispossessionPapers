@@ -2301,3 +2301,105 @@ until they matched exactly, not just in count. `collision_check.py` clean. Two A
 (live wiki, standalone prototype). One commit, pushed to `origin/main` — Vercel redeploys from
 that push (`vercel.json` rewrites `/` to `wiki-prototype.html`, so the front-door swap took effect
 there too, not just in the local file).
+
+---
+
+## Round: mobile bugs, real browser verification, Vercel infrastructure fixes
+
+Nick reported the network view broken on both mobile and desktop after the front-door round above
+(3 screenshots): the flip card stuck on the index face, a nested/invisible scrollbar, and only the
+old typo'd `the-disposition-papers.vercel.app` link showing current content. This round is notable
+less for any one fix than for finally getting **real browser verification** working after a whole
+session of being blocked — every fix below except the taxonomy items was confirmed by actually
+loading the live Vercel deployment in the Browser pane, not just the Node DOM-stub harness.
+
+**Vercel infrastructure, three separate real problems, not one:**
+1. **Domain aliasing was never tracking new deploys.** `vercel alias ls` showed the correctly-named
+   `the-dispossession-papers.vercel.app` pinned to an old build while the typo'd
+   `the-disposition-papers.vercel.app` (the project's original pre-rename name) was serving the
+   latest one — confirmed via the Vercel API's `targets.production.alias` field, which only lists
+   the typo'd domain as auto-tracked. Root cause: renaming a Vercel project doesn't add the new
+   name's default `.vercel.app` domain to that auto-tracking list. Fixed by hand each deploy this
+   round (`vercel alias set <latest-deployment> <domain>` for both domains) — **this is a standing
+   workaround, not a permanent fix**; the auto-tracking list itself would need fixing via the
+   Vercel dashboard (Project Settings → Domains) for future deploys to stop needing this.
+2. **The whole site was gated behind Vercel's team SSO** (`ssoProtection.deploymentType:
+   "all_except_custom_domains"`) — confirmed via the API, this is why the Browser pane's `navigate`
+   bounced to `vercel.com/sso-api` all round until fixed. Nick confirmed (AskUserQuestion) he wants
+   it public; disabled via `vercel project protection disable the-dispossession-papers --sso`.
+   Verified both domains return 200 afterward.
+3. **GitHub repo's own "Website" About-sidebar link** was still the typo'd domain (separate from
+   both of the above — a manually-set repo metadata field). Fixed via `gh repo edit --homepage`.
+
+**Real bugs found via actual browser interaction, invisible to the DOM-stub harness (a caveat now
+worth stating plainly: the harness verifies JS logic — functions run, classes toggle, data is
+correct — never CSS rendering or real device behavior):**
+- The CSS 3D flip card (`perspective` + `preserve-3d` + `rotateY`) toggled its classes correctly
+  but didn't reliably render on either mobile or desktop. Removed entirely rather than debugged —
+  network now renders the graph directly, no front/back faces; the alphabetical index lives at the
+  already-existing `#/index` route (plain `<a href>` navigation, not subject to the same bug class).
+- **No `<meta name="viewport">` tag** — the single biggest fix this round. The Artifact-publish
+  pipeline injects one into its own wrapper automatically, but the direct Vercel deploy serves this
+  file's raw bytes with no wrapping at all, so a real mobile browser fell back to rendering it as a
+  ~980px desktop page scaled to fit (Chrome's classic no-viewport-tag default) — confirmed directly
+  by reading `window.innerWidth` under mobile emulation (981, not 375) before the fix and 375 after.
+  This alone explains nearly every "unscrollable"/tiny-touch-target complaint from Nick's report.
+- `netApplyViewBox()` crashed (`Cannot read properties of null reading 'setAttribute'`) when an
+  in-flight pan/zoom animation's `requestAnimationFrame` loop outlived the network view being on
+  screen (e.g. select a node, then immediately navigate away before the ~650ms ease finishes) —
+  found via a real console error while testing on live mobile emulation. Fixed with a null-guard;
+  same "async callback assumes a DOM element it still owns" bug class as the earlier NaN-position
+  and stale-embed issues this project has hit before.
+- **The wiki's embedded data had drifted stale again** — this time from the very edits made earlier
+  in this same multi-round session (Kaplan→Mapai, topic↔law citations) never having been pushed
+  through `embed_data.py` before the first publish of this round. Caught the same way as before:
+  diffing the wiki's live `netBuildGraphData()` output against the Python build's edge-for-edge
+  until they matched (they didn't, until `embed_data.py` was re-run).
+
+**Real classifier gap, not just cosmetic:** Blue and White/Yesh Atid/National Unity/Kadima all
+already carry `"Centrist"` in their own `ideology` field, but nothing in the classifier ever read
+it — there was no `CENTRIST_KW` alongside `RIGHT_KW`/`LEFT_KW`/`RELIGIOUS_KW`, and the lineage-
+propagation whitelist didn't include `"centrist"` either, so a resolved neighbour's colour couldn't
+even propagate across a merger chain (this is why Kadima, whose own comment in the code claimed it
+"resolves via lineage propagation," in fact never did). Fixed in both `build_network_view.py` and
+the wiki's JS port — Nick's original "colour Blue & White Centrists blue" ask was previously only
+met for the individual MKs sitting in those parties, not the party nodes themselves.
+
+**UK-spelling gaps closed in Claude-authored UI chrome** (nav, network badges, About/homepage/
+footer copy) — deliberately still not touching data-file prose content, proper nouns (`World
+Zionist Organization` etc.), or JSON field names, which stays the larger, separately-scoped task.
+Also fixed one stray internal-filename-in-citation violation in `topics.json` (the Altalena Affair
+topic's citation named `organizations.json` directly) — same class of house-style slip this project
+swept out project-wide once before.
+
+**Navigation/homepage redesign per Nick's follow-up feedback:** renamed the "Network" nav item to
+"Web" (catchier, his ask) and made it a permanent header button reachable from every page — the
+prior round's rename of that button to "Index" had removed the only labeled way back to the graph
+once a reader left it, leaving just an undiscoverable brand-click. Shrunk the homepage hero from a
+badge+h1+paragraph block to the single line Nick asked for ("A working record, never finished")
+plus a "View as Web" button in the old flip-button's visual style, giving the index page its own
+direct one-click path to the graph.
+
+**A red herring correctly identified, not chased:** Nick's Chrome flagged the live domain as a
+"Dangerous site" partway through this round. This is Google Safe Browsing's own server-side
+reputation classification, unrelated to anything in this session (including the Browser pane tool
+visiting the same URL moments earlier) — likely triggered by the SSO-protection removal plus a
+rapid burst of new deployments on a `*.vercel.app` subdomain, a domain suffix Google's classifier
+is already aggressive about due to real phishing abuse there. Not fixable from Vercel's side;
+pointed Nick at Google's own report-a-false-positive flow instead of guessing at a code fix.
+
+**Verification discipline this round, worth recording as the new baseline:** every fix was checked
+three ways where applicable — `node --check` + the Node DOM-stub harness (logic-level), a live
+Vercel deployment loaded in the Browser pane under both desktop and mobile emulation (rendering/
+interaction-level, including reading `window.innerWidth` directly and real click-driven node
+selection), and a fresh browser tab specifically to rule out stale/buffered console-log entries
+before trusting a "no errors" read. `collision_check.py` clean throughout. Six commits this round,
+each pushed and re-verified live before moving to the next fix rather than batched at the end.
+
+**Still open, explicitly not done this round:** the Motions/Mandates/Resolutions/Bills→Laws
+taxonomy merge Nick asked for (real schema differences between `topics.json` and `laws.json`, needs
+its own scoped pass); new Ashkenazi/Haredi/Ultra-Zionism topic entries; the full data-file-prose
+US→UK spelling pass; a decision on Nick's "Reinstate Resolution 3379"/"5778 = Apartheid" stamp-text
+suggestions (raised as a tonal-consistency concern last round, not yet resolved either way); and
+making the Vercel alias-tracking fix permanent (currently a manual `vercel alias set` after every
+deploy) rather than a per-session workaround.
