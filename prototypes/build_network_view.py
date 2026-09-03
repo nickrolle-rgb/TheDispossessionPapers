@@ -33,6 +33,7 @@ mks = load("knesset_members.json")
 orgs = load("organizations.json")
 laws = load("laws.json")
 topics = load("topics.json")
+foreign = load("current_foreign_actors.json")
 
 # ---------- political-alignment classification (drives node colour; shape encodes kind) ----------
 RIGHT_KW = ["revisionist", "greater israel", "territorial maximalism", "national conservatism",
@@ -163,6 +164,21 @@ for t in topics:
         "personal": [{"title": "Significance", "when": "", "text": t.get("significance","")}] if t.get("significance") else [],
     })
 
+# Present-day foreign patrons/lobbyists (schema #4) -- shares the "actor" shape treatment
+# (they're people) but a dedicated kind so the info panel and index can still label them
+# distinctly. Left "unaffiliated" by default: the Right/Left/Religious/Institutional spectrum
+# this classifier models is Israeli domestic politics, which doesn't meaningfully apply to a
+# US/Canada-based nonprofit director -- not a gap, an honest non-fit.
+for f in foreign:
+    add_node("foreign:" + f["actor_id"], "foreign", f["full_name"], {
+        "meta": f.get("organizational_role", "") + (f" · {f['organization']}" if f.get("organization") else ""),
+        "role": f.get("public_registration", ""),
+        "events": [{"when": e.get("date",""), "what": e.get("action_type",""), "text": e.get("description","")}
+                   for e in f.get("action_record", [])],
+        "personal": [{"title": "Role status", "when": "", "text": f.get("role_status", "")}] if f.get("role_status") else [],
+    })
+    nodes[node_index["foreign:" + f["actor_id"]]]["align"] = "unaffiliated"
+
 # ---------- edges ----------
 edges = []
 seen_edges = set()
@@ -231,23 +247,57 @@ for l in laws:
         if o["org_id"] not in GENERIC_ORG_IDS and len(short) > 4 and short in text:
             add_edge(lid, "org:" + o["org_id"], "sponsor")
 
-# topic <-> actor/mk/org, straight from each topic's own related_* fields
+# topic <-> actor/mk/foreign/org, straight from each topic's own related_* fields
 for t in topics:
     tid = "topic:" + t["topic_id"]
     for aid in t.get("related_actor_ids", []) or []:
         add_edge(tid, "actor:" + aid, "context")
-        add_edge(tid, "mk:" + aid, "context")  # harmless no-op if the actor: form already matched
+        add_edge(tid, "mk:" + aid, "context")      # harmless no-op if the actor: form already matched
+        add_edge(tid, "foreign:" + aid, "context")  # ditto -- none currently match, kept for when one does
     for oid in t.get("related_org_ids", []) or []:
         add_edge(tid, "org:" + oid, "context")
 
-# ---------- alignment propagation to people, laws, and topics ----------
+# foreign <-> org, matched against each patron's own `organization` text field the same way laws
+# match sponsor org names -- currently a no-op (none of the 6 foreign patrons' organizations are
+# themselves in organizations.json, which tracks the Zionist-movement/Israeli-state org lineage,
+# not the US/Canada-based nonprofits these patrons lead), kept so it starts working the moment
+# either file grows to overlap.
+for f in foreign:
+    org_text = f.get("organization", "")
+    for o in orgs:
+        short = o["name"].split("(")[0].strip()
+        if len(short) > 4 and short in org_text:
+            add_edge("foreign:" + f["actor_id"], "org:" + o["org_id"], "member")
+
+# ---------- alignment: MKs first, from their own recorded political_alignment ----------
+# knesset_members.json's own knesset_terms[].political_alignment is real, curated per-term data
+# (from the Knesset's own records) -- a far better source for an MK's alignment than inferring it
+# through which orgs they're linked to. Use the most recent term (people's declared alignment can
+# genuinely change across a long career). Falls through to org-propagation below only for MKs
+# with no term data at all.
+ALIGNMENT_FIELD_MAP = {
+    "Right": "right", "Far-Right": "right",
+    "Left": "left",
+    "Religious Nationalist": "religious",
+    "Center": "unaffiliated",  # same honest-no-data treatment as a genuinely centrist party
+}
+for m in mks:
+    terms = m.get("knesset_terms", []) or []
+    if terms:
+        raw = terms[-1].get("political_alignment")
+        mapped = ALIGNMENT_FIELD_MAP.get(raw)
+        if mapped:
+            nodes[node_index["mk:" + m["mk_id"]]]["align"] = mapped
+
+# ---------- alignment propagation to remaining people, laws, and topics ----------
 person_org_aligns = {}
 for e in edges:
     for a, b in [(e["source"], e["target"]), (e["target"], e["source"])]:
         if a.startswith("org:") and (b.startswith("actor:") or b.startswith("mk:")):
             person_org_aligns.setdefault(b, []).append(org_alignment.get(a[4:], "institutional"))
 for nid, votes in person_org_aligns.items():
-    nodes[node_index[nid]]["align"] = Counter(votes).most_common(1)[0][0]
+    if nodes[node_index[nid]]["align"] is None:  # don't override a real political_alignment value
+        nodes[node_index[nid]]["align"] = Counter(votes).most_common(1)[0][0]
 for n in nodes:
     if n["kind"] in ("actor", "mk") and n["align"] is None:
         n["align"] = "unaffiliated"

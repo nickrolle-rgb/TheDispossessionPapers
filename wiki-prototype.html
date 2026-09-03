@@ -8478,6 +8478,27 @@
     return html;
   }
 
+  function renderForeign(f) {
+    var html = '<span class="badge">Foreign Patron' + (f.role_status && f.role_status.indexOf("UNCONFIRMED") !== -1 ? " · unconfirmed" : "") + "</span>";
+    html += '<div class="infobox"><dt>Role</dt><dd>' + escapeHtml(f.organizational_role || "—") + "</dd>";
+    html += "<dt>Organization</dt><dd>" + linkIfKnownOrg(f.organization || "—") + "</dd>";
+    html += "<dt>Operating in</dt><dd>" + (f.operating_countries || []).join(", ") + "</dd></div>";
+    html += '<h1 class="entity-title">' + escapeHtml(f.full_name) + "</h1>";
+    html += '<section class="body"><p>' + autolink(f.primary_activity_description || "", "foreign:" + f.actor_id) + "</p>";
+    if (f.role_status) html += "<p>" + autolink(f.role_status, "foreign:" + f.actor_id) + "</p>";
+    if (f.public_registration) html += "<p>" + autolink(f.public_registration, "foreign:" + f.actor_id) + "</p>";
+    html += "</section>";
+    if (f.action_record && f.action_record.length) {
+      html += '<h2 class="section-head">Record</h2>';
+      f.action_record.forEach(function (k) {
+        html += '<div class="event"><div class="when">' + escapeHtml(k.date) + " · " + escapeHtml(k.action_type) +
+          (k.location_affected ? " · " + escapeHtml(k.location_affected) : "") + '</div><p>' + autolink(k.description, "foreign:" + f.actor_id) + "</p>" +
+          '<div class="cite">' + escapeHtml(k.citation || "") + "</div></div>";
+      });
+    }
+    return html;
+  }
+
   function renderOrg(o) {
     var html = '<span class="badge">' + escapeHtml(o.org_type || "Organization") + "</span>";
     html += '<div class="infobox"><dt>Founded</dt><dd>' + escapeHtml(o.founding_date || "—") + "</dd>";
@@ -8667,25 +8688,26 @@
     // Every index list is alphabetized — browsing by eye (not just searching) is a real way
     // readers find a page, and the order entries happened to be added in isn't a useful sort.
     function byName(key) { return function (x, y) { return x[key].localeCompare(y[key]); }; }
-    var actorsSorted = ACTORS.slice().sort(byName("full_name"));
     var orgsSorted = ORGS.slice().sort(byName("name"));
-    var mksSorted = MKS.slice().sort(byName("full_name"));
     var lawsSorted = LAWS.slice().sort(byName("title"));
     var topicsSorted = TOPICS.slice().sort(byName("name"));
+    var foreignSorted = FOREIGN.slice().sort(byName("full_name"));
 
-    html += '<div class="index-group"><h2>Historical Actors (' + ACTORS.length + ")</h2><div class=\"index-grid\">";
-    actorsSorted.forEach(function (a) { html += '<a href="#/actor/' + a.actor_id + '">' + escapeHtml(a.full_name) + "</a>"; });
+    // Actors and Knesset Members are one reader-facing category ("Actor") — the two-file split
+    // underneath is real (MKs carry scraped floor-vote data actors don't) but that's a data-
+    // provenance distinction, not one a reader needs to navigate around. A person still only
+    // lives in exactly one file, so this merge is purely presentational.
+    var people = ACTORS.map(function (a) { return { name: a.full_name, href: "#/actor/" + a.actor_id }; })
+      .concat(MKS.map(function (m) { return { name: m.full_name, href: "#/mk/" + m.mk_id }; }))
+      .sort(byName("name"));
+
+    html += '<div class="index-group"><h2>Actors (' + people.length + ")</h2><div class=\"index-grid\">";
+    people.forEach(function (p) { html += '<a href="' + p.href + '">' + escapeHtml(p.name) + "</a>"; });
     html += "</div></div>";
 
     html += '<div class="index-group"><h2>Organizations (' + ORGS.length + ")</h2><div class=\"index-grid\">";
     orgsSorted.forEach(function (o) { html += '<a href="#/org/' + o.org_id + '">' + escapeHtml(o.name) + "</a>"; });
     html += "</div></div>";
-
-    if (MKS.length) {
-      html += '<div class="index-group"><h2>Knesset Members (' + MKS.length + ")</h2><div class=\"index-grid\">";
-      mksSorted.forEach(function (m) { html += '<a href="#/mk/' + m.mk_id + '">' + escapeHtml(m.full_name) + "</a>"; });
-      html += "</div></div>";
-    }
 
     if (LAWS.length) {
       html += '<div class="index-group"><h2>Laws (' + LAWS.length + ")</h2><div class=\"index-grid\">";
@@ -8696,6 +8718,12 @@
     if (TOPICS.length) {
       html += '<div class="index-group"><h2>Places, Periods &amp; Events (' + TOPICS.length + ")</h2><div class=\"index-grid\">";
       topicsSorted.forEach(function (t) { html += '<a href="#/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
+      html += "</div></div>";
+    }
+
+    if (FOREIGN.length) {
+      html += '<div class="index-group"><h2>Foreign Patrons (' + FOREIGN.length + ")</h2><div class=\"index-grid\">";
+      foreignSorted.forEach(function (f) { html += '<a href="#/foreign/' + f.actor_id + '">' + escapeHtml(f.full_name) + "</a>"; });
       html += "</div></div>";
     }
 
@@ -8770,6 +8798,7 @@
     else if (e.kind === "mk") app.innerHTML = renderMK(e.data);
     else if (e.kind === "law") app.innerHTML = renderLaw(e.data);
     else if (e.kind === "topic") app.innerHTML = renderTopic(e.data);
+    else if (e.kind === "foreign") app.innerHTML = renderForeign(e.data);
     else app.innerHTML = '<p class="not-found">This entry doesn\'t have its own page yet. <a href="#/">Back to index</a></p>';
 
     foot.textContent = "Growing archive — " + ACTORS.length + " people, " + ORGS.length +

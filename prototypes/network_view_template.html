@@ -184,7 +184,7 @@
     <div class="intro">
       <span class="badge">Design prototype · 2026-09-03</span>
       <h1>The whole archive, as a network</h1>
-      <p>Same homepage, same entities, two ways to move through them. Flip to see every Actor, Knesset Member, and Organization as one navigable graph — click anything to pull its full record into the panel on the right, or search for it directly. Laws and Topics stay out of the way until you zoom into whoever sponsored or discussed them (toggle the eye icon to show them always). Real data throughout: every edge is derived from structured fields already in the dataset (org membership, org lineage, law sponsorship, topic cross-references) — nothing hand-placed.</p>
+      <p>Same homepage, same entities, two ways to move through them. Flip to see every Actor and Organization — historical or Knesset, domestic or foreign patron — as one navigable graph — click anything to pull its full record into the panel on the right, or search for it directly. Laws and Topics stay out of the way until you zoom into whoever sponsored or discussed them (toggle the eye icon to show them always). Real data throughout: every edge is derived from structured fields already in the dataset (org membership, org lineage, law sponsorship, topic cross-references) — nothing hand-placed.</p>
     </div>
 
     <div class="stage" id="stage">
@@ -251,19 +251,26 @@ var ALIGN_LABEL = {
   right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist',
   institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data'
 };
-var KIND_LABEL = { actor: 'Historical actor', mk: 'Knesset member', org: 'Organization', law: 'Law', topic: 'Topic' };
-var KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5 };
+var KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law', topic: 'Topic', foreign: 'Foreign Patron' };
+var KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5, foreign: 5.5 };
 var HIDDEN_KINDS = { law: true, topic: true }; // only revealed once a connected node is selected
 
 // ---------- index face ----------
 function buildIndex() {
-  var groups = { actor: [], mk: [], org: [], law: [], topic: [] };
-  GRAPH_DATA.nodes.forEach(function(n) { if (groups[n.kind]) groups[n.kind].push(n); });
+  // Actors and Knesset Members are one reader-facing category ("Actors") -- the underlying
+  // data-provenance split (MKs carry scraped floor-vote data actors don't) isn't something a
+  // reader needs to navigate around. Foreign Patrons stay their own group -- a genuinely
+  // different category (present-day, non-Israeli, institutional-role-only).
+  var groups = { actors: [], org: [], law: [], topic: [], foreign: [] };
+  GRAPH_DATA.nodes.forEach(function(n) {
+    if (n.kind === 'actor' || n.kind === 'mk') groups.actors.push(n);
+    else if (groups[n.kind]) groups[n.kind].push(n);
+  });
   Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
 
-  var titles = { actor: 'Historical Actors', mk: 'Knesset Members', org: 'Organizations', law: 'Laws', topic: 'Topics' };
+  var titles = { actors: 'Actors', org: 'Organizations', law: 'Laws', topic: 'Topics', foreign: 'Foreign Patrons' };
   var html = '';
-  ['actor','mk','org','law','topic'].forEach(function(k) {
+  ['actors','org','law','topic','foreign'].forEach(function(k) {
     html += '<div class="index-group"><h3>' + titles[k] + ' (' + groups[k].length + ')</h3><div class="index-grid">';
     groups[k].forEach(function(n) {
       html += '<a onclick="jumpToNode(\'' + n.id.replace(/'/g,"\\'") + '\')">' + n.label + '</a>';
@@ -327,8 +334,12 @@ document.getElementById('flipBtn').onclick = function() {
 // ---------- force layout (hand-rolled, no library) ----------
 var W = 1100, H = 860;
 var nodes = GRAPH_DATA.nodes.map(function(n, i) {
-  var col = { actor: 0.22, mk: 0.78, org: 0.5, law: 0.5, topic: 0.5 }[n.kind];
-  var row = { actor: 0.25, mk: 0.25, org: 0.55, law: 0.8, topic: 0.65 }[n.kind];
+  // A kind missing from these maps used to silently produce NaN positions that poisoned the
+  // whole simulation (every other node's position derives from repulsion against every other
+  // node) -- happened twice already (topic, then foreign) as kinds were added. The `|| 0.5`
+  // fallback means a future missing kind just seeds center-ish instead of breaking everything.
+  var col = ({ actor: 0.22, mk: 0.78, org: 0.5, law: 0.5, topic: 0.5, foreign: 0.9 }[n.kind]) || 0.5;
+  var row = ({ actor: 0.25, mk: 0.25, org: 0.55, law: 0.8, topic: 0.65, foreign: 0.5 }[n.kind]) || 0.5;
   var jitter = 260; // wide, irregular scatter -- avoids the tidy-grid look on sparsely-connected nodes
   return {
     id: n.id, kind: n.kind, label: n.label, detail: n.detail, align: n.align || 'unaffiliated',
@@ -438,7 +449,7 @@ applyViewBox();
 // rounded-rect language everything else uses.
 function makeShape(kind, r) {
   var el;
-  if (kind === 'actor' || kind === 'mk') {
+  if (kind === 'actor' || kind === 'mk' || kind === 'foreign') {
     el = document.createElementNS(svgNS, 'circle');
     el.setAttribute('r', r);
   } else if (kind === 'org') {
@@ -472,7 +483,7 @@ function makeShape(kind, r) {
 // whether a label actually shows, so the graduated fade (below) can reveal a name that the base
 // view chose to hide, and hide one it chose to show, without re-touching the DOM structure.
 function baseLabelOk(n) {
-  var r = KIND_RADIUS[n.kind] + Math.min(n.degree, 8) * 0.5;
+  var r = (KIND_RADIUS[n.kind] || 5) + Math.min(n.degree, 8) * 0.5;
   return r > 6.5 || n.degree > 3 || HIDDEN_KINDS[n.kind];
 }
 
@@ -499,7 +510,7 @@ function renderGraph() {
   var nodeGroup = document.createElementNS(svgNS, 'g');
   nodes.forEach(function(n) {
     var color = ALIGN_COLOR[n.align] || 'var(--fog)';
-    var r = KIND_RADIUS[n.kind] + Math.min(n.degree, 8) * 0.5;
+    var r = (KIND_RADIUS[n.kind] || 5) + Math.min(n.degree, 8) * 0.5;
     var noData = (n.align === 'unaffiliated' || n.align === 'unclassified');
 
     if (!HIDDEN_KINDS[n.kind]) {
