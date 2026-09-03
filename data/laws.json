@@ -99,13 +99,13 @@
     "sponsoring_ministry": null,
     "sponsoring_mk_id": null,
     "category": "Annexation",
-    "summary": "Passed 69-15 with 3 abstentions on 30 July 1980, declaring 'Jerusalem, complete and united' the capital of Israel and the seat of the President, Knesset, and Supreme Court, and prioritizing the city for government aid — treating East Jerusalem, unilaterally annexed via municipal-boundary expansion in 1967, as fully and permanently part of the state rather than occupied or negotiable territory.",
+    "summary": "Introduced as a private member's bill by Likud MK Geula Cohen, passed 69-15 with 3 abstentions on 30 July 1980, declaring 'Jerusalem, complete and united' the capital of Israel and the seat of the President, Knesset, and Supreme Court, and prioritizing the city for government aid — treating East Jerusalem, unilaterally annexed via municipal-boundary expansion in 1967, as fully and permanently part of the state rather than occupied or negotiable territory.",
     "land_impact": {
       "spatial_region": "East Jerusalem",
       "estimated_hectares_affected": null,
       "description": "Legally consolidated the ~70 km² 1967 municipal annexation of East Jerusalem into permanent constitutional status — see this dataset's own East Jerusalem topic entry for the underlying 1967 annexation figures."
     },
-    "citation": "VERIFIED 2026-09-01 — the 30 July 1980 passage date, the 69-15-3 vote, and the Sefer Ha-Chukim No. 980/5 August 1980/p. 186 citation are corroborated via live search (WIPO Lex's official legislative record, Jerusalem Post retrospective). UN Security Council Resolution 478, adopted three weeks later, declared the law 'null and void' — see this dataset's own Resolution 478 topic entry."
+    "citation": "VERIFIED 2026-09-01 — the 30 July 1980 passage date, the 69-15-3 vote, and the Sefer Ha-Chukim No. 980/5 August 1980/p. 186 citation are corroborated via live search (WIPO Lex's official legislative record, Jerusalem Post retrospective). UN Security Council Resolution 478, adopted three weeks later, declared the law 'null and void' — see this dataset's own Resolution 478 topic entry. VERIFIED 2026-09-03 — Geula Cohen's sponsorship is corroborated via live search (Grokipedia's Jerusalem Law article); she is not yet profiled as her own entry in this dataset, so far appearing only in Tzachi Hanegbi's personal_context as his mother."
   },
   {
     "law_id": "citizenship-and-entry-into-israel-law-2003",
@@ -135,13 +135,13 @@
     "sponsoring_ministry": null,
     "sponsoring_mk_id": null,
     "category": "Housing Discrimination",
-    "summary": "Formalized the legal authority of 'admissions committees' — bodies that screen applicants for housing plots — in roughly 434-475 small communities (fewer than 400 households) in the Negev and Galilee built on public land, permitting them to reject prospective residents for perceived incompatibility with the community's 'social-cultural fabric.' Both regions have large Palestinian Arab citizen populations; the law's practical effect is to let these communities exclude Arab citizens from public land they would otherwise be entitled to apply for. Upheld by Israel's Supreme Court in a 5-4 ruling on 17 September 2014.",
+    "summary": "Sponsored by Yisrael Beiteinu MK David Rotem, who chaired the Knesset Constitution, Law and Justice Committee that advanced it and stated its purpose was to let towns be 'established by people who want to live with other Jews.' Formalized the legal authority of 'admissions committees' — bodies that screen applicants for housing plots — in roughly 434-475 small communities (fewer than 400 households) in the Negev and Galilee built on public land, permitting them to reject prospective residents for perceived incompatibility with the community's 'social-cultural fabric.' Both regions have large Palestinian Arab citizen populations; the law's practical effect is to let these communities exclude Arab citizens from public land they would otherwise be entitled to apply for. Upheld by Israel's Supreme Court in a 5-4 ruling on 17 September 2014.",
     "land_impact": {
       "spatial_region": "Negev/Naqab; Galilee — roughly 434-475 small communities on public land",
       "estimated_hectares_affected": null,
       "description": "Affects access to housing plots in the roughly 43% of Israel's residential communities the law's threshold covers, rather than transferring a fixed area — a specific hectare total not meaningful for this kind of access-restriction law and not sourced this pass."
     },
-    "citation": "VERIFIED 2026-09-01 — the 2011 enactment, the <400-household/public-land threshold, the ~434-475 community estimate, and the 17 September 2014 5-4 Supreme Court ruling upholding the law are corroborated via live search (Adalah's Admissions Committees Law coverage, Human Rights Watch, Middle East Eye, Times of Israel)."
+    "citation": "VERIFIED 2026-09-01 — the 2011 enactment, the <400-household/public-land threshold, the ~434-475 community estimate, and the 17 September 2014 5-4 Supreme Court ruling upholding the law are corroborated via live search (Adalah's Admissions Committees Law coverage, Human Rights Watch, Middle East Eye, Times of Israel). VERIFIED 2026-09-03 — David Rotem's sponsorship, committee chairmanship, and quoted rationale are corroborated via live search (his own Wikipedia article, cited alongside contemporary press coverage of the bill); he is not yet profiled as his own entry in this dataset."
   },
   {
     "law_id": "regularization-law-2017",

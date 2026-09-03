@@ -98,8 +98,13 @@
     "date_or_range": "1924-1929",
     "summary": "Roughly 67,000-80,000 immigrants (1924-28 alone), disproportionately middle-class Polish Jews — peaking at nearly 17,000 in 1925 — fleeing new Polish fiscal policy widely seen as targeting Jewish businesses (the wave is sometimes named for the Polish officials behind those reforms), plus the effects of restrictive US immigration quotas closing off that alternative destination. More urban and commercially-oriented than the Second/Third Aliyah's agricultural pioneers — many were shopkeepers and artisans who settled mainly in Tel Aviv, investing capital in construction, factories, hotels, and shops.",
     "significance": "Roughly doubled the Yishuv's Jewish population in five years, sharply accelerating land purchase and urban/agricultural settlement rates and contributing to the tensions that fed into the 1929 Palestine riots at the wave's end.",
-    "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_actor_ids": [
+      "yehoshua-hankin"
+    ],
+    "related_org_ids": [
+      "jewish-national-fund",
+      "palestine-land-development-company"
+    ],
     "citation": "VERIFIED 2026-09-01 — the 67,000-80,000 total, the 1925 peak (~17,000), and the middle-class/urban Tel Aviv-concentrated composition are corroborated via live search (israeled.org's Fourth Aliyah page, Wikipedia's Fourth Aliyah article, COJS)."
   },
   {
@@ -191,7 +196,10 @@
     "summary": "The region later called Palestine had no separate administrative existence under the Ottoman Empire — it was divided across the sanjaks (districts) of Jerusalem, Nablus, and Acre (each governed by a mutasarrif reporting to a provincial vali), administered as part of wider Ottoman Syria, with no single border a map would show; the exact sanjak boundaries also shifted over time (Nablus was joined to Jerusalem in 1842, then severed again in 1858). Land tenure operated under Ottoman law, notably the 1858 Ottoman Land Code, part of the wider Tanzimat reforms — it introduced formal registration and taxation that many fellahin in some regions avoided, inadvertently concentrating registered title in the hands of urban notables and absentee landlords like the Sursock family, though this pattern was not universal: a property-records survey of the hilly country around Jerusalem specifically found peasants there registering land in their own names, not a single case of a notable or moneylender doing so.",
     "significance": "The baseline this whole dataset measures loss against: no partition line existed, and the land tenure quirks of Ottoman-era registration are part of why absentee landlords like the Sursocks held title to land worked by others — directly enabling the large early land purchases documented here.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "hovevei-zion",
+      "bilu-movement"
+    ],
     "citation": "VERIFIED 2026-09-01 — the sanjak administrative structure, the 1842/1858 Nablus boundary shifts, and the 1858 Land Code's Tanzimat origin are corroborated via live search (Wikipedia's Ottoman Palestine and Ottoman Land Code of 1858 articles). The Jerusalem-hills registration counter-example is a genuine regional complication to the fellahin-avoidance pattern, found via the same pass and added rather than smoothed over — the pattern this dataset otherwise relies on (concentration in notables'/absentee hands) appears stronger in fertile plains regions like the Jezreel Valley than in Jerusalem's hill country specifically. Kenneth W. Stein, 'The Land Question in Palestine, 1917-1939' (1984), remains the best guess for deeper narrative detail, not independently re-read this pass."
   },
   {
@@ -220,7 +228,10 @@
     "summary": "The territorial entity itself, as distinct from British Mandate (the legal regime governing it) — the 1920 San Remo Conference created separate mandates for Palestine (Britain) and Syria (France), with their border roughly fixed by the 23 December 1920 Paulet-Newcombe Agreement. The 1921 Cairo Conference then separated Transjordan's administration from Palestine's — territory east of the Jordan became the Emirate of Transjordan under Faisal's brother Abdullah, with Colonial Secretary Churchill's legal maneuver ensuring the Balfour Declaration's Jewish-national-home provisions would not apply there. Roughly corresponds to the area later split by the 1947 UN Partition Plan and the 1949 Armistice Line.",
     "significance": "The 'historic Palestine' outline this dataset's scrolly map uses as its baseline landmass — the territory every subsequent partition, war, and annexation in this record carves into smaller pieces.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "yishuv",
+      "league-of-nations"
+    ],
     "citation": "VERIFIED 2026-09-01 — the San Remo/Paulet-Newcombe northern border and the 1921 Cairo Conference's Transjordan separation (including Churchill's Balfour-exemption maneuver) are corroborated via live search (Wikipedia's Mandate for Palestine and Transjordan memorandum articles, Jewish Virtual Library's 'When Churchill Severed Transjordan' article)."
   },
   {
@@ -1016,7 +1027,9 @@
     "summary": "An unrecognized Bedouin village in the Negev/Naqab, inhabited by the Al-Turi and Abu Madigem families among others, whose residents' Israeli citizenship dates to 1948 but whose presence on the land itself goes back to the Ottoman period. Around 400 people lived there before Israeli military authorities ordered a temporary six-month evacuation for army training purposes — sourced variously to 1951 or 1953 — after which the state refused to let residents return, later classifying the land as 'state land.' Residents maintain they never actually left and continued cultivating the land. The village's homes were first fully demolished by the state on 27 July 2010; as of March 2025 it had been demolished more than 238 times, on a roughly monthly basis, with residents rebuilding after nearly every one. Only a few dozen residents remain, most now concentrated near the village cemetery, continuing a weekly protest vigil and ongoing land-ownership litigation the state has not resolved in their favor.",
     "significance": "The single most-repeated demolition case in this dataset's subject area and, outside a formal legislative act, the clearest illustration of how the pattern this dataset otherwise documents through named bills and laws (unrecognized-village status, administrative demolition orders, 'state land' reclassification) plays out as sustained, individually-targeted enforcement against one community over a decade and a half — the same underlying legal and administrative machinery the Prawer-Begin Plan (2013) and the 2026 Negev Bedouin land claims settlement plan, both already in this dataset, were each designed to resolve at scale.",
     "related_actor_ids": [],
-    "related_org_ids": [],
+    "related_org_ids": [
+      "state-of-israel"
+    ],
     "citation": "VERIFIED 2026-09-02 — the 27 July 2010 first full demolition and the 181+ repeat count as of that source's writing are corroborated via live search (Negev Coexistence Forum/Dukium's own village profile). The 238+ demolitions as of March 2025 and the roughly monthly enforcement cadence are corroborated via live search (Anadolu Agency's '219th time' report and the broader pattern of sequential press reports at 116, 119, 173, 219, and 238+ demolitions across 2016-2025, each independently reported by Al Jazeera, the Israeli Communist Party's Maki, +972 Magazine, and Anadolu Agency). The temporary-evacuation displacement is dated to 1951 by some sources and 1953 by others (Dukium's own account uses 1953) — kept as a range rather than a false-precision single year, consistent with this dataset's practice elsewhere. Population figures (~400 before demolitions, a few dozen remaining) are Dukium's own count, not independently cross-verified against a second source this pass."
   },
   {

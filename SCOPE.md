@@ -2149,3 +2149,68 @@ wired into the live wiki yet — still a design prototype for review, now durabl
 
 Not yet done, flagged for a future round if wanted: `current_foreign_actors.json` isn't
 represented in the graph at all (a 6th node kind, never added).
+
+## Network view wired into the live wiki; gaps closed; humor stamp (2026-09-03)
+
+The big one: the network prototype is now a real feature of the live wiki, reachable via a
+"Network" link in the header and the `#/network` route — not a separate artifact anymore.
+
+**Integration approach**: ported the whole classifier and graph/edge-building logic from
+`prototypes/build_network_view.py` into a client-side JS function (`netBuildGraphData()`) that
+reads directly from the wiki's already-embedded ACTORS/MKS/ORGS/LAWS/TOPICS/FOREIGN arrays —
+computed lazily on first visit to `#/network`, not on every page load, and not duplicating the
+data as a separate blob. All CSS is namespaced under `.netview` and every element ID prefixed
+`net*` specifically to guarantee zero collision with the article/index styles and IDs already in
+the live site (`.badge`, `.index-group`, `#searchbox` etc. all already existed with different
+rules).
+
+**Verification, done properly this time**: the browser-preview tool has never successfully opened
+wiki-prototype.html directly (a session-long limitation, confirmed again — even a same-directory
+copy under the prototypes/ path that DOES load fine for other files failed here too, so it's
+specific to this file, not the path). Rather than fall back to syntax-check-only, built a Node
+test harness stubbing just enough DOM (createElementNS, getElementById, querySelectorAll,
+requestAnimationFrame, etc.) to actually *execute* the new code inside the wiki's real IIFE
+scope — confirmed `netBuildGraphData()` produces the expected 193 nodes/294 edges, `netInit()`,
+`netRenderGraph()`, `netSelectNode()` (tested against an actor, a law, and a topic node
+specifically, to cover both normal and hidden-until-zoom kinds), `netClearSelection()`,
+`netBuildIndex()`, `renderNetwork()`, and `renderForeign()` all run error-free end to end. This
+is real execution, not just parsing — the same technique that caught the two crashes in the
+standalone prototype earlier today.
+
+**Gaps closed, not all the way but honestly**:
+- Merged the homepage's "Historical Actors" and "Knesset Members" into one "Actors" section (see
+  the reasoning given directly to Nick: it was a data-provenance split — MKs carry real scraped
+  vote data actors don't — not a reader-facing distinction worth keeping separate).
+- Added `renderForeign()` and wired the "foreign" entity kind into `route()` — a real, previously
+  undiscovered gap in the *live* wiki itself: `current_foreign_actors.json`'s 6 entries were
+  registered for search/autolinking all session but had no page renderer; `#/foreign/:id` 404'd.
+  New "Foreign Patrons" homepage section and network node kind.
+- **Real accuracy fix**: discovered `knesset_terms[].political_alignment` already exists as real,
+  curated per-term data in `knesset_members.json` (Right/Left/Center/Religious
+  Nationalist/Far-Right) — found while updating an MK's badge. MKs now read alignment from there
+  directly instead of being inferred through org membership, more accurate and simpler; shifted
+  the alignment distribution meaningfully (right 38→43, left 28→33, religious 12→8).
+  `unaffiliated`/`unaffiliated` count for genuinely-Centrist MKs kept as honest no-data, same
+  discipline as the Gantz/Lapid finding from two rounds ago.
+- Added 2 real sponsor citations (Geula Cohen → Basic Law: Jerusalem 1980; David Rotem →
+  Admissions Committees Law 2011) — content-level fixes; neither creates a graph edge since
+  neither person is profiled as their own entry yet, noted honestly in each law's own citation.
+  5 of the original 8 edge-less laws remain genuinely unresolved (no clean sponsor attribution
+  found this pass) — a real, flagged remainder, not swept under.
+- Closed all 4 edge-less topics with real, defensible org/actor links (Fourth Aliyah → JNF/
+  Palestine Land Development Company/Hankin; Ottoman Palestine → Hovevei Zion/Bilu; Mandatory
+  Palestine → Yishuv/League of Nations; Al-Araqib → State of Israel).
+
+**Two real bugs found and fixed while closing the Foreign Patrons gap** (same class as before —
+a new node kind added without updating every lookup table that keys on kind): a NaN-position
+crash (foreign missing from the force-layout seed map) and — this time — added defensive
+`|| fallback`s at both call sites so a *future* missing kind degrades gracefully instead of
+poisoning the whole simulation again.
+
+**The "PROTOTYPE · NOT LIVE" stamp**, now genuinely obsolete since this is wired in for real,
+repurposed rather than deleted: a small rotated badge next to the flip button reading "Certified
+library-free," with a hover tooltip explaining the actual joke (Coulomb repulsion + Hooke's law,
+run 340 times, no d3).
+
+47 orgs, 24 knesset_members, 63 topics (4 gained links), 17 laws (2 gained citation detail).
+Collision check clean. One wiki publish (network view live), one commit.

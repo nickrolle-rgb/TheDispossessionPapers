@@ -102,6 +102,101 @@
 
   .not-found { padding: 2rem 0; color: var(--fog); }
   footer.note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.68rem; color: var(--fog); line-height: 1.6; font-family: "IBM Plex Mono", monospace; }
+
+  /* ---- network view (namespaced under .netview so nothing here can collide with the
+     article/index styles above — it reuses the same colour tokens and type system) ---- */
+  .netview .net-flip-controls { display: flex; align-items: center; gap: 0.7rem; margin: 0.6rem 0 1.2rem; flex-wrap: wrap; }
+  .netview .net-stamp {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 45%, transparent);
+    border-radius: 3px; padding: 0.22rem 0.5rem; transform: rotate(-2deg); display: inline-block;
+  }
+  .netview .net-flip-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase;
+    background: var(--ink); color: var(--parchment-hi); border: none; border-radius: 20px;
+    padding: 0.48rem 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .netview .net-flip-btn:hover { background: var(--rust); }
+  .netview .net-flip-state { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; color: var(--fog); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .netview .net-stage { perspective: 2400px; margin-top: 0.8rem; }
+  .netview .net-stage-inner { position: relative; min-height: 78vh; transition: transform 0.85s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
+  .netview .net-stage.flipped .net-stage-inner { transform: rotateY(180deg); }
+  .netview .net-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--panel-bg); box-shadow: var(--shadow); overflow: hidden;
+  }
+  .netview .net-face.back { transform: rotateY(180deg); }
+  @media (prefers-reduced-motion: reduce) { .netview .net-stage-inner { transition: none; } }
+
+  .netview .net-index-face { overflow-y: auto; padding: 1.3rem 1.5rem 2rem; }
+  .netview .net-index-group { margin-bottom: 1.5rem; }
+  .netview .net-index-group h3 { font-family: "Fraunces", Georgia, serif; font-size: 1rem; margin: 0 0 0.5rem; color: var(--fg); }
+  .netview .net-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.3rem 1rem; }
+  .netview .net-index-grid a { font-size: 0.84rem; color: var(--link); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent); cursor: pointer; }
+  .netview .net-index-grid a:hover { border-bottom-color: var(--link); }
+
+  .netview .net-graph-face { display: flex; height: 78vh; }
+  .netview .net-graph-wrap { flex: 1 1 auto; position: relative; min-width: 0; background: var(--parchment-hi); }
+  .netview .net-graph-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .netview .net-graph-wrap svg:active { cursor: grabbing; }
+  .netview .net-graph-toolbar { position: absolute; top: 0.7rem; left: 0.7rem; display: flex; gap: 0.4rem; z-index: 3; }
+  .netview .net-zoom-btn {
+    width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel-bg);
+    color: var(--fg); font-family: "IBM Plex Mono", monospace; font-size: 0.9rem; cursor: pointer; line-height: 1;
+  }
+  .netview .net-zoom-btn:hover { background: var(--rust); color: var(--parchment-hi); }
+  .netview .net-zoom-btn.wide { width: auto; padding: 0 0.5rem; border-radius: 14px; font-size: 0.75rem; }
+  .netview .net-zoom-btn.active { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); }
+  .netview .net-graph-legend {
+    position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.7rem;
+    font-family: "IBM Plex Mono", monospace; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--ink-soft); background: var(--panel-bg); border: 1px solid var(--line); border-radius: 4px; padding: 0.32rem 0.55rem;
+    max-width: calc(100% - 1.2rem);
+  }
+  .netview .net-legend-sep { width: 1px; align-self: stretch; background: var(--line); margin: 0 0.1rem; }
+  .netview .net-graph-legend .net-sw { display: inline-flex; align-items: center; gap: 0.28rem; white-space: nowrap; }
+  .netview .net-graph-legend .net-sw em { font-style: normal; color: var(--fog); }
+  .netview .net-graph-legend .net-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; background: var(--fog); flex-shrink: 0; }
+  .netview .net-graph-legend .net-dot.ring { background: none; border: 1.2px solid var(--fog); }
+  .netview svg.net-shico { width: 10px !important; height: 10px !important; fill: var(--ink-soft); flex-shrink: 0; display: inline-block; }
+
+  .netview .net-info-panel { flex: 0 0 340px; border-left: 1px solid var(--line); background: var(--panel-bg); display: flex; flex-direction: column; min-height: 0; }
+  .netview .net-panel-search { position: relative; padding: 0.8rem 0.9rem 0.6rem; border-bottom: 1px solid var(--line); flex: none; }
+  .netview .net-panel-search input {
+    width: 100%; font-family: "Public Sans", sans-serif; font-size: 0.82rem;
+    padding: 0.42rem 0.7rem; border-radius: 20px; border: 1px solid var(--line); background: var(--parchment-hi); color: var(--fg);
+  }
+  .netview .net-panel-search input:focus { outline: 2px solid var(--focus); outline-offset: 1px; }
+  .netview .net-search-results {
+    position: absolute; left: 0.9rem; right: 0.9rem; top: calc(100% - 0.2rem); z-index: 10;
+    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); max-height: 260px; overflow-y: auto;
+  }
+  .netview .net-sr-item { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.45rem 0.7rem; cursor: pointer; font-size: 0.82rem; }
+  .netview .net-sr-item:hover { background: var(--parchment-hi); }
+  .netview .net-sr-kind { font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; text-transform: uppercase; color: var(--fog); }
+  .netview .net-sr-empty { padding: 0.6rem 0.7rem; font-size: 0.78rem; color: var(--fog); }
+  .netview #netInfoPanel { flex: 1 1 auto; overflow-y: auto; padding: 1.1rem 1.2rem 2rem; min-height: 0; }
+  .netview .net-info-empty { color: var(--fog); font-size: 0.85rem; padding-top: 2rem; text-align: center; line-height: 1.6; }
+  .netview .net-info-empty .big { font-size: 1.6rem; display: block; margin-bottom: 0.5rem; }
+  .netview .net-info-badge { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.55rem; border-radius: 20px; margin-bottom: 0.6rem; border: 1px solid var(--line); }
+  .netview .net-info-panel h3 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.25rem; margin: 0 0 0.25rem; text-wrap: balance; }
+  .netview .net-info-meta { font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog); margin: 0 0 0.9rem; line-height: 1.5; }
+  .netview .net-info-role { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.55; margin: 0 0 1rem; }
+  .netview .net-info-section-h { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 0.95rem; margin: 1.1rem 0 0.5rem; padding-top: 0.7rem; border-top: 1px solid var(--line); }
+  .netview .net-info-event { padding: 0.55rem 0; border-bottom: 1px dashed var(--line); }
+  .netview .net-info-event:last-child { border-bottom: none; }
+  .netview .net-info-event .when { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; color: var(--rust); }
+  .netview .net-info-event .what { font-weight: 600; font-size: 0.83rem; margin: 0.1rem 0 0.2rem; }
+  .netview .net-info-event p { font-size: 0.78rem; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+  .netview .net-info-close { background: none; border: 1px solid var(--line); border-radius: 20px; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; text-transform: uppercase; color: var(--fog); padding: 0.25rem 0.6rem; cursor: pointer; float: right; }
+  .netview .net-info-close:hover { color: var(--rust); border-color: var(--rust); }
+
+  @media (max-width: 860px) {
+    .netview .net-graph-face { flex-direction: column; height: auto; }
+    .netview .net-graph-wrap { height: 52vh; }
+    .netview .net-info-panel { flex: none; border-left: none; border-top: 1px solid var(--line); max-height: 32vh; }
+  }
 </style>
 
 <header class="top">
@@ -109,6 +204,7 @@
   <form onsubmit="return doSearch(event)">
     <input id="searchbox" type="search" placeholder="Search…" aria-label="Search entities" />
   </form>
+  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Network</button>
   <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
 </header>
 
@@ -8764,6 +8860,625 @@
     return false;
   };
 
+  function renderNetwork() {
+    var total = ACTORS.length + MKS.length + ORGS.length;
+    var html = '<div class="netview">';
+    html += '<span class="badge">A second way to move through the archive</span>';
+    html += '<h1 class="entity-title">The whole archive, as a network</h1>';
+    html += '<p style="color:var(--ink-soft); font-size:0.94rem; line-height:1.68; max-width:68ch;">Same ' + total + ' Actors and Organizations, one more way to move through them — click anything to pull its full record into the panel on the right, or search for it directly. Laws and Topics stay out of the way until you zoom into whoever sponsored or discussed them (the eye icon shows them always). Every edge here comes from a structured field already in the data — org membership, org lineage, law sponsorship, topic cross-references — nothing hand-placed.</p>';
+    html += '<div class="net-flip-controls"><span class="net-flip-state" id="netFlipState">Viewing: index</span>';
+    html += '<button class="net-flip-btn" id="netFlipBtn" onclick="netDoFlip()"><span>&#8635;</span> <span id="netFlipLabel">Show network</span></button>';
+    html += '<span class="net-stamp" title="No d3, no charting library — the layout is Coulomb repulsion and Hooke’s law, run 340 times.">Certified library-free</span></div>';
+
+    html += '<div class="net-stage" id="netStage"><div class="net-stage-inner">';
+    html += '<div class="net-face front net-index-face"><div id="netIndexContent"></div></div>';
+    html += '<div class="net-face back"><div class="net-graph-face"><div class="net-graph-wrap">';
+    html += '<div class="net-graph-toolbar">';
+    html += '<button class="net-zoom-btn" onclick="netZoomBy(1.25)" aria-label="Zoom in">+</button>';
+    html += '<button class="net-zoom-btn" onclick="netZoomBy(0.8)" aria-label="Zoom out">–</button>';
+    html += '<button class="net-zoom-btn" onclick="netResetView()" aria-label="Reset view">↾</button>';
+    html += '<button class="net-zoom-btn wide" id="netShowHiddenBtn" onclick="netToggleShowHidden()" aria-label="Toggle hidden Laws/Topics" title="Show Laws/Topics always, not just on zoom">👁</button>';
+    html += '</div>';
+    html += '<svg id="netGraphSvg" viewBox="0 0 1100 860"></svg>';
+    html += '<div class="net-graph-legend">';
+    html += '<span class="net-sw"><svg class="net-shico" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5"/></svg>Person</span>';
+    html += '<span class="net-sw"><svg class="net-shico" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)"/></svg>Org</span>';
+    html += '<span class="net-sw"><svg class="net-shico" viewBox="0 0 14 14"><polygon points="7,1.8 12.3,11.6 1.7,11.6" stroke-linejoin="round" stroke-width="2.6"/></svg>Law/Topic <em>(on zoom)</em></span>';
+    html += '<div class="net-legend-sep"></div>';
+    html += '<span class="net-sw"><span class="net-dot" style="background:var(--rust)"></span>Right</span>';
+    html += '<span class="net-sw"><span class="net-dot" style="background:var(--verdigris)"></span>Left</span>';
+    html += '<span class="net-sw"><span class="net-dot" style="background:var(--ochre)"></span>Religious</span>';
+    html += '<span class="net-sw"><span class="net-dot" style="background:var(--fog)"></span>Institutional</span>';
+    html += '<span class="net-sw"><span class="net-dot ring"></span>No data</span>';
+    html += '</div></div>';
+    html += '<div class="net-info-panel"><div class="net-panel-search">';
+    html += '<input type="text" id="netSearchBox" placeholder="Search all entries…" autocomplete="off" oninput="netOnSearchInput()" onkeydown="netOnSearchKeydown(event)" />';
+    html += '<div id="netSearchResults" class="net-search-results" hidden></div></div>';
+    html += '<div id="netInfoPanel"><div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div></div>';
+    html += '</div></div></div>';
+    html += '</div></div>';
+    html += '</div>';
+    return html;
+  }
+
+  // =========================================================================
+  // Network view — the whole archive as a force-directed graph. Ported from
+  // prototypes/build_network_view.py + network_view_template.html: same
+  // classifier reasoning, same edge rules (structured fields only), just
+  // computed client-side from the ACTORS/MKS/ORGS/LAWS/TOPICS/FOREIGN arrays
+  // already embedded above, instead of a separately-baked GRAPH_DATA blob.
+  // Built lazily on first visit to #/network, not on every page load.
+  // =========================================================================
+  var NET = { built: false, nodes: null, edges: null, nodeById: null, adjacency: null,
+              selectedId: null, showHidden: false, viewBox: null, animToken: 0 };
+
+  var NET_RIGHT_KW = ["revisionist", "greater israel", "territorial maximalism", "national conservatism",
+    "iron wall", "neo-zionism", "hadar", "monistic", "free-market", "anti-british revolt",
+    "kahanism", "ultranationalism", "far-right", "settlement expansion"];
+  var NET_LEFT_KW = ["labor zionism", "socialist zionism", "social democracy", "marxist", "trade unionism",
+    "religion of labor", "gordonism", "pragmatic statism"];
+  var NET_RELIGIOUS_KW = ["religious zionism"];
+  var NET_INSTITUTIONAL_TYPES = { "Government Office":1, "Legislative Body":1, "Sovereign State":1,
+    "Self-Governing Community":1, "National Military":1, "International Body":1, "Representative Assembly":1,
+    "Executive Council":1, "International Zionist Body":1, "Financial Institution":1, "Land Fund":1, "Land Company":1 };
+  var NET_ALIGNMENT_FIELD_MAP = { "Right": "right", "Far-Right": "right", "Left": "left",
+    "Religious Nationalist": "religious", "Center": "unaffiliated" };
+  var NET_ALIGN_COLOR = { right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)',
+    institutional: 'var(--fog)', unaffiliated: 'var(--fog)', unclassified: 'var(--fog)' };
+  var NET_ALIGN_LABEL = { right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist',
+    institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data' };
+  var NET_KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law',
+    topic: 'Topic', foreign: 'Foreign Patron' };
+  var NET_KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5, foreign: 5.5 };
+  var NET_HIDDEN_KINDS = { law: true, topic: true };
+
+  function netIdeologyMatch(list) {
+    var text = (list || []).join(" | ").toLowerCase();
+    if (NET_RELIGIOUS_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "religious";
+    if (NET_RIGHT_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "right";
+    if (NET_LEFT_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "left";
+    return null;
+  }
+
+  function netBuildGraphData() {
+    var orgById = {};
+    ORGS.forEach(function(o) { orgById[o.org_id] = o; });
+
+    // ---- org alignment: institutional type > ideology keywords > lineage propagation ----
+    var orgAlign = {};
+    ORGS.forEach(function(o) {
+      orgAlign[o.org_id] = NET_INSTITUTIONAL_TYPES[o.org_type] ? "institutional" : netIdeologyMatch(o.ideology);
+    });
+    function lineageNeighbors(o) {
+      var lin = o.lineage || {};
+      var ids = (lin.predecessor_orgs || []).concat(lin.successor_orgs || []);
+      if (lin.merged_into) ids.push(lin.merged_into);
+      return ids.filter(function(i) { return orgById[i]; });
+    }
+    for (var pass = 0; pass < 4; pass++) {
+      var changed = false;
+      ORGS.forEach(function(o) {
+        if (orgAlign[o.org_id] !== null) return;
+        lineageNeighbors(o).some(function(nid) {
+          if (orgAlign[nid] === "right" || orgAlign[nid] === "left" || orgAlign[nid] === "religious") {
+            orgAlign[o.org_id] = orgAlign[nid]; changed = true; return true;
+          }
+          return false;
+        });
+      });
+      if (!changed) break;
+    }
+    Object.keys(orgAlign).forEach(function(k) { if (orgAlign[k] === null) orgAlign[k] = "unaffiliated"; });
+
+    // ---- nodes ----
+    var nodes = [], nodeIndex = {};
+    function addNode(id, kind, label, detail) { nodeIndex[id] = nodes.length; nodes.push({ id:id, kind:kind, label:label, detail:detail, align:null }); }
+
+    ACTORS.forEach(function(a) {
+      var life = a.life_span || {};
+      addNode("actor:" + a.actor_id, "actor", a.full_name, {
+        meta: (life.born||"?") + "–" + (life.died || "present"), role: a.historical_role || "",
+        events: (a.key_land_actions||[]).map(function(e){ return { when:e.date||"", what:e.action_type||"", text:e.impact_description||"" }; }),
+        personal: (a.personal_context||[]).map(function(p){ return { title:p.title||"", when:p.date_or_range||"", text:p.description||"" }; }),
+      });
+    });
+    MKS.forEach(function(m) {
+      var terms = m.knesset_terms || [];
+      var parties = Array.from(new Set(terms.map(function(t){return t.party;}).filter(Boolean))).sort().join(", ") || "party affiliation not recorded";
+      addNode("mk:" + m.mk_id, "mk", m.full_name, {
+        meta: "Knesset Member · " + parties, role: "",
+        events: (m.legislative_and_action_record||[]).map(function(e){ return { when:e.date||"", what:e.bill_or_action_title||"", text:((e.land_impact&&e.land_impact.description)||"") + " (" + (e.vote||"") + ")" }; }),
+        personal: (m.personal_context||[]).map(function(p){ return { title:p.title||"", when:p.date_or_range||"", text:p.description||"" }; }),
+      });
+    });
+    ORGS.forEach(function(o) {
+      var dates = (o.founding_date||"?") + (o.dissolution_date ? (" – " + o.dissolution_date) : " – present");
+      addNode("org:" + o.org_id, "org", o.name, {
+        meta: (o.org_type||"") + " · " + dates, role: (o.ideology||[]).join(", "),
+        events: (o.action_record||[]).map(function(e){ return { when:e.date||"", what:e.title||"", text:e.description||"" }; }),
+        personal: [],
+      });
+      nodes[nodeIndex["org:" + o.org_id]].align = orgAlign[o.org_id];
+    });
+    LAWS.forEach(function(l) {
+      addNode("law:" + l.law_id, "law", l.title, {
+        meta: (l.category||"") + " · enacted " + (l.enactment_date||"?") + " (Knesset " + (l.knesset_number||"?") + ")", role: "",
+        events: [{ when:l.enactment_date||"", what:"Summary", text:l.summary||"" }],
+        personal: (l.land_impact && l.land_impact.description) ? [{ title:"Land impact", when:"", text:l.land_impact.description }] : [],
+      });
+    });
+    TOPICS.forEach(function(t) {
+      addNode("topic:" + t.topic_id, "topic", t.name, {
+        meta: (t.topic_type||"") + " · " + (t.date_or_range||""), role: "",
+        events: [{ when:t.date_or_range||"", what:"Summary", text:t.summary||"" }],
+        personal: t.significance ? [{ title:"Significance", when:"", text:t.significance }] : [],
+      });
+    });
+    FOREIGN.forEach(function(f) {
+      addNode("foreign:" + f.actor_id, "foreign", f.full_name, {
+        meta: (f.organizational_role||"") + (f.organization ? (" · " + f.organization) : ""), role: f.public_registration || "",
+        events: (f.action_record||[]).map(function(e){ return { when:e.date||"", what:e.action_type||"", text:e.description||"" }; }),
+        personal: f.role_status ? [{ title:"Role status", when:"", text:f.role_status }] : [],
+      });
+      nodes[nodeIndex["foreign:" + f.actor_id]].align = "unaffiliated";
+    });
+
+    // ---- edges ----
+    var edges = [], seen = {};
+    function addEdge(a, b, kind) {
+      if (nodeIndex[a] === undefined || nodeIndex[b] === undefined) return;
+      var key = [a, b].sort().join("|") + "|" + kind;
+      if (seen[key]) return;
+      seen[key] = true;
+      edges.push({ source:a, target:b, kind:kind });
+    }
+    ORGS.forEach(function(o) {
+      var oid = "org:" + o.org_id;
+      (o.notable_members||[]).forEach(function(mid) {
+        if (nodeIndex["actor:" + mid] !== undefined) addEdge(oid, "actor:" + mid, "member");
+        else if (nodeIndex["mk:" + mid] !== undefined) addEdge(oid, "mk:" + mid, "member");
+      });
+    });
+    ORGS.forEach(function(o) {
+      var oid = "org:" + o.org_id, lin = o.lineage || {};
+      (lin.predecessor_orgs||[]).forEach(function(pid) { if (pid.indexOf(" ")===-1 && pid.indexOf("(")===-1) addEdge("org:"+pid, oid, "lineage"); });
+      (lin.successor_orgs||[]).forEach(function(sid) { if (sid.indexOf(" ")===-1 && sid.indexOf("(")===-1) addEdge(oid, "org:"+sid, "lineage"); });
+      if (lin.merged_into && lin.merged_into.indexOf(" ")===-1 && lin.merged_into.indexOf("(")===-1) addEdge(oid, "org:"+lin.merged_into, "lineage");
+    });
+    var NET_COMPONENT_OF = { "united-nations-general-assembly": "united-nations", "united-nations-security-council": "united-nations" };
+    Object.keys(NET_COMPONENT_OF).forEach(function(child) { addEdge("org:" + NET_COMPONENT_OF[child], "org:" + child, "component"); });
+
+    var peopleNames = MKS.map(function(m){ return ["mk:"+m.mk_id, m.full_name]; })
+      .concat(ACTORS.map(function(a){ return ["actor:"+a.actor_id, a.full_name]; }));
+    var GENERIC_ORG_IDS = { knesset:1, "state-of-israel":1 };
+    LAWS.forEach(function(l) {
+      var lid = "law:" + l.law_id;
+      if (l.sponsoring_mk_id) addEdge(lid, "mk:" + l.sponsoring_mk_id, "sponsor");
+      var text = l.summary || "";
+      peopleNames.forEach(function(pn) { if (text.indexOf(pn[1]) !== -1) addEdge(lid, pn[0], "sponsor"); });
+      ORGS.forEach(function(o) {
+        var short = o.name.split("(")[0].trim();
+        if (!GENERIC_ORG_IDS[o.org_id] && short.length > 4 && text.indexOf(short) !== -1) addEdge(lid, "org:" + o.org_id, "sponsor");
+      });
+    });
+    TOPICS.forEach(function(t) {
+      var tid = "topic:" + t.topic_id;
+      (t.related_actor_ids||[]).forEach(function(aid) {
+        addEdge(tid, "actor:" + aid, "context"); addEdge(tid, "mk:" + aid, "context"); addEdge(tid, "foreign:" + aid, "context");
+      });
+      (t.related_org_ids||[]).forEach(function(oid) { addEdge(tid, "org:" + oid, "context"); });
+    });
+    FOREIGN.forEach(function(f) {
+      var text = f.organization || "";
+      ORGS.forEach(function(o) {
+        var short = o.name.split("(")[0].trim();
+        if (short.length > 4 && text.indexOf(short) !== -1) addEdge("foreign:" + f.actor_id, "org:" + o.org_id, "member");
+      });
+    });
+
+    // ---- MK alignment: real per-term political_alignment first, org-propagation fallback ----
+    MKS.forEach(function(m) {
+      var terms = m.knesset_terms || [];
+      if (terms.length) {
+        var mapped = NET_ALIGNMENT_FIELD_MAP[terms[terms.length-1].political_alignment];
+        if (mapped) nodes[nodeIndex["mk:" + m.mk_id]].align = mapped;
+      }
+    });
+    var personOrgAligns = {};
+    edges.forEach(function(e) {
+      [[e.source,e.target],[e.target,e.source]].forEach(function(pair) {
+        var a = pair[0], b = pair[1];
+        if (a.indexOf("org:")===0 && (b.indexOf("actor:")===0 || b.indexOf("mk:")===0)) {
+          (personOrgAligns[b] = personOrgAligns[b] || []).push(orgAlign[a.slice(4)] || "institutional");
+        }
+      });
+    });
+    Object.keys(personOrgAligns).forEach(function(nid) {
+      if (nodes[nodeIndex[nid]].align === null) {
+        var counts = {}; personOrgAligns[nid].forEach(function(v){ counts[v]=(counts[v]||0)+1; });
+        var best=null,bestN=-1; Object.keys(counts).forEach(function(k){ if(counts[k]>bestN){best=k;bestN=counts[k];} });
+        nodes[nodeIndex[nid]].align = best;
+      }
+    });
+    nodes.forEach(function(n) { if ((n.kind==="actor"||n.kind==="mk") && n.align===null) n.align = "unaffiliated"; });
+
+    function propagateFromEdges(kind, list, idField) {
+      list.forEach(function(item) {
+        var id = kind + ":" + item[idField];
+        var aligns = [];
+        edges.forEach(function(e) {
+          var other = e.source===id ? e.target : (e.target===id ? e.source : null);
+          if (other && nodes[nodeIndex[other]] && nodes[nodeIndex[other]].align) aligns.push(nodes[nodeIndex[other]].align);
+        });
+        var counts = {}; aligns.forEach(function(v){ counts[v]=(counts[v]||0)+1; });
+        var best=null,bestN=-1; Object.keys(counts).forEach(function(k){ if(counts[k]>bestN){best=k;bestN=counts[k];} });
+        nodes[nodeIndex[id]].align = best || "unclassified";
+      });
+    }
+    propagateFromEdges("law", LAWS, "law_id");
+    propagateFromEdges("topic", TOPICS, "topic_id");
+
+    return { nodes: nodes, edges: edges };
+  }
+
+  // ---- force layout (hand-rolled, no library — same physics as the standalone prototype) ----
+  var NET_W = 1100, NET_H = 860;
+  var netSvgNS = 'http://www.w3.org/2000/svg';
+
+  function netInit() {
+    if (NET.built) return;
+    var data = netBuildGraphData();
+    var nodes = data.nodes.map(function(n) {
+      var col = ({ actor:0.22, mk:0.78, org:0.5, law:0.5, topic:0.5, foreign:0.9 }[n.kind]) || 0.5;
+      var row = ({ actor:0.25, mk:0.25, org:0.55, law:0.8, topic:0.65, foreign:0.5 }[n.kind]) || 0.5;
+      var jitter = 260;
+      return { id:n.id, kind:n.kind, label:n.label, detail:n.detail, align:n.align||'unaffiliated',
+        x: NET_W*col + (Math.random()-0.5)*jitter, y: NET_H*row + (Math.random()-0.5)*jitter,
+        vx:0, vy:0, degree:0 };
+    });
+    var nodeById = {}; nodes.forEach(function(n){ nodeById[n.id]=n; });
+    var edges = data.edges.map(function(e) {
+      nodeById[e.source].degree++; nodeById[e.target].degree++;
+      return { source:nodeById[e.source], target:nodeById[e.target], kind:e.kind };
+    });
+    var adjacency = {}; nodes.forEach(function(n){ adjacency[n.id]=[]; });
+    edges.forEach(function(e){ adjacency[e.source.id].push(e.target.id); adjacency[e.target.id].push(e.source.id); });
+
+    for (var it = 0; it < 340; it++) {
+      for (var i = 0; i < nodes.length; i++) {
+        for (var j = i+1; j < nodes.length; j++) {
+          var a = nodes[i], b = nodes[j];
+          var dx = a.x-b.x, dy = a.y-b.y, d2 = dx*dx+dy*dy || 0.01, d = Math.sqrt(d2);
+          var force = 2400 / d2, fx = (dx/d)*force, fy = (dy/d)*force;
+          a.vx+=fx; a.vy+=fy; b.vx-=fx; b.vy-=fy;
+        }
+      }
+      edges.forEach(function(e) {
+        var dx = e.target.x-e.source.x, dy = e.target.y-e.source.y, d = Math.sqrt(dx*dx+dy*dy) || 0.01;
+        var force = (d-46)*0.02, fx=(dx/d)*force, fy=(dy/d)*force;
+        e.source.vx+=fx; e.source.vy+=fy; e.target.vx-=fx; e.target.vy-=fy;
+      });
+      var margin = 70;
+      nodes.forEach(function(n) {
+        n.vx += (NET_W/2-n.x)*0.0012; n.vy += (NET_H/2-n.y)*0.0012;
+        if (n.x<margin) n.vx += (margin-n.x)*0.03;
+        if (n.x>NET_W-margin) n.vx -= (n.x-(NET_W-margin))*0.03;
+        if (n.y<margin) n.vy += (margin-n.y)*0.03;
+        if (n.y>NET_H-margin) n.vy -= (n.y-(NET_H-margin))*0.03;
+        n.vx += (Math.random()-0.5)*0.12; n.vy += (Math.random()-0.5)*0.12;
+      });
+      nodes.forEach(function(n) {
+        n.vx*=0.82; n.vy*=0.82; n.x+=n.vx; n.y+=n.vy;
+        n.x = Math.max(-150, Math.min(NET_W+150, n.x)); n.y = Math.max(-150, Math.min(NET_H+150, n.y));
+      });
+    }
+
+    NET.nodes = nodes; NET.edges = edges; NET.nodeById = nodeById; NET.adjacency = adjacency;
+    NET.viewBox = { x:0, y:0, w:NET_W, h:NET_H };
+    NET.built = true;
+  }
+
+  function netBfsDistances(startId, maxDist) {
+    var dist = {}; dist[startId] = 0;
+    var queue = [startId], head = 0;
+    while (head < queue.length) {
+      var cur = queue[head++], d = dist[cur];
+      if (d >= maxDist) continue;
+      NET.adjacency[cur].forEach(function(nb) { if (!(nb in dist)) { dist[nb]=d+1; queue.push(nb); } });
+    }
+    return dist;
+  }
+
+  function netApplyViewBox() {
+    document.getElementById('netGraphSvg').setAttribute('viewBox', NET.viewBox.x+' '+NET.viewBox.y+' '+NET.viewBox.w+' '+NET.viewBox.h);
+  }
+
+  function netMakeShape(kind, r) {
+    var el;
+    if (kind === 'actor' || kind === 'mk' || kind === 'foreign') {
+      el = document.createElementNS(netSvgNS, 'circle'); el.setAttribute('r', r);
+    } else if (kind === 'org') {
+      el = document.createElementNS(netSvgNS, 'rect');
+      el.setAttribute('x', -r*0.86); el.setAttribute('y', -r*0.86);
+      el.setAttribute('width', r*1.72); el.setAttribute('height', r*1.72); el.setAttribute('rx', r*0.22);
+      el.setAttribute('transform', 'rotate(45)');
+    } else if (kind === 'law') {
+      var s = r*1.9;
+      el = document.createElementNS(netSvgNS, 'polygon');
+      el.setAttribute('points', '0,'+(-s*0.62)+' '+(s*0.56)+','+(s*0.48)+' '+(-s*0.56)+','+(s*0.48));
+      el.setAttribute('stroke-linejoin', 'round'); el.setAttribute('stroke-width', Math.max(2, r*0.4));
+    } else {
+      var pts = [];
+      for (var i=0;i<6;i++) { var ang = Math.PI/3*i - Math.PI/6; pts.push((r*Math.cos(ang)).toFixed(2)+','+(r*Math.sin(ang)).toFixed(2)); }
+      el = document.createElementNS(netSvgNS, 'polygon');
+      el.setAttribute('points', pts.join(' ')); el.setAttribute('stroke-linejoin', 'round'); el.setAttribute('stroke-width', Math.max(2, r*0.4));
+    }
+    return el;
+  }
+
+  function netBaseLabelOk(n) {
+    var r = NET_KIND_RADIUS[n.kind] + Math.min(n.degree, 8)*0.5;
+    return r > 6.5 || n.degree > 3 || NET_HIDDEN_KINDS[n.kind];
+  }
+
+  function netRenderGraph() {
+    var svg = document.getElementById('netGraphSvg');
+    svg.innerHTML = '';
+    svg.insertAdjacentHTML('afterbegin', '<defs><filter id="netHalo" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5.5"/></filter></defs>');
+
+    var edgeGroup = document.createElementNS(netSvgNS, 'g');
+    edgeGroup.setAttribute('stroke', 'currentColor');
+    NET.edges.forEach(function(e) {
+      var line = document.createElementNS(netSvgNS, 'line');
+      line.setAttribute('x1', e.source.x); line.setAttribute('y1', e.source.y);
+      line.setAttribute('x2', e.target.x); line.setAttribute('y2', e.target.y);
+      line.setAttribute('stroke-width', e.kind === 'lineage' ? '1.4' : '0.7');
+      line.dataset.a = e.source.id; line.dataset.b = e.target.id;
+      if (NET_HIDDEN_KINDS[e.source.kind] || NET_HIDDEN_KINDS[e.target.kind]) line.dataset.lawEdge = '1';
+      edgeGroup.appendChild(line);
+    });
+    svg.appendChild(edgeGroup);
+
+    var haloGroup = document.createElementNS(netSvgNS, 'g');
+    var nodeGroup = document.createElementNS(netSvgNS, 'g');
+    NET.nodes.forEach(function(n) {
+      var color = NET_ALIGN_COLOR[n.align] || 'var(--fog)';
+      var r = (NET_KIND_RADIUS[n.kind] || 5) + Math.min(n.degree, 8)*0.5;
+      var noData = (n.align === 'unaffiliated' || n.align === 'unclassified');
+
+      if (!NET_HIDDEN_KINDS[n.kind]) {
+        var halo = netMakeShape(n.kind, r*2.1);
+        halo.setAttribute('transform', 'translate('+n.x+','+n.y+')'+(n.kind==='org'?' rotate(45)':''));
+        halo.setAttribute('fill', color); halo.setAttribute('opacity', '0.22'); halo.setAttribute('filter', 'url(#netHalo)');
+        haloGroup.appendChild(halo);
+      }
+      var g = document.createElementNS(netSvgNS, 'g');
+      g.setAttribute('transform', 'translate('+n.x+','+n.y+')');
+      g.style.cursor = 'pointer'; g.dataset.id = n.id; g.dataset.kind = n.kind;
+
+      var shape = netMakeShape(n.kind, r);
+      shape.setAttribute('fill', color); shape.setAttribute('fill-opacity', noData ? '0.5' : '0.92');
+      if (n.kind === 'law' || n.kind === 'topic') shape.setAttribute('stroke', color);
+      if (noData) { shape.setAttribute('stroke', color); shape.setAttribute('stroke-width', '1.1'); shape.setAttribute('fill', 'var(--panel-bg)'); }
+      g.appendChild(shape);
+
+      var text = document.createElementNS(netSvgNS, 'text');
+      text.setAttribute('x', r+5); text.setAttribute('y', 3.2); text.setAttribute('font-size', '8.2');
+      text.setAttribute('font-family', 'Public Sans, sans-serif'); text.setAttribute('fill', 'currentColor');
+      text.textContent = n.label; text.style.display = netBaseLabelOk(n) ? '' : 'none';
+      g.appendChild(text);
+
+      g.addEventListener('click', function() { netSelectNode(n.id); });
+      nodeGroup.appendChild(g);
+    });
+    svg.appendChild(haloGroup); svg.appendChild(nodeGroup);
+    netApplyVisibility();
+  }
+
+  var NET_OPACITY_BY_TIER = [1, 0.8, 0.32];
+  var NET_EDGE_OPACITY_BY_TIER = [0.85, 0.5, 0.14];
+
+  function netApplyVisibility() {
+    var svg = document.getElementById('netGraphSvg');
+    var dist = NET.selectedId ? netBfsDistances(NET.selectedId, 2) : null;
+    svg.querySelectorAll('g[data-id]').forEach(function(g) {
+      var id = g.dataset.id, kind = g.dataset.kind, n = NET.nodeById[id];
+      var isHidden = !!NET_HIDDEN_KINDS[kind];
+      var maxTier = (isHidden && !NET.showHidden) ? 1 : 2;
+      var exists, tier;
+      if (dist) { var d = dist[id]; exists = (d !== undefined && d <= maxTier); tier = exists ? Math.min(d,2) : 0; }
+      else { exists = !isHidden || NET.showHidden; tier = 0; }
+      g.style.display = exists ? '' : 'none';
+      if (!exists) return;
+      g.style.opacity = NET_OPACITY_BY_TIER[tier];
+      var label = g.querySelector('text');
+      if (label) label.style.display = (dist ? (tier<=1 || netBaseLabelOk(n)) : netBaseLabelOk(n)) ? '' : 'none';
+    });
+    svg.querySelectorAll('line').forEach(function(l) {
+      var isHiddenEdge = !!l.dataset.lawEdge;
+      if (!dist) { l.style.display = (!isHiddenEdge || NET.showHidden) ? '' : 'none'; l.style.opacity = ''; return; }
+      var na = NET.nodeById[l.dataset.a], nb = NET.nodeById[l.dataset.b];
+      var maxA = (NET_HIDDEN_KINDS[na.kind] && !NET.showHidden) ? 1 : 2;
+      var maxB = (NET_HIDDEN_KINDS[nb.kind] && !NET.showHidden) ? 1 : 2;
+      var da = dist[l.dataset.a], db = dist[l.dataset.b];
+      var visible = da !== undefined && da <= maxA && db !== undefined && db <= maxB;
+      l.style.display = visible ? '' : 'none';
+      if (visible) l.style.opacity = NET_EDGE_OPACITY_BY_TIER[Math.max(Math.min(da,2), Math.min(db,2))];
+    });
+  }
+
+  function netToggleShowHidden() {
+    NET.showHidden = !NET.showHidden;
+    document.getElementById('netShowHiddenBtn').classList.toggle('active', NET.showHidden);
+    netApplyVisibility();
+  }
+
+  function netBoundsFor(ids) {
+    var xs=[], ys=[];
+    ids.forEach(function(id){ var n=NET.nodeById[id]; if(n){ xs.push(n.x); ys.push(n.y); } });
+    if (!xs.length) return { x:0, y:0, w:NET_W, h:NET_H };
+    var minX=Math.min.apply(null,xs), maxX=Math.max.apply(null,xs), minY=Math.min.apply(null,ys), maxY=Math.max.apply(null,ys);
+    var pad = ids.length<=2 ? 130 : 80;
+    var bw=Math.max(maxX-minX+pad*2,160), bh=Math.max(maxY-minY+pad*2,160);
+    var aspect = NET_W/NET_H;
+    if (bw/bh > aspect) bh = bw/aspect; else bw = bh*aspect;
+    var cx=(minX+maxX)/2, cy=(minY+maxY)/2;
+    return { x:cx-bw/2, y:cy-bh/2, w:bw, h:bh };
+  }
+
+  function netAnimateViewBox(target, duration) {
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) { NET.viewBox = target; netApplyViewBox(); return; }
+    var myToken = ++NET.animToken;
+    var start = { x:NET.viewBox.x, y:NET.viewBox.y, w:NET.viewBox.w, h:NET.viewBox.h };
+    var t0 = null;
+    function step(ts) {
+      if (myToken !== NET.animToken) return;
+      if (!t0) t0 = ts;
+      var p = Math.min(1, (ts-t0)/duration), ease = 1-Math.pow(1-p,3);
+      NET.viewBox = { x:start.x+(target.x-start.x)*ease, y:start.y+(target.y-start.y)*ease,
+        w:start.w+(target.w-start.w)*ease, h:start.h+(target.h-start.h)*ease };
+      netApplyViewBox();
+      if (p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function netZoomBy(factor) {
+    var cx = NET.viewBox.x+NET.viewBox.w/2, cy = NET.viewBox.y+NET.viewBox.h/2;
+    var w = Math.max(90, Math.min(NET_W*1.4, NET.viewBox.w/factor)), h = w*(NET_H/NET_W);
+    netAnimateViewBox({ x:cx-w/2, y:cy-h/2, w:w, h:h }, 220);
+  }
+  function netResetView() { netAnimateViewBox({ x:0, y:0, w:NET_W, h:NET_H }, 550); }
+
+  function netSelectNode(id) {
+    NET.selectedId = id;
+    var n = NET.nodeById[id];
+    if (!n) return;
+    netApplyVisibility();
+    var dist = netBfsDistances(id, 1);
+    netAnimateViewBox(netBoundsFor(Object.keys(dist)), 650);
+
+    var d = n.detail;
+    var badgeColor = NET_ALIGN_COLOR[n.align] || 'var(--fog)';
+    var html = '<button class="net-info-close" onclick="netClearSelection()">Close ✕</button>';
+    html += '<span class="net-info-badge" style="border-color:'+badgeColor+'; color:'+badgeColor+'">'+NET_KIND_LABEL[n.kind]+' · '+NET_ALIGN_LABEL[n.align]+'</span>';
+    html += '<h3>'+n.label+'</h3>';
+    html += '<div class="net-info-meta">'+(d.meta||'')+'</div>';
+    if (d.role) html += '<div class="net-info-role">'+d.role+'</div>';
+    if (d.events && d.events.length) {
+      html += '<div class="net-info-section-h">Record</div>';
+      d.events.slice(0,6).forEach(function(ev) {
+        if (!ev.text) return;
+        html += '<div class="net-info-event"><div class="when">'+(ev.when||'')+'</div><div class="what">'+(ev.what||'')+'</div><p>'+ev.text+'</p></div>';
+      });
+    }
+    if (d.personal && d.personal.length) {
+      html += '<div class="net-info-section-h">Beyond the ledger</div>';
+      d.personal.slice(0,3).forEach(function(p) {
+        html += '<div class="net-info-event"><div class="when">'+(p.when||'')+'</div><div class="what">'+(p.title||'')+'</div><p>'+p.text+'</p></div>';
+      });
+    }
+    document.getElementById('netInfoPanel').innerHTML = html;
+  }
+
+  function netClearSelection() {
+    NET.selectedId = null;
+    netApplyVisibility();
+    document.getElementById('netInfoPanel').innerHTML = '<div class="net-info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div>';
+    netResetView();
+  }
+
+  function netBuildIndex() {
+    var groups = { actors: [], org: [], law: [], topic: [], foreign: [] };
+    NET.nodes.forEach(function(n) {
+      if (n.kind === 'actor' || n.kind === 'mk') groups.actors.push(n);
+      else if (groups[n.kind]) groups[n.kind].push(n);
+    });
+    Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
+    var titles = { actors:'Actors', org:'Organizations', law:'Laws', topic:'Topics', foreign:'Foreign Patrons' };
+    var html = '';
+    ['actors','org','law','topic','foreign'].forEach(function(k) {
+      html += '<div class="net-index-group"><h3>'+titles[k]+' ('+groups[k].length+')</h3><div class="net-index-grid">';
+      groups[k].forEach(function(n) { html += '<a onclick="netJumpToNode(\''+n.id.replace(/'/g,"\\'")+'\')">'+n.label+'</a>'; });
+      html += '</div></div>';
+    });
+    document.getElementById('netIndexContent').innerHTML = html;
+  }
+
+  function netJumpToNode(id) {
+    netDoFlip(true);
+    setTimeout(function() { netSelectNode(id); }, 500);
+  }
+
+  function netDoFlip(forceToGraph) {
+    var stage = document.getElementById('netStage');
+    var flipped = forceToGraph ? true : !stage.classList.contains('flipped');
+    stage.classList.toggle('flipped', flipped);
+    document.getElementById('netFlipLabel').textContent = flipped ? 'Show index' : 'Show network';
+    document.getElementById('netFlipState').textContent = flipped ? 'Viewing: network' : 'Viewing: index';
+  }
+
+  function netOnSearchInput() {
+    var q = document.getElementById('netSearchBox').value.trim().toLowerCase();
+    var box = document.getElementById('netSearchResults');
+    if (!q) { box.hidden = true; box.innerHTML = ''; return; }
+    var matches = NET.nodes.filter(function(n) { return n.label.toLowerCase().indexOf(q) !== -1; }).slice(0, 12);
+    box.innerHTML = matches.length ? matches.map(function(n) {
+      return '<div class="net-sr-item" onclick="netSearchJump(\''+n.id.replace(/'/g,"\\'")+'\')">'+
+        '<span class="net-sr-kind">'+(NET_KIND_LABEL[n.kind]||n.kind)+'</span><span>'+n.label+'</span></div>';
+    }).join('') : '<div class="net-sr-empty">No matches</div>';
+    box.hidden = false;
+  }
+  function netOnSearchKeydown(e) {
+    if (e.key === 'Escape') { document.getElementById('netSearchResults').hidden = true; document.getElementById('netSearchBox').blur(); }
+    if (e.key === 'Enter') { var first = document.querySelector('#netSearchResults .net-sr-item'); if (first) first.click(); }
+  }
+  function netSearchJump(id) {
+    document.getElementById('netSearchBox').value = '';
+    document.getElementById('netSearchResults').hidden = true;
+    netJumpToNode(id);
+  }
+  document.addEventListener('click', function(e) {
+    var box = document.getElementById('netSearchResults');
+    if (box && !box.hidden && e.target.closest && !e.target.closest('.net-panel-search')) box.hidden = true;
+  });
+
+  // pan by drag; a near-zero-movement pointerup on empty canvas deselects
+  var netDragging = false, netDragStart = null, netVbStart = null, netMoved = 0;
+  function netWireGraphEvents() {
+    var svg = document.getElementById('netGraphSvg');
+    if (svg.dataset.wired) return;
+    svg.dataset.wired = '1';
+    svg.addEventListener('pointerdown', function(e) {
+      if (e.target.closest('g[data-id]')) return;
+      netDragging = true; netMoved = 0;
+      netDragStart = { x:e.clientX, y:e.clientY }; netVbStart = { x:NET.viewBox.x, y:NET.viewBox.y };
+      svg.setPointerCapture(e.pointerId);
+    });
+    svg.addEventListener('pointermove', function(e) {
+      if (!netDragging) return;
+      var rect = svg.getBoundingClientRect(), scale = NET.viewBox.w/rect.width;
+      var dx = e.clientX-netDragStart.x, dy = e.clientY-netDragStart.y;
+      netMoved = Math.max(netMoved, Math.abs(dx)+Math.abs(dy));
+      NET.viewBox.x = netVbStart.x - dx*scale; NET.viewBox.y = netVbStart.y - dy*scale;
+      netApplyViewBox();
+    });
+    svg.addEventListener('pointerup', function(e) {
+      if (netDragging && netMoved < 4 && !e.target.closest('g[data-id]') && NET.selectedId) netClearSelection();
+      netDragging = false;
+    });
+    svg.addEventListener('wheel', function(e) { e.preventDefault(); netZoomBy(e.deltaY < 0 ? 1.12 : 0.89); }, { passive: false });
+  }
+
+  function showNetwork() {
+    netInit();
+    netApplyViewBox();
+    netRenderGraph();
+    netBuildIndex();
+    netWireGraphEvents();
+  }
+
   function route() {
     var hash = location.hash.replace(/^#\/?/, "");
     var parts = hash.split("/").filter(Boolean);
@@ -8784,6 +9499,12 @@
     if (parts[0] === "about") {
       app.innerHTML = renderAbout();
       foot.textContent = "";
+      return;
+    }
+    if (parts[0] === "network") {
+      app.innerHTML = renderNetwork();
+      foot.textContent = "";
+      showNetwork(); // builds the graph lazily on first visit, then renders + wires interaction
       return;
     }
     var key = parts[0] + ":" + parts[1];
