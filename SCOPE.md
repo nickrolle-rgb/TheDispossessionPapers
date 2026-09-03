@@ -2025,3 +2025,54 @@ topics under League of Nations in the network view.
 
 36 actors, 24 knesset_members, 42 orgs (5 gained notable_members, 1 gained aliases), 17 laws, 63
 topics (2 gained related_org_ids). Collision check clean, one publish, one commit.
+
+## Network view v3: alignment reasoning fixed, topics reveal on zoom, roles clarified (2026-09-03)
+
+Nick's follow-up round on the network prototype, all real fixes not just polish:
+
+**Legend bug**: the shape-legend icons were rendering at full size instead of 10px — a CSS
+specificity collision (`.graph-wrap svg { width: 100%; height: 100% }` was beating the intended
+`.shico` rule). Fixed with an explicit `svg.shico` selector; legend also compacted into one row
+and simplified per Nick's request (Actor+MK merged into a single "Person" circle, Law's triangle
+given rounded corners via `stroke-linejoin: round` to match the rounded language everything else
+uses).
+
+**Alignment classification, reasoned properly this time.** Nick correctly flagged Kadima not
+sharing Likud's colour as wrong, and asked for genuine institutions/offices (that "could change
+hands") to stay visually distinct regardless. Rebuilt the classifier in three passes: (1) org_type
+membership in a defined institutional set — Government Office, Legislative Body, Sovereign State,
+National Military, International Body, etc. — always wins, never overridden by ideology text or
+lineage (this is what keeps Prime Minister/President/Knesset/IDF/UN bodies grey no matter who
+holds them); (2) direct ideology-keyword match for everything else; (3) lineage propagation for
+orgs whose own ideology tag doesn't keyword-match but whose predecessor/successor does — this is
+what fixes Kadima (tagged merely "Centrist," but lineage-linked to Likud) without hardcoding it.
+Anything still unresolved after all three passes (Hovevei Zion, the South Lebanon Army) now falls
+to honest "no data" rather than being folded into "institutional" as a catch-all.
+
+**Topics now reveal on zoom, same mechanism as laws.** Added all 63 topics.json entries as a 5th
+node kind (hexagon shape), hidden until a connected node is selected — wired from each topic's
+own `related_actor_ids`/`related_org_ids` fields, so UN Resolutions surface under United Nations
+General Assembly/Security Council and Mandate-era topics surface under League of Nations, exactly
+matching how laws surface under their sponsors. 59/63 topics already carry real connections; no
+data invented for this.
+
+**Organic layout**: isolated nodes were lining up in a visible row along the canvas edge — a hard
+position clamp, not a real layout choice. Replaced with a soft push-back force plus a faint
+persistent jitter, so untethered nodes settle into a scatter instead of a grid.
+
+**PM/President roles clarified**: Nick asked for text explaining what these offices actually do.
+Prime Minister's entry gained a lead sentence on the parliamentary-confidence mechanism (appointed
+by coalition, not direct vote; removable by no-confidence) and why cabinet decisions through this
+office — not Knesset legislation — are what actually drives the post-1967 settlement record this
+dataset tracks. President's entry gained the 7-year single-term/Knesset-elected detail alongside
+its already-present ceremonial-vs-executive framing.
+
+**Also**: added an `aliases` field to the org schema (JNF/KKL on Jewish National Fund), fixed 5
+real person-org gaps found by cross-checking `primary_affiliations` text against `notable_members`
+arrays (Weitz→JNF was the one Nick flagged; Ruppin, Ussishkin, Schapira, Shamir were the same
+class of gap found by extending the same check dataset-wide), and 2 topic-org gaps (British
+Mandate and Balfour Declaration → League of Nations, both already discussed it in their own prose
+without the structured link).
+
+36 actors, 24 knesset_members, 42 orgs, 17 laws, 63 topics. Collision check clean throughout, one
+wiki publish, one network-prototype publish, one commit.
