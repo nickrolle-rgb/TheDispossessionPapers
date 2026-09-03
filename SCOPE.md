@@ -1999,3 +1999,29 @@ existing bare mentions first.
 Nick confirmed the proposed "International Perspective" section (UN Resolutions + campaigns not
 being followed, kept separate from Actors/Orgs/MKs/Laws in both the text index and the network
 view) — not built yet, next up on request.
+
+## Org aliases field added; real cross-link gaps found and fixed (2026-09-03)
+
+Nick asked whether "JNF" is aliased to Jewish National Fund (it wasn't — organizations.json had
+no `aliases` field at all, unlike topics.json) and to use it as a template to link Yosef Weitz,
+who was flagged as unaffiliated/unlinked despite his own `primary_affiliations` already reading
+"Jewish National Fund (Head, Lands Department)."
+
+Added a proper `aliases` field to the org schema (documented in SCHEMA.md), wired into both
+`scripts/collision_check.py` and the wiki's own JS `nameIndex` builder alongside the existing
+`MANUAL_ALIASES` dict. Jewish National Fund now carries `["JNF", "Keren Kayemeth LeIsrael",
+"KKL"]`.
+
+Used the same "documented in prose but not structurally linked" pattern to sweep the rest of the
+dataset rather than fixing only Weitz: found 4 more real gaps (Arthur Ruppin → Jewish Agency for
+Palestine, Menachem Ussishkin and Zvi Hermann Schapira → World Zionist Organization, Yitzhak
+Shamir → Herut) — all cases where an actor's own `primary_affiliations` text already named the
+org but the org's `notable_members` array didn't reciprocate. Fixed all 5 (including Weitz).
+
+Same sweep applied to topics: two topics (British Mandate, Balfour Declaration) discussed the
+League of Nations in their own prose but weren't linked to the `league-of-nations` org via
+`related_org_ids` — fixed both. Surfaced while investigating Nick's request to reveal Mandate-era
+topics under League of Nations in the network view.
+
+36 actors, 24 knesset_members, 42 orgs (5 gained notable_members, 1 gained aliases), 17 laws, 63
+topics (2 gained related_org_ids). Collision check clean, one publish, one commit.

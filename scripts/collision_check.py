@@ -87,6 +87,8 @@ def main():
                 short = part.split("(")[0].strip()
                 if short and short != e["name"]:
                     names.append(short)
+            for al in d.get("aliases", []):
+                names.append(al)
         if e["kind"] == "law":
             short = e["name"].split(",")[0].strip()
             if short and short != e["name"]:

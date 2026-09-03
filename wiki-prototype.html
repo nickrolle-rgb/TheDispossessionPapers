@@ -1627,7 +1627,8 @@
       "current_knesset_party_id": "likud"
     },
     "notable_members": [
-      "menachem-begin"
+      "menachem-begin",
+      "yitzhak-shamir"
     ],
     "action_record": [
       {
@@ -2237,7 +2238,9 @@
       "chaim-weizmann",
       "nahum-sokolow",
       "zeev-jabotinsky",
-      "arthur-ruppin"
+      "arthur-ruppin",
+      "menachem-ussishkin",
+      "zvi-hermann-schapira"
     ],
     "action_record": [
       {
@@ -2292,7 +2295,8 @@
     "notable_members": [
       "zvi-hermann-schapira",
       "menachem-ussishkin",
-      "yehoshua-hankin"
+      "yehoshua-hankin",
+      "yosef-weitz"
     ],
     "action_record": [
       {
@@ -2305,7 +2309,12 @@
         "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Zvi Hermann Schapira actor entry, which independently corroborates the 1897 proposal and the fund's 1901 realization at the Fifth Zionist Congress."
       }
     ],
-    "knesset_participation": []
+    "knesset_participation": [],
+    "aliases": [
+      "JNF",
+      "Keren Kayemeth LeIsrael",
+      "KKL"
+    ]
   },
   {
     "org_id": "palestine-land-development-company",
@@ -2403,7 +2412,8 @@
       "chaim-weizmann",
       "david-ben-gurion",
       "golda-meir",
-      "chaim-arlosoroff"
+      "chaim-arlosoroff",
+      "arthur-ruppin"
     ],
     "action_record": [
       {
@@ -7253,7 +7263,8 @@
       "arthur-james-balfour"
     ],
     "related_org_ids": [
-      "yishuv"
+      "yishuv",
+      "league-of-nations"
     ],
     "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified League of Nations org entry (24 July 1922 Mandate confirmation, 29 September 1923 operational date) and David Ben-Gurion/State of Israel entries (14 May 1948 end date), both independently corroborated. The 1920 San Remo starting point is further corroborated via this same pass's Mandatory Palestine topic research."
   },
@@ -7365,7 +7376,8 @@
       "nahum-sokolow"
     ],
     "related_org_ids": [
-      "world-zionist-organization"
+      "world-zionist-organization",
+      "league-of-nations"
     ],
     "citation": "VERIFIED 2026-09-01 — consistent with this dataset's own already-verified Chaim Weizmann, Nahum Sokolow, and Arthur James Balfour actor entries, all independently corroborating the 2 November 1917 date and the letter's text and diplomatic context."
   },
@@ -8191,6 +8203,10 @@
         var short = part.split("(")[0].trim();
         if (short && short !== e.name) names.push(short);
       });
+      // Explicit aliases ("Jewish National Fund" -> "JNF", "KKL") -- same mechanism as
+      // topics, so any org's common abbreviation/other-language name is reachable and
+      // auto-links in prose without needing a MANUAL_ALIASES entry.
+      if (e.data.aliases) e.data.aliases.forEach(function (al) { names.push(al); });
     }
     if (e.kind === "law") {
       // "Absentees' Property Law, 5710-1950" -> also index "Absentees' Property Law" alone,
