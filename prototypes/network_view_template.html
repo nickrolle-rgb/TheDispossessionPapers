@@ -270,7 +270,10 @@ function buildIndex() {
   });
   Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
 
-  var titles = { actors: 'Actors', org: 'Organisations', law: 'Laws', topic: 'Topics' };
+  // Bills, motions and UN Resolutions already arrive here with kind "law" (see the classifier's
+  // LAW_LIKE_TOPIC_TYPES override) even though they're stored in topics.json -- this list is
+  // just reading GRAPH_DATA.nodes, so no separate merge step is needed here.
+  var titles = { actors: 'Actors', org: 'Organisations', law: 'Legislation', topic: 'Topics' };
   var html = '';
   ['actors','org','law','topic'].forEach(function(k) {
     html += '<div class="index-group"><h3>' + titles[k] + ' (' + groups[k].length + ')</h3><div class="index-grid">';

@@ -8892,8 +8892,6 @@
     // readers find a page, and the order entries happened to be added in isn't a useful sort.
     function byName(key) { return function (x, y) { return x[key].localeCompare(y[key]); }; }
     var orgsSorted = ORGS.slice().sort(byName("name"));
-    var lawsSorted = LAWS.slice().sort(byName("title"));
-    var topicsSorted = TOPICS.slice().sort(byName("name"));
     // Actors, Knesset Members, and Foreign Patrons are one reader-facing category ("Actors") —
     // the three-file split underneath is real (MKs carry scraped floor-vote data, Foreign
     // Patrons a different sourcing standard for non-Israeli figures) but that's a data-
@@ -8915,15 +8913,28 @@
     orgsSorted.forEach(function (o) { html += '<a href="#/network/org/' + o.org_id + '">' + escapeHtml(o.name) + "</a>"; });
     html += "</div></div>";
 
-    if (LAWS.length) {
-      html += '<div class="index-group"><h2>Laws (' + LAWS.length + ")</h2><div class=\"index-grid\">";
-      lawsSorted.forEach(function (l) { html += '<a href="#/network/law/' + l.law_id + '">' + escapeHtml(l.title.split(",")[0]) + "</a>"; });
+    // Bills, motions and UN Resolutions live in topics.json (their schema fits better — most
+    // never passed, so laws.json's enactment-date/sponsoring-MK shape wouldn't apply) but read as
+    // legislation to a reader, not as places or events — folded into the same "Legislation" index
+    // group as actual Laws rather than left looking like they belong under Places & Events. Their
+    // own page still shows the real topic_type (e.g. "Legislative Proposal") so nothing about the
+    // underlying distinction is lost, this is a navigation-layer merge only. Nick: "roll Motions,
+    // Resolutions and Bills into Laws."
+    var legislation = LAWS.map(function (l) { return { name: l.title.split(",")[0], href: "#/network/law/" + l.law_id }; })
+      .concat(TOPICS.filter(function (t) { return NET_LAW_LIKE_TOPIC_TYPES[t.topic_type]; })
+        .map(function (t) { return { name: t.name, href: "#/network/topic/" + t.topic_id }; }))
+      .sort(byName("name"));
+    var otherTopics = TOPICS.filter(function (t) { return !NET_LAW_LIKE_TOPIC_TYPES[t.topic_type]; }).sort(byName("name"));
+
+    if (legislation.length) {
+      html += '<div class="index-group"><h2>Legislation (' + legislation.length + ")</h2><div class=\"index-grid\">";
+      legislation.forEach(function (l) { html += '<a href="' + l.href + '">' + escapeHtml(l.name) + "</a>"; });
       html += "</div></div>";
     }
 
-    if (TOPICS.length) {
-      html += '<div class="index-group"><h2>Places, Periods &amp; Events (' + TOPICS.length + ")</h2><div class=\"index-grid\">";
-      topicsSorted.forEach(function (t) { html += '<a href="#/network/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
+    if (otherTopics.length) {
+      html += '<div class="index-group"><h2>Places, Periods &amp; Events (' + otherTopics.length + ")</h2><div class=\"index-grid\">";
+      otherTopics.forEach(function (t) { html += '<a href="#/network/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
       html += "</div></div>";
     }
 
@@ -9063,6 +9074,7 @@
     topic: 'Topic', foreign: 'Foreign Patron' };
   var NET_KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5, foreign: 5.5 };
   var NET_HIDDEN_KINDS = { law: true, topic: true };
+  var NET_LAW_LIKE_TOPIC_TYPES = { "Legislative Proposal": 1, "UN Resolution": 1 };
 
   function netIdeologyMatch(list) {
     var text = (list || []).join(" | ").toLowerCase();
@@ -9141,7 +9153,15 @@
       });
     });
     TOPICS.forEach(function(t) {
-      addNode("topic:" + t.topic_id, "topic", t.name, {
+      // Bills, motions and UN Resolutions are legislative texts in every sense that matters to a
+      // reader, even though they live in topics.json (their schema -- date_or_range, summary,
+      // significance -- fits the general-topic shape better than laws.json's enactment-date/
+      // sponsoring-MK one, and most never passed so "enactment_date" wouldn't even apply). Nick
+      // asked to fold them in with Laws rather than leave them looking like places or people --
+      // done here at the display/graph-classification layer (kind -> "law") rather than a full
+      // schema migration, so the entity itself still resolves and routes as a topic underneath.
+      var kind = NET_LAW_LIKE_TOPIC_TYPES[t.topic_type] ? "law" : "topic";
+      addNode("topic:" + t.topic_id, kind, t.name, {
         meta: (t.topic_type||"") + " · " + (t.date_or_range||""), role: "",
         events: [{ when:t.date_or_range||"", what:"Summary", text:t.summary||"" }],
         personal: t.significance ? [{ title:"Significance", when:"", text:t.significance }] : [],

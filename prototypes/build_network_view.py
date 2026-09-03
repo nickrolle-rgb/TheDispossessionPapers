@@ -160,8 +160,17 @@ for l in laws:
                     if (l.get("land_impact") or {}).get("description") else [],
     })
 
+# Bills, motions and UN Resolutions are legislative texts in every sense that matters to a
+# reader, even though they live in topics.json (their schema -- date_or_range, summary,
+# significance -- fits the general-topic shape better than laws.json's enactment-date/
+# sponsoring-MK one, and most never passed so "enactment_date" wouldn't even apply). Nick asked
+# to fold them in with Laws rather than leave them looking like places or people -- done here at
+# the display/graph-classification layer (kind -> "law") rather than a full schema migration, so
+# the entity itself still resolves and routes as a topic underneath.
+LAW_LIKE_TOPIC_TYPES = {"Legislative Proposal", "UN Resolution"}
 for t in topics:
-    add_node("topic:" + t["topic_id"], "topic", t["name"], {
+    kind = "law" if t.get("topic_type") in LAW_LIKE_TOPIC_TYPES else "topic"
+    add_node("topic:" + t["topic_id"], kind, t["name"], {
         "meta": f"{t.get('topic_type','')} · {t.get('date_or_range','')}", "role": "",
         "events": [{"when": t.get("date_or_range",""), "what": "Summary", "text": t.get("summary","")}],
         "personal": [{"title": "Significance", "when": "", "text": t.get("significance","")}] if t.get("significance") else [],
@@ -353,11 +362,13 @@ print("alignment:", dict(Counter(n["align"] for n in nodes)))
 law_ids = {n["id"] for n in nodes if n["kind"] == "law"}
 law_edges = {e["source"] if e["source"] in law_ids else e["target"]
              for e in edges if e["source"] in law_ids or e["target"] in law_ids}
-print(f"laws with >=1 edge: {len(law_edges)}/{len(laws)}")
+print(f"laws with >=1 edge: {len(law_edges)}/{len(law_ids)}")  # denominator is post-merge "law"-kind
+# nodes (real laws + Legislative Proposal/UN Resolution topics), not raw len(laws) -- the two
+# diverged once those topic_types started classifying as "law" for display purposes.
 topic_ids = {n["id"] for n in nodes if n["kind"] == "topic"}
 topic_edges = {e["source"] if e["source"] in topic_ids else e["target"]
                for e in edges if e["source"] in topic_ids or e["target"] in topic_ids}
-print(f"topics with >=1 edge: {len(topic_edges)}/{len(topics)}")
+print(f"topics with >=1 edge: {len(topic_edges)}/{len(topic_ids)}")
 
 # ---------- splice into the template ----------
 graph_data_json = json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False)
