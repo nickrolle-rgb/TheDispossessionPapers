@@ -1104,5 +1104,62 @@
     ],
     "related_org_ids": [],
     "citation": "VERIFIED 2026-09-03 — the post-1967 strategic rationale (Golan overlooking the Hula Valley, the West Bank's narrow waist, Gaza's proximity to population centers) and the doctrine's attribution to Allon, Dayan, Rabin, and Sharon are corroborated via live search (Jerusalem Center for Security and Foreign Affairs' 'Defensible Borders for Israel' and related JCFA pieces — an advocacy source for the doctrine, read accordingly). Eban's exact November 1969 Der Spiegel quote, its 1993 recollected origin as a retort to a Soviet diplomat, and the frequently-omitted 'should not retain the occupied territories' statement from the same interview are corroborated via live search (JNS's 'What exactly are Auschwitz borders?', which quotes Eban's 1993 Jerusalem Post letter directly). The post-October 2023 buffer-zone expansion and the ~30% Golan-territory figure are corroborated via live search (FDD's December 2024 report on the Golan buffer zone) — current-events context, not independently cross-checked against a second source this pass."
+  },
+  {
+    "topic_id": "neo-zionism",
+    "name": "Neo-Zionism",
+    "aliases": [],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1967-present",
+    "summary": "A political and religious ideological current that emerged in Israel after the 1967 Six-Day War, first named and theorized by sociologist Uri Ram in a widely-cited 1996 essay. Neo-Zionism holds that the territories occupied in 1967 -- the West Bank and Gaza Strip -- are integral parts of the biblical Land of Israel and should be settled by Israeli Jews without limit, treating Jewish sovereignty over that land as a religious and national imperative rather than a negotiable security or diplomatic question. Its clearest organizational expression was Gush Emunim (founded February 1974), and it has drawn political support from segments of Likud, the National Religious Party, and smaller parties including Moledet and Tehiya.",
+    "significance": "Names, as a matter of real academic record, the ideological throughline connecting the post-1967 settlement project to a coherent political-religious worldview -- not just a loose collection of individually-motivated settlements. Directly explains why West Bank settlement continued and expanded across changes of government: it reflects an ideological current within Israeli politics, not a policy confined to any one administration. Nick asked about 'Ultra-Zionism' specifically -- live research found no standing academic definition for that term (it appears mainly in journalistic/documentary contexts, e.g. a 2011 Louis Theroux documentary titled 'The Ultra Zionists'), so this entry uses Neo-Zionism instead: the real, peer-reviewed term scholars actually use for the ideology in question.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "gush-emunim",
+      "likud"
+    ],
+    "citation": "VERIFIED 2026-09-03 -- Uri Ram's 1996 essay and the term's academic origin, its core tenets (1967 territories as part of Israel, unlimited settlement, biblical-land framing), and its association with Gush Emunim/Likud/National Religious Party/Moledet/Tehiya are corroborated via live search (Wikipedia's Neo-Zionism article, citing Ram and political scientist Amal Jamal). Not independently re-read against Ram's or Jamal's original published work this pass."
+  },
+  {
+    "topic_id": "ashkenazi-jews",
+    "name": "Ashkenazi Jews",
+    "aliases": [
+      "Ashkenazim",
+      "Ashkenazi"
+    ],
+    "hebrew_name": "אשכנזים",
+    "topic_type": "Demographic Group",
+    "date_or_range": "11th century-present",
+    "summary": "Jews descended from medieval communities of the Holy Roman Empire and, from later medieval centuries onward, Central and Eastern Europe. Ashkenazi Jews were first recorded living in the Land of Israel from the 11th century, with an established Ashkenazi yeshiva by the 14th century, but the community that would found and dominate the early Zionist movement and state came overwhelmingly via 19th- and 20th-century immigration from the Russian Empire and Central Europe. As of 2018, an estimated 31.8% of Israeli Jews self-identified as Ashkenazi (not counting former-USSR immigrants counted separately), making them one of Israel's two largest Jewish ethnic divisions alongside Mizrahi/Sephardi Jews.",
+    "significance": "Directly load-bearing for this dataset's land-purchase history: the large-scale land acquisitions of the late Ottoman and Mandate periods (Sursock Purchases, JNF/Palestine Land Development Company transactions, and the pre-state institutions -- the World Zionist Organization, Jewish Agency, Histadrut -- that organized them) were built and run overwhelmingly by Ashkenazi immigrants and their organizations. That same population went on to hold most of the young state's political, economic and military leadership (Israel's first Prime Minister and most of his early successors were Ashkenazi), while state 'melting pot' immigrant-absorption policy in the 1950s-60s channelled Mizrahi and Sephardi arrivals toward peripheral development towns and unskilled labor -- a documented socioeconomic and political asymmetry between the group that built the land-acquisition apparatus and the group that later arrived to a state already shaped by it.",
+    "related_actor_ids": [
+      "david-ben-gurion",
+      "chaim-weizmann"
+    ],
+    "related_org_ids": [
+      "world-zionist-organization",
+      "jewish-national-fund"
+    ],
+    "citation": "VERIFIED 2026-09-03 -- the 11th-century first presence, 14th-century yeshiva, 31.8% 2018 self-identification figure, early political dominance (Ben-Gurion and successors), and the 'melting pot' Mizrahi/Sephardi-marginalization pattern are corroborated via live search (Wikipedia's 'Ashkenazi Jews in Israel' article). The specific claim that Ashkenazi immigrants organized the era's major land purchases is this dataset's own synthesis from its already-verified actor/org entries (Hankin, Rothschild, Ussishkin, Ruppin, JNF, WZO), not a single external source."
+  },
+  {
+    "topic_id": "haredim",
+    "name": "Haredim",
+    "aliases": [
+      "Haredi",
+      "Ultra-Orthodox",
+      "Ultra-Orthodox Judaism"
+    ],
+    "hebrew_name": "חרדים",
+    "topic_type": "Demographic Group",
+    "date_or_range": "1912-present",
+    "summary": "Ultra-Orthodox Jews, theologically distinct from Religious Zionism: many Haredi authorities historically viewed Zionism itself as a heretical rebellion against divine will, rooted in rabbinic 'three oaths' teachings read as prohibiting a forced collective return to the Land of Israel. World Agudath Israel, founded in Katowice in 1912, organized this opposition; the Holocaust's destruction of Agudah's Eastern European base left the movement pragmatically accommodating the new state after 1948 (accepting it de facto while denying it religious significance), a shift some Haredim rejected -- Rabbi Amram Blau split from the Aguda in 1937 to found what became Neturei Karta, still explicitly anti-Zionist today. Despite this theological distance from Zionism, Haredi communities have become the fastest-growing population in West Bank settlements since the 1980s: as of a 2020s count, roughly 30% of the ~400,000 Israelis living beyond the Green Line were Haredi, concentrated in settlements including Beitar Illit (founded 1985) and Modi'in Illit/Kiryat Sefer (founded mid-1990s on land that had belonged to five Palestinian villages).",
+    "significance": "A documented instance of land settlement driven by government-subsidized housing policy rather than the religious-nationalist ideology (Religious Zionism, Neo-Zionism) that motivates most West Bank settlement -- researcher Lee Cahaner's finding that Haredi housing shortages 'coincided with the state's interest in expanding Jewish settlement' describes a population moved by economic necessity being used, in aggregate, to build settlement 'demographic heft.' Distinguishes land-loss driven by explicit ideological commitment from land-loss that resulted from a state channelling a theologically non- or anti-Zionist population toward the same territorial outcome by other means.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "united-torah-judaism"
+    ],
+    "citation": "VERIFIED 2026-09-03 -- Agudath Israel's 1912 Katowice founding and anti-Zionist theological basis, the 1948 accommodation shift, Amram Blau's 1937 split and Neturei Karta's founding, and the ~30%-of-400,000/Beitar Illit/Modi'in Illit settlement figures are corroborated via live search (Encyclopedia.com's Agudat Israel entry, Wikipedia's Neturei Karta and Agudat Yisrael articles, and the Times of Israel's 'Black is the new orange: 30% of settlers are now Haredim,' which also sources the Cahaner finding and the Modi'in Illit/five-villages land origin)."
   }
 ]

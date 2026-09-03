@@ -2180,5 +2180,49 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "gush-emunim",
+    "name": "Gush Emunim",
+    "hebrew_name": "גוש אמונים",
+    "aliases": [
+      "Bloc of the Faithful"
+    ],
+    "org_type": "Settlement Movement",
+    "founding_date": "1974-02",
+    "dissolution_date": null,
+    "ideology": [
+      "Religious Zionism",
+      "Greater Israel",
+      "Settlement Movement"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "gush-emunim-founding-1974",
+        "date": "1974-02",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founded by students of Rabbi Zvi Yehuda Kook",
+        "location_affected": "Israel",
+        "description": "Founded in February 1974 by young members of the National Religious Party and students of Rabbi Zvi Yehuda Kook, including Hanan Porat, Rabbi Moshe Levinger and Haim Drukman, in the aftermath of the Yom Kippur War and Israeli-Egyptian/Syrian disengagement talks the founders saw as threatening withdrawal from newly-held territory. Organized under the slogan 'The Land of Israel, for the people of Israel, according to the Torah of Israel,' holding that Jewish sovereignty over the biblical Land of Israel -- including the West Bank and Gaza -- was a religious imperative, not merely a security or political question.",
+        "citation": "VERIFIED 2026-09-03 -- the February 1974 founding, the National Religious Party/Zvi Yehuda Kook lineage, the named founders, and the founding slogan are corroborated via live search (Wikipedia's Gush Emunim article, israeled.org's 'Gush Emunim Established' entry, MyJewishLearning)."
+      },
+      {
+        "event_id": "gush-emunim-sebastia-kedumim-1975",
+        "date": "1975-12",
+        "action_type": "Land Settlement Operation",
+        "title": "The Sebastia Compromise founds Kedumim",
+        "location_affected": "Sebastia / Kedumim, northern West Bank",
+        "description": "After eight separate attempts to establish a settlement at Sebastia (adjacent to a Palestinian village of the same name), each ending in removal by the IDF, Gush Emunim reached an agreement in December 1975 with Prime Minister Yitzhak Rabin and Defense Minister Shimon Peres: settlers would leave Sebastia in exchange for 25 families being permitted to settle at the nearby Kadum army camp. That encampment grew into the settlement of Kedumim, and the compromise is widely regarded as the turning point that opened the northern West Bank to organized Jewish settlement.",
+        "citation": "VERIFIED 2026-09-03 -- the eight-attempts/seven-removals sequence, the December 1975 Rabin/Peres agreement, the 25-family Kadum camp settlement, and Kedumim's founding are corroborated via live search (Wikipedia's Kedumim article, Haaretz's 'The Gush Emunim Settlers Movement Is Established' retrospective)."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

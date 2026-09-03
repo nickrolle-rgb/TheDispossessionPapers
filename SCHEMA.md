@@ -270,7 +270,7 @@ context without needing a structurally different article type underneath.
   "name": "string",
   "aliases": ["string (optional) — other names prose actually uses for the same topic"],
   "hebrew_name": "string (optional)",
-  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal)",
+  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal | Demographic Group)",
   "date_or_range": "string (e.g. '1882-1903', '1897', 'N/A')",
   "summary": "string",
   "significance": "string — why this belongs in a land-loss timeline specifically",
