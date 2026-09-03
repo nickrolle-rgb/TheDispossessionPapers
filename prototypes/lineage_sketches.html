@@ -1,0 +1,379 @@
+<title>Lineage Sketches</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1e2a32; --ink-soft: #4a5b64; --parchment: #e7e1d0; --parchment-hi: #f1ecdd;
+    --rust: #b8492f; --ochre: #be8b34; --verdigris: #4b6b60; --fog: #93897a;
+    --line: rgba(30,42,50,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --panel-bg: rgba(231,225,208,0.94); --shadow: 0 12px 34px -18px rgba(20,24,20,0.4);
+    --focus: #2f7dd1; --link: var(--rust);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+      --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --fog: #8b8879;
+      --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+      --panel-bg: rgba(23,30,34,0.9); --shadow: 0 12px 40px -18px rgba(0,0,0,0.7); --link: var(--rust);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+    --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --fog: #8b8879;
+    --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --panel-bg: rgba(23,30,34,0.9); --shadow: 0 12px 40px -18px rgba(0,0,0,0.7); --link: var(--rust);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+  }
+  .shell { max-width: 820px; margin: 0 auto; padding: 0 1.2rem 5rem; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 5; background: var(--panel-bg); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line); padding: 0.8rem 1.2rem;
+    display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;
+  }
+  header.top .brand { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.05rem; }
+  header.top .kicker { font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--fog); text-transform: uppercase; }
+  header.top .stamp {
+    margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 45%, transparent);
+    border-radius: 3px; padding: 0.25rem 0.55rem; transform: rotate(-2deg);
+  }
+
+  main { padding-top: 1.8rem; }
+
+  .intro .badge {
+    display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--fog);
+    border: 1px solid var(--line); border-radius: 20px; padding: 0.15rem 0.6rem; margin-bottom: 0.8rem;
+  }
+  .intro h1 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: clamp(1.6rem, 5vw, 2.1rem); margin: 0 0 0.6rem; text-wrap: balance; }
+  .intro p { font-size: 0.95rem; line-height: 1.68; color: var(--ink-soft); max-width: 62ch; margin: 0 0 0.8rem; }
+  .intro strong { color: var(--fg); }
+
+  section.sketch { margin-top: 3rem; }
+  section.sketch .eyebrow {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--rust); margin-bottom: 0.4rem;
+  }
+  section.sketch h2 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.5rem; margin: 0 0 0.5rem; text-wrap: balance;
+  }
+  section.sketch > p.dek { font-size: 0.92rem; line-height: 1.6; color: var(--ink-soft); max-width: 60ch; margin: 0 0 1.4rem; }
+
+  .panel {
+    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 4px;
+    box-shadow: var(--shadow); padding: 1.4rem 1.2rem 1rem;
+  }
+  .panel figcaption {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog);
+    margin-top: 0.8rem; padding-top: 0.7rem; border-top: 1px dashed var(--line); line-height: 1.6;
+  }
+  figure { margin: 0; }
+  svg { width: 100%; height: auto; display: block; }
+  svg text { font-family: "Public Sans", sans-serif; }
+  svg .node-label { font-family: "Fraunces", Georgia, serif; font-weight: 600; }
+  svg .meta-label { font-family: "IBM Plex Mono", monospace; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; margin-top: 1rem; font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+  .legend .swatch { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .legend .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+
+  .verdict {
+    margin-top: 1rem; font-size: 0.86rem; line-height: 1.6; color: var(--ink-soft);
+    border-left: 2px solid var(--ochre); padding-left: 0.9rem;
+  }
+  .verdict strong { color: var(--fg); }
+
+  /* --- flip demo --- */
+  .flip-demo { margin-top: 1.6rem; }
+  .flip-controls { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.9rem; }
+  .flip-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase;
+    background: var(--ink); color: var(--parchment-hi); border: none; border-radius: 20px;
+    padding: 0.5rem 1.1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .flip-btn:hover { background: var(--rust); }
+  .flip-state { font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  .flip-card { perspective: 1800px; min-height: 420px; }
+  .flip-inner {
+    position: relative; width: 100%; min-height: 420px; transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    transform-style: preserve-3d;
+  }
+  .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+  .flip-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 4px; box-shadow: var(--shadow);
+    padding: 1.3rem 1.3rem 1.1rem; overflow: auto;
+  }
+  .flip-face.back { transform: rotateY(180deg); }
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner { transition: none; }
+  }
+
+  .doc-badge { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fog); border: 1px solid var(--line); border-radius: 20px; padding: 0.15rem 0.6rem; margin-bottom: 0.6rem; }
+  .flip-face h3 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.3rem; margin: 0 0 0.9rem; }
+  .flip-face p { font-size: 0.88rem; line-height: 1.62; margin: 0 0 0.8rem; color: var(--ink); }
+  .flip-face .event { padding: 0.55rem 0; border-bottom: 1px dashed var(--line); }
+  .flip-face .event:last-child { border-bottom: none; }
+  .flip-face .event .when { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; color: var(--rust); }
+  .flip-face .event .what { font-weight: 600; margin: 0.12rem 0 0.2rem; font-size: 0.88rem; }
+  .flip-face .event p { font-size: 0.82rem; color: var(--ink-soft); margin: 0; }
+
+  footer.note { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.7rem; color: var(--fog); line-height: 1.7; font-family: "IBM Plex Mono", monospace; max-width: 62ch; }
+
+  @media (max-width: 560px) {
+    .shell { padding: 0 0.9rem 4rem; }
+    section.sketch h2 { font-size: 1.25rem; }
+  }
+</style>
+
+<header class="top">
+  <span class="brand">The Dispossession Papers</span>
+  <span class="kicker">Zionism Timeline reference</span>
+  <span class="stamp">Review copy · not live</span>
+</header>
+
+<div class="shell">
+  <main>
+    <div class="intro">
+      <span class="badge">Design sketch · 2026-09-03</span>
+      <h1>Two ways to draw the lineage</h1>
+      <p>Nick asked to see two relationship diagrams before either gets built into the wiki proper: an <strong>organization lineage web</strong> (who merged into whom) and an <strong>affiliation overlap</strong> showing how the same three men moved through several of these organizations at once. Both are drawn here from data already sitting in <code>organizations.json</code> and <code>historical_actors.json</code> — nothing invented for the sketch. A third section tries the flip-card interaction on one real entity, text on one face and diagram on the other.</p>
+    </div>
+
+    <section class="sketch">
+      <div class="eyebrow">Sketch A</div>
+      <h2>The lineage web</h2>
+      <p class="dek">Betar trained the men who commanded Irgun and Lehi; Irgun became Herut's political vehicle; Herut and its allies became Likud. This is the clearest "ready to draw" relationship in the dataset — it's already sitting in each org's own <code>predecessor_orgs</code> / <code>successor_orgs</code> / <code>merged_into</code> fields.</p>
+
+      <div class="panel">
+        <figure>
+          <svg viewBox="0 0 720 300" role="img" aria-label="Lineage diagram: Betar trained the founders of Irgun and Lehi; Irgun merged into Herut; Lehi's leadership joined Herut; Herut merged into Likud.">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+              </marker>
+            </defs>
+
+            <!-- connective lines, drawn first so nodes sit on top -->
+            <g stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.55">
+              <path d="M120,60 C170,60 170,110 220,110" marker-end="url(#arrow)"/>
+              <path d="M120,72 C170,90 170,190 220,210" marker-end="url(#arrow)"/>
+              <line x1="330" y1="110" x2="430" y2="150" marker-end="url(#arrow)"/>
+              <line x1="330" y1="210" x2="430" y2="165" marker-end="url(#arrow)"/>
+              <line x1="540" y1="157" x2="610" y2="157" marker-end="url(#arrow)"/>
+            </g>
+
+            <!-- edge labels -->
+            <g class="meta-label" font-size="10.5" fill="var(--fog)">
+              <text x="150" y="78">trained</text>
+              <text x="150" y="168">trained</text>
+              <text x="358" y="122">merged 1948</text>
+              <text x="358" y="198">leaders joined</text>
+              <text x="548" y="148">merged 1973</text>
+            </g>
+
+            <!-- Betar node -->
+            <g transform="translate(20,35)">
+              <rect width="100" height="52" rx="4" fill="var(--ochre)" opacity="0.16" stroke="var(--ochre)"/>
+              <text x="50" y="21" text-anchor="middle" class="node-label" font-size="13" fill="currentColor">Betar</text>
+              <text x="50" y="37" text-anchor="middle" class="meta-label" font-size="9.5" fill="var(--fog)">youth movement · 1923</text>
+            </g>
+
+            <!-- Irgun node -->
+            <g transform="translate(220,84)">
+              <rect width="110" height="52" rx="4" fill="var(--rust)" opacity="0.16" stroke="var(--rust)"/>
+              <text x="55" y="21" text-anchor="middle" class="node-label" font-size="13" fill="currentColor">Irgun</text>
+              <text x="55" y="37" text-anchor="middle" class="meta-label" font-size="9.5" fill="var(--fog)">militia · 1931/36</text>
+            </g>
+
+            <!-- Lehi node -->
+            <g transform="translate(220,184)">
+              <rect width="110" height="52" rx="4" fill="var(--rust)" opacity="0.16" stroke="var(--rust)"/>
+              <text x="55" y="21" text-anchor="middle" class="node-label" font-size="13" fill="currentColor">Lehi</text>
+              <text x="55" y="37" text-anchor="middle" class="meta-label" font-size="9.5" fill="var(--fog)">militia · 1940</text>
+            </g>
+
+            <!-- Herut node -->
+            <g transform="translate(430,131)">
+              <rect width="110" height="52" rx="4" fill="var(--verdigris)" opacity="0.18" stroke="var(--verdigris)"/>
+              <text x="55" y="21" text-anchor="middle" class="node-label" font-size="13" fill="currentColor">Herut</text>
+              <text x="55" y="37" text-anchor="middle" class="meta-label" font-size="9.5" fill="var(--fog)">party · 1948</text>
+            </g>
+
+            <!-- Likud node -->
+            <g transform="translate(610,131)">
+              <rect width="100" height="52" rx="4" fill="var(--verdigris)" opacity="0.18" stroke="var(--verdigris)"/>
+              <text x="50" y="21" text-anchor="middle" class="node-label" font-size="13" fill="currentColor">Likud</text>
+              <text x="50" y="37" text-anchor="middle" class="meta-label" font-size="9.5" fill="var(--fog)">party · 1973</text>
+            </g>
+          </svg>
+          <figcaption>Fig. A — Predecessor/successor edges already present in each org's own record, rendered instead of stated. Colour groups by <code>org_type</code>: ochre = youth movement, rust = militia, verdigris = political party.</figcaption>
+        </figure>
+        <div class="legend">
+          <span class="swatch"><span class="dot" style="background:var(--ochre)"></span>Youth movement</span>
+          <span class="swatch"><span class="dot" style="background:var(--rust)"></span>Militia</span>
+          <span class="swatch"><span class="dot" style="background:var(--verdigris)"></span>Political party</span>
+        </div>
+      </div>
+
+      <div class="verdict">
+        <strong>Viability:</strong> straightforward. Five orgs, five real edges, no invented connections. Scales awkwardly past ~8–10 nodes though — the full org file has 42 entries across several unrelated lineages (Labor's Poalei&nbsp;Zion→Mapai→Israeli&nbsp;Labor&nbsp;Party chain, the Jewish&nbsp;Home/National&nbsp;Union/Yamina tangle). A single page probably wants <em>one</em> lineage at a time, picked by whichever org page you arrived from, rather than all 42 crammed onto one canvas.
+      </div>
+    </section>
+
+    <section class="sketch">
+      <div class="eyebrow">Sketch B</div>
+      <h2>The affiliation overlap</h2>
+      <p class="dek">Three men, three life stages, one movement. Jabotinsky founded the youth wing and briefly commanded a militia; Begin and Shamir both passed through a youth-movement stage, a militia stage, and a party stage — just not the <em>same</em> militia. A true five-circle Venn (Betar/Irgun/Lehi/Herut/Likud) draws as an unreadable knot, so this groups by <em>stage</em> instead — three circles, each labelled with which specific org applied to whom.</p>
+
+      <div class="panel">
+        <figure>
+          <svg viewBox="0 0 640 380" role="img" aria-label="Overlap diagram: Jabotinsky, Begin, and Shamir plotted across three life-stage categories — youth movement, militia, and political party — showing which specific organization each belonged to at each stage.">
+            <g opacity="0.24">
+              <circle cx="270" cy="160" r="150" fill="var(--ochre)"/>
+              <circle cx="370" cy="160" r="150" fill="var(--rust)"/>
+              <circle cx="320" cy="260" r="150" fill="var(--verdigris)"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.1" opacity="0.5">
+              <circle cx="270" cy="160" r="150"/>
+              <circle cx="370" cy="160" r="150"/>
+              <circle cx="320" cy="260" r="150"/>
+            </g>
+
+            <g class="meta-label" font-size="10.5" fill="var(--ink-soft)" text-anchor="middle">
+              <text x="155" y="90">YOUTH MOVEMENT</text>
+              <text x="155" y="103">(Betar)</text>
+              <text x="485" y="90">MILITIA</text>
+              <text x="485" y="103">(Irgun / Lehi)</text>
+              <text x="320" y="356">POLITICAL PARTY</text>
+              <text x="320" y="369">(Herut / Likud)</text>
+            </g>
+
+            <!-- Jabotinsky: Betar + Irgun only -->
+            <g class="node-label" font-size="12.5" text-anchor="middle">
+              <text x="300" y="140" fill="currentColor">Jabotinsky</text>
+              <text x="300" y="155" class="meta-label" font-size="9" fill="var(--fog)">Betar (founder)</text>
+              <text x="300" y="167" class="meta-label" font-size="9" fill="var(--fog)">Irgun (1936–37)</text>
+            </g>
+
+            <!-- Begin: all three, weighted toward Irgun side -->
+            <g class="node-label" font-size="12.5" text-anchor="middle">
+              <text x="345" y="215" fill="currentColor">Begin</text>
+              <text x="345" y="230" class="meta-label" font-size="9" fill="var(--fog)">Betar (Poland, 1938–39)</text>
+              <text x="345" y="242" class="meta-label" font-size="9" fill="var(--fog)">Irgun (commander)</text>
+              <text x="345" y="254" class="meta-label" font-size="9" fill="var(--fog)">Herut · Likud (founder)</text>
+            </g>
+
+            <!-- Shamir: all three, weighted toward Lehi side -->
+            <g class="node-label" font-size="12.5" text-anchor="middle">
+              <text x="300" y="285" fill="currentColor">Shamir</text>
+              <text x="300" y="300" class="meta-label" font-size="9" fill="var(--fog)">Betar (joined 1929)</text>
+              <text x="300" y="312" class="meta-label" font-size="9" fill="var(--fog)">Lehi (leadership)</text>
+              <text x="300" y="324" class="meta-label" font-size="9" fill="var(--fog)">Herut · Likud</text>
+            </g>
+          </svg>
+          <figcaption>Fig. B — Region membership is exact (each name sits inside precisely the circles that applied to them); the specific org named beside each name is the real one, since "militia" alone would flatten a genuine distinction — Begin's Irgun and Shamir's Lehi were rivals, not the same organization.</figcaption>
+        </figure>
+      </div>
+
+      <div class="verdict">
+        <strong>Viability:</strong> works for three people, gets crowded past four or five — label collision inside the shared centre region is the real limit, not the geometry. Reads best as a <em>focused</em> comparison ("these three founders" or "everyone who passed through Betar") rather than a whole-dataset view. Might work well seeded from a search or a hand-picked "compare" list rather than always showing everyone.
+      </div>
+    </section>
+
+    <section class="sketch">
+      <div class="eyebrow">Sketch C</div>
+      <h2>The flip card</h2>
+      <p class="dek">Same Irgun entry, two faces of one card — the article prose on the front, a small diagram centred on Irgun's own lineage on the back. A button flips it; the transform is 3D so it reads as one object turning over, not a page swap.</p>
+
+      <div class="panel flip-demo">
+        <div class="flip-controls">
+          <button class="flip-btn" id="flipBtn" onclick="doFlip()">
+            <span id="flipIcon">⟳</span> <span id="flipLabel">Show diagram</span>
+          </button>
+          <span class="flip-state" id="flipState">Viewing: article</span>
+        </div>
+
+        <div class="flip-card" id="flipCard">
+          <div class="flip-inner" id="flipInner">
+            <div class="flip-face front">
+              <span class="doc-badge">Militia · Paramilitary</span>
+              <h3>Irgun Tzvai Leumi (Etzel)</h3>
+              <p>Emerged in spring 1931 when Avraham Tehomi and nineteen other officers resigned from the Haganah — over its policy of restraint — to form a rival militia. Not Revisionist-aligned at founding: it formally became the Revisionist movement's own militia only in 1936–37, when Ze'ev Jabotinsky assumed its command.</p>
+              <div class="event">
+                <div class="when">1946-07-22</div>
+                <div class="what">King David Hotel bombing</div>
+                <p>Bombed the hotel housing the British Mandate secretariat, killing 91.</p>
+              </div>
+              <div class="event">
+                <div class="when">1948-06-22</div>
+                <div class="what">The Altalena Affair</div>
+                <p>Ben-Gurion's government shelled the Irgun's arms ship; forced the militia's dissolution into the new IDF.</p>
+              </div>
+            </div>
+            <div class="flip-face back">
+              <span class="doc-badge">Same entity · diagram view</span>
+              <h3>Irgun in the lineage</h3>
+              <svg viewBox="0 0 380 220" role="img" aria-label="Irgun's position in the org lineage: trained by Betar, merged into Herut in 1948." style="margin-top:0.4rem">
+                <defs>
+                  <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g stroke="currentColor" stroke-width="1.2" opacity="0.55">
+                  <line x1="95" y1="45" x2="150" y2="100" marker-end="url(#arrow2)"/>
+                  <line x1="245" y1="100" x2="300" y2="100" marker-end="url(#arrow2)"/>
+                </g>
+                <g class="meta-label" font-size="9.5" fill="var(--fog)">
+                  <text x="95" y="72">trained</text>
+                  <text x="248" y="93">merged 1948</text>
+                </g>
+                <g transform="translate(15,15)">
+                  <rect width="90" height="46" rx="4" fill="var(--ochre)" opacity="0.16" stroke="var(--ochre)"/>
+                  <text x="45" y="20" text-anchor="middle" class="node-label" font-size="12">Betar</text>
+                  <text x="45" y="34" text-anchor="middle" class="meta-label" font-size="8.5" fill="var(--fog)">1923</text>
+                </g>
+                <g transform="translate(150,77)">
+                  <rect width="95" height="46" rx="4" fill="var(--rust)" opacity="0.22" stroke="var(--rust)"/>
+                  <text x="47" y="20" text-anchor="middle" class="node-label" font-size="12">Irgun</text>
+                  <text x="47" y="34" text-anchor="middle" class="meta-label" font-size="8.5" fill="var(--fog)">1931 / 1948</text>
+                </g>
+                <g transform="translate(300,77)">
+                  <rect width="70" height="46" rx="4" fill="var(--verdigris)" opacity="0.18" stroke="var(--verdigris)"/>
+                  <text x="35" y="20" text-anchor="middle" class="node-label" font-size="12">Herut</text>
+                  <text x="35" y="34" text-anchor="middle" class="meta-label" font-size="8.5" fill="var(--fog)">1948</text>
+                </g>
+              </svg>
+              <p style="margin-top:0.6rem; font-size:0.8rem; color:var(--ink-soft)">Same underlying record — <code>lineage.predecessor_orgs</code> / <code>merged_into</code> — drawn instead of read.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="verdict">
+        <strong>Viability:</strong> the interaction itself is easy — a CSS 3D transform, one button, and it degrades gracefully (instant swap, no spin) for anyone with reduced-motion set. The real cost is on the diagram side: every article would need a second, hand-fitted diagram, which is a lot of drawing across 42 orgs and 60 people. Realistic path is probably: build it for org pages first (lineage is nearly mechanical to generate from the existing JSON), and treat person pages as a later, hand-curated pass rather than promising it everywhere at once.
+      </div>
+    </section>
+
+    <footer class="note">
+      Nothing here is wired into the live wiki yet — this is a standalone review copy for judging whether either direction is worth building properly. All figures drawn from data already in <code>organizations.json</code> and <code>historical_actors.json</code>; no new research, no new claims, nothing to fact-check before deciding on direction.
+    </footer>
+  </main>
+</div>
+
+<script>
+  function doFlip() {
+    var card = document.getElementById('flipCard');
+    var flipped = card.classList.toggle('flipped');
+    document.getElementById('flipLabel').textContent = flipped ? 'Show article' : 'Show diagram';
+    document.getElementById('flipState').textContent = flipped ? 'Viewing: diagram' : 'Viewing: article';
+  }
+</script>

@@ -1,0 +1,707 @@
+<title>Network View Prototype</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1e2a32; --ink-soft: #4a5b64; --parchment: #e7e1d0; --parchment-hi: #f1ecdd;
+    --rust: #b8492f; --ochre: #be8b34; --verdigris: #4b6b60; --seal: #3d6178; --fog: #93897a;
+    --line: rgba(30,42,50,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --panel-bg: rgba(231,225,208,0.94); --shadow: 0 12px 34px -18px rgba(20,24,20,0.4);
+    --focus: #2f7dd1; --link: var(--rust);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+      --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --seal: #7fa8c2; --fog: #8b8879;
+      --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+      --panel-bg: rgba(23,30,34,0.92); --shadow: 0 12px 40px -18px rgba(0,0,0,0.7); --link: var(--rust);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eee7d6; --ink-soft: #b7ae9a; --parchment: #171e22; --parchment-hi: #202a2f;
+    --rust: #e07354; --ochre: #d9a441; --verdigris: #7fa294; --seal: #7fa8c2; --fog: #8b8879;
+    --line: rgba(238,231,214,0.16); --bg: var(--parchment); --fg: var(--ink);
+    --panel-bg: rgba(23,30,34,0.92); --shadow: 0 12px 40px -18px rgba(0,0,0,0.7); --link: var(--rust);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+  }
+  .shell { max-width: 1180px; margin: 0 auto; padding: 0 1.1rem 3rem; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 20; background: var(--panel-bg); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line); padding: 0.75rem 1.1rem;
+    display: flex; align-items: baseline; gap: 0.7rem; flex-wrap: wrap;
+  }
+  header.top .brand { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1rem; }
+  header.top .kicker { font-family: "IBM Plex Mono", monospace; font-size: 0.58rem; letter-spacing: 0.1em; color: var(--fog); text-transform: uppercase; }
+  header.top .stamp {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 45%, transparent);
+    border-radius: 3px; padding: 0.22rem 0.5rem; transform: rotate(-2deg);
+  }
+
+  .flip-controls { margin-left: auto; display: flex; align-items: center; gap: 0.7rem; }
+  .flip-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase;
+    background: var(--ink); color: var(--parchment-hi); border: none; border-radius: 20px;
+    padding: 0.48rem 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .flip-btn:hover { background: var(--rust); }
+  .flip-state { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; color: var(--fog); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  main { padding-top: 1.4rem; }
+
+  .intro { margin-bottom: 1.4rem; }
+  .intro .badge {
+    display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.6rem;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--fog);
+    border: 1px solid var(--line); border-radius: 20px; padding: 0.14rem 0.55rem; margin-bottom: 0.7rem;
+  }
+  .intro h1 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: clamp(1.4rem, 4vw, 1.9rem); margin: 0 0 0.5rem; text-wrap: balance; }
+  .intro p { font-size: 0.9rem; line-height: 1.62; color: var(--ink-soft); max-width: 68ch; margin: 0; }
+
+  /* --- flip stage --- */
+  .stage { perspective: 2400px; }
+  .stage-inner {
+    position: relative; min-height: 78vh; transition: transform 0.85s cubic-bezier(.4,.15,.2,1);
+    transform-style: preserve-3d;
+  }
+  .stage.flipped .stage-inner { transform: rotateY(180deg); }
+  .face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--panel-bg); box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .face.back { transform: rotateY(180deg); }
+  @media (prefers-reduced-motion: reduce) { .stage-inner { transition: none; } }
+
+  /* --- index face (text) --- */
+  .index-face { overflow-y: auto; padding: 1.3rem 1.5rem 2rem; }
+  .index-face .kicker2 { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rust); margin: 0 0 0.2rem; }
+  .index-face h2 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.5rem; margin: 0 0 1.2rem; text-wrap: balance; }
+  .index-group { margin-bottom: 1.5rem; }
+  .index-group h3 { font-family: "Fraunces", Georgia, serif; font-size: 1rem; margin: 0 0 0.5rem; color: var(--fg); }
+  .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.3rem 1rem; }
+  .index-grid a { font-size: 0.84rem; color: var(--link); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent); cursor: pointer; }
+  .index-grid a:hover { border-bottom-color: var(--link); }
+
+  /* --- graph face --- */
+  .graph-face { display: flex; height: 78vh; }
+  .graph-wrap { flex: 1 1 auto; position: relative; min-width: 0; background: var(--parchment-hi); }
+  .graph-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .graph-wrap svg:active { cursor: grabbing; }
+  .graph-toolbar {
+    position: absolute; top: 0.7rem; left: 0.7rem; display: flex; gap: 0.4rem; z-index: 3;
+  }
+  .zoom-btn {
+    width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel-bg);
+    color: var(--fg); font-family: "IBM Plex Mono", monospace; font-size: 0.9rem; cursor: pointer; line-height: 1;
+  }
+  .zoom-btn:hover { background: var(--rust); color: var(--parchment-hi); }
+  .zoom-btn.wide { width: auto; padding: 0 0.5rem; border-radius: 14px; font-size: 0.75rem; }
+  .zoom-btn.active { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); }
+  .graph-legend {
+    position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.7rem;
+    font-family: "IBM Plex Mono", monospace; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--ink-soft); background: var(--panel-bg); border: 1px solid var(--line); border-radius: 4px; padding: 0.32rem 0.55rem;
+    max-width: calc(100% - 1.2rem);
+  }
+  .legend-sep { width: 1px; align-self: stretch; background: var(--line); margin: 0 0.1rem; }
+  .graph-legend .sw { display: inline-flex; align-items: center; gap: 0.28rem; white-space: nowrap; }
+  .graph-legend .sw em { font-style: normal; color: var(--fog); }
+  .graph-legend .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; background: var(--fog); flex-shrink: 0; }
+  .graph-legend .dot.ring { background: none; border: 1.2px solid var(--fog); }
+  svg.shico { width: 10px !important; height: 10px !important; fill: var(--ink-soft); flex-shrink: 0; display: inline-block; }
+
+  .info-panel {
+    flex: 0 0 340px; border-left: 1px solid var(--line); background: var(--panel-bg);
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  .panel-search { position: relative; padding: 0.8rem 0.9rem 0.6rem; border-bottom: 1px solid var(--line); flex: none; }
+  .panel-search input {
+    width: 100%; font-family: "Public Sans", sans-serif; font-size: 0.82rem;
+    padding: 0.42rem 0.7rem; border-radius: 20px; border: 1px solid var(--line);
+    background: var(--parchment-hi); color: var(--fg);
+  }
+  .panel-search input:focus { outline: 2px solid var(--focus); outline-offset: 1px; }
+  .search-results {
+    position: absolute; left: 0.9rem; right: 0.9rem; top: calc(100% - 0.2rem); z-index: 10;
+    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow);
+    max-height: 260px; overflow-y: auto;
+  }
+  .search-results .sr-item {
+    display: flex; align-items: baseline; gap: 0.5rem; padding: 0.45rem 0.7rem; cursor: pointer; font-size: 0.82rem;
+  }
+  .search-results .sr-item:hover, .search-results .sr-item.active { background: var(--parchment-hi); }
+  .search-results .sr-kind { font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; text-transform: uppercase; color: var(--fog); }
+  .search-results .sr-empty { padding: 0.6rem 0.7rem; font-size: 0.78rem; color: var(--fog); }
+  #infoPanel { flex: 1 1 auto; overflow-y: auto; padding: 1.1rem 1.2rem 2rem; min-height: 0; }
+  .info-empty { color: var(--fog); font-size: 0.85rem; padding-top: 2rem; text-align: center; line-height: 1.6; }
+  .info-empty .big { font-size: 1.6rem; display: block; margin-bottom: 0.5rem; }
+  .info-badge { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.55rem; border-radius: 20px; margin-bottom: 0.6rem; border: 1px solid var(--line); }
+  .info-panel h3 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.25rem; margin: 0 0 0.25rem; text-wrap: balance; }
+  .info-meta { font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog); margin: 0 0 0.9rem; line-height: 1.5; }
+  .info-role { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.55; margin: 0 0 1rem; }
+  .info-section-h { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 0.95rem; margin: 1.1rem 0 0.5rem; padding-top: 0.7rem; border-top: 1px solid var(--line); }
+  .info-event { padding: 0.55rem 0; border-bottom: 1px dashed var(--line); }
+  .info-event:last-child { border-bottom: none; }
+  .info-event .when { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; color: var(--rust); }
+  .info-event .what { font-weight: 600; font-size: 0.83rem; margin: 0.1rem 0 0.2rem; }
+  .info-event p { font-size: 0.78rem; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+  .info-close { background: none; border: 1px solid var(--line); border-radius: 20px; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; text-transform: uppercase; color: var(--fog); padding: 0.25rem 0.6rem; cursor: pointer; float: right; }
+  .info-close:hover { color: var(--rust); border-color: var(--rust); }
+
+  .verdict {
+    margin: 1.2rem 0 0; font-size: 0.84rem; line-height: 1.6; color: var(--ink-soft);
+    border-left: 2px solid var(--ochre); padding-left: 0.9rem; max-width: 74ch;
+  }
+  .verdict strong { color: var(--fg); }
+
+  @media (max-width: 860px) {
+    .graph-face { flex-direction: column; height: auto; }
+    .graph-wrap { height: 52vh; }
+    .info-panel { flex: none; border-left: none; border-top: 1px solid var(--line); max-height: 32vh; }
+  }
+</style>
+
+<header class="top">
+  <span class="brand">The Dispossession Papers</span>
+  <span class="kicker">Zionism Timeline reference</span>
+  <span class="stamp">Prototype · not live</span>
+  <div class="flip-controls">
+    <span class="flip-state" id="flipState">Viewing: index</span>
+    <button class="flip-btn" id="flipBtn" onclick="doFlip()"><span>⟳</span> <span id="flipLabel">Show network</span></button>
+  </div>
+</header>
+
+<div class="shell">
+  <main>
+    <div class="intro">
+      <span class="badge">Design prototype · 2026-09-03</span>
+      <h1>The whole archive, as a network</h1>
+      <p>Same homepage, same entities, two ways to move through them. Flip to see every Actor, Knesset Member, and Organization as one navigable graph — click anything to pull its full record into the panel on the right, or search for it directly. Laws and Topics stay out of the way until you zoom into whoever sponsored or discussed them (toggle the eye icon to show them always). Real data throughout: every edge is derived from structured fields already in the dataset (org membership, org lineage, law sponsorship, topic cross-references) — nothing hand-placed.</p>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="stage-inner" id="stageInner">
+
+        <div class="face front index-face">
+          <div class="kicker2">A working record, not a finished one</div>
+          <h2>Every actor, every party, one click apart</h2>
+          <div id="indexContent"></div>
+        </div>
+
+        <div class="face back">
+          <div class="graph-face">
+            <div class="graph-wrap">
+              <div class="graph-toolbar">
+                <button class="zoom-btn" onclick="zoomBy(1.25)" aria-label="Zoom in">+</button>
+                <button class="zoom-btn" onclick="zoomBy(0.8)" aria-label="Zoom out">–</button>
+                <button class="zoom-btn" onclick="resetView()" aria-label="Reset view">⤾</button>
+                <button class="zoom-btn wide" id="showHiddenBtn" onclick="toggleShowHidden()" aria-label="Toggle hidden Laws/Topics" title="Show Laws/Topics always, not just on zoom">👁</button>
+              </div>
+              <svg id="graphSvg" viewBox="0 0 1000 760"></svg>
+              <div class="graph-legend">
+                  <span class="sw"><svg class="shico" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5"/></svg>Person</span>
+                  <span class="sw"><svg class="shico" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)"/></svg>Org</span>
+                  <span class="sw"><svg class="shico" viewBox="0 0 14 14"><polygon points="7,1.8 12.3,11.6 1.7,11.6" stroke-linejoin="round" stroke-width="2.6"/></svg>Law/Topic <em>(on zoom)</em></span>
+                  <div class="legend-sep"></div>
+                  <span class="sw"><span class="dot" style="background:var(--rust)"></span>Right</span>
+                  <span class="sw"><span class="dot" style="background:var(--verdigris)"></span>Left</span>
+                  <span class="sw"><span class="dot" style="background:var(--ochre)"></span>Religious</span>
+                  <span class="sw"><span class="dot" style="background:var(--fog)"></span>Institutional</span>
+                  <span class="sw"><span class="dot ring"></span>No data</span>
+              </div>
+            </div>
+            <div class="info-panel">
+              <div class="panel-search">
+                <input type="text" id="searchBox" placeholder="Search all entries…" autocomplete="off"
+                       oninput="onSearchInput()" onkeydown="onSearchKeydown(event)" />
+                <div id="searchResults" class="search-results" hidden></div>
+              </div>
+              <div id="infoPanel">
+                <div class="info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="verdict">
+      <strong>What to judge this on:</strong> whether finding something specific is <em>faster</em> here than in the list view, and whether the layout still reads once you're looking for one person among 119 nodes rather than admiring the shape of the whole thing. Both are real open questions — this is a first pass at the physics and the interaction, not a finished layout.
+    </div>
+  </main>
+</div>
+
+<script>
+var GRAPH_DATA = /*__GRAPH_DATA__*/;
+
+var ALIGN_COLOR = {
+  right: 'var(--rust)', left: 'var(--verdigris)', religious: 'var(--ochre)',
+  institutional: 'var(--fog)', unaffiliated: 'var(--fog)', unclassified: 'var(--fog)'
+};
+var ALIGN_LABEL = {
+  right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist',
+  institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data'
+};
+var KIND_LABEL = { actor: 'Historical actor', mk: 'Knesset member', org: 'Organization', law: 'Law', topic: 'Topic' };
+var KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5 };
+var HIDDEN_KINDS = { law: true, topic: true }; // only revealed once a connected node is selected
+
+// ---------- index face ----------
+function buildIndex() {
+  var groups = { actor: [], mk: [], org: [], law: [], topic: [] };
+  GRAPH_DATA.nodes.forEach(function(n) { if (groups[n.kind]) groups[n.kind].push(n); });
+  Object.keys(groups).forEach(function(k) { groups[k].sort(function(a,b){ return a.label.localeCompare(b.label); }); });
+
+  var titles = { actor: 'Historical Actors', mk: 'Knesset Members', org: 'Organizations', law: 'Laws', topic: 'Topics' };
+  var html = '';
+  ['actor','mk','org','law','topic'].forEach(function(k) {
+    html += '<div class="index-group"><h3>' + titles[k] + ' (' + groups[k].length + ')</h3><div class="index-grid">';
+    groups[k].forEach(function(n) {
+      html += '<a onclick="jumpToNode(\'' + n.id.replace(/'/g,"\\'") + '\')">' + n.label + '</a>';
+    });
+    html += '</div></div>';
+  });
+  document.getElementById('indexContent').innerHTML = html;
+}
+
+function jumpToNode(id) {
+  doFlip(true);
+  setTimeout(function() { selectNode(id); }, 500);
+}
+
+// ---------- search: every one of the 187 entities is reachable this way, including Laws and
+// Topics that stay hidden in the graph itself until something reveals them ----------
+function onSearchInput() {
+  var q = document.getElementById('searchBox').value.trim().toLowerCase();
+  var box = document.getElementById('searchResults');
+  if (!q) { box.hidden = true; box.innerHTML = ''; return; }
+  var matches = GRAPH_DATA.nodes.filter(function(n) { return n.label.toLowerCase().indexOf(q) !== -1; }).slice(0, 12);
+  if (!matches.length) {
+    box.innerHTML = '<div class="sr-empty">No matches</div>';
+  } else {
+    box.innerHTML = matches.map(function(n) {
+      return '<div class="sr-item" onclick="searchJump(\'' + n.id.replace(/'/g,"\\'") + '\')">' +
+        '<span class="sr-kind">' + (KIND_LABEL[n.kind] || n.kind) + '</span><span>' + n.label + '</span></div>';
+    }).join('');
+  }
+  box.hidden = false;
+}
+function onSearchKeydown(e) {
+  if (e.key === 'Escape') { document.getElementById('searchResults').hidden = true; document.getElementById('searchBox').blur(); }
+  if (e.key === 'Enter') {
+    var first = document.querySelector('#searchResults .sr-item');
+    if (first) first.click();
+  }
+}
+function searchJump(id) {
+  document.getElementById('searchBox').value = '';
+  document.getElementById('searchResults').hidden = true;
+  jumpToNode(id);
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.panel-search')) document.getElementById('searchResults').hidden = true;
+});
+
+// ---------- flip ----------
+function doFlip(forceToGraph) {
+  var stage = document.getElementById('stage');
+  var flipped = forceToGraph ? true : !stage.classList.contains('flipped');
+  stage.classList.toggle('flipped', flipped);
+  document.getElementById('flipLabel').textContent = flipped ? 'Show index' : 'Show network';
+  document.getElementById('flipState').textContent = flipped ? 'Viewing: network' : 'Viewing: index';
+}
+document.getElementById('flipBtn').onclick = function() {
+  var stage = document.getElementById('stage');
+  doFlip(!stage.classList.contains('flipped'));
+};
+
+// ---------- force layout (hand-rolled, no library) ----------
+var W = 1100, H = 860;
+var nodes = GRAPH_DATA.nodes.map(function(n, i) {
+  var col = { actor: 0.22, mk: 0.78, org: 0.5, law: 0.5, topic: 0.5 }[n.kind];
+  var row = { actor: 0.25, mk: 0.25, org: 0.55, law: 0.8, topic: 0.65 }[n.kind];
+  var jitter = 260; // wide, irregular scatter -- avoids the tidy-grid look on sparsely-connected nodes
+  return {
+    id: n.id, kind: n.kind, label: n.label, detail: n.detail, align: n.align || 'unaffiliated',
+    x: W * col + (Math.random()-0.5) * jitter,
+    y: H * row + (Math.random()-0.5) * jitter,
+    vx: 0, vy: 0, degree: 0
+  };
+});
+var nodeById = {};
+nodes.forEach(function(n) { nodeById[n.id] = n; });
+var edges = GRAPH_DATA.edges.map(function(e) {
+  nodeById[e.source].degree++; nodeById[e.target].degree++;
+  return { source: nodeById[e.source], target: nodeById[e.target], kind: e.kind };
+});
+var adjacency = {}; // id -> [neighbor ids], built once, reused by the BFS distance fade
+nodes.forEach(function(n) { adjacency[n.id] = []; });
+edges.forEach(function(e) {
+  adjacency[e.source.id].push(e.target.id);
+  adjacency[e.target.id].push(e.source.id);
+});
+function bfsDistances(startId, maxDist) {
+  var dist = {}; dist[startId] = 0;
+  var queue = [startId], head = 0;
+  while (head < queue.length) {
+    var cur = queue[head++];
+    var d = dist[cur];
+    if (d >= maxDist) continue;
+    adjacency[cur].forEach(function(nb) {
+      if (!(nb in dist)) { dist[nb] = d + 1; queue.push(nb); }
+    });
+  }
+  return dist;
+}
+
+function simulate(iterations) {
+  var k = 46; // ideal spring length
+  for (var it = 0; it < iterations; it++) {
+    // repulsion
+    for (var i = 0; i < nodes.length; i++) {
+      for (var j = i+1; j < nodes.length; j++) {
+        var a = nodes[i], b = nodes[j];
+        var dx = a.x - b.x, dy = a.y - b.y;
+        var d2 = dx*dx + dy*dy || 0.01;
+        var d = Math.sqrt(d2);
+        var force = (2400) / d2;
+        var fx = (dx/d) * force, fy = (dy/d) * force;
+        a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
+      }
+    }
+    // spring attraction along edges
+    edges.forEach(function(e) {
+      var dx = e.target.x - e.source.x, dy = e.target.y - e.source.y;
+      var d = Math.sqrt(dx*dx+dy*dy) || 0.01;
+      var force = (d - k) * 0.02;
+      var fx = (dx/d) * force, fy = (dy/d) * force;
+      e.source.vx += fx; e.source.vy += fy; e.target.vx -= fx; e.target.vy -= fy;
+    });
+    // center gravity, a soft push-back near the edges (not a hard clamp -- a clamp pins
+    // untethered nodes in a tidy row along the boundary instead of an organic scatter), and a
+    // faint persistent jitter so nodes with identical forces don't settle into suspiciously
+    // even spacing
+    var margin = 70;
+    nodes.forEach(function(n) {
+      n.vx += (W/2 - n.x) * 0.0012;
+      n.vy += (H/2 - n.y) * 0.0012;
+      if (n.x < margin) n.vx += (margin - n.x) * 0.03;
+      if (n.x > W - margin) n.vx -= (n.x - (W - margin)) * 0.03;
+      if (n.y < margin) n.vy += (margin - n.y) * 0.03;
+      if (n.y > H - margin) n.vy -= (n.y - (H - margin)) * 0.03;
+      n.vx += (Math.random() - 0.5) * 0.12;
+      n.vy += (Math.random() - 0.5) * 0.12;
+    });
+    // integrate + damping (a generous absolute bound is a safety net, not a shaping force)
+    nodes.forEach(function(n) {
+      n.vx *= 0.82; n.vy *= 0.82;
+      n.x += n.vx; n.y += n.vy;
+      n.x = Math.max(-150, Math.min(W+150, n.x));
+      n.y = Math.max(-150, Math.min(H+150, n.y));
+    });
+  }
+}
+simulate(340);
+
+// ---------- render ----------
+var svg = document.getElementById('graphSvg');
+var svgNS = 'http://www.w3.org/2000/svg';
+var selectedId = null;
+var viewBox = { x: 0, y: 0, w: W, h: H };
+
+function applyViewBox() {
+  svg.setAttribute('viewBox', viewBox.x + ' ' + viewBox.y + ' ' + viewBox.w + ' ' + viewBox.h);
+}
+applyViewBox();
+
+// a shape element sized to r, centred on its own origin -- shape encodes kind.
+// actor + mk share one shape (circle, "person") per Nick's simplification; org is a
+// rotated rounded square (diamond); law/topic (both hidden-until-zoom) are polygons with
+// stroke-linejoin:round so their corners read soft rather than sharp, matching the
+// rounded-rect language everything else uses.
+function makeShape(kind, r) {
+  var el;
+  if (kind === 'actor' || kind === 'mk') {
+    el = document.createElementNS(svgNS, 'circle');
+    el.setAttribute('r', r);
+  } else if (kind === 'org') {
+    el = document.createElementNS(svgNS, 'rect');
+    el.setAttribute('x', -r * 0.86); el.setAttribute('y', -r * 0.86);
+    el.setAttribute('width', r * 1.72); el.setAttribute('height', r * 1.72);
+    el.setAttribute('rx', r * 0.22);
+    el.setAttribute('transform', 'rotate(45)');
+  } else if (kind === 'law') {
+    var s = r * 1.9;
+    el = document.createElementNS(svgNS, 'polygon');
+    el.setAttribute('points', '0,' + (-s*0.62) + ' ' + (s*0.56) + ',' + (s*0.48) + ' ' + (-s*0.56) + ',' + (s*0.48));
+    el.setAttribute('stroke-linejoin', 'round');
+    el.setAttribute('stroke-width', Math.max(2, r * 0.4));
+  } else { // topic -- hexagon
+    var pts = [];
+    for (var i = 0; i < 6; i++) {
+      var ang = Math.PI / 3 * i - Math.PI / 6;
+      pts.push((r * Math.cos(ang)).toFixed(2) + ',' + (r * Math.sin(ang)).toFixed(2));
+    }
+    el = document.createElementNS(svgNS, 'polygon');
+    el.setAttribute('points', pts.join(' '));
+    el.setAttribute('stroke-linejoin', 'round');
+    el.setAttribute('stroke-width', Math.max(2, r * 0.4));
+  }
+  return el;
+}
+
+// Every node gets its label element up front, at low opacity/hidden by default if it wouldn't
+// pass the base declutter heuristic -- applyVisibility() is the single place that decides
+// whether a label actually shows, so the graduated fade (below) can reveal a name that the base
+// view chose to hide, and hide one it chose to show, without re-touching the DOM structure.
+function baseLabelOk(n) {
+  var r = KIND_RADIUS[n.kind] + Math.min(n.degree, 8) * 0.5;
+  return r > 6.5 || n.degree > 3 || HIDDEN_KINDS[n.kind];
+}
+
+function renderGraph() {
+  svg.innerHTML = '';
+  svg.insertAdjacentHTML('afterbegin',
+    '<defs><filter id="halo" x="-80%" y="-80%" width="260%" height="260%">' +
+    '<feGaussianBlur stdDeviation="5.5"/></filter></defs>');
+
+  var edgeGroup = document.createElementNS(svgNS, 'g');
+  edgeGroup.setAttribute('stroke', 'currentColor');
+  edges.forEach(function(e) {
+    var line = document.createElementNS(svgNS, 'line');
+    line.setAttribute('x1', e.source.x); line.setAttribute('y1', e.source.y);
+    line.setAttribute('x2', e.target.x); line.setAttribute('y2', e.target.y);
+    line.setAttribute('stroke-width', e.kind === 'lineage' ? '1.4' : '0.7');
+    line.dataset.a = e.source.id; line.dataset.b = e.target.id;
+    if (HIDDEN_KINDS[e.source.kind] || HIDDEN_KINDS[e.target.kind]) line.dataset.lawEdge = '1';
+    edgeGroup.appendChild(line);
+  });
+  svg.appendChild(edgeGroup);
+
+  var haloGroup = document.createElementNS(svgNS, 'g');
+  var nodeGroup = document.createElementNS(svgNS, 'g');
+  nodes.forEach(function(n) {
+    var color = ALIGN_COLOR[n.align] || 'var(--fog)';
+    var r = KIND_RADIUS[n.kind] + Math.min(n.degree, 8) * 0.5;
+    var noData = (n.align === 'unaffiliated' || n.align === 'unclassified');
+
+    if (!HIDDEN_KINDS[n.kind]) {
+      var halo = makeShape(n.kind, r * 2.1);
+      halo.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')' + (n.kind === 'org' ? ' rotate(45)' : ''));
+      halo.setAttribute('fill', color);
+      halo.setAttribute('opacity', '0.22');
+      halo.setAttribute('filter', 'url(#halo)');
+      haloGroup.appendChild(halo);
+    }
+
+    var g = document.createElementNS(svgNS, 'g');
+    g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
+    g.style.cursor = 'pointer';
+    g.dataset.id = n.id;
+    g.dataset.kind = n.kind;
+
+    var shape = makeShape(n.kind, r);
+    shape.setAttribute('fill', color);
+    shape.setAttribute('fill-opacity', noData ? '0.5' : '0.92');
+    if (n.kind === 'law' || n.kind === 'topic') shape.setAttribute('stroke', color);
+    if (noData) {
+      shape.setAttribute('stroke', color);
+      shape.setAttribute('stroke-width', '1.1');
+      shape.setAttribute('fill', 'var(--panel-bg)');
+    }
+    g.appendChild(shape);
+
+    var text = document.createElementNS(svgNS, 'text');
+    text.setAttribute('x', r + 5); text.setAttribute('y', 3.2);
+    text.setAttribute('font-size', '8.2');
+    text.setAttribute('font-family', 'Public Sans, sans-serif');
+    text.setAttribute('fill', 'currentColor');
+    text.textContent = n.label;
+    text.style.display = baseLabelOk(n) ? '' : 'none';
+    g.appendChild(text);
+
+    g.addEventListener('click', function() { selectNode(n.id); });
+    nodeGroup.appendChild(g);
+  });
+  svg.appendChild(haloGroup);
+  svg.appendChild(nodeGroup);
+  applyVisibility();
+}
+renderGraph();
+
+// ---------- visibility: graduated by BFS hop-distance from the current selection ----------
+// 0 hops (the selected node) and 1 hop (direct neighbour): full-ish opacity, name always shown.
+// 2 hops: dimmed further, name only if the base declutter heuristic already allowed it.
+// 3+ hops: not shown at all. Laws/Topics stay reveal-on-zoom (hop <=1 only) unless the
+// "show hidden" toggle is on, in which case they follow the same rule as everything else.
+var OPACITY_BY_TIER = [1, 0.8, 0.32];
+var EDGE_OPACITY_BY_TIER = [0.85, 0.5, 0.14];
+var showHidden = false;
+
+function applyVisibility() {
+  var dist = selectedId ? bfsDistances(selectedId, 2) : null;
+  svg.querySelectorAll('g[data-id]').forEach(function(g) {
+    var id = g.dataset.id, kind = g.dataset.kind, n = nodeById[id];
+    var isHidden = !!HIDDEN_KINDS[kind];
+    var maxTierForThis = (isHidden && !showHidden) ? 1 : 2;
+    var exists, tier;
+    if (dist) {
+      var d = dist[id];
+      exists = (d !== undefined && d <= maxTierForThis);
+      tier = exists ? Math.min(d, 2) : 0;
+    } else {
+      exists = !isHidden || showHidden;
+      tier = 0;
+    }
+    g.style.display = exists ? '' : 'none';
+    if (!exists) return;
+    g.style.opacity = OPACITY_BY_TIER[tier];
+    var label = g.querySelector('text');
+    if (label) {
+      var show = dist ? (tier <= 1 || baseLabelOk(n)) : baseLabelOk(n);
+      label.style.display = show ? '' : 'none';
+    }
+  });
+  svg.querySelectorAll('line').forEach(function(l) {
+    var isHiddenEdge = !!l.dataset.lawEdge;
+    if (!dist) { l.style.display = (!isHiddenEdge || showHidden) ? '' : 'none'; l.style.opacity = ''; return; }
+    var na = nodeById[l.dataset.a], nb = nodeById[l.dataset.b];
+    var maxA = (HIDDEN_KINDS[na.kind] && !showHidden) ? 1 : 2;
+    var maxB = (HIDDEN_KINDS[nb.kind] && !showHidden) ? 1 : 2;
+    var da = dist[l.dataset.a], db = dist[l.dataset.b];
+    var visible = da !== undefined && da <= maxA && db !== undefined && db <= maxB;
+    l.style.display = visible ? '' : 'none';
+    if (visible) l.style.opacity = EDGE_OPACITY_BY_TIER[Math.max(Math.min(da,2), Math.min(db,2))];
+  });
+}
+
+function toggleShowHidden() {
+  showHidden = !showHidden;
+  document.getElementById('showHiddenBtn').classList.toggle('active', showHidden);
+  applyVisibility();
+}
+
+function selectNode(id) {
+  selectedId = id;
+  var n = nodeById[id];
+  if (!n) return;
+
+  applyVisibility();
+  var dist = bfsDistances(id, 1); // frame the camera on the tight (<=1 hop) neighbourhood
+  animateViewBox(boundsFor(Object.keys(dist)), 650);
+
+  var d = n.detail;
+  var badgeColor = ALIGN_COLOR[n.align] || 'var(--fog)';
+  var html = '<button class="info-close" onclick="clearSelection()">Close ✕</button>';
+  html += '<span class="info-badge" style="border-color:' + badgeColor + '; color:' + badgeColor + '">' + KIND_LABEL[n.kind] + ' · ' + ALIGN_LABEL[n.align] + '</span>';
+  html += '<h3>' + n.label + '</h3>';
+  html += '<div class="info-meta">' + (d.meta || '') + '</div>';
+  if (d.role) html += '<div class="info-role">' + d.role + '</div>';
+  if (d.events && d.events.length) {
+    html += '<div class="info-section-h">Record</div>';
+    d.events.slice(0, 6).forEach(function(ev) {
+      if (!ev.text) return;
+      html += '<div class="info-event"><div class="when">' + (ev.when||'') + '</div><div class="what">' + (ev.what||'') + '</div><p>' + ev.text + '</p></div>';
+    });
+  }
+  if (d.personal && d.personal.length) {
+    html += '<div class="info-section-h">Beyond the ledger</div>';
+    d.personal.slice(0, 3).forEach(function(p) {
+      html += '<div class="info-event"><div class="when">' + (p.when||'') + '</div><div class="what">' + (p.title||'') + '</div><p>' + p.text + '</p></div>';
+    });
+  }
+  document.getElementById('infoPanel').innerHTML = html;
+}
+
+function clearSelection() {
+  selectedId = null;
+  applyVisibility();
+  document.getElementById('infoPanel').innerHTML = '<div class="info-empty"><span class="big">◈</span>Click any node to open its record here.<br>Drag the canvas to pan, scroll to zoom.</div>';
+  resetView();
+}
+
+// ---------- camera: bounding-box framing + eased animation ----------
+function boundsFor(ids) {
+  var xs = [], ys = [];
+  ids.forEach(function(id) { var n = nodeById[id]; if (n) { xs.push(n.x); ys.push(n.y); } });
+  if (!xs.length) return { x: 0, y: 0, w: W, h: H };
+  var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+  var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+  var pad = ids.length <= 2 ? 130 : 80;
+  var bw = Math.max(maxX - minX + pad*2, 160), bh = Math.max(maxY - minY + pad*2, 160);
+  var aspect = W / H;
+  if (bw / bh > aspect) bh = bw / aspect; else bw = bh * aspect;
+  var cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+  return { x: cx - bw/2, y: cy - bh/2, w: bw, h: bh };
+}
+
+var animToken = 0;
+function animateViewBox(target, duration) {
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) { viewBox = target; applyViewBox(); return; }
+  var myToken = ++animToken;
+  var start = { x: viewBox.x, y: viewBox.y, w: viewBox.w, h: viewBox.h };
+  var t0 = null;
+  function step(ts) {
+    if (myToken !== animToken) return; // superseded by a newer animation
+    if (!t0) t0 = ts;
+    var p = Math.min(1, (ts - t0) / duration);
+    var ease = 1 - Math.pow(1 - p, 3);
+    viewBox = {
+      x: start.x + (target.x - start.x) * ease,
+      y: start.y + (target.y - start.y) * ease,
+      w: start.w + (target.w - start.w) * ease,
+      h: start.h + (target.h - start.h) * ease
+    };
+    applyViewBox();
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+function zoomBy(factor) {
+  var cx = viewBox.x + viewBox.w/2, cy = viewBox.y + viewBox.h/2;
+  var w = Math.max(90, Math.min(W*1.4, viewBox.w / factor));
+  var h = w * (H/W);
+  animateViewBox({ x: cx - w/2, y: cy - h/2, w: w, h: h }, 220);
+}
+function resetView() { animateViewBox({ x: 0, y: 0, w: W, h: H }, 550); }
+
+// pan by drag; a near-zero-movement pointerup on empty canvas deselects
+var dragging = false, dragStart = null, vbStart = null, moved = 0;
+svg.addEventListener('pointerdown', function(e) {
+  if (e.target.closest('g[data-id]')) return;
+  dragging = true; moved = 0;
+  dragStart = { x: e.clientX, y: e.clientY }; vbStart = { x: viewBox.x, y: viewBox.y };
+  svg.setPointerCapture(e.pointerId);
+});
+svg.addEventListener('pointermove', function(e) {
+  if (!dragging) return;
+  var rect = svg.getBoundingClientRect();
+  var scale = viewBox.w / rect.width;
+  var dx = (e.clientX - dragStart.x), dy = (e.clientY - dragStart.y);
+  moved = Math.max(moved, Math.abs(dx) + Math.abs(dy));
+  viewBox.x = vbStart.x - dx * scale;
+  viewBox.y = vbStart.y - dy * scale;
+  applyViewBox();
+});
+svg.addEventListener('pointerup', function(e) {
+  if (dragging && moved < 4 && !e.target.closest('g[data-id]') && selectedId) clearSelection();
+  dragging = false;
+});
+svg.addEventListener('wheel', function(e) {
+  e.preventDefault();
+  zoomBy(e.deltaY < 0 ? 1.12 : 0.89);
+}, { passive: false });
+
+buildIndex();
+</script>
