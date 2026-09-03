@@ -1947,3 +1947,22 @@ called it a de facto freeze, the AG's office called it a policy shift. Both adde
 
 36 actors, 24 knesset_members, 42 orgs, 17 laws (1 enriched), 61 topics (60→61). Collision check
 clean, one publish, one commit.
+
+## Samson Option added (2026-09-03)
+
+Nick asked for a listing on the Samson Option — Israel's undeclared nuclear-deterrence doctrine.
+Confirmed via grep it didn't exist yet, then researched properly: new `topics.json` entry
+(`topic_type: "Historical Phenomenon"`) covering the 3 October 1957 France-Israel agreement, the
+Dimona reactor's 1958 construction under heavy secrecy (the Latin-American-desalination-plant
+cover story), Ben-Gurion's 21 December 1960 Knesset statement downplaying it as a research
+reactor after US discovery via U-2 overflights, and the term's mid-1960s coining among Ben-Gurion/
+Eshkol/Dayan/Peres (per Hersh and Avner Cohen's research specifically — attributed rather than
+independently verified, given the deliberate secrecy around the subject) through to its public
+exposure via Seymour Hersh's 1991 book. Linked to Ben-Gurion and Dayan (already profiled); Eshkol
+already profiled as an MK, referenced in prose; Peres named but not linked — not currently in this
+dataset as his own entry. Outside the land-dispossession core thesis but consistent with the
+project's established practice of covering broader ideological/foreign-policy topics (Iron Wall
+doctrine, Muscular Judaism) alongside it.
+
+36 actors, 24 knesset_members, 42 orgs, 17 laws, 62 topics (61→62). Collision check clean, one
+publish, one commit.

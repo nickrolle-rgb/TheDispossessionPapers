@@ -1050,5 +1050,23 @@
       "jewish-agency-for-palestine"
     ],
     "citation": "VERIFIED 2026-09-03 — the 1995 filing (H.C. 6698/95), the 8 March 2000 ruling, Barak's quoted holding, and the declaratory (not immediate-relief) nature of the ruling are corroborated via live search (Cardozo Israeli Supreme Court Project's case summary, citing 54(1) P.D. 258). The January 2007 construction start, seven years after the ruling, is corroborated via live search (Israel National News' contemporary report). This entry was surfaced while chasing a related but distinct 2004 Knesset agenda-motion referencing a court finding that soldier-preference land tenders discriminate against Arab citizens — that narrower military-service-criterion question was litigated separately from Kaadan (Adalah petitions filed 2004 and December 2005) and did not resolve the same way: a related Adalah petition specifically challenging military-service-based mortgage/loan benefits (not land-lease pricing) was rejected by a three-judge Supreme Court panel in December 2006, the Attorney General having argued the military-service criterion does not itself constitute nationality-based discrimination. No confirmed final ruling on the original 2004 land-tender-discount petition itself was found this pass — that narrower thread is not independently added here, kept separate from the well-documented Kaadan precedent rather than conflated with it."
+  },
+  {
+    "topic_id": "samson-option",
+    "name": "Samson Option",
+    "aliases": [
+      "Samson Option doctrine"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1957-1991",
+    "summary": "Israel's undeclared nuclear-deterrence doctrine: a threatened massive retaliatory strike, including nuclear weapons, if the state itself faced an existential military defeat — named for the biblical Samson, who brought down a Philistine temple on himself and his captors rather than accept defeat. Israel's nuclear program began with a 3 October 1957 agreement in which France agreed to build a reactor (and, in unwritten protocols, a reprocessing plant) at what became the Negev Nuclear Research Center near Dimona, constructed from 1958 under heavy secrecy — French customs paperwork described the reactor components as bound for a Latin American desalination plant. David Ben-Gurion told the Knesset on 21 December 1960, under US pressure after the site was identified from U-2 overflights, that it was merely 'a research reactor... for industry, agriculture, health, and science.' According to journalist Seymour Hersh and historian Avner Cohen, the term itself was coined in the mid-1960s among a small circle of Israeli leaders — Ben-Gurion, Levi Eshkol, Moshe Dayan, and Shimon Peres — as shorthand for the doctrine, not yet public knowledge. It became widely known only with Hersh's 1991 book 'The Samson Option: Israel's Nuclear Arsenal and American Foreign Policy.'",
+    "significance": "The doctrine sits at the foundation of Israel's long-standing policy of nuclear ambiguity ('amimut') — never confirming or denying possession of nuclear weapons — which several of this dataset's already-profiled figures (Ben-Gurion, Eshkol, Dayan) helped establish alongside their documented roles in land and settlement policy. Distinct from this dataset's land-dispossession ledger in subject, but part of the same foundational period and often read by historians as the ultimate backstop underwriting Israel's confidence in pursuing an assertive territorial and settlement policy without fear of being militarily overrun.",
+    "related_actor_ids": [
+      "david-ben-gurion",
+      "moshe-dayan"
+    ],
+    "related_org_ids": [],
+    "citation": "VERIFIED 2026-09-03 — the 3 October 1957 France-Israel agreement, the 1958 Dimona construction under secrecy (including the Latin American desalination-plant cover story), the 1958 U-2 discovery, and Ben-Gurion's 21 December 1960 Knesset statement are corroborated via live search (National Security Archive's 'The Eisenhower Administration and the Discovery of Dimona,' Foreign Policy's 2025 retrospective). The mid-1960s coining of the term among Ben-Gurion/Eshkol/Dayan/Peres, attributed to Hersh and Avner Cohen's research specifically (not independently verified beyond their attribution, given the deliberate secrecy around this subject), and the 1991 Hersh book's role in making the term public are corroborated via live search (Wikipedia's Samson Option and The Samson Option (book) articles). Levi Eshkol, already profiled as a Knesset Member in this dataset, and Shimon Peres, not currently profiled here, are both named among the coiners per this same sourcing but not independently re-verified this pass."
   }
 ]
