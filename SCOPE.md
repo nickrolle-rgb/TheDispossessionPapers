@@ -2593,3 +2593,43 @@ diff between the Python build and the wiki's client-side graph (321/321, exact m
 interactive confirmation on the deployed site (clicked "5778 = Apartheid," confirmed it opens The
 Apartheid Characterization's real panel with its Likud/Netanyahu/UN/Nation-State-Law connections
 visible in the graph, not a dead link).
+
+---
+
+## Round: stamps un-linked, network prose autolinked, domain redirect fixed
+
+**Stamps corrected**: Nick clarified he wants them as a fishhook, not an answer — "bait people
+into looking for an answer," not hand it to them on a click. Changed both from `<a href>` to plain
+unlinked `<span>`; dropped the hover tooltip too (would have given the answer away without a
+click). A curious reader now has to use the search box themselves to find "Resolution 3379" or
+"apartheid" — both resolve instantly once they do, nothing about the underlying entries changed.
+
+**Network view prose now autolinks, matching the index side.** The network info panel's own prose
+(role/record/beyond-the-ledger text, shown when a node is selected) was never running through
+`autolink()` — a mention of another profiled person/org/law/topic inside that text just sat there
+as plain words, unlike every article page. `autolink()` now takes an optional `netMode` flag that
+routes a mention into `#/network/<kind>/<id>` (selecting the mentioned node in place) instead of
+that entity's separate full page — same behaviour the homepage index's own links already use.
+Side benefit: this text had been inserted unescaped before; it now routes through `escapeHtml`
+like everywhere else.
+
+**Real Vercel bug caught before it caused confusion**: Nick set up a domain-level redirect from the
+old typo (`the-disposition-papers.vercel.app`) himself via the dashboard — but the redirect target
+he typed introduced a *third* spelling (`the-disposession-papers.vercel.app`, single S), which
+Vercel auto-provisioned as a real domain on the project since it was unclaimed, so it silently
+started serving real content rather than erroring. Caught by reading the domain name character-by-
+character rather than trusting the screenshot at a glance, then confirmed precisely via the Vercel
+API (`GET .../domains`) rather than more screenshot-reading. Fixed with Nick's go-ahead: explicitly
+added the correct domain (`the-dispossession-papers.vercel.app`) to the project via the API (it
+had never been a formally "added" domain, only ever reachable through `vercel alias set` and the
+project's own implicit default subdomain — which turned out to be *why* the redirect PATCH first
+failed with "that domain is not added to the project"), repointed the redirect to it, and deleted
+the stray single-S domain. Verified via curl: old typo -> 307 -> correct domain -> 200; stray
+domain -> 404 (gone). **Genuine improvement to the standing alias-tracking workaround**: since the
+old typo domain now redirects instead of serving its own copy, only one domain (the correct one)
+needs manual re-aliasing after each future deploy, not two.
+
+Verified: node --check, the extended DOM-stub harness (stamps confirmed plain-span with no href,
+network panel prose confirmed producing a real `#/network/` autolink), collision_check clean (no
+data changed, code-only). Live-verified the stamp fix by curling the deployed page directly for the
+`net-stamp-tag` markup (no `href` present) rather than only trusting the harness.
