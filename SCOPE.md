@@ -2697,3 +2697,15 @@ classification mechanisms already documented in this dataset's 1953 Land Acquisi
 Regularization/Kaminitz Laws entries -- a direct legal lineage across four decades. Edge-for-edge
 diff clean (325/325). GitHub auto-deploy fired normally this time -- confirms last round's break
 was transient, not a lasting config problem.
+
+**Another follow-up, same round: "go through the rest of the UN Resolutions."** Checked the
+existing ten UN Resolution entries first -- all already VERIFIED from an earlier round, but the
+whole set stopped at Resolution 497 (1981). Real ~40-year gap, including the single most
+significant recent one. Added three: Resolution 3236 (1974, first GA resolution framing Palestinian
+self-determination/sovereignty explicitly, distinct from 194's narrower refugee-return scope),
+Resolution 67/19 (2012, non-member observer state status, underpins the 2015 ICC accession),
+Resolution 2334 (2016, the most recent major Security Council settlements resolution, 14-0-1 with a
+US abstention, Israel's outright rejection, Trump's pre-inauguration public break with that
+abstention). Real gap flagged rather than filled: the PLO itself has no org entry despite being
+directly relevant to both 3236 and 67/19 -- left unlinked in prose, a real candidate for later.
+Edge-for-edge diff clean (328/328).
