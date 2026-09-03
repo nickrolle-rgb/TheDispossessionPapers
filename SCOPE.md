@@ -2709,3 +2709,113 @@ US abstention, Israel's outright rejection, Trump's pre-inauguration public brea
 abstention). Real gap flagged rather than filled: the PLO itself has no org entry despite being
 directly relevant to both 3236 and 67/19 -- left unlinked in prose, a real candidate for later.
 Edge-for-edge diff clean (328/328).
+
+## Round: 2026-09-03 -- PLO, Palestinian Authority, Hamas added as org entries
+
+Closed the gap flagged at the end of the previous round. Nick: "can we add the PA, PLO, Hamas,
+maybe even the US presidents that have been involved." Researched and added the three Palestinian
+political/governmental bodies now; the US-presidents part is real but large enough (5-6 more
+profile-depth entries) to scope as its own follow-up round rather than folding it in unscoped, per
+Nick's own "maybe even" hedge -- flagged below, not yet started.
+
+Three new `data/organizations.json` entries (53 -> 56 total), each with VERIFIED 2026-09-03
+citations from live search cross-checked across Wikipedia, Britannica, BBC and CFR where available:
+
+- `plo` -- founding (28 May-2 June 1964, Jerusalem, Ahmad Shuqayri as first Chairman), Fatah's 1969
+  takeover and Arafat's PLO chairmanship (held until his 2004 death), the Arab League's October 1974
+  Rabat recognition as "sole legitimate representative" (the same month as UN Resolution 3237's
+  observer-status grant, already linked from Resolution 3236's entry), the November 1988 Algiers
+  declaration and Arafat's December 1988 acceptance of Resolutions 242/338 (the PLO's first move
+  toward recognising Israel), and the 9 September 1993 PLO-Israel mutual recognition letters that
+  preceded the Oslo Accords' White House signing.
+- `palestinian-authority` -- founding under the 4 May 1994 Cairo Agreement (Gaza/Jericho handover),
+  the 28 September 1995 Oslo II Area A/B/C division (still in force despite its explicitly
+  "temporary" design), Abbas's 9 January 2005 succession after Arafat's death, and the June 2007
+  Hamas-Fatah split (Hamas takes Gaza by force; Abbas dismisses the Haniyeh government and rules the
+  West Bank by decree) that produced the current governmental division.
+- `hamas` -- December 1987 founding (Sheikh Ahmed Yassin, Muslim Brotherhood Gaza lineage, First
+  Intifada context), the 25 January 2006 PLC election win over Fatah, the June 2007 Gaza takeover,
+  and the 7 October 2023 attack -- documented factually, casualty/hostage figures given as sourced
+  ranges (approx. 1,200 killed incl. at least 809 civilians and 44 Americans; 240-253 hostages incl.
+  12 Americans) rather than a single reconciled number, consistent with how every other
+  violent/disputed-scale action_record entry in this dataset is handled (Deir Yassin, the Altalena
+  Affair, the King David Hotel bombing).
+
+Schema decisions (documented in `SCHEMA.md`): new `org_type: "National Liberation Movement"` for
+both PLO and Hamas -- a deliberately single, non-judgmental type for both rather than treating one
+as more legitimate than the other, keeping the actual judgment-bearing work in each body's own
+factual `action_record` rather than in its category label. `palestinian-authority` reuses the
+existing `"Self-Governing Community"` type already established for the Yishuv/Va'ad Leumi -- a
+non-sovereign, externally-constrained self-administering body, which fits the PA's own
+still-nominally-transitional Oslo-defined status. Nine new `action_type` values added as needed
+(Institution Founding, Leadership Change, Diplomatic Recognition, Political Declaration, Territorial
+Division, Institutional Split, Election, Territorial Takeover, Armed Attack) -- this dataset's
+`action_type` list was never a hard enum (a pre-existing but undocumented `"Land Expropriation
+Order"` value already proved that), so this just formalises the pattern.
+
+Verification: `scripts/collision_check.py` clean (no collisions, no dangling references, no
+duplicate ids); the Node DOM-stub harness's 30+ checks all pass against the freshly re-embedded
+`wiki-prototype.html`; `build_network_view.py`'s Python-built graph and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets after normalizing line endings
+(330/330 -- confirmed the mismatch on first diff was a CRLF/LF artifact in the diff tooling, not a
+real divergence). Both Artifacts republished, pushed to `origin/main` (commit `f0cf99c`), Vercel
+auto-deploy fired within 23 seconds this time (no manual-deploy fallback needed), aliased to
+`the-dispossession-papers.vercel.app`, and spot-checked live via curl for all three new `org_id`s.
+
+Still open: the US-presidents follow-up (candidate scope discussed but not yet confirmed with
+Nick: Truman for 1948 recognition, Carter for Camp David 1978, Clinton for Oslo 1993/Camp David
+2000, George W. Bush for the 2003 Road Map, Obama for the Resolution 2334 abstention already
+referenced by name in that entry, Trump for the Jerusalem embassy move/Golan recognition/Abraham
+Accords/2334 reaction already referenced) -- a real next round, not started.
+
+## Round: 2026-09-03 -- Five US presidents added to `historical_actors.json`
+
+Nick confirmed the candidate list from the previous round's write-up ("Yes please, go ahead with
+that set of presidents"). Jimmy Carter was already a full entry (added weeks earlier for Camp
+David/the Egypt-Israel treaty) -- checked first rather than assumed, confirmed complete, skipped
+to avoid a duplicate. Added the other five (36 -> 41 actors total), each with VERIFIED 2026-09-03
+citations from live search:
+
+- `harry-truman` -- the 14 May 1948 de facto recognition of Israel roughly eleven minutes after
+  the declaration of independence, against State Department advice; 31 January 1949 de jure
+  recognition.
+- `bill-clinton` -- the 13 September 1993 Oslo Accords Declaration of Principles signing
+  (Rabin-Arafat handshake, Peres/Abbas as actual signatories) and the 11-25 July 2000 Camp David
+  Summit with Barak/Arafat, which Clinton announced had failed.
+- `george-w-bush` -- the 24 June 2002 Rose Garden speech (widely regarded as the first sitting
+  president to make a two-state outcome official policy), the 30 April 2003 Quartet Road Map for
+  Peace, and the 27 November 2007 Annapolis Conference.
+- `barack-obama` -- the 4 June 2009 Cairo University speech ("does not accept the legitimacy of
+  continued Israeli settlements") and the 23 December 2016 Resolution 2334 abstention (already in
+  this dataset) -- the first US administration since 1967 not to veto or water down an equivalent
+  settlements resolution.
+- `donald-trump` -- the 6 December 2017 Jerusalem recognition + 14 May 2018 embassy move, the
+  25 March 2019 Golan Heights sovereignty recognition, the September 2020-January 2021 Abraham
+  Accords (UAE/Bahrain, then Morocco, then Sudan), and — genuinely current as of this pass, not
+  historical distance — the 29 September 2025 20-point Gaza plan (signed 9 October 2025, UN
+  Security Council-endorsed 17 November 2025, moved into a second implementation phase January
+  2026), described as ongoing rather than a concluded outcome given the citation date.
+
+**One real cross-link added, not forced:** `resolution-2334`'s `related_actor_ids` now includes
+both `barack-obama` and `donald-trump` -- both were already named in that topic's own prose
+(the abstention and Trump's pre-inauguration tweet reaction) before either had a profile, so this
+is a genuine "the reference already existed, now it can resolve" case, not new invented content.
+Checked for other natural links (a State of Israel-adjacent slot for Truman's recognition; Oslo
+Accords/Camp David/Road Map as standalone topics for Clinton/Bush) and found none already existed
+in the dataset -- adding new topics to create edges for these three would have been scope creep
+beyond "add the presidents," so they stand as legitimate, real, but currently edge-free nodes
+(same treatment UNGA's lineage fields got when no honest predecessor/successor existed).
+
+Verification: `scripts/collision_check.py` clean; the Node DOM-stub harness's 30+ checks all pass
+(216 nodes, up from 211: +5 actors); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets after normalizing line endings
+(332/332 -- the +2 over the prior round's 330 is exactly the new Obama/Trump `resolution-2334`
+context edges). Both Artifacts republished, pushed to `origin/main`, Vercel deploy polled and
+aliased, live spot-check via curl for all five new `actor_id`s.
+
+**Process note, not a data issue:** the previous round's SCOPE.md write-up was drafted after that
+round's `git commit`/push/deploy had already run, so it never actually made it into that commit --
+caught at the start of this round (`git status` still showed SCOPE.md modified) and folded into
+this round's commit instead. No functional impact -- the deployed site was correct throughout --
+but worth remembering: write the SCOPE.md round summary *before* committing, not after, so it
+can't silently miss the commit.
