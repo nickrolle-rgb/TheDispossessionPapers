@@ -97,10 +97,14 @@
   .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.4rem 1rem; }
   .index-grid a { font-size: 0.88rem; }
 
-  .home-hero { text-align: center; padding: 1.5rem 0 2rem; }
+  .home-hero { text-align: center; padding: 1.3rem 0 1.6rem; display: flex; flex-direction: column; align-items: center; gap: 0.7rem; }
   .home-hero .kicker { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); }
-  .home-hero h1 { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: clamp(1.8rem, 6vw, 2.6rem); margin: 0.3rem 0 0.6rem; }
-  .home-hero p { color: var(--ink-soft); max-width: 42ch; margin: 0 auto; font-size: 0.92rem; line-height: 1.6; }
+  .home-hero .hero-flip-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase;
+    background: var(--ink); color: var(--parchment-hi); border: none; border-radius: 20px;
+    padding: 0.5rem 1.1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .home-hero .hero-flip-btn:hover { background: var(--rust); }
 
   .not-found { padding: 2rem 0; color: var(--fog); }
   footer.note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.68rem; color: var(--fog); line-height: 1.6; font-family: "IBM Plex Mono", monospace; }
@@ -197,6 +201,7 @@
   <form onsubmit="return doSearch(event)">
     <input id="searchbox" type="search" placeholder="Search…" aria-label="Search entities" />
   </form>
+  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Web</button>
   <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/index'">Index</button>
   <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
 </header>
@@ -8784,9 +8789,8 @@
   }
 
   function renderIndex() {
-    var html = '<div class="home-hero"><span class="kicker">A working record, not a finished one</span>';
-    html += "<h1>Every actor, every party, one click apart</h1>";
-    html += "<p>Start anywhere, a person's page links to the organisations they built or joined, and back to everyone else who passed through them. Nothing here is re-typed by hand, every page is generated straight from the underlying research. <a href=\"#/about\">How this is built and cited &rarr;</a></p></div>";
+    var html = '<div class="home-hero"><span class="kicker">A working record, never finished</span>';
+    html += '<button class="hero-flip-btn" onclick="location.hash=\'#/network\'"><span>&#8635;</span> View as Web</button></div>';
 
     // Every index list is alphabetized — browsing by eye (not just searching) is a real way
     // readers find a page, and the order entries happened to be added in isn't a useful sort.
