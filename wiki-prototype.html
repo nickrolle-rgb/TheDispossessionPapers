@@ -49,12 +49,7 @@
     color: var(--fg); border: none; cursor: pointer; background: none; padding: 0;
   }
   header.top .kicker { font-family: "IBM Plex Mono", monospace; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--fog); text-transform: uppercase; }
-  header.top form { margin-left: auto; flex: 0 1 220px; }
-  header.top input {
-    width: 100%; font-family: "Public Sans", sans-serif; font-size: 0.82rem;
-    padding: 0.4rem 0.7rem; border-radius: 20px; border: 1px solid var(--line);
-    background: var(--parchment-hi); color: var(--fg);
-  }
+  header.top .top-nav { margin-left: auto; display: flex; gap: 0.8rem; flex-shrink: 0; }
 
   main { padding-top: 1.6rem; }
 
@@ -96,6 +91,14 @@
   .index-group h2 { font-family: "Fraunces", Georgia, serif; font-size: 1.1rem; margin: 1.6rem 0 0.6rem; }
   .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.4rem 1rem; }
   .index-grid a { font-size: 0.88rem; }
+
+  .index-search { margin: 0 0 1.4rem; }
+  .index-search input {
+    width: 100%; font-family: "Public Sans", sans-serif; font-size: 0.92rem;
+    padding: 0.6rem 0.9rem; border-radius: 20px; border: 1px solid var(--line);
+    background: var(--parchment-hi); color: var(--fg);
+  }
+  .index-search input:focus { outline: 2px solid var(--focus); outline-offset: 1px; }
 
   .home-hero { text-align: center; padding: 1.3rem 0 1.6rem; display: flex; flex-direction: column; align-items: center; gap: 0.7rem; }
   .home-hero .kicker { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); }
@@ -211,12 +214,11 @@
 
 <header class="top">
   <button class="brand" onclick="location.hash='#/'">The Dispossession Papers<span class="kicker" style="display:block">Zionism Timeline reference</span></button>
-  <form onsubmit="return doSearch(event)">
-    <input id="searchbox" type="search" placeholder="Search…" aria-label="Search entities" />
-  </form>
-  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Web</button>
-  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/index'">Index</button>
-  <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
+  <nav class="top-nav">
+    <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Web</button>
+    <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/index'">Index</button>
+    <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
+  </nav>
 </header>
 
 <div class="shell">
@@ -9674,6 +9676,13 @@
     var html = '<div class="home-hero"><span class="kicker">A working record, never finished</span>';
     html += '<button class="hero-flip-btn" onclick="location.hash=\'#/network\'"><span>&#8635;</span> View as Web</button></div>';
 
+    // Moved here from the header (which showed it on every page, including the Web view that
+    // already has its own graph-jump search in the info panel) so the header stays light and
+    // this page-level search reads as "search the index" rather than a global, always-present
+    // control. Same #searchbox id/doSearch handler as before -- it only exists on this route now.
+    html += '<form class="index-search" onsubmit="return doSearch(event)">';
+    html += '<input id="searchbox" type="search" placeholder="Search all entries…" aria-label="Search entities" /></form>';
+
     // Every index list is alphabetized — browsing by eye (not just searching) is a real way
     // readers find a page, and the order entries happened to be added in isn't a useful sort.
     function byName(key) { return function (x, y) { return x[key].localeCompare(y[key]); }; }
@@ -9743,6 +9752,10 @@
       .map(function (k) { return { key: k, rank: rank(entities[k]) }; })
       .sort(function (a, b) { return a.rank - b.rank || entities[a.key].name.localeCompare(entities[b.key].name); });
     var html = '<h1 class="entity-title">Search: "' + escapeHtml(q) + '"</h1>';
+    // Same search box as the index, repeated here so a results page isn't a dead end that
+    // forces a trip back to #/index just to search again.
+    html += '<form class="index-search" onsubmit="return doSearch(event)">';
+    html += '<input id="searchbox" type="search" placeholder="Search all entries…" aria-label="Search entities" value="' + escapeHtml(q) + '" /></form>';
     if (!hits.length) { html += '<p class="not-found">No matches.</p>'; return html; }
     html += '<div class="index-grid">';
     hits.forEach(function (hit) {
