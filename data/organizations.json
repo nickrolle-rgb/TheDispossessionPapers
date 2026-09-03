@@ -1941,5 +1941,185 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "blue-and-white",
+    "name": "Blue and White",
+    "hebrew_name": "כחול לבן",
+    "org_type": "Political Party",
+    "founding_date": "2019-02-21",
+    "dissolution_date": "2021-03",
+    "ideology": [
+      "Centrist",
+      "Zionist",
+      "Anti-Netanyahu (founding rationale)"
+    ],
+    "lineage": {
+      "predecessor_orgs": [
+        "Israel Resilience Party (Gantz, not yet profiled)",
+        "yesh-atid"
+      ],
+      "successor_orgs": [
+        "national-unity"
+      ],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "benny-gantz",
+      "yair-lapid"
+    ],
+    "action_record": [
+      {
+        "event_id": "blue-and-white-founding-2019",
+        "date": "2019-02-21",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founded as an alliance to challenge Netanyahu",
+        "location_affected": "State of Israel",
+        "description": "Formed 21 February 2019 as an electoral alliance of Benny Gantz's Israel Resilience Party, Yair Lapid's Yesh Atid, and Moshe Ya'alon's Telem, explicitly positioned as the main challenger to Benjamin Netanyahu's Likud-led coalition. Deliberately avoided a clear left-right platform, campaigning instead on governance, security-establishment credibility (Gantz, Ya'alon, and Gabi Ashkenazi were all former IDF Chiefs of Staff), and opposition to Netanyahu personally amid his corruption indictments. Won the most seats in the September 2019 election (33) without ever forming a government, then split apart in March 2021 when Gantz agreed to a rotation government with Netanyahu that never delivered him the premiership.",
+        "citation": "VERIFIED 2026-09-03 — the 21 February 2019 founding, the three-party composition, and the security-establishment-credibility campaign framing are corroborated via live search (Wikipedia's Blue and White (political alliance) article). The March 2021 split is corroborated via the same source's account of the alliance's dissolution."
+      }
+    ],
+    "knesset_participation": []
+  },
+  {
+    "org_id": "yesh-atid",
+    "name": "Yesh Atid",
+    "hebrew_name": "יש עתיד",
+    "org_type": "Political Party",
+    "founding_date": "2012",
+    "dissolution_date": null,
+    "ideology": [
+      "Centrist",
+      "Secular",
+      "Social liberalism"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "yair-lapid"
+    ],
+    "action_record": [
+      {
+        "event_id": "yesh-atid-founding-2012",
+        "date": "2012",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founded by journalist Yair Lapid",
+        "location_affected": "State of Israel",
+        "description": "Founded in 2012 by television journalist and media personality Yair Lapid ahead of the 2013 election, campaigning on secular, centrist, socially liberal governance issues (cost of living, ultra-Orthodox conscription, electoral reform) rather than a defined position on the Israeli-Palestinian conflict or settlement policy. Won 19 seats in its first election, becoming the Knesset's second-largest party. Lapid has consistently rejected being labeled 'center-left' or 'center-right,' describing the party's centrism as a genuine, deliberately unclassified third position rather than a midpoint between the two.",
+        "citation": "VERIFIED 2026-09-03 — the 2012 founding, the 2013 result of 19 seats, and Lapid's own repeated rejection of a left/right label are corroborated via live search (Wikipedia's Yesh Atid article, Fathom Journal's profile of Lapid)."
+      }
+    ],
+    "knesset_participation": []
+  },
+  {
+    "org_id": "national-unity",
+    "name": "National Unity",
+    "hebrew_name": "המחנה הממלכתי",
+    "org_type": "Political Party",
+    "founding_date": "2022-08-14",
+    "dissolution_date": null,
+    "ideology": [
+      "Centrist",
+      "Zionist",
+      "Judicial independence (founding platform plank)"
+    ],
+    "lineage": {
+      "predecessor_orgs": [
+        "blue-and-white"
+      ],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "benny-gantz"
+    ],
+    "action_record": [
+      {
+        "event_id": "national-unity-founding-2022",
+        "date": "2022-08-14",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founded by Gantz, Sa'ar, Eisenkot, and Kahana ahead of the 2022 election",
+        "location_affected": "State of Israel",
+        "description": "Founded 14 August 2022 as a centrist Zionist electoral list combining Benny Gantz's remaining Blue and White faction with Gideon Sa'ar's New Hope, plus former IDF Chief of Staff Gadi Eisenkot and Matan Kahana. Platform centered on Israel's status as the nation-state of the Jewish people, democratic governance, and judicial independence — deliberately positioned centre to centre-right rather than opposing the political right on ideological grounds. Gantz brought National Unity into Netanyahu's emergency wartime government after the 7 October 2023 attack, then resigned from it in June 2024 over war-management disagreements.",
+        "citation": "VERIFIED 2026-09-03 — the 14 August 2022 founding date, the four named founders, and the centrist/centre-right positioning are corroborated via live search (Wikipedia's National Unity (Israel) article, Israel Democracy Institute's party profile). The October 2023 emergency-government entry and June 2024 resignation are corroborated via live search (Jewish Telegraphic Agency's coverage)."
+      }
+    ],
+    "knesset_participation": []
+  },
+  {
+    "org_id": "otzma-yehudit",
+    "name": "Otzma Yehudit",
+    "hebrew_name": "עוצמה יהודית",
+    "org_type": "Political Party",
+    "founding_date": "2012-11-13",
+    "dissolution_date": null,
+    "ideology": [
+      "Kahanism",
+      "Ultranationalism",
+      "Far-right",
+      "Settlement expansion"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "itamar-ben-gvir",
+      "limor-son-har-melech"
+    ],
+    "action_record": [
+      {
+        "event_id": "otzma-yehudit-founding-2012",
+        "date": "2012-11-13",
+        "action_type": "Sanctioned Political Action",
+        "title": "Founded by Aryeh Eldad and Michael Ben-Ari, splitting from National Union",
+        "location_affected": "State of Israel",
+        "description": "Founded 13 November 2012 by Aryeh Eldad and Michael Ben-Ari after splitting from the National Union party, positioned as a legal successor to the outlawed Kach party of Meir Kahane — Israel's Knesset had banned Kach in 1988 and its successor Kahane Chai in 1994 as racist and anti-democratic under the Knesset's own Basic Law disqualification criteria. Otzma Yehudit's platform is explicitly Kahanist: ultranationalist, anti-Arab, and committed to Jewish sovereignty over the entirety of the land, including annexation of the West Bank and support for further settlement. Itamar Ben-Gvir, later National Security Minister, and Limor Son Har-Melech, a Homesh resident and settler-rights advocate, both entered the Knesset as Otzma Yehudit MKs.",
+        "citation": "VERIFIED 2026-09-03 — the 13 November 2012 founding, the split from National Union, and the party's Kahanist/Kach-successor characterization are corroborated via live search (Wikipedia's Otzma Yehudit article, IMEU's Kahanism fact sheet). Ben-Gvir's and Son Har-Melech's Otzma Yehudit membership is already established elsewhere in this dataset via their own knesset_terms records."
+      }
+    ],
+    "knesset_participation": []
+  },
+  {
+    "org_id": "united-torah-judaism",
+    "name": "United Torah Judaism",
+    "hebrew_name": "יהדות התורה",
+    "org_type": "Political Party",
+    "founding_date": "1992",
+    "dissolution_date": null,
+    "ideology": [
+      "Haredi",
+      "Non-Zionist",
+      "Ashkenazi religious-community interest"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "yitzhak-goldknopf"
+    ],
+    "action_record": [
+      {
+        "event_id": "utj-founding-1992",
+        "date": "1992",
+        "action_type": "Sanctioned Political Action",
+        "title": "Formed as an alliance of Agudat Yisrael and Degel HaTorah",
+        "location_affected": "State of Israel",
+        "description": "Formed in 1992 as an electoral alliance between two distinct Ashkenazi Haredi parties — Agudat Yisrael, representing the Hasidic Haredi community and tracing to a 1912 organization founded to represent ultra-Orthodox Jews opposed to the Zionist movement, and Degel HaTorah, representing the non-Hasidic 'Lithuanian' Haredi community — combining their votes to maximize joint Knesset representation. Explicitly non-Zionist rather than anti-Zionist in practice: the party does not endorse the state's secular Zionist premise on theological grounds but participates fully in its institutions and coalitions to advance Haredi community interests, chiefly religious-education funding and exemption from military conscription. Its positions on security, diplomacy, and land policy are secondary to and largely instrumental toward those religious-community priorities, rather than expressions of a Revisionist or Labor Zionist territorial doctrine.",
+        "citation": "VERIFIED 2026-09-03 — the 1992 founding as an Agudat Yisrael/Degel HaTorah alliance, the non-Zionist-in-principle-but-participatory-in-practice characterization, and the conscription/education funding priorities are corroborated via live search (Wikipedia's United Torah Judaism article, Israel Policy Forum's 'Israel's Ultra-Orthodox Parties Explained')."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

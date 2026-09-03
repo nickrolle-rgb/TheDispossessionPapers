@@ -2076,3 +2076,43 @@ without the structured link).
 
 36 actors, 24 knesset_members, 42 orgs, 17 laws, 63 topics. Collision check clean throughout, one
 wiki publish, one network-prototype publish, one commit.
+
+## Vote-inferred ideology considered and declined; 5 missing party orgs added instead (2026-09-03)
+
+Nick asked whether voting record could be used to assign alignment, using Benny Gantz as the test
+case — his own instinct reads Gantz as left-leaning but flagged that instinct might be an
+international frame rather than an Israeli one. Real answer: declined the vote-based approach and
+explained why, then fixed the actual root cause instead.
+
+**Why not vote-inference**: this dataset's vote ledger is a deliberately narrow, curated subset
+(land/settlement bills specifically, per the project's own scope), not a comprehensive roll-call
+record. Scoring alignment from it would really measure "voted for settlement expansion," not
+general left/right — and would actively mislead on cross-cutting figures exactly like Gantz, who
+voted for Ma'ale Adumim sovereignty as a security-establishment centrist for coalition reasons
+already flagged elsewhere in this dataset as "complicating any simple coalition/opposition
+reading." A single-issue-vote score risks manufacturing a confident-looking wrong answer.
+
+**Root cause found instead**: Gantz, Lapid, Ben-Gvir, Son Har-Melech, and Goldknopf were all
+showing as isolated/unaffiliated in the network view not because of a classification bug, but
+because their actual parties — National Unity, Blue and White, Yesh Atid, Otzma Yehudit, United
+Torah Judaism — were never added as org entries at all. Added all 5, real-researched (founding
+dates, platforms, key figures), linked to their MKs via `notable_members`.
+
+**Result validates Nick's own hedge, doesn't contradict it**: run through the existing alignment
+classifier (org_type institutional-check, then ideology keywords, then lineage propagation), Gantz
+and Lapid land on honest "no data" — Blue and White/National Unity/Yesh Atid are genuinely
+centrist with no lineage tie to either the Revisionist-right or Labor-left chains, so the
+classifier correctly declines to force them into "left" or "right" rather than picking one.
+Ben-Gvir and Son Har-Melech resolve cleanly to "right" via Otzma Yehudit (added "kahanism" /
+"ultranationalism" / "far-right" to the right-keyword list, since none of the existing keywords,
+all drawn from classical Revisionism, covered a Kahanist party). Goldknopf stays honestly
+unaffiliated — United Torah Judaism is genuinely non-Zionist/Haredi, a different axis entirely
+from the Revisionist/Labor/Religious-Zionist spectrum this classifier models, not a gap to force
+closed.
+
+**Also fixed**: the network prototype crashed on load (`Cannot read properties of undefined
+(reading 'push')`) — `buildIndex()` still assumed only 4 node kinds existed after topics were
+added as a 5th in the previous round. One-line fix (skip kinds the index has no bucket for).
+
+47 orgs (42→47), 24 knesset_members (5 gained notable_members via reciprocal org links), other
+counts unchanged. Collision check clean, wiki + network prototype both republished, one commit.
