@@ -2683,3 +2683,17 @@ Verified: node --check, the DOM-stub harness (full pass), collision_check clean,
 diff between the Python build and the wiki's client-side graph (322/322, exact match), and live
 confirmation on the deployed site (Shin Bet's own page, badge reading "Intelligence Agency," its
 own record prose auto-linking to Mossad/Aman/Six-Day War in place).
+
+**Follow-up same round**: added the Elon Moreh case itself (Dweikat v. State, HCJ 390/79) as its
+own topic, per Nick's direct ask after the lead surfaced. 7 June 1979 settlement on private Rujeib-
+village land; Deputy President Moshe Landau's majority opinion found Gush Emunim's political
+demands drove the decision, IDF Chief of Staff Rafael Eitan's security assessment solicited only
+after the fact; Cabinet had approved by a bare 8-5 vote with Defense Minister Ezer Weizman
+dissenting; ruled unlawful 22 October 1979 (a genuine two-date source discrepancy with Cardozo's own
+summary, noted honestly). Significance written to make the real throughline explicit: the settlement
+was simply relocated onto differently-classified land the same year, and the ruling's lasting effect
+was pushing Israeli settlement policy from "military necessity" toward the state-land/absentee-
+classification mechanisms already documented in this dataset's 1953 Land Acquisition Law and 2017
+Regularization/Kaminitz Laws entries -- a direct legal lineage across four decades. Edge-for-edge
+diff clean (325/325). GitHub auto-deploy fired normally this time -- confirms last round's break
+was transient, not a lasting config problem.
