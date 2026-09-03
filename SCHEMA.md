@@ -123,7 +123,7 @@ id, not a duplicated bio — avoids a third person-file and keeps one source of 
   "name": "string",
   "hebrew_name": "string",
   "aliases": "array of strings, optional (e.g. Jewish National Fund -> ['JNF', 'Keren Kayemeth LeIsrael', 'KKL']) -- same mechanism as topics' aliases field, wired into the wiki's own nameIndex builder alongside MANUAL_ALIASES; add one whenever an org has a common abbreviation or other-language name that shows up in prose",
-  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation | Intelligence Agency)",
+  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation | Intelligence Agency | National Liberation Movement)",
   "founding_date": "YYYY-MM-DD or YYYY",
   "dissolution_date": "YYYY-MM-DD or YYYY or null",
   "ideology": ["string tags, e.g. Labor Zionism, Revisionist Zionism, Religious Zionism"],
@@ -181,6 +181,21 @@ later founded Herut/Likud (Begin and Shamir both came up through it; both entrie
 are documented in their own `personal_context`/`primary_affiliations`). Unlike Irgun/Herut, Betar
 never dissolved or merged — `dissolution_date` and `lineage.merged_into` are `null`, matching the
 pattern already used for still-active orgs like Likud.
+
+`org_type: "National Liberation Movement"` added 2026-09-03 for the PLO and Hamas — deliberately
+a single, non-judgmental type for both rather than splitting one off as more "legitimate," matching
+this project's documented-conduct-not-editorializing discipline; each body's actual actions
+(political, diplomatic, or violent) are recorded factually in its own `action_record` instead of
+being pre-judged by its `org_type` label. The Palestinian Authority reuses the existing
+`"Self-Governing Community"` type already established for the Yishuv/Va'ad Leumi — a non-sovereign,
+self-administering body operating under external constraint, which fits the PA's own Oslo-defined,
+still-nominally-transitional status. `action_type` values also grew this round beyond the original
+five-item enum above (already a loose guide, not a hard enum — see the pre-existing but undocumented
+`"Land Expropriation Order"` value): `"Institution Founding"`, `"Leadership Change"`,
+`"Diplomatic Recognition"`, `"Political Declaration"`, `"Territorial Division"`,
+`"Institutional Split"`, `"Election"`, `"Territorial Takeover"`, and `"Armed Attack"` were added
+as needed for PLO/PA/Hamas's institutional and political history, which didn't fit the original
+land-settlement/militant-action-focused vocabulary.
 
 ## 4. Current Foreign Actors — `data/current_foreign_actors.json` (added 2026-08-31)
 
