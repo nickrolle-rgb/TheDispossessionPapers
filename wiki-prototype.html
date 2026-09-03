@@ -6906,7 +6906,7 @@
     "action_record": [
       {
         "date": "2002",
-        "action_type": "Organizational Leadership",
+        "action_type": "Organisational Leadership",
         "location_affected": "United States, Canada",
         "description": "Co-founded Nefesh B'Nefesh, which has since organized large-scale, publicly-documented group emigration flights from North America to Israel on a recurring basis, operating in formal partnership with Israeli government ministries.",
         "citation": "Nefesh B'Nefesh's own organizational history (nbn.org.il/about); recurring coverage of annual flight numbers in the Times of Israel and Jerusalem Post — exact yearly figures not yet compiled here."
@@ -6928,7 +6928,7 @@
     "action_record": [
       {
         "date": "2022-08",
-        "action_type": "Organizational Leadership",
+        "action_type": "Organisational Leadership",
         "location_affected": "Global",
         "description": "Appointed Chairman of the Executive of the Jewish Agency for Israel, its central operational leadership role.",
         "citation": "Jewish Agency for Israel, leadership bio page (jewishagency.org/doron-almog), accessed 31 August 2026."
@@ -6951,7 +6951,7 @@
     "action_record": [
       {
         "date": "2022-07",
-        "action_type": "Organizational Leadership",
+        "action_type": "Organisational Leadership",
         "location_affected": "United States (JFNA); global (Jewish Agency)",
         "description": "Appointed Chairman of the Jewish Agency for Israel's Board of Governors, having previously chaired the Board of Trustees of the Jewish Federations of North America — a direct institutional link between major US Jewish philanthropic fundraising and the Jewish Agency's Aliyah-coordination operations.",
         "citation": "Jewish Agency for Israel, leadership bio page (jewishagency.org/mark-wilf), accessed 31 August 2026."
@@ -8582,7 +8582,7 @@
   function renderForeign(f) {
     var html = '<span class="badge">Foreign Patron' + (f.role_status && f.role_status.indexOf("UNCONFIRMED") !== -1 ? " · unconfirmed" : "") + "</span>";
     html += '<div class="infobox"><dt>Role</dt><dd>' + escapeHtml(f.organizational_role || "—") + "</dd>";
-    html += "<dt>Organization</dt><dd>" + linkIfKnownOrg(f.organization || "—") + "</dd>";
+    html += "<dt>Organisation</dt><dd>" + linkIfKnownOrg(f.organization || "—") + "</dd>";
     html += "<dt>Operating in</dt><dd>" + (f.operating_countries || []).join(", ") + "</dd></div>";
     html += '<h1 class="entity-title">' + escapeHtml(f.full_name) + "</h1>";
     html += '<section class="body"><p>' + autolink(f.primary_activity_description || "", "foreign:" + f.actor_id) + "</p>";
@@ -8601,7 +8601,7 @@
   }
 
   function renderOrg(o) {
-    var html = '<span class="badge">' + escapeHtml(o.org_type || "Organization") + "</span>";
+    var html = '<span class="badge">' + escapeHtml(o.org_type || "Organisation") + "</span>";
     html += '<div class="infobox"><dt>Founded</dt><dd>' + escapeHtml(o.founding_date || "—") + "</dd>";
     if (o.dissolution_date) html += "<dt>Dissolved</dt><dd>" + escapeHtml(o.dissolution_date) + "</dd>";
     html += "<dt>Ideology</dt><dd>" + (o.ideology || []).join(", ") + "</dd>";
@@ -8939,6 +8939,7 @@
   var NET_LEFT_KW = ["labor zionism", "socialist zionism", "social democracy", "marxist", "trade unionism",
     "religion of labor", "gordonism", "pragmatic statism"];
   var NET_RELIGIOUS_KW = ["religious zionism"];
+  var NET_CENTRIST_KW = ["centrist"];
   var NET_INSTITUTIONAL_TYPES = { "Government Office":1, "Legislative Body":1, "Sovereign State":1,
     "Self-Governing Community":1, "National Military":1, "International Body":1, "Representative Assembly":1,
     "Executive Council":1, "International Zionist Body":1, "Financial Institution":1, "Land Fund":1, "Land Company":1 };
@@ -8953,7 +8954,7 @@
     institutional: 'var(--fog)', unaffiliated: 'var(--fog)', unclassified: 'var(--fog)' };
   var NET_ALIGN_LABEL = { right: 'Revisionist / Right', left: 'Labor / Left', religious: 'Religious Zionist', centrist: 'Centrist',
     institutional: 'Institutional', unaffiliated: 'No alignment data', unclassified: 'No alignment data' };
-  var NET_KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law',
+  var NET_KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organisation', law: 'Law',
     topic: 'Topic', foreign: 'Foreign Patron' };
   var NET_KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5, foreign: 5.5 };
   var NET_HIDDEN_KINDS = { law: true, topic: true };
@@ -8963,6 +8964,7 @@
     if (NET_RELIGIOUS_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "religious";
     if (NET_RIGHT_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "right";
     if (NET_LEFT_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "left";
+    if (NET_CENTRIST_KW.some(function(k){ return text.indexOf(k) !== -1; })) return "centrist";
     return null;
   }
 
@@ -8986,7 +8988,7 @@
       ORGS.forEach(function(o) {
         if (orgAlign[o.org_id] !== null) return;
         lineageNeighbors(o).some(function(nid) {
-          if (orgAlign[nid] === "right" || orgAlign[nid] === "left" || orgAlign[nid] === "religious") {
+          if (orgAlign[nid] === "right" || orgAlign[nid] === "left" || orgAlign[nid] === "religious" || orgAlign[nid] === "centrist") {
             orgAlign[o.org_id] = orgAlign[nid]; changed = true; return true;
           }
           return false;

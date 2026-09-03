@@ -42,6 +42,7 @@ RIGHT_KW = ["revisionist", "greater israel", "territorial maximalism", "national
 LEFT_KW = ["labor zionism", "socialist zionism", "social democracy", "marxist", "trade unionism",
            "religion of labor", "gordonism", "pragmatic statism"]
 RELIGIOUS_KW = ["religious zionism"]
+CENTRIST_KW = ["centrist"]
 
 # Government offices, sovereign/legislative bodies, foreign/international bodies, and
 # financial/land-holding institutions serve (or represent) the whole system, not one political
@@ -63,6 +64,8 @@ def ideology_match(ideology_list):
         return "right"
     if any(k in text for k in LEFT_KW):
         return "left"
+    if any(k in text for k in CENTRIST_KW):
+        return "centrist"
     return None
 
 org_by_id = {o["org_id"]: o for o in orgs}
@@ -93,7 +96,7 @@ for _pass in range(4):  # a few passes lets a resolved colour propagate down a s
         if org_alignment[oid] is not None:
             continue
         for nid in lineage_neighbors(o):
-            if org_alignment.get(nid) in ("right", "left", "religious"):
+            if org_alignment.get(nid) in ("right", "left", "religious", "centrist"):
                 org_alignment[oid] = org_alignment[nid]
                 changed = True
                 break
