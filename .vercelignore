@@ -1,0 +1,6 @@
+# Raw Knesset vote-results database — 234MB, not meant to be distributed, and not needed by the
+# deployed site anyway (wiki-prototype.html self-embeds everything it serves; vercel.json only
+# rewrites "/" to that one file). .gitignore already excludes this from the repo, so GitHub-
+# triggered deploys never see it — this file exists for the fallback case of deploying directly
+# from the local working directory, which doesn't consult .gitignore on its own.
+data/knesset_votes.sqlite3

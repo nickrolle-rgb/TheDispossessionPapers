@@ -6,3 +6,4 @@ data/knesset_votes.sqlite3
 # Scratch/output files that don't belong in version history
 *.pyc
 __pycache__/
+.vercel

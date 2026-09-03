@@ -2633,3 +2633,53 @@ Verified: node --check, the extended DOM-stub harness (stamps confirmed plain-sp
 network panel prose confirmed producing a real `#/network/` autolink), collision_check clean (no
 data changed, code-only). Live-verified the stamp fix by curling the deployed page directly for the
 `net-stamp-tag` markup (no `href` present) rather than only trusting the harness.
+
+---
+
+## Round: Supreme Court research lead, intelligence agencies, a real deploy-pipeline break
+
+**Supreme Court data** — Nick asked whether we'd looked at university-hosted Israeli Supreme Court
+data. We hadn't. Real find: **the Israeli Supreme Court Database** (iscd.huji.ac.il, Hebrew
+University, researchers including Lee Epstein) — 16,109 cases/48,634 opinions, 2010-2018, 70+
+variables per case. Couldn't confirm the exact access/download terms directly — hit a TLS handshake
+failure reaching the site from this session (both WebFetch and the Browser pane; raw curl confirmed
+it's a connection-level failure, not a permission gate, and the site is still indexed/reachable via
+search, so likely a network path issue specific to this session rather than a site outage) — flagged
+honestly rather than guessed at. Real bonus find along the way: the **Cardozo Israeli Supreme Court
+Project** (Yeshiva University) has full, freely-accessible translated opinions including *Dweikat v.
+State* (1979, the Elon Moreh case) under its "Property Rights" topic — arguably the single most
+consequential land-related Supreme Court ruling in Israeli history, not yet a topic in this dataset,
+flagged as a strong future addition.
+
+**Israel's intelligence agencies added**: new org_type "Intelligence Agency" (added to SCHEMA.md and
+`INSTITUTIONAL_TYPES` in both the classifier and its JS port). Shin Bet (Feb 1949), Mossad (13 Dec
+1949 Ben-Gurion order), Aman (1950 IDF General Staff spinoff), and — the clearest real "offshoot"
+Nick asked about — **Mossad LeAliyah Bet**, the Haganah's pre-state immigration-smuggling arm
+(founded 1938, ~90,000 immigrants brought by sea across 114 voyages in defiance of British quotas,
+disbanded March 1952 into Mossad). Shin Bet's own action_record traces the same disparate-
+application pattern this dataset tracks throughout: sole authority to order administrative
+detention of Israeli civilians, a power applied almost exclusively to Palestinians until Defense
+Minister Katz ended its use against West Bank Jewish settlers in November 2024, over the Shin Bet's
+own objection. Mossad's Kidon/Caesarea/Metsada divisions and Aman's Unit 8200 were considered and
+deliberately left out — real and documented, but without a clear land-dispossession angle that
+would justify their own entries here; flagged rather than added reflexively as padding.
+
+**A real deploy-pipeline break, caught and worked around, not just noted.** After pushing the
+intelligence-agency commit, no new Vercel deployment appeared for several minutes — the first time
+all session the GitHub→Vercel auto-deploy simply didn't fire (confirmed the push landed on
+`origin/main`, confirmed the project's `link` config still correctly points at this exact repo/
+branch, so the break is somewhere in GitHub's webhook delivery or Vercel's receipt of it, not in
+anything obviously misconfigured on either side). Rather than keep waiting or guessing, built a
+working fallback: created `.vercel/project.json` locally (projectId + orgId, so the CLI can target
+this exact project non-interactively) and a new `.vercelignore` (excluding
+`data/knesset_votes.sqlite3`, the 234MB gitignored vote database that a raw local `vercel deploy`
+tries to upload since it doesn't consult `.gitignore` — this is what caused the fallback's first
+attempt to fail on Vercel's 100MB limit), then ran `vercel deploy --prod --yes` directly. Worked
+cleanly. **Standing note for future sessions**: if a future push doesn't show up in `vercel ls`
+within ~30-60s, don't keep waiting — use this exact fallback (`.vercel/project.json` already
+exists now) rather than assume something's broken with the code itself.
+
+Verified: node --check, the DOM-stub harness (full pass), collision_check clean, an edge-for-edge
+diff between the Python build and the wiki's client-side graph (322/322, exact match), and live
+confirmation on the deployed site (Shin Bet's own page, badge reading "Intelligence Agency," its
+own record prose auto-linking to Mossad/Aman/Six-Day War in place).
