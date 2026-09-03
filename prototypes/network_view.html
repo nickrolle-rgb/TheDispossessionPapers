@@ -417,6 +417,14 @@ var svg = document.getElementById('graphSvg');
 var svgNS = 'http://www.w3.org/2000/svg';
 var selectedId = null;
 var viewBox = { x: 0, y: 0, w: W, h: H };
+// Declared here (before renderGraph() is ever called below), not next to applyVisibility()
+// where they read most naturally -- renderGraph() calls applyVisibility() immediately, which
+// reads these on the very first paint, and a `var` assignment doesn't run until its own line
+// executes (only the bare declaration hoists), so leaving them where they're used produced a
+// real, fully reproducible "reading '0'" crash on the very first automatic render.
+var OPACITY_BY_TIER = [1, 0.8, 0.32];
+var EDGE_OPACITY_BY_TIER = [0.85, 0.5, 0.14];
+var showHidden = false;
 
 function applyViewBox() {
   svg.setAttribute('viewBox', viewBox.x + ' ' + viewBox.y + ' ' + viewBox.w + ' ' + viewBox.h);
@@ -543,9 +551,8 @@ renderGraph();
 // 2 hops: dimmed further, name only if the base declutter heuristic already allowed it.
 // 3+ hops: not shown at all. Laws/Topics stay reveal-on-zoom (hop <=1 only) unless the
 // "show hidden" toggle is on, in which case they follow the same rule as everything else.
-var OPACITY_BY_TIER = [1, 0.8, 0.32];
-var EDGE_OPACITY_BY_TIER = [0.85, 0.5, 0.14];
-var showHidden = false;
+// (OPACITY_BY_TIER / EDGE_OPACITY_BY_TIER / showHidden are declared up near `svg`, not here --
+// see the comment there.)
 
 function applyVisibility() {
   var dist = selectedId ? bfsDistances(selectedId, 2) : null;
