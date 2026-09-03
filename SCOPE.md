@@ -2116,3 +2116,36 @@ added as a 5th in the previous round. One-line fix (skip kinds the index has no 
 
 47 orgs (42→47), 24 knesset_members (5 gained notable_members via reciprocal org links), other
 counts unchanged. Collision check clean, wiki + network prototype both republished, one commit.
+
+## Network view checked into the repo; search, hidden-toggle, graduated fade (2026-09-03)
+
+Nick loved the prototype and asked for four more fixes, then to commit it. All real fixes:
+
+- **Search box** in the info panel, finds all 187 entities including Laws/Topics that stay hidden
+  until zoom — answers "are all text listings findable" definitively yes, and fixed the same
+  question's honest gap: the text index face never had a Topics section at all (only 4 of the 5
+  node kinds), added.
+- **"Show hidden" toggle** (eye icon in the toolbar) — Laws/Topics always visible, not just on
+  zoom, default off.
+- **UN not linked to its own General Assembly/Security Council** — real gap, not cosmetic. Fixed
+  with a new `COMPONENT_OF` map in the graph-builder script (a standing organ isn't a
+  predecessor/successor relationship, so it doesn't belong in `organizations.json`'s lineage
+  fields — same "small explicit list for a real relationship that doesn't fit the schema" pattern
+  as `MANUAL_ALIASES`).
+- **Graduated fade on selection**: replaced the old binary in-frame/dimmed treatment with a
+  3-tier system by BFS hop-distance — direct neighbours (1 hop) stay bright and keep their name,
+  2-hop context dims further and loses its name, anything beyond disappears entirely. Matches
+  Nick's own description of the appeal: not faster than the text list, but satisfying to trace a
+  real path (Balfour → British Mandate → Yishuv) and see what's one more step out.
+
+**Promoted the whole prototype from ephemeral Claude-side artifact to a real, version-controlled
+part of the repo**: `prototypes/network_view_template.html` (page shell/CSS/JS),
+`prototypes/build_network_view.py` (consolidated single-entry-point build script, replacing the
+two-step scratchpad process used during development), the current generated
+`prototypes/network_view.html`, and the earlier `lineage_sketches.html`, plus a README explaining
+what's here, how to regenerate, and the known remaining gaps (current_foreign_actors.json not yet
+in the graph; 8/17 laws and 4/63 topics still genuinely edge-less; no re-layout on zoom). Not
+wired into the live wiki yet — still a design prototype for review, now durable across sessions.
+
+Not yet done, flagged for a future round if wanted: `current_foreign_actors.json` isn't
+represented in the graph at all (a 6th node kind, never added).
