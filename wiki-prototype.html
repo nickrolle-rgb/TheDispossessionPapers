@@ -136,6 +136,19 @@
   .netview .net-zoom-btn:hover { background: var(--rust); color: var(--parchment-hi); }
   .netview .net-zoom-btn.wide { width: auto; padding: 0 0.5rem; border-radius: 14px; font-size: 0.75rem; }
   .netview .net-zoom-btn.active { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); }
+  /* The two stamps Nick asked to distribute through the project — not just decoration, each one
+     is a live link straight into its own fully-cited entry (Resolution 3379's real history; the
+     apartheid-characterization debate, named positions on both sides). Styled like the old
+     "PROTOTYPE · NOT LIVE" stamp this whole idea grew out of: rotated, bordered, stamped-on. */
+  .netview .net-stamps { position: absolute; top: 0.7rem; right: 0.7rem; z-index: 3; display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-end; }
+  .netview .net-stamp-tag {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 55%, transparent);
+    border-radius: 3px; padding: 0.3rem 0.65rem; background: var(--panel-bg); box-shadow: var(--shadow);
+    transform: rotate(var(--r)); text-decoration: none; white-space: nowrap; cursor: pointer; display: inline-block;
+  }
+  .netview .net-stamp-tag:hover { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); transform: rotate(var(--r)) scale(1.04); }
+  @media (max-width: 500px) { .netview .net-stamp-tag { font-size: 0.55rem; padding: 0.24rem 0.5rem; } }
   .netview .net-graph-legend {
     position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.7rem;
     font-family: "IBM Plex Mono", monospace; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.02em;
@@ -8623,6 +8636,28 @@
       "united-torah-judaism"
     ],
     "citation": "VERIFIED 2026-09-03 -- Agudath Israel's 1912 Katowice founding and anti-Zionist theological basis, the 1948 accommodation shift, Amram Blau's 1937 split and Neturei Karta's founding, and the ~30%-of-400,000/Beitar Illit/Modi'in Illit settlement figures are corroborated via live search (Encyclopedia.com's Agudat Israel entry, Wikipedia's Neturei Karta and Agudat Yisrael articles, and the Times of Israel's 'Black is the new orange: 30% of settlers are now Haredim,' which also sources the Cahaner finding and the Modi'in Illit/five-villages land origin)."
+  },
+  {
+    "topic_id": "apartheid-characterization",
+    "name": "The Apartheid Characterization",
+    "aliases": [
+      "Israeli apartheid",
+      "5778 = Apartheid",
+      "apartheid analogy"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "2017-present",
+    "summary": "A legal-political characterization applying the term 'apartheid' -- a regime of institutionalized racial/ethnic domination and oppression, with a specific legal definition under the 1973 International Convention on the Suppression and Punishment of the Crime of Apartheid and Article 7 of the Rome Statute -- to Israeli policy toward Palestinians. First applied by a UN body in a 15 March 2017 report from the UN Economic and Social Commission for Western Asia (ESCWA); UN Secretary-General Antonio Guterres ordered the report removed from ESCWA's website within days, and ESCWA Executive Secretary Rima Khalaf resigned in protest. The characterization gained wider institutional traction with three major human rights reports concluding Israeli policy meets the legal threshold: B'Tselem (January 2021), Human Rights Watch (April 2021), and Amnesty International (February 2022). Within this dataset's own scope, the clearest single flashpoint is the Basic Law: Israel as the Nation-State of the Jewish People, passed 19 July 2018 -- Hebrew year 5778 -- which restricts national self-determination in Israel to the Jewish people by name; Arab Knesset members shouted 'apartheid' and tore up copies of the law on the Knesset floor as it passed.",
+    "significance": "Directly on-topic for a dataset built around land and citizenship differentials: the apartheid characterization is specifically an argument about systems of differential land access, movement, and political rights by ethnicity/nationality, not a general epithet -- a defined legal claim with a defined legal test. Genuinely contested, not this dataset's own verdict: Israel, the United States, and a range of scholars reject the characterization, pointing to differences from apartheid-era South Africa (Arab citizens of Israel hold full voting rights and sit in the Knesset itself, unlike Black South Africans under apartheid) and arguing the term obscures a conflict rooted in competing national claims rather than a purely racial hierarchy. Presented here as a real, live, high-stakes characterization debate with named positions on both sides -- consistent with this dataset's citation discipline throughout, not an exception to it.",
+    "related_actor_ids": [
+      "benjamin-netanyahu"
+    ],
+    "related_org_ids": [
+      "united-nations",
+      "likud"
+    ],
+    "citation": "VERIFIED 2026-09-03 -- the 15 March 2017 ESCWA report, Guterres's removal order, and Khalaf's resignation are corroborated via live search (Washington Post, Al Jazeera, and Institute for Palestine Studies coverage). The B'Tselem (Jan 2021)/HRW (Apr 2021)/Amnesty (Feb 2022) report dates, and the Nation-State Law's floor reaction (Arab MKs shouting 'apartheid,' tearing up copies), are corroborated via live search (Wikipedia's Basic Law: Israel as the Nation-State of the Jewish People article, Adalah, Al Jazeera, and Truthout coverage) -- none of the five underlying reports/articles independently read in full this pass."
   }
 ];
 
@@ -9091,6 +9126,11 @@
     html += '<button class="net-zoom-btn" onclick="netZoomBy(0.8)" aria-label="Zoom out">–</button>';
     html += '<button class="net-zoom-btn" onclick="netResetView()" aria-label="Reset view">↾</button>';
     html += '<button class="net-zoom-btn wide" id="netShowHiddenBtn" onclick="netToggleShowHidden()" aria-label="Toggle hidden Laws/Topics" title="Show Laws/Topics always, not just on zoom">👁</button>';
+    html += '</div>';
+    // Two stamps, not just decoration -- each is a live link into its own fully-cited entry.
+    html += '<div class="net-stamps">';
+    html += '<a class="net-stamp-tag" style="--r:-2deg" href="#/network/topic/resolution-3379" title="UN Resolution 3379 (1975) — full history, cited">Reinstate Resolution 3379</a>';
+    html += '<a class="net-stamp-tag" style="--r:2deg" href="#/network/topic/apartheid-characterization" title="The apartheid characterization — full history, cited, both sides">5778 = Apartheid</a>';
     html += '</div>';
     html += '<svg id="netGraphSvg" viewBox="0 0 1260 1000"></svg>';
     html += '<div class="net-graph-legend">';
