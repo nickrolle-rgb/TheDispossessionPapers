@@ -2366,7 +2366,10 @@
         "citation": "VERIFIED 2026-09-01 — the 6-11 May 1942 Biltmore Hotel conference dates, the 600-delegate/18-country attendance, the 'Jewish Commonwealth' language, and the greetings sent to the Jewish Agency Executive/Va'ad Leumi/Yishuv are corroborated via live search (Wikipedia's Biltmore Conference article, Encyclopedia.com's Biltmore Program entries). The October 1942 Zionist General Council ratification in Palestine is corroborated via live search but without an exact day; kept at month-level precision."
       }
     ],
-    "knesset_participation": []
+    "knesset_participation": [],
+    "aliases": [
+      "WZO"
+    ]
   },
   {
     "org_id": "jewish-national-fund",
@@ -8480,6 +8483,13 @@
   Object.keys(entities).forEach(function (key) {
     var e = entities[key];
     var names = [e.name];
+    // Deliberately-curated aliases (org/topic "aliases" arrays) bypass the length>3 noise
+    // filter below entirely, same as MANUAL_ALIASES -- that filter exists to stop short
+    // auto-derived fragments (surnames, split-off name parts) from over-matching, but a
+    // curated alias like "WZO"/"JNF"/"KKL" is exactly as deliberate as a MANUAL_ALIASES entry
+    // and was silently never linking despite being added specifically to enable this (caught
+    // 2026-09-03: JNF/KKL had carried this same 3-character gap since first added).
+    var guaranteed = [];
     if (e.data.birth_name && e.data.birth_name !== e.name) names.push(e.data.birth_name);
     if (PERSON_KINDS[e.kind]) {
       var surname = e.name.split(",")[0].trim().split(" ").pop();
@@ -8491,10 +8501,10 @@
         var short = part.split("(")[0].trim();
         if (short && short !== e.name) names.push(short);
       });
-      // Explicit aliases ("Jewish National Fund" -> "JNF", "KKL") -- same mechanism as
-      // topics, so any org's common abbreviation/other-language name is reachable and
-      // auto-links in prose without needing a MANUAL_ALIASES entry.
-      if (e.data.aliases) e.data.aliases.forEach(function (al) { names.push(al); });
+      // Explicit aliases ("Jewish National Fund" -> "JNF", "KKL", "World Zionist Organization"
+      // -> "WZO") -- same mechanism as topics, so any org's common abbreviation/other-language
+      // name is reachable and auto-links in prose without needing a MANUAL_ALIASES entry.
+      if (e.data.aliases) e.data.aliases.forEach(function (al) { guaranteed.push(al); });
     }
     if (e.kind === "law") {
       // "Absentees' Property Law, 5710-1950" -> also index "Absentees' Property Law" alone,
@@ -8506,10 +8516,13 @@
       // Some topics are the same event under more than one name prose actually uses
       // ("Resolution 181" / "1947 UN Partition Plan") — index every alias too, so the
       // page is reachable and auto-links under any of them.
-      e.data.aliases.forEach(function (al) { names.push(al); });
+      e.data.aliases.forEach(function (al) { guaranteed.push(al); });
     }
     names.forEach(function (n) {
       if (n && n.length > 3) nameIndex.push({ name: n, key: key });
+    });
+    guaranteed.forEach(function (n) {
+      if (n) nameIndex.push({ name: n, key: key });
     });
   });
   Object.keys(MANUAL_ALIASES).forEach(function (alias) {
@@ -8803,9 +8816,12 @@
     // Patrons a different sourcing standard for non-Israeli figures) but that's a data-
     // provenance distinction, not one a reader needs to navigate around. A person still only
     // lives in exactly one file, so this merge is purely presentational.
-    var people = ACTORS.map(function (a) { return { name: a.full_name, href: "#/actor/" + a.actor_id }; })
-      .concat(MKS.map(function (m) { return { name: m.full_name, href: "#/mk/" + m.mk_id }; }))
-      .concat(FOREIGN.map(function (f) { return { name: f.full_name, href: "#/foreign/" + f.actor_id }; }))
+    // Every link out of the index opens the entity selected inside the network view (#/network/
+    // <kind>/<id>, handled in route()) rather than that entity's separate full page — following a
+    // link from the index "swaps to the listing in the web side" rather than leaving it, per Nick.
+    var people = ACTORS.map(function (a) { return { name: a.full_name, href: "#/network/actor/" + a.actor_id }; })
+      .concat(MKS.map(function (m) { return { name: m.full_name, href: "#/network/mk/" + m.mk_id }; }))
+      .concat(FOREIGN.map(function (f) { return { name: f.full_name, href: "#/network/foreign/" + f.actor_id }; }))
       .sort(byName("name"));
 
     html += '<div class="index-group"><h2>Actors (' + people.length + ")</h2><div class=\"index-grid\">";
@@ -8813,18 +8829,18 @@
     html += "</div></div>";
 
     html += '<div class="index-group"><h2>Organisations (' + ORGS.length + ")</h2><div class=\"index-grid\">";
-    orgsSorted.forEach(function (o) { html += '<a href="#/org/' + o.org_id + '">' + escapeHtml(o.name) + "</a>"; });
+    orgsSorted.forEach(function (o) { html += '<a href="#/network/org/' + o.org_id + '">' + escapeHtml(o.name) + "</a>"; });
     html += "</div></div>";
 
     if (LAWS.length) {
       html += '<div class="index-group"><h2>Laws (' + LAWS.length + ")</h2><div class=\"index-grid\">";
-      lawsSorted.forEach(function (l) { html += '<a href="#/law/' + l.law_id + '">' + escapeHtml(l.title.split(",")[0]) + "</a>"; });
+      lawsSorted.forEach(function (l) { html += '<a href="#/network/law/' + l.law_id + '">' + escapeHtml(l.title.split(",")[0]) + "</a>"; });
       html += "</div></div>";
     }
 
     if (TOPICS.length) {
       html += '<div class="index-group"><h2>Places, Periods &amp; Events (' + TOPICS.length + ")</h2><div class=\"index-grid\">";
-      topicsSorted.forEach(function (t) { html += '<a href="#/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
+      topicsSorted.forEach(function (t) { html += '<a href="#/network/topic/' + t.topic_id + '">' + escapeHtml(t.name) + "</a>"; });
       html += "</div></div>";
     }
 
@@ -9472,6 +9488,22 @@
     document.getElementById('netSearchResults').hidden = true;
     netJumpToNode(id);
   }
+
+  // Every one of these is invoked from an inline onclick/oninput/onkeydown attribute inside
+  // innerHTML-injected markup (the toolbar buttons, the close button, the search box). Inline
+  // event-attribute handlers run in global scope, not this IIFE's closure, so without this each
+  // one throws "X is not defined" on the very first click and silently does nothing -- which is
+  // exactly what happened to the close button (and, before it was removed, the old flip button).
+  // Aliasing to window rather than declaring these as window.* directly so every internal bare
+  // call (netResetView() inside netClearSelection, etc.) keeps resolving through the closure.
+  window.netClearSelection = netClearSelection;
+  window.netOnSearchInput = netOnSearchInput;
+  window.netOnSearchKeydown = netOnSearchKeydown;
+  window.netResetView = netResetView;
+  window.netSearchJump = netSearchJump;
+  window.netToggleShowHidden = netToggleShowHidden;
+  window.netZoomBy = netZoomBy;
+
   document.addEventListener('click', function(e) {
     var box = document.getElementById('netSearchResults');
     if (box && !box.hidden && e.target.closest && !e.target.closest('.net-panel-search')) box.hidden = true;
@@ -9546,6 +9578,10 @@
       app.innerHTML = renderNetwork();
       foot.textContent = "";
       showNetwork(); // builds the graph lazily on first visit, then renders + wires interaction
+      // #/network/<kind>/<id> (what the Index page's own links now point at, so following one
+      // there lands inside the graph, selected, rather than on that entity's separate full page)
+      // selects the node once the graph exists to select it in.
+      if (parts[1] && parts[2]) netSelectNode(parts[1] + ":" + parts[2]);
       maybeShowNetworkIntro();
       return;
     }
