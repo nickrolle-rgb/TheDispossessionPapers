@@ -2855,3 +2855,39 @@ pressing Enter in an actual browser are unaffected.
 No data touched this round -- Node DOM-stub harness's 30+ checks all pass unchanged (216
 nodes/332 edges); confirmed directly via a small Python check that `<header>` no longer contains
 `#searchbox` and the nav is now wrapped in `.top-nav`.
+
+## Round: 2026-09-03 -- Shrunk the Web view's mobile vertical footprint
+
+Nick: "Can we perhaps shrink the vertical height on the web view for mobile?" Re-checked live
+mobile (375x812 emulation) first -- the graph pane plus the empty-state info panel together pushed
+well past one screen's height before a reader even reached the search box below, let alone the
+info panel's own placeholder content.
+
+Changes (`@media max-width: 860px` only, no desktop impact):
+- `.net-graph-wrap`: 52vh -> 42vh.
+- `.net-info-panel`: default `max-height` 32vh -> 15vh, but only while nothing is selected -- new
+  `.has-selection` class (toggled in `netSelectNode`/`netClearSelection` alongside the innerHTML
+  swap already happening there) grows it to 44vh once a node actually has a record to show. The
+  empty state was reserving a third of the screen for an icon and two lines of static instructions
+  -- no reason to hold that space when idle, but a real profile still needs real room once opened.
+- `.net-info-empty` padding/icon size reduced to match the shorter idle height.
+
+Net effect verified live: the idle mobile Web view (header + graph + empty panel) now fits in
+roughly one screen instead of one and a half, with the search box visible without scrolling.
+
+**Real debugging note, not a code bug:** the first live mobile screenshot after deploying looked
+completely unchanged -- turned out to be a stale cached page in the Browser pane tab (confirmed by
+reading `getComputedStyle` values directly: the tab was still computing 52vh/32vh despite the
+alias correctly serving the new CSS, confirmed via curl). A cache-busted reload
+(`?cb=<value>`) showed the correct new values (42vh/15vh) immediately. Worth remembering: when a
+"nothing changed" screenshot follows a real, curl-confirmed deploy, suspect the *viewer's* cache
+before suspecting the code.
+
+Verification: extended the Node DOM-stub harness with a `classList` stub (missing entirely until
+now -- this is the first place the site uses `classList`) and a new check #15 confirming
+`netInfoPanelWrap` actually gains/loses `.has-selection` on select/clear, not just that nothing
+throws. All 30+ checks pass; no data touched (216 nodes/332 edges unchanged).
+
+Also sent a `PushNotification` at Nick's direct request ("Can you trigger a popup on my phone") --
+confirmed the tool only reaches an actual phone if Remote Control is connected in this session;
+otherwise it's a desktop-terminal notification only. Not a site change, noted for completeness.
