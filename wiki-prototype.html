@@ -136,18 +136,18 @@
   .netview .net-zoom-btn:hover { background: var(--rust); color: var(--parchment-hi); }
   .netview .net-zoom-btn.wide { width: auto; padding: 0 0.5rem; border-radius: 14px; font-size: 0.75rem; }
   .netview .net-zoom-btn.active { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); }
-  /* The two stamps Nick asked to distribute through the project — not just decoration, each one
-     is a live link straight into its own fully-cited entry (Resolution 3379's real history; the
-     apartheid-characterization debate, named positions on both sides). Styled like the old
+  /* The two stamps Nick asked to distribute through the project -- deliberately NOT links. He
+     wants them to work as a fishhook: a reader who wants to know what "Reinstate Resolution
+     3379" actually means has to go search for it themselves (the search box right below finds
+     both instantly), not get the answer handed over on a click. Styled like the old
      "PROTOTYPE · NOT LIVE" stamp this whole idea grew out of: rotated, bordered, stamped-on. */
   .netview .net-stamps { position: absolute; top: 0.7rem; right: 0.7rem; z-index: 3; display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-end; }
   .netview .net-stamp-tag {
     font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase;
     color: var(--rust); border: 1px solid color-mix(in srgb, var(--rust) 55%, transparent);
     border-radius: 3px; padding: 0.3rem 0.65rem; background: var(--panel-bg); box-shadow: var(--shadow);
-    transform: rotate(var(--r)); text-decoration: none; white-space: nowrap; cursor: pointer; display: inline-block;
+    transform: rotate(var(--r)); white-space: nowrap; display: inline-block; user-select: none;
   }
-  .netview .net-stamp-tag:hover { background: var(--rust); color: var(--parchment-hi); border-color: var(--rust); transform: rotate(var(--r)) scale(1.04); }
   @media (max-width: 500px) { .netview .net-stamp-tag { font-size: 0.55rem; padding: 0.24rem 0.5rem; } }
   .netview .net-graph-legend {
     position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.7rem;
@@ -8768,14 +8768,20 @@
   nameIndex.forEach(function (n) { if (!nameToKey[n.name]) nameToKey[n.name] = n.key; });
 
   // Auto-link known entity names inside free text. Skips linking the entity's own page to itself.
-  function autolink(text, selfKey) {
+  function autolink(text, selfKey, netMode) {
+    // netMode routes a mention into the network view's own deep link (#/network/kind/id,
+    // selecting the mentioned node in place) instead of that entity's separate full page --
+    // used for the network info panel's prose, so following a mention there "swaps to the
+    // listing in the web side" the same way the homepage index's own links already do, rather
+    // than leaving the graph.
     if (!text) return "";
     var pattern = buildPattern();
     var escaped = escapeHtml(text);
+    var prefix = netMode ? "#/network/" : "#/";
     return escaped.replace(pattern, function (match) {
       var key = nameToKey[match];
       if (!key || key === selfKey) return match;
-      return '<a href="#/' + key.replace(":", "/") + '">' + match + "</a>";
+      return '<a href="' + prefix + key.replace(":", "/") + '">' + match + "</a>";
     });
   }
 
@@ -9127,10 +9133,12 @@
     html += '<button class="net-zoom-btn" onclick="netResetView()" aria-label="Reset view">↾</button>';
     html += '<button class="net-zoom-btn wide" id="netShowHiddenBtn" onclick="netToggleShowHidden()" aria-label="Toggle hidden Laws/Topics" title="Show Laws/Topics always, not just on zoom">👁</button>';
     html += '</div>';
-    // Two stamps, not just decoration -- each is a live link into its own fully-cited entry.
+    // Two stamps, deliberately not links -- a fishhook, not an answer. Whoever's curious enough
+    // to wonder what these mean has to go search for them (the box right below); both resolve
+    // instantly once they do (Resolution 3379's own page; The Apartheid Characterization).
     html += '<div class="net-stamps">';
-    html += '<a class="net-stamp-tag" style="--r:-2deg" href="#/network/topic/resolution-3379" title="UN Resolution 3379 (1975) — full history, cited">Reinstate Resolution 3379</a>';
-    html += '<a class="net-stamp-tag" style="--r:2deg" href="#/network/topic/apartheid-characterization" title="The apartheid characterization — full history, cited, both sides">5778 = Apartheid</a>';
+    html += '<span class="net-stamp-tag" style="--r:-2deg">Reinstate Resolution 3379</span>';
+    html += '<span class="net-stamp-tag" style="--r:2deg">5778 = Apartheid</span>';
     html += '</div>';
     html += '<svg id="netGraphSvg" viewBox="0 0 1260 1000"></svg>';
     html += '<div class="net-graph-legend">';
@@ -9704,18 +9712,18 @@
     html += '<span class="net-info-badge" style="border-color:'+badgeColor+'; color:'+badgeColor+'">'+NET_KIND_LABEL[n.kind]+' · '+NET_ALIGN_LABEL[n.align]+'</span>';
     html += '<h3>'+n.label+'</h3>';
     html += '<div class="net-info-meta">'+(d.meta||'')+'</div>';
-    if (d.role) html += '<div class="net-info-role">'+d.role+'</div>';
+    if (d.role) html += '<div class="net-info-role">'+autolink(d.role, n.id, true)+'</div>';
     if (d.events && d.events.length) {
       html += '<div class="net-info-section-h">Record</div>';
       d.events.slice(0,6).forEach(function(ev) {
         if (!ev.text) return;
-        html += '<div class="net-info-event"><div class="when">'+(ev.when||'')+'</div><div class="what">'+(ev.what||'')+'</div><p>'+ev.text+'</p></div>';
+        html += '<div class="net-info-event"><div class="when">'+(ev.when||'')+'</div><div class="what">'+(ev.what||'')+'</div><p>'+autolink(ev.text, n.id, true)+'</p></div>';
       });
     }
     if (d.personal && d.personal.length) {
       html += '<div class="net-info-section-h">Beyond the ledger</div>';
       d.personal.slice(0,3).forEach(function(p) {
-        html += '<div class="net-info-event"><div class="when">'+(p.when||'')+'</div><div class="what">'+(p.title||'')+'</div><p>'+p.text+'</p></div>';
+        html += '<div class="net-info-event"><div class="when">'+(p.when||'')+'</div><div class="what">'+(p.title||'')+'</div><p>'+autolink(p.text, n.id, true)+'</p></div>';
       });
     }
     document.getElementById('netInfoPanel').innerHTML = html;
