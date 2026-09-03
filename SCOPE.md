@@ -2922,3 +2922,28 @@ further from its side.
 Verification: Node DOM-stub harness's 30+ checks all pass unchanged (216 nodes/332 edges -- no
 data touched); confirmed directly via a small Python check that the legend markup now renders
 after `netInfoPanelWrap` rather than before it (i.e., outside the graph pane, not inside it).
+
+## Round: 2026-09-03 -- Fixed graph-pan/native-scroll conflict on touch devices
+
+Nick: "There are some issues scrolling the web map, can you investigate that?" ("Everything's
+amazing! ... Otherwise I'm over the moon!")
+
+Investigated rather than guessed: read `netWireGraphEvents()`, the hand-rolled pan implementation
+driving the graph via raw Pointer Events (`pointerdown` -> `svg.setPointerCapture()` ->
+`pointermove` updates the viewBox). Checked the SVG's `touch-action` directly (both in source and
+via live `getComputedStyle`) and found it was left at the default `auto` -- meaning on a real
+phone, a single-finger drag on the graph triggers the browser's own native touch-scroll/pan
+handling *at the same time* as the JS pan logic, both trying to respond to the same gesture. That
+fight (jank, unpredictable which one "wins," the page or the graph moving when you meant the
+other) is exactly what "issues scrolling the web map" describes -- this is a well-known class of
+bug for any hand-rolled pannable canvas/SVG that doesn't explicitly hand the gesture over.
+
+Fix: one line -- `touch-action: none` on `.netview .net-graph-wrap svg`. Hands the entire gesture
+to the existing pointer-event pan logic with nothing else (browser default scroll/zoom handling)
+competing for it.
+
+Verification: Node DOM-stub harness's 30+ checks all pass unchanged (pure CSS, no JS/data
+touched). Confirmed live via `getComputedStyle` that the deployed SVG's `touch-action` is now
+`"none"` (was `"auto"`) -- couldn't directly simulate a real multi-touch drag gesture from this
+session to visually confirm the smoother feel, so this one relies on Nick's own device to fully
+confirm, same as the legend/height rounds' phone screenshots did.
