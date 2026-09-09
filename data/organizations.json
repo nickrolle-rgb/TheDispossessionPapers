@@ -2643,6 +2643,15 @@
     "notable_members": [],
     "action_record": [
       {
+        "event_id": "icj-wall-opinion-2004",
+        "date": "2004-07-09",
+        "action_type": "Sanctioned Political Action",
+        "title": "Issues Advisory Opinion holding the West Bank separation wall unlawful",
+        "location_affected": "West Bank, including East Jerusalem",
+        "description": "Responding to a December 2003 UN General Assembly request, the Court held by 14 votes to 1 that the wall and its associated permit/access regime are contrary to international law, that Israeli settlements violate the Fourth Geneva Convention's Article 49(6), and that Israel must cease construction, dismantle built sections, and make reparation. See this dataset's own Wall Advisory Opinion topic entry for the full findings -- the direct precedent for the Court's much broader 2024 opinion.",
+        "citation": "VERIFIED 2026-09-10 -- the 9 July 2004 date and 14-1 vote (Judge Buergenthal dissenting) are corroborated via live search (Wikipedia's Legal Consequences of the Construction of a Wall article, UN press release)."
+      },
+      {
         "event_id": "icj-sa-v-israel-provisional-measures-2024",
         "date": "2024-01-26",
         "action_type": "Sanctioned Political Action",
