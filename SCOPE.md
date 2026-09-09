@@ -3010,3 +3010,47 @@ as graph kind "law"; `build_network_view.py`'s Python build and the harness's li
 `netBuildGraphData()` produce byte-for-byte identical edge sets (337/337). Both Artifacts
 republished, pushed (`c9c4850`), Vercel auto-deployed within ~30 seconds, aliased, and spot-checked
 live via curl for all four new ids.
+
+## Round: 2026-09-10 -- ICJ's 2004 Wall Advisory Opinion added; quote-handling policy fixed retroactively
+
+Nick: "Can we also check the ICJ's 2004 Wall opinion?" Direct follow-on from the previous round --
+the 2024 Advisory Opinion's own entry already referenced this as its narrower 2004 precedent, but
+it had no entry of its own.
+
+**icj-wall-opinion-2004** (topic_type "ICJ Advisory Opinion", extending last round's new type):
+requested via Resolution ES-10/14 (8 December 2003, following Resolution ES-10/13's 27 October 2003
+demand that Israel stop/reverse construction). Delivered 9 July 2004, 14 votes to 1 (Judge
+Buergenthal of the United States the lone dissenter): the wall and its associated permit/access
+regime are contrary to international law -- its route, departing substantially from the Green
+Line, impedes Palestinian self-determination; Israeli settlements violate Fourth Geneva Convention
+Article 49(6) (no transfer of an occupying power's own civilian population into occupied
+territory); Israel must cease construction, dismantle sections already built, repeal related
+legislation, make reparation. All states must not recognize the resulting situation as legal --
+Judge Kooijmans joined Buergenthal in dissenting from this specific point while otherwise
+supporting the majority, a real nuance worth keeping (not every sub-finding carried the same
+14-1 margin).
+
+**resolution-es-10-15** (topic_type "UN Resolution"): the Assembly's 20 July 2004 response, 150-6-
+10 (Israel, the US, Australia, the Marshall Islands, Micronesia and Palau against), demanding
+compliance -- the same endorse-and-demand pattern Resolution ES-10/24 repeated twenty years later
+for the 2024 opinion, with the same lack of practical effect: the wall was never dismantled.
+
+ICJ org's own `action_record` gained a third, chronologically-first entry for the 2004 opinion.
+
+**Standing policy fix, applied retroactively:** Nick gave direct, general instruction this round:
+"wherever I attempt to quote but you find a difference between it and the source material I think
+its safest to either drop the quote or quote the actual material instead." The previous round's
+`icj-advisory-opinion-2024` entry had NOT followed this -- it kept the unverified "unlawful in its
+entirety" phrase visible in the `significance` field, wrapped in a hedge explaining it wasn't
+confirmed verbatim, rather than either dropping it or replacing it with the actual verified
+holding. Fixed now: removed the unverified phrase and its hedge entirely, replaced with the
+Court's actual verified quote ("the State of Israel's continued presence in the Occupied
+Palestinian Territory is unlawful"). **This is now the standing approach for any future quote
+discrepancy across this whole project, not just this entry** -- see the memory file's Standing
+Decisions section.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (222
+nodes, +2); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (340/340). Both Artifacts republished, pushed
+(`7cd7bba`), deployed, aliased, and spot-checked live via curl -- confirmed both new topic_ids
+present and the old unverified phrase gone from the deployed file.
