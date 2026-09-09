@@ -2619,5 +2619,48 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "international-court-of-justice",
+    "name": "International Court of Justice",
+    "hebrew_name": null,
+    "aliases": [
+      "ICJ",
+      "World Court"
+    ],
+    "org_type": "International Body",
+    "founding_date": "1946-04",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [
+        "Permanent Court of International Justice (League of Nations judicial organ, not yet profiled)"
+      ],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "icj-sa-v-israel-provisional-measures-2024",
+        "date": "2024-01-26",
+        "action_type": "Sanctioned Political Action",
+        "title": "First provisional measures order in South Africa v. Israel",
+        "location_affected": "Gaza Strip",
+        "description": "Ruling on South Africa's application (filed 29 December 2023) alleging Israeli conduct in Gaza violated the Genocide Convention, the Court ordered provisional measures requiring Israel to take all measures within its power to prevent genocidal acts against Palestinians in Gaza, ensure its military does not commit genocidal acts, enable the provision of urgently needed humanitarian assistance, and prevent and punish direct and public incitement to commit genocide -- while stopping short of ordering a ceasefire. Two further orders followed (28 March and 24 May 2024) reaffirming and expanding these measures as conditions in Gaza deteriorated. See this dataset's own South Africa v. Israel topic entry for the case's fuller history and current status.",
+        "citation": "VERIFIED 2026-09-10 -- the 26 January 2024 order, its specific measures, and the absence of a ceasefire order are corroborated via live search (Human Rights Watch's contemporaneous coverage, Opinio Juris analysis). The 28 March and 24 May 2024 follow-up orders are corroborated via live search (Diakonia IHL Centre, UN's own unispal documentation)."
+      },
+      {
+        "event_id": "icj-advisory-opinion-2024",
+        "date": "2024-07-19",
+        "action_type": "Sanctioned Political Action",
+        "title": "Issues Advisory Opinion holding Israel's presence in the Occupied Palestinian Territory unlawful",
+        "location_affected": "West Bank, including East Jerusalem; Gaza Strip",
+        "description": "Responding to a December 2022 UN General Assembly request, the Court held by 11 votes to 4 that Israel's continued presence in the Occupied Palestinian Territory is unlawful, and by 12 votes to 3 that the General Assembly and Security Council should consider the modalities required to bring that unlawful presence to an end as rapidly as possible. See this dataset's own Advisory Opinion topic entry for the full findings.",
+        "citation": "VERIFIED 2026-09-10 -- the 19 July 2024 date and the 11-4/12-3 vote breakdowns are corroborated via live search (contemporaneous reporting summarizing the Court's own vote tallies by judge)."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

@@ -285,7 +285,7 @@ context without needing a structurally different article type underneath.
   "name": "string",
   "aliases": ["string (optional) — other names prose actually uses for the same topic"],
   "hebrew_name": "string (optional)",
-  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal | Demographic Group)",
+  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal | Demographic Group | ICJ Advisory Opinion | ICJ Case)",
   "date_or_range": "string (e.g. '1882-1903', '1897', 'N/A')",
   "summary": "string",
   "significance": "string — why this belongs in a land-loss timeline specifically",
@@ -320,3 +320,15 @@ effect (with a real `official_citation`). A bill that failed outright, or passed
 preliminary/first reading and was later frozen or is still pending further readings, belongs
 here instead; if it's later enacted, promote it into `laws.json` and note the supersession in
 both places rather than deleting the topic entry.
+
+`topic_type: "ICJ Advisory Opinion"` and `"ICJ Case"` added 2026-09-10, both grouped into
+`NET_LAW_LIKE_TOPIC_TYPES`/`LAW_LIKE_TOPIC_TYPES` alongside `"UN Resolution"` and `"Legislative
+Proposal"` for the same index/graph-classification reasons (see the earlier "Legislation merge"
+round). Deliberately kept as two separate types rather than folding both under `"UN Resolution"` —
+an advisory opinion (a non-binding legal opinion the General Assembly requested) and a contentious
+case (a binding dispute between named parties seeking a final judgment) are genuinely different
+kinds of ICJ proceeding, and Nick's own prompt for this addition ("perhaps in relation to the
+genocide case brought by South Africa") showed exactly how easily the two get conflated in press
+coverage — worth keeping distinguishable in the data itself, not just explained once in prose.
+`international-court-of-justice` (org_type `"International Body"`, same type as the UN/League of
+Nations/UNGA/UNSC) added alongside as the body issuing/hearing both.

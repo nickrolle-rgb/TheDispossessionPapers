@@ -1255,10 +1255,71 @@
     "date_or_range": "2016-12-23",
     "summary": "Adopted by the UN Security Council on 23 December 2016, 14-0-1, with the outgoing Obama administration abstaining rather than exercising the United States' veto (every other member voted in favour). Declares that Israeli settlement activity in territory occupied since 1967, including East Jerusalem, 'has no legal validity' and constitutes 'a flagrant violation under international law,' citing Israel's obligations as an occupying power under the Fourth Geneva Convention. Condemns, by name, the specific mechanisms this dataset documents throughout -- construction and expansion of settlements, transfer of settlers, confiscation of land, demolition of homes, and displacement of Palestinian civilians -- as measures altering the demographic composition and status of the territory, and demands Israel immediately and completely cease all such activity.",
     "significance": "The most recent major Security Council resolution on settlements at the time of writing, arriving after a nearly four-decade gap since Resolution 465 (1980) -- and one Israel rejected outright rather than complied with: Israel recalled ambassadors from co-sponsoring states, cancelled aid to Senegal, summoned the US and other supporting ambassadors, and later withheld UN dues, with Prime Minister Netanyahu calling it part of the 'swan song of the old world.' President-elect Trump publicly broke with the outgoing administration's abstention before even taking office, tweeting that 'things will be different' after his 20 January inauguration -- a real-time preview of the sharper US-Israel alignment against this category of resolution that followed. Quarterly UN implementation reports in the resolution's aftermath found Israeli settlement construction had increased rather than stopped.",
-    "related_actor_ids": ["barack-obama", "donald-trump"],
+    "related_actor_ids": [
+      "barack-obama",
+      "donald-trump"
+    ],
     "related_org_ids": [
       "united-nations-security-council"
     ],
     "citation": "VERIFIED 2026-09-03 -- the 23 December 2016 adoption date, 14-0-1 vote (US abstention), and the resolution's 'no legal validity'/Fourth Geneva Convention language are corroborated via live search (UN press release SC/12657, Wikipedia's Resolution 2334 article). Israel's ambassador recalls, Senegal aid cancellation, dues withholding, Netanyahu's quoted reaction, and Trump's pre-inauguration tweet are corroborated via live search (Wikipedia's Resolution 2334 article, contemporary reporting); the post-resolution settlement-increase finding is corroborated via live search but not independently cross-checked against the original UN quarterly report this pass."
+  },
+  {
+    "topic_id": "icj-advisory-opinion-2024",
+    "name": "ICJ Advisory Opinion on the Legal Consequences of Israel's Policies and Practices in the Occupied Palestinian Territory",
+    "aliases": [
+      "2024 ICJ Advisory Opinion",
+      "Legal Consequences Advisory Opinion",
+      "ICJ Occupation Advisory Opinion"
+    ],
+    "hebrew_name": null,
+    "topic_type": "ICJ Advisory Opinion",
+    "date_or_range": "2024-07-19",
+    "summary": "Requested by UN General Assembly Resolution 77/247 (30 December 2022), which asked the Court two questions: what are the legal consequences of Israel's ongoing violation of the Palestinian people's right to self-determination, its prolonged occupation, settlement and annexation of territory occupied since 1967 (including measures aimed at altering the demographic composition, character and status of Jerusalem, and related discriminatory legislation and measures), and how do Israel's policies and practices affect the legal status of the occupation, and what are the legal consequences for all states and the UN. Delivered 19 July 2024. By 11 votes to 4, the Court held that Israel's continued presence in the Occupied Palestinian Territory as a whole -- not only the settlements -- is unlawful, because it violates the Palestinian right to self-determination and the prohibition on the acquisition of territory by force. It held that Israel is under an obligation to bring its unlawful presence to an end as rapidly as possible, to cease immediately all new settlement activity, to evacuate all settlers from the Occupied Palestinian Territory, and to make reparation for damage caused to all natural and legal persons concerned. It found Israel's policies and practices -- including near-complete separation between Palestinians and Israeli settlers in the West Bank -- violate Article 3 of the Convention on the Elimination of All Forms of Racial Discrimination, which prohibits racial segregation and apartheid. It further held that all states are under an obligation not to recognize as legal the situation arising from Israel's unlawful presence, and not to render aid or assistance in maintaining it. By 12 votes to 3, the Court held that the General Assembly and Security Council should consider the precise modalities required to bring the unlawful presence to an end as rapidly as possible.",
+    "significance": "Advisory opinions are formally non-binding, but this one carries unusual authority: it is the Court's most comprehensive statement yet on the legality of the occupation as a whole, going well beyond its narrower 2004 advisory opinion on the separation wall. The General Assembly moved quickly to give it political teeth, adopting Resolution ES-10/24 (18 September 2024, 124-14-43 -- also in this dataset) welcoming the opinion and demanding Israel end its unlawful presence within 12 months. That deadline expired 17 September 2025 without Israeli compliance -- Israel instead intensified settlement expansion and annexation-track measures over the following year. Some third states nonetheless began acting on the opinion's non-recognition/non-assistance obligations: Spain banned imports of settlement goods in September 2025, and Ireland and Belgium followed with their own import bans in July 2026. Commonly summarized in press coverage as declaring Israel's presence in the Occupied Palestinian Territory 'unlawful in its entirety' -- a fair characterization of the Court's holding (that the occupation as a whole, not merely the settlements, is unlawful) but not independently confirmed this pass as the Court's own verbatim wording, which live search corroborated instead as 'the State of Israel's continued presence in the Occupied Palestinian Territory is unlawful.'",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "international-court-of-justice",
+      "united-nations-general-assembly",
+      "united-nations-security-council"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the request via Resolution 77/247 (30 December 2022), the 19 July 2024 delivery date, the 11-4 and 12-3 vote breakdowns (with named dissenting judges), the core holdings (unlawful presence, self-determination and acquisition-by-force violations, obligation to cease settlement activity/evacuate settlers/make reparation, CERD Article 3 racial segregation and apartheid finding, non-recognition obligation on third states), and the follow-up Resolution ES-10/24 are all corroborated via live search (UN's own unispal documentation and press release, OHCHR and Amnesty International summaries, Diakonia IHL Centre's opinion summary, UN News). The 17 September 2025 deadline's expiry and Israel's non-compliance, plus Spain/Ireland/Belgium's import-ban responses, are corroborated via live search (Law for Palestine's deadline-passage coverage) but not independently cross-checked against each country's own official gazette this pass. The 'unlawful in its entirety' phrase is flagged above as a widely-used paraphrase rather than a confirmed verbatim quotation -- deliberately not asserted as a direct quote without independently verifying it against the opinion's own operative paragraph text this pass."
+  },
+  {
+    "topic_id": "south-africa-v-israel-icj",
+    "name": "South Africa v. Israel (Application of the Convention on the Prevention and Punishment of the Crime of Genocide)",
+    "aliases": [
+      "South Africa's genocide case against Israel",
+      "South Africa v. Israel",
+      "The Gambia-style genocide case"
+    ],
+    "hebrew_name": null,
+    "topic_type": "ICJ Case",
+    "date_or_range": "2023-12-29 to present",
+    "summary": "A contentious case -- distinct from the Advisory Opinion above, and often confused with it in press coverage -- filed by South Africa on 29 December 2023 under the Genocide Convention's compromissory clause, alleging Israel's conduct in Gaza following the 7 October 2023 Hamas attack (also in this dataset) violates its obligations under the Convention. The Court issued three provisional measures orders in 2024 (26 January, 28 March, 24 May -- see this dataset's own International Court of Justice entry for the first order's specific terms) requiring Israel to take steps to prevent genocidal acts and ensure humanitarian access, without ordering a ceasefire. South Africa filed its Memorial in October 2024; Israel, after multiple extensions, filed its Counter-Memorial in March 2026, raising jurisdictional objections; the Court in May 2026 directed a further round of written pleadings (Reply and Rejoinder). As of this pass the case remains in the written-pleadings phase, with no merits hearing scheduled and no final judgment expected soon. Several states have since filed declarations of intervention under Article 63 of the Court's Statute, including Nicaragua, Colombia, Libya, Mexico, Turkey, Spain, Chile, Ireland, and Belgium.",
+    "significance": "A genuinely separate legal track from the Advisory Opinion, worth keeping distinct: the Advisory Opinion is a non-binding opinion the General Assembly requested on the legality of the occupation and settlements; this is a binding contentious case, brought by one state against another, seeking a final judgment specifically on whether Israel's conduct meets the Genocide Convention's own definition of genocide -- a much narrower and legally harder question than the Advisory Opinion's, turning heavily on whether genocidal intent can be inferred from a pattern of conduct rather than proven directly. The three provisional measures orders are binding immediately (Israel remains bound by all three regardless of the case's ultimate outcome), but provisional measures are not a finding of genocide -- they are a finding that the risk of irreparable harm is plausible enough to warrant interim protection while the case proceeds, a real and frequently-misunderstood distinction in how this case has been reported.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "international-court-of-justice"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 29 December 2023 filing date, the three 2024 provisional measures orders and their dates, the absence of a ceasefire order, South Africa's October 2024 Memorial, Israel's March 2026 Counter-Memorial and jurisdictional objections, and the May 2026 Reply/Rejoinder order are corroborated via live search (South African government DIRCO and Presidency statements, UN's own unispal documentation, Middle East Eye's case-status explainer). The named intervening states are corroborated via live search but not independently cross-checked against the Court's own docket this pass; the list may be incomplete given how frequently new interventions have been filed."
+  },
+  {
+    "topic_id": "resolution-es-10-24",
+    "name": "UN General Assembly Resolution ES-10/24",
+    "aliases": [
+      "Resolution ES-10/24",
+      "A/RES/ES-10/24"
+    ],
+    "hebrew_name": null,
+    "topic_type": "UN Resolution",
+    "date_or_range": "2024-09-18",
+    "summary": "Adopted 18 September 2024 at the General Assembly's 10th Emergency Special Session, 124 in favour, 14 against, 43 abstaining, welcoming the ICJ's 19 July 2024 Advisory Opinion (also in this dataset) and demanding Israel comply with it: withdraw its military forces from the Occupied Palestinian Territory, immediately cease all new settlement activity, evacuate all settlers from occupied land, and dismantle the sections of its separation barrier built inside the West Bank. Demanded that Israel's unlawful presence end 'no later than 12 months from the adoption of the present resolution.'",
+    "significance": "The General Assembly's own political follow-through on a Court opinion that, being advisory, carries no enforcement mechanism of its own -- translating the Court's findings into a concrete, dated demand rather than leaving them as a purely legal statement. The 12-month deadline expired 17 September 2025 without Israeli compliance; settlement expansion and annexation-track measures continued past it rather than stopping. A small number of states began acting on the resolution and opinion's non-recognition obligations independently of Israel's own compliance -- Spain's September 2025 settlement-goods import ban, followed by Ireland and Belgium in July 2026.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "united-nations-general-assembly"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 18 September 2024 adoption date, the 124-14-43 vote tally, the Emergency Special Session format, and the specific demands (military withdrawal, settlement cessation, settler evacuation, barrier dismantlement, 12-month deadline) are corroborated via live search (UN News, UN's own unispal documentation, UN press release GA/12626, Amnesty International). The deadline's 17 September 2025 expiry, continued non-compliance, and the Spain/Ireland/Belgium import-ban responses are corroborated via live search (Law for Palestine) but not independently cross-checked against primary state-level sources this pass."
   }
 ]
