@@ -2947,3 +2947,66 @@ touched). Confirmed live via `getComputedStyle` that the deployed SVG's `touch-a
 `"none"` (was `"auto"`) -- couldn't directly simulate a real multi-touch drag gesture from this
 session to visually confirm the smoother feel, so this one relies on Nick's own device to fully
 confirm, same as the legend/height rounds' phone screenshots did.
+
+## Round: 2026-09-10 -- International Court of Justice added: the 2024 Advisory Opinion and the South Africa v. Israel case
+
+Nick: "Have we looked at ICJ Rulings or Opinions, can we find a source? I just read an Article
+claiming that a 2024 Advisory Opinion (perhaps in relation to the genocide case brought by South
+Africa) determined that all presence in the West Bank Settlements is 'Unlawful in its entirety.'
+There could be a goldmine here. We should at the very least then add listings for the ICJ and this
+Advisory Opinion." A real, previously-untouched gap -- confirmed via real research this is a
+genuine goldmine, and confirmed the Advisory Opinion and the genocide case are two entirely
+separate ICJ proceedings, not one (the article's framing conflated them, understandably -- press
+coverage of both broke within the same 2023-2024 window and both concern Israel/Palestine).
+
+**Two distinct proceedings, kept distinct in the data:**
+- **ICJ Advisory Opinion, 19 July 2024** ("Legal Consequences arising from the Policies and
+  Practices of Israel in the Occupied Palestinian Territory, including East Jerusalem") --
+  requested by UNGA Resolution 77/247 (30 December 2022), non-binding but authoritative. By 11
+  votes to 4: Israel's continued presence in the OPT as a whole (not just the settlements) is
+  unlawful, violating the Palestinian right to self-determination and the prohibition on
+  acquisition of territory by force. Obligation to cease new settlement activity, evacuate all
+  settlers, make reparation. Violates CERD Article 3 (racial segregation and apartheid) via
+  near-complete separation between Palestinians and settlers. By 12 votes to 3: GA/SC should
+  consider modalities to end the unlawful presence "as rapidly as possible." All states obligated
+  not to recognise the situation as legal.
+- **South Africa v. Israel** (filed 29 December 2023, Genocide Convention) -- a binding contentious
+  case between named parties, seeking a final judgment on whether Israel's conduct in Gaza meets
+  the Convention's definition of genocide. Three provisional measures orders in 2024 (26 Jan, 28
+  Mar, 24 May) -- real, binding, but NOT a finding of genocide itself, just a finding that the risk
+  of irreparable harm is plausible enough to warrant interim protection. No ceasefire ordered.
+  Still in the written-pleadings phase as of this pass: South Africa's Memorial (Oct 2024),
+  Israel's Counter-Memorial with jurisdictional objections (March 2026), Reply/Rejoinder ordered
+  (May 2026). No merits hearing scheduled.
+
+**The "unlawful in its entirety" phrase Nick quoted:** a fair paraphrase of the Advisory Opinion's
+substance (the whole occupation, not just settlements, held unlawful) but NOT confirmed this pass
+as the Court's own verbatim wording -- live search corroborated the Court's actual phrasing as "the
+State of Israel's continued presence in the Occupied Palestinian Territory is unlawful." Flagged
+honestly in the data's own citation field rather than asserted as a direct quote, matching this
+project's standing discipline around exact quotations (same care as the em-dash/false-alarm and
+Weitz "chaired" corrections earlier this project).
+
+**Also added: UNGA Resolution ES-10/24 (18 September 2024, 124-14-43)** -- the General Assembly's
+own political follow-through translating the (non-binding, unenforceable-on-its-own) Advisory
+Opinion into a dated demand: end the unlawful presence within 12 months. That deadline expired 17
+September 2025 without compliance -- settlement expansion and annexation-track measures continued
+past it. Real, current-as-of-this-pass follow-on found while researching: Spain banned settlement
+goods imports September 2025; Ireland and Belgium followed with their own bans in July 2026 -- the
+closest thing to third-state follow-through on the opinion's non-recognition obligation found so far.
+
+**Schema**: new org `international-court-of-justice` (org_type "International Body," same type as
+UN/League of Nations/UNGA/UNSC; predecessor noted as the Permanent Court of International Justice,
+not yet profiled). Two new topic_types: "ICJ Advisory Opinion" and "ICJ Case" -- kept as two
+distinct types rather than folded into "UN Resolution" or into each other, precisely because
+they're genuinely different kinds of proceeding and because Nick's own prompt for this round
+demonstrated how easily the two get conflated in press coverage; both added to
+NET_LAW_LIKE_TOPIC_TYPES/LAW_LIKE_TOPIC_TYPES (JS + Python) for the same "Legislation" index
+grouping and graph-classification treatment as UN Resolutions and Legislative Proposals.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (220
+nodes, +4 -- one org, three topics), plus two new checks confirming both new topic_types classify
+as graph kind "law"; `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (337/337). Both Artifacts
+republished, pushed (`c9c4850`), Vercel auto-deployed within ~30 seconds, aliased, and spot-checked
+live via curl for all four new ids.
