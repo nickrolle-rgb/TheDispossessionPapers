@@ -3444,3 +3444,45 @@ nodes, +1); `build_network_view.py`'s Python build and the harness's live `netBu
 produce byte-for-byte identical edge sets (372/372). Both Artifacts republished, pushed
 (`baf343b`), Vercel auto-deployed, aliased, and confirmed live via both curl and direct browser
 verification.
+
+## Round: 2026-09-10 -- Settler home construction financing
+
+Nick: "Can we check settler home construction financing next?" The money side of settlement
+expansion, distinct from land access (JNF transfers, outposts, the Settlement Division, all
+already in this dataset) and land-clearing violence (price tag attacks, grazing land grabs) --
+none of which alone builds housing.
+
+**Amana** -- new org (Settlement Movement, lineage traced to Gush Emunim). Founded 1978 as Gush
+Emunim's development/construction arm, sanctioned by the US Treasury in November 2024 (Executive
+Order 14115) alongside its subsidiary Binyanei Bar Amana for ties to settler violence -- including
+a direct partnership in founding Meitarim Farm, Yinon Levi's outpost already documented in this
+dataset's grazing-land-grabs entry (a real, found cross-link between two separate rounds' research,
+not forced). UK and Canada sanctioned Amana in parallel; like Levi's own case, it was later
+delisted.
+
+**National Priority Areas** (Historical Phenomenon): the formal Israeli government subsidy
+mechanism -- roughly three-quarters of settlements carry this designation, unlocking 20-70%
+subsidies on land development costs, discounted land, mortgage grants, 7-10% income tax cuts, and
+substantial teacher salary/travel/rental benefits, all routed through a policy that never names
+settlements specifically (the same mechanism also covers genuinely peripheral border communities).
+
+**US Tax-Exempt Funding of Israeli Settlements** (Historical Phenomenon): the New York Times' own
+finding of $200 million+ across 40+ American nonprofits over a decade, and Haaretz's separate
+finding of $220 million+ funnelled to West Bank communities in 2009-2013 alone -- both routed
+through ordinary US tax-deductible charitable giving with no settlement-specific oversight.
+November 2023 reporting on specific New York groups (One Israel Fund's drone-funding campaign,
+American Friends of Ateret Cohanim's security-equipment fundraising, the Hebron Fund's surveillance
+campaign) showed the money increasingly going toward settler security equipment specifically.
+Ateret Cohanim's own East Jerusalem property-acquisition activity connects directly to this
+dataset's existing Silwan entry -- another real, found cross-link.
+
+Verified beyond the routine curl check, per standing practice since the Nation-State Law round's
+embed_data.py bug: explicit `node --check`/`new Function()` syntax verification before publishing,
+then live Browser pane navigation confirming zero console errors and reading the rendered DOM
+content directly for both the new Amana org node and the US tax-exempt funding topic node.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (251
+nodes, +3 -- one org, two topics); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (375/375). Both Artifacts
+republished, pushed (`5bcbd6a`), Vercel auto-deployed, aliased, and confirmed live via both curl
+and direct browser verification.
