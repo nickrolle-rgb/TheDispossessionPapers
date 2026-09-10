@@ -3757,3 +3757,35 @@ browser check (zero console errors; deep-linked directly to the new entry and sp
 autolinks via JS -- resolved correctly to Netanyahu, Smotrich, the Civil Administration, UN
 Resolution 67/19, and, via the automatic name index rather than any manual link, to the existing
 East Jerusalem and Barack Obama entries).
+
+## Round: Levy Report and its legal legacy (2026-09-10)
+
+**Levy Report** (Publication): the July 2012 report of the three-member committee Netanyahu
+appointed in January 2012, headed by retired Supreme Court justice Edmond Levy, ostensibly to
+examine the legal status of West Bank outpost construction but whose 89-page findings went far
+beyond that mandate -- concluding Israel's presence in the West Bank does not meet the legal
+definition of military occupation, that the Fourth Geneva Convention's settlement prohibition does
+not apply, and recommending formal regularisation of outposts and a halt to demolition orders.
+Contrasted directly with the 2005 Sasson Report (commissioned by Sharon), which found ~120 outposts
+illegal even under Israeli law. Netanyahu's government never formally adopted the report -- ministers
+who pushed for adoption were rebuffed -- but successive governments implemented much of it
+piecemeal over the following decade rather than adopting or rejecting it outright.
+
+Entry's significance section traces the report's legal legacy directly into this dataset's existing
+2017 Regularization Law entry: the "no occupation" doctrine and the retroactive-legalisation-over-
+demolition logic reappear largely intact in that 2017 law and in the outpost-legalisation waves
+since. Also notes the 2020 Supreme Court ruling struck the 2017 law down on property/equality/
+dignity grounds specifically -- without ever ruling on the occupation question the Levy Report was
+built around, leaving that underlying doctrine untested and available for a future legislative
+attempt. Cross-linked to Netanyahu and the Civil Administration; live verification showed the
+autolinker also picked up Ariel Sharon (already in the dataset) on its own, via the Sasson Report
+contrast, with no manual linking needed.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (259 nodes,
++1; 395 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (395/395); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`accf4f2`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked directly to the new entry, autolinks spot-checked
+via JS).
