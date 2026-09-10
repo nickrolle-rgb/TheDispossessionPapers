@@ -168,7 +168,7 @@ for l in laws:
 # to fold them in with Laws rather than leave them looking like places or people -- done here at
 # the display/graph-classification layer (kind -> "law") rather than a full schema migration, so
 # the entity itself still resolves and routes as a topic underneath.
-LAW_LIKE_TOPIC_TYPES = {"Legislative Proposal", "UN Resolution", "ICJ Advisory Opinion", "ICJ Case"}
+LAW_LIKE_TOPIC_TYPES = {"Legislative Proposal", "UN Resolution", "ICJ Advisory Opinion", "ICJ Case", "ICC Investigation"}
 for t in topics:
     kind = "law" if t.get("topic_type") in LAW_LIKE_TOPIC_TYPES else "topic"
     add_node("topic:" + t["topic_id"], kind, t["name"], {

@@ -285,7 +285,7 @@ context without needing a structurally different article type underneath.
   "name": "string",
   "aliases": ["string (optional) — other names prose actually uses for the same topic"],
   "hebrew_name": "string (optional)",
-  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal | Demographic Group | ICJ Advisory Opinion | ICJ Case)",
+  "topic_type": "string (Geographic Region | Migration Period | Historical Event | Publication | Agreement | Family/Lineage | Political Era | Institution Type | Historical Phenomenon | Unit of Measurement | Armed Conflict | UN Resolution | Legislative Proposal | Demographic Group | ICJ Advisory Opinion | ICJ Case | ICC Investigation)",
   "date_or_range": "string (e.g. '1882-1903', '1897', 'N/A')",
   "summary": "string",
   "significance": "string — why this belongs in a land-loss timeline specifically",
@@ -332,3 +332,16 @@ genocide case brought by South Africa") showed exactly how easily the two get co
 coverage — worth keeping distinguishable in the data itself, not just explained once in prose.
 `international-court-of-justice` (org_type `"International Body"`, same type as the UN/League of
 Nations/UNGA/UNSC) added alongside as the body issuing/hearing both.
+
+`topic_type: "ICC Investigation"` added 2026-09-10 for the International Criminal Court's Situation
+in Palestine (Palestine's Rome Statute accession through the November 2024 Netanyahu/Gallant/Deif
+arrest warrants) -- kept as its own type rather than folded into `"ICJ Case"`, since the ICJ and
+ICC are entirely different institutions with entirely different mandates (the ICJ hears disputes
+between states and gives advisory opinions to UN organs; the ICC prosecutes named individuals for
+international crimes). `international-criminal-court` added as a new `"International Body"` org
+alongside. Both the ICC Investigation and the Gaza Blockade/Mavi Marmara/Global Sumud Flotilla
+entries added the same round trace back to a single user prompt asking about the Rome Statute/ICC
+angle and blockade-running incidents together -- kept as four separate topic entries (one ICC
+Investigation, one Historical Phenomenon for the blockade itself, two Historical Events for the
+2010 raid and the 2025-2026 Sumud campaigns) rather than one omnibus entry, since each is
+independently notable and separately citable.

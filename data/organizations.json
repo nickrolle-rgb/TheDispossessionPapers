@@ -2671,5 +2671,45 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "international-criminal-court",
+    "name": "International Criminal Court",
+    "hebrew_name": null,
+    "aliases": [
+      "ICC"
+    ],
+    "org_type": "International Body",
+    "founding_date": "2002-07-01",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "icc-palestine-investigation-opened-2021",
+        "date": "2021-03-03",
+        "action_type": "Sanctioned Political Action",
+        "title": "Opens a formal investigation into the Situation in Palestine",
+        "location_affected": "West Bank, including East Jerusalem; Gaza Strip",
+        "description": "Following a five-year preliminary examination (opened 16 January 2015, concluded 20 December 2019 with a finding that all Rome Statute criteria for opening an investigation were met) and a 5 February 2021 Pre-Trial Chamber ruling that the Court's territorial jurisdiction extends to Gaza and the West Bank including East Jerusalem, Prosecutor Fatou Bensouda confirmed the opening of a formal investigation covering alleged crimes by the IDF, Israeli authorities, Hamas and Palestinian armed groups since 13 June 2014. See this dataset's own ICC Situation in Palestine topic entry for the fuller history, including the November 2024 arrest warrants.",
+        "citation": "VERIFIED 2026-09-10 -- the 16 January 2015 preliminary examination opening, its 20 December 2019 conclusion, the 5 February 2021 jurisdiction ruling, and the 3 March 2021 investigation opening (with its 13 June 2014 start date and named subjects) are corroborated via live search (the Coalition for the International Criminal Court's own summary, the ICC's own press materials, UN unispal documentation)."
+      },
+      {
+        "event_id": "icc-arrest-warrants-netanyahu-gallant-2024",
+        "date": "2024-11-21",
+        "action_type": "Sanctioned Political Action",
+        "title": "Issues arrest warrants for Netanyahu, Gallant, and Hamas commander Deif",
+        "location_affected": "Gaza Strip",
+        "description": "Pre-Trial Chamber I rejected Israel's jurisdictional challenges and issued arrest warrants for Prime Minister Benjamin Netanyahu and former Defence Minister Yoav Gallant, finding reasonable grounds they co-perpetrated the war crime of starvation as a method of warfare and crimes against humanity (murder, persecution, other inhumane acts) by restricting humanitarian assistance into Gaza, and bear command responsibility for directing attacks against civilians. A parallel warrant issued the same day for Hamas military commander Mohammed Diab Ibrahim al-Masri (Deif) was rendered without effect on 26 February 2025 after the Prosecution confirmed his death in a July 2024 Israeli strike. See this dataset's own ICC Situation in Palestine topic entry for the fuller sequence.",
+        "citation": "VERIFIED 2026-09-10 -- the 21 November 2024 warrants, the specific charges against Netanyahu and Gallant, and the 26 February 2025 termination of proceedings against Deif following confirmation of his death are corroborated via live search (the ICC's own press release, Amnesty International, UN News, Times of Israel)."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

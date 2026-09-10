@@ -1359,5 +1359,82 @@
       "united-nations-general-assembly"
     ],
     "citation": "VERIFIED 2026-09-10 -- the 20 July 2004 adoption date and the 150-6-10 vote tally (with the six opposing states named) are corroborated via live search (ECF's Economic Cooperation Foundation resolution summary); the resolution's Road Map and Fourth Geneva Convention compliance language is corroborated via live search (palquest's historic text republication) but the full resolution text was not independently re-read line-by-line this pass."
+  },
+  {
+    "topic_id": "icc-situation-in-palestine",
+    "name": "ICC Situation in Palestine",
+    "aliases": [
+      "Situation in the State of Palestine",
+      "ICC Palestine investigation",
+      "ICC arrest warrants for Netanyahu and Gallant"
+    ],
+    "hebrew_name": null,
+    "topic_type": "ICC Investigation",
+    "date_or_range": "2015-01-16 to present",
+    "summary": "Palestine acceded to the Rome Statute on 2 January 2015 (effective 1 April 2015), enabled by its 2012 upgrade to UN non-member observer state status (UN General Assembly Resolution 67/19, also in this dataset). The Prosecutor opened a preliminary examination on 16 January 2015, concluding on 20 December 2019 that all Rome Statute criteria for an investigation were met. Israel disputed the Court's jurisdiction on the grounds that Palestine is not a fully sovereign state capable of delegating criminal jurisdiction; Pre-Trial Chamber I rejected that challenge on 5 February 2021, ruling (by majority) that the Court's territorial jurisdiction extends to Gaza and the West Bank, including East Jerusalem. Prosecutor Fatou Bensouda formally opened an investigation on 3 March 2021, covering alleged crimes by the IDF, Israeli authorities, Hamas, and Palestinian armed groups since 13 June 2014. In May 2024, Bensouda's successor, Prosecutor Karim Khan, applied for arrest warrants against Israeli Prime Minister Benjamin Netanyahu, then-Defence Minister Yoav Gallant, and Hamas commander Mohammed Deif. On 21 November 2024, Pre-Trial Chamber I rejected Israel's renewed jurisdictional challenges and issued all three warrants: for Netanyahu and Gallant, on reasonable grounds they co-perpetrated the war crime of starvation as a method of warfare and the crimes against humanity of murder, persecution and other inhumane acts by restricting humanitarian assistance into Gaza, and bear command responsibility for directing attacks against civilians; for Deif, on war crimes and crimes against humanity allegedly committed against Israel and in Gaza. The Deif warrant was rendered without effect on 26 February 2025 after the Prosecution confirmed his death in a July 2024 Israeli strike -- Hamas had not confirmed his death until months later. The warrants against Netanyahu and Gallant remain outstanding.",
+    "significance": "The first time a sitting head of government of a US-allied democracy has faced an active ICC arrest warrant -- a genuinely unprecedented moment for the Court, distinct in kind from the ICJ's advisory opinions and the South Africa v. Israel case (both also in this dataset): the ICC's mandate is to prosecute named individuals for specific crimes, not states for state conduct. All Rome Statute parties are formally obligated to arrest Netanyahu and Gallant if either sets foot on their territory, though compliance has been uneven -- most EU member states and the UK have confirmed their cooperation obligations, while others (including, notably, the United States, which is not a Rome Statute party and has sanctioned ICC officials over the case) have rejected the warrants outright. Whether any state actually executes an arrest remains untested as of this pass, and both men continue to travel internationally.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "international-criminal-court",
+      "hamas"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- Palestine's 2 January 2015 Rome Statute accession and 1 April 2015 effective date, the preliminary examination's opening and conclusion dates, the 5 February 2021 jurisdiction ruling, the 3 March 2021 investigation opening, the May 2024 arrest warrant applications, the 21 November 2024 warrants and their specific findings, and the 26 February 2025 termination of the Deif warrant are all corroborated via live search (the ICC's own press releases and case materials, Chatham House, Amnesty International, UN News, Times of Israel, Just Security's state-reaction mapping). The characterization of this as the first active ICC warrant against a sitting US-allied head of government, and the uneven state cooperation picture, are corroborated via live search but reflect a still-developing, actively contested situation as of this pass rather than a settled historical record."
+  },
+  {
+    "topic_id": "gaza-naval-blockade",
+    "name": "Gaza Blockade",
+    "aliases": [
+      "Israeli blockade of Gaza",
+      "Gaza naval blockade",
+      "siege of Gaza"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "2007-06 to present",
+    "summary": "Israel imposed a land, air and sea closure on the Gaza Strip from June 2007, after Hamas took control of the territory from the Palestinian Authority (also in this dataset). Egypt maintains a parallel closure of its own Gaza border. The naval component was formally declared in January 2009, during the Gaza War (Operation Cast Lead), as a defined maritime exclusion zone Israel's navy enforces against vessels approaching Gaza by sea, including humanitarian and activist convoys. Israel states the blockade's purpose is to prevent weapons and materiel reaching Hamas and other armed groups; the naval blockade specifically was reviewed by the UN-appointed Palmer Committee after the 2010 Mavi Marmara raid (also in this dataset), which found it a legitimate security measure that complied with international law -- a finding the Committee's own report noted did not extend to the legality of the wider land and air closure regime, and which a group of UN independent experts publicly disputed as failing to account for the closure's disproportionate humanitarian impact. Numerous attempts to run the blockade by sea followed over the following decades, most launched by the Free Gaza Movement and its successor coalitions: recurring 'Freedom Flotilla' voyages (2010's Mavi Marmara raid the deadliest), smaller vessels including Handala and Madleen intercepted in 2024, and the large-scale Global Sumud Flotilla campaigns of 2025 and 2026 (also in this dataset). Israel has intercepted or turned back essentially every vessel that has attempted to reach Gaza by sea since the blockade began, without exception.",
+    "significance": "The blockade is the direct backdrop for two of this dataset's other entries -- the Mavi Marmara raid and the Global Sumud Flotilla campaigns -- and for the ICJ's own July 2024 Advisory Opinion, which found Israel's restrictions on movement of goods and people into the Occupied Palestinian Territory, considered alongside settlement expansion and annexation, contribute to an unlawful overall presence. The Palmer Report's narrow finding that the naval blockade specifically complied with international law is frequently cited by supporters of Israeli policy as vindication of the wider closure regime, a reading the report's own authors and the UN human rights experts who reviewed it explicitly rejected -- a real, recurring distinction worth keeping precise rather than flattened either direction.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf",
+      "hamas"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the June 2007 closure's start (following Hamas's takeover) and the January 2009 formal naval blockade declaration are corroborated via live search (the Palmer Report's own dating, cited by ICLQ and OHCHR analysis). The Palmer Committee's finding that the naval blockade complied with international law, and its explicit non-extension to the wider closure regime (plus the UN independent experts' public disagreement), are corroborated via live search (OHCHR press release, Amnesty USA and Gisha's analyses of the report). The Free Gaza Movement/Handala/Madleen references and the blanket interception record are corroborated via live search (Al Jazeera's 'Freedom Flotillas' history explainer) but not independently verified vessel-by-vessel this pass."
+  },
+  {
+    "topic_id": "mavi-marmara-raid-2010",
+    "name": "Gaza Flotilla Raid (Mavi Marmara)",
+    "aliases": [
+      "Mavi Marmara raid",
+      "Gaza flotilla raid",
+      "2010 Gaza flotilla raid"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "2010-05-31",
+    "summary": "On 31 May 2010, Israeli Shayetet 13 naval commandos boarded a six-ship flotilla organised by the Free Gaza Movement and Turkey's IHH in international waters, intending to prevent it reaching Gaza. Aboard the lead Turkish-flagged ship, MV Mavi Marmara, commandos descending from helicopters and speedboats met physical resistance from a group of the roughly 590 passengers, some armed with iron bars and knives; in the ensuing struggle, nine activists were killed (eight Turkish nationals and one Turkish American), and a tenth died in hospital in May 2014 after four years in a coma. Many others, including Israeli commandos, were wounded. Israel towed the flotilla's ships to Ashdod and detained the passengers, later releasing and deporting most of them.",
+    "significance": "The deadliest single confrontation in the blockade's history and, for years, its defining international incident. A UN Human Rights Council fact-finding mission (September 2010) found Israel's conduct disproportionate and amounting to violations of international law, including 'wilful killing'; the separate UN Palmer Committee (2011, also referenced in this dataset's own Gaza Blockade entry) found the naval blockade itself lawful but found Israel's use of force in this specific raid 'excessive and unreasonable.' The raid severely ruptured Israel-Turkey relations for years, and Israel eventually issued a formal apology and compensation agreement with Turkey in 2013 as part of a broader reconciliation process. It remains the reference point every subsequent flotilla attempt, including the Global Sumud Flotilla campaigns of 2025-2026 (also in this dataset), is measured against.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 31 May 2010 date, the six-ship flotilla and Mavi Marmara's role as lead vessel, the ~590 passenger count, the nine deaths (eight Turkish, one Turkish American) plus the tenth death in May 2014, and the UN Human Rights Council fact-finding mission's disproportionality/wilful-killing findings are corroborated via live search (Wikipedia's Gaza flotilla raid article, Al Jazeera's coverage of the tenth death). The Palmer Committee's separate 'excessive and unreasonable' characterization of the force used (distinct from its finding on the blockade's own legality) and the 2013 Israel-Turkey apology/compensation agreement are corroborated via live search but not independently re-read against the Palmer Report's or the 2013 agreement's own primary text this pass."
+  },
+  {
+    "topic_id": "global-sumud-flotilla",
+    "name": "Global Sumud Flotilla",
+    "aliases": [
+      "Sumud Flotilla",
+      "Samud Flotilla"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "2025-08 to present",
+    "summary": "The largest civilian attempt to break the Gaza blockade (also in this dataset) in its history. The first wave, comprising more than 40 vessels carrying roughly 500 participants from over 44 countries, set sail from Mediterranean ports including Barcelona from late August 2025. Activists reported drone strikes and explosions targeting several boats in Tunisian waters in late September 2025, including incendiary devices dropped on the Portuguese-flagged Family and British-flagged Alma, which crews extinguished without injury. On 1-2 October 2025, Israeli naval forces intercepted and boarded most of the fleet roughly 70 nautical miles from Gaza; Israel said it stopped 41 ships and safely brought over 400 people to Ashdod for processing, among them Swedish climate activist Greta Thunberg. Some deported activists later told journalists, including Democracy Now, they had been mistreated in Israeli custody -- accounts described fractures, tasing, and alleged sexual assault -- allegations Israel disputes; most were deported within days, though at least two were held into 2026 pending a foreign ministry investigation before their own deportation in May 2026. A second wave of the campaign departed Barcelona on 12 April 2026 with 58 vessels; Israeli forces intercepted 22 of them on 29 April 2026 roughly 250 nautical miles from Gaza, detaining around 175 people, while roughly 30 vessels regrouped toward the Turkish port of Marmaris. A further Marmaris-launched wave of 54 vessels was again surrounded by Israeli warships around 250 nautical miles from Gaza on 18 May 2026. As of this pass, no vessel from either wave has reached Gaza, and organisers have stated the campaign will continue.",
+    "significance": "A direct successor to the 2010 Mavi Marmara raid (also in this dataset) in method and intent, but conducted at a much larger scale and, so far, without confirmed fatalities -- a difference organisers and Israel both attribute, for opposite reasons, to lessons learned from 2010. Israel characterises each interception as lawful enforcement of a blockade the Palmer Report found legal; flotilla organisers and several governments (Turkey called the initial interception 'an act of terror'; later interceptions were called 'an act of piracy' by critics) dispute that characterisation given the vessels' distance from Gaza (up to 250 nautical miles on the later interceptions, far beyond any conventional territorial-waters or even contiguous-zone boundary) and their stated humanitarian cargo and intent. The mistreatment allegations from deported 2025 activists, if substantiated, would be a significant addition to the documented-conduct record this dataset otherwise draws from IDF/blockade enforcement actions -- flagged here as reported allegations, not established fact, pending independent verification beyond activist and advocacy-press accounts.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 2025 wave's scale (40+ vessels, ~500 participants, 44+ countries), the September 2025 drone/incendiary incidents, the 1-2 October 2025 interception (41 ships, 400+ people, Thunberg among them), and the 2026 second wave's 12 April departure, 29 April interception (22 of 58 vessels, ~175 detained), Marmaris regrouping, and 18 May 2026 further interception (~250 nautical miles from Gaza) are all corroborated via live search (ABC News, CNN, NPR, Al Jazeera, Times of Israel, Jerusalem Post). The specific mistreatment allegations (fractures, tasing, alleged sexual assault) are corroborated via live search to Democracy Now's reporting on deported activists' own accounts, which this dataset treats as reported allegations rather than independently verified fact, consistent with how this project handles other serious, disputed claims of state conduct."
   }
 ]
