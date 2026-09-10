@@ -3722,3 +3722,38 @@ byte-for-byte identical edge sets (390/390); the standalone prototype's own dedi
 confirms its autolinking still works. Both Artifacts republished, pushed (`14cb420`), Vercel
 auto-deployed, aliased, and confirmed live in an actual browser (zero console errors, rendered
 content spot-checked directly via JS and confirmed free of the "in this dataset" pattern).
+
+## Round: E1 settlement plan (2026-09-10)
+
+**E1 Settlement Plan** (Geographic Region): a single comprehensive entry covering the 11.6 sq km
+planning area between Ma'ale Adumim and East Jerusalem whose build-out would sever East Jerusalem
+from the rest of the West Bank and cut the West Bank's only north-south route -- the mechanism the
+UN Secretary-General has called an "existential threat" to a contiguous Palestinian state. Covers
+the full arc: 1990s origin and 1999 master plan; the on-and-off freeze cycle under US/European
+pressure; the 29 November 2012 episode, where Netanyahu's government advanced E1 the day after the
+UN General Assembly admitted Palestine as a non-member observer state (this dataset's own UN
+Resolution 67/19) and then shelved it again under French/British ambassador-withdrawal threats and
+Obama-administration pressure; Smotrich's 14 August 2025 "buries the idea [of a Palestinian state]"
+announcement and the Higher Planning Council's 20 August 2025 approval of roughly 3,400 units,
+which drew condemnation from 20+ Western governments plus the European Commission and separately
+from eight Arab/Islamic states, while the US declined to directly condemn it; and the August 2026
+tender for the first 1,234 of the approved units, bids due 19 October 2026, construction not yet
+begun as of this pass. Cross-linked to Benjamin Netanyahu, Bezalel Smotrich, the Civil
+Administration, and UN Resolution 67/19 -- the 2012 episode is itself a case study in this
+dataset's recurring pattern of settlement announcements timed as retaliation for Palestinian
+diplomatic gains.
+
+No dataset had any prior mention of E1 or Ma'ale Adumim, so this was a clean addition with no
+existing cross-links to reconcile. Zero occurrences of the "(also/already in this dataset)" pattern
+introduced or found in a pre-write check of the draft.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (258 nodes,
++1; 393 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (393/393); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`9e879ba`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked directly to the new entry and spot-checked its
+autolinks via JS -- resolved correctly to Netanyahu, Smotrich, the Civil Administration, UN
+Resolution 67/19, and, via the automatic name index rather than any manual link, to the existing
+East Jerusalem and Barack Obama entries).
