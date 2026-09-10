@@ -3687,3 +3687,38 @@ Both Artifacts republished twice (main round, then the cleanup follow-up), pushe
 `769eaf2`), Vercel auto-deployed both times, aliased, and confirmed live in an actual browser after
 the final push -- zero console errors, all three new entries' rendered content spot-checked directly
 via JS and confirmed free of the "(also/already in this dataset)" pattern.
+
+## Round: 2026-09-10 -- Administrative detention as its own entry
+
+Nick: "Can we check administrative detention and its use next?" The existing
+`administrative-detention-israelis-limit-bill-2024` entry (added weeks earlier) only covered the
+2024 bill narrowing the practice for Israeli citizens specifically -- the underlying mechanism
+itself, in continuous use against Palestinians since 1967, had never been documented on its own.
+
+**Administrative Detention** (Historical Phenomenon): Military Order 1651's Article 285 (a 2010
+consolidation of earlier military legislation) lets a military commander detain someone on
+"reasonable grounds to presume" security requires it, based on a classified file neither the
+detainee nor their lawyer may see, in renewable six-month orders with no formal cap -- detention
+without charge, trial, or disclosed evidence that can run for years. Current scale: 3,329 Palestinians
+held in administrative detention at the end of December 2025; roughly 10,000 total administrative
+detention orders (new and renewed, including some against children and women) issued since 7
+October 2023; the wider Palestinian detainee population now exceeding 21,000 against a stated
+14,500 capacity. Khader Adnan's case anchors the entry as a real, specific human cost: arrested for
+the twelfth time in February 2023, he died on 2 May 2023 after an 86-day hunger strike -- his
+fourth hunger strike specifically against administrative detention, and at least the seventh
+Palestinian detainee to die on hunger strike in an Israeli prison since 1970. Cross-linked to the
+existing dual legal system and 2024 limit-bill entries as the direct mechanism underlying both.
+
+**Applied this round's own lesson correctly this time**: caught and removed two
+"(also/already in this dataset)" slips in the entry's own draft text before it was ever written to
+the data files, rather than discovering them afterward during verification (as happened twice in
+the immediately preceding round). A full dataset-wide survey both before and after this round's
+change confirms zero occurrences anywhere in the four content files.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (257 nodes,
++1); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()` produce
+byte-for-byte identical edge sets (390/390); the standalone prototype's own dedicated harness
+confirms its autolinking still works. Both Artifacts republished, pushed (`14cb420`), Vercel
+auto-deployed, aliased, and confirmed live in an actual browser (zero console errors, rendered
+content spot-checked directly via JS and confirmed free of the "in this dataset" pattern).
