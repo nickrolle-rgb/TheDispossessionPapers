@@ -3153,3 +3153,42 @@ nodes, +5 -- one org, four topics); `build_network_view.py`'s Python build and t
 `netBuildGraphData()` produce byte-for-byte identical edge sets (352/352). Both Artifacts
 republished, pushed (`872aafb`), Vercel auto-deployed, aliased, and spot-checked live via curl for
 all five new ids.
+
+## Round: 2026-09-10 -- West Bank checkpoints, movement restrictions, and the Seam Zone
+
+Nick: "Can we check the West Bank checkpoints and movement restrictions too?" A fourth
+international/humanitarian-law-adjacent thread the same day, but this one ground-level rather than
+institutional -- the practical daily machinery connecting the settlement/occupation entries already
+in this dataset to how Palestinian civilian life is actually lived under it.
+
+**Israeli Civil Administration** -- new org (Government Office, matching the Custodian of Absentee
+Property precedent). Established November 1981 under Military Order No. 947, replacing the
+Military Governorate (dissolved 1982), driven by Defence Minister Ariel Sharon's reorganisation --
+already-profiled Sharon added to `notable_members`, a real cross-link found while researching
+rather than forced. Subordinate to COGAT (Defence Ministry); administers the permit regime central
+to both new topics below.
+
+**West Bank Checkpoints and Movement Restrictions** (Historical Phenomenon): Jeff Halper's "matrix
+of control" term (coined ~2000); the pre-Oslo-to-Second-Intifada intensification, especially
+Operation Defensive Shield (29 March-10 May 2002, cross-referencing the existing Wall Advisory
+Opinion entry, since barrier construction began the same year); OCHA's most current count
+(December 2025: 925 movement obstacles restricting 3.4 million Palestinians -- 89 permanently
+staffed checkpoints, 218 partial, 232 road gates, 114 linear closures, 167 earthmounds, 105
+roadblocks -- 43% above the 20-year average); H2 Hebron's outsized concentration (34 of 89
+permanent checkpoints in one small area); World Bank/UNCTAD economic findings (23% of West Bank
+GDP available from lifting internal barriers and Area C access alone; a 78% increase in trip
+durations near Nablus since 7 October 2023).
+
+**Seam Zone** (Geographic Region): the ~74%-of-barrier-enclosed-land strip (of the roughly 85% of
+the barrier that runs inside the West Bank rather than the Green Line) placed under a distinct
+Civil Administration permit regime -- permits required even for Palestinian farmers to reach their
+own land, ~25% historical rejection rate documented by B'Tselem, free entry for Israeli citizens
+and Law-of-Return-eligible non-Israeli Jews, and B'Tselem's "creeping dispossession"
+characterisation of the regime's practical effect -- explicitly framed as a slower-motion variant
+of the explicit-expropriation land-loss pattern this dataset otherwise documents.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (235
+nodes, +3 -- one org, two topics); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (356/356). Both Artifacts
+republished, pushed (`082ffc0`), Vercel auto-deployed, aliased, and spot-checked live via curl for
+all three new ids.
