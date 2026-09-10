@@ -3950,3 +3950,42 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`0f7404e`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to both the new entry and the enriched Kaminitz entry, autolinks
 spot-checked via JS -- East Jerusalem and Silwan both autolinked correctly with no manual wiring).
+
+## Round: Jerusalem Law and its international rejection (2026-09-11)
+
+Both halves of this request already existed as full entries -- `jerusalem-basic-law-1980` in
+laws.json and `resolution-478` in topics.json, cross-linked to each other since an earlier round.
+Checking them meant finding what had gone stale rather than re-covering the 1980 story: Resolution
+478's own significance section asserted "no UN member state recognises [the annexation]... to this
+day," a claim accurate for formal sovereignty recognition but increasingly out of step with the
+embassy-relocation wave underway since 2017.
+
+**Resolution 478 enriched** with the full erosion timeline: Trump's 6 December 2017 recognition of
+Jerusalem as Israel's capital (explicitly not taking a position on the city's specific boundaries or
+sovereignty -- already documented in this dataset's own Donald Trump actor entry) and the 14 May
+2018 US Embassy relocation; Guatemala two days later; Paraguay's own opening on 21 May 2018 followed
+by a reversal back to Tel Aviv roughly sixteen weeks later under a new president (with Israel
+retaliating by closing its own embassy in Asuncion); Kosovo (March 2021); Papua New Guinea
+(September 2023); Paraguay's second reopening in Jerusalem (December 2024, its first return since 7
+October 2023); Fiji (September 2025); and Nauru opening its first-ever Israel embassy directly in
+Jerusalem on 7 September 2026, with the Democratic Republic of Congo announcing its own intention to
+follow the same month and Argentina and the Czech Republic separately signalling similar plans.
+
+**Corrected rather than left standing**: the old absolute claim was replaced, not just supplemented
+-- the entry now says explicitly that none of this constitutes the specific East Jerusalem
+sovereignty recognition Resolution 478 addressed (the US recognition itself was deliberately silent
+on boundaries/sovereignty), and that most UN member states still keep their embassies in Tel Aviv,
+while being honest that the embassy-withdrawal norm the resolution produced has been steadily
+eroding rather than holding firm as an unbroken 46-year consensus.
+
+Donald Trump added to `resolution-478`'s `related_actor_ids`, since the entry now substantively
+discusses his role.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (261 nodes
+unchanged; 400 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (400/400); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`0585d75`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to the entry, Donald Trump and East Jerusalem both autolinked
+correctly with no manual wiring).
