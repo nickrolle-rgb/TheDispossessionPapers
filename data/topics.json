@@ -1654,5 +1654,59 @@
       "idf"
     ],
     "citation": "VERIFIED 2026-09-10 -- the term's origin and 2008 emergence, the Yitzhar-yeshiva network characterisation, the 2013 Nationalistically Motivated Crimes Unit and its later-documented ineffectiveness, and the tactics described are corroborated via live search (New Israel Fund, Truthout, International Crisis Group's settler-violence report, Al Jazeera's August 2026 explainer). The Yesh Din 2005-2025 statistics (93.6% no-indictment rate, ~3% conviction rate, 64%/20% closure-reason breakdown) are corroborated via live search directly to Yesh Din's own published data sheet and Times of Israel's coverage of it."
+  },
+  {
+    "topic_id": "west-bank-firing-zones",
+    "name": "Israeli Firing Zones in the West Bank",
+    "aliases": [
+      "firing zones",
+      "closed military zones West Bank"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1967 to present",
+    "summary": "Since 1967, Israel's military has declared roughly 18-20% of the West Bank -- nearly 30% of Area C (Oslo II's designation, also in this dataset) -- as 'firing zones': closed military areas where civilian presence or construction is forbidden by military order without special permission, ostensibly reserved for army training. Only around 20% of designated firing-zone land is actually used for training at any given time: the rest sits mostly inactive, while functioning to block Palestinian construction, agriculture and habitation across a far larger area than the military uses. Despite the restrictions, more than 5,000 Palestinians across some 38 longstanding communities continue to live inside firing zones, most predating the closures by decades, placing them under standing threat of eviction and demolition. This dataset's own Emergency Land Requisition Law (1949) and West Bank Checkpoints and Movement Restrictions/Administrative Home Demolitions entries document related but distinct mechanisms; firing zones are the specifically military-order-based version of the same underlying pattern -- land access restricted or removed on security grounds, with habitation and construction the practical casualties.",
+    "significance": "Firing zones function as a large-scale, standing land reserve: because the underlying military order can be invoked at any time regardless of whether training is actually occurring, communities living inside a firing zone exist under permanent legal jeopardy even during years of complete inactivity -- exactly the dynamic that produced Masafer Yatta's 20-plus-year legal battle (also in this dataset). The gap between the roughly 20% of firing-zone land actually used for training and the 100% subject to the closure order is, on its own, among the more concrete illustrations of land expropriation for stated military necessity serving a broader territorial-control function.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the roughly 18-20% of the West Bank/30% of Area C figure, the ~20%-actually-used-for-training finding, and the 5,000+ residents across 38 communities living inside firing zones are corroborated via live search (Wikipedia's Israeli firing zones in the West Bank article, Middle East Monitor's 'Sealed Off and Forgotten' report)."
+  },
+  {
+    "topic_id": "masafer-yatta",
+    "name": "Masafer Yatta",
+    "aliases": [
+      "Firing Zone 918",
+      "South Hebron Hills firing zone case"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Geographic Region",
+    "date_or_range": "1980s to present",
+    "summary": "A cluster of Palestinian herding and farming villages in the South Hebron Hills, part of which Israeli authorities designated 'Firing Zone 918' -- a closed military training zone (also referenced in this dataset's own West Bank Firing Zones entry) -- in the 1980s. In 1999, the Israeli military expelled the roughly 700 residents then living there on the grounds they were illegally present in a firing zone; the families petitioned Israel's Supreme Court the same year, beginning what became a 22-year legal battle, during which an interim injunction let residents return and continue farming while the case proceeded. On 4 May 2022, the Supreme Court rejected the families' petitions and ruled Israel could proceed with the expulsion of over 1,000 Palestinians, including roughly 500 children -- the largest single act of forced displacement Israel has carried out in the West Bank since the 1967 occupation began, clearing the way for demolition of close to 900 structures including homes, livestock pens, schools, clinics and mosques. Demolitions, military training exercises and movement restrictions in the area intensified in the ruling's aftermath rather than concluding it: dozens of structures in villages including Khirbet al-Fakhit and Mirkez were demolished multiple times within a year, in some cases for the third time, and new demolition orders followed for further villages. As of the most recent reporting available this pass, the mass expulsion itself has not been fully carried out, and residents remain despite the escalated campaign against them.",
+    "significance": "The Israeli Supreme Court's own approval of the expulsion is precisely what human rights advocates highlight as the case's significance: unlike a punitive demolition or an outpost dispute where legality is at least contested, Israel's highest court explicitly sanctioned this displacement, removing judicial review as a check on it -- a group of legal scholars and rights organisations have separately called on the ICC (already in this dataset via the Situation in Palestine entry) to examine whether the expulsion constitutes a war crime under the Rome Statute's prohibition on forcible transfer of a protected population. The scale (the largest single forced displacement since 1967) and the aftermath (demolitions accelerating rather than concluding after the 'final' ruling) make Masafer Yatta the clearest single case study in this dataset for how the firing-zone mechanism actually operates on the ground over multiple decades.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf",
+      "international-criminal-court"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 1980s Firing Zone 918 designation, the 1999 expulsion of ~700 residents and the resulting Supreme Court petition, the 4 May 2022 ruling (1,000+ Palestinians including ~500 children, ~900 structures affected), the intensified post-ruling demolition campaign in specific villages (Khirbet al-Fakhit, Mirkez, and new orders for Khirbet at-Tabban and Khallet Athaba), and the ICC referral calls are corroborated via live search (IMEU's expert Q&A, JTA's 22-year explainer, OCHA's June 2022 fact sheet, Middle East Eye's coverage of both the ruling's aftermath and the ICC referral calls, The Nation)."
+  },
+  {
+    "topic_id": "hilltop-girls",
+    "name": "Hilltop Girls",
+    "aliases": [
+      "Bnot HaGvaot"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "2006 to present",
+    "summary": "Young Israeli women linked to the Hilltop Youth movement (which emerged around 1998 after then-Defence Minister Ariel Sharon, already profiled in this dataset, urged settler youths to seize West Bank hilltops) who establish family communities at West Bank outposts (also in this dataset), using a deliberately different public strategy from the movement's earlier, more confrontational image: rather than foregrounding clashes with Palestinians or security forces, the Hilltop Girls present an image of ordinary domestic life -- raising children, cooking, homemaking -- amplified through social media accounts that publish promotional content aimed at normalising outposts still formally unauthorised under Israeli law. The Maoz Esther outpost northeast of Ramallah, begun as a small 2006 encampment near the Kochav Hashahar settlement, is considered the phenomenon's most prominent example. Despite the domestic public presentation, individuals identifying as Hilltop Girls have also been directly implicated in incidents against Palestinians: in October 2025, videos circulated showing settlers identifying themselves by the term picking olives from Palestinian-owned land in the Jabal Banyas area near Nahalin, west of Bethlehem.",
+    "significance": "A distinct tactic within the broader settlement-outposts and price tag attacks phenomena already in this dataset: where price tag attacks pursue territorial control through open confrontation, the Hilltop Girls strategy pursues the same underlying goal -- normalising and entrenching unauthorised outposts -- through a deliberately soft, image-conscious public presentation intended to make eventual legalisation politically easier rather than harder. The approach reflects an explicit, shared ideological commitment among participants to a 'Greater Israel' extending beyond Israel's current borders, the same territorial-maximalist current this dataset traces from Revisionist Zionism and Betar (also in this dataset) through Gush Emunim to the present settlement movement.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "gush-emunim"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the movement's description, its 1998 Hilltop Youth origins and Sharon's role in urging settler youths to seize hilltops, the domestic-imagery/social-media strategy, the Maoz Esther outpost's 2006 founding and prominence, the shared 'Greater Israel' ideological framing, and the October 2025 Jabal Banyas olive-picking incident are corroborated via live search (Al Jazeera's September 2026 'Who are the Hilltop Girls' explainer, Outlook India, Palestine Uncensored)."
   }
 ]
