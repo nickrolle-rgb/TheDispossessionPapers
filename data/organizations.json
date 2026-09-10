@@ -2460,8 +2460,8 @@
     },
     "notable_members": [
       "Ahmad Shuqayri (founding Chairman, 1964-67)",
-      "Yasser Arafat (Chairman, 1969-2004)",
-      "Mahmoud Abbas (Chairman, 2004-present)",
+      "yasser-arafat",
+      "mahmoud-abbas",
       "marwan-barghouti"
     ],
     "action_record": [
@@ -2538,8 +2538,8 @@
       "current_knesset_party_id": null
     },
     "notable_members": [
-      "Yasser Arafat (President, 1994-2004)",
-      "Mahmoud Abbas (President, 2005-present)"
+      "yasser-arafat",
+      "mahmoud-abbas"
     ],
     "action_record": [
       {
@@ -2884,8 +2884,8 @@
       "current_knesset_party_id": null
     },
     "notable_members": [
-      "Yasser Arafat (co-founder and leader, 1959-2004, not yet profiled)",
-      "Mahmoud Abbas (leader since 2004, not yet profiled)",
+      "yasser-arafat",
+      "mahmoud-abbas",
       "marwan-barghouti"
     ],
     "action_record": [
