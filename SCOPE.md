@@ -3820,3 +3820,41 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 republished, pushed (`065322c`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors; deep-linked directly to the entry, autolinks spot-checked via
 JS).
+
+## Round: Kaminitz Law's High Court challenges (2026-09-10)
+
+**Kaminitz Law** (`kaminitz-law-2017`, existing entry, enriched a third time): adds the
+judicial-review question specifically. Documents the structural removal built into Amendment 116
+itself -- before the law, demolitions required a court order and owners could contest it; the
+amendment replaced that with direct administrative demolition/stop-work powers, capped judicial
+stays of a demolition order at one year, and barred judicial discretion to stay one at all where
+the construction violated zoning. Documents the concrete case study of someone challenging that
+removal at the HCJ: Qahra Jabarin, an Umm al-Fahm resident whose home on privately-owned
+agricultural land received a demolition order, petitioned the High Court in March 2020 (after the
+Hadera Magistrate's Court rejected her own stay request that January), arguing the one-year cap and
+zoning-violation carve-out violate the constitutional right to judicial review, separation of
+powers, and judicial independence.
+
+Extensive live search (10+ queries across English and Hebrew, plus direct fetches of Adalah, Ir
+Amim, B'Tselem, Bimkom, Middle East Eye, Calcalist, and both Hebrew Wikipedia and Hamichlol) did not
+turn up a published ruling on the Jabarin petition, or any other HCJ decision striking down or
+narrowing Kaminitz's judicial-review provisions. Rather than assume or imply an outcome, the entry
+says so explicitly and draws the real, well-supported contrast instead: the sister 2017
+Regularization Law for Judea and Samaria (also in this dataset) WAS struck down by the Supreme Court
+in June 2020, but nothing found in reporting shows the same fate for Kaminitz -- the check that
+materialised for this law came through the political/administrative track already documented in the
+entry (the Attorney General's November 2020 enforcement change), not a court ruling. Flagging an
+unresolved question honestly, rather than filling the gap with an invented or assumed outcome, is
+itself the correct application of this project's "extraction not invention" discipline.
+
+No new autolinked entities this round -- Jabarin and Umm al-Fahm aren't in the dataset elsewhere,
+so no new edges were created; node/edge counts are unchanged from the prior Kaminitz round.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (259 nodes,
+396 edges, both unchanged); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (396/396); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`9dfd8fd`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked directly to the entry and spot-checked the new
+prose renders correctly with no encoding issues).
