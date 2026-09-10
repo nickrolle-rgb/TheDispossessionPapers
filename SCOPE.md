@@ -3403,3 +3403,44 @@ confirmed zero console errors, deep-linked directly to the law's own node
 (`#/network/law/nation-state-basic-law-2018`), and read the rendered info panel's own DOM content
 directly via JS to confirm the enriched, uncorrupted summary text renders correctly in a live
 browser context, not just present in the raw bytes.
+
+## Round: 2026-09-10 -- JNF land ownership practices and afforestation over village sites
+
+Nick: "Can we check the Jewish National Fund's land ownership practices next?" The existing JNF
+entry (added weeks earlier) had only its 1901 founding as a single action_record entry -- nothing
+on how it actually came to hold land, how that land is legally structured and administered today,
+or the practice's most-documented physical consequence. Enriched the existing org rather than
+duplicating, plus one genuinely distinct new topic.
+
+**Enriched JNF's `action_record`** (1 -> 4 entries): the 1949-1953 transfer of ~2 million dunams of
+state land to JNF (substantially drawn from absentee/refugee property already tracked via this
+dataset's Absentees' Property Law and Land Acquisition Law entries) -- ~78% of JNF's current
+holding of just over 2.5 million dunams, roughly 13% of Israel's total land area; the 1960 Basic
+Law: Israel Lands and companion JNF-State Covenant, which folded JNF land into a jointly-managed
+"Israel Lands" category administered by the newly-created Israel Land Administration while JNF
+retained formal ownership on paper, in exchange for 10 of 22 permanent seats on the Israel Land
+Council; and Qaadan v. Israel Land Administration (March 2000), the Supreme Court ruling against
+exclusionary land allocation that struck at the same logic underlying JNF's own "lease to Jews
+only" practice, plus the government's 2002 attempt (later abandoned under pressure) to legislate a
+specific carve-out shielding JNF-administered land from the ruling's reach.
+
+**New topic**: `jnf-afforestation-village-sites` (Historical Phenomenon) -- at least 46 JNF forests
+(over two-thirds of all JNF forests) found on the ruins of Palestinian villages depopulated in 1948
+and 1967, with Canada Park (funded by JNF Canada over the razed villages of Imwas, Yalu and Beit
+Nuba) as the clearest single example. Framed explicitly as a durable, physical complement to the
+legal/administrative mechanisms in the enriched JNF entry: a forest is harder to survey, identify,
+or reclaim than an open or ruined site, making afforestation a distinctive way of forestalling
+future return or restitution claims.
+
+**Given last round's embed_data.py bug, verified more carefully than the routine curl check this
+time**: ran an explicit `node --check`-equivalent (`new Function()`) parse of the extracted script
+before publishing, then after deploying, navigated the actual Browser pane to the live site,
+confirmed zero console errors, and read the rendered `netInfoPanel` DOM content directly via JS for
+both the enriched JNF org node (confirming all four action_record entries render in order) and the
+new afforestation topic node.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (248
+nodes, +1); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (372/372). Both Artifacts republished, pushed
+(`baf343b`), Vercel auto-deployed, aliased, and confirmed live via both curl and direct browser
+verification.
