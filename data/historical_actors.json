@@ -1369,7 +1369,7 @@
         "date": "2016-12-23",
         "action_type": "Executive Action",
         "location_affected": "West Bank, including East Jerusalem",
-        "impact_description": "The Obama administration abstained rather than vetoed on UN Security Council Resolution 2334 (already in this dataset), allowing it to pass 14-0-1 -- declaring Israeli settlement activity in territory occupied since 1967 'a flagrant violation under international law.' Every prior US administration since 1967 had used or threatened its Security Council veto to block or soften equivalent settlements resolutions; the abstention broke that pattern in the final weeks of Obama's presidency and drew a public break from President-elect Trump before he had even taken office.",
+        "impact_description": "The Obama administration abstained rather than vetoed on UN Security Council Resolution 2334, allowing it to pass 14-0-1 -- declaring Israeli settlement activity in territory occupied since 1967 'a flagrant violation under international law.' Every prior US administration since 1967 had used or threatened its Security Council veto to block or soften equivalent settlements resolutions; the abstention broke that pattern in the final weeks of Obama's presidency and drew a public break from President-elect Trump before he had even taken office.",
         "primary_source_citation": "VERIFIED 2026-09-03 -- the 23 December 2016 abstention and 14-0-1 vote are corroborated via live search (Brookings' contemporaneous analysis, the Times of Israel's coverage), consistent with this dataset's own already-verified Resolution 2334 topic entry."
       }
     ],
@@ -1400,7 +1400,7 @@
         "date": "2019-03-25",
         "action_type": "Executive Action",
         "location_affected": "Golan Heights",
-        "impact_description": "Signed a proclamation formally recognising Israeli sovereignty over the Golan Heights, territory captured from Syria in 1967 and annexed by Israel in 1981 (the Golan Heights Law, already in this dataset) -- a move no other government followed and one the UN Security Council had already declared 'null and void' in Resolution 497 (1981, also in this dataset).",
+        "impact_description": "Signed a proclamation formally recognising Israeli sovereignty over the Golan Heights, territory captured from Syria in 1967 and annexed by Israel in 1981 under the Golan Heights Law -- a move no other government followed and one the UN Security Council had already declared 'null and void' in Resolution 497 (1981).",
         "primary_source_citation": "VERIFIED 2026-09-03 -- the 25 March 2019 signing and its Golan Heights sovereignty recognition are corroborated via live search (Jewish Virtual Library, contemporary reporting), consistent with this dataset's own already-verified Golan Heights Law entry."
       },
       {
@@ -1439,14 +1439,14 @@
         "date": "2002-04-15",
         "action_type": "Policy Lobbying",
         "location_affected": "West Bank",
-        "impact_description": "Arrested by Israeli forces in Ramallah during Operation Defensive Shield (already in this dataset), on allegations of directing Al-Aqsa Martyrs' Brigades attacks on Israelis as head of Fatah's Tanzim organisation in the West Bank. Tried at Tel Aviv District Court, where he declined to mount a formal defence on the grounds that he did not recognise the court's authority to try him as an occupying power's civilian court. Convicted in 2004 of murder in connection with several attacks and sentenced to five life terms plus 40 years; acquitted of a number of other charged attacks in the same verdict.",
+        "impact_description": "Arrested by Israeli forces in Ramallah during Operation Defensive Shield, on allegations of directing Al-Aqsa Martyrs' Brigades attacks on Israelis as head of Fatah's Tanzim organisation in the West Bank. Tried at Tel Aviv District Court, where he declined to mount a formal defence on the grounds that he did not recognise the court's authority to try him as an occupying power's civilian court. Convicted in 2004 of murder in connection with several attacks and sentenced to five life terms plus 40 years; acquitted of a number of other charged attacks in the same verdict.",
         "primary_source_citation": "VERIFIED 2026-09-10 -- the 2002 arrest during Operation Defensive Shield, the Tel Aviv District Court trial and Barghouti's refusal to mount a formal defence on jurisdictional grounds, and the 2004 conviction/sentencing (five life terms plus 40 years, with acquittals on other counts) are corroborated via live search (Britannica's Marwan Barghouti biography, CBC News, Jamestown Foundation analysis)."
       },
       {
         "date": "2023-10 to 2025-10",
         "action_type": "Policy Lobbying",
         "location_affected": "Gaza Strip; West Bank; Israel",
-        "impact_description": "Named at the top of Hamas's list of Palestinian prisoners sought for release in hostage-exchange negotiations following the 7 October 2023 attack (already in this dataset). Israel has consistently refused to include him in any exchange -- when hundreds of Palestinian prisoners were released as part of the ceasefire deal implementing Donald Trump's Gaza peace plan (already in this dataset) in October 2025, Barghouti was conspicuously excluded, a point Israeli officials have described as a red line given his standing as, by most polling, the most popular potential Palestinian presidential candidate.",
+        "impact_description": "Named at the top of Hamas's list of Palestinian prisoners sought for release in hostage-exchange negotiations following the 7 October 2023 attack. Israel has consistently refused to include him in any exchange -- when hundreds of Palestinian prisoners were released as part of the ceasefire deal implementing Donald Trump's Gaza peace plan in October 2025, Barghouti was conspicuously excluded, a point Israeli officials have described as a red line given his standing as, by most polling, the most popular potential Palestinian presidential candidate.",
         "primary_source_citation": "VERIFIED 2026-09-10 -- Barghouti topping Hamas's prisoner list, Israel's characterisation of his release as a red line, and his exclusion from the October 2025 exchange are corroborated via live search (Bloomberg, CNN, CBC News, Jerusalem Post)."
       }
     ],
