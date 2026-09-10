@@ -39,7 +39,16 @@ def main():
         js = json.dumps(data, ensure_ascii=False, indent=2)
         pattern = re.compile(r"var " + varname + r" = .*?;\n", re.DOTALL)
         new_block = f"var {varname} = {js};\n"
-        html, n = pattern.subn(new_block, html, count=1)
+        # Pass the replacement as a function, not a raw string. re.sub/subn's string-replacement
+        # path runs its own backslash-escape template processing (\n, \g<...>, \1, etc.) on the
+        # repl argument -- and json.dumps legitimately emits literal "\n" two-char sequences for
+        # any embedded newline in a string field, which that template engine then silently
+        # re-interprets as an actual newline byte, corrupting the embedded JS (an unterminated
+        # string literal). A function replacement bypasses that processing entirely, since re
+        # only applies template escaping to string repl arguments. Caught 2026-09-10 when a law
+        # entry's summary first used a real "\n\n" paragraph break -- no prior entry had, so this
+        # was latent all session.
+        html, n = pattern.subn(lambda m: new_block, html, count=1)
         if n != 1:
             raise SystemExit(
                 f"Expected exactly one 'var {varname} = ...;' block in wiki-prototype.html, "
