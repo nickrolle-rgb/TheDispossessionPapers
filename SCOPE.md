@@ -3632,3 +3632,58 @@ relationship landed correctly); `build_network_view.py`'s Python build and the h
 prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
 pushed (`9dd681c`), Vercel auto-deployed, aliased, and confirmed live in an actual browser (zero
 console errors, both new entries' rendered content spot-checked directly via JS).
+
+## Round: 2026-09-10 -- Yasser Arafat, Mahmoud Abbas, and the Battle of Karameh
+
+Nick: "Can we please add Yasser Arafat and Mahmoud Abbas as actors next, perhaps even this Battle
+of Karameh?" Closes the gap explicitly flagged at the end of the Fatah round.
+
+**Yasser Arafat** -- new actor. Fatah founder, PLO Chairman 1969-2004, the PA's first President.
+His 13 November 1974 UN General Assembly address -- the first by a non-state representative, and
+the "olive branch and a freedom fighter's gun" speech -- the July 1994 return to Gaza after 27
+years in exile alongside the shared Nobel Peace Prize the same year, and his 11 November 2004 death
+and the still-genuinely-disputed polonium poisoning investigation (Swiss findings supporting
+poisoning; French and Russian findings attributing the polonium to natural/environmental sources;
+presented as unresolved rather than settled in either direction, matching the actual state of the
+primary forensic evidence).
+
+**Mahmoud Abbas** -- new actor. Fatah co-founder, Oslo negotiator, PA President since January 2005
+despite his four-year term expiring in January 2009 with no presidential election held since; the
+29 April 2021 postponement of legislative elections, citing Israel's refusal to guarantee
+Jerusalem voting rights; and his 30 April 2018 PNC speech attributing pre-Holocaust European
+antisemitism to Jews' historical role in banking -- the resulting condemnation from Yad Vashem, the
+EU, the US and Netanyahu's "Holocaust denier" characterisation, and his own apology days later.
+Documented factually per this project's living-persons discipline throughout.
+
+**Battle of Karameh** -- new topic (Historical Event). The 21 March 1968 battle, Jordan's
+unexpected military engagement alongside Fatah against an Israeli reprisal raid, disputed casualty
+figures presented as ranges given genuine Israeli/Jordanian/Palestinian source divergence, and King
+Hussein's decision to let Arafat and Fatah publicly claim credit for the outcome -- the event that
+directly enabled Fatah's 1969 takeover of the PLO.
+
+**A real structural fix alongside the additions**: Fatah's, the PLO's, and the Palestinian
+Authority's `notable_members` fields previously listed Arafat and Abbas as free text ("Yasser
+Arafat (Chairman, 1969-2004)") rather than real `actor_id`s -- meaning those mentions were never
+generating actual graph edges. Updated all three orgs to reference the new `yasser-arafat`/
+`mahmoud-abbas` ids directly, closing a gap that predates this round.
+
+**A real lapse, caught and fixed within the same round**: this round's own new prose reused the
+"(also/already in this dataset)" pattern the previous round's dedicated cleanup pass had just
+eliminated dataset-wide -- five occurrences slipped into the new Arafat/Abbas/Fatah/Karameh content
+itself. A full re-sweep also caught two pre-existing occurrences in the `west-bank-dual-legal-
+system` topic (added in the impunity round, after the cleanup pass had already run, so it was never
+swept). All 10 removed in a follow-up commit within the same round rather than left for a future
+pass, since the whole point of the earlier cleanup was to stop this exact pattern recurring.
+
+Verification (main round): `scripts/collision_check.py` clean; syntax verification on both the
+live wiki and standalone prototype; harness's 30+ checks pass (256 nodes, +3); Python build and the
+harness's live edge output byte-for-byte identical (388/388 -- the +9 over the prior round cleanly
+accounted for: Fatah/PLO/PA each gaining two real Arafat/Abbas member edges that free-text mentions
+never produced, plus Karameh's three own relations). Verification (cleanup follow-up): all four
+JSON files still parse; collision check clean; both scripts re-verified syntactically valid; harness
+unchanged at 256 nodes/388 edges; edge parity re-confirmed; a full re-run of the dataset-wide "in
+this dataset" survey script confirms zero remaining occurrences anywhere in the four content files.
+Both Artifacts republished twice (main round, then the cleanup follow-up), pushed (`ca15e7c` then
+`769eaf2`), Vercel auto-deployed both times, aliased, and confirmed live in an actual browser after
+the final push -- zero console errors, all three new entries' rendered content spot-checked directly
+via JS and confirmed free of the "(also/already in this dataset)" pattern.
