@@ -3908,3 +3908,45 @@ republished, pushed (`19f2011`), Vercel auto-deployed and confirmed live via cur
 browser check (zero console errors; deep-linked directly to the new entry and to the enriched
 Prawer-Begin entry, autolinks spot-checked via JS -- which is how the Begin/Begin mislink was
 caught).
+
+## Round: Kaminitz Law's impact on East Jerusalem (2026-09-10)
+
+The prior two Kaminitz rounds covered its Negev/Bedouin enforcement escalation and its (unresolved)
+High Court challenges. East Jerusalem was a genuinely distinct, previously uncovered angle -- the
+existing Kaminitz entry only gestured at it ("West Bank Palestinians"), and the dataset's existing
+East Jerusalem demolition entries (`administrative-home-demolitions`, `silwan`, `sheikh-jarrah`)
+didn't name Kaminitz specifically or cover the self-demolition mechanism at all.
+
+**Coerced Self-Demolitions in East Jerusalem** (new topic, Historical Phenomenon): the practice of
+East Jerusalem Palestinians demolishing their own unpermitted homes rather than let the state do it
+and bill them for the cost. Documents the mechanism itself (Amendment 116 concentrated demolition
+authority in executive bodies, cut judicial oversight, raised penalties to up to three years'
+imprisonment, and lowered the evidentiary threshold -- each making state-executed demolition a
+costlier outcome to avoid); the Silwan self-demolition share trend directly tracking the law
+(~15% of demolitions 2004-2018, 16% in 2019, 47% in 2020, 72% January-August 2021); the 28 August
+2021 death of a 17-year-old in Beit Hanina when a wall collapsed on him during a coerced
+self-demolition; 2024's record year (255 structures, 181 homes, 108 self-demolitions, per Ir Amim's
+tracking); and that year's building-permit approval gap (57 plans/~1,000 units for Palestinians,
+the lowest in a decade, against 120 plans/~11,000 units for Israeli settlers).
+
+Enriched the Kaminitz Law entry itself with a forward cross-link to this new entry, inserted in
+correct chronological position within the existing prose (right after the "West Bank Palestinians"
+sentence, before the November 2019 Shaked quote) rather than appended at the end out of sequence.
+
+**A note on a claim NOT changed**: the existing Kaminitz entry's summary says the law's effects fall
+on "Arab citizens of Israel and West Bank Palestinians." Live research this round turned up
+reasonably strong indication that Amendment 116's stated legal scope is Israel proper plus annexed
+East Jerusalem specifically, not West Bank Area C generally (which is governed by a separate,
+military-order-based Civil Administration planning regime) -- but the sourcing wasn't unambiguous
+enough to confidently correct an existing, previously-verified claim within this round's scope. Left
+as-is rather than risk introducing a new error while fixing a suspected one; worth a dedicated
+verification pass later if it matters.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (261 nodes,
++1; 399 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (399/399); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`0f7404e`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to both the new entry and the enriched Kaminitz entry, autolinks
+spot-checked via JS -- East Jerusalem and Silwan both autolinked correctly with no manual wiring).
