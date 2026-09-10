@@ -2861,5 +2861,53 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "fatah",
+    "name": "Fatah",
+    "hebrew_name": null,
+    "aliases": [
+      "Palestinian National Liberation Movement",
+      "Harakat al-Tahrir al-Watani al-Filastini"
+    ],
+    "org_type": "National Liberation Movement",
+    "founding_date": "1959",
+    "dissolution_date": null,
+    "ideology": [
+      "Palestinian Nationalism",
+      "National Liberation"
+    ],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "Yasser Arafat (co-founder and leader, 1959-2004, not yet profiled)",
+      "Mahmoud Abbas (leader since 2004, not yet profiled)",
+      "marwan-barghouti"
+    ],
+    "action_record": [
+      {
+        "event_id": "fatah-founding-1959",
+        "date": "1959",
+        "action_type": "Institution Founding",
+        "title": "Founded in the Palestinian diaspora, principally in Kuwait",
+        "location_affected": "Kuwait (founding); Mandatory Palestine/Israel (stated objective)",
+        "description": "Founded in 1959 by Yasser Arafat together with Khalil al-Wazir (Abu Jihad), Salah Khalaf (Abu Iyad) and Khalid al-Hassan, among Palestinian professionals working in Kuwait and other Gulf states. Its founding doctrine held that liberating Palestine was primarily the responsibility of Palestinians themselves rather than the Arab states, and committed the movement to armed struggle from the outset, modelled explicitly on the Algerian War of Independence's guerrilla campaign against France. Fatah is formally the Palestinian National Liberation Movement, and became the dominant faction within the PLO (also in this dataset) from 1969, a position it has held since.",
+        "citation": "VERIFIED 2026-09-10 -- the 1959 founding, the named co-founders, the founding location (the Kuwait-based Palestinian diaspora), and the founding doctrine's armed-struggle/Algeria-inspired framing are corroborated via live search (Britannica's Yasser Arafat biography, Historica Wiki's Fatah article, EBSCO's Fatah research starter)."
+      },
+      {
+        "event_id": "fatah-battle-of-karameh-1968",
+        "date": "1968-03-21",
+        "action_type": "Sanctioned Political Action",
+        "title": "Battle of Karameh transforms Fatah's standing",
+        "location_affected": "Karameh, Jordan",
+        "description": "Israeli forces raided the Jordanian town of Karameh in reprisal for a series of Fatah-led cross-border attacks, expecting the Jordanian army to stand aside as it had in previous raids. Instead Jordanian forces fought alongside Fatah fighters and inflicted significant Israeli losses. Although Jordan's own forces did most of the actual fighting, King Hussein allowed Arafat and Fatah to take public credit for the outcome, transforming Fatah's prestige overnight -- thousands of young Palestinians joined the PLO's guerrilla wings in the aftermath, and the battle is widely credited with cementing Fatah's dominant position within the wider Palestinian national movement the following year.",
+        "citation": "VERIFIED 2026-09-10 -- the 21 March 1968 date, the Israeli raid's reprisal motivation, the unexpected Jordanian military involvement, King Hussein's decision to let Fatah claim credit, and the subsequent surge in Palestinian recruitment are corroborated via live search (Wikipedia's Battle of Karameh article, Jewish Currents, the Washington Report on Middle East Affairs)."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

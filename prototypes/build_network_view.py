@@ -276,6 +276,7 @@ for o in orgs:
 COMPONENT_OF = {
     "united-nations-general-assembly": "united-nations",
     "united-nations-security-council": "united-nations",
+    "fatah": "plo",
 }
 for child, parent in COMPONENT_OF.items():
     add_edge("org:" + parent, "org:" + child, "component")
