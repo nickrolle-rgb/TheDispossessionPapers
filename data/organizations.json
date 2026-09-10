@@ -2752,5 +2752,41 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "israeli-civil-administration",
+    "name": "Israeli Civil Administration",
+    "hebrew_name": "המנהל האזרחי",
+    "aliases": [
+      "Civil Administration",
+      "COGAT's Civil Administration"
+    ],
+    "org_type": "Government Office",
+    "founding_date": "1981-11",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [
+        "Israeli Military Governorate (dissolved 1982, not yet profiled)"
+      ],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "ariel-sharon"
+    ],
+    "action_record": [
+      {
+        "event_id": "civil-administration-established-1981",
+        "date": "1981-11",
+        "action_type": "Institution Founding",
+        "title": "Established under Military Order No. 947, replacing the Military Governorate",
+        "location_affected": "West Bank; Gaza Strip",
+        "description": "Established by Military Order No. 947 as a nominally civilian branch of the Israeli military government administering day-to-day affairs in the West Bank and Gaza -- planning, land registration, permits, infrastructure, and similar bureaucratic functions -- while the military retained ultimate authority. The reorganisation was driven by Defence Minister Ariel Sharon (already profiled in this dataset), whose plan replaced the outgoing Military Governorate (dissolved in 1982) with civilian-staffed administration answering to a military chain of command. The Civil Administration remains subordinate to COGAT (the Coordinator of Government Activities in the Territories, a Defence Ministry unit) and today administers the permit regime governing Palestinian movement documented in this dataset's own West Bank Checkpoints and Movement Restrictions and Seam Zone topic entries.",
+        "citation": "VERIFIED 2026-09-10 -- the November 1981 establishment under Military Order No. 947, the prior Military Governorate's 1982 dissolution, Sharon's role in the reorganisation as Defence Minister, and the Civil Administration's subordination to COGAT are corroborated via live search (Wikipedia's Israeli Civil Administration and Israeli Military Governorate articles, Jerusalem Story's Civil Administration entry, MERIP's 1988 'Primer: Israel's Military Regime')."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

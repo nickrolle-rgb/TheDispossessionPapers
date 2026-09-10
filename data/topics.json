@@ -1511,5 +1511,43 @@
       "idf"
     ],
     "citation": "VERIFIED 2026-09-10 -- the 209 figure (as of CPJ's most recent count reflected in live search this pass), CPJ's 'deadliest on record'/'more than any government since 1992' characterisation, the prior 113-in-Iraq-War record, the targeting/detention/torture allegations, and CPJ's June 2026 methodology review are all corroborated via live search (CPJ's own Israel-Gaza War issue page and its 209-count reporting, CBS News's 2024 deadliest-year coverage, NPR's December 2023 coverage, Columbia Journalism Review's coverage of the methodology dispute). Given CPJ's own active review, this figure and characterisation should be treated as current-as-of-this-pass rather than a final, settled count."
+  },
+  {
+    "topic_id": "west-bank-checkpoints-movement-restrictions",
+    "name": "West Bank Checkpoints and Movement Restrictions",
+    "aliases": [
+      "matrix of control",
+      "closure regime",
+      "permit regime"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1990s to present",
+    "summary": "Israeli-Committee-Against-House-Demolitions coordinator Jeff Halper's term 'matrix of control,' coined around 2000, describes the interlocking system of checkpoints, permits, bypass roads, land-use planning, and Israeli-only infrastructure that together govern Palestinian movement in the West Bank -- a system administered day-to-day by the Israeli Civil Administration (also in this dataset). Movement restrictions predate the Oslo Accords but intensified sharply during the Second Intifada, especially after Operation Defensive Shield (29 March-10 May 2002, also referenced in this dataset's Wall Advisory Opinion entry), when Israel reoccupied major West Bank cities, imposed prolonged curfews, and dramatically expanded the checkpoint network -- a network that then hardened into the permanent architecture that persists today, reinforced from June 2002 by construction of the separation barrier. As of OCHA's most recent count (December 2025), the West Bank contained 925 movement obstacles restricting the movement of an estimated 3.4 million Palestinians -- 43% above the 647-obstacle twenty-year annual average -- comprising 89 checkpoints staffed permanently (24/7), 218 partially-staffed checkpoints, 232 road gates, 114 linear closures (earthwalls, barriers, trenches), 167 earthmounds, and 105 roadblocks. The city of Hebron's H2 area alone accounts for nearly 40% of all permanently-staffed checkpoints (34 of 89) despite its small size. Palestinians holding West Bank IDs require Civil-Administration-issued permits to enter East Jerusalem (through three designated checkpoints, with an exemption for men over 55 and women over 50) and to access land trapped behind the separation barrier in the 'Seam Zone' (also in this dataset).",
+    "significance": "The World Bank and UNCTAD have separately quantified the restrictions' direct economic cost: closures, checkpoints, and restricted Area C access (Oslo II's designation, already in this dataset) inflate transport and trade costs, depress wages, and constrain market access, with the World Bank estimating that lifting internal movement barriers and permitting Palestinian access to Area C alone could generate output equivalent to 23% of the West Bank's GDP. Since 7 October 2023, average trip durations through key checkpoints near Nablus have grown 78% due to rerouted travel and extended waits, compounding a broader economic contraction UNCTAD and Palestinian Authority figures place at roughly a fifth to a quarter of GDP. The system is a direct, ongoing mechanism connecting this dataset's land-focused entries (settlements, Area C, the separation barrier) to daily Palestinian civilian life -- the practical machinery through which the 'unlawful presence' the ICJ's 2024 Advisory Opinion and the settlement regime described in its 2004 Wall Opinion (both in this dataset) is actually experienced on the ground.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "israeli-civil-administration",
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the December 2025 OCHA obstacle count (925 total; 89 permanent/218 partial checkpoints; 232 road gates; 114 linear closures; 167 earthmounds; 105 roadblocks; the 647-obstacle 20-year average and 43% increase; the 3.4 million affected population; H2 Hebron's 34-of-89 checkpoint concentration) and the East Jerusalem permit/age-exemption rules are corroborated via live search (OCHA's own Movement and Access fact sheets and West Bank Access Restrictions materials). The 'matrix of control' term and its attribution to Jeff Halper, the Operation Defensive Shield timeline and checkpoint expansion, and the World Bank/UNCTAD economic figures (23% GDP potential, 78% Nablus trip-duration increase, roughly 20-25% overall contraction) are corroborated via live search (MERIP, ICAHD's own materials, Wikipedia's Operation Defensive Shield article, World Bank and UNCTAD reports, NPR's January 2026 coverage) but the underlying economic reports were not independently re-read in full this pass."
+  },
+  {
+    "topic_id": "seam-zone",
+    "name": "Seam Zone",
+    "aliases": [
+      "the seam zone",
+      "West Bank seam zone"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Geographic Region",
+    "date_or_range": "2003 to present",
+    "summary": "Roughly 85% of the West Bank separation barrier (built following Israel's June 2002 decision, and the subject of the ICJ's 2004 Wall Advisory Opinion, also in this dataset) runs inside the West Bank rather than along the Green Line, cutting off land between the barrier and the Green Line. Israel's security establishment declared this strip -- at its fullest extent, roughly 74% of the area on the 'Israeli' side of the barrier, home to around 7,500 Palestinians -- a 'seam zone' subject to a distinct military permit regime, administered by the Civil Administration (also in this dataset). Palestinians must obtain a permit to enter or remain in the seam zone, even to reach their own agricultural land, through a bureaucratic process requiring extensive supporting documentation; permits are issued for periods ranging from a single day to two years, and B'Tselem has documented rejection rates historically as high as roughly 25% of applications. By contrast, Israeli citizens and any non-Israeli Jew entitled to immigrate under the Law of Return may enter freely, without a permit.",
+    "significance": "B'Tselem and other Israeli and Palestinian human rights organisations describe the seam zone permit regime as a bureaucratic mechanism of 'creeping dispossession' -- land is not formally expropriated, but farmers who cannot reliably obtain or renew a permit to reach their own plots lose the practical ability to cultivate them, a slower-motion version of the land-loss pattern this dataset otherwise documents through explicit expropriation orders and settlement approvals. The regime has been reviewed and upheld in its broad structure by Israel's own Supreme Court, a detail human rights critics of the policy point to directly when arguing that formal judicial oversight has not functioned as a meaningful check on it.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "israeli-civil-administration"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the roughly 85% barrier-inside-West-Bank figure, the seam zone's ~74% share of barrier-enclosed land and ~7,500-resident population at its fullest extent, the permit regime's documentation requirements and 1-day-to-2-year validity range, the ~25% historical rejection rate, and the free-entry exemption for Israeli citizens/Law-of-Return-eligible non-Israeli Jews are corroborated via live search (B'Tselem's own 'Arrested Development' and 'Not All it Seems' publications, B'Tselem's Restrictions on Movement page, Wikipedia's Seam Zone article, CJPME's 'Seam Zone Israeli Land Grab' factsheet). The Israeli Supreme Court's review of the regime's broad structure is corroborated via live search but not independently re-read against the Court's own judgment text this pass."
   }
 ]
