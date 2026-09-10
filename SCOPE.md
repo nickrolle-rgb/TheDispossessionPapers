@@ -3486,3 +3486,55 @@ nodes, +3 -- one org, two topics); `build_network_view.py`'s Python build and th
 `netBuildGraphData()` produce byte-for-byte identical edge sets (375/375). Both Artifacts
 republished, pushed (`5bcbd6a`), Vercel auto-deployed, aliased, and confirmed live via both curl
 and direct browser verification.
+
+## Round: 2026-09-10 -- Ported autolink() into the standalone Network View Prototype
+
+Nick, looking at a screenshot of the standalone "Network View Prototype" Artifact (not the live
+Vercel wiki): "a few of these Marwan Barghouti entries make mention that something is already in
+the dataset, why are these not just links to that entry?" A real, well-founded question -- and the
+answer was a genuine parity gap between the two artifacts this project maintains, not a data
+problem.
+
+**Root cause**: the live wiki (`wiki-prototype.html`) got real prose autolinking -- known entity
+mentions inside info-panel text (`d.role`/`ev.text`/`p.text`) turning into working links -- in an
+earlier round of this same session. That feature was never ported to the standalone prototype
+(`prototypes/network_view.html`, built from `network_view_template.html` +
+`build_network_view.py`): its own `selectNode()` has always rendered that same prose as raw,
+unlinked text. The "(already in this dataset)"/"(also in this dataset)" phrasing scattered through
+many entries' prose was written specifically because there was no real link mechanism to lean on
+in at least this one of the two rendering surfaces -- a genuine, if partial, reason for that
+authoring habit, not just an oversight.
+
+**Fixed properly, not worked around**: `build_network_view.py`'s node-building now computes an
+`aliases` array per node using the exact same rules the live wiki's own `nameIndex` uses (org
+`aliases` field + slash-split short names; topic `aliases` field; actor `birth_name`; law
+title-before-comma; surname-uniqueness across actor/mk/foreign kinds) -- necessary because this
+prototype only ever embeds the flattened `GRAPH_DATA`, never the raw six source arrays the live
+wiki's own `nameIndex` reads aliases from directly. `network_view_template.html` gained its own
+`escapeHtml()`/`buildLinkPattern()`/`autolink()` functions (same word-boundary regex approach as
+the live wiki), wired into `selectNode()`'s rendering, using the template's existing
+`onclick="jumpToNode(...)"` convention (this prototype has no hash routing to link an `<a href>`
+into, unlike the live wiki) -- plus new CSS since this template never had a general link style to
+fall back on outside `.index-grid`.
+
+**Verification**: node/edge counts in `GRAPH_DATA` unchanged (251/375 -- aliases don't touch
+edge-building, which reads `related_org_ids`/`related_actor_ids`, not aliases); `node --check`/
+`new Function()` confirm the regenerated script parses cleanly; a new dedicated DOM-stub harness
+(`prototype_harness.js`, mirroring `wiki_harness.js`'s own approach) confirms
+`selectNode('actor:marwan-barghouti')` now actually wraps "Donald Trump" in a working
+`jumpToNode()` link, and that WZO's own panel still autolinks as before. The live wiki and its
+edge-for-edge parity with this prototype's `GRAPH_DATA` were both unaffected and re-confirmed
+regardless (375/375) -- `wiki-prototype.html` itself was not touched this round, so no Vercel
+redeploy was needed.
+
+**Flagged, not actioned this round**: the underlying "(already in this dataset)" phrases
+themselves are still sitting in dozens of entries' prose across the dataset. Now that both
+renderers actually autolink real entity mentions, most of these phrases are genuinely redundant
+next to a name that already links on its own (e.g. "Donald Trump's Gaza peace plan (already in
+this dataset)" -- "Donald Trump" already links; the parenthetical adds nothing). A few, though
+(Operation Defensive Shield being the clearest example), refer to something mentioned across
+several entries' prose that was never actually given its own standalone topic entity -- for those,
+there is genuinely nothing to link to, and the phrase is an honest cross-reference rather than a
+bug. A full audit-and-cleanup pass across the dataset to remove the now-redundant phrasing (and
+decide, entry by entry, whether the no-target cases are worth promoting into real topics) is real
+future work, not done this round given the scope of what was actually asked.
