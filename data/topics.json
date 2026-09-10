@@ -1616,5 +1616,43 @@
     "related_actor_ids": [],
     "related_org_ids": [],
     "citation": "VERIFIED 2026-09-10 -- Elad/Ir David Foundation's operation of the City of David site since the 1990s, the focus on Batn al-Hawa and al-Bustan, the 2,000+-residents-at-risk figure, and B'Tselem's ethnic-cleansing characterisation are corroborated via live search (B'Tselem's own Silwan reporting, the Institute for Palestine Studies, Arab News, NAD's media brief). The 587-displaced-since-7-October-2023 and roughly-one-quarter-during-the-March-April-2026-Israel-Iran-war figures are corroborated via live search to Human Rights Watch's June 2026 report specifically, not independently cross-checked against a second source this pass."
+  },
+  {
+    "topic_id": "settlement-outposts",
+    "name": "Settlement Outposts",
+    "aliases": [
+      "illegal outposts",
+      "unauthorized outposts",
+      "hilltop outposts"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "1990s to present",
+    "summary": "Outposts are Israeli settlement points established without Israeli government authorisation -- illegal under Israeli law itself, not only international law, since they lack building permits and are frequently built on privately-owned Palestinian land, whereas authorised settlements are at least nominally built on state land with government approval. Despite this, a well-documented pattern of Israeli state involvement -- infrastructure connections, security protection, and financing -- has accompanied outpost construction since the phenomenon accelerated in the 1990s, often associated with the informal 'hilltop youth' (Noar HaGvaot) movement. Roughly 200 outposts exist in the West Bank today; Peace Now documented 174 new outposts established in the nearly three years of the government in power as of late 2025 alone. Israel has periodically demolished individual outposts under Supreme Court order -- most notably Amona, the largest outpost ever established, built near Ofra on privately-owned Palestinian land, whose February 2006 demolition triggered the worst-ever clashes between settlers and Israeli security forces, injuring roughly 250 people -- but has more often retroactively legalised them instead, a process formalised nationally by the 2017 Regularization Law (already in this dataset) and continuing in waves since, including a move to legalise five more outposts reported in January 2026.",
+    "significance": "Outposts function as the informal, deniable vanguard of settlement expansion: land is occupied first, often without any legal pretence at all, and formal legalisation follows later if it follows at all -- inverting the normal order of authorisation and effectively daring the state to reverse a fact already on the ground. The pattern connects directly to this dataset's existing Regularization Law and Gush Emunim entries: the same retroactive-legalisation logic Gush Emunim pioneered informally in the 1970s (Sebastia, Kedumim) was made into standing national policy by 2017, and outposts remain the primary vehicle through which that policy operates today.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf",
+      "gush-emunim"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the illegal-under-Israeli-law status, the private-land/no-permit basis, the state-involvement pattern, the ~200 current total and Peace Now's 174-new-under-the-current-government figure, the Amona case (largest outpost, February 2006 demolition, ~250 injured, worst-ever settler-state clash), and the January 2026 five-outpost legalisation move are corroborated via live search (Israel Policy Forum's Illegal Outposts explainer, Times of Israel's coverage, the Oakland Institute's Legalizing Dispossession report, Middle East Monitor's January 2026 report, Times of Israel and SBS's Amona coverage)."
+  },
+  {
+    "topic_id": "price-tag-attacks",
+    "name": "Price Tag Attacks",
+    "aliases": [
+      "price tag violence",
+      "tag mechir"
+    ],
+    "hebrew_name": "תג מחיר",
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "2008 to present",
+    "summary": "'Price tag' (tag mechir) describes retaliatory attacks by far-right settlers against Palestinians and their property, intended to exact a political 'price' for Israeli government actions against settlement activity (such as outpost evacuations) or for Palestinian attacks on settlers. The term gained currency after the 2005 Gaza disengagement and the Israeli Supreme Court's 2006 order to demolish homes at Amona (also in this dataset), with the tactic itself emerging as an organised phenomenon around 2008 -- driven by a clandestine network of far-right settler groups whose main stronghold is a yeshiva in the settlement of Yitzhar, south of Nablus. Tactics have included arson and vandalism of Palestinian homes, vehicles, mosques and olive groves, and physical assaults. In 2013, Prime Minister Netanyahu ordered creation of a dedicated Nationalistically Motivated Crimes Unit within the Israeli police to address the phenomenon; a later investigation found the unit ineffectual, and the incidence of settler violence did not decline. Yesh Din's two-decade monitoring (2005-2025) of cases in which it was involved found 93.6% of investigation files into ideologically-motivated offences against Palestinians closed without an indictment, and only about 3% ending in a full or partial conviction -- with police-side investigative failure (64% closed as 'offender unknown,' a further 20% for 'insufficient evidence') identified as the leading cause.",
+    "significance": "The near-total absence of accountability Yesh Din documents is, on its own account, not incidental but causal: two decades of a roughly 3% conviction rate has signalled to perpetrators that attacks carry effectively no legal risk, a dynamic Yesh Din and other monitors argue has entrenched rather than deterred the practice. The phenomenon sits at the sharp end of the same settlement-expansion logic this dataset documents institutionally elsewhere (Gush Emunim, the Regularization Law, settlement outposts, also in this dataset) -- direct, extralegal coercion against Palestinian civilians functioning alongside, not instead of, the formal legal and bureaucratic mechanisms already catalogued.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the term's origin and 2008 emergence, the Yitzhar-yeshiva network characterisation, the 2013 Nationalistically Motivated Crimes Unit and its later-documented ineffectiveness, and the tactics described are corroborated via live search (New Israel Fund, Truthout, International Crisis Group's settler-violence report, Al Jazeera's August 2026 explainer). The Yesh Din 2005-2025 statistics (93.6% no-indictment rate, ~3% conviction rate, 64%/20% closure-reason breakdown) are corroborated via live search directly to Yesh Din's own published data sheet and Times of Israel's coverage of it."
   }
 ]
