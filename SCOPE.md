@@ -3858,3 +3858,53 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 republished, pushed (`9dfd8fd`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors; deep-linked directly to the entry and spot-checked the new
 prose renders correctly with no encoding issues).
+
+## Round: Prawer-Begin Plan -- Umm al-Hiran added (2026-09-10)
+
+The existing `prawer-begin-bill-2013` entry already had a solid self-contained 2013 story (passage,
+withdrawal after mass protest), and its two documented successors -- Al-Araqib's repeated
+demolitions and the 2026 Negev Bedouin Land Claims Settlement Plan -- already existed and already
+cross-linked back to it. Checking the Plan meant finding what was still missing from that lineage
+rather than re-covering ground already covered.
+
+**Umm al-Hiran** (new topic, Geographic Region): the one major, well-documented case still absent.
+Residents relocated there by Israeli military order in 1956 (their third forced displacement in four
+years, after being expelled from Khirbet Zubaleh/Wadi Zubalah); 13 years of Adalah-led litigation
+ending in a 5 May 2015 Supreme Court 2-1 ruling that explicitly found residents were NOT illegal
+trespassers -- yet still upheld their eviction and the village's demolition, to build a new town for
+Jewish residents, provisionally named Hiran (renamed Dror in 2022); the 18 January 2017 police
+killing of resident Yaqub Abu al-Qi'an and officer Erez Levi during a demolition raid, Netanyahu and
+other officials' initial false accusation that Abu al-Qi'an was an ISIS-affiliated terrorist, the
+State Attorney's later closure of the case without charges against the shooting officers, and a
+subsequent Haaretz/+972 video investigation finding he'd been shot without apparent cause and left
+to bleed; and the village's final full demolition on 14 November 2024. Careful correction during
+drafting: initial source snippets suggested the Court ruled residents were illegally squatting --
+double-checked against fuller sourcing and corrected, since the actual 2015 ruling explicitly
+rejected that characterisation while still permitting the eviction; getting this distinction right
+mattered enough to re-verify before writing.
+
+**Prawer-Begin Plan entry itself enriched**: added a forward-pointing sentence to its significance
+naming Al-Araqib, Umm al-Hiran, and the 2026 successor plan by name, so the lineage is now
+navigable from its origin point as well as from the later entries pointing back to it.
+
+**Bug found and flagged, not fixed in-round**: live verification revealed the autolinker mislinks
+"Begin" inside the hyphenated compound "Prawer-Begin" to Menachem Begin -- a different historical
+figure entirely from Benny Begin, who the Plan is actually named for. Confirmed this predates
+today's round (the live prawer-begin-bill-2013 entry already had this mislink twice, in its
+"Prawer-Begin Bill" alias and its "named for Minister Benny Begin" prose, before any edits made
+today); today's new Umm al-Hiran significance text added a third instance. Root cause: the
+autolink regex's \b word-boundary matching treats a hyphen as a boundary, so a bare-surname alias
+like "Begin" matches inside "Prawer-Begin" the same as it would as a standalone word. Fixing this
+properly means changing the shared autolink matching logic used by both the wiki and the standalone
+prototype -- out of scope for a content round, so flagged as a background task (task_8075a760)
+rather than patched inline or hand-waved past.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (260 nodes,
++1; 398 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (398/398); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`19f2011`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked directly to the new entry and to the enriched
+Prawer-Begin entry, autolinks spot-checked via JS -- which is how the Begin/Begin mislink was
+caught).
