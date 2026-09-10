@@ -3108,3 +3108,48 @@ nodes, +5 -- one org, four topics), plus a new check confirming the ICC topic cl
 kind "law"; `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
 produce byte-for-byte identical edge sets (346/346). Both Artifacts republished, pushed
 (`8e9069a`), Vercel auto-deployed, aliased, and spot-checked live via curl for all five new ids.
+
+## Round: 2026-09-10 -- ICRC and four humanitarian-law episodes
+
+Nick: "Can we look at ICRC and humanitarian law violations next?" Third international-law thread
+in one day, following the ICJ and ICC rounds -- rounding out the institutional picture (the court
+that rules on state conduct, the court that prosecutes individuals, and now the body with the
+actual treaty mandate to protect war victims and monitor IHL compliance on the ground).
+
+**ICRC** -- new org `international-committee-of-the-red-cross`, new org_type "Humanitarian
+Organization" (deliberately not "International Body" -- the ICRC is a private, Swiss-founded
+entity with a unique treaty-based mandate under the Geneva Conventions, not an intergovernmental
+body like the UN/ICJ/ICC). Action record: its role as physical (not negotiating) intermediary in
+the November 2023 hostage-prisoner exchange, and its repeatedly-denied requests for access to
+hostages held in Gaza despite its Convention mandate to do exactly that.
+
+**Four new topics (84 total)**:
+- `hostage-prisoner-exchanges`: the 24-30 November 2023 truce (105 hostages -- 75 Israeli, 3
+  Israeli-Russian, 24 foreign nationals -- for 240 Palestinian prisoners, 107 minors, ~75% held
+  without charge), through the January 2025 and January 2026 exchanges tied to the Trump peace
+  plan (already in this dataset) -- a genuine cross-link between three separate rounds' worth of
+  entries (Hamas's Oct 7 action, the ICRC, and Trump's Gaza plan).
+- `al-shifa-hospital-sieges`: the November 2023 and March-April 2024 sieges of Gaza's largest
+  hospital, Israel's disputed command-centre claim (denied by Hamas and hospital staff, questioned
+  by independent reporting), and Human Rights Watch's March 2025 war-crimes characterisation --
+  explicitly flagged as HRW's own documented assessment, not a court finding, since no tribunal has
+  yet ruled on these specific events.
+- `world-central-kitchen-strike-2024`: the 1 April 2024 strike that killed seven aid workers on a
+  pre-coordinated convoy route -- notable precisely because Israel's own internal-failure account
+  ("grave mistake," two officers dismissed) removes the disputed-intelligence element present in
+  the hospital sieges.
+- `journalist-deaths-gaza-war`: CPJ's 209-count tracking record, described by CPJ as the deadliest
+  conflict for journalists it has ever documented -- including CPJ's own June 2026 methodology
+  review, kept visible in the entry as a genuine live dispute over inclusion criteria rather than
+  smoothed over to present a single unimpeachable number.
+
+Consistent discipline applied throughout: every "war crimes"/"deliberate targeting" characterization
+is attributed to its source (HRW, CPJ) as that organization's own documented assessment, not
+asserted as an adjudicated legal fact -- no international tribunal has ruled on any of these four
+specific episodes as of this pass.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (232
+nodes, +5 -- one org, four topics); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (352/352). Both Artifacts
+republished, pushed (`872aafb`), Vercel auto-deployed, aliased, and spot-checked live via curl for
+all five new ids.
