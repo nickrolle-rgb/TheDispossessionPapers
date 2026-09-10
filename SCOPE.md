@@ -3538,3 +3538,49 @@ there is genuinely nothing to link to, and the phrase is an honest cross-referen
 bug. A full audit-and-cleanup pass across the dataset to remove the now-redundant phrasing (and
 decide, entry by entry, whether the no-target cases are worth promoting into real topics) is real
 future work, not done this round given the scope of what was actually asked.
+
+## Round: 2026-09-10 -- Cleanup pass: removed redundant "(also/already in this dataset)" prose
+
+Nick: "Yes, go ahead with that cleanup pass" -- the follow-through on the autolink-porting round's
+flagged future work.
+
+Surveyed all four content files (historical_actors, organizations, topics, laws; citation fields
+excluded, since they legitimately use meta/hedging language like "not independently verified this
+pass") for every occurrence of "in this dataset" -- 72 initial hits. Classified each:
+
+- **Type 1 (fixed, 69 occurrences)**: the phrase specifically flagged another named entity as
+  "already/also in this dataset" -- e.g. "Resolution 2334 (already in this dataset)," "the Golan
+  Heights Law, already in this dataset," "Ariel Sharon (already profiled in this dataset)." Removed
+  in all cases, whether or not the named entity turned out to have a real linkable id: most did
+  (and now autolink cleanly on their own, since autolink was ported into both renderers last round)
+  and the phrase was pure noise next to a name that already links; a few (Operation Defensive
+  Shield, the Road Map for Peace) don't have their own standalone entity, and telling a reader "this
+  is mentioned elsewhere in our system" with no way to click through isn't real content either --
+  dropped there too, consistent with this project's standing "Encyclopedia, not a database skin"
+  discipline (established much earlier this session, just never previously applied to this specific
+  phrasing pattern).
+- **Type 2 (left alone, ~29 occurrences)**: "in this dataset" used as comparative/ranking language
+  about an entry's own significance within the whole collection ("the largest X in this dataset,"
+  "one of the most consequential entries in this dataset," "this dataset's post-1967 record")
+  rather than pointing at one specific other entity -- legitimate encyclopedia-voice analytical
+  framing, not a broken-link situation.
+
+Applied as ~69 individually-verified exact-substring replacements (each checked to match precisely
+once before applying, no blanket regex given how varied the surrounding punctuation/wording was) --
+two initial mismatches (an em-dash vs. double-hyphen transcription slip, and a dropped "all") were
+caught by the verification step itself and corrected by hand before finishing.
+
+Verification: all four JSON files still parse as valid JSON; `scripts/collision_check.py` clean;
+explicit `node --check`/`new Function()` syntax verification on both the live wiki and the
+standalone prototype; the Node DOM-stub harness's 30+ checks all pass unchanged (251 nodes/375
+edges -- pure prose edit, no entities or relations touched), including last round's
+Barghouti-to-Donald-Trump autolink check, confirming the cleanup didn't depend on or accidentally
+break the underlying link mechanism; `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` still produce byte-for-byte identical edge sets; the standalone prototype's
+own dedicated harness (`prototype_harness.js`) confirms its autolinking still works post-cleanup.
+Both Artifacts republished, pushed (`63177a7`), Vercel auto-deployed, aliased, and confirmed live
+in an actual browser (zero console errors, rendered Barghouti panel text confirmed free of the
+removed phrasing) -- the standalone prototype's own published Artifact couldn't be directly
+browser-checked this round (it requires sign-in, unreachable from this session's Browser pane tool)
+so its harness result is the verification of record for it, consistent with how it's been verified
+all session.
