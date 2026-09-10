@@ -3281,3 +3281,43 @@ nodes, +3 -- one actor, two topics); `build_network_view.py`'s Python build and 
 `netBuildGraphData()` produce byte-for-byte identical edge sets (363/363). Both Artifacts
 republished, pushed (`e89870e`), Vercel auto-deployed, aliased, and spot-checked live via curl for
 all three new ids.
+
+## Round: 2026-09-10 -- West Bank firing zones, Masafer Yatta, and Hilltop Girls
+
+Nick: "Can we look at land expropriation for military zones next? And can we find anything on
+Hilltop Girls?" Two threads, one a well-established land-loss mechanism this dataset hadn't yet
+covered, the other a genuinely current (weeks-old) phenomenon worth checking for real rather than
+assuming was too obscure or too recent to find anything on.
+
+**West Bank Firing Zones** (Historical Phenomenon): roughly 18-20% of the West Bank -- nearly 30%
+of Area C -- declared closed military training zones since 1967, with only about 20% of that
+designated land actually used for training at any given time. The gap between "declared closed"
+and "actually used" is the significant part: 5,000+ Palestinians across 38 longstanding communities
+continue living inside firing zones despite the restrictions, under standing legal jeopardy
+regardless of whether training is actually occurring in a given year.
+
+**Masafer Yatta** (Geographic Region): the flagship case, and the clearest single illustration of
+how the firing-zone mechanism actually operates over decades. Firing Zone 918 designated in the
+1980s; 1999 expulsion of ~700 residents; a 22-year Supreme Court battle; the 4 May 2022 ruling
+permitting expulsion of 1,000+ Palestinians (including ~500 children) -- the largest single forced
+displacement Israel has carried out in the West Bank since 1967 -- clearing the way for demolition
+of ~900 structures. Demolitions and military exercises intensified rather than concluded after the
+"final" ruling. Cross-linked to the existing ICC Situation in Palestine entry given the direct calls
+from legal scholars and rights groups for an ICC referral over the expulsion.
+
+**Hilltop Girls** (Historical Phenomenon): confirmed as a real, genuinely current phenomenon, not
+an obscure dead end -- the primary sourcing found (Al Jazeera's explainer) is dated 3 September
+2026, one week before this round. Young women extending the 1998 Hilltop Youth movement (whose
+origin traces to Ariel Sharon, already profiled in this dataset, urging settler youths to seize
+hilltops) into a deliberately domestic, social-media-driven "soft settlement" strategy at West Bank
+outposts (already in this dataset) -- presenting ordinary family life rather than confrontation to
+normalise outposts still formally unauthorised. The Maoz Esther outpost (2006) is the phenomenon's
+flagship example; an October 2025 incident (settlers self-identifying as Hilltop Girls picking
+olives on Palestinian-owned land near Nahalin) ties the branding directly to land encroachment
+despite the soft public image. Cross-linked to the existing Gush Emunim entry as the same
+territorial-maximalist current in a newer tactical form.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (245
+nodes, +3); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (367/367). Both Artifacts republished, pushed
+(`9c0f22b`), Vercel auto-deployed, aliased, and spot-checked live via curl for all three new ids.
