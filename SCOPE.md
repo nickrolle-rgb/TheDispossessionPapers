@@ -3054,3 +3054,57 @@ nodes, +2); `build_network_view.py`'s Python build and the harness's live `netBu
 produce byte-for-byte identical edge sets (340/340). Both Artifacts republished, pushed
 (`7cd7bba`), deployed, aliased, and spot-checked live via curl -- confirmed both new topic_ids
 present and the old unverified phrase gone from the deployed file.
+
+## Round: 2026-09-10 -- ICC/Rome Statute + Gaza naval blockade + flotilla history
+
+Nick: "Can we check the Rome Statute/ICC angle too and see if there is anything on the Naval
+blockade of Gaza and detentions of attempted Blockade runners like the Samud & Freedom Flotillas?"
+A second real, previously-untouched international-law thread, plus a genuinely significant
+incident history this dataset had never looked at from the sea.
+
+**ICC / Rome Statute** -- new org `international-criminal-court` (International Body) + new
+topic_type "ICC Investigation" (kept distinct from the ICJ's two types -- different institution,
+different mandate: prosecuting named individuals, not hearing state disputes). One consolidated
+topic, `icc-situation-in-palestine`, covering Palestine's 2 January 2015 Rome Statute accession
+(enabled by the 2012 UN observer-state upgrade, Resolution 67/19, already in this dataset), the
+preliminary examination (16 Jan 2015 - 20 Dec 2019), the 5 Feb 2021 jurisdiction ruling and 3
+March 2021 investigation opening, and the headline event: 21 November 2024 arrest warrants for
+Netanyahu, Gallant (starvation as a method of warfare, crimes against humanity re: humanitarian
+access restrictions, command responsibility for attacks on civilians -- both warrants still
+outstanding) and Hamas commander Deif (terminated 26 Feb 2025 after his confirmed death). First
+active ICC warrant against a sitting head of government of a US-allied democracy -- flagged as
+genuinely unprecedented, with real, current-as-of-this-pass uncertainty about whether any state
+will actually execute an arrest.
+
+**Gaza Blockade** -- new topic `gaza-naval-blockade` (Historical Phenomenon): June 2007 land/air/
+sea closure following Hamas's takeover (cross-references the existing Hamas org entry), January
+2009 formal naval blockade declaration, the Palmer Report's narrow "naval blockade is legal"
+finding and its explicit non-extension to the wider closure regime (a distinction frequently
+flattened in both directions in public debate -- kept precise here on purpose).
+
+**Mavi Marmara raid (2010)** -- new topic `mavi-marmara-raid-2010` (Historical Event): 31 May
+2010, nine deaths (a tenth in 2014), the UN fact-finding mission's disproportionality/wilful-
+killing finding, the Palmer Committee's separate "excessive and unreasonable force" finding
+(distinct from its blockade-legality finding), and the 2013 Israel-Turkey reconciliation.
+
+**Global Sumud Flotilla (2025-2026, ongoing)** -- new topic `global-sumud-flotilla` (Historical
+Event): the largest blockade-running attempt in the blockade's history (40+ vessels, ~500
+participants, 44+ countries in 2025 alone). September 2025 drone/incendiary attacks in Tunisian
+waters; 1-2 October 2025 interception of 41 ships, 400+ people including Greta Thunberg taken to
+Ashdod; deported activists' reported mistreatment allegations (fractures, tasing, alleged sexual
+assault) -- explicitly flagged as reported allegations, not established fact, matching this
+project's standing discipline for serious disputed claims; a second wave in April-May 2026 (58
+vessels, interceptions on 29 April and 18 May 2026 as far as ~250 nautical miles from Gaza) still
+apparently ongoing as of this pass, with organisers stating the campaign continues.
+
+Schema: SCHEMA.md documents "ICC Investigation," added to `NET_LAW_LIKE_TOPIC_TYPES`/
+`LAW_LIKE_TOPIC_TYPES` (JS + Python) alongside the ICJ types for the same index/graph
+classification. Deliberately kept as four separate topic entries rather than one omnibus entry --
+each is independently notable and separately citable, following the same one-entry-per-real-thing
+discipline as everywhere else in this dataset.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (227
+nodes, +5 -- one org, four topics), plus a new check confirming the ICC topic classifies as graph
+kind "law"; `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (346/346). Both Artifacts republished, pushed
+(`8e9069a`), Vercel auto-deployed, aliased, and spot-checked live via curl for all five new ids.
