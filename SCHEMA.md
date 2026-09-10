@@ -123,7 +123,7 @@ id, not a duplicated bio — avoids a third person-file and keeps one source of 
   "name": "string",
   "hebrew_name": "string",
   "aliases": "array of strings, optional (e.g. Jewish National Fund -> ['JNF', 'Keren Kayemeth LeIsrael', 'KKL']) -- same mechanism as topics' aliases field, wired into the wiki's own nameIndex builder alongside MANUAL_ALIASES; add one whenever an org has a common abbreviation or other-language name that shows up in prose",
-  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation | Intelligence Agency | National Liberation Movement)",
+  "org_type": "string (Pre-Mandate Self-Defense Group | Paramilitary/Militia | Political Party | Youth Movement | National Military | Self-Governing Community | Sovereign State | Legislative Body | International Zionist Body | Land Fund | Land Company | Settlement Movement | Labor Federation | Representative Assembly | Executive Council | Government Office | International Body | Financial Institution | Advocacy Organisation | Intelligence Agency | National Liberation Movement | Humanitarian Organization)",
   "founding_date": "YYYY-MM-DD or YYYY",
   "dissolution_date": "YYYY-MM-DD or YYYY or null",
   "ideology": ["string tags, e.g. Labor Zionism, Revisionist Zionism, Religious Zionism"],
@@ -345,3 +345,9 @@ angle and blockade-running incidents together -- kept as four separate topic ent
 Investigation, one Historical Phenomenon for the blockade itself, two Historical Events for the
 2010 raid and the 2025-2026 Sumud campaigns) rather than one omnibus entry, since each is
 independently notable and separately citable.
+
+`org_type: "Humanitarian Organization"` added 2026-09-10 for the ICRC -- deliberately not folded
+into `"International Body"` (used throughout for the UN/League of Nations/ICJ/ICC), since the ICRC
+is not an intergovernmental organization at all: it is a private, Swiss-founded entity given a
+unique, treaty-based mandate directly under the Geneva Conventions, a genuinely different kind of
+legal personality worth distinguishing in the schema rather than blurring into the UN-family type.

@@ -2711,5 +2711,46 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "international-committee-of-the-red-cross",
+    "name": "International Committee of the Red Cross",
+    "hebrew_name": null,
+    "aliases": [
+      "ICRC",
+      "Red Cross"
+    ],
+    "org_type": "Humanitarian Organization",
+    "founding_date": "1863",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "icrc-november-2023-hostage-exchange",
+        "date": "2023-11-24 to 2023-11-30",
+        "action_type": "Sanctioned Political Action",
+        "title": "Facilitates the week-long November 2023 hostage-prisoner exchange",
+        "location_affected": "Gaza Strip; Israel",
+        "description": "Acting as the neutral intermediary during the seven-day truce, the ICRC physically transferred released hostages from Hamas custody to Israeli authorities and, separately, transported released Palestinian prisoners -- without participating in the underlying negotiations, which were conducted by Qatar, Egypt and the United States. Over the truce, Hamas released 105 hostages (75 Israeli, 3 Israeli-Russian dual nationals, and 24 foreign nationals) and Israel released 240 Palestinian prisoners, 107 of them minors and roughly three-quarters held without charge. See this dataset's own Hostage and Prisoner Exchanges topic entry for the fuller sequence, including later 2025 exchanges.",
+        "citation": "VERIFIED 2026-09-10 -- the 24-30 November 2023 truce dates, the 105 hostages (75 Israeli, 3 Israeli-Russian, 24 foreign nationals) and 240 Palestinian prisoners (107 minors) figures, and the ICRC's role as physical intermediary rather than negotiator are corroborated via live search (Wikipedia's 2023 Israeli-Palestinian prisoner exchange article, NPR's ICRC-staffer interview, ICRC's own news releases)."
+      },
+      {
+        "event_id": "icrc-denied-access-to-hostages-2023-2024",
+        "date": "2023-11 to 2025-01",
+        "action_type": "Policy Lobbying",
+        "title": "Repeatedly requests, and is repeatedly denied, access to hostages held in Gaza",
+        "location_affected": "Gaza Strip",
+        "description": "Despite its Geneva Convention mandate to visit and check on the welfare of hostages and detainees, the ICRC was not granted access to hostages held by Hamas and allied groups in Gaza through most of the war, drawing public frustration from the organisation and from hostages' families. The ICRC maintained its position as a neutral intermediary rather than an advocate for either side throughout, a stance that drew criticism from multiple directions -- some accusing it of insufficient pressure on Hamas over access, others (including a critical Israeli High Court challenge) questioning its conduct around specific visits and transfers.",
+        "citation": "VERIFIED 2026-09-10 -- the ICRC's repeated, unsuccessful requests for access to hostages and the surrounding public criticism are corroborated via live search (Red Cross UK's own account, ICRC's own 'neutral but not bystanders' statement, Times of Israel's coverage of the criticism, Lawfare's coverage of the Israeli High Court challenge). The exact scope and outcome of the High Court matter is corroborated via live search but not independently re-read against the judgment's own text this pass."
+      }
+    ],
+    "knesset_participation": []
   }
 ]

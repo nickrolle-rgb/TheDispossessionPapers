@@ -1436,5 +1436,80 @@
       "idf"
     ],
     "citation": "VERIFIED 2026-09-10 -- the 2025 wave's scale (40+ vessels, ~500 participants, 44+ countries), the September 2025 drone/incendiary incidents, the 1-2 October 2025 interception (41 ships, 400+ people, Thunberg among them), and the 2026 second wave's 12 April departure, 29 April interception (22 of 58 vessels, ~175 detained), Marmaris regrouping, and 18 May 2026 further interception (~250 nautical miles from Gaza) are all corroborated via live search (ABC News, CNN, NPR, Al Jazeera, Times of Israel, Jerusalem Post). The specific mistreatment allegations (fractures, tasing, alleged sexual assault) are corroborated via live search to Democracy Now's reporting on deported activists' own accounts, which this dataset treats as reported allegations rather than independently verified fact, consistent with how this project handles other serious, disputed claims of state conduct."
+  },
+  {
+    "topic_id": "hostage-prisoner-exchanges",
+    "name": "Israel-Hamas Hostage and Prisoner Exchanges",
+    "aliases": [
+      "2023 Israeli-Palestinian prisoner exchange",
+      "Gaza hostage deal",
+      "hostage-prisoner swaps"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "2023-11 to present",
+    "summary": "Following the 7 October 2023 attack (also in this dataset), in which Hamas and allied militants abducted an estimated 240-253 people to Gaza, a series of negotiated exchanges returned hostages to Israel in stages, each brokered diplomatically by Qatar, Egypt and the United States and physically carried out by the ICRC (also in this dataset) as neutral intermediary. The first and largest, a week-long truce from 24-30 November 2023, saw Hamas release 105 hostages (75 Israeli, 3 Israeli-Russian dual nationals, 24 foreign nationals) in exchange for 240 Palestinian prisoners (107 of them minors, roughly three-quarters held without charge). Further, smaller exchanges followed a January 2025 ceasefire agreement, and the last remaining hostages -- living and deceased -- were returned as part of the implementation of Donald Trump's 20-point Gaza peace plan (also in this dataset), with Israel confirming in January 2026 that Hamas had returned the remains of the final hostage held since the October 2023 attack.",
+    "significance": "Hostage-taking of civilians is itself a serious violation of international humanitarian law, and the drawn-out, multi-stage return process -- rather than a single unconditional release -- became one of the war's central political and humanitarian flashpoints, repeatedly used as leverage in ceasefire negotiations by both sides. The scale of the prisoner side of each exchange (240 Palestinians for 105 hostages in the first deal alone) is itself a data point on the size of Israel's Palestinian detainee population, a substantial share held without charge or trial -- directly relevant to this dataset's own documentation of administrative detention practices elsewhere.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "hamas",
+      "international-committee-of-the-red-cross"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 24-30 November 2023 truce dates and figures (105 hostages: 75 Israeli/3 Israeli-Russian/24 foreign; 240 Palestinian prisoners, 107 minors) are corroborated via live search (Wikipedia's 2023 Israeli-Palestinian prisoner exchange and 2023 Gaza war ceasefire articles). The January 2025 ceasefire-linked exchanges and the January 2026 final-hostage-remains return (tied to the Trump peace plan) are corroborated via live search (consistent with this dataset's own already-verified Trump actor entry) but the January 2025 exchanges' own precise figures were not independently re-verified stage-by-stage this pass."
+  },
+  {
+    "topic_id": "al-shifa-hospital-sieges",
+    "name": "Al-Shifa Hospital Sieges",
+    "aliases": [
+      "Al-Shifa Hospital raid",
+      "Al-Shifa siege"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "2023-11-11 to 2024-04-01",
+    "summary": "Gaza's largest medical complex, Al-Shifa Hospital, was placed under Israeli military siege and raided twice: 11-24 November 2023, and again 18 March-1 April 2024. Israel said intelligence indicated the hospital sat atop a Hamas command-and-control centre; Hamas, hospital staff and Gaza health officials denied this, and independent reporting (including a Washington Post analysis) questioned aspects of the IDF's own account. A March 2025 Human Rights Watch report, based on interviews with nine patients and two healthcare workers present during the raids, documented Israeli forces cutting water and electricity to the hospital, mistreating and forcibly displacing patients and health workers, and damaging or destroying hospital infrastructure; Gaza's Health Ministry reported 84 patients died from lack of care across the hospitals occupied during this period, not counting those killed by shelling or gunfire directly. HRW characterised the conduct documented as war crimes.",
+    "significance": "Hospitals hold specific protected status under the Geneva Conventions, losing that protection only if used for military purposes outside their medical function, and even then only after a warning and a reasonable time to cease such use -- making the truth of Israel's underlying command-centre claim, still disputed as of this pass, legally central rather than incidental to whether the sieges were lawful. HRW's war-crimes characterisation is the organisation's own documented assessment, not a court finding; no international tribunal has yet ruled on these specific events. The sieges are one of the most-cited episodes in the broader case, including within the ICJ and ICC materials already in this dataset, that Israel's campaign in Gaza has caused disproportionate harm to protected medical infrastructure and personnel.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf",
+      "hamas"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 11-24 November 2023 and 18 March-1 April 2024 siege dates, Israel's command-centre allegation and its denial by Hamas/hospital staff, the Washington Post's questioning of the IDF's account, and Human Rights Watch's March 2025 findings (interview basis, specific allegations, the 84-death figure, and the war-crimes characterisation) are corroborated via live search (Wikipedia's Al-Shifa Hospital siege article, Human Rights Watch's own March 2025 report, CNN and NBC News's contemporaneous coverage)."
+  },
+  {
+    "topic_id": "world-central-kitchen-strike-2024",
+    "name": "World Central Kitchen Aid Convoy Strike",
+    "aliases": [
+      "WCK strike",
+      "World Central Kitchen aid convoy attack"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Event",
+    "date_or_range": "2024-04-01",
+    "summary": "On 1 April 2024, an Israeli drone strike killed seven aid workers from the World Central Kitchen charity as their marked convoy, whose route had reportedly been coordinated in advance with Israeli forces, returned from delivering food aid in Gaza. Three missiles struck three separate vehicles in succession over roughly five minutes -- survivors of the first strike moved to the second car, which was then also struck, and survivors of that strike moved to the third, which was struck in turn. The dead included a dual US-Canadian national, a Palestinian, three British nationals, an Australian, and a Pole. Israel's military called the strike a 'grave mistake,' saying it had misidentified the convoy's location and failed to properly disseminate coordination information internally, and dismissed two officers while reprimanding three others following an internal investigation. World Central Kitchen halted its Gaza operations and called for an independent investigation.",
+    "significance": "One of the highest-profile single incidents of the war precisely because the victims were international aid workers on a pre-coordinated route, not a case where combatant presence was ever alleged -- removing the disputed-intelligence element present in incidents like the Al-Shifa Hospital sieges (also in this dataset) and making Israel's own internal failure the central, largely undisputed fact. The strike triggered unusually direct US pressure on Israel over humanitarian access in Gaza, including a call from President Biden described by the White House as his most forceful to date on the conduct of the war, and contributed to a temporary opening of additional aid crossings and routes into Gaza in the weeks that followed.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 1 April 2024 date, the seven victims and their nationalities, the three-missiles-in-five-minutes sequence, Israel's 'grave mistake' characterisation and the officer dismissals/reprimands, and World Central Kitchen's operational halt are corroborated via live search (CNN's coverage of the victims and of Netanyahu's 'unintentional' characterisation, NBC News, World Central Kitchen's own investigation call). The specific characterisation of Biden's call to Netanyahu as his most forceful to date is corroborated via live search but not independently re-verified against a White House transcript this pass."
+  },
+  {
+    "topic_id": "journalist-deaths-gaza-war",
+    "name": "Journalist Deaths in the Gaza War",
+    "aliases": [
+      "journalists killed in Gaza",
+      "press casualties Gaza war"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Historical Phenomenon",
+    "date_or_range": "2023-10 to present",
+    "summary": "The Committee to Protect Journalists (CPJ), which has tracked journalist deaths in conflict since 1992, documented 209 journalists and media workers killed by Israel in Gaza and in Israeli detention since 7 October 2023, as of its most recent count in this pass -- a toll CPJ describes as making Israel responsible for more journalist deaths than any government it has recorded in over three decades of tracking, and this war the deadliest conflict for journalists CPJ has ever documented, surpassing the prior record of 113 killed during the entire Iraq War. CPJ also documents allegations that Palestinian journalists have been directly targeted, arbitrarily detained, and in some cases tortured in retaliation for their reporting, and that Israel has deliberately destroyed media infrastructure in Gaza while tightening press restrictions in the West Bank and Israel itself. CPJ announced in June 2026 that it was undertaking a review of its own documentation methodology following public disputes over its inclusion criteria -- a genuine, live methodological controversy over exactly who counts as a journalist killed in the conflict, not a retraction of the underlying toll.",
+    "significance": "Journalists killed while reporting, and attacks that target press specifically because of their reporting, are themselves potential violations of the international humanitarian law protections owed to civilians -- protections that apply to journalists as civilians unless and until they take a direct part in hostilities. The scale of this toll, and CPJ's own characterisation of a substantial share of the deaths as deliberate rather than incidental, is one of the most-cited data points in the broader international-law case against Israel's conduct of the war, alongside the ICJ, ICC and Al-Shifa Hospital material already in this dataset -- though, as with the hospital sieges, the deliberateness allegation is CPJ's own documented assessment rather than a court finding, and the live methodology dispute noted above is a genuine complicating factor worth keeping visible rather than smoothing over.",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "idf"
+    ],
+    "citation": "VERIFIED 2026-09-10 -- the 209 figure (as of CPJ's most recent count reflected in live search this pass), CPJ's 'deadliest on record'/'more than any government since 1992' characterisation, the prior 113-in-Iraq-War record, the targeting/detention/torture allegations, and CPJ's June 2026 methodology review are all corroborated via live search (CPJ's own Israel-Gaza War issue page and its 209-count reporting, CBS News's 2024 deadliest-year coverage, NPR's December 2023 coverage, Columbia Journalism Review's coverage of the methodology dispute). Given CPJ's own active review, this figure and characterisation should be treated as current-as-of-this-pass rather than a final, settled count."
   }
 ]
