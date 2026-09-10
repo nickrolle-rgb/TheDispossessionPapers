@@ -3584,3 +3584,51 @@ removed phrasing) -- the standalone prototype's own published Artifact couldn't 
 browser-checked this round (it requires sign-in, unreachable from this session's Browser pane tool)
 so its harness result is the verification of record for it, consistent with how it's been verified
 all session.
+
+## Round: 2026-09-10 -- Fatah, the West Bank's dual legal system, and settler-violence impunity
+
+Nick: "Can we check settler violence prosecution rates and impunity next? Can we also add a
+listing for Fatah?"
+
+**Fatah** -- new org (National Liberation Movement, matching PLO/Hamas's type). Founded 1959 in
+the Kuwait-based Palestinian diaspora by Arafat, Khalil al-Wazir (Abu Jihad), Salah Khalaf (Abu
+Iyad) and Khalid al-Hassan; its founding doctrine committed to armed struggle from the outset,
+explicitly modelled on the Algerian War of Independence. The Battle of Karameh (21 March 1968) --
+Jordanian forces unexpectedly fighting alongside Fatah against an Israeli raid, with King Hussein
+letting Arafat claim public credit -- transformed Fatah's prestige and directly set up its 1969
+takeover of the PLO (already in this dataset). Linked as a standing component of the PLO via a new
+`"fatah": "plo"` entry in both `COMPONENT_OF` mirrors (JS and Python) -- the same "standing organ
+of a parent body, not predecessor/successor" relationship already used for UNGA/UNSC within the UN,
+since Fatah didn't dissolve into or merge with the PLO, it became (and remains) its dominant
+internal faction. Flagged, not actioned this round: neither Yasser Arafat nor Mahmoud Abbas has a
+standalone actor entry despite being referenced constantly throughout this dataset (PLO, Oslo,
+Algiers Declaration, PA founding) -- named in Fatah's `notable_members` as real, significant people
+not yet profiled, a clear gap for a future round.
+
+**Israel's Dual Legal System in the West Bank** -- new topic (Historical Phenomenon): ACRI's 2014
+"One Rule, Two Legal Systems" report, documenting civilian Israeli law/courts for ~440,000 settlers
+against military law/courts for ~3 million Palestinians in the same territory -- concrete
+procedural asymmetries including the 12-year-old Nablus-vs-Yitzhar pre-hearing detention comparison
+(four days vs. twelve hours), the age-16-vs-18 prosecution threshold, and stone-throwing indictment
+rates (46% Palestinian vs. 11% Israeli) with wildly divergent conviction outcomes (100% vs. four
+convictions total). Framed explicitly as the structural counterpart to the settler-violence
+impunity already documented in the existing Price Tag Attacks entry -- same underlying conduct
+categories, opposite legal outcomes, purely as a function of which court system a person's
+citizenship routes them into.
+
+**Price Tag Attacks enriched, not duplicated** -- the current, politically-specific escalation
+under National Security Minister Itamar Ben-Gvir (in office since December 2022) folded into the
+existing entry as a real continuation of the same already-documented Yesh Din pattern: police
+investigations into settler violence fell roughly 73% (235 in 2023, 150 in 2024, ~60 in 2025) even
+as documented attacks rose, alongside reporting that Ben-Gvir directed police not to arrest or
+investigate violent settlers and eased firearms regulations sharply (100,000+ new gun licences
+issued since October 2023, with settlers reported to receive preferential access).
+
+Verification: `scripts/collision_check.py` clean; explicit `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; Node DOM-stub harness's 30+ checks
+pass (253 nodes, +2 -- one org, one topic; component edges 2->3 confirming the new Fatah->PLO
+relationship landed correctly); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (379/379); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`9dd681c`), Vercel auto-deployed, aliased, and confirmed live in an actual browser (zero
+console errors, both new entries' rendered content spot-checked directly via JS).
