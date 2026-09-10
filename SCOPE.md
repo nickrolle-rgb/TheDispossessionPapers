@@ -3789,3 +3789,34 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 republished, pushed (`accf4f2`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors; deep-linked directly to the new entry, autolinks spot-checked
 via JS).
+
+## Round: Kaminitz Law enrichment (2026-09-10)
+
+**Kaminitz Law** (`kaminitz-law-2017`, existing entry, enriched rather than replaced): picks up
+where the existing entry's 2020 "de facto freeze" left off. In April 2024, the government
+transferred the Real Estate Enforcement Division -- the unit most responsible for Kaminitz-era
+demolition and fine enforcement -- from the Finance Ministry to National Security Minister Itamar
+Ben-Gvir, which the Arab Center for Alternative Planning said would let him "act with racism and
+discrimination" against Arab citizens. Enforcement scale rose sharply alongside the transfer: the
+Negev Coexistence Forum for Civil Equality recorded 2,007 house demolitions in the Negev/Naqab in
+just the first half of 2024 -- already exceeding any previous full year's total -- with reporting
+citing more than 4,000 structures demolished across the Negev for the full year, roughly a 22%
+increase over 2023. In January 2025, Haaretz reported Ben-Gvir instructed police to prioritise
+demolishing occupied family homes specifically, understood internally to target the Arab community;
+noted that formal demolition-policy authority actually rests with Attorney General Gali
+Baharav-Miara, not the minister. `land_impact.description` updated with the same demolition-scale
+figures as the clearest available enforcement-reach indicator.
+
+No new topic/law entry created -- this was a pure enrichment of the existing 2017 entry, extending
+its summary and citation fields with new VERIFIED material rather than duplicating the law under a
+second id. Live verification confirmed the autolinker picked up Itamar Ben-Gvir automatically via
+the existing knesset_members.json entry, no manual linking needed.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (259 nodes
+unchanged; 396 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (396/396); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`065322c`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked directly to the entry, autolinks spot-checked via
+JS).
