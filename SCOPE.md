@@ -3192,3 +3192,52 @@ nodes, +3 -- one org, two topics); `build_network_view.py`'s Python build and th
 `netBuildGraphData()` produce byte-for-byte identical edge sets (356/356). Both Artifacts
 republished, pushed (`082ffc0`), Vercel auto-deployed, aliased, and spot-checked live via curl for
 all three new ids.
+
+## Round: 2026-09-10 -- Home demolitions and East Jerusalem eviction cases
+
+Nick: "Can we check the demolitions and evictions data next?" Direct continuation of the
+checkpoints round -- the other half of the ground-level machinery of dispossession, and arguably
+closer to this dataset's core subject than any of the day's earlier international-law rounds.
+
+**Four new topics (90 total), all existing topic_types -- no schema changes needed:**
+
+- `punitive-home-demolitions` (Historical Phenomenon): Regulation 119 of the British Mandate's
+  1945 Defence (Emergency) Regulations (Mandate legislation Israel absorbed wholesale, the same
+  legal-inheritance pattern already documented elsewhere in this dataset), ended 1998, revived
+  2000 with the Second Intifada (650+ homes destroyed, 4,000+ displaced 2000-2005), paused 2005
+  after Israel's own military committee found it counterproductive, revived again in 2014, and
+  continuing intermittently since including during the post-7 October 2023 war. A textbook
+  collective-punishment mechanism -- prohibited under the same Fourth Geneva Convention already
+  central to the ICJ and Al-Shifa entries -- that Israel's own Supreme Court has nonetheless
+  repeatedly upheld domestically.
+- `administrative-home-demolitions`: the permit-denial mechanism, kept explicitly distinct from
+  punitive demolitions since the legal basis and stated justification differ entirely. Under 4% of
+  Area C building-permit applications approved 2015-2019 (94%+ denied 2000-2007); Palestinians
+  permitted to build on under 1% of Area C and roughly 13-15% of East Jerusalem (against ~35%
+  allocated to Israeli settlements); an estimated 48,000 structures demolished across all
+  categories since 1967; 1,288 demolished for lack of permit in the first nine months of 2025
+  alone (4.7/day); at least a third of East Jerusalem's Palestinian homes lack a permit, putting
+  100,000+ residents at risk.
+- `sheikh-jarrah` (Geographic Region): the 2008-present eviction litigation, enabled by a 1970
+  Israeli law letting Jewish claimants recover pre-1948-owned property with no reciprocal
+  Palestinian right for 1948 losses -- the same one-directional logic as the Absentees' Property
+  Law (already in this dataset) running from the opposite side of the 1948 line. Its documented
+  role helping trigger the May 2021 Israel-Gaza escalation, and the families' 2021 rejection of the
+  Supreme Court's conditional "protected tenant" compromise (which would have required recognising
+  the settlers' ownership claim).
+- `silwan` (Geographic Region): the Elad/City of David settler organisation's demolition and
+  eviction campaign since the 1990s, concentrated in Batn al-Hawa and al-Bustan, with 2,000+
+  residents currently at risk and 587 Palestinians displaced by East Jerusalem demolitions since 7
+  October 2023 (roughly a quarter during the March-April 2026 Israel-Iran war alone, per HRW's
+  June 2026 reporting). B'Tselem's "ethnic cleansing" characterisation is presented explicitly as
+  B'Tselem's own documented assessment, not an adjudicated finding -- the same discipline already
+  applied to HRW's Al-Shifa "war crimes" characterisation.
+
+Both Sheikh Jarrah and Silwan are legitimate but currently edge-free nodes (no existing entity to
+link them to via `related_org_ids` beyond what's already covered) -- same honest treatment given
+to Truman/Clinton/Bush's entries earlier this session rather than forcing a connection.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (239
+nodes, +4); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (359/359). Both Artifacts republished, pushed
+(`cd60315`), Vercel auto-deployed, aliased, and spot-checked live via curl for all four new ids.
