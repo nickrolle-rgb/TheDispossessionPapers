@@ -3241,3 +3241,43 @@ Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ ch
 nodes, +4); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
 produce byte-for-byte identical edge sets (359/359). Both Artifacts republished, pushed
 (`cd60315`), Vercel auto-deployed, aliased, and spot-checked live via curl for all four new ids.
+
+## Round: 2026-09-10 -- Settlement outposts, price tag attacks, and Marwan Barghouti
+
+Nick: "Can we check settlement outposts and price tag attacks next? Can we put Marwan Barghouti
+into a listing too?" Two new topics plus a real, long-overdue actor entry.
+
+**Settlement Outposts** (Historical Phenomenon): illegal even under Israeli law -- unlike
+authorised settlements, outposts lack permits and are frequently built on privately-owned
+Palestinian land. ~200 exist today; Peace Now documented 174 new ones under the current
+government's nearly-three-year tenure as of late 2025. The Amona case (the largest outpost ever
+built, near Ofra, on private Palestinian land) drew the worst-ever settler-state clash at its
+February 2006 court-ordered demolition (~250 injured). Cross-linked to the existing Gush Emunim
+entry as the informal 1970s precedent for the same retroactive-legalisation logic the 2017
+Regularization Law (already in this dataset) later formalised nationally -- a real, found
+connection, not forced.
+
+**Price Tag Attacks** (Historical Phenomenon): the term's 2008 emergence (after the 2005
+disengagement and 2006 Amona ruling), the clandestine Yitzhar-yeshiva-centred network behind it,
+the 2013 Nationalistically Motivated Crimes Unit later found ineffectual, and Yesh Din's two-decade
+(2005-2025) data: 93.6% of investigation files closed without indictment, roughly 3% ending in
+conviction, with police-side investigative failure (64% "offender unknown," 20% "insufficient
+evidence") as the documented leading cause -- presented as Yesh Din's own finding, sourced directly
+to their published data sheet.
+
+**Marwan Barghouti** -- new `historical_actors.json` entry, a genuine gap given his centrality to
+current Palestinian politics. Joined Fatah in 1974, imprisoned repeatedly in the late 1970s,
+returned under Oslo in 1994, became Fatah's West Bank Tanzim leader, arrested during the
+already-documented 2002 Operation Defensive Shield, convicted 2004 of murder in several Al-Aqsa
+Martyrs' Brigades attacks (five life terms plus 40 years, acquitted on other counts -- he declined
+to mount a formal defence, disputing the court's jurisdiction rather than the facts). Consistently
+the most popular figure in Palestinian presidential polling, called the "Palestinian Mandela," and
+pointedly excluded from the October 2025 prisoner exchange under Trump's Gaza peace plan (already
+in this dataset) despite topping Hamas's own release list -- Israel has called his release a red
+line. Added to the PLO's `notable_members` as a real, direct affiliation.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (242
+nodes, +3 -- one actor, two topics); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (363/363). Both Artifacts
+republished, pushed (`e89870e`), Vercel auto-deployed, aliased, and spot-checked live via curl for
+all three new ids.
