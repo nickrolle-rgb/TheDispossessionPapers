@@ -3321,3 +3321,36 @@ Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ ch
 nodes, +3); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
 produce byte-for-byte identical edge sets (367/367). Both Artifacts republished, pushed
 (`9c0f22b`), Vercel auto-deployed, aliased, and spot-checked live via curl for all three new ids.
+
+## Round: 2026-09-10 -- Settler grazing land grabs and olive harvest violence
+
+Nick: "Can we check settler agricultural land grabs next?" Continuing the settlement-mechanism
+thread from prior rounds this session (outposts, price tag attacks, Hilltop Girls) with two more
+genuinely distinct methods.
+
+**Settler Agricultural and Grazing Land Grabs** (Historical Phenomenon): the shepherding-outpost
+method, distinct from formal outpost construction -- Kerem Navot/Peace Now's 2024 "Bad Samaritan"
+report found 786,000 dunams (14% of the West Bank) seized this way, with 70% of all settler land
+seizure in the prior three years carried out through grazing. 60+ Palestinian shepherding
+communities displaced, 14+ new Israeli shepherding outposts established. Named case study: Yinon
+Levi, who founded Meitarim Farm in 2021 and was sanctioned by the US Treasury in February 2024 for
+leading assaults that displaced 300+ people from four hamlets -- delisted eleven months later in
+January 2025, a real, concrete illustration of the limits of international sanctions pressure on
+the pattern. OCHA's 2023-2025 displacement data (2,895 people since 2023) and Amnesty
+International's June 2026 "ethnic cleansing" characterisation (flagged explicitly as Amnesty's own
+assessment, consistent with the Al-Shifa/Silwan discipline already established this session) round
+out the entry.
+
+**Olive Harvest Violence** (Historical Phenomenon): kept deliberately distinct from the grazing
+mechanism -- different target (established olive farmers, not open grazing land), different
+seasonal timing (concentrated in the autumn harvest), different tactic (direct violence and tree
+destruction rather than gradual occupation by livestock). Real economic stakes: 10 million+ olive
+trees across ~86,000 hectares, 47% of the West Bank's cultivated agricultural area, 80,000-100,000
+families dependent. OCHA's 2025 season figures are the worst on record since it began tracking in
+2006: 178 harvest-related attacks, 140+ Palestinians injured, 6,000+ trees destroyed across 77
+villages, and October 2025 alone recording the highest monthly settler-attack total ever documented.
+
+Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ checks pass (247
+nodes, +2); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
+produce byte-for-byte identical edge sets (369/369). Both Artifacts republished, pushed
+(`4e88676`), Vercel auto-deployed, aliased, and spot-checked live via curl for both new ids.
