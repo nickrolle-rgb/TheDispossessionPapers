@@ -117,7 +117,7 @@ node_index = {}
 
 def add_node(id_, kind, label, detail):
     node_index[id_] = len(nodes)
-    nodes.append({"id": id_, "kind": kind, "label": label, "detail": detail, "align": None})
+    nodes.append({"id": id_, "kind": kind, "label": label, "detail": detail, "align": None, "aliases": []})
 
 for a in actors:
     life = a.get("life_span", {}) or {}
@@ -191,6 +191,45 @@ for f in foreign:
         "personal": [{"title": "Role status", "when": "", "text": f.get("role_status", "")}] if f.get("role_status") else [],
     })
     nodes[node_index["foreign:" + f["actor_id"]]]["align"] = "unaffiliated"
+
+# ---------- aliases (mirrors wiki-prototype.html's nameIndex-building rules exactly, so the
+# standalone prototype's own autolink() below can reach the same set of mentions the live wiki
+# does -- see network_view_template.html's autolink()/buildNameIndex() for the JS side) ----------
+PERSON_KINDS = {"actor", "mk", "foreign"}
+surname_count = Counter()
+for n in nodes:
+    if n["kind"] in PERSON_KINDS:
+        surname = n["label"].split(",")[0].strip().split(" ")[-1]
+        if len(surname) > 3:
+            surname_count[surname] += 1
+for n in nodes:
+    if n["kind"] in PERSON_KINDS:
+        surname = n["label"].split(",")[0].strip().split(" ")[-1]
+        if len(surname) > 3 and surname_count[surname] == 1:
+            n["aliases"].append(surname)
+
+for a in actors:
+    if a.get("birth_name") and a["birth_name"] != a["full_name"]:
+        nodes[node_index["actor:" + a["actor_id"]]]["aliases"].append(a["birth_name"])
+
+for o in orgs:
+    node = nodes[node_index["org:" + o["org_id"]]]
+    for part in o["name"].split("/"):
+        short = part.split("(")[0].strip()
+        if short and short != o["name"]:
+            node["aliases"].append(short)
+    for al in (o.get("aliases") or []):
+        node["aliases"].append(al)
+
+for l in laws:
+    short = l["title"].split(",")[0].strip()
+    if short and short != l["title"]:
+        nodes[node_index["law:" + l["law_id"]]]["aliases"].append(short)
+
+for t in topics:
+    node = nodes[node_index["topic:" + t["topic_id"]]]
+    for al in (t.get("aliases") or []):
+        node["aliases"].append(al)
 
 # ---------- edges ----------
 edges = []

@@ -153,6 +153,11 @@
   .info-event .when { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; color: var(--rust); }
   .info-event .what { font-weight: 600; font-size: 0.83rem; margin: 0.1rem 0 0.2rem; }
   .info-event p { font-size: 0.78rem; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+  /* autolink()'s onclick="jumpToNode(...)" links -- an <a> with no href gets no default browser
+     styling at all, so these need their own rule (matching .index-grid a's existing look) rather
+     than relying on a general "a" selector this template never had. */
+  .info-role a, .info-event p a { color: var(--link); cursor: pointer; border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent); }
+  .info-role a:hover, .info-event p a:hover { border-bottom-color: var(--link); }
   .info-close { background: none; border: 1px solid var(--line); border-radius: 20px; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; text-transform: uppercase; color: var(--fog); padding: 0.25rem 0.6rem; cursor: pointer; float: right; }
   .info-close:hover { color: var(--rust); border-color: var(--rust); }
 
@@ -255,6 +260,46 @@ var ALIGN_LABEL = {
 var KIND_LABEL = { actor: 'Actor', mk: 'Actor (Knesset Member)', org: 'Organization', law: 'Law', topic: 'Topic', foreign: 'Foreign Patron' };
 var KIND_RADIUS = { actor: 5.5, mk: 5.5, org: 6, law: 5, topic: 5, foreign: 5.5 };
 var HIDDEN_KINDS = { law: true, topic: true }; // only revealed once a connected node is selected
+
+// ---------- autolink: mirrors wiki-prototype.html's autolink()/nameIndex exactly (same rules,
+// same word-boundary regex), reading GRAPH_DATA.nodes' label+aliases (populated by
+// build_network_view.py, see there for the alias-computation rules) instead of the live wiki's
+// raw ACTORS/ORGS/etc. arrays -- this prototype never embeds those, only the flattened graph.
+// Ported 2026-09-10 after Nick noticed info-panel prose here read plain ("(already in this
+// dataset)") instead of linking, unlike the live wiki -- this feature had simply never been
+// carried over when it was added there. Uses the same onclick="jumpToNode(...)" pattern the
+// index/search lists already use here, since this prototype has no hash routing to link into. ----
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+  });
+}
+var nameIndex = [];
+GRAPH_DATA.nodes.forEach(function(n) {
+  if (n.label && n.label.length > 3) nameIndex.push({ name: n.label, id: n.id });
+  (n.aliases || []).forEach(function(al) { if (al) nameIndex.push({ name: al, id: n.id }); });
+});
+nameIndex.sort(function(a, b) { return b.name.length - a.name.length; });
+var nameToId = {};
+nameIndex.forEach(function(n) { if (!nameToId[n.name]) nameToId[n.name] = n.id; });
+function escapeRegex(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+var linkPattern = null;
+function buildLinkPattern() {
+  if (linkPattern) return linkPattern;
+  var alt = nameIndex.map(function(n) { return escapeRegex(n.name); }).join('|');
+  linkPattern = new RegExp('\\b(' + alt + ')\\b', 'g'); // word boundaries: "Peel" shouldn't match inside "repeal"
+  return linkPattern;
+}
+function autolink(text, selfId) {
+  if (!text) return '';
+  var pattern = buildLinkPattern();
+  var escaped = escapeHtml(text);
+  return escaped.replace(pattern, function(match) {
+    var id = nameToId[match];
+    if (!id || id === selfId) return match;
+    return '<a onclick="jumpToNode(\'' + id.replace(/'/g, "\\'") + '\')">' + match + '</a>';
+  });
+}
 
 // ---------- index face ----------
 function buildIndex() {
@@ -653,18 +698,18 @@ function selectNode(id) {
   html += '<span class="info-badge" style="border-color:' + badgeColor + '; color:' + badgeColor + '">' + KIND_LABEL[n.kind] + ' · ' + ALIGN_LABEL[n.align] + '</span>';
   html += '<h3>' + n.label + '</h3>';
   html += '<div class="info-meta">' + (d.meta || '') + '</div>';
-  if (d.role) html += '<div class="info-role">' + d.role + '</div>';
+  if (d.role) html += '<div class="info-role">' + autolink(d.role, n.id) + '</div>';
   if (d.events && d.events.length) {
     html += '<div class="info-section-h">Record</div>';
     d.events.slice(0, 6).forEach(function(ev) {
       if (!ev.text) return;
-      html += '<div class="info-event"><div class="when">' + (ev.when||'') + '</div><div class="what">' + (ev.what||'') + '</div><p>' + ev.text + '</p></div>';
+      html += '<div class="info-event"><div class="when">' + (ev.when||'') + '</div><div class="what">' + (ev.what||'') + '</div><p>' + autolink(ev.text, n.id) + '</p></div>';
     });
   }
   if (d.personal && d.personal.length) {
     html += '<div class="info-section-h">Beyond the ledger</div>';
     d.personal.slice(0, 3).forEach(function(p) {
-      html += '<div class="info-event"><div class="when">' + (p.when||'') + '</div><div class="what">' + (p.title||'') + '</div><p>' + p.text + '</p></div>';
+      html += '<div class="info-event"><div class="when">' + (p.when||'') + '</div><div class="what">' + (p.title||'') + '</div><p>' + autolink(p.text, n.id) + '</p></div>';
     });
   }
   document.getElementById('infoPanel').innerHTML = html;
