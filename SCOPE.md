@@ -3354,3 +3354,52 @@ Verification: `scripts/collision_check.py` clean; Node DOM-stub harness's 30+ ch
 nodes, +2); `build_network_view.py`'s Python build and the harness's live `netBuildGraphData()`
 produce byte-for-byte identical edge sets (369/369). Both Artifacts republished, pushed
 (`4e88676`), Vercel auto-deployed, aliased, and spot-checked live via curl for both new ids.
+
+## Round: 2026-09-10 -- Nation-State Law effects, and a real embed_data.py bug fix
+
+Nick: "Can we check the Nation-State Law and its effects next?" The existing
+`nation-state-basic-law-2018` entry (added weeks earlier) covered only the passage and Article 7's
+settlement clause -- nothing about the rest of the law's content or what happened after it passed.
+Enriched rather than duplicated: this is a verification/enrichment pass on an existing entry, not
+a new topic, since it's fundamentally one law's story (passed -> specific effects -> backlash ->
+court challenge -> upheld).
+
+**Added to the existing entry's summary**: Article 1 (national self-determination in Israel
+restricted to the Jewish people); Article 4 (Arabic downgraded from an official language it had
+held since the 1922 British Mandate to unspecified "special status"); the law's complete absence
+of any equality or democratic-character clause -- an omission the Supreme Court itself later
+called "would have been preferable" to fix, while ruling the omission didn't invalidate the law.
+The August 2018 Druze-led Tel Aviv rally (50,000+, one of the largest protests in Israel that
+year), IDF officer resignations, and the quoted "the state betrayed the Druze" reaction from a
+prominent Druze former brigadier general -- a particularly sharp reaction given the Druze
+community's mandatory IDF service, unlike Arab citizens. The 8 July 2021 Supreme Court ruling: an
+extended eleven-justice panel rejected all fifteen consolidated petitions 10-1, calling the law
+"a chapter in our emerging constitution ... without detracting from the components of the state's
+democratic identity" -- with the lone dissent from Justice George Kara, the Court's only Arab
+justice at the time.
+
+**A real, previously-latent bug found and fixed in `scripts/embed_data.py` itself, not just the
+data:** the new summary was the first content all session to use an actual paragraph break (a real
+newline) inside a JSON string field. `embed_data.py`'s `pattern.subn(new_block, html, count=1)`
+passed the replacement as a raw string -- and Python's `re` module runs its own backslash-escape
+template processing on string `repl` arguments (interpreting `\n`, `\g<...>`, `\1`-`\99`, etc.).
+`json.dumps` correctly emits a literal two-character `\n` sequence for any real newline in a string
+value; `re`'s template engine then silently re-interpreted that as an actual newline byte,
+corrupting the embedded JS into an unterminated string literal -- a full site-breaking syntax
+error, not a narrow data glitch. Caught immediately by the harness's own `eval()` step (a loud,
+unambiguous crash) before anything was published. **Fixed properly**: pass the replacement as a
+function (`lambda m: new_block`) instead of a raw string -- functions bypass `re`'s template
+processing entirely, since the escaping quirk is specific to the string-replacement code path. This
+is the correct general fix for any future multi-paragraph content in any entry, not a one-off patch
+for this law specifically.
+
+Verification: after the fix, `node --check`/`new Function()` confirm the embedded script parses
+cleanly; the harness's 30+ checks all pass (247 nodes/369 edges, unchanged -- no new entities, only
+an enriched existing summary); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` still produce byte-for-byte identical edge sets. Given the severity class of
+bug (a broken embed would have blanked the entire live site, not just this entry), verified live
+post-deploy beyond the usual curl check: navigated the actual Browser pane to the deployed URL,
+confirmed zero console errors, deep-linked directly to the law's own node
+(`#/network/law/nation-state-basic-law-2018`), and read the rendered info panel's own DOM content
+directly via JS to confirm the enriched, uncorrupted summary text renders correctly in a live
+browser context, not just present in the raw bytes.
