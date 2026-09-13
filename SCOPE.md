@@ -3989,3 +3989,50 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`0585d75`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to the entry, Donald Trump and East Jerusalem both autolinked
 correctly with no manual wiring).
+
+## Round: Dayan's pre-1967 Syrian border disclosure (2026-09-13)
+
+Nick asked specifically whether there was a substantiated basis for the claim that "80% of clashes
+along the Syrian border were initiated by Israel ahead of the 1967 war" -- a well-known but
+easy-to-garble claim. Researched it carefully rather than taking the framing at face value, since
+the precise scope and sourcing matter a lot here.
+
+**What's actually substantiated**: in 1976, journalist Rami Tal interviewed Moshe Dayan for a
+planned book; Tal kept his notes private for two decades before publishing them in Yedioth Ahronoth
+in May 1997, sixteen years after Dayan's death, with international syndication via the New York
+Times and Associated Press (11-12 May 1997). In that interview Dayan said, of clashes along the
+Israel-Syria demilitarized zone: "I know how at least 80 percent of the clashes there started. In my
+opinion, more than 80 percent, but let's talk about 80 percent. It went this way: We would send a
+tractor to plow someplace where it wasn't possible to do anything, in the demilitarized area, and
+knew in advance that the Syrians would start to shoot. If they didn't shoot, we would tell the
+tractor to advance farther, until in the end the Syrians would get annoyed and shoot." He described
+this as a practice spanning several Israeli Chiefs of Staff -- including his own 1953-58 tenure --
+through to Yitzhak Rabin's, which ended days before the June 1967 war itself.
+
+**Precision matters here**: this is specifically about a demilitarized-zone land-cultivation
+provocation tactic (not literally "80% of all military engagements with Syria" in some broader
+sense), and it is Dayan's own first-person retrospective claim -- made as a private citizen years
+after the fact, not published until after his death -- rather than an independently adjudicated
+historical finding. Presented in the entry exactly that way: his claim, clearly attributed, not
+this dataset's own verified fact about how the war started. Historian Avi Shlaim's *The Iron Wall*
+(2014) is reported via live search to cite the same interview against the standard Israeli defensive-
+necessity narrative for the Golan campaign, noted but not independently re-read this pass.
+
+Added as a new `key_land_actions` entry on the existing `moshe-dayan` actor (Historical Phenomenon-
+adjacent Military Policy entry, not a new person or topic). Also used the same interview to enrich
+Dayan's existing June 1967 entry with his separately-disclosed regret over the Golan Heights capture
+and the Hebron return -- "the two decisions ... he most regretted" as Defense Minister, in his own
+words: "I did not fulfill my role as defense minister, in that I did not stop things that I was sure
+should have been stopped."
+
+No new nodes or edges -- a pure content enrichment of an existing actor entry; no new person, org, or
+topic introduced, and no new autolinkable names (Rami Tal, Avi Shlaim) exist elsewhere in the dataset
+to link to yet.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (261 nodes,
+400 edges, both unchanged); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (400/400); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`2bd198d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to Dayan's entry, quoted text and encoding verified correct).
