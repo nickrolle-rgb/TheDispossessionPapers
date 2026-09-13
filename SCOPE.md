@@ -4136,3 +4136,54 @@ pushed (`4b37409`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; all four entries deep-linked and their cross-links spot-checked via JS --
 Eban/Resolution 242 and Kissinger/Yom Kippur War/Yigal Allon all resolved correctly in both
 directions with no manual wiring).
+
+## Round: Quigley, Camp David Accords, Yom Kippur War fix (2026-09-13)
+
+Nick asked to treat John Quigley "similarly" to John McHugo -- confirms the McHugo approach
+(citation in a relevant entry, not a mismatched standalone actor) was understood and wanted again.
+
+**John Quigley cited in `resolution-181`** (not a standalone actor, same reasoning as McHugo):
+his 2016 book *The International Diplomacy of Israel's Founders* argues UNSCOP's 1947
+fact-finding was shaped by deliberate Jewish Agency influence. Two specific claims made it in,
+both independently verified beyond Quigley's own account: the Mossad LeAliyah Bet's timing of
+UNSCOP's Palestine visit to coincide with the Exodus 1947's 18 July 1947 arrival at Haifa
+(confirmed via the UN's own UNSCOP summary records), and Moshe Shertok's UNSCOP testimony
+describing Jewish return to Palestine as "almost uninterrupted... in every century" (confirmed via
+UN historical documents quoting it directly). Quigley's interpretive framing of these as deliberate
+deception is presented as his own scholarly argument, not this dataset's conclusion.
+
+**Deliberately left out**: several more serious, more specific allegations from the same book
+(that Eban denied the 1948 Dawayima massacre against IDF's own internal reports, that Eban
+fabricated radar evidence to justify the 1967 war) came up in research but were NOT included --
+these are extraordinary claims about specific historical incidents that I could not independently
+corroborate beyond the one book's characterisation within reasonable effort this pass, and the
+stakes of getting them wrong are much higher than the UNSCOP/Exodus material. Noted explicitly in
+the entry's own citation field rather than silently dropped, so a future pass knows they were
+considered and why they didn't make the cut.
+
+**Camp David Accords** (new topic, Agreement, 5-17 September 1978): the two frameworks Carter
+brokered between Begin and Sadat -- the Sinai return (fully carried out: Yamit and 13 other
+settlements evacuated and dismantled in April 1982, 2,000+ settlers displaced) and the West
+Bank/Gaza "Framework for Peace" autonomy plan (never implemented as written -- Begin equivocated on
+sovereignty within weeks, the PLO rejected it, and Ariel Sharon's Agriculture Ministry accelerated
+West Bank settlement construction throughout the same period rather than pausing it as Carter had
+sought). First entry to document the "transitional arrangement that settlement expansion continues
+underneath" pattern this dataset's own Oslo-era and 2000-era material would later repeat.
+
+**Bug fix, not new content**: caught and fixed a genuine run-on sentence in the Yom Kippur War
+entry's significance field, introduced by an incomplete string replacement in an earlier round this
+same session (a dangling "-- but" clause left over from the old text after a `.replace()` only
+partially updated the sentence). Found it by rereading the file while working in it again today --
+a reminder to re-read the surrounding text after a targeted replace, not just check the assertion
+passed.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (265 nodes,
++1; 404 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (404/404); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`8b4d26c`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; all three entries deep-linked, cross-links spot-checked via JS -- Jimmy
+Carter, Menachem Begin, Anwar Sadat, the PLO, Ariel Sharon, and Mossad LeAliyah Bet all resolved
+correctly via existing dataset entries with no manual wiring; the Yom Kippur War fix confirmed
+rendering as a clean sentence, not the old run-on).
