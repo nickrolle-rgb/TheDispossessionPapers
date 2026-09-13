@@ -1545,5 +1545,78 @@
       }
     ],
     "personal_context": []
+  },
+  {
+    "actor_id": "abba-eban",
+    "full_name": "Abba Eban",
+    "birth_name": "Aubrey Solomon Meir Eban",
+    "birth_country": "British Cape Colony (Cape Town, South Africa)",
+    "life_span": {
+      "born": "1915-02-02",
+      "died": "2002-11-17"
+    },
+    "primary_affiliations": [
+      "Mapai / Alignment / Labor Party",
+      "Israeli Foreign Ministry",
+      "Knesset (4th-11th)"
+    ],
+    "historical_role": "Israel's first permanent UN representative (1949-59, concurrently ambassador to the US), later Foreign Minister (1966-74) through the Six-Day War, the 1967 UN Resolution 242 negotiations, and the 1973 Yom Kippur War and its diplomatic aftermath -- widely regarded as Israel's most prominent international spokesman of the era.",
+    "key_land_actions": [
+      {
+        "date": "1967-11-22",
+        "action_type": "Diplomatic Negotiation",
+        "location_affected": "West Bank, Gaza Strip, Sinai Peninsula, Golan Heights",
+        "impact_description": "As Foreign Minister, led Israel's diplomacy around UN Security Council Resolution 242, whose withdrawal clause -- calling for Israeli withdrawal 'from territories occupied in the recent conflict' -- deliberately omitted the definite article 'the' or the word 'all' before 'territories.' British Ambassador Lord Caradon, the resolution's principal drafter, and US Ambassador Arthur Goldberg both later confirmed the omission was intentional rather than an oversight. Eban announced Israel would treat the resolution's English text, not its French version, as authoritative, and in his 1992 memoir 'Personal Witness: Israel Through My Eyes' described the US and UK's willingness to leave the pre-war boundaries open to revision, rather than requiring full withdrawal, as a 'major breakthrough' for Israeli diplomacy -- a characterisation of the resolution's own ambiguous wording as a diplomatic asset rather than simply an unresolved dispute over its meaning.",
+        "primary_source_citation": "VERIFIED 2026-09-13 -- Caradon's and Goldberg's confirmation that the 'the'/'all' omission was deliberate is corroborated via live search (Fathom Journal's 'The wisdom of Resolution 242,' Jewish Virtual Library's 'Meaning of Resolution 242,' multiple sources quoting Goldberg's 'not accidental' statement). Eban's 'major breakthrough' memoir characterisation is corroborated via live search (Jewish Center for Foreign Affairs' 'The Assault on Resolution 242,' which attributes the phrase directly to Eban's memoirs), though not independently re-read against the memoir's own text this pass. Full detail and a counter-legal-analysis of the withdrawal clause's wording (McHugo, 2002) are in this dataset's own UN Resolution 242 entry."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "A career built on languages and rhetoric, not military or party-machine credentials",
+        "date_or_range": "1915-2002",
+        "description": "Born Aubrey Solomon Meir Eban in Cape Town and raised in London, he studied classics and Oriental languages at Cambridge, eventually mastering some ten languages including Arabic, Hebrew, French, and Persian, and adopted the Hebrew name 'Abba' ('father') on emigrating to Mandatory Palestine. Unlike most of his Mapai/Labor-era contemporaries, he had no Haganah or Palmach combat record; his influence rested instead on renowned rhetorical skill in the UN General Assembly and Security Council chambers, and on the Foreign Ministry and ambassadorial posts he held almost continuously from 1948 until his final ouster from the Knesset in 1988 amid internal Labor Party splits.",
+        "citation": "VERIFIED 2026-09-13 -- the Cape Town birth, Cambridge education, language skills, name change, lack of a combat record, and 1988 Knesset departure are corroborated via live search (Encyclopedia.com's Eban biography, New World Encyclopedia, JWeekly's obituary)."
+      }
+    ]
+  },
+  {
+    "actor_id": "henry-kissinger",
+    "full_name": "Henry Kissinger",
+    "birth_name": "Heinz Alfred Kissinger",
+    "birth_country": "Germany (Furth, Bavaria)",
+    "life_span": {
+      "born": "1923-05-27",
+      "died": "2023-11-29"
+    },
+    "primary_affiliations": [
+      "Government of the United States",
+      "US National Security Council",
+      "US Department of State"
+    ],
+    "historical_role": "US National Security Advisor (1969-75) and Secretary of State (1973-77) under Presidents Nixon and Ford; his 1973-74 'shuttle diplomacy' between Cairo, Damascus and Jerusalem produced the Egypt-Israel and Syria-Israel disengagement agreements that ended the Yom Kippur War's active fighting and set the disengagement lines this dataset's own Yom Kippur War entry documents.",
+    "key_land_actions": [
+      {
+        "date": "1974-01 to 1974-05",
+        "action_type": "Diplomatic Negotiation",
+        "location_affected": "Sinai Peninsula, Golan Heights",
+        "impact_description": "Negotiated the first Egypt-Israel disengagement agreement in an eight-day round of shuttle diplomacy in January 1974, then spent roughly a month brokering the Israel-Syria Disengagement Agreement signed in Geneva on 31 May 1974, which set the Golan Heights ceasefire lines -- including the 235 sq km UN-patrolled buffer zone (Area of Separation) monitored by the newly-created UN Disengagement Observer Force -- that remain the de facto Israel-Syria frontier documented in this dataset's own Yom Kippur War entry. In August 1974, Kissinger told Israeli Foreign Minister Yigal Allon it would be 'impossible to accept the 1967 frontiers' on either the Syrian or West Bank fronts, and later negotiated the September 1975 Sinai Interim Agreement (Sinai II) with Egypt.",
+        "primary_source_citation": "VERIFIED 2026-09-13 -- the January and May 1974 shuttle-diplomacy rounds, the 31 May 1974 Geneva signing, the 235 sq km buffer zone and UNDOF's establishment, and the September 1975 Sinai Interim Agreement are corroborated via live search (US State Department Office of the Historian, Wikipedia's Agreement on Disengagement between Israel and Syria article). The August 1974 'impossible to accept the 1967 frontiers' statement to Yigal Allon is corroborated via live search (the Forward's 'Henry Kissinger and his original sins of US Middle East policy')."
+      },
+      {
+        "date": "1975-06-15",
+        "action_type": "Policy Lobbying",
+        "location_affected": "West Bank, Gaza Strip",
+        "impact_description": "At a meeting with American Jewish leaders (the 'Klutznik Group') at New York's Hotel Pierre, Kissinger described his own strategy toward the Palestinians explicitly: 'I have left the Palestinian question alone in order to work on frontier questions hoping eventually to isolate the Palestinians.' He argued Israel should negotiate with Arab governments rather than Palestinian representatives, and pursued step-by-step, state-by-state disengagement agreements specifically to prevent a comprehensive Geneva conference that might unite Arab and Palestinian negotiating positions. Critics, including Palestinian-rights advocates, have characterised this approach as having helped entrench rather than resolve the occupations of the West Bank and Gaza by keeping Palestinian political claims off the negotiating table for years at a stretch.",
+        "primary_source_citation": "VERIFIED 2026-09-13 -- the 15 June 1975 Hotel Pierre meeting, the exact 'isolate the Palestinians' quote, and the step-by-step negotiating strategy are corroborated via live search (MERIP's 'Kissinger Memorandum: To Isolate the Palestinians,' drawing on a declassified memorandum of conversation)."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "A refugee from Nazi Germany who became the dominant US foreign-policy figure of his era",
+        "date_or_range": "1923-2023",
+        "description": "Born Heinz Alfred Kissinger in Furth, Bavaria, his Jewish family fled Nazi Germany for the United States in 1938; he later served in the US Army during World War II before an academic career at Harvard preceded his government service. He remains a uniquely polarising figure in US foreign policy history -- widely credited with the Sinai and Golan disengagement agreements and the broader US-Soviet detente of the era, and separately criticised, including over his Middle East record, by scholars and journalists who argue his 'isolate the Palestinians' strategy and his broader realist disregard for Palestinian and other populations' political claims left lasting, largely negative consequences.",
+        "citation": "VERIFIED 2026-09-13 -- the Furth birth, 1938 family emigration, WWII US Army service, and Harvard academic career are corroborated via live search (History.com's Kissinger biography). The characterisation of his legacy as polarising, and the specific criticism of his Middle East/Palestinian policy, are corroborated via live search (The Intercept's 'On Top of Everything Else, Henry Kissinger Prevented Peace in the Middle East,' the Forward's 'original sins' piece) -- presented as those outlets' own assessments rather than this dataset's independent conclusion."
+      }
+    ]
   }
 ]
