@@ -4036,3 +4036,41 @@ verification on both the live wiki and standalone prototype; harness's 30+ check
 prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
 pushed (`2bd198d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to Dayan's entry, quoted text and encoding verified correct).
+
+## Round: 1967 Golan Heights expulsion (2026-09-13)
+
+Only the 1981 Golan Heights Law and Resolution 497 existed in this dataset for the Golan -- nothing
+on the 1967 depopulation that made the territory available for that later annexation in the first
+place. A clean gap, directly relevant to a land-dispossession dataset, and a natural companion to
+this session's earlier Dayan round (whose disclosed pre-1967 Syrian border provocations set up the
+same territory's eventual capture).
+
+**1967 Golan Heights Expulsion** (new topic, Historical Event, 1967-06 to 1967-08): pre-war
+population estimates given as a range rather than false precision -- roughly 90,000 per the Akevot
+Institute's archival research (drawing on Israeli military and Red Cross archives), up to
+130,000-150,000 per other sources including Golan-advocacy accounts. An Israeli military census on
+10 August 1967 recorded only 3,936 Syrian residents remaining, almost all Druze. The ICRC's own
+delegates concluded the IDF had "systematically expelled residents." Akevot's research documents a
+specific, well-sourced mechanism: a staged battle reenactment on 13 July 1967 (ostensibly a training
+film) that panicked nearby residents into fleeing -- the Mansura village case study (250-300
+residents down to 6) anchors this concretely. Colonel Shlomo Gazit's contemporaneous dispute of the
+"expulsion" framing is included for fairness. Village-destruction counts also given as a range
+(130-260, depending on survey), the four Druze villages still inhabited today are named
+(Majdal Shams, Buq'ata, Mas'ade, Ein Qiniyye), and Al-Marsad's "largest ethnic cleansing campaign
+since World War II" characterisation is presented explicitly as their own assessment, not this
+dataset's adjudicated finding -- consistent with how Silwan's B'Tselem "ethnic cleansing"
+characterisation was handled earlier in this session.
+
+Closes with a clearly-dated, separate coda: the 1974 demolition of over 90% of Quneitra's structures
+by withdrawing Israeli forces under that year's Disengagement Agreement -- deliberately kept
+distinct from the 1967 events rather than conflated with them, since several source snippets found
+during research blurred the two.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (262 nodes,
++1; 401 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (401/401); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`f0d43d9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; autolinks spot-checked via JS -- ICRC, the UN, the Golan Heights Law,
+Resolution 497, and Nakba all resolved correctly with no manual wiring).
