@@ -4074,3 +4074,65 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`f0d43d9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; autolinks spot-checked via JS -- ICRC, the UN, the Golan Heights Law,
 Resolution 497, and Nakba all resolved correctly with no manual wiring).
+
+## Round: Eban, Kissinger, Resolution 242, Yom Kippur War land changes (2026-09-13)
+
+Nick's original ask was specifically about Abba Eban and whether the Resolution 242 wording claim
+was verifiable; two more requests arrived mid-turn (Henry Kissinger, then John McHugo). Handled all
+four together since they're substantively linked -- Eban's and Kissinger's actor entries, and
+enrichments to the existing Resolution 242 and Yom Kippur War topics.
+
+**Abba Eban** (new actor): Israel's first UN permanent representative (1949-59) and Foreign Minister
+(1966-74). `key_land_actions` documents his Resolution 242 role: the deliberate omission of "the"/
+"all" before "territories" (confirmed by both Lord Caradon, the resolution's drafter, and US
+Ambassador Arthur Goldberg as intentional, not accidental), Eban's announcement that Israel would
+treat only the resolution's English text as authoritative, and his 1992 memoir *Personal Witness:
+Israel Through My Eyes* calling the US/UK's openness to revising the pre-war boundaries a "major
+breakthrough" for Israeli diplomacy. This IS the verifiable core of what Nick was asking about --
+confirmed via multiple independent sources (Fathom Journal, Jewish Virtual Library, JCFA's direct
+memoir attribution) rather than a single advocacy source.
+
+**Henry Kissinger** (new actor): US Secretary of State, 1973-74 shuttle diplomacy. Documents the
+January/May 1974 Egypt-Israel and Syria-Israel disengagement negotiations, his August 1974
+"impossible to accept the 1967 frontiers" statement to Yigal Allon, and -- the most striking find --
+his 15 June 1975 statement to American Jewish leaders at the Hotel Pierre: "I have left the
+Palestinian question alone in order to work on frontier questions hoping eventually to isolate the
+Palestinians," sourced to MERIP's coverage of a declassified memorandum of conversation.
+
+**Resolution 242 enriched**: adds Caradon's and Goldberg's own confirmation of the deliberate
+omission (with exact quotes), Eban's role, and -- per Nick's follow-up ask about John McHugo --
+international lawyer John McHugo's 2002 *International and Comparative Law Quarterly* article
+arguing the opposite: that the missing definite article does NOT imply partial withdrawal, by
+analogy to the resolution's own navigation-freedom clause. Presented as a genuine, unresolved legal
+dispute, not a claim this dataset takes a side on.
+
+**A scope note on McHugo specifically**: rather than add him as a standalone actor entry, his work
+is cited directly in the Resolution 242 entry's citation and significance fields. `historical_actors.json`
+is reserved for people who took actions with land/policy consequences (ministers, commanders, heads
+of state) -- McHugo is a legal scholar analysing the resolution's text, not a person who acted on
+land, so a standalone actor entry would be a schema mismatch even though the explicit request was to
+"add" him. His actual work is fully incorporated; just not as a mismatched entry type. Told Nick this
+directly rather than silently doing something different from what was asked.
+
+**Yom Kippur War enriched**: corrects the existing entry's blanket "little lasting territorial
+change" framing with the actual Golan-front numbers -- ~500 sq km held at the October 1973 ceasefire
+(the Bashan salient), the 31 May 1974 Agreement on Disengagement's ~25 sq km Israeli withdrawal
+(including Quneitra itself, which had been Israeli-held since 1967) against a new ~235 sq km UN
+buffer zone (UNDOF), and an honest note that sources are NOT fully consistent on which specific
+strategic hilltop positions (including parts of Mount Hermon) each side ended up controlling --
+flagged as genuine sourcing inconsistency rather than resolved to false precision. The Sinai front
+and Quneitra itself did fully revert (no lasting change there); the Golan front's disengagement line
+did not fully revert to the pre-war Purple Line.
+
+Cross-links all work in both directions: Eban <-> Resolution 242, Kissinger <-> Yom Kippur War,
+Kissinger <-> Yigal Allon (already in dataset).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (264 nodes,
++2; 403 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (403/403); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`4b37409`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; all four entries deep-linked and their cross-links spot-checked via JS --
+Eban/Resolution 242 and Kissinger/Yom Kippur War/Yigal Allon all resolved correctly in both
+directions with no manual wiring).
