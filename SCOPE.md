@@ -5302,3 +5302,44 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`9549728`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page and its two-way link with Sharon's entry both
 confirmed autolinking correctly with no manual wiring).
+
+## Round: Operation Litani (1978) (2026-09-14)
+
+Completing the Lebanon thread backward in time (Litani 1978 -> 1982 war -> 2006 war, all three now
+in this dataset). New topic `operation-litani-1978` (Armed Conflict, 14-21 March 1978, aliases
+"Litani Operation"/"1978 South Lebanon Conflict"): the 11 March 1978 Coastal Road massacre trigger
+(38 Israeli civilians killed including 13 children, led by Dalal Mughrabi), the ~20,000-troop
+invasion under Begin, UNSC Resolution 425's 19 March adoption (12-0-2) establishing UNIFIL and
+demanding immediate withdrawal, and the operation's actual outcome: Israel's withdrawal, completed
+only in June 1978, was partial -- it handed the border strip not to the Lebanese government or
+UNIFIL Resolution 425 had named, but to an Israeli-backed proxy militia under Major Saad Haddad.
+
+**Significance section reads Litani, 1982, and 2006 as one continuous 28-year pattern rather than
+three separate conflicts**, and after live verification caught the "2006 war" reference not
+autolinking (a paraphrase rather than the exact entry name, the same wording-mismatch class first
+caught in the Gaza War 2023-25 round), fixed it to name "2006 Lebanon War" exactly -- each partial
+or proxy-backed withdrawal left the underlying conflict unresolved and became the direct cause of
+the next war, not an unrelated new one; all three of this dataset's own Lebanon-war entries now
+confirm-link to each other live.
+
+**Enriched the existing South Lebanon Army entry with a real, previously-missing origin story**
+rather than leaving Litani as a one-way reference: a new, earlier `action_record` entry (June
+1978-May 1980) documents the militia's actual founding moment as Haddad's Litani-aftermath proxy
+force, his 18 April 1979 self-proclaimed "State of Free Lebanon," and the group's May 1980 renaming
+to the South Lebanon Army under Antoine Lahad -- the org's prior action_record had jumped straight
+to 1985 with no account of how the militia actually came to hold the border strip in the first
+place.
+
+Cross-linked to the existing Menachem Begin, PLO, South Lebanon Army, United Nations Security
+Council, and IDF entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (292 nodes,
++1; 467 edges, +5); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (467/467, confirmed both before and
+after the wording fix since it was pure prose); the standalone prototype's own dedicated harness
+confirms its autolinking still works. Both Artifacts republished twice (once per commit); pushed as
+two commits (`13c19c2` for the entry creation, `2db3aa6` for the autolink-wording fix); Vercel
+auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
+errors; the final check confirmed all three Lebanon-war entries -- Litani, 1982, and 2006 -- link to
+each other correctly with no manual wiring).
