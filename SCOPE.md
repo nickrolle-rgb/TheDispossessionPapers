@@ -4841,3 +4841,65 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`43af522`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; East Jerusalem, Sheikh Jarrah, Hamas, and Nakba all autolinked correctly with
 no manual wiring).
+
+## Round: 2023-25 Gaza War (Operation Swords of Iron) (2026-09-14)
+
+Continuing the Gaza thread (disengagement -> 2007 -> 2008-09 -> 2012 -> 2014 -> 2021 -> now this,
+the dataset's sixth and largest Gaza-conflict entry) with one comprehensive overview entry rather
+than another single-episode one, since this war already has four existing satellite entries of its
+own in this dataset (the ICC arrest warrants, the Al-Shifa Hospital Sieges, the World Central
+Kitchen Aid Convoy Strike, Journalist Deaths in the Gaza War, and the Israel-Hamas Hostage and
+Prisoner Exchanges) that needed a top-level entry tying them together rather than duplicating them.
+
+**2023-25 Gaza War** (new topic, Armed Conflict, 2023-10-07 to present, aliases "Operation Swords
+of Iron"/"Israel-Hamas War"/"Iron Swords"): the full arc from the 7 October 2023 Hamas attack
+(cross-referenced to this dataset's own Hamas entry rather than re-documented) through the 27
+October 2023 ground invasion, the late-November 2023 week-long truce and first hostage-prisoner
+swap, continued fighting through 2024 including the 6 May 2024 Rafah offensive, the 17/19 January
+2025 three-phase ceasefire (42-day first phase: 25 living hostages + 8 bodies for 2,000+ Palestinian
+prisoners) and its 18-19 March 2025 collapse over the Philadelphi Corridor dispute (400+ killed
+immediately on resumption), Trump's 29 September 2025 20-point peace plan, the 9-10 October 2025
+first-phase agreement and Israeli withdrawal to the "Yellow Line," the 13 October 2025 release of
+the last 20 living hostages, the plan's governance terms (a technocratic Palestinian committee under
+an international "Board of Peace" chaired by Trump, pending PA reforms, Hamas excluded from
+governance but offered amnesty if it disarms or safe passage if it leaves), and continued
+intermittent violence even after the ceasefire (1,084 deaths/3,491 injuries reported between the
+ceasefire's announcement and July 2026).
+
+Significance centred on scale: Gaza's Ministry of Health's 73,231 killed/173,686 injured (as of 12
+July 2026) against the Lancet-published independent population survey's higher ~75,200 violent-death
+estimate and an Israeli military official's reported acceptance of a near-70,000 figure -- kept as a
+range across sources rather than false precision, consistent with this dataset's casualty-figure
+discipline throughout. 56.2% of those killed reported as women/children/elderly. UN satellite damage
+assessment: 92% of Gaza's housing destroyed/damaged (~436,000 homes), 90% displaced, 51 million tons
+of rubble, reconstruction estimated to take until 2040. Framed explicitly as the dataset's most
+extensively documented single conflict once read together with its four satellite entries.
+
+**A real authoring gap found and fixed, distinct from the three known autolink engine bugs
+(`task_8075a760`/`task_ed830795`/`task_5202f465`, still pending, unrelated root cause):** the first
+published draft referenced the four satellite entries in prose using paraphrased wording ("the first
+hostage-for-prisoner exchange," "the Al-Shifa Hospital sieges," "the World Central Kitchen strike,"
+"the war's journalist death toll") that didn't match those entries' exact `name`/`aliases` strings,
+so live Browser verification showed none of the four autolinking in the rendered page even though
+the graph edges were never in play here (these are topic-to-topic prose references, not
+`related_actor_ids`/`related_org_ids` edges -- the now-familiar prose-autolink-vs-graph-edge
+distinction this dataset has hit before). Diagnosed by querying the four entries' exact fields
+directly, then fixed the wording verbatim ("hostage-prisoner swaps," "Al-Shifa Hospital Sieges,"
+"World Central Kitchen Aid Convoy Strike," "journalists killed in Gaza") to match their real
+`name`/alias strings exactly. Re-verified live afterward: all four now render as working links,
+alongside Hamas, Trump, the Palestinian Authority, the ICC, and Netanyahu.
+
+Cross-linked to the existing Benjamin Netanyahu, Donald Trump, Ismail Haniyeh, Hamas, and United
+Nations entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (281 nodes,
++1; 441 edges, +5); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (441/441, confirmed both before and
+after the wording fix since the fix was pure prose with no relationship changes); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished
+twice (once per commit); pushed as two commits (`d5767e5` for the entry creation, `e0905ef` for the
+autolink-wording fix); Vercel auto-deployed both and confirmed live via curl and an actual browser
+check each time (zero console errors; all four satellite entries plus Hamas, Trump, the Palestinian
+Authority, the ICC, and Netanyahu confirmed autolinking correctly with no manual wiring in the final
+check).
