@@ -6134,3 +6134,59 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`4e2f70d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; visual inspection of the live, deployed network view confirmed both the
 spread-out canvas and the colour-clustering effect working as intended).
+
+## Round: Network map -- 300% further spread, then a real bug found and fixed (2026-09-15)
+
+Nick asked for another 300% spread on top of the previous round's tuning. Scaled every linear
+layout dimension by 3x together: canvas 1600x1300 -> 4800x3900, edge spring length 56 -> 168, seed
+jitter 320 -> 960, boundary margin 85 -> 255, overflow clamp -150/+150 -> -450/+450. Repulsion
+strength scaled by 3^2 = 9x (4600 -> 41400) rather than the same 3x, since repulsion falls off with
+the square of distance -- matching it to the square of the linear factor keeps the same relative
+force balance (and the same general layout shape) at the new scale, rather than just uniformly
+inflating a number without actually producing more real spread. The same-alignment clustering
+force's own distance cap scaled 3x in step (520 -> 1560) so it keeps working across the larger
+canvas rather than falling out of range almost immediately.
+
+**A real bug found via live visual inspection, not assumed away:** after publishing and deploying,
+the default network view looked *more* cramped than before the 300% increase, not less -- the
+opposite of what the change was supposed to do. Rather than accept a screenshot that contradicted
+the stated goal, traced the actual cause in the wiki's own source:
+
+1. **The centre-gravity coefficient (0.0012) was never rescaled.** At 3x the canvas, the same
+   coefficient produced a disproportionately stronger pull toward centre relative to the also-scaled
+   repulsion, actively fighting the intended spread rather than letting the stronger repulsion win.
+   Divided it by the same 3x factor (0.0012 -> 0.0004) in both `netInit()` and `simulate()`.
+2. **The default/reset view was hardcoded to the full nominal canvas** (`{x:0,y:0,w:NET_W,h:NET_H}`
+   / `{x:0,y:0,w:W,h:H}`), not fitted to wherever the nodes actually settled. Inflating the nominal
+   canvas without the achieved equilibrium spread growing by the same factor just added empty
+   margin around a still-compact cluster -- exactly the "worse, not better" result the screenshot
+   showed. Both files already had a proper bounds-with-padding helper (`netBoundsFor()`/
+   `boundsFor()`, previously used only for search/selection framing) that had never been applied to
+   the default view itself; now `netInit()`/the template's own init compute a `homeViewBox` from
+   actual node positions once simulation finishes, `netResetView()`/`resetView()` animate to that
+   instead of the raw canvas, and the zoom-out clamp in `netZoomBy()`/`zoomBy()` is now relative to
+   that fitted box (1.5x) rather than the oversized nominal canvas.
+
+**Verified the fix quantitatively, not just by re-screenshotting and eyeballing it:** read the live
+page's actual rendered viewBox and node transform positions directly via the browser's own DOM,
+confirming the node bounding box now spans essentially the full 4669x3793 fitted canvas (matching
+the intended ~3x growth from the prior round's 1600x1300). Then computed average pairwise distance
+per colour directly from the live rendered node positions: overall graph average 1778 units,
+against left/right/religious/centrist intra-colour averages of 554/574/906/612 -- each roughly a
+third to a half of the overall average, confirming the colours are genuinely clustering tighter than
+random chance would produce -- while the uncoloured institutional/unclassified nodes sit at or above
+the overall average (1605/2168), exactly matching the deliberate design choice not to cluster that
+residual, undifferentiated two-thirds of the graph. Measured proof rather than a screenshot
+impression, for a change that's otherwise hard to verify objectively.
+
+Both fixes applied identically to wiki-prototype.html and prototypes/network_view_template.html,
+prototype rebuilt from the updated template. Pure layout/rendering change throughout both commits --
+no data touched, 305 nodes/525 edges unchanged.
+
+Verification (both commits): `scripts/collision_check.py` clean; `node --check`/`new Function()`
+syntax verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python
+build and live `netBuildGraphData()` produce byte-for-byte identical edge sets (525/525). Both
+Artifacts republished twice; pushed as two commits (`14dc3ac` for the 300% scale-up, `c0df32c` for
+the gravity/view-fitting fix); Vercel auto-deployed both and confirmed live via curl and an actual
+browser check each time (zero console errors; the final check confirmed via direct DOM measurement,
+not just a screenshot, that both the spread and the colour clustering are genuinely working).
