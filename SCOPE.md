@@ -5741,3 +5741,42 @@ pushed (`749e0da`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the enriched content -- the 8 February 2026 decision and the Rachel's Tomb
 scope -- confirmed present, alongside a correct bonus autolink to the existing Resolution 2334
 entry).
+
+## Round: Wye River Memorandum run-up enrichment (2026-09-14)
+
+Nick asked to check "the Wye Plantation summit's earlier attempts" -- the existing
+`wye-river-memorandum-1998` entry opened cold at the 23 October 1998 signing itself, with
+`date_or_range` set to that single day, leaving out the roughly eighteen-month stalemate the summit
+actually emerged from. Corrected `date_or_range` to the actual 15-23 October 1998 span (the entry's
+own prose already said "nine days of talks" without the field reflecting it) and added the real
+run-up as a new opening passage rather than a footnote.
+
+**The stalemate's own trigger, not left vague:** Netanyahu's March 1997 approval of the Har Homa
+settlement (2,450 housing units on Jabal Abu Ghneim in East Jerusalem) came within weeks of the
+Hebron Protocol's own January 1997 signing and prompted Arafat to suspend negotiations in protest --
+cross-referenced to this dataset's own Ehud Olmert entry, which already documents Olmert's own
+mayoral advocacy for the same neighbourhood a decade earlier, tying two entries to the same
+contested strip of land from two different angles a generation apart.
+
+**The stalemate's real texture, not just its length:** Secretary of State Albright's eight-month
+absence from the region: her May 1998 London meeting with the two leaders held separately rather
+than together, itself a sign of how frozen relations had become; and the specific 28 September 1998
+Clinton-Netanyahu-Arafat three-way Washington meeting that finally set the summit in motion -- plus
+the reported deadlock still evident as late as the summit's own sixth day, so the eventual 23
+October signing reads as a genuinely close call rather than a foregone conclusion once the talks
+began.
+
+**Enriched the existing entry rather than creating a new one**, since the run-up is part of the same
+event's own story arc, not a conceptually distinct instrument -- the same discipline applied to the
+Oslo II enrichment two rounds ago, deliberately distinct from the standalone-entry treatment given
+to the Hebron Protocol and to Wye River itself, both genuinely separate signed agreements.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (299 nodes,
+496 edges, both unchanged -- pure prose enrichment plus one new cross-reference, no new
+relationships); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (496/496); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`2a3a1e1`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the enriched content -- Har Homa and the London meeting -- confirmed present,
+alongside a correct new autolink to the existing Ehud Olmert entry).
