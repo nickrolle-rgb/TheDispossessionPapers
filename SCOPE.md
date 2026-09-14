@@ -4451,3 +4451,39 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`db17df4`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; both entries autolink richly in both directions, including a cross-link to
 the existing Oslo Accords and East Jerusalem entries with no manual wiring).
+
+## Round: Camp David 2000's Jerusalem proposals; a note on Jeffrey Sachs (2026-09-14)
+
+**Camp David 2000 Jerusalem enrichment**: replaced the previous brief Jerusalem summary with real
+specifics from a declassified Israeli negotiating document reported by the Times of Israel. Israel
+accepted in principle "what is Arab should be Palestinian and what is Jewish should be Israeli,"
+proposed a Jaffa Gate geographic rule for the Old City (straight-ahead-and-left = Palestinian,
+right = Israeli, putting the Christian/Muslim Quarters under Palestinian and the Jewish Quarter
+under Israeli sovereignty), while separately insisting the Armenian Quarter "should remain in Israel
+since the Armenians aren't Arab" -- a striking, specific, directly-quotable detail worth surfacing
+on its own. On the Haram al-Sharif/Temple Mount, documented that Israel reportedly went further than
+commonly understood at the time, accepting Palestinian sovereignty over the compound itself in
+principle (conditioned on access to adjacent sites), plus the "vertical sovereignty" formulation
+(Palestinians above ground, Israel below) Palestinian negotiator Abu Ala understood from a related
+later Clinton-era proposal.
+
+**On Jeffrey Sachs -- explained rather than incorporated**: Nick asked to "maybe look at" him,
+continuing the McHugo/Quigley/Finkelstein pattern. Researched his actual public commentary on
+Israel-Palestine and found it doesn't fit that pattern the same way: Sachs's statements (calling the
+war a "genocide," accusing Netanyahu of wanting "a new Nakba," broad claims about "apartheid rule")
+are contemporary political opinion about live, ongoing, unresolved events -- not a specific,
+checkable historical claim about a discrete past episode the way McHugo's Resolution 242 analysis,
+Quigley's UNSCOP/Exodus 1947 claim, or Finkelstein's specific Peters-book misquotations were. Those
+three were incorporated because each pointed to one dateable, independently-verifiable fact or
+argument; Sachs's public commentary doesn't have that same shape -- it's ongoing opinion, not a
+claim susceptible to the same kind of fact-check-and-cite treatment. Explained this distinction
+directly to Nick rather than either silently adding him as a citation or silently ignoring the
+request, and asked whether he has a more specific claim in mind.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (272 nodes,
+417 edges, both unchanged -- pure content enrichment); `build_network_view.py`'s Python build and
+the harness's live `netBuildGraphData()` produce byte-for-byte identical edge sets (417/417); the
+standalone prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`a53b1ad`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors, encoding of quoted apostrophes confirmed correct).
