@@ -5971,3 +5971,48 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`09e22d6`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page and George W. Bush's own page confirmed linking to
 each other correctly on the first attempt, with no manual wiring).
+
+## Round: Annapolis Conference and its aftermath (2026-09-15)
+
+Nick asked specifically for the aftermath, and the conference itself had never had more than a
+one-sentence mention inside George W. Bush's and Ehud Olmert's own actor entries. New topic
+`annapolis-conference-2007-2008` (Agreement, 27 November 2007-16 September 2008, aliases "Annapolis
+Process"/"Annapolis Joint Understanding") -- combining the conference and its year-long negotiating
+process into one entry, the same Clinton-Parameters-and-Taba combining logic, since the "aftermath"
+the user asked about is inseparable from the launch that produced it.
+
+**Covered the conference itself with real detail it never had anywhere in this dataset before:**
+Saudi Arabia's historic first attendance alongside Israel, secured through Secretary of State
+Condoleezza Rice's preparatory August 2007 shuttle diplomacy; the Olmert-Abbas "Joint Understanding"
+committing to continuous negotiations and biweekly meetings; and the wide multilateral attendance
+(Quartet, Arab League Follow-on Committee, G8, UN Security Council permanent members).
+
+**Then covered the actual aftermath the user asked for, not just the launch:** roughly ten months of
+private Olmert-Abbas talks, Rice's continued 2008 shuttle trips, and the escalating Gaza violence
+undermining the process throughout -- ending at the 16 September 2008 meeting where Olmert presented
+the territorial offer this dataset's own Ehud Olmert entry already documents in full detail, so this
+entry cross-references it rather than re-deriving its terms.
+
+**Framed the process's actual end as a genuine dataset outlier worth naming as such:** not a
+rejected offer, not a breakdown statement, but an unanswered proposal -- Abbas never gave Olmert a
+formal response or counter-offer -- overtaken instead by two events entirely external to the
+negotiation itself: Olmert's own resignation (already documented, the unrelated Talansky affair) and
+the 2008-09 Gaza War's outbreak that December (already documented). This dataset's clearest case of
+a negotiation ending in absence rather than rejection.
+
+Cross-linked to the existing George W. Bush, Ehud Olmert, Mahmoud Abbas, and Palestinian Authority
+entries. Enriched Bush's own existing Annapolis `key_land_action` and Olmert's own September 2008
+offer entry with cross-references naming the new entry verbatim -- learning directly from the
+Zinni/Karine A round's own autolink miss two rounds ago. Olmert's existing 27 November 2007
+key_land_action already named "the Annapolis Conference" by its exact name, so it needed no edit at
+all to autolink correctly.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (304 nodes,
++1; 520 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (520/520); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`0d44dd3`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page, George W. Bush's page, and Ehud Olmert's page all
+confirmed linking to each other correctly on the first attempt, alongside bonus correct links to
+Road Map for Peace, Second Intifada, Zinni Mission/Karine A, and the 2008-09 Gaza War).
