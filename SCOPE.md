@@ -4299,3 +4299,39 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`f742285`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; both entries deep-linked, cross-links confirmed working in both directions via
 JS).
+
+## Round: 1994 Israel-Jordan Peace Treaty (2026-09-14)
+
+**Israel-Jordan Peace Treaty** (new topic, Agreement, 1994-10-26): signed at Wadi Araba by Rabin and
+al-Majali, witnessed by Clinton and King Hussein -- the second Arab state to make peace with Israel.
+Documents the formal border demarcation, the water-sharing terms (Israel keeps the bulk of the upper
+Jordan basin, seasonally-split Yarmouk shares for Jordan, a standing 55 MCM/year Israeli supply
+commitment that has held for three decades), and the Jerusalem clause recognising Jordan's
+"special role" in the city's Muslim holy shrines without spelling out its scope -- a deliberate
+ambiguity that is the direct treaty-level source of Al-Aqsa access friction that continues today.
+
+Centred the significance section on the Naharayim/Baqura and Zofar/Al-Ghamr land leases -- two small
+enclaves recognised as Jordanian sovereign territory but leased back to Israel for 25 years,
+preserving Israeli farmers' cultivation there. Their actual fate is the notable find: Jordan's King
+Abdullah II gave the one year's notice the treaty itself specified, and both enclaves reverted to
+full Jordanian sovereignty on 10 November 2019 -- flagged explicitly as a rare case in this
+dataset's record of a land concession expiring exactly as its own text provided for, rather than
+through unilateral force or indefinite stalemate.
+
+**A real gap surfaced, not filled**: neither Yitzhak Rabin nor King Hussein -- the treaty's two
+principal signatories, and Rabin in particular one of the most consequential figures referenced
+throughout this entire dataset (Six-Day War Chief of Staff, two-time PM, Oslo Accords, Nobel Peace
+Prize, assassinated 1995) -- has his own actor entry yet. Both names appear as plain, unlinked text
+in this new entry and in several existing ones (Oslo Accords, Camp David-adjacent material). Given
+how large and consequential Rabin's own career would be to document properly, this was flagged to
+Nick directly as a question rather than added unilaterally in the same round.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (269 nodes,
++1; 408 edges unchanged, since neither Rabin nor Hussein exist as actors to link to yet);
+`build_network_view.py`'s Python build and the harness's live `netBuildGraphData()` produce
+byte-for-byte identical edge sets (408/408); the standalone prototype's own dedicated harness
+confirms its autolinking still works. Both Artifacts republished, pushed (`614ca9f`), Vercel
+auto-deployed and confirmed live via curl and an actual browser check (zero console errors;
+deep-linked to the entry; confirmed Bill Clinton, East Jerusalem, and Silwan all autolink correctly
+while Rabin and Hussein render as plain text, exactly as expected).
