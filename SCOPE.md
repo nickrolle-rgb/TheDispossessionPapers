@@ -5212,3 +5212,47 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`6145153`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; Sharon, Abbas, Bush, Kadima, Herut, Netanyahu, and the 2008-09 Gaza War entry
 all confirmed autolinking correctly from Olmert's own page).
+
+## Round: 2006 Lebanon War (2026-09-14)
+
+Direct follow-on from the Olmert round: his own entry already summarised the war briefly with
+nothing to link to. New topic `lebanon-war-2006` (Armed Conflict, 12 July-14 August 2006, aliases
+"Second Lebanon War"/"July War"): the Zar'it-Shtula raid that triggered it (three IDF soldiers
+killed, Goldwasser and Regev captured, five more killed in a failed rescue), the 34-day campaign's
+course (strikes on Hezbollah's Dahieh stronghold and on national infrastructure -- 640km of roads,
+73 bridges, $2B+ in damage), the 30 July strike near Qana that killed 28 civilians sheltering in an
+underground garage (16 of them children, drawing UN Security Council condemnation), Resolution
+1701's ceasefire terms, and the 16 July 2008 prisoner exchange that returned Goldwasser's and
+Regev's remains for Samir Kuntar and roughly 199 other remains -- a deal struck in the final weeks
+of Olmert's own premiership, closing a loop his own entry had left open.
+
+**Preserved a real distinction the Winograd Commission's own two reports drew, rather than
+flattening them into one verdict:** its April 2007 interim report accused Olmert directly of
+"severe failure in judgment and responsibility" for rushing into war; its January 2008 final report
+pulled back from that personal finding, saying Olmert had acted in good faith even while making bad
+decisions, while still calling the war itself "a big and serious failure." Presenting both findings,
+not just the harsher or the softer one, keeps the Commission's own actual sequence of judgment
+intact rather than picking whichever verdict reads more cleanly.
+
+**Documented the Shebaa Farms as the conflict's unresolved territorial root, recorded as a live
+three-way dispute rather than resolved to one reading:** Israeli-occupied since capturing it with
+the Golan Heights in 1967, claimed by Lebanon as occupied Lebanese land, but placed inside Syria on
+the UN's own mapping pending a Syrian-Lebanese border demarcation that has never been completed --
+an ambiguity Hezbollah has cited since 2000 to justify continued military activity against Israel,
+included here because even the relevant governments themselves dispute which state the land
+actually belongs to.
+
+Cross-linked to the existing Ehud Olmert, IDF, and UN Security Council entries; enriched Olmert's
+own `key_land_actions` entry with a cross-reference back to this one. **Verification surfaced
+another instance of the already-flagged same-surname bug** (`task_5202f465`): "Eldad Regev" again
+autolinks to MK Miri Regev in this entry's own prose, the same false-positive class first spotted in
+Olmert's entry last round -- not a new task, just further evidence for whoever eventually fixes it.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (290 nodes,
++1; 458 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (458/458); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`f939ea1`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page and its two-way link with Olmert's entry both
+confirmed autolinking correctly with no manual wiring).
