@@ -5611,3 +5611,49 @@ Python build and the harness's live `netBuildGraphData()` produce byte-for-byte 
 Both Artifacts republished, pushed (`88c7dd7`), Vercel auto-deployed and confirmed live via curl and
 an actual browser check (zero console errors; the enriched content -- the Wye River and Legislative
 Council additions -- confirmed present and rendering correctly).
+
+## Round: Hebron Protocol (2026-09-14)
+
+Following through on the gap flagged at the end of the Oslo II enrichment round. New topic
+`hebron-protocol-1997` (Agreement, 15-17 January 1997, aliases "Protocol Concerning the Redeployment
+in Hebron"/"Hebron Agreement"): Netanyahu's 13 and 15 January 1997 meetings with Arafat (Dennis Ross
+present, King Hussein playing a critical late mediating role), the 17 January conclusion (Dan
+Shomron signing for Netanyahu, Saeb Erekat for Arafat), the 16 January 11-7 cabinet vote and 87-17
+Knesset ratification, and Science Minister Benny Begin's resignation from Netanyahu's own government
+the same day in protest.
+
+**Deliberately scoped around the negotiation and the political instrument itself, not the H1/H2
+outcome already documented in full elsewhere:** the 1994 Hebron Massacre entry already covers the
+city's actual division, Shuhada Street's closure, and the 2026 Smotrich rollback in real depth --
+repeating that here would have duplicated existing content rather than adding to it, the same
+discipline applied to the Oslo II enrichment last round. Instead this entry covers what wasn't yet
+anywhere in the dataset: the accompanying "Note for the Record" side letter, under which Netanyahu
+accepted the same three-phase further-redeployment commitment this dataset's own Oslo Accords entry
+already documents as largely unfulfilled and later the subject of the 1998 Wye River Memorandum.
+
+**Framed the Protocol's real significance as political continuity, not the territorial transfer
+itself:** a Likud prime minister who had won office campaigning against Oslo became the government
+that carried out its next concrete redeployment -- at the real cost of a cabinet minister's
+resignation -- complicating any purely partisan reading of West Bank policy across this dataset's
+other entries.
+
+Cross-linked to the existing Benjamin Netanyahu, Yasser Arafat, and PLO entries. **No edits needed
+to either the 1994 Hebron Massacre or Oslo Accords entries for cross-references to work** -- both
+already named "Hebron Protocol" and its terms verbatim in prose from prior rounds, so the new
+entry's own name match made them autolink immediately, confirmed live bidirectionally in both
+directions.
+
+**Another instance of the already-flagged given-name/surname collision bug, not a new one:** "Begin"
+inside "Benny Begin" wrongly autolinks to Menachem Begin -- the same class as the Golda Meir/Meir
+Shamgar case already tracked under `task_ed830795` (distinct from the Prawer-Begin hyphen-adjacency
+case tracked under `task_8075a760`). Noted here as further evidence, no new task opened.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (298 nodes,
++1; 491 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (491/491); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`fec358d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page confirmed linking correctly to Netanyahu, Arafat,
+PLO, the 1994 Hebron Massacre entry, and the Oslo Accords entry, with both of the latter two
+confirmed linking back with no manual wiring in either direction).
