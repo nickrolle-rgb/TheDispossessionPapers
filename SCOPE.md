@@ -5467,3 +5467,60 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`119aa2d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; Barak's own page confirmed linking to all six related entries, and South
 Lebanon Withdrawal confirmed linking back to him, with no manual wiring in either direction).
+
+## Round: Second Intifada (2026-09-14)
+
+The gap flagged at the end of the Ehud Barak round -- both Barak's and Sharon's entries now named
+the Second Intifada without it having a page of its own. New topic `second-intifada-2000-2005`
+(Armed Conflict, 28 September 2000-8 February 2005, alias "Al-Aqsa Intifada").
+
+**Presented the trigger as a genuinely disputed causation, not settled history:** Sharon's 28
+September 2000 Temple Mount visit -- already documented in this dataset's own Ariel Sharon entry --
+is the widely-cited spark, but the Israeli account (that the uprising was substantially pre-planned
+by the Palestinian leadership, citing Gaza incidents in the days before the visit) is given directly
+alongside the Palestinian account, matching this project's standing discipline for genuinely
+contested historical narratives rather than picking a side.
+
+Covered the full arc: the early period's lopsided casualty ratio under live fire; the suicide-
+bombing campaign (Dolphinarium, Sbarro); two failed international interventions in the uprising's
+first year -- the Mitchell Report (30 April 2001, blamed both sides, called for a settlement
+freeze) and the Tenet ceasefire plan (accepted "in principle" 13 June 2001) -- both stated plainly
+as never implemented rather than glossed as successes; Operation Defensive Shield (29 March-10 May
+2002), including the Battle of Jenin (casualty figures given from both HRW and the IDF rather than
+one preferred source), the Muqata siege, and the 37-day Church of the Nativity siege; the
+separation barrier's 2002 origins; and the 8 February 2005 Sharm el-Sheikh Summit, whose ceasefire
+declaration is presented as the widely-cited but imperfect end point it actually was -- Palestinian
+armed factions immediately said they were not bound by it.
+
+**Casualty and combatant-status figures given as B'Tselem's own classification, explicitly flagged
+as the source's judgment rather than this dataset's own** (~3,000 Palestinians/~1,000 Israelis/64
+foreigners killed, with B'Tselem's own combatant-status percentage breakdown for each side) -- a
+deliberate choice given how contested combatant-status determinations specifically are in this
+conflict, distinct from the usual practice of simply averaging a range across sources.
+
+Significance ties the uprising directly to two entries already in this dataset -- it cost Barak his
+premiership and delivered Sharon (whose own visit is cited as the trigger) the 2001 election in his
+place -- and frames it as the dataset's clearest turning point from negotiated diplomacy toward the
+unilateral, security-first approach most of the post-2000 entries in this dataset document.
+
+Cross-linked to the existing Ariel Sharon, Ehud Barak, Yasser Arafat, Mahmoud Abbas, Hamas, PLO,
+Palestinian Authority, and IDF entries; enriched the existing ICJ Wall Opinion entry with a
+cross-reference to this one, its direct origin.
+
+**A self-caught autolink-wording miss, fixed the same round rather than left for a future one:**
+live verification showed the phrase "ICJ Advisory Opinion on the Wall" didn't match that entry's
+real name or any of its aliases -- only the bare "ICJ" acronym linked, and to the International
+Court of Justice org rather than the topic itself. Diagnosed by checking the entry's actual
+aliases, fixed the wording to "2004 ICJ Wall Opinion" (one of those aliases verbatim), re-ran the
+full pipeline, republished, and confirmed live that it now resolves to the correct topic.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (296 nodes,
++1; 485 edges, +8); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (485/485, confirmed both before and
+after the wording fix since it was pure prose); the standalone prototype's own dedicated harness
+confirms its autolinking still works. Both Artifacts republished twice (once per commit); pushed as
+two commits (`8c36b2f` for the entry creation, `402a15e` for the autolink-wording fix); Vercel
+auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
+errors; the final check confirmed the corrected link to the 2004 ICJ Wall Opinion entry alongside
+Sharon, Barak, Arafat, Abbas, Palestinian Authority, and IDF, all with no manual wiring).
