@@ -4673,3 +4673,44 @@ pushed (`85cba51`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the entry autolinks correctly to Hamas, the Palestinian Authority, Fatah, the
 PLO, Mahmoud Abbas, the Battle of Gaza entry, and Israel Katz; the Battle of Gaza entry now links
 back to Haniyeh in both directions).
+
+## Round: 2008-09 Gaza War (Operation Cast Lead) (2026-09-14)
+
+Continuing the Gaza-conflict chronological thread this session has been building (disengagement ->
+2007 takeover -> now this) -- only existed as a passing mention inside the Gaza naval blockade
+entry before today.
+
+**2008-09 Gaza War** (new topic, Armed Conflict, 2008-12-27 to 2009-01-18): the 23-day offensive,
+ground invasion on 3 January 2009, the Palestinian casualty range across sources (1,166 lower
+Israeli figure to 1,383-1,417 per UN/Palestinian/B'Tselem counts, including 333+ children) against
+Israel's 13 dead, and the destruction figures (3,425-4,000 homes destroyed, ~20,000 displaced, 280
+schools and roughly half of health facilities damaged). Documented the 15 January 2009 white
+phosphorus strike on UNRWA's main Gaza compound.
+
+Centred the significance on the Goldstone Report -- deliberately noted it examined BOTH Israeli and
+Palestinian conduct (found Israel's precautions "reckless" AND found Palestinian rocket fire
+violated international law), not a one-sided document, since that balance matters for accurately
+representing what the report actually said. The genuinely interesting part is the 2011 controversy:
+Goldstone's own partial retraction in an April 2011 op-ed, explicitly and jointly rejected days later
+by his three co-authors (Jilani, Chinkin, Travers), who stated nothing had emerged to change the
+report's findings for any party -- presented as a real, documented split among the report's own
+authors rather than either accepting Goldstone's retraction as final or ignoring it.
+
+Closed with the post-war "dual-use" construction-material restrictions (cement, steel barred on
+military-use grounds) that stalled reconstruction for years despite billions in pledged donor funds
+-- a direct, explicit link forward to this dataset's existing Gaza naval blockade entry.
+
+Cross-linked to the existing Ismail Haniyeh, Hamas, and United Nations entries via
+`related_actor_ids`/`related_org_ids` -- confirmed live that "Hamas" autolinks in the rendered
+prose while the Haniyeh/UN graph edges exist correctly even though those exact name strings don't
+happen to appear verbatim in the summary text (expected behaviour, not a bug -- graph edges come
+from the structured fields, prose autolinking from literal text matches, and the two don't have to
+coincide).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (277 nodes,
++1; 428 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (428/428); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`4c0a732`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors).
