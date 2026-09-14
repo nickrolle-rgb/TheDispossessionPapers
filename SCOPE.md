@@ -6232,3 +6232,54 @@ pure content enrichment, no new nodes/edges). Both Artifacts republished; pushed
 `62ea679`; Vercel auto-deployed and confirmed live via curl and a browser check (zero console
 errors; confirmed via direct DOM inspection that "Resolution 194" and "Hamas" both autolink
 correctly to their existing entries with no wording-mismatch fix needed this round).
+
+## Round: Taba Summit's own substantive details (2026-09-15)
+
+The `clinton-parameters-taba-summit-2000-2001` entry documented Taba's process well (dates,
+delegations, the closing joint statement) but not the substance the talks actually narrowed on --
+that was the clear gap for "the Taba Summit's own details." Enriched the entry's `summary` with
+detail from the Moratinos Non-Paper, the EU's unofficial but both-sides-acknowledged account of the
+negotiations, compiled by special envoy Miguel Angel Moratinos:
+
+- **Territory**: the Palestinian delegation's own map proposed a 3.1% land swap to Israel, against
+  an Israeli demand for 6% (the Clinton Parameters' own upper bound) plus a further 2% under a
+  lease; both sides had by then accepted the 4 June 1967 lines (per UNSC Resolution 242) as the
+  border's basis.
+- **Security**: Israel proposed five Jordan Valley early-warning stations as part of a 36+36-month
+  withdrawal timeline (West Bank, then Jordan Valley) alongside an international force; the
+  Palestinian side offered at most two stations on a fixed dismantling schedule and proposed an
+  18-month withdrawal (extendable by 10 months for the Jordan Valley) under international force
+  supervision. Israel had by Taba dropped its claim to retain Jordan Valley settlements themselves
+  for security purposes.
+- **Jerusalem**: both sides moved closer to the Clinton Parameters' neighbourhood-sovereignty split,
+  with Palestinian negotiators open to Israeli sovereignty over post-1967 Jewish neighbourhoods
+  other than Jabal Abu Ghneim (Har Homa) and Ras al-Amud. The Haram al-Sharif/Temple Mount's status
+  stayed explicitly unresolved, though an informal proposal floated fixed-term P5-plus-Morocco
+  international sovereignty with Palestinian custodianship.
+- **Refugees**: a discussed return figure of 100,000-150,000 (of ~3.7 million registered refugees
+  and descendants), a Palestinian-raised 25,000-over-three-years annual quota in the non-paper (a
+  verbal 40,000-over-five-years figure did not appear in it), Israel's offer to present a "mutual
+  narrative," and a Palestinian position paper (22 January 2001) demanding explicit Israeli
+  acknowledgment of moral/legal responsibility for 1948 -- a formulation Barak had separately and
+  specifically opposed.
+
+Added a `significance` sentence noting the fuller record cuts both ways on the "closest ever"
+narrative already documented there: real, specific movement on some fronts (Jordan Valley
+settlements, border basis, Jerusalem neighbourhoods) alongside genuinely unresolved gaps on others
+(the territorial-swap gap, security-timeline gap, Haram al-Sharif sovereignty, and the refugee
+responsibility-language gap).
+
+Sourced from the Moratinos Non-Paper's own text (UN Question of Palestine unispal archive, PalQuest's
+historical-text republication) and secondary summaries (Wikipedia's Taba Summit article, the Middle
+East Forum's "Negotiating the Palestinian Refugees"); the Palestinian 22 January 2001 position paper
+and Barak's opposition corroborated via PalQuest's "Palestinian and Israeli Positions on Refugees"
+historical text.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (525/525, unchanged --
+pure content enrichment, no new nodes/edges). Both Artifacts republished; pushed as commit
+`a10a15b`; Vercel auto-deployed and confirmed live via curl and a browser check (zero console
+errors; confirmed via DOM inspection that "Resolution 242," "UN Resolution 194," "Ehud Barak," and
+"Ariel Sharon" all autolink correctly to their existing entries with no wording-mismatch fix needed
+this round).
