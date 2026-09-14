@@ -81,13 +81,13 @@
     "sponsoring_ministry": "Prime Minister's Office",
     "sponsoring_mk_id": "menachem-begin",
     "category": "Annexation",
-    "summary": "Passed by the Knesset 63-21 on 14 December 1981 (some sources give 15 December), on the initiative of Prime Minister Menachem Begin's government, unilaterally extending Israeli law, jurisdiction, and administration to the Golan Heights, territory occupied from Syria in the 1967 Six-Day War — a law effectively constituting annexation, though it does not use that word. Excludes only a small strip detached under the 1974 Israel-Syria Disengagement Agreement.",
+    "summary": "Passed by the Knesset 63-21 on 14 December 1981 (some sources give 15 December), on the initiative of Prime Minister Menachem Begin's government, unilaterally extending Israeli law, jurisdiction, and administration to the Golan Heights, territory occupied from Syria in the 1967 Six-Day War — a law effectively constituting annexation, though it does not use that word. Excludes only a small strip detached under the 1974 Israel-Syria Disengagement Agreement. The law's most immediate practical effect fell on the roughly 10,000-14,000 Druze residents of the Golan's four surviving northern villages, who were suddenly treated as Israeli residents eligible for citizenship and the identity cards that came with it; most refused, leading to the 1982 Golan Heights Druze General Strike.",
     "land_impact": {
       "spatial_region": "Golan Heights",
       "estimated_hectares_affected": null,
       "description": "The entirety of the Golan Heights held by Israel since 1967 (excluding the 1974 disengagement strip) — a specific hectare figure not independently sourced this pass."
     },
-    "citation": "VERIFIED 2026-09-01 — the 63-21 vote and the 14/15 December 1981 date variance (both dates appear across sources) are corroborated via live search (Wikipedia's Golan Heights Law article, israeled.org's 'Knesset Votes in Favor of Golan Heights Law' entry). UN Security Council Resolution 497, adopted two days later, declared the law 'null and void' — see this dataset's own Resolution 497 topic entry."
+    "citation": "VERIFIED 2026-09-01 — the 63-21 vote and the 14/15 December 1981 date variance (both dates appear across sources) are corroborated via live search (Wikipedia's Golan Heights Law article, israeled.org's 'Knesset Votes in Favor of Golan Heights Law' entry). UN Security Council Resolution 497, adopted two days later, declared the law 'null and void' — see this dataset's own Resolution 497 topic entry. VERIFIED 2026-09-14 -- the Druze population's citizenship status change and the strike it provoked are corroborated via live search; full detail is in this dataset's own 1982 Golan Heights Druze General Strike entry."
   },
   {
     "law_id": "jerusalem-basic-law-1980",
