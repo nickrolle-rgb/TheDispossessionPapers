@@ -4634,3 +4634,42 @@ pushed (`490cec6`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; Fatah, Hamas, the ICRC, Mahmoud Abbas, and the Palestinian Authority all
 autolinked correctly with no manual wiring, while Ismail Haniyeh correctly rendered as plain text
 since he isn't in the dataset yet).
+
+## Round: Ismail Haniyeh added as his own actor (2026-09-14)
+
+Nick confirmed the gap flagged last round: add Haniyeh. Three `key_land_actions`:
+
+**29 March 2006** -- sworn in as PA Prime Minister after the Change and Reform bloc's election win,
+never internationally recognised, until Abbas's 14 June 2007 dismissal following the Battle of Gaza
+-- kept this brief and cross-linked to the existing Battle of Gaza entry rather than re-narrating
+fighting already fully documented there.
+
+**6 May 2017** -- elected Hamas Political Bureau chairman, relocated to Doha (family joined 2021),
+became Hamas's lead ceasefire/hostage negotiator after 7 October 2023. Included the specific,
+sourced distinction that he reportedly favoured a permanent ceasefire with a reconstruction plan,
+a materially different position from Yahya Sinwar's shorter six-week-pause preference -- a real,
+citable political distinction rather than treating "Hamas" as a monolithic negotiating position.
+
+**31 July 2024** -- assassinated in Tehran. Presented the two competing accounts of the killing
+method fairly (New York Times' pre-planted-explosive account versus Iran's Revolutionary Guard
+Corps' external-projectile claim, which explicitly disputes the Times version) rather than picking
+one, and noted Israel's actual December 2024 admission of responsibility via Defense Minister Israel
+Katz -- who autolinked automatically since he's already in the dataset.
+
+Personal context documents his Shati refugee camp origins and, six months before his own death, the
+10 April 2024 strike in that same camp that killed three sons and four grandchildren -- presented
+both Hamas's framing (family members) and the Israeli military's (named military-wing operatives,
+including a cell commander) rather than adopting either.
+
+Also linked the existing Battle of Gaza (2007) entry to this new actor now that a real target
+exists.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (276 nodes,
++1; 425 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (425/425); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`85cba51`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the entry autolinks correctly to Hamas, the Palestinian Authority, Fatah, the
+PLO, Mahmoud Abbas, the Battle of Gaza entry, and Israel Katz; the Battle of Gaza entry now links
+back to Haniyeh in both directions).
