@@ -4757,3 +4757,43 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`4db4af9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to the entry -- this is exactly how the Clinton/Clinton mislink
 was caught).
+
+## Round: 2014 Gaza War (Operation Protective Edge) (2026-09-14)
+
+Continuing the Gaza-conflict thread (disengagement -> 2007 takeover -> 2008-09 war -> 2012 war ->
+now this, the deadliest of the pre-2023 Gaza wars). No prior mention anywhere in the dataset.
+
+**2014 Gaza War** (new topic, Armed Conflict, 2014-07-07 to 2014-08-26): the trigger sequence in
+full -- the 12 June 2014 kidnapping-murder of three Israeli teenagers by a local Hamas cell acting
+on its own initiative (not top-down Hamas direction, a distinction worth preserving rather than
+flattening), Operation Brother's Keeper, and the 2 July revenge murder of Mohammed Abu Khdeir,
+burned alive by Jewish extremists. The 7 July air campaign, the 17 July ground invasion aimed at
+Gaza's tunnel network (32 tunnels/60+ shafts destroyed), and the 26 August ceasefire.
+
+Documented the war's real scale rather than understating it: UN OCHA's 2,220 Palestinian deaths
+(1,492 civilians, 551 children, 605 combatants, 123 undetermined), 142 families losing three or
+more members in single incidents (739 total fatalities in those incidents alone), Israel's 67
+soldiers and 6 civilians, and ~20,000 homes destroyed or severely damaged alongside 220 schools and
+62 health facilities. Gave real specificity to the Bakr family beach killing (16 July 2014, four
+named boys aged 9-11, killed by naval shelling while playing football, witnessed by journalists at
+a nearby hotel) rather than a generic "civilians killed" mention -- this is one of the most visually
+documented single civilian-casualty incidents of any Gaza war in the dataset's record precisely
+because it happened in front of the international press corps.
+
+Centred the significance on a direct structural parallel already established in this dataset: the
+UN Human Rights Council's Independent Commission of Inquiry found possible war crimes by BOTH
+parties, but its own credibility became contested when chairman William Schabas resigned in
+February 2015 over undisclosed prior paid PLO legal consultancy -- explicitly drawn as a parallel to
+the Goldstone Report's own 2011 credibility controversy already documented in this dataset's
+2008-09 Gaza War entry, since both UN Gaza-war inquiries this dataset now covers ended up fighting
+over their own legitimacy as much as over their findings.
+
+Cross-linked to the existing Benjamin Netanyahu, Hamas, and United Nations entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (279 nodes,
++1; 434 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (434/434); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`64c07f3`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Hamas, the IDF, and the PLO all autolinked correctly with no manual wiring).
