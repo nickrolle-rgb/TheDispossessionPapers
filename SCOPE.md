@@ -5343,3 +5343,45 @@ two commits (`13c19c2` for the entry creation, `2db3aa6` for the autolink-wordin
 auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
 errors; the final check confirmed all three Lebanon-war entries -- Litani, 1982, and 2006 -- link to
 each other correctly with no manual wiring).
+
+## Round: 1978-1982 South Lebanon Conflict (2026-09-14)
+
+Nick spotted the real gap directly: Operation Litani (ends June 1978) and the 1982 Lebanon War
+(starts June 1982) left four years undocumented. New topic `south-lebanon-conflict-1978-1982`
+(Armed Conflict, 1978-06 to 1982-06): the "Fatahland" period of PLO control over South Lebanon
+after Litani's partial withdrawal; the 22 April 1979 Nahariya attack (a Palestine Liberation Front
+raid led by 16-year-old Samir Kuntar, killing four Israelis including a father and two of his young
+children); the July 1981 escalation (PLO Katyusha fire on northern Israel from 10 July, including a
+Nahariya maternity-hospital hit, and Israel's 17 July retaliatory air strikes across Lebanon,
+123-300+ killed per Palestinian/Lebanese reports); and US envoy Philip Habib's 24 July 1981 oral,
+indirect ceasefire, negotiated through Saudi intermediaries since standing US policy barred direct
+contact with the PLO.
+
+**A genuinely traceable 29-year thread across two of this dataset's own entries, stated directly
+rather than left as background:** Kuntar, captured and sentenced to life for the 1979 Nahariya
+attack this entry documents, was the same Samir Kuntar released in the July 2008 prisoner exchange
+this dataset's own 2006 Lebanon War entry already documents -- one person's arc spanning three
+entries and 29 years, now fully linked.
+
+**The entry's real point, stated plainly rather than smoothed over:** the Habib ceasefire actually
+held. US and Israeli sources themselves describe no known PLO breaches by shelling or incursion from
+24 July 1981 until 9 May 1982 -- a stretch of calm on the border "unprecedented since 1968." This
+directly complicates the official justification later given for the full 1982 invasion, and lines
+up exactly with a fact this dataset's own 1982 Lebanon War entry already recorded from a different
+angle: Sharon's own admission that the Argov assassination attempt was merely "the spark that lit
+the fuse" for an invasion already being planned, not a response to an actual ceasefire violation.
+Filling this gap didn't just add a fourth conflict entry -- it gave the dataset's existing 1982 entry
+a documented ceasefire to have not actually violated, sharpening a claim that entry could previously
+only gesture toward.
+
+Cross-linked to the existing Menachem Begin, PLO, South Lebanon Army, and IDF entries; live
+verification also confirmed correct bonus autolinks to Yasser Arafat, Fatah, and Ariel Sharon.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (293 nodes,
++1; 471 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (471/471); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`bec42db`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page confirmed linking correctly to Operation Litani, the
+1982 and 2006 Lebanon Wars, PLO, Fatah, Arafat, and Sharon with no manual wiring).
