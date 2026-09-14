@@ -1719,5 +1719,68 @@
         "citation": "VERIFIED 2026-09-14 -- the Shati refugee camp birth and 1948 Ashkelon displacement, the Islamic Student Bloc/Islamic University background, the 1992 deportation and 1993 return, and the Yassin aide role are corroborated via live search (the Palestine Quest biography, ECFR's Haniyeh profile). The 10 April 2024 strike, the three named sons and four named grandchildren, and the competing Hamas/Israeli characterisations of those killed are corroborated via live search (the Times of Israel, CNN, Al Jazeera's contemporaneous reporting)."
       }
     ]
+  },
+  {
+    "actor_id": "ehud-olmert",
+    "full_name": "Ehud Olmert",
+    "birth_name": "Ehud Olmert",
+    "birth_country": "Mandatory Palestine (near Binyamina)",
+    "life_span": {
+      "born": "1945-09-30",
+      "died": null
+    },
+    "primary_affiliations": [
+      "Betar / Herut (early career)",
+      "Likud",
+      "Kadima",
+      "Jerusalem Municipality (Mayor)",
+      "Knesset"
+    ],
+    "historical_role": "Herut-aligned Knesset member from 1973 (its youngest member at the time) who left national politics to serve as Mayor of Jerusalem from 1993 to 2003, where he pushed to expand Israeli control of East Jerusalem; returned to national government as Ariel Sharon's deputy, succeeded him as Prime Minister after Sharon's January 2006 stroke, and led Kadima to the 2006 election. As Prime Minister (2006-2009) his record runs in both directions at once -- he launched the 2006 Lebanon War and the 2008-09 Gaza War, yet also convened the Annapolis Conference and made the most territorially far-reaching peace offer any Israeli prime minister has put to a Palestinian counterpart, one Mahmoud Abbas ultimately did not accept. He resigned in 2008 amid a corruption investigation and was later convicted in a separate case, becoming the first former Israeli prime minister to serve a prison sentence.",
+    "key_land_actions": [
+      {
+        "date": "1997",
+        "action_type": "Executive Action",
+        "location_affected": "Har Homa, East Jerusalem",
+        "impact_description": "As Mayor of Jerusalem, urged the founding of the Har Homa neighbourhood on Jabal Abu Ghneim in East Jerusalem, whose construction began in March 1997 under Prime Minister Benjamin Netanyahu's national government; the international community regards East Jerusalem settlement construction, including Har Homa, as illegal under international law, a position the Israeli government disputes. Olmert's mayoralty also oversaw continued Israeli infrastructure consolidation across East Jerusalem, including the Western Wall Tunnel's opening and an expanded arterial road and light-rail system linking Jewish neighbourhoods across the pre-1967 line.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Olmert's advocacy for Har Homa's founding and his broader East Jerusalem infrastructure record as mayor are corroborated via live search (the Jerusalem Municipality's own mayoral biography page). The March 1997 construction start under Netanyahu's government and the international community's illegality position are corroborated via live search (Wikipedia's Har Homa article, POICA's 'Har Homa Settlement Between 1997 and 2007')."
+      },
+      {
+        "date": "2006-07-12",
+        "action_type": "Executive Action",
+        "location_affected": "Southern Lebanon; northern Israel",
+        "impact_description": "As Prime Minister, launched the 34-day Second Lebanon War on 12 July 2006 in response to a cross-border Hezbollah raid that killed three Israeli soldiers and captured two others (Ehud Goldwasser and Eldad Regev). The war killed over 1,000 Lebanese and roughly 160 Israelis and displaced approximately one million Lebanese before a ceasefire, brought about by UN Security Council Resolution 1701 (adopted 11 August, accepted by all parties by 13 August), took effect on 14 August 2006; the resolution called for the withdrawal of both the IDF and Hezbollah from southern Lebanon and the deployment of Lebanese troops and UN peacekeepers in their place.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- the 12 July 2006 start, the triggering Hezbollah raid and the Goldwasser/Regev captures, the 34-day length, the casualty and displacement figures, and Resolution 1701's adoption/acceptance/ceasefire-effective dates are corroborated via live search (Britannica's '2006 Lebanon War' entry, Wikipedia's 2006 Lebanon War article, ReliefWeb's contemporaneous 'Background: Facts and figures' report)."
+      },
+      {
+        "date": "2007-11-27",
+        "action_type": "Diplomatic Negotiation",
+        "location_affected": "West Bank, Gaza Strip, East Jerusalem",
+        "impact_description": "As Prime Minister, attended the Annapolis Conference convened by US President George W. Bush at the US Naval Academy on 27 November 2007 alongside Palestinian President Mahmoud Abbas and representatives of over 40 countries and international bodies -- the first formal relaunch of Israeli-Palestinian final-status negotiations since the Oslo process collapsed and the Second Intifada began. Olmert and Abbas agreed to hold ongoing, bi-weekly negotiating sessions toward a two-state agreement, the framework that produced Olmert's own September 2008 territorial offer this dataset separately documents.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- the 27 November 2007 date, the US Naval Academy venue, Bush's convening role, the 40+ participating countries and bodies, and the agreed bi-weekly Olmert-Abbas negotiating framework are corroborated via live search (the Israeli Ministry of Foreign Affairs' own Annapolis Conference page, the Institute for Palestine Studies' 'The Annapolis Conference')."
+      },
+      {
+        "date": "2008-09-16",
+        "action_type": "Diplomatic Negotiation",
+        "location_affected": "West Bank, Gaza Strip, East Jerusalem",
+        "impact_description": "As Prime Minister, presented Mahmoud Abbas with the most territorially expansive peace offer any Israeli prime minister has made to date: a Palestinian state on the equivalent of over 94% of the West Bank and Gaza (Israel retaining 6.3% for major settlement blocs, offset by a roughly 5% land swap from within Israel proper), a land corridor linking Gaza to the West Bank, and a divided Jerusalem with a Palestinian capital in the east, while placing the Old City -- including the Temple Mount and Western Wall -- under international administration held jointly by Israeli, Palestinian, American, Saudi, and Jordanian trustees. Because Abbas was not permitted to keep the official map showing the proposed territory, he later sketched it from memory by hand; Abbas has said he rejected the offer without formally responding, while Olmert has maintained Abbas never said no and simply let the opportunity lapse when Olmert's own resignation ended his ability to conclude a deal. No agreement was reached.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- the offer's territorial percentages, the Gaza-West Bank land corridor, the divided-Jerusalem and international Old City trusteeship terms, the hand-drawn map episode, and both Abbas's and Olmert's later, conflicting characterisations of the rejection are corroborated via live search (the Times of Israel's 'Hand-drawn map shows what Olmert offered for peace' and \"'Abbas never said no' to 2008 peace deal, says former PM Olmert,\" VOA News's 'Abbas Admits Rejecting Two-State Peace Plan With Israel in 2008')."
+      },
+      {
+        "date": "2008-12-27",
+        "action_type": "Executive Action",
+        "location_affected": "Gaza Strip",
+        "impact_description": "As Prime Minister, authorised the launch of Operation Cast Lead on 27 December 2008, the military campaign that opened the war this dataset's own 2008-09 Gaza War entry documents in full, undertaken in his government's final weeks in office before Olmert's own resignation took effect and Benjamin Netanyahu succeeded him in March 2009.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Olmert's authorisation of the 27 December 2008 operation launch and the timing against his own government's final weeks are corroborated via live search; see this dataset's own 2008-09 Gaza War entry for the operation's full sourcing."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "Resigned in 2008 amid a corruption investigation, then convicted in a separate case and imprisoned",
+        "date_or_range": "2008-2017",
+        "description": "Olmert announced his resignation as Prime Minister in July 2008 while under investigation in the unrelated Talansky affair (allegations of illegal cash gifts from an American donor), formally stepping down once Kadima chose a successor; Tzipi Livni failed to form a coalition, and Benjamin Netanyahu won the resulting 2009 election. Olmert was later indicted and, in March 2014, convicted of accepting roughly $161,000 in bribes from developers of the Holyland residential complex in exchange for expedited planning approvals during his time as Jerusalem mayor. Sentenced to six years, the term was cut to eighteen months on appeal in December 2015; Olmert entered prison in February 2016 and was released on parole in July 2017 after serving about sixteen months, becoming the first former Israeli prime minister to serve time in prison.",
+        "citation": "VERIFIED 2026-09-14 -- the July 2008 resignation and its Talansky-affair context, Livni's failed coalition attempt, and Netanyahu's 2009 election win are corroborated via live search (Britannica's Ehud Olmert entry). The March 2014 Holyland conviction and the roughly $161,000 bribery figure, the six-year original sentence, the December 2015 reduction to eighteen months, and the February 2016-July 2017 imprisonment are corroborated via live search (CNN's sentencing and release coverage, Haaretz's report on the Supreme Court's sentence reduction, France 24's parole report)."
+      }
+    ]
   }
 ]
