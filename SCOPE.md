@@ -5158,3 +5158,57 @@ standalone prototype's own dedicated harness confirms its autolinking still work
 republished, pushed (`c34aaec`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors; ISF's own page and its automatic two-way link with Resolution
 2803 both confirmed autolinking correctly with no manual wiring).
+
+## Round: Ehud Olmert added as his own actor (2026-09-14)
+
+Nick asked directly whether anything could be added for Ehud Olmert -- absent from the dataset
+entirely despite being Jerusalem's mayor for a decade and a two-term-adjacent Prime Minister whose
+own record the dataset's 2008-09 Gaza War entry already touched without naming him. New actor
+`ehud-olmert` (b. 30 September 1945, living, so documented actions only per this project's standing
+living-persons discipline): five `key_land_actions` spanning three decades.
+
+**As Jerusalem mayor (1993-2003):** urged Har Homa's founding in East Jerusalem (construction began
+March 1997 under Netanyahu's national government -- careful to keep the mayoral-advocacy and
+national-execution roles distinct rather than crediting Olmert with a decision that wasn't his to
+make) plus the Western Wall Tunnel opening and an East Jerusalem arterial/light-rail buildout.
+
+**As Prime Minister (2006-2009), a record this dataset's own text says explicitly "runs in both
+directions at once":** launched the 2006 Lebanon War (12 July-14 August, triggered by a Hezbollah
+cross-border raid, ended under UNSC Resolution 1701) and authorised Operation Cast Lead, the
+military campaign that opened the 2008-09 Gaza War entry already in this dataset -- but also
+convened the November 2007 Annapolis Conference and, in September 2008, made the single most
+territorially expansive peace offer any Israeli prime minister has put to a Palestinian counterpart
+(94%+ of the West Bank and Gaza, a Gaza-West Bank land corridor, divided Jerusalem, international
+Old City trusteeship). **Presented the offer's rejection as a genuine, unresolved factual dispute
+rather than settled history**, consistent with this project's standing discipline: Abbas has said he
+rejected it, partly because he was never allowed to keep the map and had to sketch it from memory;
+Olmert has maintained Abbas never formally said no and simply let the opportunity lapse when
+Olmert's own resignation ended his capacity to conclude a deal. Both readings are given directly,
+neither adopted as this dataset's own conclusion.
+
+**`personal_context` mirrors the established Rabin precedent** (a Prime Minister whose exit from
+office was itself a documented scandal, not just a biographical footnote): the July 2008 resignation
+amid the unrelated Talansky cash-gifts investigation, which opened the door to Livni's failed
+coalition attempt and Netanyahu's 2009 election win; and the separate Holyland bribery case (roughly
+$161,000 in bribes from developers in exchange for expedited Jerusalem planning approvals),
+convicted March 2014, sentence cut from six years to eighteen months on appeal, served February
+2016-July 2017 -- the first former Israeli prime minister to serve prison time.
+
+**Enriched the existing 2008-09 Gaza War entry while already in the file:** added Olmert to its
+`related_actor_ids`, its first standing gap (it previously named only Ismail Haniyeh).
+
+**Verification surfaced a fresh instance of an already-flagged autolink bug, not a new one:**
+Olmert's own text names "Eldad Regev," one of the two Israeli soldiers captured in the 2006
+Hezbollah raid, and live verification showed it wrongly autolinks to MK Miri Regev -- the same
+same-surname-different-real-person collision class already tracked as `task_5202f465` (the
+Clinton/Hillary Clinton case from the 2012 Gaza War round). Not a new task; noted here as
+additional evidence for whoever eventually fixes that class of bug.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (289 nodes,
++1; 455 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (455/455); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`6145153`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Sharon, Abbas, Bush, Kadima, Herut, Netanyahu, and the 2008-09 Gaza War entry
+all confirmed autolinking correctly from Olmert's own page).
