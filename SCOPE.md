@@ -4903,3 +4903,63 @@ autolink-wording fix); Vercel auto-deployed both and confirmed live via curl and
 check each time (zero console errors; all four satellite entries plus Hamas, Trump, the Palestinian
 Authority, the ICC, and Netanyahu confirmed autolinking correctly with no manual wiring in the final
 check).
+
+## Round: Abraham Accords (2026-09-14)
+
+**Abraham Accords** (new topic, Agreement, 2020-08-13 to present, alias "Abraham Accords
+Declaration"): the full sequence of US-brokered normalization deals rather than a single-country
+entry, since the four original 2020 signatories share one negotiating framework and one set of
+consequences worth reading together. The 13 August 2020 UAE-Israel announcement (Trump-Netanyahu-
+Mohammed bin Zayed phone call) and its central bargain -- Israel formally suspending, not
+cancelling, its stated West Bank annexation plans -- kept as a genuine dispute rather than resolved
+to one side: Netanyahu later called the suspension temporary and annexation "still on the table,"
+while Emirati officials at home described the deal as having stopped annexation outright. Bahrain's
+11 September 2020 announcement and the 15 September 2020 White House signing of both agreements
+(first Arab states to establish full relations with Israel since Jordan in 1994). Sudan's 23
+October 2020 agreement, tied to US removal from the state-sponsors-of-terrorism list and a $335
+million settlement for the 1998 US embassy bombing victims, signed 6 January 2021 but never
+ratified by Sudan's transitional parliament -- normalization collapsed entirely after the October
+2021 coup and April 2023 civil war, a genuine asterisk on the accords' scope not always reflected
+in press coverage that still counts Sudan among the parties. Morocco's 10 December 2020 deal,
+traded for US recognition of Moroccan sovereignty over Western Sahara. Closed with the 2025-26
+status: Saudi Arabia and Syria under renewed US pressure to join, Trump tying a July 2026 Saudi
+nuclear deal to normalization, Saudi Arabia holding to a Palestinian-statehood precondition
+Netanyahu's coalition rejects.
+
+**Deliberate scope decision: the Morocco/Western Sahara trade is treated as its own real
+land-dispossession transaction, not sidebar diplomacy.** Western Sahara is a decades-old,
+UN-recognized non-self-governing territory whose status the international community has treated as
+unresolved pending a Sahrawi self-determination referendum; the US recognizing Moroccan sovereignty
+over it in exchange for Israel normalization exports the exact mechanism this dataset documents
+everywhere else -- a great power endorsing one party's territorial claim over a contested
+population's self-determination claim, in exchange for a deal favorable to Israel -- to a
+population entirely outside Israel/Palestine. Flagged explicitly in the entry's own significance
+text as the dataset's only entry of this kind, rather than treated as an aside.
+
+Documented the Palestinian Authority's and Hamas's near-identical condemnations, sourced to named
+officials rather than paraphrased: PA spokesperson Nabil Abu Rudeineh's "a betrayal of the
+Palestinian people and Jerusalem and al-Aqsa," and PLO Executive Committee member Hanan Ashrawi's
+"Israel got rewarded for not declaring openly what it's been doing to Palestine illegally and
+persistently since the beginning of the occupation." Also noted the accords' break with the 2002
+Arab Peace Initiative's sequencing (normalization following, not preceding, Palestinian statehood).
+
+**One phrasing self-catch before publish:** an early draft used the bare "already in this dataset"
+construction the project has flagged before as reading like database self-reference when used as a
+tag; reworded to "this dataset's own 2023-2025 sovereignty bill entries show," matching this
+project's established "this dataset's own X entry" house style, and re-ran the full pipeline after
+the edit (edge counts held, since it was pure prose).
+
+Cross-linked to the existing Benjamin Netanyahu, Donald Trump, Palestinian Authority, and Hamas
+entries. Did not add Mohammed bin Zayed or King Mohammed VI as standalone actors -- consistent with
+this project's standing rule (established in the Jeffrey Sachs round) that `historical_actors.json`
+is reserved for people whose land-consequential actions the dataset documents in their own right,
+not every head of state named in an agreement's prose.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (282 nodes,
++1; 445 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (445/445); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`418c8c2`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Trump, Netanyahu, Palestinian Authority, Hamas, and PLO all autolinked
+correctly with no manual wiring).
