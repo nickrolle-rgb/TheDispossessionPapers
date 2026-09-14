@@ -5385,3 +5385,44 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`bec42db`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page confirmed linking correctly to Operation Litani, the
 1982 and 2006 Lebanon Wars, PLO, Fatah, Arafat, and Sharon with no manual wiring).
+
+## Round: 2000 South Lebanon Withdrawal (2026-09-14)
+
+Closes the Lebanon thread built across the last several rounds (Litani 1978 -> 1978-1982 conflict
+-> 1982 war -> the 1985-2000 security zone already in the South Lebanon Army entry -> now this ->
+2006 war). New topic `south-lebanon-withdrawal-2000` (Historical Event, 23 May-16 June 2000, aliases
+"Israeli withdrawal from Lebanon (2000)"/"Liberation Day"): Ehud Barak's 1999 campaign pledge to
+withdraw within a year, the collapse of his preferred route -- a Syria peace deal -- when Assad
+rejected Barak's terms in April 2000, the SLA's rapid battlefield collapse (including the Battle of
+Khiam), Barak's 23 May withdrawal order, the IDF's 24 May overnight pullback to the Blue Line with
+no prior public warning, and Kofi Annan's 16 June 2000 UN certification -- 22 years, almost to the
+month, after Resolution 425 first demanded exactly this withdrawal in the wake of Operation Litani.
+
+**Documented the SLA refugee flight as a deliberate, named exception to this dataset's usual
+pattern, not smoothed past:** roughly 1,500 SLA members and about 7,000 people in total fled into
+Israel rather than remain in a Lebanon they expected Hezbollah and Syrian intelligence to dominate,
+leaving behind homes, land, and businesses. The significance text states this plainly as the
+dataset's clearest example of an Israeli-aligned population experiencing sudden displacement as the
+direct consequence of an Israeli policy decision -- worth recording precisely because the displaced
+were Israel's own allies, not despite it.
+
+**Traced the Blue Line's own incompleteness forward to a war already in this dataset rather than
+treating the certified withdrawal as a resolved ending:** the certified line excluded the Shebaa
+Farms this dataset's own 2006 Lebanon War entry documents as still-disputed territory, giving
+Hezbollah a continuing grievance it cited to justify retaining its arsenal after an otherwise
+UN-certified full withdrawal -- the same disputed strip that entry already traces as the conflict's
+unresolved territorial root, now anchored to the specific 2000 decision that created the gap.
+
+Cross-linked to the existing South Lebanon Army and IDF entries. **Did not add Ehud Barak as a
+standalone actor** -- absent from the dataset entirely despite being the Prime Minister who ordered
+the withdrawal, consistent with this project's standing rule of flagging a real gap rather than
+adding a person without being asked.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (294 nodes,
++1; 473 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (473/473); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`ea66ad0`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page confirmed linking correctly to South Lebanon Army,
+IDF, Operation Litani, and the 2006 Lebanon War with no manual wiring).
