@@ -6283,3 +6283,49 @@ pure content enrichment, no new nodes/edges). Both Artifacts republished; pushed
 errors; confirmed via DOM inspection that "Resolution 242," "UN Resolution 194," "Ehud Barak," and
 "Ariel Sharon" all autolink correctly to their existing entries with no wording-mismatch fix needed
 this round).
+
+## Round: Ariel Sharon's own actor entry -- three gaps (2026-09-15)
+
+Sharon already had his own actor entry (from an earlier round), but its `key_land_actions`
+started in 1977 -- skipping his entire pre-ministerial military career -- and its
+`personal_context` never covered his own final illness despite his `life_span` recording a 2014
+death date. Filled three real gaps:
+
+1. **The 14-15 October 1953 Qibya raid.** As founding commander of Unit 101, led the reprisal
+   raid on the Jordanian-controlled West Bank village of Qibya that killed an estimated 65-70
+   Palestinian villagers (69 most commonly cited), following a grenade attack on Yehud two days
+   earlier. Includes Sharon's own "maximum killing and damage to property" quote, Israel's initial
+   denial of army involvement, and the UN Security Council's condemnation. Inserted as the entry's
+   earliest `key_land_actions` item, predating the existing 1977 Agriculture Minister entry by
+   nearly a quarter-century.
+2. **The 14 April 2002 West Bank separation barrier decision.** As Prime Minister, had his
+   government approve the barrier plan, reversing his own longstanding opposition to it (he had
+   argued since the 1970s that any barrier would constrain settlement expansion). Cross-referenced
+   against this dataset's existing `icj-wall-opinion-2004` entry rather than duplicating its
+   content -- also added `ariel-sharon` to that entry's own `related_actor_ids`, which had been
+   empty, so the cross-reference works both ways.
+3. **The 4 January 2006 stroke and eight-year coma.** Added to `personal_context`: the 18 December
+   2005 minor stroke, the 4 January 2006 haemorrhagic stroke, the transfer of powers to Ehud
+   Olmert, the eight-year vegetative/minimally-conscious state, and the 11 January 2014 death from
+   organ failure.
+
+**A same-round autolink wording-mismatch fix, caught and corrected before this could be called
+done:** the barrier action's first draft referenced "the International Court of Justice's 2004
+advisory opinion, which this dataset covers in its own entry" -- wording that matched none of the
+`icj-wall-opinion-2004` entry's name or aliases, so it silently failed to autolink despite reading
+as a cross-reference. Reworded to "the 2004 ICJ Wall Opinion," matching an existing alias verbatim;
+confirmed live afterward that it resolves to `#/topic/icj-wall-opinion-2004`. (A stale browser-tab
+cache initially made the fix look undeployed on live-verification; a fresh tab confirmed the
+correct, current build.)
+
+Sourced via live search: Wikipedia's Qibya massacre article, Jewish Virtual Library's Qibya raid
+entry, and the Institute for Palestine Studies' reproduction of Moshe Sharett's diary excerpts for
+the raid; Ir Amim's Separation Barrier report for the 2002 decision; CNN's "Ariel Sharon dies after
+8 years in coma" and Wikipedia's "Death and state funeral of Ariel Sharon" for the stroke/coma/death.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce identical edge sets both before (526/526, +1 from the new
+Sharon-ICJ cross-reference) and after (526/526, the wording fix added no new edge) the autolink
+fix. Two commits (`763353a` content, `373e96c` wording fix); both Artifacts republished twice;
+Vercel auto-deployed both and confirmed live via curl and a browser check (zero console errors).
