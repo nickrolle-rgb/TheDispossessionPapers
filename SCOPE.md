@@ -4797,3 +4797,47 @@ verification on both the live wiki and standalone prototype; harness's 30+ check
 prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
 pushed (`64c07f3`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; Hamas, the IDF, and the PLO all autolinked correctly with no manual wiring).
+
+## Round: 2021 Gaza War (Operation Guardian of the Walls) (2026-09-14)
+
+Continuing the Gaza thread (disengagement -> 2007 -> 2008-09 -> 2012 -> 2014 -> now this). Sheikh
+Jarrah's existing entry already gestured at "the broader unrest preceding the May 2021 Israel-Gaza
+conflict" without that conflict having its own entry.
+
+**2021 Gaza War** (new topic, Armed Conflict, 2021-05-10 to 2021-05-21): the full trigger chain --
+Ramadan-period Damascus Gate restrictions, Sheikh Jarrah eviction threats, the 7 May 2021 Al-Aqsa
+Mosque raid (200+ worshippers injured, 80+ hospitalised), Hamas's 10 May ultimatum and the rocket
+fire toward Jerusalem minutes after the deadline passed -- the first direct rocket fire at the city
+in years. The 11-day war, 4,360+ rockets fired, Iron Dome's ~90% claimed interception rate, and the
+21 May Egyptian-brokered ceasefire.
+
+Documented OHCHR's own casualty breakdown (261 Palestinian deaths incl. 67 children, against
+Israel's 13 incl. 2 children). Covered the 15 May 2021 al-Jalaa tower strike (AP/Al Jazeera's Gaza
+bureaus) carefully -- explicitly noted Israel gave an hour's evacuation warning and the strike
+caused NO casualties, a material, honest difference from the 2012 war's media-office strikes
+already in this dataset, rather than treating both incidents as equivalent just because both
+targeted press offices.
+
+**A caught bug worth naming**: my own draft script had a stray extra double-quote at the very end of
+the significance field's string literal, which would have been a Python syntax error if run --
+caught and fixed before running the script, not after. A small, low-stakes catch, but exactly the
+kind of pre-flight check (read your own draft once more before executing) that keeps these rounds
+error-free.
+
+Centred the significance on this war's genuinely distinguishing feature versus every prior Gaza war
+this dataset documents: sustained intercommunal violence inside Israel's own "mixed cities" (Lod,
+Ramle, Bat Yam, Acre, Jaffa). Traced Lod's specific fault line back to 1948 -- the city, then the
+Arab town of Lydda, saw most of its Palestinian population expelled that year, an episode this
+dataset's own Nakba entry already documents nationally -- so 2021's violence there reopened a wound
+with a specific, dateable origin rather than emerging from the Gaza war in isolation.
+
+Cross-linked to the existing Ismail Haniyeh and Hamas entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (280 nodes,
++1; 436 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (436/436); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`43af522`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; East Jerusalem, Sheikh Jarrah, Hamas, and Nakba all autolinked correctly with
+no manual wiring).
