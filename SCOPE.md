@@ -4412,3 +4412,42 @@ pushed (`0f954a7`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the entry autolinks richly to Arafat, Rabin, the PLO, Mahmoud Abbas, Bill
 Clinton, the Palestinian Authority, and even the existing West Bank firing zones entry -- no manual
 wiring for any of it).
+
+## Round: 2000 Camp David Summit (2026-09-14)
+
+Another gap the Oslo round's own significance text had already flagged by name ("Camp David 2000's
+collapse") without the summit having its own entry -- referenced by name in three existing entries
+(East Jerusalem, the 1978 Camp David Accords, Oslo) before today.
+
+**2000 Camp David Summit** (new topic, Historical Event, 2000-07-11 to 2000-07-25): this one required
+real historiographical care -- it's one of the most contested episodes in the whole conflict's
+history, with two genuinely incompatible mainstream accounts. Documented both rather than picking a
+side: the widely-repeated "Barak's generous, unprecedented offer met by Arafat's flat rejection
+without a counter-proposal" narrative, against Clinton's own Special Assistant for Arab-Israeli
+Affairs Robert Malley's account that no formal written Israeli proposal was ever tabled, that the
+reported 91%-of-the-West-Bank figure used Israel's own reduced accounting excluding areas annexed to
+Jerusalem, and that Palestinian negotiators experienced the American team as functioning closer to
+an Israeli advocate than a neutral broker. Documented the specific reported territorial, Jerusalem,
+and refugee terms in detail (9:1 land swap, long-term Jordan Valley lease, territorial fragmentation
+into separate blocs; Old City quarter division; refugee resettlement outside Israel) since those are
+the actual land-relevant substance regardless of which blame narrative one accepts. Closed with the
+undisputed sequel: the December 2000 Clinton Parameters, the January 2001 Taba talks, and Ariel
+Sharon's 28 September 2000 Temple Mount visit as the summit collapse's direct link to the Second
+Intifada's outbreak the same day.
+
+**Enriched Ariel Sharon's existing actor entry** with a new `key_land_actions` entry on that Temple
+Mount visit -- a genuine gap: his entry already covered the 1977-81 settlement drive, 1982 Lebanon
+invasion, and 2005 Gaza disengagement, but not one of his single most consequential political acts.
+Found this gap naturally while researching the summit's aftermath, not by separately auditing his
+entry.
+
+Cross-linked to the existing Yasser Arafat, Bill Clinton, Ariel Sharon, and PLO entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (272 nodes,
++1; 417 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (417/417); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`db17df4`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; both entries autolink richly in both directions, including a cross-link to
+the existing Oslo Accords and East Jerusalem entries with no manual wiring).
