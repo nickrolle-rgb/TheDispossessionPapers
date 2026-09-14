@@ -6190,3 +6190,45 @@ Artifacts republished twice; pushed as two commits (`14dc3ac` for the 300% scale
 the gravity/view-fitting fix); Vercel auto-deployed both and confirmed live via curl and an actual
 browser check each time (zero console errors; the final check confirmed via direct DOM measurement,
 not just a screenshot, that both the spread and the colour clustering are genuinely working).
+
+## Round: Camp David Summit's other proposals -- the Palestinian delegation's own positions (2026-09-15)
+
+The existing `camp-david-summit-2000` entry was almost entirely built around Israel's reported
+positions (territorial percentages, the Jaffa Gate/Armenian Quarter Jerusalem terms, the Haram
+al-Sharif vertical-sovereignty formula, the refugee resettlement-outside-Israel proposal) -- the
+Palestinian delegation's own documented positions were the clear gap. Enriched the entry's
+`summary` with: the PLO's stated 22%/78% territorial baseline (1967 lines, minor equal-value
+swaps); Palestinian negotiators' reported readiness to accept Israeli annexation of settlement
+blocs and Israeli sovereignty over Jewish East Jerusalem neighbourhoods as concessions; openness to
+joint/divided Old City administration rather than a literal dividing line; rejection of the
+American bridging paper's Haram al-Sharif "custodianship" framework (Israeli sovereignty with
+Palestinian custodianship conferred by the UN Security Council and Morocco) in favour of full
+Palestinian sovereignty over the site; the right-of-return demand grounded in UN Resolution 194
+together with a call for Israeli acknowledgment of responsibility for the 1948 displacement; and
+Arafat's reported domestic-political caution about a Hamas/Palestinian Islamic Jihad backlash to
+any real or perceived concession. Added a `significance` sentence noting that the same evidentiary
+gap complicating assessment of Israel's reported offer (oral, evolving positions rather than a
+fixed document) applies symmetrically to Arafat's characterised non-counter-proposal -- Palestinian
+negotiators conveyed substantive positions without ever tabling a formal written counter-proposal
+either.
+
+Sourced from IMEU's "What Happened at Camp David in 2000?" and a Chatham House analysis of the
+Camp David/Taba negotiations for the more neutral framing (the Temple Mount custodianship concept
+specifically confirmed as part of the American bridging proposal, not solely Israel's own
+position); the right-of-return/domestic-political-risk claims corroborated via HonestReporting and
+read alongside, not adopted over, the IMEU/Chatham House sourcing -- consistent with this dataset's
+standing practice of presenting genuinely contested narratives from multiple angles rather than
+letting one side's framing stand as the dataset's own conclusion.
+
+No new actor entries added: Palestinian negotiators named in sourcing (Abu Ala/Ahmed Qurei, Saeb
+Erekat) are not canonical actor entries in this dataset and weren't requested; the existing
+`yasser-arafat` actor entry and `plo` org entry already cover the Palestinian side's institutional
+representation in this topic's `related_actor_ids`/`related_org_ids`, left unchanged.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (525/525, unchanged --
+pure content enrichment, no new nodes/edges). Both Artifacts republished; pushed as commit
+`62ea679`; Vercel auto-deployed and confirmed live via curl and a browser check (zero console
+errors; confirmed via direct DOM inspection that "Resolution 194" and "Hamas" both autolink
+correctly to their existing entries with no wording-mismatch fix needed this round).
