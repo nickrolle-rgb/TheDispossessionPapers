@@ -5028,3 +5028,49 @@ pushed (`4febb5f`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; Negev Summit/Yair Lapid/Abraham Accords, GHF, Board of Peace, and the Gaza War
 entry's newly-resolving GHF/Board of Peace links all confirmed autolinking correctly with no manual
 wiring).
+
+## Round: National Committee for the Administration of Gaza (NCAG) (2026-09-14)
+
+Continuing directly from the prior round's Board of Peace entry, which already named NCAG in its
+own prose without NCAG having an entry of its own to link to. New org
+`national-committee-for-the-administration-of-gaza` (new org_type "Transitional Governance Body",
+shared with the existing Board of Peace entry since both are genuinely the same category of thing
+-- an ad hoc appointed transitional authority, not a treaty-based international body -- founded
+2026-01-16, alias "NCAG"): Ali Shaath's 14 January 2026 naming as chief commissioner; the
+16-17-member committee's composition and named portfolios (land and housing, social welfare,
+economy, finance, health, utilities); its legal basis in UN Security Council Resolution 2803 (17
+November 2025, adopted 13-0-2 with China and Russia abstaining, authorizing the Board of Peace and
+a temporary International Stabilization Force through 31 December 2027) -- flagged as its own
+future-round gap alongside the earlier UN Resolutions batch (181/194/273/303/242/338/3379/465/478/
+497), not added in full this round since the user asked specifically about NCAG.
+
+**Three `action_record` entries trace one real, still-unresolved arc rather than a single founding
+fact:** (1) the January 2026 founding; (2) Hamas's 6 July 2026 dissolution of its own Gaza
+governing body (the Emergency Committee it had run since the June 2007 takeover this dataset's own
+Battle of Gaza (2007) entry documents) in NCAG's favor -- Hamas spokesman Hazem Qassem's and NCAG
+chief Ali Shaath's quotes both included directly, and the entry is explicit that this handover
+covers civil administration only, not Hamas's continuing political/military role; (3) the stalled
+on-the-ground handover -- NCAG members kept outside Gaza for months by Israeli objections to their
+physical entry, the Times of Israel's own "hobbled from the get-go" framing, and the ceasefire's
+broader second-phase stall (Hamas disarmament, Israeli withdrawal) -- documented as unresolved as
+of this dataset's most recent check, not smoothed into a completed transition. Al-Shabaka's sharply
+critical "genocide management" framing of NCAG's role is included and attributed explicitly to that
+Palestinian policy institute, consistent with this project's standing discipline of naming a serious
+characterization's source rather than adopting it as the dataset's own conclusion.
+
+**Two existing entries enriched while already in the file:** `gaza-war-2023-25`'s bare "a
+technocratic Palestinian committee" phrase (written before NCAG had its own entry to link to) was
+replaced with NCAG's exact name plus a forward-reference to its handover/stall, and NCAG added to
+`related_org_ids`. `battle-of-gaza-2007`'s significance text -- which already argued Gaza had been
+"governed separately... for nearly two decades" -- gained one closing sentence noting that span
+closed, at least on paper, with the 2026 dissolution, directly continuing a claim already made
+rather than introducing a new one.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (286 nodes,
++1; 450 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (450/450); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`63337b9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; NCAG's own page, its back-link from Board of Peace, and the enriched Gaza War
+and Battle of Gaza (2007) entries all confirmed autolinking correctly with no manual wiring).
