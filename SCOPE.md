@@ -4266,3 +4266,36 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`da859ab`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to the entry, Begin/Sadat/Carter all autolinked correctly with no
 manual wiring).
+
+## Round: 1981 Golan Heights Law's Druze reaction (2026-09-14)
+
+The existing `golan-heights-law-1981` entry documented the annexation itself and its international
+rejection (Resolution 497) but said nothing about the population it was actually imposed on --
+exactly the kind of gap this round's question was aimed at.
+
+**1982 Golan Heights Druze General Strike** (new topic, Historical Event, 1982-02-14 to
+1982-07-21): the four surviving northern Druze villages (Majdal Shams, Buq'ata, Mas'ade, Ein
+Qiniyye) responded to the law with a three-day preliminary strike in December 1981, then a
+five-month general strike burning distributed ID cards, refusing taxes, boycotting land surveys, and
+socially shunning any residents who accepted citizenship. Israel blockaded the villages with roughly
+15,000 soldiers by 2 April 1982, cut utilities and supplies, banned press access, and arrested
+leaders including former Syrian parliament member Kamal Kanj Abu Salah. Negotiated resolution 21
+July 1982: no conscription enforcement, specified autonomy provisions -- a commitment that has
+actually held, unlike some land-related promises documented elsewhere in this dataset: Golan Druze
+remain exempt from the IDF conscription mandatory for Druze citizens of Israel proper. Closed with
+Abu Salah's September 1983 death and a funeral drawing eulogies from Lebanese Druze leader Walid
+Jumblatt and Palestine National Council figure Khaled al-Fahoum -- underscoring the regional
+solidarity network the annexation had been partly intended to sever.
+
+Enriched `golan-heights-law-1981` with a forward cross-link and a note on the population directly
+affected; cross-linked to the existing Ariel Sharon actor entry (Defense Minister who ordered the
+leadership arrests).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (268 nodes,
++1; 408 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (408/408); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`f742285`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; both entries deep-linked, cross-links confirmed working in both directions via
+JS).
