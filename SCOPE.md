@@ -5923,3 +5923,51 @@ confirms its autolinking still works. Both Artifacts republished twice (once per
 two commits (`578c45c` for the entry creation, `5818b60` for the autolink-wording fix); Vercel
 auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
 errors; the final check confirmed George W. Bush's own page correctly links back to the new entry).
+
+## Round: Road Map for Peace (2003-04-30 to 2003-09) (2026-09-15)
+
+Continuing the Zinni/Karine A round's own throughline directly. The Road Map was already briefly
+covered as a single paragraph inside George W. Bush's own actor entry, but given how much real
+substance the plan's rise and fall actually has -- a formal multilateral proposal, qualified
+acceptance by both governments, a leader-level summit, and a dramatic collapse triggered by a named
+terror attack and a named assassination -- it earned the full dedicated-entry treatment already
+given to Wye River, the Hebron Protocol, and Sharm el-Sheikh, not the lighter Oslo-II-style
+enrichment. New topic `road-map-for-peace-2003` (Agreement, 30 April-September 2003, aliases
+"Performance-Based Roadmap to a Permanent Two-State Solution"/"Quartet Road Map").
+
+**Traced one unusually fast, unusually complete diplomatic cycle with named events at every step,
+not a vague summary of "implementation stalled":** the Quartet's 30 April 2003 three-phase plan,
+following directly from the collapse this dataset's own Zinni Mission and Karine A Affair entry
+documents and from Abbas's March 2003 appointment as the PA's first Prime Minister; Israel's 25 May
+2003 acceptance appended with fourteen conditioning reservations; the 4 June 2003 Aqaba Summit
+formally launching it; Hamas and Islamic Jihad's 29 June 2003 three-month hudna, quoted directly
+from Hamas leader Abdel Aziz al-Rantisi's own stated rationale -- giving Abbas room to negotiate,
+not a unilateral Israeli concession; the 19 August 2003 Jerusalem bus bombing that killed 22 people
+including six children, ending the truce; Israel's retaliatory assassination of Hamas leader Ismail
+Abu Shanab two days later; and Abbas's September 2003 resignation under direct threat from Arafat
+loyalists using Arafat-controlled media, which collapsed the plan's political vehicle entirely. The
+whole cycle, proposal to total collapse, compressed into under five months -- explicitly named in
+the significance text as faster than any of this dataset's slower-moving agreements in either
+direction.
+
+**Framed the performance-based structure's own design flaw directly, not just its outcome:**
+Israel's fourteen reservations made its own settlement-freeze compliance contingent on a standard of
+verified Palestinian security compliance no predecessor agreement in this dataset had ever actually
+met, while Arafat's resistance to reform provisions aimed at his own power gave Israel a standing
+objection to ever certifying Phase I complete -- a structure built to prevent either side blaming the
+other for moving first that instead let each side do exactly that.
+
+Cross-linked to the existing George W. Bush, Ariel Sharon, Mahmoud Abbas, Yasser Arafat, Hamas, PLO,
+Palestinian Authority, and United Nations entries; enriched Bush's own existing Road Map
+`key_land_action` with a cross-reference back to this entry -- this time naming it verbatim from the
+start rather than splitting the name across phrases, avoiding a repeat of the exact autolink bug
+caught and fixed in last round's Zinni/Karine A entry.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (303 nodes,
++1; 516 edges, +8); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (516/516); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`09e22d6`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page and George W. Bush's own page confirmed linking to
+each other correctly on the first attempt, with no manual wiring).
