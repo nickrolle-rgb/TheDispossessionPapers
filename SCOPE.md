@@ -5256,3 +5256,49 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`f939ea1`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page and its two-way link with Olmert's entry both
 confirmed autolinking correctly with no manual wiring).
+
+## Round: 1982 Lebanon War (2026-09-14)
+
+Same pattern as the 2006 war: Sharon's own `key_land_actions` entry already summarised the 1982
+invasion and Sabra/Shatila in detail (added months ago) with nothing dedicated to link to. New topic
+`lebanon-war-1982` (Armed Conflict, 6 June-1 September 1982, aliases "Operation Peace for
+Galilee"/"First Lebanon War").
+
+**Led with a real, easily-missed correction rather than the standard casus-belli framing:** the 3
+June 1982 assassination attempt on Ambassador Shlomo Argov, which Begin cited as the invasion's
+pretext, was carried out by the Abu Nidal Organisation -- a faction openly hostile to the PLO, not
+the PLO itself -- and Israel's own Shin Bet had reported this within a day. Begin blamed the PLO
+anyway; Sharon later called the attack "merely the spark that lit the fuse" for an invasion he had
+already been planning. Naming this plainly, rather than repeating the official pretext at face
+value, is the same "extraction not invention" discipline applied to the Argov incident specifically.
+
+Covered the full arc: the Siege of Beirut (mid-June-late August), Philip Habib's negotiated PLO
+evacuation (20 August agreement, completed 2 September, ~14,000 fighters, multinational protection
+force), and the Habib agreement's explicit civilian-safety guarantees -- which **held for barely two
+weeks** before the Sabra and Shatila massacre this dataset's own Ariel Sharon entry already
+documents in full; stating that gap plainly rather than treating the massacre as an unconnected
+follow-on event sharpens the point the guarantees were supposed to prevent exactly what happened.
+Casualty estimates given as a range, not false precision: An Nahar's contemporaneous wartime survey
+(17,825 killed/30,203 wounded) against the wider 17,000-19,000+ retrospective range and 376 IDF dead.
+
+**Significance section deliberately traces two threads forward to entries already in this dataset,
+rather than treating 1982 as a closed chapter:** Hezbollah's 1982 founding as resistance to the
+occupation, through the South Lebanon Army's 1985-2000 security-zone administration this dataset
+already documents, to the 2006 Lebanon War it eventually triggered -- a direct, traceable 24-year
+line between three separate entries; and the Kahan Commission's bounded finding against Sharon as
+the same pattern of official Israeli self-reckoning the Winograd Commission repeated after 2006, and
+that the Goldstone Report and UN Commission of Inquiry attempted, with far less domestic acceptance,
+after the Gaza wars.
+
+Cross-linked to the existing Ariel Sharon, Menachem Begin, PLO, and South Lebanon Army entries;
+enriched Sharon's own `key_land_actions` entry with a cross-reference back to this one. Live
+verification also turned up a correct bonus autolink to the existing Shin Bet entry, no issue there.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (291 nodes,
++1; 462 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (462/462); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`9549728`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page and its two-way link with Sharon's entry both
+confirmed autolinking correctly with no manual wiring).
