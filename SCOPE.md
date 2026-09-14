@@ -5571,3 +5571,43 @@ pushed (`30e66dd`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the new entry's own page confirmed linking correctly to Shamir, PLO, Oslo
 Accords, and the Israel-Jordan Peace Treaty, and Shamir's own page confirmed linking back, with no
 manual wiring in either direction).
+
+## Round: Oslo II Accord enrichment (2026-09-14)
+
+Nick asked to check the Oslo II Accord specifically. The existing `oslo-accords-1993-1995` entry
+already covered Oslo II's own Taba/Washington signing and the Area A/B/C division in real detail --
+checking it against Oslo II specifically (rather than Oslo I) surfaced two genuine, missing facts
+rather than nothing to add. **Deliberately enriched the existing combined entry instead of splitting
+out a separate Oslo II topic**, since a standalone entry would have duplicated content already
+covering the same signed instrument -- consistent with this project's standing discipline of one
+entry per real, conceptually distinct thing (the same reasoning that kept Nakba and the 1948 War
+apart, applied here to keep Oslo I and II together).
+
+**Two real additions, both specific to Oslo II's own text, not Oslo I's:** the 20 January 1996
+Palestinian Legislative Council elections (88 seats, 51 West Bank/37 Gaza, President and Council
+chosen together) -- which Oslo II's own Annex II set the legal framework for -- and Oslo II's
+separate three-phase further-redeployment commitment, transferring additional Area C territory to
+Palestinian control on a fixed eighteen-month timetable, of which only one phase was ever actually
+carried out. The 1998 Wye River Memorandum's own attempted revival of that schedule (13% of Area C
+promised, roughly 2% actually transferred) is included as the story's real ending, not a footnote --
+no further Area C territory has moved to Palestinian Authority control since.
+
+**Framed in the significance text as a concrete, numerically measurable instance of the dataset's
+broader pattern, not a vague diplomatic failure:** a specific land-transfer commitment, on a fixed
+schedule, with real percentages attached to what was promised and what was actually delivered --
+the same discipline this dataset applies to every other land-transfer claim, just unusually
+precise here because the agreement itself specified numbers to fail against.
+
+Flagged, not pursued this round: the January 1997 Hebron Protocol (a genuine separate follow-up
+agreement specifically splitting Hebron into H1/H2, not covered by anything currently in this
+dataset) and the 1998 Wye River Memorandum itself (mentioned here only as context for Oslo II's own
+redeployment failure, not documented as its own entry) are both real candidates for a future round.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (297 nodes,
+488 edges, both unchanged -- pure prose enrichment, no new relationships); `build_network_view.py`'s
+Python build and the harness's live `netBuildGraphData()` produce byte-for-byte identical edge sets
+(488/488); the standalone prototype's own dedicated harness confirms its autolinking still works.
+Both Artifacts republished, pushed (`88c7dd7`), Vercel auto-deployed and confirmed live via curl and
+an actual browser check (zero console errors; the enriched content -- the Wye River and Legislative
+Council additions -- confirmed present and rendering correctly).
