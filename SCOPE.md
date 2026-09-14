@@ -5074,3 +5074,45 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`63337b9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; NCAG's own page, its back-link from Board of Peace, and the enriched Gaza War
 and Battle of Gaza (2007) entries all confirmed autolinking correctly with no manual wiring).
+
+## Round: UN Resolution 2803 (2026-09-14)
+
+Closing the gap flagged at the end of the prior round: NCAG's own entry already named "Resolution
+2803" in its founding action_record without that resolution having an entry of its own. New topic
+`resolution-2803` (UN Resolution, 2025-11-17, aliases "Resolution 2803"/"S/RES/2803"), joining the
+existing UN Resolutions batch (181/194/273/303/242/338/3379/465/478/497) as its most recent member:
+the 13-0-2 vote (China and Russia abstaining) that endorsed Trump's twenty-point Gaza plan and gave
+the Board of Peace and the International Stabilization Force their formal legal basis, with a hard
+31 December 2027 sunset subject to further Council action and a six-month reporting requirement
+(its first report, S/2026/418, already filed).
+
+**Treated as a live, unresolved dispute over what the resolution actually authorizes, not settled
+to one reading** -- the same discipline this dataset has applied to Camp David 2000's blame
+narrative and the Goldstone Report's credibility controversy. On one side: the resolution's
+conditional self-determination language ("conditions may finally be in place for a credible pathway
+to Palestinian self-determination and statehood") and its omission of any reference to the two-state
+solution or the ICJ's July 2024 advisory opinion, both flagged as legally significant in explanations
+of vote from five Council members (Algeria, France, Pakistan, Guyana, Sierra Leone) named directly
+rather than left as an unattributed "critics say"; Russia's and China's own stated abstention reasons
+quoted directly; and, most pointedly, UN Special Rapporteur Francesca Albanese's on-the-record
+condemnation -- "a security-first, capital-driven model of foreign control," a "puppet
+administration," and her own summary line, "Replacing an abusive trustee with another is not
+self-determination" -- all attributed explicitly to her rather than adopted as this dataset's own
+conclusion, consistent with the standing rule for serious characterizations established across this
+project. On the other side: Jewish News Syndicate's own analysis defending the resolution as "a
+restatement of international law," included specifically so the entry does not read as one-sided.
+
+Cross-linked to the existing UN Security Council, Board of Peace, National Committee for the
+Administration of Gaza, and Donald Trump entries. Notably, **no edits were needed to either the
+Board of Peace or NCAG entries for this round's cross-references to work** -- both already named
+"Resolution 2803" verbatim in prose written during the prior two rounds, so the new entry's alias
+match made them autolink immediately on publish, confirmed live afterward.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (287 nodes,
++1; 454 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (454/454); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`798a710`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Resolution 2803's own page and its automatic back-link from the NCAG entry
+both confirmed autolinking correctly with no manual wiring).
