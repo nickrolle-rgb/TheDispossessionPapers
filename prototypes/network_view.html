@@ -468,8 +468,8 @@ function simulate(iterations) {
     // even spacing
     var margin = 255;
     nodes.forEach(function(n) {
-      n.vx += (W/2 - n.x) * 0.0012;
-      n.vy += (H/2 - n.y) * 0.0012;
+      n.vx += (W/2 - n.x) * 0.0004;
+      n.vy += (H/2 - n.y) * 0.0004;
       if (n.x < margin) n.vx += (margin - n.x) * 0.03;
       if (n.x > W - margin) n.vx -= (n.x - (W - margin)) * 0.03;
       if (n.y < margin) n.vy += (margin - n.y) * 0.03;
@@ -492,7 +492,14 @@ simulate(420);
 var svg = document.getElementById('graphSvg');
 var svgNS = 'http://www.w3.org/2000/svg';
 var selectedId = null;
-var viewBox = { x: 0, y: 0, w: W, h: H };
+// Fitted to where nodes actually settled once boundsFor() exists below (function declarations
+// hoist, so this assignment can wait until after simulate() below has real positions) -- a
+// fixed full-canvas viewBox left large empty margins whenever the achieved equilibrium spread
+// didn't match the nominal canvas size (caught 2026-09-15: tripling the canvas produced a *more*
+// cramped-looking default view, since the box stayed pinned to the nominal size while the
+// achieved spread grew by a smaller factor).
+var homeViewBox = boundsFor(nodes.map(function(n) { return n.id; }));
+var viewBox = { x: homeViewBox.x, y: homeViewBox.y, w: homeViewBox.w, h: homeViewBox.h };
 // Declared here (before renderGraph() is ever called below), not next to applyVisibility()
 // where they read most naturally -- renderGraph() calls applyVisibility() immediately, which
 // reads these on the very first paint, and a `var` assignment doesn't run until its own line
@@ -778,11 +785,14 @@ function animateViewBox(target, duration) {
 
 function zoomBy(factor) {
   var cx = viewBox.x + viewBox.w/2, cy = viewBox.y + viewBox.h/2;
-  var w = Math.max(90, Math.min(W*1.4, viewBox.w / factor));
-  var h = w * (H/W);
+  // Max zoom-out is relative to the content-fitted home view, not the (now much larger)
+  // nominal canvas -- otherwise zooming out kept working but just revealed more and more empty
+  // margin around the actual graph rather than being usefully bounded by it.
+  var w = Math.max(90, Math.min(homeViewBox.w*1.5, viewBox.w / factor));
+  var h = w * (homeViewBox.h/homeViewBox.w);
   animateViewBox({ x: cx - w/2, y: cy - h/2, w: w, h: h }, 220);
 }
-function resetView() { animateViewBox({ x: 0, y: 0, w: W, h: H }, 550); }
+function resetView() { animateViewBox(homeViewBox, 550); }
 
 // pan by drag; a near-zero-movement pointerup on empty canvas deselects
 var dragging = false, dragStart = null, vbStart = null, moved = 0;

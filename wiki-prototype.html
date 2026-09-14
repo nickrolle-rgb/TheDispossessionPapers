@@ -12491,7 +12491,7 @@
       });
       var margin = 255;
       nodes.forEach(function(n) {
-        n.vx += (NET_W/2-n.x)*0.0012; n.vy += (NET_H/2-n.y)*0.0012;
+        n.vx += (NET_W/2-n.x)*0.0004; n.vy += (NET_H/2-n.y)*0.0004;
         if (n.x<margin) n.vx += (margin-n.x)*0.03;
         if (n.x>NET_W-margin) n.vx -= (n.x-(NET_W-margin))*0.03;
         if (n.y<margin) n.vy += (margin-n.y)*0.03;
@@ -12505,7 +12505,16 @@
     }
 
     NET.nodes = nodes; NET.edges = edges; NET.nodeById = nodeById; NET.adjacency = adjacency;
-    NET.viewBox = { x:0, y:0, w:NET_W, h:NET_H };
+    // Fit the default/reset view to where nodes actually settled rather than the fixed nominal
+    // canvas -- the physics constants above set how much room the layout has to work with, but
+    // the achieved equilibrium spread rarely matches that nominal size exactly, and a hardcoded
+    // full-canvas viewBox left large empty margins whenever the two drifted apart (caught
+    // 2026-09-15: tripling the canvas produced a *more* cramped-looking default view, since the
+    // reset viewBox stayed pinned to the full nominal canvas while the achieved spread grew by a
+    // smaller factor). netBoundsFor() already does exactly this fit-with-padding calculation for
+    // search/selection framing, so it's reused here rather than duplicating the logic.
+    NET.homeViewBox = netBoundsFor(nodes.map(function(n){ return n.id; }));
+    NET.viewBox = { x:NET.homeViewBox.x, y:NET.homeViewBox.y, w:NET.homeViewBox.w, h:NET.homeViewBox.h };
     NET.built = true;
   }
 
@@ -12708,10 +12717,13 @@
 
   function netZoomBy(factor) {
     var cx = NET.viewBox.x+NET.viewBox.w/2, cy = NET.viewBox.y+NET.viewBox.h/2;
-    var w = Math.max(90, Math.min(NET_W*1.4, NET.viewBox.w/factor)), h = w*(NET_H/NET_W);
+    // Max zoom-out is relative to the content-fitted home view, not the (now much larger)
+    // nominal canvas -- otherwise zooming out kept working but just revealed more and more
+    // empty margin around the actual graph rather than being usefully bounded by it.
+    var w = Math.max(90, Math.min(NET.homeViewBox.w*1.5, NET.viewBox.w/factor)), h = w*(NET.homeViewBox.h/NET.homeViewBox.w);
     netAnimateViewBox({ x:cx-w/2, y:cy-h/2, w:w, h:h }, 220);
   }
-  function netResetView() { netAnimateViewBox({ x:0, y:0, w:NET_W, h:NET_H }, 550); }
+  function netResetView() { netAnimateViewBox(NET.homeViewBox, 550); }
 
   function netSelectNode(id) {
     NET.selectedId = id;
