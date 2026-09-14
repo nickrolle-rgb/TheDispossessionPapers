@@ -4335,3 +4335,43 @@ confirms its autolinking still works. Both Artifacts republished, pushed (`614ca
 auto-deployed and confirmed live via curl and an actual browser check (zero console errors;
 deep-linked to the entry; confirmed Bill Clinton, East Jerusalem, and Silwan all autolink correctly
 while Rabin and Hussein render as plain text, exactly as expected).
+
+## Round: Yitzhak Rabin added as his own actor (2026-09-14)
+
+Nick confirmed the gap flagged last round: add Rabin as his own actor entry. Three
+`key_land_actions` spanning a genuinely two-directional career:
+
+**December 1975** -- as Prime Minister, the Sebastia Compromise with Gush Emunim (alongside Defense
+Minister Shimon Peres): after seven prior IDF removals, agreed to let 25 families settle the nearby
+Kadum army camp instead, founding Kedumim and opening the northern West Bank to organised
+settlement -- under a Labor government that had not set out to expand settlement there. Extracted
+directly from the existing Gush Emunim organisation entry, which already documented the same episode
+from the settlers' side, so this was cross-verified against material already in the dataset rather
+than researched from scratch.
+
+**19 January 1988** -- as Defense Minister during the First Intifada, publicly announced "the first
+priority is to use force, might, beatings," the policy that became known as "break their bones."
+Documented the actual beatings and injury statistics (23,600-29,900 children requiring treatment
+over two years). Handled the more extreme, specific allegation carefully: one Israeli commander
+(Meir) claimed Rabin personally told him "Go in and break their bones... I'll take care of the
+media" -- Rabin denied this, and the entry presents it explicitly as a disputed claim, not a verified
+quotation. This distinction mattered enough to get right rather than flatten into a single
+"Rabin ordered bone-breaking" claim.
+
+**1993-1995** -- the Oslo Accords' Declaration of Principles and Rabin-Arafat handshake, the
+Israel-Jordan Peace Treaty, the shared 1994 Nobel Peace Prize, and his 4 November 1995 assassination
+by Yigal Amir, a Jewish far-right opponent of the Oslo process.
+
+Also completed the loop from last round: linked the existing Israel-Jordan Peace Treaty entry to
+this new Rabin entry now that a real target exists, rather than leaving it as unlinked text.
+
+Verification: `scripts/collision_check.py` clean (Rabin's surname didn't collide with any existing
+actor, so the autolinker's surname-uniqueness rule now correctly picks him up dataset-wide); `node
+--check`/`new Function()` syntax verification on both the live wiki and standalone prototype;
+harness's 30+ checks pass (270 nodes, +1; 409 edges, +1); `build_network_view.py`'s Python build and
+the harness's live `netBuildGraphData()` produce byte-for-byte identical edge sets (409/409); the
+standalone prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`defcca4`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; Rabin's own entry autolinks correctly to Palmach, IDF, the
+Six-Day War, Gush Emunim, the Civil Administration, the PLO, Arafat, the Palestinian Authority,
+Begin, Likud, and the Jordan treaty; the Jordan treaty now links back to Rabin in both directions).
