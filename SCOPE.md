@@ -4375,3 +4375,40 @@ republished, pushed (`defcca4`), Vercel auto-deployed and confirmed live via cur
 browser check (zero console errors; Rabin's own entry autolinks correctly to Palmach, IDF, the
 Six-Day War, Gush Emunim, the Civil Administration, the PLO, Arafat, the Palestinian Authority,
 Begin, Likud, and the Jordan treaty; the Jordan treaty now links back to Rabin in both directions).
+
+## Round: Oslo Accords (2026-09-14)
+
+The single largest gap surfaced this session: "Area C (Oslo II's designation)" had been referenced
+parenthetically across at least three existing entries (administrative home demolitions, West Bank
+firing zones, checkpoints/movement restrictions) without the Accords themselves ever having their
+own entry. Direct, natural follow-on from adding Rabin.
+
+**Oslo Accords** (new topic, Agreement, 1993-09-13 to 1995-09-28): the 9 September 1993 Israel-PLO
+mutual recognition letters, the 13 September 1993 Declaration of Principles (Peres/Abbas as actual
+signatories, the Rabin-Arafat handshake -- already correctly documented that way in this dataset's
+Bill Clinton entry, cross-checked rather than re-derived), the 4 May 1994 Cairo Agreement creating
+the Palestinian Authority and enabling Arafat's return to Gaza, and the Interim Agreement (Oslo II)
+initialled at Taba on 24 September 1995 and signed in Washington four days later. Documents the Area
+A/B/C division in real detail (roughly 18/22/60% of the West Bank respectively) as the direct source
+of the land-status geography this dataset's own demolitions/firing-zones/movement-restriction
+entries already depend on -- explicitly noted the percentage figures carry real source variance
+across sources rather than presenting one figure as falsely precise.
+
+Framed the significance around the unmet deadline: permanent-status talks were meant to conclude by
+May 1999, and four points fall directly out of that -- Area C's "temporary" designation has instead
+persisted for more than a quarter-century as the West Bank's actual permanent operating structure,
+making this one of the clearest examples in this dataset's record of a time-limited arrangement
+outliving its own sunset clause rather than resolving. Noted Rabin's assassination came barely five
+weeks after he signed Oslo II.
+
+Cross-linked to the existing Yitzhak Rabin, Yasser Arafat, PLO, and Palestinian Authority entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (271 nodes,
++1; 413 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (413/413); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`0f954a7`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the entry autolinks richly to Arafat, Rabin, the PLO, Mahmoud Abbas, Bill
+Clinton, the Palestinian Authority, and even the existing West Bank firing zones entry -- no manual
+wiring for any of it).
