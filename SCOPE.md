@@ -5780,3 +5780,45 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`2a3a1e1`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the enriched content -- Har Homa and the London meeting -- confirmed present,
 alongside a correct new autolink to the existing Ehud Olmert entry).
+
+## Round: Sharm el-Sheikh Memorandum / Wye II (2026-09-14)
+
+Closes the direct chain of missed deadlines this session has been building since the Wye River
+round: Oslo's own May 1999 deadline -> Wye River's unfulfilled 13% -> now this, "Wye II" -> the July
+2000 Camp David Summit already in this dataset -> the Second Intifada. New topic
+`sharm-el-sheikh-memorandum-1999` (Agreement, 4 September 1999, aliases "Wye II"/"Sharm el-Sheikh
+Agreement"): newly-elected Barak's signing with Arafat at the Egyptian resort, witnessed by Mubarak
+and Jordan's newly-crowned King Abdullah II (his father Hussein having died that February), with
+Albright representing Washington.
+
+**Documented a genuinely larger redeployment commitment than Wye's own, with real precision on the
+schedule rather than a round figure:** 7% of Area C on 5 September 1999, a further 2%/3% split by 15
+November, and a final 1%/5.1% split by 20 January 2000 -- roughly 18 percentage points against Wye's
+unfulfilled 13%, plus 350 prisoner releases, West Bank-Gaza safe passage, and a Gaza seaport.
+
+**A real, documented contrast this dataset can now show directly rather than assert:** the land
+redeployment schedule was largely carried out under Barak, a genuine departure from Wye's near-total
+non-delivery under Netanyahu -- while the Gaza seaport tells the opposite story in miniature: its
+own promised 1 October 1999 start slipped to 18 July 2000, construction was obstructed, and the
+Israeli military destroyed the half-built works that September-October as the Second Intifada broke
+out. One infrastructure project's entire lifespan, from promised start date to physical destruction,
+fits inside the thirteen months this Memorandum and its own successor summit spanned -- a concrete
+illustration of the same broader pattern rather than an abstract claim about it.
+
+**Framed the whole sequence as one unbroken chain of deadline resets, not four separate failures:**
+this Memorandum's own missed five-month Framework Agreement deadline (February 2000) is what
+prompted Clinton to convene Camp David directly that July rather than wait for a fourth deadline to
+lapse -- enriched the existing Camp David Summit entry's own opening sentence to name this Memorandum
+directly rather than jumping straight from Oslo's 1999 deadline to the summit itself.
+
+Cross-linked to the existing Ehud Barak, Yasser Arafat, and PLO entries; live verification also
+confirmed correct bonus links to the existing Wye River Memorandum and Second Intifada entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (300 nodes,
++1; 499 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (499/499); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`7dc53cf`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page and Camp David's own page confirmed linking to each
+other correctly, alongside Wye River and the Second Intifada, with no manual wiring).
