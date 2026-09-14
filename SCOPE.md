@@ -5702,3 +5702,42 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`15ed1bb`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page confirmed linking correctly to Netanyahu, Arafat,
 Clinton, PLO, Hebron Protocol, Oslo Accords, Barak, and Sharon, with no manual wiring).
+
+## Round: Hebron H2 planning transfer correction and enrichment (2026-09-14)
+
+Nick asked to check the "Hebron H2 planning transfer" -- the 2026 Smotrich development already
+briefly covered inside the 1994 Hebron Massacre entry's significance section. Checking it against
+live sources surfaced that the existing single sentence had conflated Smotrich's 16 June 2026
+public announcement with the actual underlying decision date, and had missed the transfer's real
+origin and full scope entirely. **Corrected rather than merely expanded**, consistent with this
+project's standing discipline of fixing factual errors instead of propagating them alongside new
+material.
+
+**The real chronology, now documented in full:** the 8 February 2026 Security Cabinet Resolution
+B/229 -- part of a broader West Bank policy package -- actually authorised the Hebron transfer and,
+in the same decision, established a separate Israeli municipal body over Rachel's Tomb in Bethlehem,
+a second location the previous single-sentence account omitted entirely; the EU's own joint
+statement the same week, condemning the wider package as "counterproductive and incompatible with
+international law" and warning it put the "sensitive status quo" of religious sites at risk; the
+Civil Administration's Higher Planning Council formally exercising that authority on 10 June 2026 --
+not simply Smotrich announcing a fait accompli, but a specific administrative body acting on a
+specific prior cabinet mandate; the first concrete construction approval the very next day, 11 June
+2026 (a roughly 1,000-square-metre Shavei Hebron yeshiva building near Beit Romano) -- the first
+Israeli settlement construction approved in H2 without any Hebron Municipality involvement since the
+Protocol's own 1997 signing, a genuinely dateable first, not a vague trend; a further yeshiva
+expansion approved 17 June; and the UN Special Coordinator's own 29 June 2026 Security Council
+briefing under Resolution 2334, documenting the sequence at the UN level.
+
+**Enriched the structural graph, not just the prose:** added Bezalel Smotrich to
+`related_actor_ids`, a real gap given how central he now is to this section -- he was previously
+reachable only via prose autolink, with no structural edge.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (299 nodes,
+unchanged; 496 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (496/496); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`749e0da`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the enriched content -- the 8 February 2026 decision and the Rachel's Tomb
+scope -- confirmed present, alongside a correct bonus autolink to the existing Resolution 2334
+entry).
