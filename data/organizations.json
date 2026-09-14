@@ -2998,5 +2998,54 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "national-committee-for-the-administration-of-gaza",
+    "name": "National Committee for the Administration of Gaza",
+    "hebrew_name": null,
+    "aliases": [
+      "NCAG"
+    ],
+    "org_type": "Transitional Governance Body",
+    "founding_date": "2026-01-16",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "ncag-founded-2026",
+        "date": "2026-01-16",
+        "action_type": "Institution Founding",
+        "title": "Technocratic committee of Gaza-origin Palestinians formally begins work in Egypt",
+        "location_affected": "Gaza Strip",
+        "description": "Palestinian technocrat Ali Shaath was named the NCAG's chief commissioner on 14 January 2026, and the roughly 16-17-member committee -- all originally from Gaza, holding portfolios including land and housing (Osama Al-Sadaawi), social welfare and women's affairs (Hana Tarazi, the only woman and the only Palestinian Christian on the committee), economy, finance, health, and utilities -- formally began work in Egypt on 16 January 2026, one day after only twelve of its members attended its first working meeting in Cairo. Established under the framework of President Trump's twenty-point Gaza peace plan and its Board of Peace, the NCAG is intended as a transitional body overseeing Gaza's civil administration and rehabilitation pending a reformed Palestinian Authority's eventual return; it formally reports to the Board of Peace through the Board's High Representative for Gaza, Nickolay Mladenov -- see this dataset's own Board of Peace entry for that structure's full membership and legal basis (the UN Security Council's Resolution 2803, adopted 17 November 2025, 13-0-2 with China and Russia abstaining, which authorized the Board of Peace and a temporary International Stabilization Force in Gaza through 31 December 2027).",
+        "citation": "VERIFIED 2026-09-14 -- Ali Shaath's 14 January 2026 naming as chief commissioner, the committee's 16 January 2026 start of work in Egypt, the 15 January 2026 first Cairo meeting (12 of ~16-17 members attending), and the named commissioners and portfolios are corroborated via live search (Wikipedia's National Committee for the Administration of Gaza and Hana Tarazi articles, the ECFR's 'National Committee for the Administration of Gaza' mapping page, NCAG's own site at ncag.ps). Resolution 2803's 17 November 2025 adoption, its 13-0-2 vote, and its authorization of the Board of Peace and International Stabilization Force through 31 December 2027 are corroborated via live search (UN press coverage of Security Council meeting SC/16225, Chatham House's and the ASIL's analyses of the resolution)."
+      },
+      {
+        "event_id": "ncag-hamas-handover-2026",
+        "date": "2026-07-06",
+        "action_type": "Sanctioned Political Action",
+        "title": "Hamas dissolves its Gaza government, formally transferring civil administration to the NCAG",
+        "location_affected": "Gaza Strip",
+        "description": "On 6 July 2026, Hamas's Gaza government announced the dissolution of its Emergency Committee -- the civil administrative apparatus it had run since taking sole control of the Strip in June 2007, an episode this dataset's own Battle of Gaza (2007) entry documents in full -- and the transfer of its administrative authority to the NCAG, ending nearly two decades of direct Hamas civil governance. Hamas spokesman Hazem Qassem said the move was meant to \"remove any pretexts for the occupation, which continues its aggression,\" while NCAG chief commissioner Ali Shaath said the committee was \"fully prepared to assume its national responsibilities as soon as the necessary resources and capabilities are available.\" The handover covers civil administration only: Hamas has not relinquished its political organisation or its armed wing, both of which this dataset's own Hamas entry continues to document.",
+        "citation": "VERIFIED 2026-09-14 -- the 6 July 2026 dissolution announcement, the Emergency Committee's identity as the body dissolved, and the Qassem and Shaath quotes are corroborated via live search (Al Jazeera's 'Hamas announces dissolution of Gaza governing body' and its companion 'What is the new Gaza administration' explainer, NBC News's and France 24's contemporaneous coverage). The distinction between the civil-administration handover and Hamas's continued political/military role is corroborated via live search (Arab Center Washington DC's 'Hamas Dissolves its Government in Gaza, but the Board of Peace Remains the Problem')."
+      },
+      {
+        "event_id": "ncag-transfer-stalled-2026",
+        "date": "2026-08-01",
+        "action_type": "Sanctioned Political Action",
+        "title": "Formal handover stalls: Israel blocks NCAG members from entering Gaza",
+        "location_affected": "Gaza Strip",
+        "description": "Despite Hamas's July 2026 dissolution of its own governing body, the NCAG's actual assumption of on-the-ground administrative control remained stalled as of this dataset's most recent check: committee members remained based outside Gaza for months, with reporting attributing the delay to Israeli objections to their physical entry into the territory, alongside a broader stall in the ceasefire's second phase (Hamas disarmament and phased Israeli withdrawal). The Times of Israel reported Israeli and Palestinian officials alike feared the committee was \"hobbled from the get-go.\" The Palestinian policy institute Al-Shabaka has gone further, characterising the NCAG's role in its own published analysis as managing conditions imposed on Gaza rather than governing it independently -- a critical framing this dataset records as that institute's own characterisation, not as this dataset's conclusion.",
+        "citation": "VERIFIED 2026-09-14 -- the stalled physical entry of NCAG members, the Israeli-objection reporting, and the Times of Israel's \"hobbled from the get-go\" characterisation are corroborated via live search (the Times of Israel's 'Gaza technocratic panel meets for first time, as officials fear it's hobbled from get-go'). Al-Shabaka's critical framing is corroborated via live search (Al-Shabaka's 'The NCAG: Gaza's Technocratic Turn to Genocide Management' policy memo), attributed explicitly to that organisation rather than treated as this dataset's own assessment."
+      }
+    ],
+    "knesset_participation": []
   }
 ]
