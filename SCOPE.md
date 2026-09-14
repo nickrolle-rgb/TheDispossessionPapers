@@ -5657,3 +5657,48 @@ pushed (`fec358d`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the new entry's own page confirmed linking correctly to Netanyahu, Arafat,
 PLO, the 1994 Hebron Massacre entry, and the Oslo Accords entry, with both of the latter two
 confirmed linking back with no manual wiring in either direction).
+
+## Round: Wye River Memorandum (2026-09-14)
+
+Closes out the further-redeployment thread this session has been tracing across three now-linked
+entries (Oslo II's original three-phase schedule -> the Hebron Protocol's own attempt at it -> now
+this, the schedule's final and most formally documented failure). New topic
+`wye-river-memorandum-1998` (Agreement, 23 October 1998, aliases "Wye River Accords"/"Wye
+Memorandum"): Clinton-hosted talks at the Wye River Plantation, a frail King Hussein's participation
+in one of his final public appearances, and the Netanyahu-Arafat signing itself.
+
+**Documented the terms with real precision rather than a round number:** 13% of Area C committed to
+transfer, broken down as 1% to full Palestinian control (Area A) and 12% to Palestinian civil
+administration (Area B) -- with 3 of those 12 percentage points immediately carved back out as
+protected nature reserves where no new Palestinian construction would be allowed and Israel kept
+security control, a real qualification of what "12% to Palestinian civil administration" actually
+meant that a rounder figure would have obscured. Also covered the Palestinian security commitments,
+the unusually direct CIA-chaired trilateral security committee, the 750-prisoner release, the
+West Bank-Gaza safe-passage route, and the Gaza airport provision.
+
+**Treated the 20 December 1998 Knesset suspension vote as the actual falsification event, not an
+inferred failure years later:** unlike most of this dataset's promised-but-undelivered land
+transfers, which simply faded without a formal reversal, Wye River's own implementation was stopped
+by a specific, dated vote of Israel's own legislature -- a genuinely distinct and more direct kind
+of broken commitment worth naming as such rather than folding into the same "quietly abandoned"
+category as the rest.
+
+**Included Sharon's own documented post-signing instruction to settlers as direct evidence, not
+paraphrase:** "Everybody has to move, run and grab as many hilltops as they can to enlarge the
+settlements, because everything we take now will stay ours... Everything we don't grab will go to
+them" -- quoted in full rather than summarized, since the exact wording is itself the evidence.
+Traced the coalition collapse (National Religious Party, Moledet withdrawing) through to Netanyahu's
+May 1999 election defeat, already documented in this dataset's own Ehud Barak entry.
+
+Cross-linked to the existing Benjamin Netanyahu, Yasser Arafat, Bill Clinton, and PLO entries; live
+verification also confirmed correct bonus links to the existing Hebron Protocol, Oslo Accords, Ehud
+Barak, and Ariel Sharon entries.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (299 nodes,
++1; 495 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (495/495); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`15ed1bb`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page confirmed linking correctly to Netanyahu, Arafat,
+Clinton, PLO, Hebron Protocol, Oslo Accords, Barak, and Sharon, with no manual wiring).
