@@ -5116,3 +5116,45 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`798a710`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; Resolution 2803's own page and its automatic back-link from the NCAG entry
 both confirmed autolinking correctly with no manual wiring).
+
+## Round: International Stabilization Force (ISF) (2026-09-14)
+
+Third entity closed out of the Board of Peace/GHF/NCAG/Resolution 2803 cluster this thread has been
+building since the Abraham Accords round. New org `international-stabilization-force` (new org_type
+"Multinational Security Force" -- none of this project's existing types fit an authorized-but-not-
+yet-assembled multinational troop contingent, distinct again from "National Military" which covers
+a single state's own force -- founded 2025-11-17 under Resolution 2803's authorization, alias
+"ISF"): Maj. Gen. Jasper Jeffers' January 2026 command appointment; the 20,000-troop/12,000-police
+planning target, kept explicit against how far short actual commitments fell through 2026 rather
+than reported as an achieved figure; the five countries that actually pledged troops (Indonesia,
+Morocco, Kazakhstan, Kosovo, Albania) plus Turkey's separate signaled interest; and Israel's cabinet
+approving only an initial ~200-troop deployment in late July 2026.
+
+**Three `action_record` entries trace one real, still-unresolved arc, not a single founding fact --
+the same pattern established for GHF and NCAG:** (1) authorization and planning; (2) Hamas's 18
+November 2025 rejection of the resolution's disarmament terms as an attempt "to subject the Gaza
+Strip to international authority," its later substantive distinction between "disarmament" and
+"handing over weapons" (insisting any transfer go through a neutral party with guarantees against
+future Israeli strikes on the surrendered stockpile), and its continued refusal of disarmament as a
+precondition even as it softened toward accepting a peacekeeping presence -- tied directly, not
+merely cross-referenced, to the stalled Kushner-Hamas Cairo talks this dataset's own Board of Peace
+entry already documents; (3) Israel's block on Turkish troop participation (Foreign Minister Saar
+citing Erdogan's Hamas ties), the resulting public US-Israel rift over the question, and the slow
+buildup through Kosovo's and Albania's September 2026 commitments -- left honestly unresolved as of
+this dataset's most recent check rather than reported as a completed deployment.
+
+**No edits were needed to the existing Resolution 2803 entry for this round's central
+cross-reference to work** -- continuing the pattern from the NCAG and Resolution 2803 rounds before
+it: that entry already named "International Stabilization Force (ISF)" verbatim in its own prose,
+so the new org's alias match made it autolink immediately on publish, confirmed live in both
+directions (ISF's own page links to Resolution 2803, and Resolution 2803 now links back to ISF).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (288 nodes,
++1; 454 edges, unchanged -- consistent with this org carrying no structured related_actor_ids or
+notable_members of its own, only prose mentions); `build_network_view.py`'s Python build and the
+harness's live `netBuildGraphData()` produce byte-for-byte identical edge sets (454/454); the
+standalone prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`c34aaec`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; ISF's own page and its automatic two-way link with Resolution
+2803 both confirmed autolinking correctly with no manual wiring).
