@@ -4963,3 +4963,68 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`418c8c2`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; Trump, Netanyahu, Palestinian Authority, Hamas, and PLO all autolinked
 correctly with no manual wiring).
+
+## Round: Negev Summit, Gaza Humanitarian Foundation, Board of Peace (2026-09-14)
+
+Three requests in one round: the Negev Summit as a topic, plus GHF and the Board of Peace, both of
+which turned out to be real institutional entities (a registered foundation with an executive
+director and an appointed international executive board) rather than events -- so both went into
+`organizations.json`, not `topics.json`, matching this project's standing rule that a structured
+institution belongs in the org file regardless of how recently it was created.
+
+**Negev Summit** (new topic, Historical Event, 27-28 March 2022, alias "Negev Forum"): Yair Lapid
+hosted the UAE/Bahrain/Morocco/Egypt foreign ministers plus US Secretary of State Blinken at Sde
+Boker -- the first multilateral summit built directly on the Abraham Accords rather than a
+bilateral extension of them. Covered its institutionalization as an annual Negev Forum (six working
+groups) and, deliberately, its collapse: Morocco postponed the planned March 2023 second ministerial
+meeting four times and never held it, which Israeli Foreign Minister Eli Cohen himself tied directly
+to a fresh round of Israeli West Bank settlement announcements -- kept front and center in the
+significance text as a real, acknowledged diplomatic cost of settlement expansion, the same pattern
+this dataset documents everywhere else. Cross-linked to the existing Yair Lapid MK entry and, in
+prose, to the existing Abraham Accords entry.
+
+**Gaza Humanitarian Foundation** (new org, new use of the existing "Humanitarian Organization"
+org_type already used for the ICRC, 2025-02-11 to 2025-11-25, alias "GHF"): founding in Delaware/
+Geneva in close coordination with Israeli authorities as a replacement for the UN-led aid system;
+founding executive director Jake Wood's resignation the day before launch, explicitly citing an
+inability to adhere to humanitarian neutrality/independence principles; the near-daily
+mass-casualty shootings at its four militarized distribution sites from 27 May 2025 (OHCHR's
+escalating tolls -- 613 by late June, 875 by mid-July, 1,760+ by mid-August, Gaza MoH's 2,613 by
+October); Human Rights Watch's war-crimes characterization and MSF's "orchestrated killing"
+description, both attributed directly to their source organizations rather than adopted as this
+dataset's own conclusion; the August 2025 UN call for immediate dismantling; and the 25 November
+2025 permanent shutdown after roughly five months. Three `action_record` entries trace founding ->
+operation/killings -> shutdown as one coherent arc.
+
+**Board of Peace** (new org, new org_type "Transitional Governance Body" since nothing existing
+fit an ad hoc appointed international executive board the way "International Body" fits a
+treaty-based organization of member states, founded 2026-01-17): Trump's chairmanship and the full
+named Executive Board (Rubio, Witkoff, Kushner, Blair, Banga, Rowan, Gabriel, Mladenov as both a
+member and Gaza High Representative, plus the regional members Fidan/Al-Thawadi/Rashad/Al
+Hashimy/Gabay/Kaag). **Flagged directly, not smoothed over: no Palestinian sits on the Board**,
+documented as a specific point of criticism from observers rather than left implicit. Second
+`action_record` entry covers the August 2026 Kushner-led Cairo meeting with Hamas over disarmament
+and the handover of civil control to the National Committee for the Administration of Gaza (NCAG),
+which reports to the Board through Mladenov. NCAG itself was deliberately not added as its own
+entry this round -- flagged as a real gap for a future round if Nick wants it, kept to the three
+things actually asked for.
+
+**Enriched the existing 2023-25 Gaza War entry while already in the file** (cheap-to-fix pattern):
+its summary already gestured at "an international 'Board of Peace' chaired by Trump" without that
+body having its own entry yet to link to; added a GHF-founding sentence and tightened the Board of
+Peace reference to match the new org's exact name, and added both to `related_org_ids`. Verified
+live afterward that both now resolve as real links from within the war entry's own prose, alongside
+the four already-working satellite-entry links from the prior round.
+
+Cross-linked: Negev Summit -> Yair Lapid; Board of Peace notable_members -> Donald Trump; 2023-25
+Gaza War -> Gaza Humanitarian Foundation, Board of Peace (new edges).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (285 nodes,
++3; 449 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (449/449); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`4febb5f`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Negev Summit/Yair Lapid/Abraham Accords, GHF, Board of Peace, and the Gaza War
+entry's newly-resolving GHF/Board of Peace links all confirmed autolinking correctly with no manual
+wiring).
