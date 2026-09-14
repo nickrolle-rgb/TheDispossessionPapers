@@ -6016,3 +6016,67 @@ pushed (`0d44dd3`), Vercel auto-deployed and confirmed live via curl and an actu
 (zero console errors; the new entry's own page, George W. Bush's page, and Ehud Olmert's page all
 confirmed linking to each other correctly on the first attempt, alongside bonus correct links to
 Road Map for Peace, Second Intifada, Zinni Mission/Karine A, and the 2008-09 Gaza War).
+
+## Round: Oslo Framework's Declared Collapse (2026-09-15)
+
+Nick asked to check "the Oslo peace process's final collapse." With direct final-status negotiations
+already ended by Annapolis's own unanswered 2008 proposal already documented in this dataset,
+research surfaced that the real "final collapse" wasn't a negotiation failure at all -- it was a
+repeated, years-later pattern of the Palestinian leadership itself declaring the 1993-1995 framework
+dead, entirely outside any active talks. New topic `oslo-framework-declared-collapse-2015-2020`
+(Historical Event, 30 September 2015-17 November 2020, aliases "Abbas's 2015 UN
+Declaration"/"May 2020 Suspension of Agreements with Israel").
+
+**Three separate declarations documented by exact date and quoted language, not summarized as one
+vague "Oslo died" moment:** Abbas's 30 September 2015 UN General Assembly speech ("we cannot
+continue to be bound by these agreements"), tied directly to Israel's own continued settlement
+construction and a stalled prisoner release; the January 2018 PLO Central Council vote recommending
+suspended recognition of Israel in response to Trump's December 2017 Jerusalem recognition, which PA
+officials themselves later downplayed as unimplemented; and the 19 May 2020 declaration -- the most
+concrete of the three -- that the PLO and State of Palestine were "absolved... of all the agreements
+and understandings... including the security ones," triggered by Israel's prepared West Bank
+annexation under the Trump administration's "Peace to Prosperity" plan.
+
+**Documented the pattern's honest shape rather than treating any single declaration as truly final:**
+each was followed by continuation or eventual restoration of security coordination once its trigger
+passed -- most concretely the genuine, months-long 2020 halt that ended on 17 November 2020, days
+after Biden's election was confirmed, driven by a Palestinian cash crunch and a wish to signal
+goodwill to the incoming administration rather than by any resolution of the underlying dispute.
+Framed these declarations as structurally different from every earlier Oslo-era collapse already in
+this dataset: each prior one (Camp David, Taba, the Road Map, Annapolis) was tied to a specific
+failed negotiation, while these were made with no active negotiation to collapse at all -- only a
+surviving administrative arrangement whose own Palestinian signatory had begun publicly repudiating
+its legal basis.
+
+**A genuine new autolink bug found and worked around, distinct from all three previously flagged
+this session:** live verification showed the new entry's own name, "Oslo Framework's Declared
+Collapse (2015-2020)," never autolinked from the Oslo Accords entry's cross-reference, even though
+the text matched verbatim. Traced the root cause directly in the wiki's own source: the autolink
+regex is built as `\b(name)\b`, and a name ending in a non-word character -- here, the closing
+parenthesis -- can never satisfy a trailing `\b` when followed by whitespace, since `\b` requires a
+word/non-word transition and non-word-to-non-word never qualifies. This is a structurally distinct,
+fourth bug from the three already tracked (`task_8075a760`, `task_ed830795`, `task_5202f465`), and
+likely affects several existing entries whose own canonical names already end in ")" (the
+Prawer-Begin bill, the Negev/Galilee veterans bill, the stone-throwing sentencing bill, the
+administrative-detention bill, Elon Moreh, South Africa v. Israel, and the Mavi Marmara raid) --
+each silently unreachable by its own full name in prose. Worked around at the content level by
+renaming the entry to "Oslo Framework's Declared Collapse" (dropping the trailing parenthetical,
+still fully conveyed via `date_or_range`), fixed the Oslo Accords cross-reference to match, re-ran
+the full pipeline, and confirmed live. Flagged the underlying engine bug as a new background task
+(`task_fc2130f9`) for a proper fix across the whole wiki, rather than patching around it in every
+future entry that happens to need a parenthetical name.
+
+Cross-linked to the existing Mahmoud Abbas, Donald Trump, Benjamin Netanyahu, PLO, and Palestinian
+Authority entries; enriched the existing Oslo Accords entry's significance text with a
+cross-reference to this one.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (305 nodes,
++1; 525 edges, +5); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (525/525, confirmed both before and
+after the rename since it was a pure content-level workaround); the standalone prototype's own
+dedicated harness confirms its autolinking still works. Both Artifacts republished twice (once per
+commit); pushed as two commits (`1a7aa50` for the entry creation, `de249d8` for the rename/wording
+fix); Vercel auto-deployed both and confirmed live via curl and an actual browser check each time
+(zero console errors; the final check confirmed the Oslo Accords entry's cross-reference now
+resolves correctly).
