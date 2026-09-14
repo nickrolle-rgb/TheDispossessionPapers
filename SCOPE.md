@@ -6080,3 +6080,57 @@ commit); pushed as two commits (`1a7aa50` for the entry creation, `de249d8` for 
 fix); Vercel auto-deployed both and confirmed live via curl and an actual browser check each time
 (zero console errors; the final check confirmed the Oslo Accords entry's cross-reference now
 resolves correctly).
+
+## Round: Network map layout tuning -- spread out, colour clustering (2026-09-15)
+
+Nick asked for two things directly as the graph passed 300 nodes: it's getting crowded, and could
+colours be kept together where possible. This is the first round of the whole session touching the
+layout/rendering code rather than the data -- the hand-rolled force-directed physics `netInit()`
+(wiki-prototype.html) and `simulate()` (prototypes/network_view_template.html) had been untouched
+since the graph was a fraction of its current size.
+
+**Spread out: every existing tuning constant scaled up proportionately together, not one isolated
+knob turned.** Canvas grew 1260x1000 -> 1600x1300; repulsion strength 3200 -> 4600; the ideal edge
+spring length 46 -> 56; the initial seed jitter 260 -> 320; the boundary margin 70 -> 85; iterations
+340 -> 380 to give the larger space and the new force (below) time to settle. Scaling the whole set
+together rather than adjusting one constant in isolation keeps the relative balance between forces
+that already produced a readable layout intact at the new scale, rather than accidentally
+introducing a new imbalance (e.g. stronger repulsion alone, without a correspondingly larger canvas,
+would just have pushed everything harder against the same boundary).
+
+**Colours together: a new, deliberately weak same-alignment attraction, added inside the existing
+O(n^2) repulsion loop rather than as a second pass.** Nodes sharing a political alignment --
+right/left/religious/centrist, the four colours the legend actually uses -- now pull gently toward
+each other, capped both in strength and by distance so it biases the layout toward loose colour
+neighbourhoods without overriding edge topology or physically colliding same-coloured nodes that
+have no real graph relationship. **Deliberately excluded the grey "no alignment data" bucket**
+(institutional/unaffiliated/unclassified) from clustering -- checked against the standalone
+prototype's own alignment breakdown (110/83/9 out of 305 nodes, roughly two-thirds of the whole
+graph) before deciding this, since applying the same clustering force to a group that large and that
+undifferentiated would have just pulled most of the graph into one dense blob rather than sorting it
+into anything visually meaningful. Only the genuinely coded minority gets the clustering treatment.
+
+Applied identically to both copies of the layout engine -- wiki-prototype.html's `netInit()` and
+prototypes/network_view_template.html's `simulate()` -- then rebuilt
+`prototypes/network_view.html` from the updated template via `build_network_view.py`. Pure
+layout/rendering change, no data touched: 305 nodes/525 edges unchanged.
+
+**Verified visually, not just via the data pipeline, since this is fundamentally a visual change the
+standard checks can't validate on their own:** after the full pipeline passed clean, navigated the
+live network view, revealed every node via the "eye" toggle, and confirmed by screenshot that the
+four coded colour groups now sit in visibly distinct regions of the canvas (a teal/left cluster
+lower-left, an orange-red/right cluster with yellow/religious nodes grouped alongside it
+upper-centre, and a tight blue/centrist cluster lower-right) rather than scattered uniformly, and
+that the overall canvas reads with more breathing room at both the zoomed-out default view and when
+zoomed into the genuinely high-degree hub nodes at the graph's core (which remain visually dense by
+nature -- the most-connected institutions in the dataset are structurally hubs regardless of layout
+tuning, and no amount of spreading removes that without misrepresenting the actual connectivity).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (305 nodes,
+525 edges, both unchanged); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (525/525); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`4e2f70d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; visual inspection of the live, deployed network view confirmed both the
+spread-out canvas and the colour-clustering effect working as intended).
