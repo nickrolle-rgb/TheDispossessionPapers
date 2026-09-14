@@ -1114,6 +1114,13 @@
     "historical_role": "Career IDF commander turned politician whose land-policy record runs in both directions: as Agriculture Minister under Begin he drove the most aggressive phase of West Bank settlement expansion, as Defense Minister he ordered the 1982 Lebanon invasion, and as Prime Minister he both accelerated settlement early on and then unilaterally reversed course with the 2005 Gaza disengagement, splitting from Likud to found Kadima the same year.",
     "key_land_actions": [
       {
+        "date": "1953-10-14",
+        "action_type": "Executive Action",
+        "location_affected": "Qibya, West Bank (then Jordanian-controlled)",
+        "impact_description": "As founding commander of the IDF's Unit 101, led a night reprisal raid on the Jordanian-controlled West Bank village of Qibya on 14-15 October 1953, ordered in response to a grenade attack two days earlier by infiltrators from Jordan that had killed an Israeli mother and two children in Yehud. Sharon's unit dynamited some 45 houses, a school, and a mosque, many with residents still inside; an estimated 65-70 Palestinian villagers were killed, most of them women and children, with 69 the most commonly cited figure. Sharon later wrote in his memoirs that the operation's orders called for 'maximum killing and damage to property.' The Israeli government initially denied army involvement, attributing the raid to spontaneous civilian retaliation; the UN Security Council condemned the attack by unanimous resolution and called on Israel to prevent such raids in future. Qibya established Unit 101's -- and Sharon's own -- reputation for aggressive cross-border reprisal operations years before he held any ministerial office, and predates by nearly a quarter-century the settlement and occupation-policy record covered in this entry's other actions.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 14-15 October 1953 raid dates, the preceding grenade attack on Yehud, the estimated 65-70 casualties (69 most commonly cited), the house/school/mosque demolitions, Sharon's 'maximum killing and damage to property' quote, Israel's initial denial of army involvement, and the UN Security Council's condemnation are corroborated via live search (Wikipedia's Qibya massacre article, Jewish Virtual Library's Qibya raid entry, the Institute for Palestine Studies' reproduction of Moshe Sharett's diary excerpts on the raid)."
+      },
+      {
         "date": "1977-1981",
         "action_type": "Executive Action",
         "location_affected": "West Bank",
@@ -1126,6 +1133,13 @@
         "location_affected": "Southern Lebanon",
         "impact_description": "As Defense Minister under Begin, directed the June 1982 invasion of Lebanon, intended to destroy the PLO's estimated 15,000-18,000 fighters based there, leading to the multi-year Israeli occupation of the South Lebanon 'security zone' (1982-2000), administered on the ground by the Israeli-backed South Lebanon Army -- this dataset's own 1982 Lebanon War entry covers the invasion's pretext, the Siege of Beirut, and the PLO's evacuation in full. On 16 September 1982, Sharon and Chief of Staff Rafael Eitan permitted Israel's Lebanese Phalangist allies to enter the Sabra and Shatila refugee camps to root out remaining PLO fighters; the Phalangists instead massacred Palestinian civilians there over the following two days. The Israeli government's own Kahan Commission (established 28 September 1982) found Sharon indirectly responsible in its February 1983 report, concluding he should have anticipated the risk of Phalangist atrocities — he resigned as Defense Minister on 14 February 1983.",
         "primary_source_citation": "VERIFIED 2026-09-01 — the June 1982 invasion's stated aim, the 16-18 September Sabra and Shatila massacre dates, the Kahan Commission's 28 September 1982 establishment and February 1983 findings, and Sharon's 14 February 1983 resignation are all corroborated via live search (ADL's Lebanon War 1982 backgrounder, Wikipedia's Kahan Commission article)."
+      },
+      {
+        "date": "2002-04-14",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank (barrier route departing from the Green Line)",
+        "impact_description": "As Prime Minister, had his government approve a definitive plan for a West Bank separation barrier on 14 April 2002, with construction beginning that June -- a reversal of his own long-standing opposition to any physical barrier, which he had argued since the 1970s would constrain settlement expansion by implying a de facto border. The decision came amid the Second Intifada's suicide-bombing campaign this dataset's own entry documents in full. The barrier's route substantially departs from the Green Line to enclose West Bank land and settlements on the Israeli side; the International Court of Justice's 2004 advisory opinion, which this dataset covers in its own entry, found the barrier and its associated permit-and-access regime contrary to international law.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 14 April 2002 cabinet approval, the June 2002 construction start, and Sharon's own prior opposition to a barrier are corroborated via live search (Ir Amim's Separation Barrier report). The route's departure from the Green Line and the ICJ's 2004 findings are consistent with this dataset's own already-verified ICJ Advisory Opinion on the Legal Consequences of the Construction of a Wall entry."
       },
       {
         "date": "2005-08",
@@ -1148,6 +1162,12 @@
         "date_or_range": "1962-2014",
         "description": "His first wife, Margalit, was killed in a car accident in 1962; the following year he married her sister, Lily, and they had two sons, Omri and Gilad. A third son, Gur, from his first marriage, died in 1967 at age 11 after an antique rifle kept as a decoration in the family home discharged while he and a friend were playing with it. Lily died of lung cancer in 2000 and asked to be buried on a hill overlooking the family's Sycamore Ranch in the Negev, where Sharon himself was later buried beside her, a property he was known to be genuinely attached to as a retreat from public life.",
         "citation": "VERIFIED 2026-09-02 — the 1962 death of Margalit, the 1963 marriage to her sister Lily, Gur's 1967 death, and Lily's 2000 death/the Sycamore Ranch burial are corroborated via live search (Ynetnews's 2014 obituary coverage, CNN's Ariel Sharon Fast Facts)."
+      },
+      {
+        "title": "Eight years in a coma before his death",
+        "date_or_range": "2006-01-04 to 2014-01-11",
+        "description": "Suffered a minor stroke on 18 December 2005, then a massive haemorrhagic stroke on 4 January 2006 that left him permanently incapacitated less than four months after founding Kadima; his powers were formally transferred to acting Prime Minister Ehud Olmert the same month. He remained in a persistent vegetative/minimally-conscious state, largely at a long-term care facility, for eight years -- his son Gilad visited regularly -- before dying of multiple organ failure on 11 January 2014 at 85. He was given a state funeral and buried beside Lily at the family's Sycamore Ranch in the Negev.",
+        "citation": "VERIFIED 2026-09-15 -- the 18 December 2005 minor stroke, the 4 January 2006 haemorrhagic stroke, the transfer of powers to Olmert, the eight-year vegetative/minimally-conscious state, and the 11 January 2014 death from organ failure are corroborated via live search (CNN's 'Ariel Sharon dies after 8 years in coma,' Wikipedia's 'Death and state funeral of Ariel Sharon' article)."
       }
     ]
   },
