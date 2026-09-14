@@ -4561,3 +4561,39 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`cb6cf2f`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; deep-linked to the entry -- this is exactly how the Meir/Meir mislink was
 caught).
+
+## Round: 2005 Gaza Disengagement (2026-09-14)
+
+Only existed as a single sentence inside Ariel Sharon's own actor entry -- no dedicated entry for
+the event itself, despite it being one of the largest single Israeli land actions in this dataset's
+record (21 settlements plus 4 more, ~9,000 settlers, in six weeks).
+
+**2005 Gaza Disengagement** (new topic, Historical Phenomenon, 2005-08-15 to 2005-09-12): the
+evacuation process itself (Neve Dekalim's synagogue standoff, Kfar Darom's barricade removal of
+~200 residents, Netzarim's negotiated final withdrawal), completed 12 September 2005. Covered the
+Wolfensohn-brokered greenhouse purchase (~3,000 greenhouses, $14 million, his own $500,000
+contribution) fairly -- documented the contested fate (damage from both departing settlers and
+post-handover looting) but also included the less-repeated detail that Wolfensohn himself later
+said many greenhouses remained intact and blamed the real failure on the unreliable Karni crossing
+rather than physical destruction, since that nuance is usually dropped from simplified retellings.
+
+Centred the significance on the genuinely still-live legal dispute: Israel/US say the occupation
+ended with the settlements and troops; the UN, ICJ, ICRC, and most human rights orgs hold that
+retained control of airspace, coastline, and border crossings kept Israel an occupying power
+regardless. Documented the November 2005 Agreement on Movement and Access and its partial
+implementation before the post-2006-election crossing closures -- explicitly flagged the actual
+blockade as a separate future topic this dataset would need its own entry for, rather than trying to
+cram it in here.
+
+Cross-linked to the existing Ariel Sharon entry (his side of the story already there -- Kadima split
+etc.) and the existing price-tag-attacks entry, whose emergence traces back to the settler-youth
+resistance this disengagement provoked.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (274 nodes,
++1; 420 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (420/420); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`9477a16`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; UN, ICJ, ICRC, Hamas, Likud, Kadima, and Sharon all autolinked richly with no
+manual wiring).
