@@ -4714,3 +4714,46 @@ verification on both the live wiki and standalone prototype; harness's 30+ check
 prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
 pushed (`4c0a732`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors).
+
+## Round: 2012 Gaza War (Operation Pillar of Defense) (2026-09-14)
+
+Continuing the Gaza-conflict thread (disengagement -> 2007 takeover -> 2008-09 war -> now this).
+No prior mention anywhere in the dataset.
+
+**2012 Gaza War** (new topic, Armed Conflict, 2012-11-14 to 2012-11-21): the 8-day air campaign
+(no ground invasion, unlike 2008-09), opened with Ahmed Jabari's targeted killing. Iron Dome's
+large-scale combat debut -- included the IDF's claimed 84% interception rate alongside independent
+analysts' disputes of that figure, rather than reporting the IDF number as settled fact. Casualty
+ranges given honestly across sources (5-6 Israelis; 161-175 Palestinians, 113-133 civilians, 38+
+children). Infrastructure destruction (places of worship, schools, NGO offices, government
+buildings) and the four media-office strikes that killed three journalists, including a marked
+press vehicle hit on 20 November -- HRW found no substantiated military justification for these.
+
+The genuinely valuable find: the ceasefire (21 November 2012) landed exactly eight days before the
+UN General Assembly's 29 November 2012 Resolution 67/19 vote admitting Palestine as a non-member
+observer state. This dataset's own Resolution 67/19 and E1 Settlement Plan entries already document
+Netanyahu's government advancing E1 in direct retaliation for that same vote -- so this war and the
+E1 retaliation are two responses, on different fronts, to the same fortnight of Palestinian
+diplomatic movement. Drew that connection explicitly rather than leaving the two entries as
+unconnected coincidences of timing. Presented Erdogan's 'ethnic cleansing' characterisation as his
+own attributed statement, not this dataset's assessment.
+
+**A third autolink bug found and flagged**: live verification caught "Clinton" linking to Bill
+Clinton when the entry actually refers to Hillary Clinton (Secretary of State, ceasefire co-broker)
+-- a different real person sharing the same surname, not currently in the dataset herself. This is
+a genuinely distinct failure mode from the two already flagged this session (Prawer-Begin's hyphen
+adjacency, task_8075a760; Meir Shamgar's given-name/surname collision, task_ed830795) -- here, no
+regex fix can fully resolve it, since 'Clinton' is a syntactically valid bare-surname match under
+BOTH readings; the ambiguity is about which real person, not whether the match is well-formed.
+Flagged as a third task (task_5202f465) explicitly asking the fixer to consider all three together,
+since they likely share the same root mechanism (the surname_count[surname]==1 bare-alias rule) even
+though each needs a different specific fix.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (278 nodes,
++1; 431 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (431/431); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`4db4af9`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to the entry -- this is exactly how the Clinton/Clinton mislink
+was caught).
