@@ -389,7 +389,7 @@ document.getElementById('flipBtn').onclick = function() {
 // deliberately excluded from the grey "no alignment data" bucket (institutional/unaffiliated/
 // unclassified), which is a residual default for roughly two-thirds of all nodes, not a real
 // colour group anyone would want visually clustered.
-var W = 1600, H = 1300;
+var W = 4800, H = 3900;
 var CLUSTER_ALIGNS = { right:1, left:1, religious:1, centrist:1 };
 var nodes = GRAPH_DATA.nodes.map(function(n, i) {
   // A kind missing from these maps used to silently produce NaN positions that poisoned the
@@ -398,7 +398,7 @@ var nodes = GRAPH_DATA.nodes.map(function(n, i) {
   // fallback means a future missing kind just seeds center-ish instead of breaking everything.
   var col = ({ actor: 0.22, mk: 0.78, org: 0.5, law: 0.5, topic: 0.5, foreign: 0.9 }[n.kind]) || 0.5;
   var row = ({ actor: 0.25, mk: 0.25, org: 0.55, law: 0.8, topic: 0.65, foreign: 0.5 }[n.kind]) || 0.5;
-  var jitter = 320; // wide, irregular scatter -- avoids the tidy-grid look on sparsely-connected nodes
+  var jitter = 960; // wide, irregular scatter -- avoids the tidy-grid look on sparsely-connected nodes
   return {
     id: n.id, kind: n.kind, label: n.label, detail: n.detail, align: n.align || 'unaffiliated',
     x: W * col + (Math.random()-0.5) * jitter,
@@ -433,7 +433,7 @@ function bfsDistances(startId, maxDist) {
 }
 
 function simulate(iterations) {
-  var k = 56; // ideal spring length
+  var k = 168; // ideal spring length
   for (var it = 0; it < iterations; it++) {
     // repulsion
     for (var i = 0; i < nodes.length; i++) {
@@ -442,14 +442,14 @@ function simulate(iterations) {
         var dx = a.x - b.x, dy = a.y - b.y;
         var d2 = dx*dx + dy*dy || 0.01;
         var d = Math.sqrt(d2);
-        var force = (4600) / d2;
+        var force = (41400) / d2;
         var fx = (dx/d) * force, fy = (dy/d) * force;
         a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
         // weak same-alignment attraction, capped so it stays a background bias rather than
         // overpowering edge structure -- pulls same-coloured nodes into loose neighbourhoods
         // without collapsing them onto each other regardless of how the graph is actually wired.
         if (a.align === b.align && CLUSTER_ALIGNS[a.align]) {
-          var cf = Math.min(d, 520) * 0.00018;
+          var cf = Math.min(d, 1560) * 0.00018;
           a.vx -= (dx/d)*cf; a.vy -= (dy/d)*cf; b.vx += (dx/d)*cf; b.vy += (dy/d)*cf;
         }
       }
@@ -466,7 +466,7 @@ function simulate(iterations) {
     // untethered nodes in a tidy row along the boundary instead of an organic scatter), and a
     // faint persistent jitter so nodes with identical forces don't settle into suspiciously
     // even spacing
-    var margin = 85;
+    var margin = 255;
     nodes.forEach(function(n) {
       n.vx += (W/2 - n.x) * 0.0012;
       n.vy += (H/2 - n.y) * 0.0012;
@@ -481,12 +481,12 @@ function simulate(iterations) {
     nodes.forEach(function(n) {
       n.vx *= 0.82; n.vy *= 0.82;
       n.x += n.vx; n.y += n.vy;
-      n.x = Math.max(-150, Math.min(W+150, n.x));
-      n.y = Math.max(-150, Math.min(H+150, n.y));
+      n.x = Math.max(-450, Math.min(W+450, n.x));
+      n.y = Math.max(-450, Math.min(H+450, n.y));
     });
   }
 }
-simulate(380);
+simulate(420);
 
 // ---------- render ----------
 var svg = document.getElementById('graphSvg');

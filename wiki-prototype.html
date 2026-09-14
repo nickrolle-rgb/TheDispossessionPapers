@@ -12445,7 +12445,7 @@
   // deliberately excluded from the grey "no alignment data" bucket (institutional/unaffiliated/
   // unclassified), which is a residual default for roughly two-thirds of all nodes, not a real
   // colour group anyone would want visually clustered.
-  var NET_W = 1600, NET_H = 1300;
+  var NET_W = 4800, NET_H = 3900;
   var netSvgNS = 'http://www.w3.org/2000/svg';
   var NET_CLUSTER_ALIGNS = { right:1, left:1, religious:1, centrist:1 };
 
@@ -12455,7 +12455,7 @@
     var nodes = data.nodes.map(function(n) {
       var col = ({ actor:0.22, mk:0.78, org:0.5, law:0.5, topic:0.5, foreign:0.9 }[n.kind]) || 0.5;
       var row = ({ actor:0.25, mk:0.25, org:0.55, law:0.8, topic:0.65, foreign:0.5 }[n.kind]) || 0.5;
-      var jitter = 320;
+      var jitter = 960;
       return { id:n.id, kind:n.kind, label:n.label, detail:n.detail, align:n.align||'unaffiliated',
         x: NET_W*col + (Math.random()-0.5)*jitter, y: NET_H*row + (Math.random()-0.5)*jitter,
         vx:0, vy:0, degree:0 };
@@ -12468,28 +12468,28 @@
     var adjacency = {}; nodes.forEach(function(n){ adjacency[n.id]=[]; });
     edges.forEach(function(e){ adjacency[e.source.id].push(e.target.id); adjacency[e.target.id].push(e.source.id); });
 
-    for (var it = 0; it < 380; it++) {
+    for (var it = 0; it < 420; it++) {
       for (var i = 0; i < nodes.length; i++) {
         for (var j = i+1; j < nodes.length; j++) {
           var a = nodes[i], b = nodes[j];
           var dx = a.x-b.x, dy = a.y-b.y, d2 = dx*dx+dy*dy || 0.01, d = Math.sqrt(d2);
-          var force = 4600 / d2, fx = (dx/d)*force, fy = (dy/d)*force;
+          var force = 41400 / d2, fx = (dx/d)*force, fy = (dy/d)*force;
           a.vx+=fx; a.vy+=fy; b.vx-=fx; b.vy-=fy;
           // weak same-alignment attraction, capped so it stays a background bias rather than
           // overpowering edge structure -- pulls same-coloured nodes into loose neighbourhoods
           // without collapsing them onto each other regardless of how the graph is actually wired.
           if (a.align === b.align && NET_CLUSTER_ALIGNS[a.align]) {
-            var cf = Math.min(d, 520) * 0.00018;
+            var cf = Math.min(d, 1560) * 0.00018;
             a.vx -= (dx/d)*cf; a.vy -= (dy/d)*cf; b.vx += (dx/d)*cf; b.vy += (dy/d)*cf;
           }
         }
       }
       edges.forEach(function(e) {
         var dx = e.target.x-e.source.x, dy = e.target.y-e.source.y, d = Math.sqrt(dx*dx+dy*dy) || 0.01;
-        var force = (d-56)*0.02, fx=(dx/d)*force, fy=(dy/d)*force;
+        var force = (d-168)*0.02, fx=(dx/d)*force, fy=(dy/d)*force;
         e.source.vx+=fx; e.source.vy+=fy; e.target.vx-=fx; e.target.vy-=fy;
       });
-      var margin = 85;
+      var margin = 255;
       nodes.forEach(function(n) {
         n.vx += (NET_W/2-n.x)*0.0012; n.vy += (NET_H/2-n.y)*0.0012;
         if (n.x<margin) n.vx += (margin-n.x)*0.03;
@@ -12500,7 +12500,7 @@
       });
       nodes.forEach(function(n) {
         n.vx*=0.82; n.vy*=0.82; n.x+=n.vx; n.y+=n.vy;
-        n.x = Math.max(-150, Math.min(NET_W+150, n.x)); n.y = Math.max(-150, Math.min(NET_H+150, n.y));
+        n.x = Math.max(-450, Math.min(NET_W+450, n.x)); n.y = Math.max(-450, Math.min(NET_H+450, n.y));
       });
     }
 
