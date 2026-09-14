@@ -5822,3 +5822,54 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`7dc53cf`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page and Camp David's own page confirmed linking to each
 other correctly, alongside Wye River and the Second Intifada, with no manual wiring).
+
+## Round: Clinton Parameters and Taba Summit (2026-09-15)
+
+Nick asked directly for Camp David's own aftermath -- the summit's existing significance text
+already gestured at "the Clinton Parameters" in its closing sentence without that framework having
+an entry of its own. New topic `clinton-parameters-taba-summit-2000-2001` (Historical Event, 23
+December 2000-27 January 2001, aliases "Clinton Parameters"/"Taba Summit"/"Taba Talks").
+
+**Covered Clinton's own verbal proposal with real numeric precision:** a Palestinian state on
+94-96% of the West Bank, a 1-3% land swap, Israel retaining settlement blocs holding roughly 80% of
+the settler population, Jerusalem framed as an "open and undivided city," and a refugee-return
+provision Clinton himself said neither side could bridge the underlying gap on. **Presented both
+sides' acceptances as genuinely qualified rather than clean:** Israel's 28 December 2000 acceptance
+and Arafat's 2 January 2001 acceptance were both "with reservations," and historians dispute
+Clinton's own later framing that Israel had accepted while the Palestinian side effectively had
+not -- the same "don't adjudicate a live historiographical dispute" discipline already applied to
+Camp David's own "generous offer" narrative.
+
+**Documented the Taba talks (21-27 January 2001) by full delegation, not just outcome:** Foreign
+Minister Shlomo Ben-Ami leading Beilin, Lipkin-Shahak, Sarid, and Sher for Israel; Ahmed Qurei
+leading Abed Rabbo, Dahlan, Erekat, and Shaath for the Palestinians -- named individuals rather than
+an anonymous "both delegations," even though none of them are yet standalone actors in this dataset.
+Quoted the 27 January joint statement's actual wording ("never been closer... remaining gaps could
+be bridged with the resumption of negotiations following the Israeli elections") rather than
+paraphrasing it, since Sharon's election victory ten days later foreclosed exactly the resumption
+the statement anticipated.
+
+**Presented Taba's own closeness as a live, unresolved question rather than settled fact:** many
+participants and scholars describe it as the closest the two sides ever came to a final agreement,
+but the significance text raises directly whether that reflects real convergence on the hardest
+issues or simply negotiators with an election neither side expected Barak to survive making them
+less guarded -- neither reading adopted as this dataset's own conclusion.
+
+**Combined Clinton Parameters and Taba into one entry rather than two**, given how tightly coupled
+they are -- Taba negotiated directly within the framework Clinton proposed three weeks earlier,
+ending together in the same electoral collapse -- the same combining logic already applied to Oslo
+I and II.
+
+Cross-linked to the existing Bill Clinton, Ehud Barak, Yasser Arafat, and PLO entries. **No edit was
+needed to the existing Camp David Summit entry** for the central cross-reference to work -- it
+already named "the Clinton Parameters" verbatim in its own closing sentence, so the new entry's
+alias match made it autolink immediately, confirmed live bidirectionally.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (301 nodes,
++1; 503 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (503/503); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`7bb6b68`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page and Camp David's own page confirmed linking to each
+other correctly, alongside a correct bonus link to the existing Ehud Olmert entry).
