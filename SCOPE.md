@@ -5873,3 +5873,53 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`7bb6b68`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page and Camp David's own page confirmed linking to each
 other correctly, alongside a correct bonus link to the existing Ehud Olmert entry).
+
+## Round: Zinni Mission and the Karine A Affair (2026-09-15)
+
+Nick asked to check "the 2001-2002 negotiation collapse." The existing Second Intifada entry already
+covered the Mitchell Report and Tenet Plan (2001's two failed diplomatic efforts) and Operation
+Defensive Shield, and George W. Bush's own actor entry already documented his June 2002 Rose Garden
+speech and the 2003 Road Map for Peace -- checking against the user's specific phrase surfaced the
+real gap sitting between those two clusters: the Zinni Mission and the Karine A Affair, neither
+anywhere in the dataset. New topic `zinni-mission-karine-a-2001-2002` (Historical Event, November
+2001-24 June 2002, alias "2001-2002 negotiation collapse").
+
+**Deliberately scoped to what wasn't already covered, cross-referencing rather than re-deriving
+what was:** General Anthony Zinni's November 2001 appointment and his repeatedly-undermined
+December 2001/January 2002 shuttle-diplomacy trips (Israeli air strikes before his arrivals,
+suicide bombings during his visits, further strikes as he departed); Hamas's briefly-held 16
+December 2001 unilateral truce; the 3 January 2002 Karine A interception (50 tons of Iranian
+weapons, ~$15 million, Arafat's denial to US officials versus Sharon's government's and Cheney's
+contrary characterisation); the 9 January 2002 Hamas ambush that ended the truce six days after
+Karine A -- a direct, dateable cause-and-effect chain rather than two coincidentally close events;
+and Zinni's March 2002 return and ceasefire proposal, overtaken almost immediately by the Netanya
+bombing and Operation Defensive Shield already documented in the Second Intifada entry.
+
+**Framed as the peace process's own shift in operating premise, not just another failed round:**
+Taba had been a negotiation between two recognised leaders; Zinni's mission was only ever a
+ceasefire effort, not a return to substantive talks; and by Bush's June 2002 speech, Palestinian
+leadership change itself had become an explicit US and Israeli precondition for any resumed
+process, rather than a possible outcome of one. Named the Karine A affair directly as the specific
+evidentiary hinge for that shift, replacing the more diffuse pattern of the preceding year's stalled
+Mitchell Report and Tenet Plan.
+
+Cross-linked to the existing Yasser Arafat, Ariel Sharon, George W. Bush, Hamas, and PLO entries;
+enriched Bush's own `key_land_actions` entry with a cross-reference back to this one.
+
+**A self-caught autolink miss, fixed the same round:** live verification showed the enrichment
+sentence in Bush's own entry had split the new entry's name across two separate phrases ("Anthony
+Zinni's ceasefire mission and the Karine A weapons-ship affair") rather than naming it verbatim, so
+it never matched and didn't autolink -- the same wording-mismatch class caught and fixed several
+times already this session. Diagnosed by checking the live rendered page directly, fixed the
+wording to the entry's exact name, re-ran the full pipeline, republished, and confirmed live that
+Bush's page now links back correctly.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (302 nodes,
++1; 508 edges, +5); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (508/508, confirmed both before and
+after the wording fix since it was pure prose); the standalone prototype's own dedicated harness
+confirms its autolinking still works. Both Artifacts republished twice (once per commit); pushed as
+two commits (`578c45c` for the entry creation, `5818b60` for the autolink-wording fix); Vercel
+auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
+errors; the final check confirmed George W. Bush's own page correctly links back to the new entry).
