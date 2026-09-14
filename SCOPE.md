@@ -4228,3 +4228,41 @@ standalone prototype's own dedicated harness confirms its autolinking still work
 republished, pushed (`5721cea`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors; deep-linked to the entry, Nakba and Resolution 242 autolinks
 both spot-checked via JS and confirmed working).
+
+## Round: 1979 Egypt-Israel Peace Treaty (2026-09-14)
+
+The existing Camp David Accords entry only gestured at the treaty itself ("led directly to the
+March 1979 Egypt-Israel Peace Treaty"); the treaty's own terms, aftermath, and a genuinely
+distinctive land-history footnote (Taba) had no entry of their own. Direct, natural follow-on to
+the Camp David round.
+
+**Egypt-Israel Peace Treaty** (new topic, Agreement, 1979-03-26): signed at the White House by
+Begin and Sadat, witnessed by Carter -- the first peace treaty between Israel and an Arab state.
+Terminated the state of war, established full diplomatic relations, and set the phased Sinai
+withdrawal terms (four demilitarisation zones, completed 25 April 1982 including the Yamit and
+Ofira evacuations), monitored since by the Multinational Force and Observers (created 1981, outside
+the UN framework specifically because the Soviet Union threatened a Security Council veto on a UN
+force). Documents the cost: the Arab League suspended Egypt the same year and moved its own
+headquarters from Cairo to Tunis (a rupture lasting until 1989), and President Sadat was
+assassinated on 6 October 1981 with Islamist opposition to the treaty a stated motive.
+
+**The Taba footnote**: even after the "complete" 1982 Sinai withdrawal, Israel held onto a roughly
+700-yard beachfront enclave at Taba -- including hotels it had built there -- for a further seven
+years, disputing the exact 1949-armistice-line demarcation. A five-member international arbitration
+panel ruled 4-1 for Egypt on 29 September 1988, and Israel evacuated on 15 March 1989. Flagged in
+the entry's significance as a rare instance in this dataset's own record of a land dispute resolved
+through neutral binding arbitration rather than unilateral action or indefinite stalemate --
+genuinely distinctive against almost everything else this dataset documents.
+
+Cross-linked to the existing Menachem Begin, Anwar Sadat, and Jimmy Carter actor entries -- all
+three already in the dataset from the Camp David round, so this created real graph edges (not just
+autolinked text) via `related_actor_ids`.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (267 nodes,
++1; 406 edges, +2); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (406/406); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`da859ab`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to the entry, Begin/Sadat/Carter all autolinked correctly with no
+manual wiring).
