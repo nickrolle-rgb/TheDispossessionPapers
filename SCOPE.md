@@ -4487,3 +4487,35 @@ the harness's live `netBuildGraphData()` produce byte-for-byte identical edge se
 standalone prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
 republished, pushed (`a53b1ad`), Vercel auto-deployed and confirmed live via curl and an actual
 browser check (zero console errors, encoding of quoted apostrophes confirmed correct).
+
+## Round: Nation-State Law's Druze reaction, the aftermath (2026-09-14)
+
+The existing entry already covered 2018's initial backlash well (the Rabin Square rally, officer
+resignations, the 2021 Supreme Court ruling). What was missing was everything since -- the actual
+legislative and political aftermath, which turned out to be a genuinely notable pattern of repeated
+promises without delivery.
+
+**Enriched `nation-state-basic-law-2018`**: Netanyahu's government proposed a separate Basic Law
+anchoring Druze status and service-linked benefits rather than amending the Nation-State Law itself
+-- established Druze leadership initially inclined to accept it, younger and more militant Druze
+rejected it outright as "hush money," demanding an amendment covering all minorities instead. That
+separate law was never enacted in 2018. The identical proposal resurfaced in November 2023 amid
+rising Druze combat deaths in the Gaza war -- and, notably, extensive live search this pass found no
+evidence either version was ever actually passed. Stated that absence plainly as the current state
+of affairs rather than assuming either outcome.
+
+Documented the Israel Democracy Institute's finding that Jewish Israeli support for an equality-
+clause amendment rose from 40% (late 2022) to 56% (end of 2023) tracking the rising Druze/Bedouin
+war casualty toll, and the 27 July 2024 Hezbollah rocket attack on a Majdal Shams soccer field --
+12 Druze children killed, ~42 injured, the deadliest attack on northern Israel since the war with
+Hezbollah began -- which prompted a fresh Labor MK amendment bill within days. Closed with a
+February 2024 CNN quote capturing the substance of the grievance directly: serving in the army while
+the law "differentiates between the communities."
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (272 nodes
+unchanged; 418 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (418/418); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`055a792`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors, quoted text and encoding confirmed correct).
