@@ -695,6 +695,15 @@
     "notable_members": [],
     "action_record": [
       {
+        "event_id": "sla-litani-handover-1978",
+        "date": "1978-06 to 1980-05",
+        "action_type": "Territorial Division",
+        "title": "Formed as Israel's proxy after the 1978 Litani withdrawal, later renamed the South Lebanon Army",
+        "location_affected": "Southern Lebanon border strip (~700 sq km, 46 towns and villages)",
+        "description": "When Israel completed its partial withdrawal from Operation Litani in June 1978 -- this dataset's own Operation Litani entry covers the invasion and Resolution 425 in full -- it handed control of a southern border strip to an Israeli-backed Lebanese Christian militia under Major Saad Haddad rather than to the Lebanese government or UNIFIL. Haddad proclaimed the territory the self-styled 'State of Free Lebanon' on 18 April 1979 and was dismissed from the Lebanese Army as a traitor the next day; his force, then called the Free Lebanon Army, was renamed the South Lebanon Army under Antoine Lahad in May 1980 following Haddad's death from illness. This proxy arrangement was the direct institutional predecessor to the SLA's later, larger role administering the formal 1985-2000 security zone this entry's own earlier action_record documents.",
+        "citation": "VERIFIED 2026-09-14 -- the June 1978 partial-withdrawal handover to Haddad, the ~700 sq km/46-town border strip, the 18-19 April 1979 'State of Free Lebanon' proclamation and Haddad's dismissal, and the May 1980 renaming to South Lebanon Army under Lahad are corroborated via live search (Wikipedia's 'State of Free Lebanon' and 'Saad Haddad' articles, Al Jazeera's 'Israel in Lebanon' retrospective)."
+      },
+      {
         "event_id": "sla-security-zone-1985",
         "date": "1985 to 2000-05",
         "action_type": "Land Settlement Operation",
