@@ -4519,3 +4519,45 @@ unchanged; 418 edges, +1); `build_network_view.py`'s Python build and the harnes
 prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
 pushed (`055a792`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors, quoted text and encoding confirmed correct).
+
+## Round: 1994 Hebron Massacre (2026-09-14)
+
+Nick asked about the "1993 Hebron Massacre" -- the actual event took place on 25 February 1994, not
+1993. Corrected the year rather than propagating the misremembered date, consistent with this
+project's quote-discrepancy policy of fixing rather than hedging a verified factual error.
+
+**1994 Hebron Massacre** (new topic, Historical Phenomenon, 1994-02-25 to present): the attack
+itself (Baruch Goldstein, Kach movement, Kiryat Arba, 108 rounds fired, 29 killed, ~125-150 wounded,
+disarmed and killed by survivors), the same-day funeral clashes, the 13 March 1994 Kach/Kahane Chai
+ban, and the Shamgar Commission's still-current physical mosque division (~40% Muslim/~60% Jewish,
+separate entrances).
+
+Centred the significance on what actually lasted: the permanent 1994 closure of 322 Shuhada Street
+shops, a curfew that researchers describe as never truly lifting but only changing shape, the 1997
+Hebron Protocol's H1 (~80% PA)/H2 (~20% Israeli-security) division, the Protocol's own unmet
+commitment to restore pre-1994 conditions, and the post-Second-Intifada closure of the street to
+Palestinian residents entirely -- H2 today holding 35,000-40,000 Palestinians alongside several
+hundred settlers guarded by ~2,000 soldiers. Closed with the very latest chapter: Smotrich's 16 June
+2026 transfer of H2's civil planning/zoning/construction authority to Israel, framed by him as
+abolishing the 1997 Protocol's civil provisions but disputed more narrowly by Israel's own Foreign
+Ministry -- documented both framings rather than picking one, alongside the PA's condemnation and
+the US State Department's response.
+
+**A second autolink bug found and flagged, not fixed in-round**: live verification caught the
+autolinker mislinking "Meir" inside "Meir Shamgar" and "Rabbi Meir Kahane" to Golda Meir's actor
+entry. This is a DIFFERENT root cause from the earlier-flagged Prawer-Begin/Menachem Begin
+hyphen-adjacency bug (task_8075a760) -- there's no hyphen here at all; "Meir" is simply a common
+given name that happens to collide with Golda Meir's surname once made into a bare-word alias. Flagged
+as a second background task (task_ed830795), explicitly noting it's a distinct and likely harder
+problem (given-name/surname collision, not compound-word adjacency) rather than assuming the same fix
+covers both. Also asked the eventual fix to check whether other short, common-first-name-shaped
+surnames already in the dataset have the same latent problem, since this may not be limited to "Meir."
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (273 nodes,
++1; 419 edges, +1); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (419/419); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`cb6cf2f`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; deep-linked to the entry -- this is exactly how the Meir/Meir mislink was
+caught).
