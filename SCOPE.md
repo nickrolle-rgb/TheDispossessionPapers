@@ -5524,3 +5524,50 @@ two commits (`8c36b2f` for the entry creation, `402a15e` for the autolink-wordin
 auto-deployed both and confirmed live via curl and an actual browser check each time (zero console
 errors; the final check confirmed the corrected link to the 2004 ICJ Wall Opinion entry alongside
 Sharon, Barak, Arafat, Abbas, Palestinian Authority, and IDF, all with no manual wiring).
+
+## Round: 1991 Madrid Conference (2026-09-14)
+
+Nick asked to add Yitzhak Shamir; he was already in the dataset from a much earlier round, so
+instead of duplicating him this round chased the real gap that surfaced while checking: the Madrid
+Conference his own entry's loan-guarantees dispute directly led to, and which had no entry of its
+own. New topic `madrid-conference-1991` (Historical Event, 30 October-1 November 1991, alias
+"Madrid Peace Conference"): the first direct, public Israeli-Arab negotiations of the modern era,
+co-sponsored by the US and USSR; Baker's March-October 1991 assembly of the delegations; the same
+$10 billion loan-guarantees pressure this dataset's own Yitzhak Shamir entry already documents,
+which forced his reluctant attendance; the joint Jordanian-Palestinian delegation Israel's refusal
+to recognise the PLO directly produced, led by Haidar Abdel-Shafi; and the bilateral/multilateral
+track structure that continued into 1992 alongside the separate, secret Oslo back-channel.
+
+**Documented settlement expansion as a direct, stated cause of the framework's collapse, not an
+incidental backdrop:** the Palestinian delegation had specifically demanded a settlement freeze as
+a condition for serious talks; Shamir instead returned from Madrid to inaugurate a new settlement,
+against a backdrop of 150+ settlements already established by 1991.
+
+**Presented Shamir's own disputed later characterization of his intentions as a genuine, unresolved
+dispute rather than settled fact:** a June 1992 Ma'ariv quote has him saying he planned to "carry on
+autonomy talks for ten years" while Israel reached "half a million people in Judea and Samaria" --
+but Shamir himself later disputed the quote's accuracy, saying he had only expressed willingness to
+negotiate for as long as necessary. Both accounts given directly, neither adopted as this dataset's
+own conclusion, consistent with the standing discipline applied to Camp David 2000's blame narrative
+and other genuinely contested episodes.
+
+Cross-linked to the existing Yitzhak Shamir, Yasser Arafat, and PLO entries; enriched Shamir's own
+`key_land_actions` entry with a cross-reference back to this one. Live verification also confirmed
+correct bonus autolinks to the existing Oslo Accords and Israel-Jordan Peace Treaty entries, both
+genuine downstream consequences of Madrid's own framework.
+
+**A fresh instance of the already-flagged surname-collision bug, not a new one:** "Bush" in this
+entry's own text wrongly autolinks to George W. Bush -- the son, added during the Abraham Accords
+round -- rather than George H.W. Bush, the president actually in office during Madrid and not
+himself in the dataset. Same class as the Clinton and Regev instances already tracked under
+`task_5202f465`; noted here as further evidence, no new task opened.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (297 nodes,
++1; 488 edges, +3); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (488/488); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`30e66dd`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; the new entry's own page confirmed linking correctly to Shamir, PLO, Oslo
+Accords, and the Israel-Jordan Peace Treaty, and Shamir's own page confirmed linking back, with no
+manual wiring in either direction).
