@@ -2909,5 +2909,94 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "gaza-humanitarian-foundation",
+    "name": "Gaza Humanitarian Foundation",
+    "hebrew_name": null,
+    "aliases": [
+      "GHF"
+    ],
+    "org_type": "Humanitarian Organization",
+    "founding_date": "2025-02-11",
+    "dissolution_date": "2025-11-25",
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "ghf-founded-2025",
+        "date": "2025-02-11",
+        "action_type": "Institution Founding",
+        "title": "Established in Delaware and Geneva as an alternative to the UN-led Gaza aid system",
+        "location_affected": "Gaza Strip",
+        "description": "Incorporated in Delaware (certificate filed 11 November 2024) with a parallel Swiss non-profit entity registered in Geneva on 11 February 2025, the Gaza Humanitarian Foundation was set up in close coordination with Israeli authorities to replace the established UN-led aid distribution system in Gaza. Founding executive director Jake Wood, a US Marine veteran and disaster-response executive, resigned on 26 May 2025 -- the day before operations launched -- saying the foundation could not adhere \"to the humanitarian principles of humanity, neutrality, impartiality, and independence.\" Swiss authorities later found the Geneva entity in breach of Swiss foundation rules; GHF confirmed it never carried out activities there and dissolved the Swiss branch, deleted 7 July 2026.",
+        "citation": "VERIFIED 2026-09-14 -- the Delaware incorporation date, the 11 February 2025 Geneva registration, and Jake Wood's 26 May 2025 resignation and stated reasons are corroborated via live search (CNN's 'Head of controversial US-backed Gaza aid group resigns,' NBC News, CBS News's Swiss-authorities reporting, and the Times of Israel's Swiss-branch-closure report)."
+      },
+      {
+        "event_id": "ghf-aid-site-killings-2025",
+        "date": "2025-05-27",
+        "action_type": "Non-Sanctioned Militant Action",
+        "title": "Operates four militarized aid-distribution sites where recurring mass-casualty shootings of aid seekers begin",
+        "location_affected": "Gaza Strip (four GHF distribution sites, primarily southern and central Gaza)",
+        "description": "From the foundation's 27 May 2025 launch, its four open-air distribution sites -- rectangular compounds enclosed by earthen berms with corner guard towers, access controlled through narrow fenced chutes -- became the location of near-daily mass-casualty incidents as Israeli forces, foreign contractors hired by GHF, and armed groups opened fire on crowds of aid seekers. The UN human rights office (OHCHR) recorded escalating tolls through 2025: 613 killed by 27 June (509 near GHF sites), 875 by 13 July (674 near GHF sites), and at least 1,760 by mid-August (994 near GHF sites, 766 along separate aid-convoy routes). Gaza's Ministry of Health reported 2,613 killed and over 19,000 injured among aid seekers since 27 May by October 2025. Human Rights Watch characterized the killings as war crimes; Medecins Sans Frontieres called the sites locations of \"orchestrated killing\" rather than aid distribution; in August 2025 UN special rapporteurs called for the foundation's immediate dismantling, and over 130 NGOs called for a return to unified, UN-led aid coordination inclusive of UNRWA.",
+        "citation": "VERIFIED 2026-09-14 -- the 27 May 2025 launch date, the physical layout of the distribution sites, and the escalating OHCHR casualty figures (613/27 June, 875/13 July, 1,760/mid-August) are corroborated via live search (UN News, OCHA's Humanitarian Situation Update #329, Wikipedia's '2025 Gaza Strip aid distribution killings' article). The Gaza Ministry of Health's October 2025 cumulative figure, HRW's war-crimes characterization, MSF's \"orchestrated killing\" statement, and the August 2025 OHCHR call for dismantling and 130+ NGO letter are corroborated via live search (Human Rights Watch's 'Gaza: Israeli Killings of Palestinians Seeking Food Are War Crimes,' MSF's 'This is not aid,' OHCHR's press release calling for immediate dismantling)."
+      },
+      {
+        "event_id": "ghf-winds-down-2025",
+        "date": "2025-11-25",
+        "action_type": "Institutional Split",
+        "title": "Announces permanent shutdown after roughly five months of operations",
+        "location_affected": "Gaza Strip",
+        "description": "Following the October 2025 Trump-brokered ceasefire, GHF closed its distribution sites and, on 25 November 2025, announced it would permanently cease operations, roughly five months after its 27 May 2025 launch. Humanitarian aid distribution shifted back primarily to established UN agencies and international organizations, though the ceasefire-monitoring Civil-Military Coordination Center and the Israeli-led verification mechanism were reported to have adopted elements of GHF's distribution model going forward.",
+        "citation": "VERIFIED 2026-09-14 -- the 25 November 2025 shutdown announcement and the roughly five-month operating span are corroborated via live search (the Times of Israel's 'Gaza Humanitarian Foundation announces end of operations,' PBS NewsHour's coverage, and Oxfam America's retrospective analysis)."
+      }
+    ],
+    "knesset_participation": []
+  },
+  {
+    "org_id": "board-of-peace",
+    "name": "Board of Peace",
+    "hebrew_name": null,
+    "aliases": [],
+    "org_type": "Transitional Governance Body",
+    "founding_date": "2026-01-17",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [
+      "donald-trump"
+    ],
+    "action_record": [
+      {
+        "event_id": "board-of-peace-founded-2026",
+        "date": "2026-01-17",
+        "action_type": "Institution Founding",
+        "title": "Trump announces the Board of Peace's founding Executive Board as phase two of his Gaza plan begins",
+        "location_affected": "Gaza Strip",
+        "description": "On 17 January 2026, President Trump announced the members of the Board of Peace, the international transitional body his 29 September 2025 twenty-point Gaza peace plan had proposed to oversee governance, security, and reconstruction in Gaza pending a reformed Palestinian Authority's return. Trump chairs the founding Executive Board, whose members include US Secretary of State Marco Rubio, special envoy Steve Witkoff, Trump's son-in-law Jared Kushner, former UK Prime Minister Tony Blair, World Bank President Ajay Banga, Apollo Global Management CEO Marc Rowan, US Deputy National Security Adviser Robert Gabriel, and Bulgarian diplomat Nickolay Mladenov (who additionally serves as High Representative for Gaza, the day-to-day link between the Board and Gaza's technocratic National Committee for the Administration of Gaza). Regional members include Turkish Foreign Minister Hakan Fidan, Qatari diplomat Ali Al-Thawadi, Egyptian intelligence chief Hassan Rashad, Emirati minister Reem Al Hashimy, Cypriot-Israeli businessman Yakir Gabay, and Dutch politician Sigrid Kaag. No Palestinian sits on the Board, a composition that has drawn direct criticism from observers who note the body set to govern Gaza's reconstruction includes no Palestinian voice.",
+        "citation": "VERIFIED 2026-09-14 -- the 17 January 2026 announcement, Trump's chairmanship, the named Executive Board members (Rubio, Witkoff, Kushner, Blair, Banga, Rowan, Gabriel, Mladenov, Fidan, Al-Thawadi, Rashad, Al Hashimy, Gabay, Kaag), Mladenov's dual role as High Representative, and the absence of any Palestinian member are corroborated via live search (The Hill's 'Gaza Board of Peace announced,' Al Jazeera's 'Trump names Tony Blair, Jared Kushner to Gaza Board of Peace,' the Council on Foreign Relations' 'Who Will Govern Gaza?', and JNS's profile of Mladenov's role)."
+      },
+      {
+        "event_id": "board-of-peace-ncag-oversight-2026",
+        "date": "2026-08-16",
+        "action_type": "Sanctioned Political Action",
+        "title": "Board of Peace delegation, including Kushner, meets Hamas in Cairo over Gaza disarmament and NCAG's transfer of control",
+        "location_affected": "Gaza Strip",
+        "description": "A Board of Peace delegation led by Jared Kushner met Hamas officials in Cairo in mid-August 2026 to discuss Hamas's disarmament and the transfer of civil and administrative control in Gaza to the technocratic National Committee for the Administration of Gaza (NCAG), whose roughly sixteen Gaza-based commissioners report to the Board through High Representative Mladenov. Mladenov has said his office exists to help NCAG technocrats \"assert control of the Strip\" and has warned that technocrats cannot enter Gaza while ceasefire violations persist -- an implementation timeline officials on multiple sides described as still unresolved.",
+        "citation": "VERIFIED 2026-09-14 -- the mid-August 2026 Cairo meeting, Kushner's role, and the disarmament/NCAG-transfer agenda are corroborated via live search (Axios's 'Kushner meets Hamas in Egypt over Gaza disarmament,' the Jerusalem Post's report on the Cairo delegation). Mladenov's statements on NCAG's control and ceasefire-conditioned entry, and the NCAG's structure and reporting line, are corroborated via live search (the Times of Israel's liveblog entries on the Board of Peace envoy, Wikipedia's National Committee for the Administration of Gaza article, the Washington Institute's 'What the New Gaza Administrative Committee Needs to Succeed')."
+      }
+    ],
+    "knesset_participation": []
   }
 ]
