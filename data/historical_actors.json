@@ -1782,5 +1782,75 @@
         "citation": "VERIFIED 2026-09-14 -- the July 2008 resignation and its Talansky-affair context, Livni's failed coalition attempt, and Netanyahu's 2009 election win are corroborated via live search (Britannica's Ehud Olmert entry). The March 2014 Holyland conviction and the roughly $161,000 bribery figure, the six-year original sentence, the December 2015 reduction to eighteen months, and the February 2016-July 2017 imprisonment are corroborated via live search (CNN's sentencing and release coverage, Haaretz's report on the Supreme Court's sentence reduction, France 24's parole report)."
       }
     ]
+  },
+  {
+    "actor_id": "ehud-barak",
+    "full_name": "Ehud Barak",
+    "birth_name": "Ehud Brog",
+    "birth_country": "Mandatory Palestine (Mishmar HaSharon)",
+    "life_span": {
+      "born": "1942-02-12",
+      "died": null
+    },
+    "primary_affiliations": [
+      "IDF (Chief of Staff)",
+      "Sayeret Matkal",
+      "Labor Party",
+      "Knesset",
+      "Ministry of Defense"
+    ],
+    "historical_role": "Career soldier who rose through Sayeret Matkal special forces to become IDF Chief of Staff (1991-95) and Israel's most decorated soldier; entered politics as Foreign Minister (1995-96) and won the premiership in 1999 on a platform of ending Israel's occupation of South Lebanon and reaching a comprehensive peace, both of which he pursued and neither of which he completed on stable terms -- the Lebanon withdrawal succeeded but left an unresolved border dispute, and the Camp David peace effort collapsed into the Second Intifada that ended his premiership. Returned to government as Defense Minister under both Ehud Olmert and Benjamin Netanyahu (2007-2013), directing two of the Gaza wars this dataset documents from that post before retiring from electoral politics.",
+    "key_land_actions": [
+      {
+        "date": "1973-04-09",
+        "action_type": "Executive Action",
+        "location_affected": "Beirut, Lebanon",
+        "impact_description": "As Sayeret Matkal's commander, gathered the intelligence for and personally led the ground team in Operation Spring of Youth, an Israeli commando raid on Beirut launched by sea on 9-10 April 1973 in retaliation for the 1972 Munich Olympics massacre. Disguised as a woman as part of the infiltration team, Barak helped guide the operation to three PLO leaders' safehouses -- Kamal Adwan, Kamal Nasser, and Muhammad Youssef al-Najjar were all killed, along with several other fighters, while Barak's backup team held the perimeter against Lebanese and PLO reinforcements.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- the 9-10 April 1973 raid, Barak's role gathering intelligence and leading the ground team (including the disguise), and the three named PLO leaders killed are corroborated via live search (Wikipedia's '1973 Israeli raid in Lebanon' article, the Jewish Virtual Library's 'Operation Spring of Youth' entry, Ynetnews' 'Barak in drag: The daring operation to kill Arafat's deputy')."
+      },
+      {
+        "date": "1999-2000",
+        "action_type": "Executive Action",
+        "location_affected": "Southern Lebanon",
+        "impact_description": "As Prime Minister, campaigned in 1999 on a pledge to withdraw from South Lebanon within a year and, when a preferred peace deal with Syria collapsed in April 2000, ordered a unilateral withdrawal instead -- this dataset's own 2000 South Lebanon Withdrawal entry covers the order, the Israeli-backed South Lebanon Army's collapse, the SLA refugee flight into Israel, and the UN's certification of the withdrawal in full.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Barak's 1999 campaign pledge and his decision to proceed unilaterally after the failed Syria talks are corroborated via live search (Britannica's Ehud Barak entry, EBSCO's Ehud Barak research starter); see this dataset's own 2000 South Lebanon Withdrawal entry for the operation's own full sourcing."
+      },
+      {
+        "date": "2000-07",
+        "action_type": "Diplomatic Negotiation",
+        "location_affected": "West Bank, Gaza Strip, East Jerusalem",
+        "impact_description": "As Prime Minister, led the Israeli delegation at the July 2000 Camp David Summit and made what he called a 'generous offer' to PLO Chairman Yasser Arafat toward a final-status agreement -- this dataset's own 2000 Camp David Summit entry covers the summit's reported territorial and Jerusalem terms, and the genuine, still-disputed question of how generous the offer actually was, in full. Barak was unable to secure his own coalition's backing for the terms he offered, and the summit ended without an agreement.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Barak's leadership of the Israeli delegation, his 'generous offer' characterisation, and his coalition's insufficient backing are corroborated via live search (Chatham House's 'The Camp David approach, 2000'); see this dataset's own Camp David Summit entry for the offer's own full sourcing."
+      },
+      {
+        "date": "2000-09",
+        "action_type": "Policy Directive",
+        "location_affected": "West Bank, Gaza Strip, East Jerusalem",
+        "impact_description": "As Prime Minister, presided over the outbreak of the Second Intifada in late September 2000, triggered in the immediate term by Ariel Sharon's 28 September visit to the Temple Mount/Haram al-Sharif this dataset's own Ariel Sharon entry already documents, against the backdrop of the Camp David summit's collapse two months earlier. Unable to manage the crisis or hold his coalition together as the uprising escalated through the autumn, Barak announced his resignation in December 2000 and called new elections, which he lost decisively to Sharon in February 2001.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Barak's presiding role at the Intifada's outbreak, its link to the Camp David collapse and Sharon's Temple Mount visit, his December 2000 resignation, and his February 2001 election defeat are corroborated via live search (Britannica's Ehud Barak entry, EBSCO's Ehud Barak research starter, Wikipedia's 'Second Intifada' article). The Second Intifada itself does not yet have its own entry in this dataset -- flagged as a real gap for a future round."
+      },
+      {
+        "date": "2008-12",
+        "action_type": "Executive Action",
+        "location_affected": "Gaza Strip",
+        "impact_description": "As Defense Minister under Prime Minister Ehud Olmert, directed the IDF through Operation Cast Lead (27 December 2008-18 January 2009) -- this dataset's own 2008-09 Gaza War entry covers the operation's course and toll in full -- engineering, as he would again four years later, a surprise opening strike and advocating for a deliberately brief campaign.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- Barak's role as Defense Minister directing Cast Lead, and his preference for a surprise opening and short campaign, are corroborated via live search (the Times of Israel's 'The classically enigmatic farewell of Ehud Barak'); see this dataset's own 2008-09 Gaza War entry for the operation's own full sourcing."
+      },
+      {
+        "date": "2012-11",
+        "action_type": "Executive Action",
+        "location_affected": "Gaza Strip",
+        "impact_description": "As Defense Minister under Prime Minister Benjamin Netanyahu, opened Operation Pillar of Defense on 14 November 2012 with the targeted killing of Ahmed al-Jaabari, commander of Hamas' military wing -- this dataset's own 2012 Gaza War entry covers the operation's course and toll in full. Barak stated the operation's objectives at its outset as restoring deterrence against Hamas, degrading its longer-range rocket capability, and restoring normal life to Israeli border communities.",
+        "primary_source_citation": "VERIFIED 2026-09-14 -- the 14 November 2012 al-Jaabari killing as the operation's opening strike and Barak's stated objectives are corroborated via live search (the Jerusalem Center for Public Affairs' 'Operation Pillar of Defense' analysis, JTA's 'Operation Pillar of Defense: Lessons learned'); see this dataset's own 2012 Gaza War entry for the operation's own full sourcing."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "Israel's most decorated soldier, and a 2019 political comeback that failed",
+        "date_or_range": "1959-2019",
+        "description": "Born Ehud Brog, Barak served 35 years in the IDF, rising through Sayeret Matkal (whose operations also included the 1972 Sabena Flight 571 hostage-rescue mission and the 1976 Entebbe raid) to become Chief of Staff in 1991 and retiring in 1995 as the most decorated soldier in Israeli history. After leaving the Defense Ministry in 2013 and briefly leading his own breakaway Atzmaut party, he retired from frontline politics, then attempted a comeback in 2019 with a new party, the Israel Democratic Party, which failed to win a single Knesset seat.",
+        "citation": "VERIFIED 2026-09-14 -- Barak's birth name, his Sayeret Matkal service including the Sabena and Entebbe operations, his 1991 Chief of Staff appointment and 1995 retirement as most-decorated soldier, and his 2019 Israel Democratic Party failure are corroborated via live search (Britannica's Ehud Barak entry, the Academy of Achievement's Ehud Barak profile, Wikipedia's Ehud Barak article)."
+      }
+    ]
   }
 ]
