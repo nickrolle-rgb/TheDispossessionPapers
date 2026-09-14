@@ -4187,3 +4187,44 @@ pushed (`8b4d26c`), Vercel auto-deployed and confirmed live via curl and an actu
 Carter, Menachem Begin, Anwar Sadat, the PLO, Ariel Sharon, and Mossad LeAliyah Bet all resolved
 correctly via existing dataset entries with no manual wiring; the Yom Kippur War fix confirmed
 rendering as a clean sentence, not the old run-on).
+
+## Round: From Time Immemorial / Norman Finkelstein (2026-09-14)
+
+Nick asked whether anything could be done with Norman Finkelstein's bibliography -- third
+consecutive round in this pattern (McHugo, Quigley, now Finkelstein). Same reasoning applied: he's a
+political scientist analysing a specific book's sourcing, not a person who took land actions, so no
+standalone actor entry. Unlike McHugo/Quigley, though, his most land-dispossession-relevant
+contribution centres on a single, self-contained, historically notable episode substantial enough to
+be its own topic entry rather than a citation folded into an existing one.
+
+**From Time Immemorial** (new topic, Publication, 1984-1986): Joan Peters' 1984 book argued Palestine
+was largely empty before Zionist settlement and that most 1948 Palestinian refugees were themselves
+recent immigrants -- a demographic-denial narrative for the Nakba, reframing it as a population
+exchange between two recently-arrived groups rather than the displacement of an indigenous
+population. Initially praised widely (Bellow, Wiesel, Tuchman, Dershowitz; ~200 favourable notices;
+the April 1985 National Jewish Book Award) before Finkelstein, then a Princeton PhD student, spent
+over a year checking its sourcing. Specific, checkable findings included: a misquoted Hope Simpson
+Enquiry qualifier ('in certain individual cases' dropped), a selectively-quoted Anglo-American Survey
+passage omitting that a cited 1930s immigration boom later reversed, a demographic five-region
+breakdown Finkelstein argued obscured where 1948 refugees actually originated, and reliance on
+Turkish-language sources Peters could not read herself. Independently corroborated within the year by
+Yehoshua Porath ('sheer forgery'), Ian Gilmour ('pretentious and preposterous'), and Albert Hourani
+('ludicrous and worthless book') -- presented as their own published assessments, not this dataset's
+literary judgement.
+
+**A methodology note worth remembering**: this round clarified something about the graph itself --
+topic-to-topic prose mentions (like this entry's references to 'the Nakba' and 'Resolution 242')
+autolink correctly in the rendered page, but do NOT create graph edges under the current schema,
+since `related_actor_ids`/`related_org_ids` only support actor and org references, not topic-to-topic
+ones. This explains several earlier rounds' 'edges unchanged despite adding cross-references' pattern
+-- not a bug, just how the schema is scoped. Confirmed live: the entry's 'Nakba' and 'UN Resolution
+242' mentions both render as working links despite zero new graph edges this round.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (266 nodes,
++1; 404 edges unchanged, per the methodology note above); `build_network_view.py`'s Python build and
+the harness's live `netBuildGraphData()` produce byte-for-byte identical edge sets (404/404); the
+standalone prototype's own dedicated harness confirms its autolinking still works. Both Artifacts
+republished, pushed (`5721cea`), Vercel auto-deployed and confirmed live via curl and an actual
+browser check (zero console errors; deep-linked to the entry, Nakba and Resolution 242 autolinks
+both spot-checked via JS and confirmed working).
