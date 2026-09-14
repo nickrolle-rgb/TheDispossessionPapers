@@ -4597,3 +4597,40 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`9477a16`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; UN, ICJ, ICRC, Hamas, Likud, Kadima, and Sharon all autolinked richly with no
 manual wiring).
+
+## Round: 2007 Battle of Gaza (Hamas takeover) (2026-09-14)
+
+Only existed as two sentences inside Hamas's own organisation action_record -- the same
+under-documented-elsewhere pattern as the Gaza disengagement round.
+
+**2007 Battle of Gaza** (new topic, Armed Conflict, 2007-06-10 to 2007-06-14): the week of fighting
+following seventeen months of unresolved tension since Hamas's 25 January 2006 legislative election
+win. Included the specific, brutal incidents that made this more than an abstract power struggle --
+Presidential Guard officer Mohammed Sweirki thrown from Gaza's tallest building by Hamas fighters,
+Fatah's retaliatory killing of Great Mosque imam Mohammed al-Rifati -- and gave the casualty figures
+as a range rather than false precision (ICRC's 118 killed/550 wounded minimum versus other
+contemporaneous tallies of 188/650). Documented Abbas's 14 June 2007 state of emergency, his
+invocation of Article 137 of the Basic Law to dissolve the Haniyeh government, Fayyad's appointment,
+Hamas's rejection of the decree, and the resulting two-government split that has held for nearly two
+decades through failed reconciliation attempts (including the 2014 unity government).
+
+**A small correction caught while drafting**: my first pass listed Yasser Arafat in
+`related_actor_ids` before I noticed he died in November 2004 -- more than a year before Hamas even
+won the 2006 election this event stems from, and nearly three years before the battle itself. Fixed
+to Mahmoud Abbas (the actually-relevant, actually-alive-at-the-time actor) before running the
+pipeline, not after. Small catch, but exactly the kind of drafting error that would have been a real
+factual mistake if it had shipped.
+
+Cross-linked to the existing Hamas, PLO, Palestinian Authority, and Mahmoud Abbas entries; framed the
+significance explicitly around the split's already-documented downstream consequences (the Gaza
+blockade entry's own dating traces directly to this takeover).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (275 nodes,
++1; 424 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (424/424); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`490cec6`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Fatah, Hamas, the ICRC, Mahmoud Abbas, and the Palestinian Authority all
+autolinked correctly with no manual wiring, while Ismail Haniyeh correctly rendered as plain text
+since he isn't in the dataset yet).
