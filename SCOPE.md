@@ -5426,3 +5426,44 @@ prototype's own dedicated harness confirms its autolinking still works. Both Art
 pushed (`ea66ad0`), Vercel auto-deployed and confirmed live via curl and an actual browser check
 (zero console errors; the new entry's own page confirmed linking correctly to South Lebanon Army,
 IDF, Operation Litani, and the 2006 Lebanon War with no manual wiring).
+
+## Round: Ehud Barak added as his own actor (2026-09-14)
+
+Nick's explicit confirmation of the gap flagged at the end of the 2000 South Lebanon Withdrawal
+round. New actor `ehud-barak` (b. 1942, living, birth name Ehud Brog): six `key_land_actions`
+spanning 1973-2012, unusually many for a single entry, justified by how many existing entries his
+career genuinely touches.
+
+**Opens with a real pre-premiership action rather than starting at 1999:** the 9-10 April 1973
+Operation Spring of Youth raid on Beirut, which Barak led on the ground (disguised as a woman as
+part of the infiltration team) after personally gathering the intelligence on the safehouses of
+three PLO leaders -- Kamal Adwan, Kamal Nasser, and Muhammad Youssef al-Najjar -- all killed in the
+raid. **Then four entries this dataset already documents, each covered by cross-reference rather
+than re-derived from scratch:** the 1999-2000 South Lebanon withdrawal, the July 2000 Camp David
+summit's "generous offer," Operation Cast Lead as Olmert's Defense Minister, and Operation Pillar of
+Defense as Netanyahu's Defense Minister (which Barak himself opened with the targeted killing of
+Hamas military commander Ahmed al-Jaabari). **One entry covering a genuine dataset gap directly,
+not deferred:** Barak's September-December 2000 handling of the Second Intifada's outbreak and his
+own resignation that December -- written with full sourcing since the Second Intifada itself has no
+dedicated entry yet, flagged explicitly as a real gap for a future round rather than silently
+patched over by treating Barak's own account of it as sufficient.
+
+**Enriched four existing topics' `related_actor_ids` with him, each a real standing gap closed, not
+speculative additions:** `camp-david-summit-2000` (the Israeli delegation's own leader was simply
+missing from a list that already had Arafat, Clinton, and Sharon), `south-lebanon-withdrawal-2000`
+(explicitly flagged as a gap at the close of the prior round), `gaza-war-2008-09`, and `gaza-war-2012`
+(Barak as Defense Minister directing both, alongside the sitting PM each entry already named).
+
+`personal_context` covers his record as Israel's most decorated soldier (35 years in the IDF,
+including the 1972 Sabena and 1976 Entebbe operations before his own 1991 Chief of Staff
+appointment) and his 2019 political comeback attempt with the Israel Democratic Party, which failed
+to win a single Knesset seat.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both the live wiki and standalone prototype; harness's 30+ checks pass (295 nodes,
++1; 477 edges, +4); `build_network_view.py`'s Python build and the harness's live
+`netBuildGraphData()` produce byte-for-byte identical edge sets (477/477); the standalone
+prototype's own dedicated harness confirms its autolinking still works. Both Artifacts republished,
+pushed (`119aa2d`), Vercel auto-deployed and confirmed live via curl and an actual browser check
+(zero console errors; Barak's own page confirmed linking to all six related entries, and South
+Lebanon Withdrawal confirmed linking back to him, with no manual wiring in either direction).
