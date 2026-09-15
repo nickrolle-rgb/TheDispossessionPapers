@@ -3105,5 +3105,56 @@
       }
     ],
     "knesset_participation": []
+  },
+  {
+    "org_id": "international-holocaust-remembrance-alliance",
+    "name": "International Holocaust Remembrance Alliance",
+    "hebrew_name": null,
+    "aliases": [
+      "IHRA",
+      "Task Force for International Cooperation on Holocaust Education, Remembrance and Research",
+      "ITF"
+    ],
+    "org_type": "International Body",
+    "founding_date": "1998",
+    "dissolution_date": null,
+    "ideology": [],
+    "lineage": {
+      "predecessor_orgs": [],
+      "successor_orgs": [],
+      "merged_into": null,
+      "current_knesset_party_id": null
+    },
+    "notable_members": [],
+    "action_record": [
+      {
+        "event_id": "ihra-founded-1998",
+        "date": "1998-05",
+        "action_type": "Institution Founding",
+        "title": "Formed as the Task Force for International Cooperation on Holocaust Education, Remembrance and Research",
+        "location_affected": "Stockholm, Sweden (international)",
+        "description": "Swedish Prime Minister Goran Persson, together with UK Prime Minister Tony Blair and US President Bill Clinton, agreed in May 1998 to set up an intergovernmental task force to promote international cooperation on Holocaust education, remembrance, and research. Sweden hosted the Stockholm International Forum on the Holocaust in January 2000, at which representatives of dozens of governments adopted the Stockholm Declaration, a set of Holocaust education and remembrance commitments. The Task Force was renamed the International Holocaust Remembrance Alliance in January 2013; it is an intergovernmental organisation with 35 member countries, 1 liaison country, and several observer countries as of the mid-2020s.",
+        "citation": "VERIFIED 2026-09-15 -- the May 1998 Persson/Blair/Clinton agreement, the January 2000 Stockholm International Forum and Declaration, the January 2013 renaming, and the 35-member-country figure are corroborated via live search (the IHRA's own 'What is the IHRA?' page, Wikipedia's International Holocaust Remembrance Alliance article)."
+      },
+      {
+        "event_id": "ihra-working-definition-2016",
+        "date": "2016-05-26",
+        "action_type": "Political Declaration",
+        "title": "Plenary in Bucharest adopts the non-legally-binding Working Definition of Antisemitism",
+        "location_affected": "Bucharest, Romania (international)",
+        "description": "On 26 May 2016 the IHRA Plenary adopted by consensus a short working definition -- 'Antisemitism is a certain perception of Jews, which may be expressed as hatred toward Jews' -- drafted originally in 2004-2005 by American Jewish Committee antisemitism expert Kenneth Stern for a European monitoring body, intended mainly to help police classify hate crimes consistently across countries. The definition is accompanied by eleven illustrative examples the IHRA uses to guide its own work; seven concern Israel, including denying the Jewish people their right to self-determination (e.g. by calling Israel's existence a racist endeavour), applying double standards not demanded of other democratic states, drawing comparisons between Israeli policy and the Nazis, and holding Jews collectively responsible for the actions of the Israeli state. To secure consensus among member countries concerned the examples could chill legitimate criticism of Israel, they were adopted only as separate guidance accompanying the definition, not as part of the definition's own operative text.",
+        "citation": "VERIFIED 2026-09-15 -- the 26 May 2016 Bucharest adoption, the definition's exact wording, Kenneth Stern's 2004-2005 drafting for hate-crime data classification, the eleven illustrative examples (seven concerning Israel) and their listed content, and the examples' adoption as separate guidance rather than part of the definition itself are corroborated via live search (the IHRA's own working-definition text and PDF, PalQuest's 'The IHRA Working Definition of Antisemitism' explainer)."
+      },
+      {
+        "event_id": "ihra-definition-adoption-controversy",
+        "date": "2016-2021",
+        "action_type": "Policy Lobbying",
+        "title": "Governments adopt the working definition; drafter and rival scholars later contest its use",
+        "location_affected": "United Kingdom, United States, and other adopting states (international)",
+        "description": "Following the 2016 Bucharest adoption, the UK government adopted the definition later that year, and the US followed under President Trump's 11 December 2019 Executive Order 13899, which directed federal agencies, including the Department of Education, to consider the IHRA definition and its examples when enforcing Title VI of the Civil Rights Act against federally funded universities -- extending a definition designed for police hate-crime data into campus disciplinary and discrimination proceedings. Kenneth Stern, the definition's original drafter, publicly opposed this use, writing that it was 'never intended to be a campus hate speech code' and warning it would chiefly harm pro-Palestinian advocates, Jewish students and faculty, and academic freedom generally. Around 200 scholars of antisemitism, Jewish studies, and Holocaust studies responded by drafting the Jerusalem Declaration on Antisemitism, presented 25 March 2021, offering a narrower definition -- 'antisemitism is discrimination, prejudice, hostility or violence against Jews as Jews' -- with guidelines explicitly distinguishing antisemitic speech from legitimate criticism of Israel or Zionism.",
+        "citation": "VERIFIED 2026-09-15 -- the UK's 2016 adoption, Executive Order 13899's 11 December 2019 signing and its Title VI/Department of Education enforcement directive, and Kenneth Stern's public opposition (including his 'never intended to be a campus hate speech code' quote) are corroborated via live search (the American Presidency Project's Executive Order 13899 text, Bard College's coverage of Stern's op-ed). The Jerusalem Declaration on Antisemitism's 25 March 2021 presentation, its roughly 200 scholarly signatories, its own working definition's wording, and its explicit Israel-criticism guidelines are corroborated via live search (Wikipedia's Jerusalem Declaration on Antisemitism article, the declaration's own website)."
+      }
+    ],
+    "knesset_participation": []
   }
 ]
