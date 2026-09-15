@@ -6329,3 +6329,58 @@ and live `netBuildGraphData()` produce identical edge sets both before (526/526,
 Sharon-ICJ cross-reference) and after (526/526, the wording fix added no new edge) the autolink
 fix. Two commits (`763353a` content, `373e96c` wording fix); both Artifacts republished twice;
 Vercel auto-deployed both and confirmed live via curl and a browser check (zero console errors).
+
+## Round: IHRA, Uti Possidetis Juris, and Sharon's 1956-1973 military career (2026-09-15)
+
+Three requests in one round.
+
+**New organization: International Holocaust Remembrance Alliance (IHRA)** (`organizations.json`,
+org_type "International Body"). Three action_record entries: (1) its May 1998 founding as the
+Task Force for International Cooperation on Holocaust Education, Remembrance and Research
+(Persson/Blair/Clinton), the January 2000 Stockholm Declaration, and the January 2013 renaming;
+(2) the 26 May 2016 Bucharest Plenary's adoption of the Working Definition of Antisemitism --
+drafted originally by Kenneth Stern for hate-crime data classification -- and its eleven
+illustrative examples, seven of which concern Israel (self-determination denial, double standards,
+Nazi comparisons, collective responsibility), adopted only as accompanying guidance rather than
+part of the definition's own operative text; (3) the definition's subsequent government adoption
+(UK 2016; Trump's Executive Order 13899 in December 2019 extending it to US Title VI campus
+enforcement) and the resulting controversy -- Stern's own public opposition to what he called its
+"weaponization," and the March 2021 Jerusalem Declaration on Antisemitism roughly 200 scholars
+drafted as a narrower alternative with explicit Israel-criticism guidelines.
+
+**New topic: Uti Possidetis Juris** (`topics.json`, topic_type "Historical Phenomenon," matching
+the precedent set by the existing Defensible Borders Doctrine entry). Covers the doctrine's
+Roman-law origin, its 19th-century Latin American adoption to fix colonial administrative
+boundaries as international borders, the OAU's 1964 Cairo Resolution extending it to African
+decolonisation, and the ICJ's 1986 Burkina Faso v. Mali endorsement -- then its invocation by
+Israeli legal scholars Abraham Bell and Eugene Kontorovich (2016 Arizona Law Review) and barrister
+Natasha Hausdorff to argue Israel inherited the Mandate for Palestine's full 1948 boundaries,
+including the West Bank, Gaza, and all of Jerusalem. Presents the mainstream rebuttal alongside it
+(David Kretzmer's "insuperable obstacle" characterisation) and cross-references this dataset's own
+already-verified 2004 ICJ Wall Opinion entry, whose contrary occupied-territory findings represent
+the far more widely held position. `related_org_ids` includes `international-court-of-justice`.
+
+**Ariel Sharon's own actor entry gains his 1956-1973 military career**, previously entirely
+missing between the 1953 Qibya raid and the 1977 Agriculture Minister tenure: the 1956 Mitla Pass
+battle during the Sinai Campaign (38 Israeli paratroopers killed after Sharon exceeded orders
+authorising only a reconnaissance patrol); the 1967 Abu-Ageila/Umm Katef night assault opening the
+Six-Day War's Sinai front (cross-referenced against the existing Six-Day War entry); the 1970-71
+Gaza pacification campaign as GOC Southern Command (mass demolitions of an estimated 2,000 homes,
+~16,000 displaced, and casualty/detention figures presented as a range -- 742 killed-or-captured
+per one account vs. 1,000+ killed and up to 12,000 detained per another -- rather than resolved to
+one number); and the 1973 Suez Canal crossing during the Yom Kippur War (cross-referenced against
+the existing Yom Kippur War and Egypt-Israel Peace Treaty entries). A first draft of the Gaza
+pacification action misstated the triggering incident's victims' names and ages; corrected before
+publication after a direct search on the incident itself (the Aroyo children, Abigail age 5 and
+Marco age 7, killed 2 January 1971) rather than trusting an earlier, less specific search summary.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (527/527, +1 from the new
+Uti Possidetis Juris -> ICJ cross-reference; the new IHRA org and Sharon's new key_land_actions add
+no new graph edges, since IHRA has no related_actor_ids/related_org_ids and Sharon's new actions
+are descriptive text on his existing node). Both Artifacts republished; pushed as commit `2cc7af5`;
+Vercel auto-deployed and confirmed live via curl and a browser check (zero console errors across
+all three entries; confirmed via DOM inspection that every cross-reference -- "2004 ICJ Wall
+Opinion," "International Court of Justice," "Six-Day War," "Yom Kippur War," "Egypt-Israel Peace
+Treaty" -- autolinks correctly with no wording-mismatch fix needed this round).
