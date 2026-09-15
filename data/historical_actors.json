@@ -1706,6 +1706,13 @@
     "historical_role": "Palmach commander turned career soldier who rose to IDF Chief of Staff (1964-68), commanding the Six-Day War; later a two-time Prime Minister (1974-77, 1992-95) and Defense Minister (1984-90) whose record runs in both directions -- his first government's 1975 compromise opened the northern West Bank to organised settlement, his defense tenure directed the harshest phase of the First Intifada's suppression, and his second government negotiated the Oslo Accords and the Israel-Jordan Peace Treaty before his assassination by a Jewish far-right opponent of the peace process.",
     "key_land_actions": [
       {
+        "date": "1967-06-05",
+        "action_type": "Executive Action",
+        "location_affected": "West Bank, Gaza Strip, Sinai Peninsula, Golan Heights",
+        "impact_description": "As IDF Chief of Staff, planned and directed the Six-Day War from 5 to 10 June 1967 -- this dataset's own Six-Day War entry covers the war's lead-up, course across three fronts, and outcome in full. Rabin had been the war's principal military architect throughout the preceding weeks' crisis, a strain under which he suffered a reported 24-36 hour nervous breakdown around 23-24 May, less than two weeks before the fighting began; Defense Minister Moshe Dayan, brought into the cabinet only days before the war for public-confidence reasons, directed the war politically alongside him. The campaign Rabin commanded brought the West Bank, Gaza, Sinai, and Golan Heights under Israeli control within six days, the largest single territorial change since 1948.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- Rabin's role as IDF Chief of Staff throughout the Six-Day War's planning and execution, and Dayan's later appointment as Defense Minister shortly before the war, are corroborated via live search (Britannica's Six-Day War article, the US State Department's 'The 1967 Arab-Israeli War' milestone page), consistent with this dataset's own already-verified Six-Day War entry. The 23-24 May 1967 nervous breakdown is corroborated via live search (We Are The Mighty's 'This leader had a complete nervous breakdown during the Six-Day War,' the Jewish Telegraphic Agency's contemporaneous coverage of Rabin's own later public acknowledgment of it)."
+      },
+      {
         "date": "1975-12",
         "action_type": "Executive Action",
         "location_affected": "Sebastia / Kedumim, northern West Bank",
