@@ -6426,3 +6426,36 @@ related_actor_ids/related_org_ids fields). Both Artifacts republished; pushed as
 Vercel auto-deployed and confirmed live via curl and a browser check (zero console errors; Begin,
 Sadat, Carter, Sharon, and the Jerusalem Basic Law cross-reference all autolink correctly, no
 wording-mismatch fix needed this round).
+
+## Round: 1979 Egypt-Israel Peace Treaty -- US aid packages and the "cold peace" (2026-09-15)
+
+The existing `egypt-israel-peace-treaty-1979` entry (VERIFIED 2026-09-14) already covered the
+treaty's terms, the Sinai withdrawal, the MFO, and the Taba dispute/arbitration thoroughly. Two
+real gaps found and fixed:
+
+1. **`related_actor_ids` fix**: linked only Menachem Begin and Jimmy Carter despite the summary
+   naming Anwar Sadat as a co-signatory in its own first sentence. Added `anwar-sadat`.
+2. **US aid packages**, entirely missing: the substantial annual US military and economic aid that
+   underwrote both signatories' acceptance of the treaty -- roughly $3 billion/year to Israel and
+   $1.3 billion/year to Egypt, continuing uninterrupted since 1979, making both countries the
+   largest and second-largest recipients of US foreign assistance for most of the period since.
+
+Also added the **"cold peace" characterisation** to significance -- attributed to scholars and
+regional analysts, not adopted as this dataset's own conclusion, consistent with its standing
+treatment of comparably disputed characterisations elsewhere: Egypt's professional-syndicate
+boycotts of normalisation (including the Press Syndicate's 1985 ban on members' contact with
+Israelis) and decades of minimal, overwhelmingly one-directional tourism and trade, framed as an
+open question about what the treaty's limited normalisation actually reflects rather than a
+resolved verdict.
+
+Sourced via live search: Britannica's and History.com's Camp David Accords articles for the aid
+figures; the Washington Institute's "It's a Cold Peace with Israel; Egypt Prohibits Full
+Normalization" and INSS's "Are Egypt's Professional Unions an Obstacle to Closer Relations with
+Israel?" for the cold-peace characterisation and syndicate boycotts.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (532/532, +1 from the new
+Sadat related_actor_ids link only). Both Artifacts republished; pushed as commit `2c2420b`; Vercel
+auto-deployed and confirmed live via curl and a browser check (zero console errors; Begin, Sadat,
+and Carter all correctly listed under "Related," no wording-mismatch fix needed this round).
