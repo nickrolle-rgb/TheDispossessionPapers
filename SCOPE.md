@@ -6384,3 +6384,45 @@ Vercel auto-deployed and confirmed live via curl and a browser check (zero conso
 all three entries; confirmed via DOM inspection that every cross-reference -- "2004 ICJ Wall
 Opinion," "International Court of Justice," "Six-Day War," "Yom Kippur War," "Egypt-Israel Peace
 Treaty" -- autolinks correctly with no wording-mismatch fix needed this round).
+
+## Round: 1978 Camp David Accords -- the actual 1979-1981 autonomy talks (2026-09-15)
+
+The existing `camp-david-accords-1978` entry (from an earlier round, VERIFIED 2026-09-13) already
+covered the two frameworks' content, Sinai's real implementation (the 1982 Yamit evacuation), and
+the West Bank/Gaza framework's non-implementation -- but only in the abstract ("never implemented
+as written"), without the real negotiating history of the attempt to implement it. Checked Anwar
+Sadat's own actor entry first and confirmed his Nobel Peace Prize, the Arab League suspension, and
+his 1981 assassination were already fully documented there -- so those were deliberately NOT
+re-added here to avoid duplication; the genuine gap was the autonomy talks themselves.
+
+Added: Egypt and Israel opened the second framework's autonomy talks on 25 May 1979 in Beersheba
+(Interior Minister Yosef Burg for Israel; Prime Minister Mustafa Khalil and Foreign Minister
+Boutros Boutros-Ghali for Egypt; US envoy Robert Strauss, replaced that autumn by Sol Linowitz),
+with no Palestinian delegation participating (the PLO's rejection and Jordan's declined invitation
+were already in the entry). The talks exposed an unbridgeable gap once both sides tabled detailed
+autonomy models in early 1980 -- Israel's resembling narrow municipal self-rule, Egypt's a
+near-sovereign entity short only of external security and foreign affairs control. Egypt suspended
+the talks four times by August 1980 (Begin's own count), the last tied to the Knesset's passage of
+Basic Law: Jerusalem, Capital of Israel, 5740-1980 -- cross-referenced verbatim against this
+dataset's own existing law entry so the reference actually autolinks. The process never resumed in
+substance; Sadat's October 1981 assassination removed its remaining Egyptian champion.
+
+Also fixed a `related_actor_ids` gap unrelated to the new research: the entry previously linked
+only Ariel Sharon despite being substantially about Begin, Sadat, and Carter -- all three already
+exist as actors in this dataset and are now linked.
+
+Sourced via live search: Wikipedia's "Palestinian autonomy talks" article, the Cairo Review of
+Global Affairs' "Developing the Concept of Palestinian Autonomy," UK Parliament's Hansard record
+of the 7 October 1981 Lords debate on Sadat's assassination, and the Association for Diplomatic
+Studies and Training's "Anwar Sadat and the Camp David Negotiations."
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (531/531, +4 from the
+three new related_actor_ids links plus one automatically-detected context edge to
+`jerusalem-basic-law-1980` from the verbatim law-title reference in the new prose -- confirming the
+graph builder also picks up exact-name matches inside summary/significance text, not just explicit
+related_actor_ids/related_org_ids fields). Both Artifacts republished; pushed as commit `b1b877a`;
+Vercel auto-deployed and confirmed live via curl and a browser check (zero console errors; Begin,
+Sadat, Carter, Sharon, and the Jerusalem Basic Law cross-reference all autolink correctly, no
+wording-mismatch fix needed this round).
