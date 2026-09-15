@@ -6755,3 +6755,36 @@ and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/53
 pure content enrichment). Both Artifacts republished; pushed as commit `e02f378`; Vercel
 auto-deployed and confirmed live via curl and a browser check (zero console errors; live check
 succeeded on the first hard reload this round, no stale-cache retry needed).
+
+## Round: Wye River Memorandum -- prisoner release and Gaza airport outcomes (2026-09-15)
+
+The existing `wye-river-memorandum-1998` entry (already one of the most thoroughly developed
+entries in the dataset) stated the 750-prisoner release and Gaza airport commitments without their
+actual outcomes -- the same gap pattern just fixed on the Sharm el-Sheikh Memorandum entry. Added:
+
+- **The November 1998 prisoner release's real controversy**: a first group of 250 released, but
+  Palestinian anger that most were ordinary criminal prisoners rather than the security/political
+  prisoners expected -- prompting recently-released security prisoners themselves to accuse the
+  Palestinian delegation of having been outmanoeuvred in the negotiations.
+- **Yasser Arafat International Airport**: opened to limited operations 24 November 1998, formally
+  inaugurated by Clinton on 14 December 1998, served the newly-formed Palestinian Airlines with
+  substantial passenger traffic, then closed in 2001 and was progressively destroyed by Israeli
+  forces amid the Second Intifada -- a close parallel to the Gaza seaport's own fate this dataset's
+  Sharm el-Sheikh Memorandum entry documents, cross-referenced accordingly.
+- Also cross-referenced the safe-passage-route commitment against the fuller treatment (Erez-
+  Tarqumiya routing, 2000 closure) added to the Sharm el-Sheikh Memorandum entry last round,
+  rather than duplicating that detail here.
+
+Sourced via live search: Israel Behind the News's "Implementation of the Wye Agreement: Release of
+Palestinian Prisoners," the Council on Foreign Relations' "Yasser Arafat International Airport"
+article, and the Times of Israel's "20 years after its opening, destroyed Gaza airport embodies
+grounded peace hopes."
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, unchanged --
+pure content enrichment; the two new topic-to-topic name mentions of "Sharm el-Sheikh Memorandum"
+did not auto-generate graph edges, consistent with the Allon Plan round's finding that cross-topic
+text matches don't create edges the way law/org matches do). Both Artifacts republished; pushed as
+commit `31365a2`; Vercel auto-deployed and confirmed live via curl and a browser check (zero
+console errors; both Sharm el-Sheikh Memorandum cross-references autolink correctly).
