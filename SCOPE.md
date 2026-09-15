@@ -6686,3 +6686,40 @@ Sasson are not actors in this dataset and weren't added as new ones, consistent 
 standing practice). Both Artifacts republished; pushed as commit `3c5ce17`; Vercel auto-deployed
 and confirmed live via curl and a browser check (zero console errors; no new cross-reference
 targets to verify, since none of the newly-named individuals have existing entries).
+
+## Round: Oslo II's other annexes (2026-09-15)
+
+The existing `oslo-accords-1993-1995` entry covered Annex I's Area A/B/C division and Annex II's
+election framework in real depth, but Oslo II's other annexes -- less cited but still practically
+consequential, some still operating today -- were entirely absent. Added:
+
+- **Annex III/Article 40 (Schedule 8): the Joint Water Committee.** A nominally consensus-based,
+  equal-veto body that is structurally asymmetric in practice: its mandate covers only West Bank
+  water resources, not the downstream Israeli supply drawn from the same aquifers, leaving Israel
+  an effective veto over Palestinian water projects with no Palestinian equivalent. Still operating
+  intermittently since 1995, including a seven-year suspension before its 2017 reconvening.
+- **Annex IV's jurisdictional asymmetry**: Palestinian courts have no jurisdiction over the State
+  of Israel or its agents, and imprisonment/travel-restraint orders against Israelis are an
+  Israeli-only authority.
+- **Annex I's explicit retained-authority language**: Israel kept "overarching authority" over
+  external threats, border control, airspace, and maritime security even in areas nominally
+  transferred to the Palestinian Authority -- a qualification the entry's own existing Area A/B/C
+  percentages don't by themselves convey.
+- **Annex VII's Palestinian prisoner/detainee release terms.**
+
+Added a significance note framing the Joint Water Committee's own asymmetry as a smaller-scale,
+longer-running instance of the same interim-to-permanent pattern this entry already traces at the
+territorial level.
+
+Sourced via live search: Wikipedia's Israeli-Palestinian Joint Water Committee article, Al-Haq's
+"Thirsting for water, 20 years after Oslo," PA-X's Annex IV (Protocol Concerning Legal Affairs)
+page, the Foundation for Middle East Peace's Interim Agreement (Oslo II) resource page, and
+ReliefWeb's Interim Agreement text.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, unchanged --
+pure content enrichment). Both Artifacts republished; pushed as commit `044caca`; Vercel
+auto-deployed and confirmed live via curl and a browser check (zero console errors; a first check
+hit a stale cached tab load, a hard reload confirmed the correct, current build with no other
+issues -- consistent with the pattern seen a few rounds back on the same live site).
