@@ -6654,3 +6654,35 @@ Both Artifacts republished; pushed as commit `4eb1bee`; Vercel auto-deployed and
 via curl and a browser check (zero console errors; every cross-reference -- Allon, Eshkol, Six-Day
 War, East Jerusalem, Begin, Likud, Gush Emunim, Netanyahu, and the Jordan Valley Sovereignty Bill
 -- autolinks correctly, no wording-mismatch fix needed this round).
+
+## Round: Levy Report -- committee composition and the AG's contemporaneous check (2026-09-15)
+
+The existing `levy-report-2012` entry (VERIFIED 2026-09-10, a recent and already-thorough round)
+named only Edmond Levy of the committee's three members, and documented the report's "never
+formally adopted" outcome without explaining the specific institutional mechanism behind it. Two
+targeted additions:
+
+1. **The other two committee members**: Alan Baker (a former Foreign Ministry legal adviser and
+   resident of the West Bank settlement Har Adar, on a settler organisation's payroll) and Tehiya
+   Shapira (a retired Tel Aviv District Court judge, daughter of former Chief Rabbi Shlomo Goren) --
+   with Haaretz's "meticulously chosen" characterisation of the panel's composition bias, attributed
+   to that reporting rather than adopted as this dataset's own conclusion, alongside Levy's own
+   record as the sole Supreme Court justice to have opposed the 2005 Gaza disengagement.
+2. **Attorney General Yehuda Weinstein's contemporaneous check**: a letter to Netanyahu sent within
+   days of the committee's own appointment, clarifying that its work would not itself change the
+   state's existing legal position in court on removing unlawfully-built structures, and reserving
+   his own case-by-case authority over demolition-delay requests -- the specific institutional
+   mechanism this entry's existing "never formally adopted" finding didn't previously explain.
+
+Sourced via live search: the Times of Israel's "Levy Committee that says settlements are legal was
+rigged" (citing Haaretz's own reporting on the panel's composition) and "Will panel throw out a
+lifeline for disputed settlements?" (Weinstein's letter).
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, unchanged --
+pure content enrichment; no related_actor_ids/related_org_ids added, since Baker, Shapira, and
+Sasson are not actors in this dataset and weren't added as new ones, consistent with this session's
+standing practice). Both Artifacts republished; pushed as commit `3c5ce17`; Vercel auto-deployed
+and confirmed live via curl and a browser check (zero console errors; no new cross-reference
+targets to verify, since none of the newly-named individuals have existing entries).
