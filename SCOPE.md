@@ -6612,3 +6612,45 @@ cross-reference -- Mapai, Israeli Labor Party, Jewish Agency for Palestine, Prim
 Israel, Six-Day War, Kibbutz, Ottoman Palestine, Second Aliyah, the Land Acquisition Law, JNF,
 Ben-Gurion, Dayan, Yigal Allon, Golda Meir -- autolinks correctly except the newly-flagged Kaplan
 collision).
+
+## Round: Allon Plan -- two versions, real territory, and its modern echo (2026-09-15)
+
+The existing `allon-plan` entry compressed a consequential, decade-shaping plan into two
+sentences, missing its actual two-version evolution, territorial specifics, and lasting political
+life. Expanded:
+
+- **The plan's two versions**: the July 1967 first version (proposing Palestinian autonomy tied to
+  Israel, not independence, for the areas Israel would not retain) and the February 1968 revision
+  (substituting Jordan for the Palestinians themselves as Israel's intended partner, reflecting the
+  era's "Jordanian option").
+- **Real territorial terms**: a 10-15km-wide strip along the Jordan River and Dead Sea, most of the
+  Judean Desert, the Latrun salient, Gush Etzion, and East Jerusalem plus a connecting corridor --
+  a contemporary CIA memo's ~700 square mile estimate, roughly one-third of the West Bank.
+- **A direct cross-reference to Eshkol's own Kfar Etzion authorisation** (documented in his own
+  actor entry from the previous round) as the plan's first concrete implementation, within weeks of
+  its presentation and inside the Gush Etzion area the plan itself proposed retaining.
+- **The 21 Jordan Valley settlements** (including early fortified positions Mehola and Argaman)
+  founded under Labor governments between 1967 and 1977 along the plan's security-corridor logic.
+- **Its policy afterlife**: shaping Labor's own election platforms in 1974, 1977, 1981, 1984, and
+  1987, and its practical end as a governing template after Begin's 1977 Likud victory, whose own
+  December 1977 autonomy proposal and Gush Emunim-driven settlement expansion abandoned the plan's
+  strategic-margins-only premise for settlement across the whole West Bank.
+- **Its modern echo**: Netanyahu's September 2019 announcement to extend Israeli sovereignty over
+  roughly the same 30% of the West Bank (the Jordan Valley) the plan targeted in 1967 -- cross-
+  referenced against this dataset's own already-verified Jordan Valley Sovereignty Bill entry --
+  and the estimate that some 86% of the Jordan Valley has since been allocated to Israeli
+  settlements, arguably the fullest practical realisation yet of the plan's original concept.
+
+Sourced via live search: PASSIA's "The Allon Plan, June 1967," the Economic Cooperation
+Foundation's Allon Plan (1967) page, Wikipedia's Annexation of the Jordan Valley article,
+Encyclopedia.com's Yigal Allon entry, and the Carnegie Endowment's "The Forever Allon Plan."
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, unchanged --
+pure content enrichment; no new related_actor_ids/related_org_ids added, and cross-topic name
+matches in prose, unlike law/org matches, do not appear to generate automatic graph edges).
+Both Artifacts republished; pushed as commit `4eb1bee`; Vercel auto-deployed and confirmed live
+via curl and a browser check (zero console errors; every cross-reference -- Allon, Eshkol, Six-Day
+War, East Jerusalem, Begin, Likud, Gush Emunim, Netanyahu, and the Jordan Valley Sovereignty Bill
+-- autolinks correctly, no wording-mismatch fix needed this round).
