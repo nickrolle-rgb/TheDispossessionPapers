@@ -6503,3 +6503,64 @@ Both Artifacts republished; pushed as commit `16a0c03`; Vercel auto-deployed and
 curl and a browser check (zero console errors; every cross-reference -- Ben-Gurion, Dayan, Sharon,
 IDF, UN General Assembly, Six-Day War, Yom Kippur War, and Ben-Gurion's own back-link to the Suez
 Crisis entry -- autolinks correctly, no wording-mismatch fix needed this round).
+
+## Round: Six-Day War -- fully expanding a two-sentence placeholder (2026-09-15)
+
+The `six-day-war` entry's own significance section called it "the single hinge point" of this
+entire dataset, yet its summary was two sentences with no lead-up, no course of battle, and no
+casualties -- and its citation openly admitted "not independently re-checked this pass" from the
+project's very first day (2026-09-01). This was the clearest case this session of a cornerstone
+entry left under-built while everything downstream of it (Allon Plan, East Jerusalem, Golan Heights
+Expulsion, Defensible Borders Doctrine) had been thoroughly developed.
+
+Fully rewrote the entry:
+
+- **The three-week crisis** preceding the war: Nasser's 14 May mobilisation, his 18 May demand for
+  UNEF's withdrawal (complied with within days), the 22-23 May Straits of Tiran closure, and
+  Jordan's 30 May defence pact with Egypt (Iraq joining shortly after).
+- **Operation Focus (Moked)**: the 07:45, 5 June opening air strike that destroyed roughly 200
+  Egyptian aircraft on the ground within three hours, extended that day to Jordan, Syria, and Iraq
+  for ~450 Arab aircraft destroyed by early afternoon.
+- **The war's course across all three fronts** -- Sinai (reaching the Suez Canal by 8 June, cross-
+  referencing Sharon's already-documented Abu-Ageila/Umm Katef action rather than duplicating it),
+  Jordan/Jerusalem (Jordan's 5 June shelling despite an Israeli warning, East Jerusalem's 7 June
+  capture, the West Bank's completion by 8 June), and Golan (9-10 June).
+- **The USS Liberty incident**: the 8 June attack that killed 34 US sailors and wounded 170+,
+  Israel's mistaken-identity explanation and compensation, presented alongside the enduring dispute
+  survivors and some US officials have raised about that explanation -- an unresolved question
+  rather than settled fact, per this dataset's standing treatment of comparably disputed episodes.
+- **Casualty ranges by side** and the **~250,000-325,000 Palestinians displaced from the West
+  Bank/Gaza** (commonly rounded to 300,000, termed the Naksa) -- a mass-displacement event with
+  zero prior coverage anywhere in this dataset, parallel to the Golan's own expulsion already
+  documented in its own entry.
+
+Also fixed a `related_actor_ids` gap: Yitzhak Rabin, IDF Chief of Staff who planned and directed
+the entire campaign -- including a documented 24-36 hour nervous breakdown around 23-24 May, less
+than two weeks before the war -- was missing entirely, despite being at least as central as Dayan,
+who only joined the cabinet as Defense Minister days before the war for public-confidence reasons.
+Added Rabin to the topic's `related_actor_ids` and a matching key_land_action to his own actor
+entry, which previously had no mention of 1967 at all (a gap directly analogous to the Ben-Gurion/
+Dayan one found and fixed for the Suez Crisis two rounds ago). Also added `united-nations` to
+`related_org_ids` given UNEF's withdrawal now features in the narrative.
+
+**Flagged but not added**: Levi Eshkol, Israel's actual Prime Minister throughout the war, does not
+exist anywhere in this dataset's actor roster. Left unaddressed per this session's standing
+practice of not adding unrequested actors -- worth a future round if the user wants it.
+
+Sourced via live search: israeled.org's "Nasser Closes Straits of Tiran," the US State
+Department's "The 1967 Arab-Israeli War" milestone page, Wikipedia's Operation Focus article,
+migflug's "Operation Focus: How Israel Won the Six-Day War," the Jerusalem Post's Six-Day War
+Jerusalem retrospective, HISTORY's "Six-Day War ends" page, EBSCO's "Israel Attacks the USS
+Liberty," Jewish Virtual Library's USS Liberty overview, Wikipedia's Six-Day War casualty figures,
+Origins' "The Long Shadow of the June 1967 War," We Are The Mighty's coverage of Rabin's breakdown,
+and JTA's contemporaneous coverage of Rabin's own public acknowledgment of it.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, +2 from Rabin's
+and the UN's new related_actor_ids/related_org_ids links only -- Rabin's own new key_land_action
+adds no graph edge, matching the established pattern). Both Artifacts republished; pushed as commit
+`de5d9b2`; Vercel auto-deployed and confirmed live via curl and a browser check (zero console
+errors; every cross-reference -- Dayan, Rabin, Allon, Sharon, IDF, United Nations, East Jerusalem,
+Suez Crisis, Allon Plan, 1967 Golan Heights Expulsion, Nakba, and Rabin's own back-link -- autolinks
+correctly, no wording-mismatch fix needed this round).
