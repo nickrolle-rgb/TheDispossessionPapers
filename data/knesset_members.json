@@ -37,43 +37,6 @@
     ]
   },
   {
-    "mk_id": "levi-eshkol",
-    "full_name": "Levi Eshkol",
-    "hebrew_name": "לוי אשכול",
-    "birth_name": "Levi Shkolnik",
-    "birth_country": "Russian Empire (Oratovo, Kiev Governorate, present-day Ukraine)",
-    "knesset_terms": [
-      {
-        "knesset_number": 2,
-        "party": "Mapai",
-        "political_alignment": "Left"
-      }
-    ],
-    "legislative_and_action_record": [
-      {
-        "event_id": "eshkol-land-acquisition-1953",
-        "date": "1953-03-10",
-        "category": "Legislation Vote",
-        "bill_or_action_title": "Land Acquisition (Validation of Acts and Compensation) Law, 5713-1953",
-        "vote": "For",
-        "land_impact": {
-          "spatial_region": "Nationwide (land requisitioned/occupied by the state or Jewish Agency/JNF since 1948, primarily former Arab-owned land)",
-          "estimated_hectares_affected": null,
-          "description": "As Minister of Finance (born Levi Shkolnik, 25 October 1895, in Oratovo, Kiev Governorate — later Israel's third Prime Minister, 1963-69), Eshkol's ministry sponsored the law that retroactively validated state seizure of land already occupied/requisitioned since 1948-1953 and set compensation terms, transferring much of it to state ownership or the JNF. Total area again disputed across sources — see this dataset's own Land Acquisition Law entry for Adalah's sourced 1.2-1.3 million dunam figure — left null here rather than repeating that figure without its own direct citation."
-        },
-        "citation": "VERIFIED 2026-09-01 (biographical/institutional facts; individual roll-call vote remains unconfirmed) — Eshkol's personal 'For' vote is inferred from his role as sponsoring Finance Minister, not a confirmed individual roll-call record; structurally unavailable for this Knesset per this project's own scraper findings (no per-member vote data before Knesset 16), not a research gap. Substantive law itself: Land Acquisition (Validation of Acts and Compensation) Law 5713-1953, Sefer Ha-Chukim No. 122, p. 58 (20 March 1953) — this entry previously carried the same wrong 'vol. 5, p. 155' guess already corrected in laws.json months ago and never synced here; fixed to match. Eshkol's birth date/place and his later premiership are corroborated via live search (Wikipedia's Levi Eshkol article, Britannica)."
-      }
-    ],
-    "personal_context": [
-      {
-        "title": "Born Levi Shkolnik, married three times, and died of a second heart attack while still in office",
-        "date_or_range": "1924-1969",
-        "description": "Born Levi Shkolnik, he changed his surname to something more distinctly Israeli-sounding after settling in Palestine. His first marriage, to Rivka Maharshek, ended in divorce shortly after their daughter Noa's birth in 1924. His second wife, Elisheva Kaplan, was the mother of his three daughters, Dvora, Ofra, and Tama. In 1964, by then Prime Minister, he married Miriam, a librarian 35 years his junior, with whom he had no children. He suffered a heart attack on 3 February 1969, recovered enough to return to work, then died of a second heart attack on 26 February 1969, at 73, while still in office.",
-        "citation": "VERIFIED 2026-09-02 — the birth name Levi Shkolnik, the three marriages and children, and the February 1969 heart attacks are corroborated via live search (Wikipedia's Levi Eshkol and Miriam Eshkol articles)."
-      }
-    ]
-  },
-  {
     "mk_id": "reuven-rivlin",
     "full_name": "Reuven Rivlin",
     "hebrew_name": "ראובן ריבלין",

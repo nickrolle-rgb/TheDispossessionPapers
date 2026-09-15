@@ -1921,5 +1921,87 @@
         "citation": "VERIFIED 2026-09-14 -- Barak's birth name, his Sayeret Matkal service including the Sabena and Entebbe operations, his 1991 Chief of Staff appointment and 1995 retirement as most-decorated soldier, and his 2019 Israel Democratic Party failure are corroborated via live search (Britannica's Ehud Barak entry, the Academy of Achievement's Ehud Barak profile, Wikipedia's Ehud Barak article)."
       }
     ]
+  },
+  {
+    "actor_id": "levi-eshkol",
+    "full_name": "Levi Eshkol",
+    "birth_name": "Levi Shkolnik",
+    "birth_country": "Russian Empire (Orativ, Kiev Governorate, present-day Vinnytsia Oblast, Ukraine)",
+    "life_span": {
+      "born": "1895-10-25",
+      "died": "1969-02-26"
+    },
+    "primary_affiliations": [
+      "Mapai",
+      "Israeli Labor Party (Alignment)",
+      "Jewish Agency for Palestine",
+      "Mekorot"
+    ],
+    "historical_role": "Third Prime Minister of Israel (1963-1969), previously Finance Minister (1952-1963) and founding managing director of the national water company Mekorot (1937-1951). Presided over the 1967 Six-Day War -- this dataset's own Six-Day War entry documents the war in full -- and its immediate territorial aftermath, including his government's September 1967 authorisation of Kfar Etzion, the first Israeli settlement established in the West Bank after the war.",
+    "key_land_actions": [
+      {
+        "date": "1920-09",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "Sea of Galilee area (Degania Bet)",
+        "impact_description": "One of twenty-five founders of Kibbutz Degania Bet in September 1920, the sister settlement to Degania Aleph (generally regarded as the first kibbutz), after arriving in Ottoman Palestine in 1914 as part of the Second Aliyah and serving in the Jewish Legion from 1918. Degania Bet became his permanent residence and formal home base for the rest of his life, even as his career moved into national institutions.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 1914 Second Aliyah arrival, 1918-1920 Jewish Legion service, and the September 1920 founding of Degania Bet with 25 founders are corroborated via live search (the Jewish Telegraphic Agency's 'Eshkol Was Last of Members of Second Aliyah to Hold High Office' article, Wikipedia's Degania Bet article)."
+      },
+      {
+        "date": "1937-1951",
+        "action_type": "Legal Charter",
+        "location_affected": "Mandatory/early-state Palestine (nationwide, including the Negev)",
+        "impact_description": "Began planning the national water company Mekorot from 1935, founded it in 1937, and served as its first managing director until 1951, overseeing its 1938 expansion from agricultural to residential water supply and the construction of the first water lines into the southern Negev as early as 1941 -- laying the institutional and physical infrastructure later expanded into the National Water Carrier.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 1935-1937 founding, Eshkol's role as first managing director until 1951, the 1938 agricultural-to-residential expansion, and the 1941 Negev pipeline are corroborated via live search (the Jewish Link's 'Levi Eshkol: Water Superhero' article, Wikipedia's Mekorot article)."
+      },
+      {
+        "date": "1948-1963",
+        "action_type": "Executive Action",
+        "location_affected": "Israel (nationwide)",
+        "impact_description": "Chaired the Jewish Agency's Settlement Department from 1948 to 1963, directing the settlement and land-allocation side of the mass immigrant absorption effort during Israel's first fifteen years of statehood, spanning the establishment of hundreds of new agricultural settlements and development towns on land vacated by Palestinian depopulation and flight during and after the 1948 war.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 1948-1963 Jewish Agency Settlement Department chairmanship is corroborated via live search (Britannica's Levi Eshkol article, Encyclopedia.com's Eshkol entry)."
+      },
+      {
+        "date": "1953-03-10",
+        "action_type": "Legal Charter",
+        "location_affected": "Nationwide (land requisitioned/occupied by the state or Jewish Agency/JNF since 1948, primarily former Arab-owned land)",
+        "impact_description": "As Minister of Finance, had his ministry sponsor the Land Acquisition (Validation of Acts and Compensation) Law, 5713-1953, which retroactively validated state seizure of land already occupied or requisitioned since 1948-1953 and set compensation terms, transferring much of it to state ownership or the JNF -- this dataset's own Land Acquisition Law entry covers the law's terms and disputed total-area figures (Adalah's sourced 1.2-1.3 million dunam estimate) in full.",
+        "primary_source_citation": "VERIFIED 2026-09-01, reconfirmed 2026-09-15 -- the law's title, its 10 March 1953 date, its retroactive-validation and compensation terms, and Eshkol's sponsoring role as Finance Minister are corroborated via its own official citation (Sefer Ha-Chukim No. 122, p. 58, 20 March 1953) and this dataset's own already-verified Land Acquisition Law entry. Eshkol's own individual roll-call vote is not independently confirmable -- per this project's own Knesset scraper findings, no per-member vote data exists before Knesset 16 -- so his support is inferred from his role as the law's sponsoring minister, not a confirmed personal vote record."
+      },
+      {
+        "date": "1952-1964",
+        "action_type": "Executive Action",
+        "location_affected": "Israel (nationwide, especially the Jordan Valley/Sea of Galilee to the Negev)",
+        "impact_description": "As Finance Minister under Ben-Gurion, directed the funding and development programme culminating in the National Water Carrier, which began pumping water from the Sea of Galilee toward the central and southern regions, including the Negev, on its completion in 1964 -- infrastructure this dataset's own record treats as inseparable from the land-settlement expansion it was built to support. His role is commemorated on Israel's old five-shekel banknote, which paired his portrait with an image of the Carrier.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 1952-1963 Finance Ministry tenure, the National Water Carrier's 1964 completion, and the five-shekel-note commemoration are corroborated via live search (nirtopper.com's 'Once, Water Was Pumped Up; Today, It Flows in Reverse,' the Jewish Link's 'Levi Eshkol: Water Superhero' article)."
+      },
+      {
+        "date": "1967-06-01",
+        "action_type": "Political Act",
+        "location_affected": "Israel (nationwide)",
+        "impact_description": "As Prime Minister and, since 1963, his own Defense Minister, gave up the Defense portfolio under sustained public and political pressure on 1 June 1967, four days before the Six-Day War began, appointing Moshe Dayan defense minister in a national-unity government while extracting a promise from Dayan not to approve operations beyond the cabinet's own sanctioned war plan -- this dataset's own Six-Day War entry covers the war's course and outcome in full.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- the 1 June 1967 cabinet decision, Dayan's appointment as Defense Minister in a national-unity government, and Eshkol's extracted promise limiting Dayan to the cabinet-sanctioned war plan are corroborated via live search (israeled.org's 'Levi Eshkol Appoints Moshe Dayan as Defense Minister' article), consistent with this dataset's own already-verified Six-Day War entry."
+      },
+      {
+        "date": "1967-09",
+        "action_type": "Land Settlement Operation",
+        "location_affected": "Kfar Etzion, West Bank",
+        "impact_description": "Authorised the resettlement of Kfar Etzion, south of Bethlehem, re-establishing a kibbutz lost to Jordanian forces in the 1948 war -- the first Israeli civilian settlement established in the West Bank after the Six-Day War -- roughly a week after his own Foreign Ministry's legal counsel, Theodor Meron, delivered a top-secret opinion concluding that civilian settlement in the newly-occupied territories contravened Article 49(6) of the Fourth Geneva Convention and that only temporary military outposts, not permanent civilian ones, were legally defensible. Eshkol had the settlement established through Nahal, the army's own agricultural-settlement branch, formally sidestepping his own legal counsel's civilian-settlement warning; settlers arrived by the end of September 1967.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- Kfar Etzion's September 1967 re-establishment as the first West Bank settlement, the Nahal mechanism used to establish it, and Theodor Meron's top-secret Fourth Geneva Convention opinion (declassified in 2006) delivered roughly a week beforehand are corroborated via live search (Wikipedia's Kfar Etzion article, Mondoweiss's 'Theodor Meron's '67 memo provided legal rationale for settlements')."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "The only Israeli Prime Minister to marry while in office",
+        "date_or_range": "1922-1969",
+        "description": "Born Levi Shkolnik, he changed his surname to something more distinctly Israeli-sounding after settling in Palestine. Married three times: his first marriage, to Rivka Maharshak in 1922, produced a daughter, Noa, born in 1924, before ending in divorce in 1927. He married his second wife, Elisheva Kaplan, in 1930; they had two more daughters, Dvora, Tama, and Ofra, before Elisheva's death in 1959. In March 1964, while serving as Prime Minister, he married Miriam Zelikowitz, a librarian more than three decades his junior, in a ceremony conducted by Jerusalem's Chief Rabbi -- making him the only Israeli premier to marry while in office. He and Miriam had no children together.",
+        "citation": "VERIFIED 2026-09-15 -- the three marriages, Noa's 1924 birth and the first marriage's 1927 divorce, the second marriage's three daughters and Elisheva's 1959 death, and the March 1964 marriage to Miriam Zelikowitz are corroborated via live search (Wikipedia's Levi Eshkol and Miriam Eshkol articles, Haaretz's Miriam Eshkol obituary), consistent with this dataset's own prior verification of the same facts (VERIFIED 2026-09-02) when they lived in a now-superseded Knesset-member stub entry for Eshkol, folded into this fuller actor entry."
+      },
+      {
+        "title": "The first Israeli Prime Minister to die in office",
+        "date_or_range": "1969-02-03 to 1969-02-26",
+        "description": "Suffered a heart attack on 3 February 1969, recovered enough to return to work, then died of a second heart attack at his official residence on the morning of 26 February 1969, aged 73 -- the first Israeli Prime Minister to die in office. Yigal Allon served as acting Prime Minister in the immediate aftermath before Golda Meir was chosen as his permanent successor.",
+        "citation": "VERIFIED 2026-09-15 -- the 3 February 1969 first heart attack, the 26 February 1969 fatal second one, his age, and Yigal Allon's brief tenure as acting Prime Minister before Golda Meir's succession are corroborated via live search (the Jewish Telegraphic Agency's 'Levi Eshkol, Israel's Third Premier, Dead at 73; Allon Named to Serve Temporarily' article, Wikipedia's Levi Eshkol article), consistent with this dataset's own prior verification of the same facts (VERIFIED 2026-09-02) when they lived in a now-superseded Knesset-member stub entry for Eshkol, folded into this fuller actor entry."
+      }
+    ]
   }
 ]
