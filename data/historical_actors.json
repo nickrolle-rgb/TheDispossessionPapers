@@ -621,6 +621,13 @@
         "location_affected": "Tel Aviv; effect nationwide",
         "impact_description": "Proclaimed the Israeli Declaration of Independence at 5pm on 14 May 1948 at the Tel Aviv Museum, on behalf of the Provisional Government of Israel, after the People's Council (Moetzet HaAm, the renamed Provisional State Council) voted to accept the final text — a text Ben-Gurion himself principally authored — timed to coincide with the British Mandate's termination and made in accordance with UN Resolution 181. All 37 members of the Council signed it. The founding legal instrument for the state whose land and property law (Absentees' Property Law, Land Acquisition Law, etc.) is tracked elsewhere in this dataset.",
         "primary_source_citation": "VERIFIED 2026-09-01 — the 5pm Tel Aviv Museum ceremony, Ben-Gurion's principal authorship, the 37-signatory count, and the Resolution 181 framing are corroborated via live search (Times of Israel, Wikipedia's Israeli Declaration of Independence article, Israel State Archives). Primary document: Israeli Declaration of Independence, 14 May 1948, Israel State Archives, not independently re-read in full this pass."
+      },
+      {
+        "date": "1956-10-29",
+        "action_type": "Executive Action",
+        "location_affected": "Sinai Peninsula; Gaza Strip",
+        "impact_description": "As Prime Minister, personally signed the secret Sevres Protocol with France and Britain on 24 October 1956, agreeing Israel would invade the Sinai first to give the two European powers a pretext to intervene against Egypt over the nationalised Suez Canal, then ordered the resulting invasion, Operation Kadesh, on 29 October -- this dataset's own Suez Crisis entry covers the war, its collusion, and its outcome in full. Ben-Gurion initially resisted international pressure to withdraw, briefly asserting Israeli sovereignty claims over the Sinai and Sharm el-Sheikh before US President Eisenhower's threat to withhold American financial support forced a full Israeli withdrawal from Sinai and Gaza, completed by March 1957.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- Ben-Gurion's Sevres Protocol signature, the 29 October 1956 invasion order, his initial resistance to withdrawal, and the Eisenhower pressure that ultimately forced it are corroborated via live search (Encyclopedia.com's Sevres Protocol entry, the Christian Science Monitor's 1956-fallout retrospective), consistent with this dataset's own already-verified Suez Crisis entry."
       }
     ],
     "personal_context": [
@@ -940,6 +947,13 @@
     ],
     "historical_role": "Haganah/Palmach fighter who rose to IDF Chief of Staff (1953-58) and later Defense Minister (1967, 1969-74). As Defense Minister during the June 1967 War, oversaw the Israeli capture of the West Bank, Gaza, Sinai, and Golan Heights, the single largest territorial change since 1948 and the direct precondition for the post-1967 settlement enterprise this dataset otherwise tracks through the Knesset schema.",
     "key_land_actions": [
+      {
+        "date": "1956-10-29",
+        "action_type": "Executive Action",
+        "location_affected": "Sinai Peninsula; Gaza Strip",
+        "impact_description": "As IDF Chief of Staff, planned and directed Operation Kadesh, Israel's invasion of the Sinai Peninsula launched 29 October 1956 under the secret Sevres Protocol agreed with France and Britain -- this dataset's own Suez Crisis entry covers the war and its collusion in full. Israeli forces under Dayan's command, including Ariel Sharon's 202nd Paratrooper Brigade at the Mitla Pass, occupied the entire Sinai Peninsula and the Gaza Strip within a week, before international pressure forced a full withdrawal by March 1957.",
+        "primary_source_citation": "VERIFIED 2026-09-15 -- Dayan's role as IDF Chief of Staff directing Operation Kadesh and the campaign's week-long occupation of Sinai and Gaza are corroborated via live search (Wikipedia's Operation Kadesh article), consistent with this dataset's own already-verified Suez Crisis and Ariel Sharon entries."
+      },
       {
         "date": "1967-06-05",
         "action_type": "Executive Action",
