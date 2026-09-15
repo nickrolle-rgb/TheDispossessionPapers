@@ -6564,3 +6564,51 @@ adds no graph edge, matching the established pattern). Both Artifacts republishe
 errors; every cross-reference -- Dayan, Rabin, Allon, Sharon, IDF, United Nations, East Jerusalem,
 Suez Crisis, Allon Plan, 1967 Golan Heights Expulsion, Nakba, and Rabin's own back-link -- autolinks
 correctly, no wording-mismatch fix needed this round).
+
+## Round: Levi Eshkol's own actor entry -- found and fixed a real duplicate (2026-09-15)
+
+Requested after last round flagged Eshkol's total absence from `historical_actors.json` despite
+being Israel's actual Prime Minister throughout the Six-Day War. Researched and wrote a full new
+entry covering his whole arc: co-founding Kibbutz Degania Bet (September 1920, one of 25 founders,
+after 1914 Second Aliyah arrival and 1918-1920 Jewish Legion service); founding and directing the
+national water company Mekorot (1937-1951, including the first Negev water lines in 1941); chairing
+the Jewish Agency's Settlement Department (1948-1963); his Finance Ministry tenure and the National
+Water Carrier's 1964 completion (commemorated alongside his portrait on Israel's old five-shekel
+note); his 1 June 1967 transfer of the Defense portfolio to Dayan four days before the Six-Day War,
+with an extracted promise limiting Dayan to the cabinet-sanctioned war plan; and his government's
+September 1967 authorisation of Kfar Etzion, the first Israeli settlement in the West Bank --
+approved roughly a week after his own Foreign Ministry legal counsel, Theodor Meron, delivered a
+top-secret opinion (declassified 2006) concluding civilian settlement violated Article 49(6) of the
+Fourth Geneva Convention, sidestepped via the army's Nahal settlement mechanism. Personal context
+covers his three marriages (the only Israeli PM to marry while in office) and his death in office.
+
+**Running the collision checker surfaced a real duplicate**, caught before publishing rather than
+after: Eshkol already existed as a thin `knesset_members.json` stub from an early-session ledger
+sweep (2026-09-01), holding a single 1953 land-law sponsorship entry and a compressed
+personal_context blob. Rather than leave two colliding "Levi Eshkol" nodes -- which would have made
+any future prose mention of his name an ambiguous autolink target -- consolidated into one
+canonical entry per this dataset's standing discipline: merged the stub's already-verified facts
+that the new entry's first draft had gotten wrong or omitted (a second, earlier heart attack on 3
+February 1969; a fourth daughter, Noa, from his first marriage; the 1953 Land Acquisition Law
+sponsorship itself) into the fuller actor entry, then deleted the superseded stub. Also added
+Eshkol to the Six-Day War topic's own `related_actor_ids`, previously missing its actual wartime
+Prime Minister.
+
+**New autolink bug found and flagged, not fixed inline**: "Elisheva Kaplan" (Eshkol's second wife)
+wrongly autolinks to Eliezer Kaplan's unrelated MK page, because the engine's surname-uniqueness
+check fires on any bare occurrence of a globally-unique surname regardless of what first name
+actually precedes it in that sentence -- and unlike earlier same-surname bugs this session (Regev,
+Bush), it can't be worked around by writing the name in full, since "Elisheva Kaplan" already is
+the full name and still triggers it. Spawned as `task_607cfa8f`, noting it shares root cause with
+the already-flagged `task_5202f465` but is a distinct, unworkaroundable reproduction.
+
+Verification: `scripts/collision_check.py` clean (after the stub removal); `node --check`/`new
+Function()` syntax verification on both builds; `wiki_harness.js` and `prototype_harness.js` both
+pass; Python build and live `netBuildGraphData()` produce byte-for-byte identical edge sets
+(539/539 -- net zero change, since the new Six-Day War relation edge exactly offset the removed
+stub's own party-membership edge). Both Artifacts republished; pushed as commit `de03816`; Vercel
+auto-deployed and confirmed live via curl and a browser check (zero console errors; every
+cross-reference -- Mapai, Israeli Labor Party, Jewish Agency for Palestine, Prime Minister of
+Israel, Six-Day War, Kibbutz, Ottoman Palestine, Second Aliyah, the Land Acquisition Law, JNF,
+Ben-Gurion, Dayan, Yigal Allon, Golda Meir -- autolinks correctly except the newly-flagged Kaplan
+collision).
