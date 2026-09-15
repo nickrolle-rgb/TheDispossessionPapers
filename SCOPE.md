@@ -6459,3 +6459,47 @@ and live `netBuildGraphData()` produce byte-for-byte identical edge sets (532/53
 Sadat related_actor_ids link only). Both Artifacts republished; pushed as commit `2c2420b`; Vercel
 auto-deployed and confirmed live via curl and a browser check (zero console errors; Begin, Sadat,
 and Carter all correctly listed under "Related," no wording-mismatch fix needed this round).
+
+## Round: 1956 Suez Crisis -- a previously entirely undocumented war (2026-09-15)
+
+Checked the dataset for existing coverage first: found none. The Suez Crisis had zero dedicated
+topic entry despite being referenced by name in Ariel Sharon's own Mitla Pass action ("Suez
+Crisis/Sinai Campaign"), and neither David Ben-Gurion's nor Moshe Dayan's own actor entries
+mentioned it at all -- a genuine, clean gap rather than an enrichment target.
+
+Added a full new topic entry, `suez-crisis-1956` (topic_type "Armed Conflict"): Nasser's 26 July
+1956 Suez Canal nationalisation and its link to the withdrawn Aswan Dam financing; the secret
+Sevres Protocol collusion between Israel, France, and Britain (22-24 October 1956, signed by
+Ben-Gurion, French Foreign Minister Christian Pineau, and British official Patrick Dean, later
+destroyed by Eden to hide the collusion); Israel's 29 October 1956 Operation Kadesh invasion under
+Dayan's command, cross-referencing Sharon's own already-documented Mitla Pass action rather than
+duplicating it; the Khan Yunis (3 November, 275-415 deaths depending on source) and Rafah (12
+November, ~111 deaths including 12 UNRWA staff) mass-casualty incidents during Israel's Gaza
+occupation; the war's end through joint US-Soviet pressure via the UN General Assembly's Uniting
+for Peace mechanism (the Security Council being deadlocked by British/French vetoes) and Lester
+Pearson's UNEF proposal; Israel's March 1957 withdrawal in exchange for the Straits of Tiran
+guarantee and UNEF's deployment -- the same arrangement this dataset's own Six-Day War entry
+already records Egypt unilaterally ending in 1967; and the war's political aftermath (Nasser's
+pan-Arab prestige despite battlefield defeat, Eden's 9 January 1957 resignation, and the war's
+widely-recognised role marking the end of British/French great-power status in the Middle East).
+
+Also added matching key_land_actions to David Ben-Gurion's and Moshe Dayan's own actor entries --
+both previously silent on the war entirely -- mirroring how this dataset already documents the
+Six-Day War and Yom Kippur War in the relevant actors' own entries alongside the war's own topic
+entry, rather than leaving the war's central Israeli decision-makers unlinked to it.
+
+Sourced via live search: the Jerusalem Post's Suez Crisis retrospective, Encyclopedia.com's and
+Wikipedia's Sevres Protocol/Protocol of Sevres articles, Wikipedia's Operation Kadesh, Khan Yunis
+massacre, 1956 Rafah massacre, Suez Crisis, and United Nations Emergency Force articles, the
+Christian Science Monitor's 1956-fallout retrospective, the Nobel Prize's own Lester Pearson
+biographical page, and Britannica's Anthony Eden entry.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (537/537, +5 from the new
+topic's three related_actor_ids and two related_org_ids -- Ben-Gurion's and Dayan's new actions add
+no new graph edges, matching the established pattern from Sharon's own military-career additions).
+Both Artifacts republished; pushed as commit `16a0c03`; Vercel auto-deployed and confirmed live via
+curl and a browser check (zero console errors; every cross-reference -- Ben-Gurion, Dayan, Sharon,
+IDF, UN General Assembly, Six-Day War, Yom Kippur War, and Ben-Gurion's own back-link to the Suez
+Crisis entry -- autolinks correctly, no wording-mismatch fix needed this round).
