@@ -6723,3 +6723,35 @@ pure content enrichment). Both Artifacts republished; pushed as commit `044caca`
 auto-deployed and confirmed live via curl and a browser check (zero console errors; a first check
 hit a stale cached tab load, a hard reload confirmed the correct, current build with no other
 issues -- consistent with the pattern seen a few rounds back on the same live site).
+
+## Round: Sharm el-Sheikh Memorandum (Wye II) -- safe passage and prisoner-release outcomes (2026-09-15)
+
+The existing `sharm-el-sheikh-memorandum-1999` entry (VERIFIED 2026-09-14, an already-thorough
+round) compressed the safe-passage commitment into one clause and stated the 350-prisoner release
+figure without its actual implementation outcome. Two targeted additions:
+
+1. **The prisoner release's real numbers against the Memorandum's own schedule**: 200 prisoners
+   promised by 5 September 1999 and 150 by 8 October 1999, against what actually happened -- 199
+   released on 9 September and 151 on 15 October, close to but not exactly matching either the
+   dates or the figures.
+2. **The safe-passage routes' actual, divergent fates**: the Southern Route opened on schedule on
+   1 October 1999, formalised by a follow-on 5 October 1999 Safe Passage Protocol establishing its
+   Erez-Tarqumiya alignment (opened to movement 25 October 1999) -- while the Northern Route to
+   Ramallah, whose location the two sides had committed to determine by 5 October 1999, was never
+   built at all. Added a significance note: the Southern Route operated for roughly a year before
+   Israel closed it amid the Second Intifada's September-October 2000 outbreak, and -- unlike the
+   Gaza seaport this entry already documents being physically destroyed -- no successor route has
+   ever reopened since, leaving the West Bank and Gaza Strip without any direct land corridor for
+   more than a quarter-century.
+
+Sourced via live search: the Palestinian Centre for Human Rights' "Prisoners Released" and
+"Release of Palestinian Prisoners" pages, the Avalon Project's Sharm el-Sheikh Memorandum text,
+ReliefWeb's Safe Passage Protocol text, B'Tselem's "Divide and Rule" report, and +972 Magazine's
+"What would a safe passage between W. Bank, Gaza look like?" article.
+
+Verification: `scripts/collision_check.py` clean; `node --check`/`new Function()` syntax
+verification on both builds; `wiki_harness.js` and `prototype_harness.js` both pass; Python build
+and live `netBuildGraphData()` produce byte-for-byte identical edge sets (539/539, unchanged --
+pure content enrichment). Both Artifacts republished; pushed as commit `e02f378`; Vercel
+auto-deployed and confirmed live via curl and a browser check (zero console errors; live check
+succeeded on the first hard reload this round, no stale-cache retry needed).
