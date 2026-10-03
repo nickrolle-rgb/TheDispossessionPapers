@@ -6823,3 +6823,25 @@ new pages resolves; no stray "Israel" false link in Eilat's text). The JS-versus
 could not be done. The harnesses would need to be rewritten before the next full-pipeline round.
 
 Pushed as `e143eb0`; Vercel deployed and confirmed live.
+
+## Tooling: verification harnesses rebuilt and made durable (2026-10-04)
+
+The Mazar round had to skip the Node harnesses and the JS-vs-Python edge diff because the session
+scratchpad that held them had been reset. Fixed properly rather than patched around:
+
+- **Recovered, not rewritten.** `wiki_harness.js` and `prototype_harness.js` were reconstructed by
+  replaying their original Write and Edit calls from the old session transcript. One late edit (the
+  edge dump) had not survived, so it was re-added. Validated by running the reconstructed harness
+  against older commits: it reproduces the edge counts recorded in earlier rounds (537 at `2f7c0fd`,
+  539 at `164c074`).
+- **Moved somewhere durable**: `scripts/harness/`, with paths relative to the project root, and a README.
+- **One command for the whole routine**: `python scripts/verify_all.py` (add `--no-write` to skip the two
+  steps that rewrite files). It runs data parse, embed, collision check, both syntax checks, both
+  harnesses, the prototype rebuild, the edge-parity diff, the banned-phrase grep and a git status, and
+  stops red on any failure. Negative-tested: deliberately breaking an org reference made it fail on the
+  collision check, and restoring the file made it pass again.
+- **Mazar round's gap closed**: the full pipeline now passes on the current tree, including EDGE PARITY:
+  IDENTICAL (541 edges), the one check that round could not run.
+- **One honest quirk**: `intro overlay in body.children` prints `false`. It does so on old commits too, so it
+  is a DOM-stub artifact, not a regression; whitelisted by name in `verify_all.py` and documented in the
+  README rather than silently ignored.
