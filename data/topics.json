@@ -721,7 +721,8 @@
     "summary": "Captured by Israel from Jordan on 7 June 1967, the third day of the Six-Day War. On 27-28 June 1967, Israel unilaterally expanded Jerusalem's municipal boundaries to include roughly 70 square kilometres of former Jordanian and West Bank territory — the new line deliberately excluded densely populated Palestinian areas to preserve a Jewish demographic majority within the city — and extended Israeli law and administration over it. The Knesset's 1980 Jerusalem Law (Basic Law: Jerusalem, Capital of Israel, 30 July 1980) declared a 'complete and united' Jerusalem Israel's capital; Israel's own Supreme Court later interpreted the law as an effective annexation, though the law itself never uses that word.",
     "significance": "The single most contested piece of ground in this dataset's post-1967 record — unlike the West Bank or Gaza, treated by Israel as annexed and administratively unified with the rest of the city rather than occupied territory awaiting negotiation, a status Resolution 478 declared 'null and void' and which no other UN member state recognises. Every peace framework since (Camp David 2000, the Clinton Parameters) has treated East Jerusalem's status as one of the hardest unresolved questions precisely because of this unilateral 1967-1980 legal history.",
     "related_actor_ids": [
-      "moshe-dayan"
+      "moshe-dayan",
+      "benjamin-mazar"
     ],
     "related_org_ids": [
       "idf",
@@ -1623,7 +1624,9 @@
     "date_or_range": "1990s to present",
     "summary": "An East Jerusalem neighbourhood south of the Old City where the 'City of David' archaeological and tourist site has been operated since the 1990s by Elad (also known as the Ir David Foundation), an Israeli settler organisation that has driven a sustained campaign of home demolitions and evictions across several of Silwan's sub-neighbourhoods, most intensively Batn al-Hawa and al-Bustan. Eviction and demolition orders in Batn al-Hawa have repeatedly been issued in Elad's favour on the same pre-1948 Jewish-ownership-claim basis at work in Sheikh Jarrah. Human rights organisations report over 2,000 Silwan residents currently at risk of forced displacement -- which, if carried out, B'Tselem describes as among the largest single waves of expulsion in East Jerusalem since 1967. Of 587 Palestinians displaced by demolitions in East Jerusalem since 7 October 2023, roughly a quarter were displaced during the Israel-Iran war of March-April 2026 alone, according to Human Rights Watch's June 2026 reporting.",
     "significance": "Silwan pairs the two mechanisms this dataset documents separately elsewhere -- the pre-1948-ownership eviction litigation seen in Sheikh Jarrah, and demolitions for lack of permit -- with a third, distinctive element: land-use planning explicitly organised around archaeological tourism, using the City of David excavation project as the vehicle for territorial and demographic change in a way the other two mechanisms do not. B'Tselem has characterised the sustained pattern in Silwan as ethnic cleansing -- a serious characterisation from a well-documented Israeli human rights organisation, presented here as B'Tselem's own assessment rather than an adjudicated legal finding, consistent with how this dataset treats comparably serious characterisations elsewhere (the Al-Shifa Hospital sieges' 'war crimes' finding).",
-    "related_actor_ids": [],
+    "related_actor_ids": [
+      "eilat-mazar"
+    ],
     "related_org_ids": [],
     "citation": "VERIFIED 2026-09-10 -- Elad/Ir David Foundation's operation of the City of David site since the 1990s, the focus on Batn al-Hawa and al-Bustan, the 2,000+-residents-at-risk figure, and B'Tselem's ethnic-cleansing characterisation are corroborated via live search (B'Tselem's own Silwan reporting, the Institute for Palestine Studies, Arab News, NAD's media brief). The 587-displaced-since-7-October-2023 and roughly-one-quarter-during-the-March-April-2026-Israel-Iran-war figures are corroborated via live search to Human Rights Watch's June 2026 report specifically, not independently cross-checked against a second source this pass."
   },

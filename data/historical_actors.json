@@ -2003,5 +2003,83 @@
         "citation": "VERIFIED 2026-09-15 -- the 3 February 1969 first heart attack, the 26 February 1969 fatal second one, his age, and Yigal Allon's brief tenure as acting Prime Minister before Golda Meir's succession are corroborated via live search (the Jewish Telegraphic Agency's 'Levi Eshkol, Israel's Third Premier, Dead at 73; Allon Named to Serve Temporarily' article, Wikipedia's Levi Eshkol article), consistent with this dataset's own prior verification of the same facts (VERIFIED 2026-09-02) when they lived in a now-superseded Knesset-member stub entry for Eshkol, folded into this fuller actor entry."
       }
     ]
+  },
+  {
+    "actor_id": "benjamin-mazar",
+    "full_name": "Benjamin Mazar",
+    "birth_name": "Binyamin Zeev Maisler",
+    "birth_country": "Russian Empire (Ciechanowiec, Grodno Governorate, present-day Poland)",
+    "life_span": {
+      "born": "1906-06-28",
+      "died": "1995-09-09"
+    },
+    "primary_affiliations": [
+      "Hebrew University of Jerusalem",
+      "Israel Exploration Society"
+    ],
+    "historical_role": "Founding figure of Israeli archaeology and Hebrew University president (1953-1961), who directed the 1968-1978 excavations immediately south and southwest of the Temple Mount/Haram al-Sharif in East Jerusalem, captured in 1967 -- the first major excavation of the occupied Old City's most contested ground, and the start of the archaeology-as-territorial-claim tradition this dataset's own Silwan entry documents in its present form. His granddaughter Eilat Mazar, who has her own entry here, carried the same excavation tradition into the City of David and the Ophel.",
+    "key_land_actions": [
+      {
+        "date": "1936",
+        "action_type": "Executive Action",
+        "location_affected": "Beth She'arim, Lower Galilee",
+        "impact_description": "Began excavating Beth She'arim in 1936, described as the first archaeological excavation organised by a Jewish institution, uncovering second-to-fourth-century CE catacombs; in 1937 he revealed a system of tombs belonging to Himyarite Jews. Part of the pre-state project of establishing a Jewish scholarly claim to the land's antiquities that later shaped how archaeology was used after 1967.",
+        "primary_source_citation": "VERIFIED 2026-10-04 -- the 1936 Beth She'arim start, its description as the first excavation organised by a Jewish institution, and the 1937 Himyarite tombs are corroborated via live search (Wikipedia's Benjamin Mazar article)."
+      },
+      {
+        "date": "1968-1978",
+        "action_type": "Executive Action",
+        "location_affected": "South and southwest of the Temple Mount/Haram al-Sharif (the Ophel), East Jerusalem",
+        "impact_description": "Directed a decade-long excavation immediately south and southwest of the Temple Mount beginning in 1968, a year after Israel captured East Jerusalem from Jordan -- this dataset's own East Jerusalem entry documents the capture and annexation -- uncovering remains from the Iron Age through the Second Temple period and into Jerusalem's Islamic period; sources give the excavation's end as 1977 or 1978. UNESCO's 15th General Conference condemned Israeli archaeological excavations in the Old City in 1968, affirming Jerusalem's status as an occupied city and citing the 1954 Hague Convention on cultural property in armed conflict, and the Islamic Waqf that administers the compound has long opposed excavation there as desecration; the Mazar dig nonetheless ran for the following decade.",
+        "primary_source_citation": "VERIFIED 2026-10-04 -- the 1968 start and 1977/1978 end (sources differ), the south/southwest-of-the-Temple-Mount location, and the Iron Age through Islamic-period finds are corroborated via live search (Wikipedia's Benjamin Mazar article, the Biblical Archaeology Society library's biographical entry). The 1968 UNESCO General Conference condemnation, its 'occupied city' language and 1954 Hague Convention reference, and the Waqf's long-standing objection to excavation are corroborated via live search (the Institute for Palestine Studies' 'UNESCO and Jerusalem' article and the Armstrong Institute's coverage of UNESCO's position)."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "Hebrew University president, and the patriarch of a family of archaeologists",
+        "date_or_range": "1906-1995",
+        "description": "Born Binyamin Zeev Maisler, he took a doctorate at Giessen, emigrated to Mandatory Palestine in 1929, joined the Hebrew University faculty in 1943, became its rector in 1952 and served as president from 1953 to 1961, presiding over a university whose original Mount Scopus campus had become an enclave inside Jordanian-held Jerusalem after 1948. He chaired the Israel Exploration Society for decades, founded the Archaeological Council of Israel, won the 1968 Israel Prize in Jewish studies, and was brother-in-law of Israel's second president, Yitzhak Ben-Zvi. His nephew Amihai Mazar is also a prominent archaeologist, and his granddaughter Eilat Mazar continued his Temple Mount-adjacent work. He died on 9 September 1995, aged 89.",
+        "citation": "VERIFIED 2026-10-04 -- the birth name and dates, 1929 emigration, 1943 faculty appointment, 1952 rectorship and 1953-1961 presidency, Mount Scopus enclave context, Israel Exploration Society and Archaeological Council roles, 1968 Israel Prize, the Ben-Zvi brother-in-law relationship, and the Amihai and Eilat Mazar family ties are corroborated via live search (Wikipedia's Benjamin Mazar article, the Hebrew University Institute of Archaeology's biographical page)."
+      }
+    ]
+  },
+  {
+    "actor_id": "eilat-mazar",
+    "full_name": "Eilat Mazar",
+    "birth_name": "Eilat Mazar",
+    "birth_country": "Israel",
+    "life_span": {
+      "born": "1956-09-10",
+      "died": "2021-05-25"
+    },
+    "primary_affiliations": [
+      "Hebrew University of Jerusalem",
+      "Shalem Center (Institute of Archaeology)"
+    ],
+    "historical_role": "Third-generation Israeli archaeologist and granddaughter of Benjamin Mazar, who has his own entry here. Directed the 2005-2008 City of David excavation in Silwan, East Jerusalem, where she announced the Large Stone Structure as a possible palace of King David, and returned to the Ophel south of the Temple Mount in 2009 -- excavations on ground international bodies treat as occupied territory, and whose biblical-narrative framing critics argue serves present-day territorial claims.",
+    "key_land_actions": [
+      {
+        "date": "2005-08-04",
+        "action_type": "Executive Action",
+        "location_affected": "City of David / Silwan, East Jerusalem",
+        "impact_description": "Announced on 4 August 2005 that her excavation in the City of David had uncovered a Large Stone Structure she identified as possibly the palace of King David. The dig was sponsored by the Shalem Center and carried out on land owned by the Ir David Foundation -- the settler organisation also known as Elad, which this dataset's own Silwan entry documents driving home demolitions and evictions in the surrounding neighbourhood. Israel Finkelstein and other Tel Aviv University archaeologists rejected the identification, arguing the biblical text rather than archaeology drove the dig and proposing a Jebusite or other date, while Amihai Mazar and Hebrew University colleagues defended her work. Emek Shaveh, an Israeli NGO campaigning against the politicisation of archaeology, argues that most archaeologists date the structure to earlier or later periods, and that Elad's funding of excavations at the site -- routed through the Israel Antiquities Authority -- ties the dig to the group's residential and tourism agenda in Silwan; this dataset records that as the NGO's characterisation, not a settled finding.",
+        "primary_source_citation": "VERIFIED 2026-10-04 -- the 4 August 2005 announcement, the Large Stone Structure's David's-palace identification, the Shalem Center sponsorship, Ir David Foundation land ownership, Finkelstein's critique and Amihai Mazar's defence are corroborated via live search (Wikipedia's Eilat Mazar article, the Biblical Archaeology Society's 'Did I Find King David's Palace?'). Emek Shaveh's critique of the identification and of Elad's funding channel are corroborated via live search (Emek Shaveh's 'The Debate Over King David's Palace' and its City of David visitor materials), attributed to that organisation."
+      },
+      {
+        "date": "2009-2013",
+        "action_type": "Executive Action",
+        "location_affected": "Ophel, south of the Temple Mount/Haram al-Sharif, East Jerusalem",
+        "impact_description": "Returned to the Ophel in 2009 -- the same ground her grandfather Benjamin Mazar excavated from 1968 -- and directed further seasons in 2012 and 2013. The work included the September 2013 announcement of the Ophel Treasure, a hoard of 36 gold coins and a gold medallion engraved with a menorah, shofar and Torah scroll, dated to the early seventh century CE at the end of the Byzantine period. The Ophel lies in East Jerusalem, which many international bodies treat as occupied territory, making excavation there legally and politically contested regardless of the finds.",
+        "primary_source_citation": "VERIFIED 2026-10-04 -- the 2009 return to the Ophel, the later seasons, and the September 2013 Ophel Treasure announcement (36 gold coins, menorah medallion, early seventh-century date) are corroborated via live search (Wikipedia's Ophel Treasure and Eilat Mazar articles, the Biblical Archaeology Society's 'The Ophel Treasure'); the occupied-territory framing is from the Biblical Archaeology Society's own milestone coverage."
+      }
+    ],
+    "personal_context": [
+      {
+        "title": "A third-generation archaeologist, trained at the Hebrew University",
+        "date_or_range": "1956-2021",
+        "description": "Born 10 September 1956, the granddaughter of Benjamin Mazar, she took her bachelor's degree at the Hebrew University and a PhD in 1997 with a thesis on Phoenician culture based on the Achziv excavations, and worked as a senior fellow at the Shalem Center, whose Institute of Archaeology she headed. She died on 25 May 2021, aged 64, after a long illness.",
+        "citation": "VERIFIED 2026-10-04 -- the birth and death dates, degrees, 1997 Achziv thesis, Shalem Center roles, and relationship to Benjamin Mazar are corroborated via live search (Wikipedia's Eilat Mazar article, the American Friends of the Hebrew University's obituary notice)."
+      }
+    ]
   }
 ]
