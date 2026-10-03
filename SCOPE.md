@@ -6788,3 +6788,38 @@ did not auto-generate graph edges, consistent with the Allon Plan round's findin
 text matches don't create edges the way law/org matches do). Both Artifacts republished; pushed as
 commit `31365a2`; Vercel auto-deployed and confirmed live via curl and a browser check (zero
 console errors; both Sharm el-Sheikh Memorandum cross-references autolink correctly).
+
+## Round: Benjamin Mazar and Eilat Mazar as actor entries (2026-10-04)
+
+Asked "should we add Benjamin Mazar?" and then "perhaps his granddaughter Eilat?" -- both fit the
+archaeology-as-territorial-claim thread this dataset already carries (Silwan/City of David/Elad,
+East Jerusalem, the Judea and Samaria Heritage Authority Bill), and neither existed anywhere in the
+data. Added both to `historical_actors.json`.
+
+- **Benjamin Mazar (1906-1995)**: born Binyamin Zeev Maisler; Hebrew University rector (1952) and
+  president (1953-1961); began excavating Beth She'arim in 1936 (the first excavation organised by a
+  Jewish institution); directed the 1968-1978 dig south and southwest of the Temple Mount in East
+  Jerusalem, captured a year earlier (sources give the end as 1977 or 1978). Recorded alongside
+  UNESCO's 1968 General Conference condemnation of Israeli excavations in the Old City (affirming
+  Jerusalem as an occupied city, citing the 1954 Hague Convention) and the Waqf's long-standing
+  objection. I did not attribute an Israeli counter-position because I had no source for one.
+- **Eilat Mazar (1956-2021)**: announced the Large Stone Structure as a possible palace of King
+  David in Silwan on 4 August 2005 (sponsored by the Shalem Center, on land owned by the Ir David
+  Foundation, i.e. Elad); returned to the Ophel in 2009-2013 including the 2013 Ophel Treasure.
+  Finkelstein's methodological critique and Emek Shaveh's argument about Elad's funding channel are
+  attributed to those sources, not adopted as findings, and I did not claim she worked for Elad.
+
+Both entries cross-link: `silwan` gains `eilat-mazar` and `east-jerusalem` gains `benjamin-mazar` in
+`related_actor_ids`. The shared surname means bare "Mazar" is ambiguous, which is the safe direction
+for the surname-based autolinker (it will not link a bare "Mazar" to either). Amihai Mazar (Benjamin's
+nephew) and Yitzhak Ben-Zvi (his brother-in-law) are named in prose but not added as actors.
+
+**Verification caveat, stated plainly**: this round's scratchpad had been reset, so the Node DOM-stub
+harnesses (`wiki_harness.js`, `prototype_harness.js`) and the JS edge dump no longer exist and were
+NOT run. What was run: `collision_check.py` (clean), JSON validity, `new Function()` syntax checks on
+both builds, the Python build (310 nodes, 541 edges, i.e. 539 + the two new topic links), a banned-
+phrase grep, and live checks on the deployed site (zero console errors; every cross-reference on both
+new pages resolves; no stray "Israel" false link in Eilat's text). The JS-versus-Python edge-parity diff
+could not be done. The harnesses would need to be rewritten before the next full-pipeline round.
+
+Pushed as `e143eb0`; Vercel deployed and confirmed live.
