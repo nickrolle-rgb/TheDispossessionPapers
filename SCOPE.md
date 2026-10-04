@@ -6972,3 +6972,33 @@ could not be read in full (truncated), so the section rests on that one republic
 Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged).
 Pushed as `931754c`; confirmed live (zero console errors; the old conflated wording and "such stations"
 phrasing are gone from the rendered page).
+
+## Round: Taba's Jerusalem arrangements (2026-10-04)
+
+The entry carried two clauses on Jerusalem (the neighbourhood split with its Har Homa and Ras al-Amud
+exceptions, and the three-year P5-plus-Morocco Haram idea). Replaced with the Moratinos non-paper's full
+Jerusalem section, which also turned out to hold the section's most notable fact, missing until now:
+Israel accepted in principle that Jerusalem would be the capital of both states ("Yerushalaim" for Israel,
+"Al-Quds" for Palestine), the Palestinians' sole concern being that East Jerusalem be their capital.
+
+Added, with each side's understanding kept separate where the non-paper keeps it separate: the rejected
+Palestinian claims to Ma'ale Adumim and Givat Ze'ev; the Palestinian understanding that Israel would accept
+Palestinian control of Arab neighbourhoods including part of the Old City versus the Israeli understanding
+that Palestinians would accept Israeli sovereignty over the Jewish Quarter and part of the Armenian
+Quarter; West Jerusalem property claims; the open-city dispute (Old City plus Holy Basin with a "soft border
+regime," versus the full municipal borders of both halves); the Holy Basin concerns (Mount of Olives
+cemetery, City of David, Kidron Valley) with the Palestinian proviso of Palestinian sovereignty and the
+declined special, international and joint regime ideas; the Western Wall versus Buraq Wall distinction; and
+the Haram al-Sharif near-agreement, the three-year custodianship idea that neither side accepted or rejected,
+and recorded progress on excavations, building and public order. A significance note sets the two-capitals
+agreement beside the unresolved Haram question.
+
+This also lines up with last round's Camp David Jerusalem material: the Taba non-paper's "neither party
+accepted or rejected" custodianship idea is the same custodianship concept the Camp David entry attributes to
+the American bridging paper.
+
+Sourced from PalQuest's republication of the non-paper (the same single source as the security section).
+
+Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged). Pushed
+as `576317e`; confirmed live (zero console errors; East Jerusalem and Silwan cross-references link correctly,
+no stray links on the new Jerusalem names).
