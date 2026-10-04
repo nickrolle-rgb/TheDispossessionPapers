@@ -6845,3 +6845,34 @@ scratchpad that held them had been reset. Fixed properly rather than patched aro
 - **One honest quirk**: `intro overlay in body.children` prints `false`. It does so on old commits too, so it
   is a DOM-stub artifact, not a regression; whitelisted by name in `verify_all.py` and documented in the
   README rather than silently ignored.
+
+## Round: Camp David 2000's Jerusalem proposals, plus Sayeret Matkal (2026-10-04)
+
+**Camp David Jerusalem proposals.** The entry already covered Jerusalem from the declassified-document
+angle (the Jaffa Gate rule, the Armenian Quarter remark, vertical sovereignty), so the real gap was
+that sources genuinely conflict and the entry did not say so. Added, each attributed and none
+adjudicated: the Economic Cooperation Foundation's record of the Israeli proposal (Palestinian
+sovereignty over outlying neighbourhoods and the Christian/Muslim Quarters; Israel keeping inner-city
+neighbourhoods and the Jewish/Armenian Quarters; Israeli sovereignty over the Temple Mount with
+Palestinian custodianship -- set explicitly against the existing in-principle-Palestinian-sovereignty
+account); the JCFA's report, flagged as an advocacy source, of an outer-areas-only first offer, the
+American bridging paper's "functional control" formula for the inner neighbourhoods (Sheikh Jarrah,
+Salah ad-Din Street, Wadi Joz, Silwan, Ras al-Amud), and Ben-Ami's "ridiculous" remark about dividing
+the Old City; and the PLO Negotiations Affairs Department's characterisation of the proposals as
+isolated enclaves requiring recognition of East Jerusalem's annexation. Also added that Barak
+negotiated without a governing majority: Yisrael BaAliyah, Shas and the NRP quit his coalition on 9
+July 2000, two days before talks opened. Deliberately left out: an "Al-Quds capital from Abu Dis,
+Eizariya, Anata, A-Ram" idea that surfaced in one search summary but that none of the pages I could
+actually open confirmed.
+
+**Sayeret Matkal (new org).** Added as a short entry rather than declined. It is not a land actor and
+I would not call it a priority, but the dataset already named it in the Barak, Netanyahu and Bennett
+entries with nothing to link to, and it is their shared origin, so it works as a linking node on the
+network map. Kept to documented facts: 1957 formation as the General Staff Reconnaissance Unit, and
+its known-or-believed role in the 1973 Beirut raid, with the 1972 Sabena rescue and 1976 Entebbe raid
+(Yonatan Netanyahu's death) cross-referenced to existing entries. Participation is stated at the
+confidence the sources use because these are special operations. Three `member` edges (+3).
+
+**Verification, first full run on the rebuilt tooling**: `python scripts/verify_all.py` passed every
+step, including EDGE PARITY: IDENTICAL (544 edges). Pushed as `65c25ad`; deployed and confirmed live
+(zero console errors; Sayeret Matkal links from Barak x4, Bennett and Netanyahu).
