@@ -6942,3 +6942,33 @@ not be opened, so the Palestinian reservations rest on Wikipedia's summary rathe
 Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged --
 pure content). Pushed as `a2f7c0a` plus `3d58fc9`; confirmed live (zero console errors, old phrasing gone,
 no process note on the page).
+
+## Round: Taba's security arrangements -- correcting an earlier error (2026-10-04)
+
+The entry's one security sentence, written in an earlier round, said Israel proposed "five emergency
+early-warning stations in the Jordan Valley" against a Palestinian offer of "at most two such stations."
+Reading the Moratinos non-paper's security section showed that merged two separate items. The non-paper
+distinguishes (a) three early-warning stations on Palestinian territory, which Israel sought and the
+Palestinian side accepted could keep operating subject to conditions still to be negotiated, from (b)
+five "emergency locations," against a Palestinian offer of at most two, time-limited and under
+international rather than Israeli management. My earlier wording came from a search summary and I
+relabelled (b) as early-warning stations and placed it in the Jordan Valley without a source for either.
+Both the conflation and the unsupported location are now removed from the entry. (The Clinton Parameters
+text already had the correct figure of three early-warning stations, which is what made the mismatch
+checkable.) The same wrong wording is preserved in this file's older Taba round and in commit
+`a10a15b`'s message as history; the entry itself is what was fixed.
+
+Also added the rest of the non-paper's security record: the 36 + 36 versus 18 + 10 month withdrawal
+timelines (kept); non-militarisation "as per the Clinton proposals" versus "a state with limited arms";
+airspace sovereignty agreed in principle but disputed over a unified Israeli-controlled air-control
+system with military access; borders and international crossing points with monitoring and verification
+unresolved; and the electromagnetic sphere (Israeli security control versus full Palestinian sovereign
+rights in a cooperative framework). A significance note records that agreement in principle on airspace
+and border sovereignty coexisted with an Israeli demand for overriding control of both.
+
+Sourced from PalQuest's historical-text republication of the Moratinos Non-Paper. The UN-hosted copy
+could not be read in full (truncated), so the section rests on that one republication.
+
+Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged).
+Pushed as `931754c`; confirmed live (zero console errors; the old conflated wording and "such stations"
+phrasing are gone from the rendered page).
