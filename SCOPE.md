@@ -6876,3 +6876,32 @@ confidence the sources use because these are special operations. Three `member` 
 **Verification, first full run on the rebuilt tooling**: `python scripts/verify_all.py` passed every
 step, including EDGE PARITY: IDENTICAL (544 edges). Pushed as `65c25ad`; deployed and confirmed live
 (zero console errors; Sayeret Matkal links from Barak x4, Bennett and Netanyahu).
+
+## Round: Camp David 2000's refugee proposals (2026-10-04)
+
+The entry already stated each side's headline position (Israel: resettlement outside Israel;
+Palestinians: right of return under Resolution 194 plus acknowledgment). What it lacked was how
+unsettled the record is. Added, each attributed: Brookings' Shibley Telhami's contemporaneous 19 July
+2000 analysis (Israel rejecting responsibility while acknowledging the problem's 1948 origin; the fear
+that conceding a right of return in principle would weaken Israel's hand and its Jewish majority; his
+judgment that no Israeli government would accept more than a limited return); Albright's remark that
+some Palestinian negotiators would privately discuss a numerical limit; a Palestinian suggestion of an
+agreed mechanism channelling most refugees away from returning to Israel; and the 13 July 2000
+refugee-camp organisations' statement (published by Badil) urging negotiators not to come back without
+the right of return.
+
+**A dating problem flagged, not resolved.** Wikipedia places a 100,000-maximum return (humanitarian and
+family-reunification grounds) and an Israeli contribution to a $30 billion international fund among
+Israel's Camp David proposals, but the Jewish Virtual Library ties the $30 billion fund to Barak's 20
+December and Clinton's 23 December 2000 proposals. The entry now says so and declines to date those
+figures to July 2000. A significance note records the consequence: claims about what Camp David itself
+offered on refugees partly rest on numbers from the later Clinton Parameters and Taba rounds.
+
+Deliberately left out: a search summary's claim that refugees "were never seriously discussed" because
+Barak declared Israel bore no responsibility, since I could not trace it to a page I could open; and
+Wikipedia's per-year return figures (150,000 per year, a 2,000-per-year pilot), whose date and origin
+the page does not make clear.
+
+Verification: `python scripts/verify_all.py` passed every step, including EDGE PARITY: IDENTICAL
+(544, unchanged -- pure content). Pushed as `063a8c5`; deployed and confirmed live (zero console
+errors; Clinton Parameters and Resolution 194 cross-references autolink correctly).
