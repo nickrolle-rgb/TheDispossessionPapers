@@ -340,6 +340,116 @@ try {
   process.exit(1);
 }
 
+// 16. Engagement layer: overdue counter stamp, Trails, and the "Who said it?" quiz.
+try {
+  const path = require('path');
+  const dataDir = path.join(__dirname, '..', '..', 'data');
+  const trailsData = JSON.parse(fs.readFileSync(path.join(dataDir, 'trails.json'), 'utf8'));
+  const quizData = JSON.parse(fs.readFileSync(path.join(dataDir, 'quiz.json'), 'utf8'));
+  const actorNames = {};
+  JSON.parse(fs.readFileSync(path.join(dataDir, 'historical_actors.json'), 'utf8')).forEach(a => { actorNames[a.actor_id] = a.full_name; });
+  const app = () => idMap['app'].innerHTML;
+  const resetStore = () => Object.keys(store).forEach(k => delete store[k]);
+  resetStore();
+
+  // 16a. overdue stamp on the front page
+  global.location.hash = '';
+  net.route();
+  const stampMatch = /<span class="dp-days">([\d,]+)<\/span> days overdue/.exec(app());
+  const now = new Date();
+  const expectedDays = Math.floor((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(1999, 4, 4)) / 86400000);
+  console.log('overdue stamp present:', !!stampMatch);
+  console.log('overdue stamp shows today\'s day count:', !!stampMatch && stampMatch[1] === expectedDays.toLocaleString('en-US'));
+  console.log('overdue stamp links to the Oslo entry:', app().indexOf('href="#/topic/oslo-accords-1993-1995"') !== -1);
+  console.log('overdue count is more than 9,000 days:', expectedDays > 9000);
+
+  // 16b. trails list and a fresh trail page
+  global.location.hash = '#/trails';
+  net.route();
+  console.log('trails page lists every trail:', trailsData.every(t => app().indexOf(t.title.replace(/&/g, '&amp;')) !== -1));
+  console.log('trails page starts at 0 filed:', /0 of \d+ filed/.test(app()));
+  const t0 = trailsData[0];
+  global.location.hash = '#/trail/' + t0.trail_id;
+  net.route();
+  console.log('trail page shows every step:', t0.steps.every(st => app().indexOf(st.teaser) !== -1));
+  console.log('fresh trail offers "Start the trail":', app().indexOf('Start the trail') !== -1);
+  console.log('unknown trail id is handled:', (global.location.hash = '#/trail/nope', net.route(), app().indexOf('No such trail') !== -1));
+
+  // 16c. opening a step files it and shows the trail bar with the next step
+  const s0 = t0.steps[0], s1 = t0.steps[1];
+  global.location.hash = '#/' + s0.kind + '/' + s0.id;
+  net.route();
+  console.log('entry on a trail shows the trail bar:', app().indexOf('dp-trailbar') !== -1 && app().indexOf('step 1 of ' + t0.steps.length) !== -1);
+  console.log('trail bar names the next step:', app().indexOf('href="#/' + s1.kind + '/' + s1.id + '"') !== -1);
+  console.log('opening an entry files it in storage:', (JSON.parse(store['dp_filed_v1'] || '{}'))[s0.kind + ':' + s0.id] === 1);
+  global.location.hash = '#/trail/' + t0.trail_id;
+  net.route();
+  console.log('trail page now shows 1 filed:', new RegExp('1 of ' + t0.steps.length + ' filed').test(app()));
+  console.log('trail page offers "Continue the trail":', app().indexOf('Continue the trail') !== -1);
+
+  // 16d. finishing a trail stamps it
+  t0.steps.forEach(st => { global.location.hash = '#/' + st.kind + '/' + st.id; net.route(); });
+  global.location.hash = '#/trail/' + t0.trail_id;
+  net.route();
+  console.log('finished trail shows the Filed stamp:', app().indexOf('dp-stamp') !== -1 && app().indexOf('every step of this trail') !== -1);
+  global.location.hash = '#/trails';
+  net.route();
+  console.log('trails list shows the finished trail stamped:', app().indexOf('dp-stamp') !== -1);
+  const lastStep = t0.steps[t0.steps.length - 1];
+  global.location.hash = '#/' + lastStep.kind + '/' + lastStep.id;
+  net.route();
+  console.log('last step points back to the trail:', app().indexOf('Last step') !== -1);
+  global.location.hash = '#/actor/' + Object.keys(actorNames)[0];
+  net.route();
+  console.log('entry on no trail has no trail bar:', trailsData.some(t => t.steps.some(st => st.kind === 'actor' && st.id === Object.keys(actorNames)[0])) || app().indexOf('dp-trailbar') === -1);
+
+  // 16e. quiz, played end to end with the right answer every time
+  global.location.hash = '#/quiz';
+  net.route();
+  console.log('quiz opens on question 1 of ' + quizData.length + ':', app().indexOf('Question 1 of ' + quizData.length) !== -1);
+  let allRight = true, offered = 0;
+  for (let n = 0; n < quizData.length; n++) {
+    const html = app();
+    const q = quizData.find(x => x.parts.every(pt => html.indexOf('&ldquo;' + pt + '&rdquo;') !== -1));
+    if (!q) { allRight = false; console.log('  quiz question ' + (n + 1) + ' did not match any known quotation'); break; }
+    offered++;
+    const buttons = [...html.matchAll(/id="dpChoice(\d)" onclick="dpQuizChoose\(\d\)">([^<]*)</g)];
+    if (buttons.length !== 4) { allRight = false; console.log('  expected 4 choices, got ' + buttons.length); break; }
+    const right = buttons.find(b => b[2] === actorNames[q.speaker_id]);
+    if (!right) { allRight = false; console.log('  speaker not offered as a choice'); break; }
+    global.dpQuizChoose(Number(right[1]));
+    const reveal = idMap['dpQuizReveal'].innerHTML;
+    if (reveal.indexOf('Yes &mdash;') === -1 || reveal.indexOf('Read it in context') === -1) { allRight = false; console.log('  reveal wrong for ' + q.quiz_id); break; }
+    global.dpQuizNext();
+  }
+  console.log('quiz serves every question exactly once, each with 4 choices and a correct reveal:', allRight && offered === quizData.length);
+  console.log('quiz ends on a score screen:', app().indexOf(quizData.length + ' / ' + quizData.length) !== -1 && app().indexOf('Play again') !== -1);
+  console.log('quiz remembers the best score:', JSON.parse(store['dp_quiz_best_v1'] || '0') === quizData.length);
+  global.dpQuizRestart();
+  console.log('quiz restarts at question 1:', app().indexOf('Question 1 of ' + quizData.length) !== -1);
+  const wrongIdx = [...app().matchAll(/id="dpChoice(\d)" onclick="dpQuizChoose\(\d\)">([^<]*)</g)].find(b => b[2] !== actorNames[quizData.find(x => x.parts.every(pt => app().indexOf('&ldquo;' + pt + '&rdquo;') !== -1)).speaker_id]);
+  global.dpQuizChoose(Number(wrongIdx[1]));
+  console.log('a wrong pick reveals the real speaker:', idMap['dpQuizReveal'].innerHTML.indexOf('Not quite') !== -1);
+  global.dpQuizChoose(0);
+  console.log('a second click on the same question is ignored:', (idMap['dpQuizReveal'].innerHTML.match(/dp-reveal/g) || []).length === 1);
+
+  // 16f. blocked storage must not break anything
+  const realLS = global.localStorage;
+  global.localStorage = { getItem() { throw new Error('blocked'); }, setItem() { throw new Error('blocked'); } };
+  let blockedOk = true;
+  try {
+    global.location.hash = '#/' + s0.kind + '/' + s0.id; net.route();
+    global.location.hash = '#/trails'; net.route();
+    global.location.hash = '#/quiz'; net.route();
+    global.location.hash = ''; net.route();
+  } catch (e) { blockedOk = false; console.log('  threw with storage blocked:', e.message); }
+  console.log('pages still render with browser storage blocked:', blockedOk);
+  global.localStorage = realLS;
+} catch (e) {
+  console.error('ENGAGEMENT CHECKS THREW:', e.stack || e);
+  process.exit(1);
+}
+
 console.log('ALL HARNESS CHECKS COMPLETED');
 
 // 16. Dump the wiki's own graph edges (unique source|target|kind) for the edge-parity diff against the

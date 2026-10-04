@@ -8,6 +8,7 @@ Steps (each mirrors what the manual routine did every round):
   1. data JSON files all parse
   2. scripts/embed_data.py        re-embed the six data files into wiki-prototype.html
   3. scripts/collision_check.py   name collisions / dangling refs / duplicate ids must all be empty
+  3b. scripts/check_engagement.py trail steps resolve; every quiz quotation is verbatim in its source entry
   4. syntax check (new Function) of every <script> in wiki-prototype.html
   5. scripts/harness/wiki_harness.js        DOM-stub behaviour checks + dumps the wiki's own graph edges
   6. prototypes/build_network_view.py       rebuild the standalone prototype
@@ -92,6 +93,13 @@ clean = ("Name collisions: {}" in r.stdout and "Dangling org/topic references: [
          and "Duplicate topic_ids: []" in r.stdout and "Duplicate org_ids: []" in r.stdout)
 if r.returncode or not clean:
     fail("collision_check not clean")
+
+# 3b --------------------------------------------------------------
+step("3b", "engagement data (trails + quiz quotations verbatim)")
+r = run([sys.executable, "scripts/check_engagement.py"])
+print("   " + (r.stdout + r.stderr).strip().replace(chr(10), chr(10) + "   "))
+if r.returncode:
+    fail("check_engagement failed")
 
 # 4 ---------------------------------------------------------------
 step(4, "wiki-prototype.html script syntax")

@@ -1,0 +1,53 @@
+[
+  {
+    "trail_id": "interim-that-outlived",
+    "title": "The Interim That Outlived Its Deadline",
+    "blurb": "Oslo set a five-year interim period that ended on 4 May 1999. Follow the attempts to reset the clock, and what became of each.",
+    "steps": [
+      {"kind": "topic", "id": "oslo-accords-1993-1995", "teaser": "The five-year interim arrangement, and the A/B/C map it created."},
+      {"kind": "topic", "id": "hebron-protocol-1997", "teaser": "The first Likud-era implementation of a further-redeployment commitment."},
+      {"kind": "topic", "id": "wye-river-memorandum-1998", "teaser": "A numbered land-transfer schedule, then a Knesset vote to stop delivering it."},
+      {"kind": "topic", "id": "sharm-el-sheikh-memorandum-1999", "teaser": "A fresh timetable for the same commitments, with new deadlines."},
+      {"kind": "topic", "id": "camp-david-summit-2000", "teaser": "The summit called to shortcut the missed deadlines, and the dispute over what it offered."},
+      {"kind": "topic", "id": "clinton-parameters-taba-summit-2000-2001", "teaser": "The most detailed American proposal, and a negotiation that said it had never been closer."},
+      {"kind": "topic", "id": "oslo-framework-declared-collapse-2015-2020", "teaser": "When the Palestinian leadership declared the framework over, and what kept running anyway."}
+    ]
+  },
+  {
+    "trail_id": "never-adopted",
+    "title": "Never Adopted, Widely Followed",
+    "blurb": "Documents no government formally adopted, and the policies that ran on them anyway.",
+    "steps": [
+      {"kind": "topic", "id": "allon-plan", "teaser": "A 1967 plan that was never adopted and guided settlement siting for about a decade."},
+      {"kind": "topic", "id": "levy-report-2012", "teaser": "A committee that found no 'occupation', and the Attorney General's check on it."},
+      {"kind": "law", "id": "regularization-law-2017", "teaser": "The law that carried the report's logic into statute, until the Supreme Court struck it down."},
+      {"kind": "topic", "id": "settlement-outposts", "teaser": "The unauthorised settlement points all of this is about."},
+      {"kind": "topic", "id": "jordan-valley-sovereignty-bill-2023", "teaser": "The 1967 plan's territory, returning as a sovereignty bill."}
+    ]
+  },
+  {
+    "trail_id": "digging-contested-ground",
+    "title": "Digging in Contested Ground",
+    "blurb": "How archaeology in East Jerusalem became part of the argument over who holds the land.",
+    "steps": [
+      {"kind": "actor", "id": "benjamin-mazar", "teaser": "The first major excavation after Israel captured East Jerusalem."},
+      {"kind": "topic", "id": "east-jerusalem", "teaser": "Captured, enlarged, annexed: the ground being dug."},
+      {"kind": "topic", "id": "silwan", "teaser": "Where a City of David site, a settler organisation and eviction orders share one neighbourhood."},
+      {"kind": "actor", "id": "eilat-mazar", "teaser": "A 2005 'palace of David' claim, and the critics' reply."},
+      {"kind": "topic", "id": "judea-samaria-heritage-authority-bill-2026", "teaser": "A bill that would put West Bank antiquities under Israeli civilian administration."}
+    ]
+  },
+  {
+    "trail_id": "suez-to-sinai",
+    "title": "From Suez to the Sinai Treaty",
+    "blurb": "Three wars and one treaty over the same peninsula.",
+    "steps": [
+      {"kind": "topic", "id": "suez-crisis-1956", "teaser": "A secret pact, a quick conquest, and withdrawal under American pressure."},
+      {"kind": "topic", "id": "six-day-war", "teaser": "The crisis that undid the 1957 arrangement, and the war that followed."},
+      {"kind": "topic", "id": "resolution-242", "teaser": "'From territories', not 'from the territories': a long dispute over one missing word."},
+      {"kind": "topic", "id": "yom-kippur-war-1973", "teaser": "A canal crossing, a ceasefire, and a shuttle."},
+      {"kind": "topic", "id": "camp-david-accords-1978", "teaser": "Two frameworks: one implemented, one never."},
+      {"kind": "topic", "id": "egypt-israel-peace-treaty-1979", "teaser": "The largest single reversal of post-1967 territorial control."}
+    ]
+  }
+]

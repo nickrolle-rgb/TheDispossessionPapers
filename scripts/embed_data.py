@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Re-embed the six curated data/*.json files into wiki-prototype.html as inline JS arrays.
+Re-embed the eight curated data/*.json files into wiki-prototype.html as inline JS arrays.
 
 wiki-prototype.html has no build step and no server — it's a single self-contained HTML file
 that embeds its own data as `var ACTORS = [...]; var ORGS = [...];` etc., near the top of the
@@ -28,6 +28,9 @@ FILES = {
     "FOREIGN": "data/current_foreign_actors.json",
     "LAWS": "data/laws.json",
     "TOPICS": "data/topics.json",
+    # reader-engagement layer: ordered trails through the entries, and the "Who said it?" quiz
+    "TRAILS": "data/trails.json",
+    "QUIZ": "data/quiz.json",
 }
 
 

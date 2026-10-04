@@ -226,12 +226,65 @@
   .net-intro-card p { font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 0.9rem; }
   .net-intro-card .net-intro-ok { display: block; margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; background: var(--ink); color: var(--parchment); border: none; border-radius: 20px; padding: 0.5rem 1.1rem; cursor: pointer; }
   .net-intro-card .net-intro-ok:hover { opacity: 0.85; }
+
+  /* ---- engagement layer: overdue stamp, trails, "who said it?" quiz ---- */
+  .netview a.net-stamp-live { text-decoration: none; cursor: pointer; text-align: right; line-height: 1.25; }
+  .netview a.net-stamp-live:hover, .netview a.net-stamp-live:focus-visible { background: var(--rust); color: var(--parchment-hi); outline-offset: 2px; }
+  .netview .net-stamp-live .dp-days { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .netview .net-stamp-live small { display: block; font-size: 0.52rem; letter-spacing: 0.03em; white-space: normal; max-width: 15rem; opacity: 0.9; }
+  .dp-stamp {
+    display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--rust); border: 2px solid var(--rust); border-radius: 3px; padding: 0.15rem 0.55rem;
+    transform: rotate(var(--r, -3deg)); white-space: nowrap; user-select: none;
+  }
+  @media (max-width: 560px) {
+    /* five nav buttons no longer fit beside the brand on a phone: give the nav its own row so the
+       sticky header stays short instead of wrapping the brand into a tall block */
+    header.top { flex-wrap: wrap; row-gap: 0.35rem; padding: 0.55rem 1rem; }
+    header.top .top-nav { margin-left: 0; width: 100%; justify-content: space-between; gap: 0.4rem; }
+  }
+  .dp-lede { color: var(--ink-soft); font-size: 0.94rem; line-height: 1.6; margin: 0 0 1.4rem; max-width: 60ch; }
+  .dp-note { color: var(--fog); font-size: 0.72rem; line-height: 1.5; margin-top: 1.4rem; font-family: "IBM Plex Mono", monospace; }
+  .dp-trail-card { display: block; padding: 1rem 1.1rem; margin: 0 0 0.9rem; border: 1px solid var(--line); border-radius: 6px; background: var(--parchment-hi); color: var(--fg); border-bottom: 1px solid var(--line); }
+  .dp-trail-card:hover { border-color: var(--rust); }
+  .dp-trail-card h2 { font-family: "Fraunces", Georgia, serif; font-size: 1.1rem; margin: 0 0 0.25rem; display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; }
+  .dp-trail-card p { margin: 0 0 0.6rem; font-size: 0.86rem; color: var(--ink-soft); line-height: 1.5; }
+  .dp-progress { font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; color: var(--fog); display: flex; align-items: center; gap: 0.6rem; }
+  .dp-bar { flex: 1 1 auto; max-width: 11rem; height: 5px; border-radius: 3px; background: var(--line); overflow: hidden; }
+  .dp-bar > i { display: block; height: 100%; background: var(--rust); }
+  ol.dp-steps { list-style: none; margin: 1.2rem 0; padding: 0; counter-reset: dp; }
+  ol.dp-steps li { counter-increment: dp; display: grid; grid-template-columns: 2rem 1fr; gap: 0.2rem 0.6rem; padding: 0.75rem 0; border-bottom: 1px dashed var(--line); }
+  ol.dp-steps li::before { content: counter(dp); font-family: "IBM Plex Mono", monospace; font-size: 0.75rem; color: var(--fog); padding-top: 0.15rem; }
+  ol.dp-steps .dp-step-name { font-weight: 600; font-size: 0.95rem; }
+  ol.dp-steps .dp-step-teaser { grid-column: 2; color: var(--ink-soft); font-size: 0.84rem; line-height: 1.5; }
+  .dp-state { font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fog); margin-left: 0.5rem; }
+  .dp-state.is-filed { color: var(--verdigris); }
+  .dp-go { display: inline-block; margin: 0.4rem 0 0.2rem; font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; background: var(--ink); color: var(--parchment); border: none; border-radius: 20px; padding: 0.5rem 1.1rem; cursor: pointer; }
+  .dp-go:hover { opacity: 0.85; }
+  a.dp-go { border-bottom: none; color: var(--parchment); }
+  .dp-trailbar { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem 1rem; margin: 2rem 0 0; padding: 0.8rem 1rem; border: 1px solid var(--line); border-left: 3px solid var(--rust); border-radius: 4px; background: var(--parchment-hi); font-size: 0.84rem; }
+  .dp-trailbar .dp-trailbar-label { font-family: "IBM Plex Mono", monospace; font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fog); display: block; }
+  .dp-quote { margin: 1.2rem 0 1.4rem; padding: 0.2rem 0 0.2rem 1.1rem; border-left: 3px solid var(--rust); font-family: "Fraunces", Georgia, serif; font-size: 1.22rem; line-height: 1.5; text-wrap: balance; }
+  .dp-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.6rem; margin: 0 0 1.1rem; }
+  .dp-choice { font: inherit; font-size: 0.92rem; text-align: left; padding: 0.7rem 0.9rem; border: 1px solid var(--line); border-radius: 6px; background: var(--parchment-hi); color: var(--fg); cursor: pointer; }
+  .dp-choice:hover:not([disabled]) { border-color: var(--rust); }
+  .dp-choice[disabled] { cursor: default; opacity: 0.75; }
+  .dp-choice.is-correct { border: 2px solid var(--verdigris); opacity: 1; }
+  .dp-choice.is-wrong { border: 2px solid var(--rust); }
+  .dp-choice .dp-mark { float: right; font-family: "IBM Plex Mono", monospace; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .dp-reveal { border: 1px solid var(--line); border-radius: 6px; padding: 0.9rem 1.1rem; background: var(--panel-bg); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem; }
+  .dp-reveal .dp-flag { margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--line); color: var(--ink-soft); font-size: 0.82rem; }
+  .dp-score { font-family: "Fraunces", Georgia, serif; font-size: 2.2rem; margin: 0.3rem 0 0.2rem; }
+  .dp-missed { margin: 1rem 0 1.4rem; padding: 0; list-style: none; font-size: 0.86rem; }
+  .dp-missed li { padding: 0.5rem 0; border-bottom: 1px dashed var(--line); }
 </style>
 
 <header class="top">
   <button class="brand" onclick="location.hash='#/'">The Dispossession Papers<span class="kicker" style="display:block">Zionism Timeline reference</span></button>
   <nav class="top-nav">
     <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/network'">Web</button>
+    <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/trails'">Trails</button>
+    <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/quiz'">Quiz</button>
     <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/index'">Index</button>
     <button class="brand" style="font-size:0.8rem" onclick="location.hash='#/about'">About</button>
   </nav>
@@ -245,6 +298,347 @@
 <script>
 (function () {
   "use strict";
+
+  var TRAILS = [
+  {
+    "trail_id": "interim-that-outlived",
+    "title": "The Interim That Outlived Its Deadline",
+    "blurb": "Oslo set a five-year interim period that ended on 4 May 1999. Follow the attempts to reset the clock, and what became of each.",
+    "steps": [
+      {
+        "kind": "topic",
+        "id": "oslo-accords-1993-1995",
+        "teaser": "The five-year interim arrangement, and the A/B/C map it created."
+      },
+      {
+        "kind": "topic",
+        "id": "hebron-protocol-1997",
+        "teaser": "The first Likud-era implementation of a further-redeployment commitment."
+      },
+      {
+        "kind": "topic",
+        "id": "wye-river-memorandum-1998",
+        "teaser": "A numbered land-transfer schedule, then a Knesset vote to stop delivering it."
+      },
+      {
+        "kind": "topic",
+        "id": "sharm-el-sheikh-memorandum-1999",
+        "teaser": "A fresh timetable for the same commitments, with new deadlines."
+      },
+      {
+        "kind": "topic",
+        "id": "camp-david-summit-2000",
+        "teaser": "The summit called to shortcut the missed deadlines, and the dispute over what it offered."
+      },
+      {
+        "kind": "topic",
+        "id": "clinton-parameters-taba-summit-2000-2001",
+        "teaser": "The most detailed American proposal, and a negotiation that said it had never been closer."
+      },
+      {
+        "kind": "topic",
+        "id": "oslo-framework-declared-collapse-2015-2020",
+        "teaser": "When the Palestinian leadership declared the framework over, and what kept running anyway."
+      }
+    ]
+  },
+  {
+    "trail_id": "never-adopted",
+    "title": "Never Adopted, Widely Followed",
+    "blurb": "Documents no government formally adopted, and the policies that ran on them anyway.",
+    "steps": [
+      {
+        "kind": "topic",
+        "id": "allon-plan",
+        "teaser": "A 1967 plan that was never adopted and guided settlement siting for about a decade."
+      },
+      {
+        "kind": "topic",
+        "id": "levy-report-2012",
+        "teaser": "A committee that found no 'occupation', and the Attorney General's check on it."
+      },
+      {
+        "kind": "law",
+        "id": "regularization-law-2017",
+        "teaser": "The law that carried the report's logic into statute, until the Supreme Court struck it down."
+      },
+      {
+        "kind": "topic",
+        "id": "settlement-outposts",
+        "teaser": "The unauthorised settlement points all of this is about."
+      },
+      {
+        "kind": "topic",
+        "id": "jordan-valley-sovereignty-bill-2023",
+        "teaser": "The 1967 plan's territory, returning as a sovereignty bill."
+      }
+    ]
+  },
+  {
+    "trail_id": "digging-contested-ground",
+    "title": "Digging in Contested Ground",
+    "blurb": "How archaeology in East Jerusalem became part of the argument over who holds the land.",
+    "steps": [
+      {
+        "kind": "actor",
+        "id": "benjamin-mazar",
+        "teaser": "The first major excavation after Israel captured East Jerusalem."
+      },
+      {
+        "kind": "topic",
+        "id": "east-jerusalem",
+        "teaser": "Captured, enlarged, annexed: the ground being dug."
+      },
+      {
+        "kind": "topic",
+        "id": "silwan",
+        "teaser": "Where a City of David site, a settler organisation and eviction orders share one neighbourhood."
+      },
+      {
+        "kind": "actor",
+        "id": "eilat-mazar",
+        "teaser": "A 2005 'palace of David' claim, and the critics' reply."
+      },
+      {
+        "kind": "topic",
+        "id": "judea-samaria-heritage-authority-bill-2026",
+        "teaser": "A bill that would put West Bank antiquities under Israeli civilian administration."
+      }
+    ]
+  },
+  {
+    "trail_id": "suez-to-sinai",
+    "title": "From Suez to the Sinai Treaty",
+    "blurb": "Three wars and one treaty over the same peninsula.",
+    "steps": [
+      {
+        "kind": "topic",
+        "id": "suez-crisis-1956",
+        "teaser": "A secret pact, a quick conquest, and withdrawal under American pressure."
+      },
+      {
+        "kind": "topic",
+        "id": "six-day-war",
+        "teaser": "The crisis that undid the 1957 arrangement, and the war that followed."
+      },
+      {
+        "kind": "topic",
+        "id": "resolution-242",
+        "teaser": "'From territories', not 'from the territories': a long dispute over one missing word."
+      },
+      {
+        "kind": "topic",
+        "id": "yom-kippur-war-1973",
+        "teaser": "A canal crossing, a ceasefire, and a shuttle."
+      },
+      {
+        "kind": "topic",
+        "id": "camp-david-accords-1978",
+        "teaser": "Two frameworks: one implemented, one never."
+      },
+      {
+        "kind": "topic",
+        "id": "egypt-israel-peace-treaty-1979",
+        "teaser": "The largest single reversal of post-1967 territorial control."
+      }
+    ]
+  }
+];
+  var QUIZ = [
+  {
+    "quiz_id": "ben-gurion-on-meir",
+    "parts": [
+      "there was a Jewish woman who got the money which made the state possible."
+    ],
+    "speaker_id": "david-ben-gurion",
+    "choices": [
+      "david-ben-gurion",
+      "chaim-weizmann",
+      "levi-eshkol",
+      "moshe-dayan"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "golda-meir"
+    },
+    "context": "Said of Golda Meir's 1948 fundraising trip to the United States, which raised about $50 million.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "nordau-to-herzl",
+    "parts": [
+      "If you are insane, we are insane together. Count on me!"
+    ],
+    "speaker_id": "max-nordau",
+    "choices": [
+      "max-nordau",
+      "leon-pinsker",
+      "ad-gordon",
+      "chaim-weizmann"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "max-nordau"
+    },
+    "context": "Reportedly his reply on first hearing Herzl's plan for a Jewish state.",
+    "flag": "Reported rather than documented: the entry says he 'is said to have replied'."
+  },
+  {
+    "quiz_id": "begin-cannot-go-on",
+    "parts": [
+      "I cannot go on"
+    ],
+    "speaker_id": "menachem-begin",
+    "choices": [
+      "menachem-begin",
+      "yitzhak-shamir",
+      "david-ben-gurion",
+      "golda-meir"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "menachem-begin"
+    },
+    "context": "Told to his cabinet in August 1983, less than a year after his wife Aliza's death; he left office the following month.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "dayan-regret",
+    "parts": [
+      "I did not fulfill my role as defense minister, in that I did not stop things that I was sure should have been stopped."
+    ],
+    "speaker_id": "moshe-dayan",
+    "choices": [
+      "moshe-dayan",
+      "yitzhak-rabin",
+      "ariel-sharon",
+      "yigal-allon"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "moshe-dayan"
+    },
+    "context": "From a 1976 interview with Rami Tal, kept private for two decades. He said it of two decisions he most regretted: the capture of the Golan Heights and the return of Jewish settlement to Hebron.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "meir-no-such-thing",
+    "parts": [
+      "there was no such thing as Palestinians"
+    ],
+    "speaker_id": "golda-meir",
+    "choices": [
+      "golda-meir",
+      "david-ben-gurion",
+      "levi-eshkol",
+      "yitzhak-rabin"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "golda-meir"
+    },
+    "context": "From an interview with the Sunday Times of London, given while she was Prime Minister.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "kissinger-isolate",
+    "parts": [
+      "I have left the Palestinian question alone in order to work on frontier questions hoping eventually to isolate the Palestinians."
+    ],
+    "speaker_id": "henry-kissinger",
+    "choices": [
+      "henry-kissinger",
+      "abba-eban",
+      "jimmy-carter",
+      "yigal-allon"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "henry-kissinger"
+    },
+    "context": "Said to American Jewish leaders at New York's Hotel Pierre, describing his own strategy toward the Palestinians.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "arafat-olive-branch",
+    "parts": [
+      "Today I have come bearing an olive branch and a freedom fighter's gun. Do not let the olive branch fall from my hand"
+    ],
+    "speaker_id": "yasser-arafat",
+    "choices": [
+      "yasser-arafat",
+      "anwar-sadat",
+      "mahmoud-abbas",
+      "marwan-barghouti"
+    ],
+    "source": {
+      "kind": "actor",
+      "id": "yasser-arafat"
+    },
+    "context": "From his address to the UN General Assembly, days after it granted the PLO observer status.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "eban-june-map",
+    "parts": [
+      "the June map is for us equivalent to insecurity and danger",
+      "it has for us something of a memory of Auschwitz"
+    ],
+    "speaker_id": "abba-eban",
+    "choices": [
+      "abba-eban",
+      "yigal-allon",
+      "moshe-dayan",
+      "golda-meir"
+    ],
+    "source": {
+      "kind": "topic",
+      "id": "defensible-borders-doctrine"
+    },
+    "context": "From a November 1969 Der Spiegel interview, the origin of the phrase 'Auschwitz borders'. The same interview also contains a line about not retaining the occupied territories that is often left out.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "sharon-hilltops",
+    "parts": [
+      "Everybody has to move, run and grab as many hilltops as they can to enlarge the settlements, because everything we take now will stay ours",
+      "Everything we don't grab will go to them."
+    ],
+    "speaker_id": "ariel-sharon",
+    "choices": [
+      "ariel-sharon",
+      "ehud-barak",
+      "yitzhak-shamir",
+      "menachem-begin"
+    ],
+    "source": {
+      "kind": "topic",
+      "id": "wye-river-memorandum-1998"
+    },
+    "context": "Addressed to settlers after the 1998 Wye River Memorandum, when he was Foreign Minister.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "shamir-autonomy-talks",
+    "parts": [
+      "carry on autonomy talks for ten years",
+      "[a] half million people in Judea and Samaria"
+    ],
+    "speaker_id": "yitzhak-shamir",
+    "choices": [
+      "yitzhak-shamir",
+      "yitzhak-rabin",
+      "menachem-begin",
+      "ehud-barak"
+    ],
+    "source": {
+      "kind": "topic",
+      "id": "madrid-conference-1991"
+    },
+    "context": "Attributed to him in a June 1992 Ma'ariv interview about the Madrid process, after his election defeat.",
+    "flag": "Disputed: Shamir later said he had only expressed willingness to negotiate for as long as it took to reach a genuine agreement."
+  }
+];
 
   var ACTORS = [
   {
@@ -12474,6 +12868,12 @@
     html += '<div class="net-stamps">';
     html += '<span class="net-stamp-tag" style="--r:-2deg">Reinstate Resolution 3379</span>';
     html += '<span class="net-stamp-tag" style="--r:2deg">5778 = Apartheid</span>';
+    // A third stamp that IS a link and does count: the Oslo Accords set a five-year interim period
+    // that ended on 4 May 1999, and this is how many days overdue it is today.
+    html += '<a class="net-stamp-tag net-stamp-live" style="--r:-1.5deg" href="#/topic/oslo-accords-1993-1995" ' +
+      'title="The Oslo Accords set a five-year interim period that ended on 4 May 1999. Open the entry.">' +
+      '<span class="dp-days">' + overdueDays().toLocaleString("en-US") + '</span> days overdue' +
+      '<small>Oslo&rsquo;s &ldquo;interim&rdquo; period ended 4 May 1999</small></a>';
     html += '</div>';
     html += '<svg id="netGraphSvg" viewBox="0 0 1260 1000"></svg>';
     html += '</div>';
@@ -13224,6 +13624,22 @@
       foot.textContent = "";
       return;
     }
+    if (parts[0] === "trails") {
+      app.innerHTML = renderTrails();
+      foot.textContent = "";
+      return;
+    }
+    if (parts[0] === "trail") {
+      app.innerHTML = renderTrail(parts[1]);
+      foot.textContent = "";
+      return;
+    }
+    if (parts[0] === "quiz") {
+      quizStart();
+      quizRender();
+      foot.textContent = "";
+      return;
+    }
     if (parts[0] === "network") {
       app.innerHTML = renderNetwork();
       foot.textContent = "";
@@ -13231,7 +13647,7 @@
       // #/network/<kind>/<id> (what the Index page's own links now point at, so following one
       // there lands inside the graph, selected, rather than on that entity's separate full page)
       // selects the node once the graph exists to select it in.
-      if (parts[1] && parts[2]) netSelectNode(parts[1] + ":" + parts[2]);
+      if (parts[1] && parts[2]) { netSelectNode(parts[1] + ":" + parts[2]); if (entities[parts[1] + ":" + parts[2]]) markFiled(parts[1] + ":" + parts[2]); }
       maybeShowNetworkIntro();
       return;
     }
@@ -13250,9 +13666,182 @@
     else if (e.kind === "foreign") app.innerHTML = renderForeign(e.data);
     else app.innerHTML = '<p class="not-found">This entry doesn\'t have its own page yet. <a href="#/">Back to index</a></p>';
 
+    if (["actor", "org", "mk", "law", "topic", "foreign"].indexOf(e.kind) !== -1) {
+      markFiled(key);
+      app.innerHTML += trailBar(key);
+    }
+
     foot.textContent = "Growing archive — " + ACTORS.length + " people, " + ORGS.length +
       " organisations, " + LAWS.length + " laws, and " + TOPICS.length + " places, periods, and events documented so far.";
   }
+
+
+  // ---- engagement layer: overdue counter, trails, "who said it?" ----
+  var OSLO_INTERIM_END = Date.UTC(1999, 4, 4); // the Oslo five-year interim period ended 4 May 1999
+  function overdueDays(now) {
+    var d = now || new Date();
+    return Math.floor((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - OSLO_INTERIM_END) / 86400000);
+  }
+
+  // Everything a reader accumulates (which entries they've opened, their best quiz score) lives in
+  // their own browser only. Storage can be blocked or absent, so every access is wrapped and falls
+  // back to an in-memory copy for the rest of the visit.
+  var memStore = {};
+  function storeGet(key, fallback) {
+    try { var raw = localStorage.getItem(key); if (raw !== null && raw !== undefined) return JSON.parse(raw); } catch (e) {}
+    return Object.prototype.hasOwnProperty.call(memStore, key) ? memStore[key] : fallback;
+  }
+  function storeSet(key, val) {
+    memStore[key] = val;
+    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+  }
+
+  var FILED_KEY = "dp_filed_v1";
+  function markFiled(key) {
+    var v = storeGet(FILED_KEY, {});
+    if (!v[key]) { v[key] = 1; storeSet(FILED_KEY, v); }
+  }
+  function isFiled(key) { return !!storeGet(FILED_KEY, {})[key]; }
+
+  function stepKey(s) { return s.kind + ":" + s.id; }
+  function stepHref(s) { return "#/" + s.kind + "/" + s.id; }
+  function stepName(s) { var e = entities[stepKey(s)]; return e ? e.name : s.id; }
+  function trailDone(t) { var n = 0; t.steps.forEach(function (s) { if (isFiled(stepKey(s))) n++; }); return n; }
+  function trailById(id) { for (var i = 0; i < TRAILS.length; i++) if (TRAILS[i].trail_id === id) return TRAILS[i]; return null; }
+
+  function progressHtml(t) {
+    var done = trailDone(t), total = t.steps.length;
+    return '<span class="dp-progress"><span>' + done + ' of ' + total + ' filed</span>' +
+      '<span class="dp-bar" aria-hidden="true"><i style="width:' + Math.round(100 * done / total) + '%"></i></span></span>';
+  }
+
+  function renderTrails() {
+    var html = '<span class="badge">Trails</span><h1 class="entity-title">Trails through the record</h1>';
+    html += '<p class="dp-lede">Each trail is a short, ordered path through the entries, following one thread from start to finish. ' +
+      'Open every step and the trail is stamped Filed. Your progress stays in this browser only.</p>';
+    TRAILS.forEach(function (t, i) {
+      var complete = trailDone(t) === t.steps.length;
+      html += '<a class="dp-trail-card" href="#/trail/' + t.trail_id + '"><h2><span>' + escapeHtml(t.title) + '</span>' +
+        (complete ? '<span class="dp-stamp" style="--r:' + (i % 2 ? 3 : -3) + 'deg">Filed</span>' : '') + '</h2>' +
+        '<p>' + escapeHtml(t.blurb) + '</p>' + progressHtml(t) + '</a>';
+    });
+    html += '<p class="dp-note">Looking for something lighter? Try the <a href="#/quiz">Who said it? quiz</a>.</p>';
+    return html;
+  }
+
+  function renderTrail(id) {
+    var t = trailById(id);
+    if (!t) return '<p class="not-found">No such trail. <a href="#/trails">See all trails</a></p>';
+    var done = trailDone(t), complete = done === t.steps.length;
+    var html = '<span class="badge">Trail</span><h1 class="entity-title">' + escapeHtml(t.title) + '</h1>';
+    html += '<p class="dp-lede">' + escapeHtml(t.blurb) + '</p>';
+    if (complete) html += '<p><span class="dp-stamp" style="--r:-3deg">Filed</span> &nbsp;You have opened every step of this trail.</p>';
+    else html += progressHtml(t);
+    html += '<ol class="dp-steps">';
+    var firstOpen = null;
+    t.steps.forEach(function (s) {
+      var filed = isFiled(stepKey(s));
+      if (!filed && !firstOpen) firstOpen = s;
+      html += '<li><span><a class="dp-step-name" href="' + stepHref(s) + '">' + escapeHtml(stepName(s)) + '</a>' +
+        '<span class="dp-state' + (filed ? ' is-filed' : '') + '">' + (filed ? 'Filed' : 'Not yet opened') + '</span></span>' +
+        '<span class="dp-step-teaser">' + escapeHtml(s.teaser) + '</span></li>';
+    });
+    html += '</ol>';
+    var go = firstOpen || t.steps[0];
+    html += '<a class="dp-go" href="' + stepHref(go) + '">' + (done === 0 ? 'Start the trail' : (complete ? 'Walk it again' : 'Continue the trail')) + ' &rarr;</a>';
+    html += '<p class="dp-note"><a href="#/trails">&larr; All trails</a></p>';
+    return html;
+  }
+
+  // A strip appended to the end of any entry that belongs to a trail: where you are, and the next step.
+  function trailBar(key) {
+    var html = "";
+    TRAILS.forEach(function (t) {
+      for (var i = 0; i < t.steps.length; i++) {
+        if (stepKey(t.steps[i]) !== key) continue;
+        var next = t.steps[i + 1];
+        html += '<aside class="dp-trailbar"><span><span class="dp-trailbar-label">On a trail &middot; step ' + (i + 1) + ' of ' + t.steps.length + '</span>' +
+          '<a href="#/trail/' + t.trail_id + '">' + escapeHtml(t.title) + '</a></span>' +
+          (next ? '<a class="dp-next" href="' + stepHref(next) + '">Next: ' + escapeHtml(stepName(next)) + ' &rarr;</a>'
+                : '<a class="dp-next" href="#/trail/' + t.trail_id + '">Last step &mdash; see the trail &rarr;</a>') + '</aside>';
+      }
+    });
+    return html;
+  }
+
+  // ---- "Who said it?" ----
+  var QUIZ_BEST_KEY = "dp_quiz_best_v1";
+  var quizState = null;
+  function shuffled(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function actorName(id) { var e = entities["actor:" + id]; return e ? e.name : id; }
+  function quizStart() {
+    quizState = { qs: shuffled(QUIZ).map(function (q) { return { q: q, choices: shuffled(q.choices) }; }), i: 0, score: 0, answered: false, missed: [] };
+  }
+  function quizQuoteHtml(q) {
+    return q.parts.map(function (p) { return "&ldquo;" + escapeHtml(p) + "&rdquo;"; }).join(" &hellip; ");
+  }
+  function quizRender() {
+    var app = document.getElementById("app");
+    if (!quizState || !quizState.qs.length) { app.innerHTML = '<p class="not-found">No questions yet.</p>'; return; }
+    var st = quizState, html = '<span class="badge">Quiz</span>';
+    if (st.i >= st.qs.length) {
+      var best = storeGet(QUIZ_BEST_KEY, 0);
+      if (st.score > best) { best = st.score; storeSet(QUIZ_BEST_KEY, best); }
+      html += '<h1 class="entity-title">Who said it?</h1><div class="dp-score">' + st.score + ' / ' + st.qs.length + '</div>';
+      html += '<p class="dp-lede">Your best score in this browser: ' + best + ' / ' + st.qs.length + '.</p>';
+      if (st.missed.length) {
+        html += '<p class="dp-lede" style="margin-bottom:0.3rem">The ones that got away, with where each is quoted:</p><ul class="dp-missed">';
+        st.missed.forEach(function (m) {
+          html += '<li>' + quizQuoteHtml(m.q) + '<br><a href="#/' + m.q.source.kind + '/' + m.q.source.id + '">' + escapeHtml(actorName(m.q.speaker_id)) + ' &mdash; read the entry</a></li>';
+        });
+        html += '</ul>';
+      }
+      html += '<button class="dp-go" onclick="dpQuizRestart()">Play again</button> &nbsp; <a href="#/trails">Or follow a trail &rarr;</a>';
+      app.innerHTML = html;
+      return;
+    }
+    var cur = st.qs[st.i];
+    html += '<h1 class="entity-title">Who said it?</h1>';
+    html += '<p class="dp-lede" style="margin-bottom:0">Question ' + (st.i + 1) + ' of ' + st.qs.length + ' &middot; every quotation comes from an entry in this record.</p>';
+    html += '<blockquote class="dp-quote">' + quizQuoteHtml(cur.q) + '</blockquote>';
+    html += '<div class="dp-choices" role="group" aria-label="Choose the speaker">';
+    cur.choices.forEach(function (c, idx) {
+      html += '<button class="dp-choice" id="dpChoice' + idx + '" onclick="dpQuizChoose(' + idx + ')">' + escapeHtml(actorName(c)) + '</button>';
+    });
+    html += '</div><div id="dpQuizReveal" aria-live="polite"></div>';
+    app.innerHTML = html;
+  }
+  window.dpQuizChoose = function (idx) {
+    var st = quizState;
+    if (!st || st.answered) return;
+    var cur = st.qs[st.i], q = cur.q;
+    st.answered = true;
+    var right = cur.choices[idx] === q.speaker_id;
+    if (right) st.score++; else st.missed.push(cur);
+    cur.choices.forEach(function (c, i) {
+      var b = document.getElementById("dpChoice" + i);
+      if (!b) return;
+      b.disabled = true;
+      if (c === q.speaker_id) { b.className = "dp-choice is-correct"; b.innerHTML += '<span class="dp-mark">Correct</span>'; }
+      else if (i === idx) { b.className = "dp-choice is-wrong"; b.innerHTML += '<span class="dp-mark">Your pick</span>'; }
+    });
+    var last = st.i + 1 >= st.qs.length;
+    var reveal = document.getElementById("dpQuizReveal");
+    if (reveal) {
+      reveal.innerHTML = '<div class="dp-reveal"><strong>' + (right ? 'Yes &mdash; ' : 'Not quite &mdash; it was ') + escapeHtml(actorName(q.speaker_id)) + '.</strong> ' +
+        escapeHtml(q.context) + ' <a href="#/' + q.source.kind + '/' + q.source.id + '">Read it in context &rarr;</a>' +
+        (q.flag ? '<div class="dp-flag">' + escapeHtml(q.flag) + '</div>' : '') + '</div>' +
+        '<button class="dp-go" id="dpQuizNext" onclick="dpQuizNext()">' + (last ? 'See your score' : 'Next question') + ' &rarr;</button>';
+      var nb = document.getElementById("dpQuizNext");
+      if (nb && nb.focus) { try { nb.focus(); } catch (e) {} }
+    }
+  };
+  window.dpQuizNext = function () { if (!quizState) return; quizState.i++; quizState.answered = false; quizRender(); window.scrollTo(0, 0); };
+  window.dpQuizRestart = function () { quizStart(); quizRender(); window.scrollTo(0, 0); };
 
   window.addEventListener("hashchange", route);
   route();

@@ -15,3 +15,13 @@ prints `false` on commits from many rounds back too, and `verify_all.py` whiteli
 History: these were reconstructed on 2026-10-04 by replaying the original Write/Edit calls from the old
 session transcript, after the session scratchpad that held them was reset. The reconstruction reproduces
 the edge counts recorded in earlier rounds (537 and 539) when run against those commits.
+
+## Engagement-layer checks (added 2026-10-04)
+
+`wiki_harness.js` section 16 covers the reader-engagement features: the Oslo "days overdue" stamp (the
+day count must equal today's, and link to the Oslo entry), Trails (list, fresh trail, opening a step files
+it, the trail bar and next-step link, the Filed stamp once a trail is finished), the "Who said it?" quiz
+played end to end with the correct answer each time, wrong picks, double clicks, and the best score being
+remembered, and every page still rendering when browser storage is blocked. The data behind Trails and the
+quiz is checked separately by `scripts/check_engagement.py` (every trail step resolves; every quotation
+is verbatim in the entry it is credited to).

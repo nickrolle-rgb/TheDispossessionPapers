@@ -1,0 +1,92 @@
+[
+  {
+    "quiz_id": "ben-gurion-on-meir",
+    "parts": ["there was a Jewish woman who got the money which made the state possible."],
+    "speaker_id": "david-ben-gurion",
+    "choices": ["david-ben-gurion", "chaim-weizmann", "levi-eshkol", "moshe-dayan"],
+    "source": {"kind": "actor", "id": "golda-meir"},
+    "context": "Said of Golda Meir's 1948 fundraising trip to the United States, which raised about $50 million.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "nordau-to-herzl",
+    "parts": ["If you are insane, we are insane together. Count on me!"],
+    "speaker_id": "max-nordau",
+    "choices": ["max-nordau", "leon-pinsker", "ad-gordon", "chaim-weizmann"],
+    "source": {"kind": "actor", "id": "max-nordau"},
+    "context": "Reportedly his reply on first hearing Herzl's plan for a Jewish state.",
+    "flag": "Reported rather than documented: the entry says he 'is said to have replied'."
+  },
+  {
+    "quiz_id": "begin-cannot-go-on",
+    "parts": ["I cannot go on"],
+    "speaker_id": "menachem-begin",
+    "choices": ["menachem-begin", "yitzhak-shamir", "david-ben-gurion", "golda-meir"],
+    "source": {"kind": "actor", "id": "menachem-begin"},
+    "context": "Told to his cabinet in August 1983, less than a year after his wife Aliza's death; he left office the following month.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "dayan-regret",
+    "parts": ["I did not fulfill my role as defense minister, in that I did not stop things that I was sure should have been stopped."],
+    "speaker_id": "moshe-dayan",
+    "choices": ["moshe-dayan", "yitzhak-rabin", "ariel-sharon", "yigal-allon"],
+    "source": {"kind": "actor", "id": "moshe-dayan"},
+    "context": "From a 1976 interview with Rami Tal, kept private for two decades. He said it of two decisions he most regretted: the capture of the Golan Heights and the return of Jewish settlement to Hebron.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "meir-no-such-thing",
+    "parts": ["there was no such thing as Palestinians"],
+    "speaker_id": "golda-meir",
+    "choices": ["golda-meir", "david-ben-gurion", "levi-eshkol", "yitzhak-rabin"],
+    "source": {"kind": "actor", "id": "golda-meir"},
+    "context": "From an interview with the Sunday Times of London, given while she was Prime Minister.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "kissinger-isolate",
+    "parts": ["I have left the Palestinian question alone in order to work on frontier questions hoping eventually to isolate the Palestinians."],
+    "speaker_id": "henry-kissinger",
+    "choices": ["henry-kissinger", "abba-eban", "jimmy-carter", "yigal-allon"],
+    "source": {"kind": "actor", "id": "henry-kissinger"},
+    "context": "Said to American Jewish leaders at New York's Hotel Pierre, describing his own strategy toward the Palestinians.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "arafat-olive-branch",
+    "parts": ["Today I have come bearing an olive branch and a freedom fighter's gun. Do not let the olive branch fall from my hand"],
+    "speaker_id": "yasser-arafat",
+    "choices": ["yasser-arafat", "anwar-sadat", "mahmoud-abbas", "marwan-barghouti"],
+    "source": {"kind": "actor", "id": "yasser-arafat"},
+    "context": "From his address to the UN General Assembly, days after it granted the PLO observer status.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "eban-june-map",
+    "parts": ["the June map is for us equivalent to insecurity and danger", "it has for us something of a memory of Auschwitz"],
+    "speaker_id": "abba-eban",
+    "choices": ["abba-eban", "yigal-allon", "moshe-dayan", "golda-meir"],
+    "source": {"kind": "topic", "id": "defensible-borders-doctrine"},
+    "context": "From a November 1969 Der Spiegel interview, the origin of the phrase 'Auschwitz borders'. The same interview also contains a line about not retaining the occupied territories that is often left out.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "sharon-hilltops",
+    "parts": ["Everybody has to move, run and grab as many hilltops as they can to enlarge the settlements, because everything we take now will stay ours", "Everything we don't grab will go to them."],
+    "speaker_id": "ariel-sharon",
+    "choices": ["ariel-sharon", "ehud-barak", "yitzhak-shamir", "menachem-begin"],
+    "source": {"kind": "topic", "id": "wye-river-memorandum-1998"},
+    "context": "Addressed to settlers after the 1998 Wye River Memorandum, when he was Foreign Minister.",
+    "flag": ""
+  },
+  {
+    "quiz_id": "shamir-autonomy-talks",
+    "parts": ["carry on autonomy talks for ten years", "[a] half million people in Judea and Samaria"],
+    "speaker_id": "yitzhak-shamir",
+    "choices": ["yitzhak-shamir", "yitzhak-rabin", "menachem-begin", "ehud-barak"],
+    "source": {"kind": "topic", "id": "madrid-conference-1991"},
+    "context": "Attributed to him in a June 1992 Ma'ariv interview about the Madrid process, after his election defeat.",
+    "flag": "Disputed: Shamir later said he had only expressed willingness to negotiate for as long as it took to reach a genuine agreement."
+  }
+]
