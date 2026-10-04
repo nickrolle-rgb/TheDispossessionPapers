@@ -6905,3 +6905,40 @@ the page does not make clear.
 Verification: `python scripts/verify_all.py` passed every step, including EDGE PARITY: IDENTICAL
 (544, unchanged -- pure content). Pushed as `063a8c5`; deployed and confirmed live (zero console
 errors; Clinton Parameters and Resolution 194 cross-references autolink correctly).
+
+## Round: Clinton Parameters -- actual terms, reservations, and an internal inconsistency (2026-10-04)
+
+Checking the entry's own text turned up a real inconsistency before any new research: the summary said
+the Parameters were "proposed verbally," while the significance section said they had been "explicitly
+presented in writing." The sources side with the summary -- Clinton delivered them orally at Bolling Air
+Force Base on 23 December 2000, and the text now cited derives from his 7 January 2001 Israel Policy
+Forum speech -- so the significance wording was corrected to say so (it matters, because that section
+uses "in writing" to contrast the Parameters with Camp David's never-tabled proposals).
+
+Also added what the Parameters actually contained, which the entry had only gestured at: contiguity and
+Gaza's inclusion, with the map left to the parties; the "Arab areas Palestinian, Jewish areas Israeli"
+rule including the Old City; Palestinian sovereignty over the Haram al-Sharif with Israel keeping the
+Western Wall and shared arrangements over excavation; a 36-month Israeli withdrawal with an
+international force in the Jordan Valley for a further 36, three early-warning stations under a ten-year
+review, and a non-militarised state with a strong security force; the waiver of an unlimited right of
+return with an international commission; and an end of claims via a UN Security Council resolution.
+Then the reservations: Israel's 28 December cabinet vote of 10 to 2 (only Roni Milo resigning), Barak's
+rejection of Palestinian Temple Mount sovereignty and of return premised on a "right of return," Mofaz's
+Jordan Valley objection; the Palestinian support unit's "too vague and unclear" warning and its concerns
+(contiguity, no maps, Resolution 194, the withdrawal timeline). The characterisation dispute is recorded,
+not settled: Clinton and Ross called Israel's reservations "within" the Parameters and the Palestinians'
+"outside" them, while Jeremy Pressman argues Israel's reservations contradicted them.
+
+**A slip caught by the live check, not the pipeline.** My first citation addition described the wording
+fix itself ("a wording inconsistency in this entry's own significance section... is corrected here").
+That is reader-facing process language, which this dataset does not carry. `verify_all.py` did not flag it
+(its banned-phrase grep only looks for "already/also in this dataset"); the live check did, because it
+searched the rendered page for the old phrase. Removed in a follow-up commit; the corrected wording stays.
+Worth remembering that no step of `verify_all.py` catches process language in general.
+
+Not done: the Palestinian written response of 1 January 2001 (hosted by the US Institute of Peace) could
+not be opened, so the Palestinian reservations rest on Wikipedia's summary rather than the document.
+
+Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged --
+pure content). Pushed as `a2f7c0a` plus `3d58fc9`; confirmed live (zero console errors, old phrasing gone,
+no process note on the page).
