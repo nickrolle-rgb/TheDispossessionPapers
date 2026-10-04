@@ -7043,3 +7043,30 @@ needs `.claude/launch.json` in the parent `Projects` folder (outside this repo),
 Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged). Pushed as
 `6f8aa60`; confirmed live (counter shows 10,015 and links to Oslo; four trails; the trail bar on the Allon Plan
 shows step 1 of 5 with Levy Report next; the quiz serves four choices; zero console errors).
+
+## Network map: organic layout (2026-10-04)
+
+Request: nodes sitting right on the canvas edge made the map read as a box. Stragglers (isolated entries, small
+components, pendant clusters such as the First Aliyah group) were being pushed outward by repulsion until the
+margin walls or the ±450 safety clamp stopped them.
+
+**What changed (wiki `netInit()` and the standalone prototype's `simulate()`, kept identical).**
+- Component-aware gravity: nodes in small components feel up to 5x the pull toward the centre, so isolates and
+  little clusters no longer escape to the rim.
+- The straight margin walls became a soft elliptical boundary, so the silhouette follows an ellipse rather than a
+  rectangle.
+- `layTuck`: after the simulation, each small rigid group is moved into the emptiest nearby gap (kept as a unit,
+  so its internal shape survives) instead of staying wherever repulsion left it.
+
+The layout is still random per page load. The home view auto-fits via `netBoundsFor()`, and the occupied area is
+about 25% smaller than before because the outliers are now tucked in. Tuning was done offline with
+`scripts/layout_lab.js` (`node scripts/layout_lab.js --variant=organicTuck --seed=1 --svg=out.svg`; variants
+baseline/island/ellipse/organic/tuck/organicTuck), consistent across 8 seeds.
+
+**Check added.** Both harnesses now rebuild the layout (wiki: 6 times) and fail if any coordinate is non-finite,
+any node sits at the safety clamp, more than 2% of nodes are in the bounding-box corner squares, or the convex
+hull fills more than 90% of the bounding box. Negative test: with the new code disabled the check fails (nodes
+at the clamp, 4.5% in corners, fill 1.00). Current worst: fill 0.77-0.81 (wiki), 0.72-0.76 (prototype).
+
+Verification: `python scripts/verify_all.py` all green, EDGE PARITY IDENTICAL (544). Pushed as `70a1f5f`; live check
+shows the organic outline, zero console errors.
