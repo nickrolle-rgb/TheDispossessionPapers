@@ -7002,3 +7002,44 @@ Sourced from PalQuest's republication of the non-paper (the same single source a
 Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged). Pushed
 as `576317e`; confirmed live (zero console errors; East Jerusalem and Silwan cross-references link correctly,
 no stray links on the new Jerusalem names).
+
+## Round: reader engagement -- Oslo overdue stamp, Trails, "Who said it?" (2026-10-04)
+
+Asked for "something like" the Reinstate-3379 and 5778 badges that pulls people into the record. Three
+features, each built only from entries already in the data and none editorialising:
+
+- **Oslo "days overdue" stamp** on the front page. The five-year interim period began with the 4 May 1994
+  Cairo Agreement and ended 4 May 1999; the stamp shows today's day count (10,015 on build day) and, unlike
+  the two fishhook stamps, links to the Oslo entry. Computed from the reader's local date at page render, with
+  no timer, so it never keeps a process alive.
+- **Trails** (`#/trails`, `#/trail/<id>`): four ordered paths of 5-7 entries (the interim that outlived its
+  deadline; never adopted, widely followed; digging in contested ground; Suez to the Sinai Treaty). Opening an
+  entry "files" it; an entry on a trail ends with a bar showing the step and a next-step link; opening every
+  step earns a Filed stamp. Progress is stored only in the reader's own browser, with an in-memory fallback if
+  storage is blocked.
+- **Who said it?** (`#/quiz`): ten quotations that each appear verbatim in an entry, four choices, a reveal that
+  links to the entry in context, a remembered best score. Disputed or merely reported items carry a flag
+  (Shamir's contested Ma'ariv remark; Nordau's reported reply to Herzl).
+
+**Judgment calls.** No scoring or "collecting" on the casualty and massacre entries: the trails follow
+mechanisms and documents, and the quiz uses speeches and statements, not events. No living people appear in
+the quiz. The standalone network prototype does not get these features; they live in the wiki.
+
+**Data and integrity.** `data/trails.json` and `data/quiz.json` are embedded by `scripts/embed_data.py` (now
+eight files). New `scripts/check_engagement.py`, wired into `scripts/verify_all.py` as step 3b, fails if any trail
+step does not exist or any quotation is not verbatim in its source entry. The wiki harness gained a section 16
+covering all three features, and I negative-tested it by breaking the counter's date, the quiz reveal, and a
+quotation: each was caught.
+
+**Found by actually looking at it in a browser.** On a phone the header, now with five nav buttons, wrapped the
+brand into a 112px sticky block. Fixed with a small-screen rule that gives the nav its own row (73px, no sideways
+scroll). The checks did not catch this; only emulating a 375px viewport did.
+
+**Practical notes.** `wiki-prototype.html` has Windows (CRLF) line endings: edit it through Python text mode (as
+`embed_data.py` does), not with byte-exact matches, or anchors silently fail. To preview locally the browser tool
+needs `.claude/launch.json` in the parent `Projects` folder (outside this repo), serving this directory with
+`python -m http.server`. Local `file://` URLs are refused.
+
+Verification: `python scripts/verify_all.py` passed every step, EDGE PARITY: IDENTICAL (544, unchanged). Pushed as
+`6f8aa60`; confirmed live (counter shows 10,015 and links to Oslo; four trails; the trail bar on the Allon Plan
+shows step 1 of 5 with Levy Report next; the quiz serves four choices; zero console errors).
