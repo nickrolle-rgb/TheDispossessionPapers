@@ -432,8 +432,98 @@ function bfsDistances(startId, maxDist) {
   return dist;
 }
 
+
+// ---- organic-shape layout helpers ----
+// The force simulation alone leaves small disconnected clusters, isolated entries and pendant branches
+// pinned against the canvas edge, which squares the whole map off into a box. These helpers (tuned in
+// scripts/layout_lab.js, which measures corner occupancy, hull fill and clamp-pinned nodes across seeds)
+// keep the silhouette organic: small components are pulled toward the middle during the simulation, a soft
+// ellipse replaces the four straight walls, and a final pass moves whatever still sits on the outer rim
+// into the nearest genuinely empty space, as whole groups so connected pieces stay together.
+function layComponents(nodes, edges) {
+  var parent = {};
+  nodes.forEach(function (n) { parent[n.id] = n.id; });
+  function find(x) { while (parent[x] !== x) { parent[x] = parent[parent[x]]; x = parent[x]; } return x; }
+  edges.forEach(function (e) { var a = find(e.source.id), b = find(e.target.id); if (a !== b) parent[a] = b; });
+  var size = {}, max = 0;
+  nodes.forEach(function (n) { var r = find(n.id); size[r] = (size[r] || 0) + 1; });
+  Object.keys(size).forEach(function (k) { if (size[k] > max) max = size[k]; });
+  nodes.forEach(function (n) { n.compSize = size[find(n.id)]; });
+  return max;
+}
+// approximate on-screen footprint of a node: its dot plus the text label that runs to its right
+function layBoxOf(x, y, label) { var lw = Math.min((label || '').length, 46) * 11; return { x0: x - 24, x1: x + 24 + lw, y0: y - 26, y1: y + 26 }; }
+function layHit(a, b, pad) { return a.x0 < b.x1 + pad && a.x1 > b.x0 - pad && a.y0 < b.y1 + pad && a.y1 > b.y0 - pad; }
+function layQuantile(arr, p) { var a = arr.slice().sort(function (u, v) { return u - v; }); return a[Math.max(0, Math.min(a.length - 1, Math.floor(p * a.length)))]; }
+
+function layTuck(nodes, edges) {
+  var xs = nodes.map(function (n) { return n.x; }), ys = nodes.map(function (n) { return n.y; });
+  var cx = layQuantile(xs, 0.5), cy = layQuantile(ys, 0.5);
+  var rx = (layQuantile(xs, 0.97) - layQuantile(xs, 0.03)) / 2, ry = (layQuantile(ys, 0.97) - layQuantile(ys, 0.03)) / 2;
+  function rad(x, y) { return Math.sqrt(((x - cx) / rx) * ((x - cx) / rx) + ((y - cy) / ry) * ((y - cy) / ry)); }
+  var SHELL = 0.9, INNER = 0.85, PAD = 30;
+  var outer = {};
+  nodes.forEach(function (n) { if (rad(n.x, n.y) > SHELL) outer[n.id] = true; });
+  var adj = {};
+  nodes.forEach(function (n) { adj[n.id] = []; });
+  edges.forEach(function (e) { adj[e.source.id].push(e.target); adj[e.target.id].push(e.source); });
+  var seen = {}, groups = [];
+  nodes.forEach(function (n) {
+    if (!outer[n.id] || seen[n.id]) return;
+    var grp = [], stack = [n]; seen[n.id] = true;
+    while (stack.length) {
+      var c = stack.pop(); grp.push(c);
+      adj[c.id].forEach(function (m) { if (outer[m.id] && !seen[m.id]) { seen[m.id] = true; stack.push(m); } });
+    }
+    groups.push(grp);
+  });
+  groups.sort(function (a, b) { return b.length - a.length; });
+  groups.forEach(function (members) {
+    var ids = {}; members.forEach(function (m) { ids[m.id] = true; });
+    var gx = 0, gy = 0; members.forEach(function (m) { gx += m.x; gy += m.y; }); gx /= members.length; gy /= members.length;
+    var ext = [];
+    members.forEach(function (m) { adj[m.id].forEach(function (nb) { if (!ids[nb.id]) ext.push(nb); }); });
+    var ax = gx, ay = gy;
+    if (ext.length) { ax = 0; ay = 0; ext.forEach(function (m) { ax += m.x; ay += m.y; }); ax /= ext.length; ay /= ext.length; }
+    var otherBoxes = [];
+    nodes.forEach(function (n) { if (!ids[n.id]) otherBoxes.push(layBoxOf(n.x, n.y, n.label)); });
+    function clear(dx, dy, pad) {
+      for (var i = 0; i < members.length; i++) {
+        var b = layBoxOf(members[i].x + dx, members[i].y + dy, members[i].label);
+        for (var j = 0; j < otherBoxes.length; j++) if (layHit(b, otherBoxes[j], pad)) return false;
+      }
+      return true;
+    }
+    var best = null, bestScore = Infinity, rounds = [[INNER, PAD], [INNER + 0.1, 15], [INNER + 0.2, 0]];
+    for (var ri = 0; ri < rounds.length && !best; ri++) {
+      var innerR = rounds[ri][0], padV = rounds[ri][1];
+      for (var t = 0; t < 4000; t++) {
+        var ang = Math.random() * Math.PI * 2, rr = Math.sqrt(Math.random()) * innerR;
+        var px = cx + Math.cos(ang) * rr * rx, py = cy + Math.sin(ang) * rr * ry, dx = px - gx, dy = py - gy;
+        var ok = true;
+        for (var mi = 0; mi < members.length; mi++) { if (rad(members[mi].x + dx, members[mi].y + dy) > innerR + 0.05) { ok = false; break; } }
+        if (!ok || !clear(dx, dy, padV)) continue;
+        var score = Math.sqrt((px - ax) * (px - ax) + (py - ay) * (py - ay));
+        if (score < bestScore) { bestScore = score; best = [dx, dy]; }
+      }
+    }
+    if (!best) {
+      // crowded surroundings: slide the group inward along several headings and keep the deepest clear position
+      function meanR(dx, dy) { var t = 0; members.forEach(function (m) { t += rad(m.x + dx, m.y + dy); }); return t / members.length; }
+      var bestR = meanR(0, 0) - 0.05, base = Math.atan2(cy - gy, cx - gx);
+      for (var k = -8; k <= 8; k++) {
+        var a2 = base + k * 0.11, ux = Math.cos(a2), uy = Math.sin(a2), last = null;
+        for (var d = 30; d < 3500; d += 30) { if (clear(ux * d, uy * d, 12)) last = [ux * d, uy * d]; else if (last) break; }
+        if (last) { var r2 = meanR(last[0], last[1]); if (r2 < bestR) { bestR = r2; best = last; } }
+      }
+    }
+    if (best) members.forEach(function (m) { m.x += best[0]; m.y += best[1]; });
+  });
+}
+
 function simulate(iterations) {
   var k = 168; // ideal spring length
+  var mainSize = layComponents(nodes, edges);
   for (var it = 0; it < iterations; it++) {
     // repulsion
     for (var i = 0; i < nodes.length; i++) {
@@ -466,14 +556,16 @@ function simulate(iterations) {
     // untethered nodes in a tidy row along the boundary instead of an organic scatter), and a
     // faint persistent jitter so nodes with identical forces don't settle into suspiciously
     // even spacing
-    var margin = 255;
+    var ellRx = W * 0.5, ellRy = H * 0.5;
     nodes.forEach(function(n) {
-      n.vx += (W/2 - n.x) * 0.0004;
-      n.vy += (H/2 - n.y) * 0.0004;
-      if (n.x < margin) n.vx += (margin - n.x) * 0.03;
-      if (n.x > W - margin) n.vx -= (n.x - (W - margin)) * 0.03;
-      if (n.y < margin) n.vy += (margin - n.y) * 0.03;
-      if (n.y > H - margin) n.vy -= (n.y - (H - margin)) * 0.03;
+      // small disconnected components feel a stronger pull to the middle (they have no edges holding them in
+      // place, so repulsion would otherwise drift them out to the rim)
+      var gm = 1 + 4 * (1 - Math.sqrt(n.compSize / mainSize));
+      n.vx += (W/2 - n.x) * 0.0004 * gm;
+      n.vy += (H/2 - n.y) * 0.0004 * gm;
+      // soft elliptical containment instead of four straight walls, so there are no corners to pile into
+      var ex = (n.x - W/2) / ellRx, ey = (n.y - H/2) / ellRy, er = Math.sqrt(ex*ex + ey*ey);
+      if (er > 1) { var ek = (er - 1) * 0.6; n.vx -= (ex/er) * ek * ellRx * 0.05; n.vy -= (ey/er) * ek * ellRy * 0.05; }
       n.vx += (Math.random() - 0.5) * 0.12;
       n.vy += (Math.random() - 0.5) * 0.12;
     });
@@ -487,6 +579,7 @@ function simulate(iterations) {
   }
 }
 simulate(420);
+layTuck(nodes, edges);
 
 // ---------- render ----------
 var svg = document.getElementById('graphSvg');

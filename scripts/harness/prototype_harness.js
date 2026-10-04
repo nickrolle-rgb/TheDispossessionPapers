@@ -67,4 +67,36 @@ try {
   process.exit(1);
 }
 
+
+function layoutShapeMetrics(nodes, W, H) {
+  const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const w = x1 - x0, h = y1 - y0;
+  let corners = 0, pinned = 0, finite = true;
+  nodes.forEach(n => {
+    if (!isFinite(n.x) || !isFinite(n.y)) finite = false;
+    const fx = (n.x - x0) / w, fy = (n.y - y0) / h;
+    if ((fx < 0.12 || fx > 0.88) && (fy < 0.12 || fy > 0.88)) corners++;
+    if (n.x <= -449 || n.x >= W + 449 || n.y <= -449 || n.y >= H + 449) pinned++;
+  });
+  const pts = nodes.map(n => [n.x, n.y]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const lo = []; for (const q of pts) { while (lo.length >= 2 && cross(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); }
+  const up = []; for (const q of pts.slice().reverse()) { while (up.length >= 2 && cross(up[up.length - 2], up[up.length - 1], q) <= 0) up.pop(); up.push(q); }
+  const hull = lo.slice(0, -1).concat(up.slice(0, -1));
+  const area = Math.abs(hull.reduce((acc, p, i) => { const q = hull[(i + 1) % hull.length]; return acc + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
+  return { finite, corners: corners / nodes.length, pinned, fill: area / (w * h) };
+}
+
+try {
+  const mm = layoutShapeMetrics(nodes, W, H);
+  console.log('layout: every node position is a finite number:', mm.finite);
+  console.log('layout: no node is flung to the safety clamp:', mm.pinned === 0);
+  console.log('layout: corner squares stay (almost) empty (' + (mm.corners * 100).toFixed(1) + '% of nodes):', mm.corners <= 0.02);
+  console.log('layout: hull is not box-shaped (fill ' + mm.fill.toFixed(2) + ' of bounding box):', mm.fill <= 0.9);
+} catch (e) {
+  console.error('LAYOUT SHAPE CHECK THREW:', e.stack || e);
+  process.exit(1);
+}
+
 console.log('ALL PROTOTYPE HARNESS CHECKS COMPLETED');
