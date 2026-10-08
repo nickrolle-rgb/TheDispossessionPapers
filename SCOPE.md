@@ -7070,3 +7070,40 @@ at the clamp, 4.5% in corners, fill 1.00). Current worst: fill 0.77-0.81 (wiki),
 
 Verification: `python scripts/verify_all.py` all green, EDGE PARITY IDENTICAL (544). Pushed as `70a1f5f`; live check
 shows the organic outline, zero console errors.
+
+## Symbols of Palestinian resistance, and a layout hardening (2026-10-08)
+
+Request: work the key, the spoon and the watermelon into the tool without being heavy-handed, so Zionist readers
+would still use it. Done as ordinary entries in the existing style rather than as a separate section or badge.
+
+**Three entries (new `topic_type` "Symbol"; free-text, no code change needed).**
+- `return-key` (The Return Key): the 1948 house key; the Aida camp key (2008); the 25 September 2025 key pin at the
+  UN and the Israeli Foreign Ministry's reaction; the Sephardic keys parallel; both readings stated and attributed.
+- `gilboa-escape-spoon-2021` (The Spoon: Gilboa Prison Escape): the six escapees' affiliations and sentences as
+  Israeli reporting records them, the recapture dates, the indictment and 2022 sentences, and the spoon-versus-plates
+  discrepancy shown as two attributed accounts. Both the celebratory and the critical reading are given.
+- `watermelon-symbol` (The Watermelon): Military Order 101 (1967) and the flag ban, lifted 1993; the 1980 Gallery 79
+  closure as Sliman Mansour recalled it, with the explicit caveat that the origin story rests on recollection;
+  Hourani 2007; the 2023 emoji use and Meta's apology; Ben-Gvir's January 2023 directive against the legal position
+  Adalah cited. Mansour died 24 August 2026 (age 79); noted in the entry, not given his own actor entry because the
+  actor schema is built around land actions.
+
+Backlinks added to the Nakba and Resolution 194 entries. New fifth trail, "What People Carry" (six steps from the
+Nakba to the Gilboa escape). Edges 544 to 550, wiki and prototype identical.
+
+**Judgment calls.** Balance comes from attribution, not hedging: each side's reading is given in its own terms and
+none is adjudicated. Where sources disagreed (the Aida key's size, the escape tools) both are stated. The Spanish
+citizenship law's year was left out because the search result's date looked wrong.
+
+**Layout bug found by the new shape check.** The check added in the previous round failed intermittently once the
+data grew: about 18% of loads left a node on the safety clamp, and some ended well outside it. Two causes in
+`layTuck`/`netInit`: the crowded-surroundings fallback only kept the last clear position along a heading, which
+could be far out in empty space beyond the map; and the soft ellipse alone did not stop hubs reaching the clamp.
+Fixes (wiki and prototype template): hard projection into the canvas ellipse each iteration; groups may only land
+inside the canvas; the fallback scores every clear position; a group that cannot be placed whole is placed node by
+node. Over 500 rebuilds: no clamp-pinned node, worst corner occupancy 1.6%, worst fill 0.83, rim nodes at most 5
+(was up to 10). The check now also counts rim nodes (at most 8) and the corner limit is 3%. `DP_LAYOUT_RUNS=N`
+sets the rebuild count for stress runs. Negative test: with `layTuck` disabled the rim check fails (26 nodes).
+
+Verification: `python scripts/verify_all.py` all green; pushed as `3dd814a`; confirmed live (the Spoon entry
+renders, no console errors).
