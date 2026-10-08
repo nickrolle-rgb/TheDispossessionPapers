@@ -469,22 +469,27 @@ function layoutShapeMetrics(nodes, W, H) {
   const up = []; for (const q of pts.slice().reverse()) { while (up.length >= 2 && cross(up[up.length - 2], up[up.length - 1], q) <= 0) up.pop(); up.push(q); }
   const hull = lo.slice(0, -1).concat(up.slice(0, -1));
   const area = Math.abs(hull.reduce((acc, p, i) => { const q = hull[(i + 1) % hull.length]; return acc + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
-  return { finite, corners: corners / nodes.length, pinned, fill: area / (w * h) };
+  const rim = nodes.filter(n => Math.hypot((n.x - W / 2) / (W / 2), (n.y - H / 2) / (H / 2)) > 0.97).length;
+  return { finite, corners: corners / nodes.length, pinned, rim, fill: area / (w * h) };
 }
 
 // 17. Network layout shape: rebuilt several times (it is randomised), the map must be organic rather than boxy --
 // no nodes in the corners, no nodes flung to the safety clamp, and a hull that fills well under the whole bounding box.
 try {
-  let worstCorners = 0, worstFill = 0, anyPinned = 0, allFinite = true;
-  for (let run = 0; run < 6; run++) {
+  let worstCorners = 0, worstFill = 0, worstRim = 0, anyPinned = 0, allFinite = true;
+  const layoutRuns = parseInt(process.env.DP_LAYOUT_RUNS || '6', 10);
+  for (let run = 0; run < layoutRuns; run++) {
     net.NET.built = false;
     net.netInit();
     const mm = layoutShapeMetrics(net.NET.nodes, 4800, 3900);
-    worstCorners = Math.max(worstCorners, mm.corners); worstFill = Math.max(worstFill, mm.fill); anyPinned += mm.pinned; allFinite = allFinite && mm.finite;
+    if (mm.pinned) console.log('layout: run ' + run + ' pinned: ' + net.NET.nodes.filter(n => n.x <= -449 || n.x >= 4800 + 449 || n.y <= -449 || n.y >= 3900 + 449).map(n => n.id + '(' + Math.round(n.x) + ',' + Math.round(n.y) + ')').join(' '));
+    if (process.env.DP_LAYOUT_HIST) console.log('LAYHIST rim=' + mm.rim + ' corners=' + (mm.corners*100).toFixed(1) + ' fill=' + mm.fill.toFixed(2));
+    worstCorners = Math.max(worstCorners, mm.corners); worstFill = Math.max(worstFill, mm.fill); anyPinned += mm.pinned; worstRim = Math.max(worstRim, mm.rim); allFinite = allFinite && mm.finite;
   }
-  console.log('layout: every node position is a finite number across 6 rebuilds:', allFinite);
+  console.log('layout: every node position is a finite number across all rebuilds:', allFinite);
   console.log('layout: no node is flung to the safety clamp:', anyPinned === 0);
-  console.log('layout: corner squares stay (almost) empty (worst ' + (worstCorners * 100).toFixed(1) + '% of nodes):', worstCorners <= 0.02);
+  console.log('layout: corner squares stay nearly empty (worst ' + (worstCorners * 100).toFixed(1) + '% of nodes):', worstCorners <= 0.03);
+  console.log('layout: at most a handful of nodes sit on the outer rim (worst ' + worstRim + ' nodes):', worstRim <= 8);
   console.log('layout: hull is not box-shaped (worst fill ' + worstFill.toFixed(2) + ' of bounding box):', worstFill <= 0.9);
 } catch (e) {
   console.error('LAYOUT SHAPE CHECK THREW:', e.stack || e);

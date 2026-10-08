@@ -466,7 +466,7 @@
     "topic_type": "Historical Event",
     "date_or_range": "1947-1949",
     "summary": "Arabic for 'catastrophe' — the term for the mass displacement of Palestinian Arabs during and after the 1948 Arab-Israeli War, in which roughly 700,000-800,000 people (commonly cited as ~750,000) fled or were expelled from what became Israeli-held territory, and several hundred Arab villages were depopulated, many subsequently destroyed or resettled. Distinct from the war itself: the Nakba is the displacement and its consequences — refugee status, property loss, the end of Palestinian Arab society in most of Mandate Palestine — not the military campaign that produced it.",
-    "significance": "The event the Absentees' Property Law and the Custodian of Absentee Property gave permanent legal form to, and the reason 'right of return' remains a live political question generations later — arguably the single most consequential event this entire dataset exists to document the run-up to.",
+    "significance": "The event the Absentees' Property Law and the Custodian of Absentee Property gave permanent legal form to, and the reason 'right of return' remains a live political question generations later — arguably the single most consequential event this entire dataset exists to document the run-up to. The house keys many refugee families kept became the emblem of that claim (see The Return Key).",
     "related_actor_ids": [],
     "related_org_ids": [
       "custodian-of-absentee-property"
@@ -504,7 +504,7 @@
     "topic_type": "UN Resolution",
     "date_or_range": "1948-12-11",
     "summary": "Adopted 11 December 1948, establishing the UN Conciliation Commission for Palestine and, in paragraph 11, resolving that Palestinian refugees wishing to return to their homes and live at peace with their neighbours should be permitted to do so at the earliest practicable date, with compensation payable to those choosing not to return or for loss of or damage to property. Passed weeks after UN mediator Folke Bernadotte's assassination, drawing on his final recommendations.",
-    "significance": "The foundational legal text behind the Palestinian 'right of return' claim invoked in nearly every subsequent peace negotiation — directly downstream of the Nakba's displacement, and still unimplemented at the scale contemplated in 1948.",
+    "significance": "The foundational legal text behind the Palestinian 'right of return' claim invoked in nearly every subsequent peace negotiation — directly downstream of the Nakba's displacement, and still unimplemented at the scale contemplated in 1948. Its paragraph 11 is the text the Return Key is read against.",
     "related_actor_ids": [],
     "related_org_ids": [
       "united-nations-general-assembly"
@@ -2719,5 +2719,69 @@
       "united-nations-general-assembly"
     ],
     "citation": "VERIFIED 2026-09-15 -- Nasser's 26 July 1956 Suez Canal nationalisation, its link to the withdrawn Aswan Dam financing, and Israel's stated grievances (fedayeen raids, the Straits of Tiran blockade) are corroborated via live search (the Jerusalem Post's 'Why the 1956 Suez Crisis was a geopolitical turning point for Israel?', Wikipedia's Suez Crisis article). The Sevres Protocol's 22-24 October 1956 negotiation, its signatories (Ben-Gurion, Pineau, Dean), and Eden's destruction of the document are corroborated via live search (Encyclopedia.com's Sevres Protocol entry, Wikipedia's Protocol of Sevres article). The 29 October 1956 Operation Kadesh launch, Dayan's command role, and the week-long occupation of Sinai and Gaza are corroborated via live search (Wikipedia's Operation Kadesh article), consistent with this dataset's own already-verified Ariel Sharon actor entry, which independently corroborates the Mitla Pass action from the same campaign. The Khan Yunis (3 November, 275-415 deaths per differing sources) and Rafah (12 November, ~111 deaths including 12 UNRWA staff) incidents are corroborated via live search (Wikipedia's Khan Yunis massacre and 1956 Rafah massacre articles). Overall war casualty estimates (~172 Israeli dead, 1,000-3,000 Egyptian dead) are corroborated via live search (Wikipedia's Suez Crisis article infobox), presented as a range given known source variance. Eisenhower's US-Soviet joint pressure, the Uniting for Peace mechanism, UNEF's creation via Lester Pearson's proposal (for which he later received the 1957 Nobel Peace Prize), the December 1956 British/French withdrawal, and Israel's March 1957 Sinai/Gaza withdrawal in exchange for the Straits of Tiran guarantee and UNEF's deployment are corroborated via live search (the Christian Science Monitor's 1956-fallout retrospective, Wikipedia's United Nations Emergency Force article, the Nobel Prize's own Lester Pearson biographical page). Eden's 9 January 1957 resignation is corroborated via live search (Britannica's Anthony Eden entry)."
+  },
+  {
+    "topic_id": "return-key",
+    "name": "The Return Key",
+    "aliases": [
+      "Return Key",
+      "Key of Return",
+      "Nakba key",
+      "return key"
+    ],
+    "hebrew_name": "مفتاح العودة",
+    "topic_type": "Symbol",
+    "date_or_range": "1948 to present",
+    "summary": "The house key that many Palestinian refugee families say they kept from the homes they left in 1948 and handed down through the generations, now the most widely used emblem of the refugee claim: that those displaced, and their descendants, should be able to return, as UN General Assembly Resolution 194 (paragraph 11) is read to provide. It is held up at Nakba Day processions, worn as a pendant, painted on camp walls, and cast in steel: in 2008, for the 60th anniversary of the Nakba, residents of Aida refugee camp near Bethlehem installed a steel key at the camp entrance, reported at roughly nine metres long and widely described as the world's largest. The image is not unique to this dispute. Sephardic Jewish families expelled from Spain in 1492 are likewise reported to have kept their house keys across generations, and press coverage of Spain's later citizenship offer to their descendants revived the image. The two sides read this key differently. Palestinian refugees and their advocates present it as a claim of ownership and dignity, a refusal to let displacement be treated as settled. Israeli officials and many Israeli commentators read the same object as a demand for return on a scale that, given the several million registered refugees and descendants, would end the Jewish majority in Israel. On 25 September 2025 Mahmoud Abbas addressed the UN General Assembly by video, after the United States revoked his visa, wearing a key pin; Israel's Foreign Ministry responded that the key was a symbol of a goal of erasing Israel. In the negotiations this dataset records at Camp David, in the Clinton Parameters and at Taba, the return question was where the sides stayed furthest apart, and the key is shorthand for that gap.",
+    "significance": "The point where this dataset's legal and political entries (Resolution 194, the Absentee Property laws, the refugee proposals at Camp David and Taba) meet lived memory: the one object that carries the property question, who holds title to what was left behind, in a form a person can hold. Included because both sides cite it constantly as shorthand for the return question, and because the two readings above are that dispute in miniature.",
+    "related_actor_ids": [
+      "mahmoud-abbas"
+    ],
+    "related_org_ids": [
+      "united-nations-general-assembly"
+    ],
+    "citation": "VERIFIED 2026-10-08 -- the Aida camp key (installed 2008 at the camp entrance for the Nakba's 60th anniversary, steel, reported at about nine metres long and one tonne, described as the world's largest) is corroborated via live search (Wikipedia's Aida Camp article, the Art@Site documentation of the key's 2012 loan to the Berlin Biennale, a Reuters footage listing of the May 2008 unveiling); the Reuters listing gives slightly larger dimensions (ten metres, two tonnes), so the size is stated here as approximate. Abbas's 25 September 2025 video address to the UN General Assembly after the US revoked his visa, his key pin, and the Israeli Foreign Ministry's reaction are corroborated via live search (Al Arabiya, 'Right of return: Key pin worn by Palestinian president angers Israel'; JNS coverage of the Israeli response; PBS NewsHour and Al Jazeera on the address); the Foreign Ministry's characterisation is attributed to it, not endorsed. The Sephardic key tradition is corroborated via live search (Euronews, 'Sephardic Jews eye return to Spain'; the Forward, 'Can Sephardic Jews go home again?'), where it is described as a family tradition handed down, not a documented practice. The Palestinian and Israeli readings are attributed to their holders and not adjudicated here."
+  },
+  {
+    "topic_id": "gilboa-escape-spoon-2021",
+    "name": "The Spoon: Gilboa Prison Escape",
+    "aliases": [
+      "Gilboa Prison escape",
+      "Gilboa escape",
+      "Gilboa Prison break",
+      "Gilboa jailbreak"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Symbol",
+    "date_or_range": "6-19 September 2021",
+    "summary": "On 6 September 2021 six Palestinian prisoners escaped from Gilboa Prison, a maximum-security facility in northern Israel, through a tunnel dug from the bathroom of their cell, in what is described as the most significant prison break in Israel's history. Five were members of Palestinian Islamic Jihad and one, Zakaria Zubeidi, was a former commander of Fatah's Al-Aqsa Martyrs' Brigades in Jenin. Four of the Islamic Jihad men were serving life sentences for planning or carrying out attacks that killed Israelis (one for murder), and the fifth, Munadil Nafi'at, was held in administrative detention without charge. All six were recaptured within two weeks: two on 10 September near Mount Precipice, two on 11 September at a truck stop, and two on 19 September in Jenin. They were indicted on 3 October 2021 for escaping lawful custody, a charge carrying up to seven years, with no terrorism charges, and in May 2022 an Israeli court added five years to each sentence (four years for five fellow inmates convicted of helping). The spoon entered the story through one escapee: after recapture, Mahmoud Ardah said he had used spoons, plates and a kettle handle to dig, while Israeli investigators, as reported, described plates, pan handles, building debris and part of a metal hanger. Whatever the forensic detail, the spoon became the emblem. Palestinians held spoons up at demonstrations in Beita, Khan Yunis and Umm al-Fahm, a mural in Gaza celebrated the six, and a Kuwaiti sculptor made a 'Spoon of Freedom'. Those who adopted it present the escape as ingenuity and defiance against a state with a celebrated security system, and the six as political prisoners. Israeli officials and many Israelis see celebration of men convicted of attacks, several of them fatal, as celebration of terrorism, and the sentencing judge cited the paralysis the break caused across Israel and the harm to public security from lifers escaping. Both readings attach to the same object.",
+    "significance": "The one symbol in this group that can be dated to a single event: the spoon did not exist as an emblem before 6 September 2021, where the key took decades to accrete and the watermelon some forty years. It also shows how the two sides' accounts of one event differ at the edges (the tools, the status of the men) while agreeing on the core facts of the tunnel, the dates and the recaptures. Connects to this dataset's thread on prisoners and detention (see the prisoner exchanges entry).",
+    "related_actor_ids": [],
+    "related_org_ids": [
+      "fatah",
+      "state-of-israel"
+    ],
+    "citation": "VERIFIED 2026-10-08 -- the 6 September 2021 escape from Gilboa Prison, the tunnel from the cell bathroom, the six escapees' names and affiliations (five Islamic Jihad, Zubeidi of Al-Aqsa Martyrs' Brigades), the life sentences of four of them and Nafi'at's administrative detention, the recapture dates (10, 11 and 19 September), and the 3 October 2021 indictment for escaping custody with no terrorism charges are corroborated via live search (Wikipedia's Gilboa Prison break article, the Times of Israel and Ynet reports on the indictments, Al Jazeera's 3 October 2021 report). The May 2022 sentences (five more years for the six, four more for five inmates who helped) and the judge's stated rationale are corroborated via live search (Al Jazeera, 22 May 2022). The tools are reported inconsistently: Ardah's own account (spoons, plates, a kettle handle, per Al Jazeera) against investigators' accounts (plates, pan handles, debris, a metal hanger, per the Times of Israel and Wikipedia); both are stated here as attributed. The spoon's adoption as a symbol (spoons held at rallies in Beita, Khan Yunis and Umm al-Fahm, a Gaza mural, a Kuwaiti sculptor's 'Spoon of Freedom') is corroborated via live search (Al Jazeera photo essay, 'Spoons: a new symbol of Palestinian freedom', 19 September 2021; The New Arab). The two readings are attributed to their holders and not adjudicated."
+  },
+  {
+    "topic_id": "watermelon-symbol",
+    "name": "The Watermelon",
+    "aliases": [
+      "Palestinian watermelon",
+      "watermelon symbol",
+      "watermelon emoji"
+    ],
+    "hebrew_name": null,
+    "topic_type": "Symbol",
+    "date_or_range": "1980 to present",
+    "summary": "A slice of watermelon, with red flesh, white rind, green skin and black seeds, carries the four colours of the Palestinian flag, which is why it became a stand-in for the flag where the flag could not be shown. After the 1967 war, Israeli Military Order 101 (27 August 1967) banned the display of flags and political emblems in the occupied territories, along with political gatherings; the flag restriction was lifted in 1993 as part of the Oslo-era mutual recognition between Israel and the PLO. The best-known origin story comes from the painter Sliman Mansour (1947-2026): in 1980 the army closed an exhibition at Gallery 79 in Ramallah by Mansour, Nabil Anani and Issam Badr because the works showed the flag's colours, and an officer told them, in Mansour's recollection, that they would be confiscated even if they painted a watermelon. Press accounts note that the history of the symbol is not agreed and that the story rests on that recollection. In 2007 the artist Khaled Hourani, asked for a proposed flag for the Subjective Atlas of Palestine, submitted a watermelon. The image spread widely online after 7 October 2023, when users substituted the watermelon emoji for the flag emoji, saying flag posts were being suppressed; in October 2023 Meta apologised for an Instagram translation error that rendered 'Palestinian' alongside the flag emoji as 'terrorist'. Israeli law does not itself ban the flag: under the Police Ordinance police may confiscate a flag only where it disrupts public order, as the legal centre Adalah argued. But on 8 January 2023 National Security Minister Itamar Ben-Gvir directed police to enforce a ban on Palestinian flags in public spaces, describing the flag, according to media reports, as a symbol of support for terrorism. The directive concerns the flag itself, not the fruit.",
+    "significance": "Shows how a ban on a symbol produces a substitute for it. The 1967 order and the 1980 closure are the documented part, the watermelon is the response, and the sources agree on the first and concede that the second's origin is told from memory. Also marks a change in where the restriction sits: from a military order in the occupied territories to a ministerial directive inside Israel in 2023, which Adalah challenged as lacking a legal basis.",
+    "related_actor_ids": [
+      "itamar-ben-gvir"
+    ],
+    "related_org_ids": [
+      "state-of-israel"
+    ],
+    "citation": "VERIFIED 2026-10-08 -- Military Order 101 (27 August 1967) and its ban on flags, emblems and political assembly are corroborated via live search (Amnesty International, '50 years of Israeli Occupation: Four Outrageous Facts about Military Order 101'; The New Arab's Military Order 101 analysis); the 1993 lifting of the flag ban with Oslo-era recognition is corroborated via live search (Wisconsin Public Radio/NPR, 'Why watermelons are a symbol of Palestinian solidarity'). The 1980 Gallery 79 closure (Mansour, Anani, Badr), Mansour's recollection of the officer's warning, and the caveat that the symbol's history is 'not locally and universally agreed upon' are corroborated via live search (the same NPR/WPR report; Al-Ahram). Hourani's 2007 watermelon for the Subjective Atlas of Palestine is corroborated via live search (Al-Ahram; Rosa Luxemburg Foundation's 'Solidarity, subversion and sumud'). Mansour's death in Jerusalem on 24 August 2026 at age 79 is corroborated via live search (The National; Hyperallergic; Al-Ahram). The October 2023 Meta apology for the 'terrorist' translation error and the emoji's substitution for the flag are corroborated via live search (NBC News, 'How the watermelon image became a global sign of Palestinian solidarity'; Business Insider). The 8 January 2023 Ben-Gvir directive, Police Ordinance Article 82, and Adalah's 9 January 2023 letter are corroborated via live search (Adalah; JNS; Arab News); the characterisation of the flag as a symbol of support for terrorism is attributed to media reports of his rationale."
   }
 ]

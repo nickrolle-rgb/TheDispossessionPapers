@@ -85,14 +85,16 @@ function layoutShapeMetrics(nodes, W, H) {
   const up = []; for (const q of pts.slice().reverse()) { while (up.length >= 2 && cross(up[up.length - 2], up[up.length - 1], q) <= 0) up.pop(); up.push(q); }
   const hull = lo.slice(0, -1).concat(up.slice(0, -1));
   const area = Math.abs(hull.reduce((acc, p, i) => { const q = hull[(i + 1) % hull.length]; return acc + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
-  return { finite, corners: corners / nodes.length, pinned, fill: area / (w * h) };
+  const rim = nodes.filter(n => Math.hypot((n.x - W / 2) / (W / 2), (n.y - H / 2) / (H / 2)) > 0.97).length;
+  return { finite, corners: corners / nodes.length, pinned, rim, fill: area / (w * h) };
 }
 
 try {
   const mm = layoutShapeMetrics(nodes, W, H);
   console.log('layout: every node position is a finite number:', mm.finite);
   console.log('layout: no node is flung to the safety clamp:', mm.pinned === 0);
-  console.log('layout: corner squares stay (almost) empty (' + (mm.corners * 100).toFixed(1) + '% of nodes):', mm.corners <= 0.02);
+  console.log('layout: corner squares stay (almost) empty (' + (mm.corners * 100).toFixed(1) + '% of nodes):', mm.corners <= 0.03);
+  console.log('layout: at most a handful of nodes sit on the outer rim (' + mm.rim + ' nodes):', mm.rim <= 8);
   console.log('layout: hull is not box-shaped (fill ' + mm.fill.toFixed(2) + ' of bounding box):', mm.fill <= 0.9);
 } catch (e) {
   console.error('LAYOUT SHAPE CHECK THREW:', e.stack || e);

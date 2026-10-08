@@ -456,7 +456,7 @@ function layBoxOf(x, y, label) { var lw = Math.min((label || '').length, 46) * 1
 function layHit(a, b, pad) { return a.x0 < b.x1 + pad && a.x1 > b.x0 - pad && a.y0 < b.y1 + pad && a.y1 > b.y0 - pad; }
 function layQuantile(arr, p) { var a = arr.slice().sort(function (u, v) { return u - v; }); return a[Math.max(0, Math.min(a.length - 1, Math.floor(p * a.length)))]; }
 
-function layTuck(nodes, edges) {
+function layTuck(nodes, edges, CW, CH) {
   var xs = nodes.map(function (n) { return n.x; }), ys = nodes.map(function (n) { return n.y; });
   var cx = layQuantile(xs, 0.5), cy = layQuantile(ys, 0.5);
   var rx = (layQuantile(xs, 0.97) - layQuantile(xs, 0.03)) / 2, ry = (layQuantile(ys, 0.97) - layQuantile(ys, 0.03)) / 2;
@@ -478,7 +478,7 @@ function layTuck(nodes, edges) {
     groups.push(grp);
   });
   groups.sort(function (a, b) { return b.length - a.length; });
-  groups.forEach(function (members) {
+  function placeGroup(members, allowSplit) {
     var ids = {}; members.forEach(function (m) { ids[m.id] = true; });
     var gx = 0, gy = 0; members.forEach(function (m) { gx += m.x; gy += m.y; }); gx /= members.length; gy /= members.length;
     var ext = [];
@@ -494,7 +494,11 @@ function layTuck(nodes, edges) {
       }
       return true;
     }
-    var best = null, bestScore = Infinity, rounds = [[INNER, PAD], [INNER + 0.1, 15], [INNER + 0.2, 0]];
+    function inCanvas(dx, dy) {
+        for (var i = 0; i < members.length; i++) { var qx = members[i].x + dx, qy = members[i].y + dy; if (qx < 0 || qx > CW || qy < 0 || qy > CH) return false; }
+        return true;
+      }
+      var best = null, bestScore = Infinity, rounds = [[INNER, PAD], [INNER + 0.1, 15], [INNER + 0.2, 0]];
     for (var ri = 0; ri < rounds.length && !best; ri++) {
       var innerR = rounds[ri][0], padV = rounds[ri][1];
       for (var t = 0; t < 4000; t++) {
@@ -502,7 +506,7 @@ function layTuck(nodes, edges) {
         var px = cx + Math.cos(ang) * rr * rx, py = cy + Math.sin(ang) * rr * ry, dx = px - gx, dy = py - gy;
         var ok = true;
         for (var mi = 0; mi < members.length; mi++) { if (rad(members[mi].x + dx, members[mi].y + dy) > innerR + 0.05) { ok = false; break; } }
-        if (!ok || !clear(dx, dy, padV)) continue;
+        if (!ok || !inCanvas(dx, dy) || !clear(dx, dy, padV)) continue;
         var score = Math.sqrt((px - ax) * (px - ax) + (py - ay) * (py - ay));
         if (score < bestScore) { bestScore = score; best = [dx, dy]; }
       }
@@ -512,13 +516,18 @@ function layTuck(nodes, edges) {
       function meanR(dx, dy) { var t = 0; members.forEach(function (m) { t += rad(m.x + dx, m.y + dy); }); return t / members.length; }
       var bestR = meanR(0, 0) - 0.05, base = Math.atan2(cy - gy, cx - gx);
       for (var k = -8; k <= 8; k++) {
-        var a2 = base + k * 0.11, ux = Math.cos(a2), uy = Math.sin(a2), last = null;
-        for (var d = 30; d < 3500; d += 30) { if (clear(ux * d, uy * d, 12)) last = [ux * d, uy * d]; else if (last) break; }
-        if (last) { var r2 = meanR(last[0], last[1]); if (r2 < bestR) { bestR = r2; best = last; } }
-      }
+        var a2 = base + k * 0.11, ux = Math.cos(a2), uy = Math.sin(a2);
+        for (var d = 30; d < 3500; d += 30) {
+            if (!inCanvas(ux * d, uy * d) || !clear(ux * d, uy * d, 12)) continue;
+            var r2 = meanR(ux * d, uy * d);
+            if (r2 < bestR) { bestR = r2; best = [ux * d, uy * d]; }
+          }
+              }
     }
     if (best) members.forEach(function (m) { m.x += best[0]; m.y += best[1]; });
-  });
+    else if (allowSplit && members.length > 1) members.forEach(function (m) { placeGroup([m], false); });
+  }
+  groups.forEach(function (members) { placeGroup(members, true); });
 }
 
 function simulate(iterations) {
@@ -575,11 +584,13 @@ function simulate(iterations) {
       n.x += n.vx; n.y += n.vy;
       n.x = Math.max(-450, Math.min(W+450, n.x));
       n.y = Math.max(-450, Math.min(H+450, n.y));
+        var hx = (n.x - W/2) / (W*0.5), hy = (n.y - H/2) / (H*0.5), hr = Math.sqrt(hx*hx + hy*hy);
+        if (hr > 1) { n.x = W/2 + (hx/hr)*(W*0.5); n.y = H/2 + (hy/hr)*(H*0.5); n.vx *= 0.3; n.vy *= 0.3; }
     });
   }
 }
 simulate(420);
-layTuck(nodes, edges);
+layTuck(nodes, edges, W, H);
 
 // ---------- render ----------
 var svg = document.getElementById('graphSvg');
